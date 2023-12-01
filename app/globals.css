@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Urbanist&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Urbanist&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +20,11 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #122149;
-  outline: 1px solid #F5F5F5;
+  outline: 1px solid #f5f5f5;
   border-radius: 5px;
 }
 
+.custom::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}

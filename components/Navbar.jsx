@@ -28,12 +28,12 @@ const NavBar = () => {
           </div>
         </NavbarBrand>
         <NavbarContent
-          className="hidden lg:flex gap-10 text-primaryText uppercase"
+          className="hidden lg:flex gap-10 text-warning  uppercase"
           justify="center"
         >
           {Navlinks.map((link, idx) => (
             <NavbarItem key={idx}>
-              <Link href={link.href} className="text-primaryText">
+              <Link href={link.href} className="text-warning ">
                 {link.title}
               </Link>
             </NavbarItem>
@@ -45,13 +45,13 @@ const NavBar = () => {
               as={Link}
               href="#"
               variant="bordered"
-              className="text-primaryText border-primaryText rounded-3xl font-normal hidden md:flex"
+              className="text-warning  border-warning  rounded-3xl font-normal hidden md:flex"
             >
               Contact us
             </Button>
           </NavbarItem>
           <NavbarItem onClick={() => setIsOpen(!isOpen)}>
-              <RxHamburgerMenu className="h-5 w-5 md:h-7 md:w-7 text-primaryText cursor-pointer hover:text-info" />
+              <RxHamburgerMenu className="h-5 w-5 md:h-7 md:w-7 text-warning  cursor-pointer hover:text-info" />
           </NavbarItem>
         </NavbarContent>
       </Navbar>

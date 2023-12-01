@@ -11,8 +11,9 @@ module.exports = {
     screens: {
       sm: '390px',
       md: '810px',
-      lg: '1024px',
-      xl: '1440px',
+      lg: '1023px',
+      xl: '1439px',
+      "2xl": '1536px'
     },
     fontFamily: {
       Lora: ['Lora', 'serif'],
@@ -21,7 +22,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/hero-bg.png')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
+        'statistics': "url('/Statistics.png')",
       },
       keyframes: {
         // marquee_v: {
@@ -44,12 +45,13 @@ module.exports = {
     themes: {
       light: {
         colors: {
+          foreground: "#FFFFFF",
           primary: "#0C1831",
-          primary2 :"#122149",
           secondary: "#F5F5F5",
-          primaryText : "#0D1924",
-          secondaryText :"#1D252D",
-          info : "#FD6C2E"
+          success :"#122149",
+          warning : "#0D1924",
+          danger :"#1D252D",
+          info : "#FD6C2E",
         }
       },
     },

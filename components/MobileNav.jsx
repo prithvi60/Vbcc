@@ -48,14 +48,14 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           <Button variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5">FAQs</Button>
         </div>
         <div className="flex justify-evenly items-center gap-3">
-              <Link href={"/"} className="p-2.5 rounded-full border border-info">
-                <FaYoutube className="h-7 w-7 text-white hover:text-info"/>
+              <Link href={"/"} className="p-2.5 rounded-full border border-info hover:bg-info">
+                <FaYoutube className="h-7 w-7 text-white"/>
               </Link>
-              <Link href={"/"} className="p-2.5 rounded-full border border-info">
-                <FaLinkedin  className="h-7 w-7 text-white hover:text-info"/>
+              <Link href={"/"} className="p-2.5 rounded-full border border-info hover:bg-info">
+                <FaLinkedin  className="h-7 w-7 text-white"/>
               </Link>
-              <Link href={"/"} className="p-2.5 rounded-full border border-info">
-                <FaWhatsapp   className="h-7 w-7 text-white hover:text-info"/>
+              <Link href={"/"} className="p-2.5 rounded-full border border-info hover:bg-info">
+                <FaWhatsapp   className="h-7 w-7 text-white"/>
               </Link>
         </div>
       </div>
