@@ -1,7 +1,7 @@
 // "use client"
 import { cards } from "@/libs/data";
 import { Dumbbell } from "@/svg_components/Dumbbell";
-import { Glass } from "@/svg_components/glass";
+import { Glass } from "@/svg_components/Glass";
 import {
   Card,
   CardBody,
@@ -20,9 +20,9 @@ export const ProductCard = () => {
             <div className="p-3.5 border border-info w-max rounded-full">
           <Dumbbell className={"fill-info h-6 w-6 "}/>
             </div>
-            <div className="p-3.5 border border-info w-max rounded-full">
+            {/* <div className="p-3.5 border border-info w-max rounded-full">
           <Glass className={"h-6 w-6"}/>
-            </div>
+            </div> */}
             </div>
             <p className="group-hover:absolute group-hover:top-3.5 group-hover:right-4 group-hover:px-3.5
                         group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block">
