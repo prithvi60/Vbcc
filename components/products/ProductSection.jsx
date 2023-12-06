@@ -1,0 +1,75 @@
+"use client";
+import { CustomSelect, CustomSelectMd } from "./CustomSelect";
+import { useState } from "react";
+import { GrFilter } from "react-icons/gr";
+import { CiSearch } from "react-icons/ci";
+import Filter from "./Filter";
+import ProductFC from "./ProductF&C";
+
+const ProductSection = () => {
+  const [open, setOpen] = useState(false);
+  const [isFilter, setIsFilter] = useState(false);
+  const [selectedItem, SetselectedItem] = useState("Relevance");
+  return (
+    <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
+      {/* Filter Section */}
+      <div className="w-full hidden lg:flex justify-end items-center space-y-5 xl:px-[60px]">
+        <div className="block space-y-5">
+          <CustomSelect
+            open={open}
+            setOpen={setOpen}
+            selectedItem={selectedItem}
+            SetselectedItem={SetselectedItem}
+          />
+          <div className="flex items-center gap-2 border border-warning px-4 py-2 rounded-full">
+            <CiSearch className="h-7 w-7 text-warning" />
+            <input
+              type="text"
+              placeholder="Search"
+              className=" text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-2xl"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex flex-col-reverse gap-4 md:flex md:flex-row md:gap-0 lg:hidden md:justify-between md:items-start xl:px-[60px]">
+        <CustomSelectMd
+          open={open}
+          setOpen={setOpen}
+          selectedItem={selectedItem}
+          SetselectedItem={SetselectedItem}
+        />
+        <div className="flex md:hidden items-center gap-2 border border-warning px-4 py-2 rounded-full">
+          <CiSearch className="h-7 w-7 text-warning" />
+          <input
+            type="text"
+            placeholder="Search"
+            className=" text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-base md:text-2xl"
+          />
+        </div>
+        <div
+          className="hidden md:flex md:items-center md:gap-2 cursor-pointer"
+          onClick={() => setIsFilter(!isFilter)}
+        >
+          <h5 className="text-warning font-Lora text-base md:text-2xl">
+            Filter
+          </h5>
+          <GrFilter className="w-5 h-5 text-warning" />
+        </div>
+        <div
+          className="flex justify-between items-center gap-2 w-full md:hidden border-warning border px-4 py-2 rounded-full"
+          onClick={() => setIsFilter(!isFilter)}
+        >
+          <h5 className="text-warning font-Lora text-base md:text-2xl">
+            Filter
+          </h5>
+          <GrFilter className="w-5 h-5 text-warning" />
+        </div>
+        {isFilter && <Filter setIsFilter={setIsFilter} />}
+      </div>
+      {/* Product Section */}
+      <ProductFC />
+    </section>
+  );
+};
+
+export default ProductSection;

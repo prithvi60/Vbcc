@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { MdOutlineKeyboardArrowRight,MdKeyboardArrowLeft  } from "react-icons/md";
 
 function NextArrow(props) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
     <div
       className="hidden md:block absolute top-0 -right-8 -mt-1 cursor-pointer"
@@ -15,7 +15,7 @@ function NextArrow(props) {
 }
 
 function PrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
     <div
       className="hidden md:block absolute top-0 -left-8 -mt-1 cursor-pointer"
@@ -35,7 +35,7 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
   };
   return (
     <section className="py-2 bg-primary">

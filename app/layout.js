@@ -4,6 +4,7 @@ import { Providers } from "./providers";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "VBCC",
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
         <Providers>
         <Banner/>
         <NavBar/>
-          {children}</Providers>
+          {children}
+          <Footer/>
+          </Providers>
       </body>
     </html>
   );

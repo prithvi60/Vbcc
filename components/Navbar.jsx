@@ -33,7 +33,7 @@ const NavBar = () => {
         >
           {Navlinks.map((link, idx) => (
             <NavbarItem key={idx}>
-              <Link href={link.href} className="text-warning ">
+              <Link href={link.href} className="text-warning py-[26px]  hover:border-b-8 hover:border-info">
                 {link.title}
               </Link>
             </NavbarItem>
@@ -45,13 +45,13 @@ const NavBar = () => {
               as={Link}
               href="#"
               variant="bordered"
-              className="text-warning  border-warning  rounded-3xl font-normal hidden md:flex"
+              className="text-warning  border-warning  rounded-3xl font-normal hidden md:flex hover:bg-primary hover:text-white"
             >
               Contact us
             </Button>
           </NavbarItem>
           <NavbarItem onClick={() => setIsOpen(!isOpen)}>
-              <RxHamburgerMenu className="h-5 w-5 md:h-7 md:w-7 text-warning  cursor-pointer hover:text-info" />
+              <RxHamburgerMenu className="h-5 w-5 md:h-7 md:w-7 text-warning cursor-pointer hover:text-info" />
           </NavbarItem>
         </NavbarContent>
       </Navbar>

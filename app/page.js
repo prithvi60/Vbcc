@@ -7,7 +7,6 @@ import Testimonials from '@/components/Testimonials'
 import { WCU } from '@/components/WCU'
 import Newsletter from '@/components/Newsletter'
 import Blog from '@/components/Blog'
-import Footer from '@/components/Footer'
 import HowWeDo from '@/components/HowWeDo'
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
       <HowWeDo/>
       <Blog/>
       <Newsletter/>
-      <Footer/>
     </main>
   )
 }

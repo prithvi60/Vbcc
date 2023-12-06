@@ -15,6 +15,9 @@ export const Navlink = [
   { href: "/", title: "blog" },
 ];
 
+// Hero
+export const hero = ["/hero-bg.png", "/hero-bg-2.jpg", "/hero-bg-3.jpg"];
+
 // Clients
 export const logos = [
   "/Isro svg.svg",
@@ -35,6 +38,58 @@ export const logos = [
   "/bhel.svg",
   "/IIT_Hyderabad.svg",
   "/drdo.svg",
+];
+
+export const testimonial = [
+  {
+    header:
+      "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it.",
+    logo: "/vit.svg",
+    title: "Centre for Nanotechnology Research, VIT University.",
+    subTitle: "on the Custom Made Hot Press",
+  },
+  {
+    header:
+      "No Company in India, except VB Ceramic Consultants, took this challenging task to succession ",
+    logo: "/Isro svg.svg",
+    title: "Vikram Sarabhai Space Centre",
+    subTitle: "on building Microwave Hybrid Furnace",
+  },
+  {
+    header:
+      "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.",
+    logo: "/AU.svg",
+    title: "Department of Ceramic Technology, Anna University.",
+    subTitle: "on multiple Units working effectively",
+  },
+  {
+    header:
+      "Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
+    logo: "/csir.svg",
+    title: "CSIR-CECRI",
+    subTitle: "on Custom made Supercritical Reactors",
+  },
+  {
+    header:
+      "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it.",
+    logo: "/vit.svg",
+    title: "Centre for Nanotechnology Research, VIT University.",
+    subTitle: "on the Custom Made Hot Press",
+  },
+  {
+    header:
+      "No Company in India, except VB Ceramic Consultants, took this challenging task to succession ",
+    logo: "/Isro svg.svg",
+    title: "Vikram Sarabhai Space Centre",
+    subTitle: "on building Microwave Hybrid Furnace",
+  },
+  {
+    header:
+      "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.",
+    logo: "/AU.svg",
+    title: "Department of Ceramic Technology, Anna University.",
+    subTitle: "on multiple Units working effectively",
+  },
 ];
 
 // OUR PRODUCT
@@ -197,18 +252,111 @@ export const blog = [
 
 // Statistics
 export const statistics = [
-  {title:"Satisfied Clientele",count:"500+",firm:"ISRO, IITM, VIT, CERI, CGCRI"},
-  {title:"Years of Expertise",count:"20+",firm:"Ceramics, Furnaces, Industrial"},
-  {title:"Instruments Installed",count:"8000+",firm:"Ganpule, Aristocrat, Rivere"},
-]
+  {
+    title: "Satisfied Clientele",
+    count: "500+",
+    firm: "ISRO, IITM, VIT, CERI, CGCRI",
+  },
+  {
+    title: "Years of Expertise",
+    count: "20+",
+    firm: "Ceramics, Furnaces, Industrial",
+  },
+  {
+    title: "Instruments Installed",
+    count: "8000+",
+    firm: "Ganpule, Aristocrat, Rivere",
+  },
+];
 
 // How We Do It
-export const data =[
-  {title:"Working Strategy",desc:"Our goal is to align your business objectives and user needs to create a mutually beneficial solution that maximizes impact and return from the product we build for you. By working together, we can co-create a mechanical solution that is tailored to your specific needs, while also being innovative and future-proof. Let's join forces to create the best possible equipment for your business.",btn:"Contact Us to know more about our Strategy",
-  btn2:"Contact Us to know more about our Strategy ",
-  btn3:"Contact Us"},
-  {title:"Design",desc:"Bring your product or equipment concepts to life with our premium design solutions. Our collaborative team, well-versed in advanced software like AutoCAD and Creo, refines designs iteratively until they perfectly align with your vision. Post-design, the final blueprint smoothly transitions to our skilled Fabrication and Engineering team, ensuring a seamless journey from concept to reality.",btn:"Learn More about how we Design",btn2:"Learn about our Design Process",btn3:"Learn about our Design Process"},
-  {title:"Engineering",desc:"Our interdisciplinary team of Ceramic, Mechanical, Electrical and Software Engineers collaborates to analyse your needs, translating them into precise post-fabrication specifications. Rigorous testing and continuous refinement guarantee the final product aligns seamlessly with your expectations, delivering unparalleled performance and satisfaction. Clients conduct a Pre-delivery Inspection on-site, and upon satisfaction, we proceed to the Equipment Installation. Our Engineers guide clients through the entire process, offering support from Installation to Training and Post-Installation Services.",btn:"Learn More about how we Engineer your Products",
-  btn2:"Contact Us for more Details",
-  btn3:"Contact Us for more Details"},
+export const data = [
+  {
+    title: "Working Strategy",
+    desc: "Our goal is to align your business objectives and user needs to create a mutually beneficial solution that maximizes impact and return from the product we build for you. By working together, we can co-create a mechanical solution that is tailored to your specific needs, while also being innovative and future-proof. Let's join forces to create the best possible equipment for your business.",
+    btn: "Contact Us to know more about our Strategy",
+    btn2: "Contact Us to know more about our Strategy ",
+    btn3: "Contact Us",
+  },
+  {
+    title: "Design",
+    desc: "Bring your product or equipment concepts to life with our premium design solutions. Our collaborative team, well-versed in advanced software like AutoCAD and Creo, refines designs iteratively until they perfectly align with your vision. Post-design, the final blueprint smoothly transitions to our skilled Fabrication and Engineering team, ensuring a seamless journey from concept to reality.",
+    btn: "Learn More about how we Design",
+    btn2: "Learn about our Design Process",
+    btn3: "Learn about our Design Process",
+  },
+  {
+    title: "Engineering",
+    desc: "Our interdisciplinary team of Ceramic, Mechanical, Electrical and Software Engineers collaborates to analyse your needs, translating them into precise post-fabrication specifications. Rigorous testing and continuous refinement guarantee the final product aligns seamlessly with your expectations, delivering unparalleled performance and satisfaction. Clients conduct a Pre-delivery Inspection on-site, and upon satisfaction, we proceed to the Equipment Installation. Our Engineers guide clients through the entire process, offering support from Installation to Training and Post-Installation Services.",
+    btn: "Learn More about how we Engineer your Products",
+    btn2: "Contact Us for more Details",
+    btn3: "Contact Us for more Details",
+  },
+];
+
+// Product Page
+
+// Category
+export const category=[
+  "All Products","Research Institutions","Industries","Accessories"
 ]
+
+// Filters
+export const filters=[
+  "Microwave Heating Systems",
+      "Furnaces",
+      "Ovens",
+      "Nano Technology Equipment",
+      "Special Research Equipment",
+      "Presses - Hot & Cold",
+      "Metallurgical Equipment",
+      "Industrial Furnaces",
+      "Refractory Industry",
+      "Tile & Sanitary Ware",
+      "Ceramic Products", "Heating Elements", "Controllers"
+]
+
+// Filter product Mobile view
+export const filter = [
+  {
+    id:1,
+    title: "Research Institutions",
+    button: [
+      "Microwave Heating Systems",
+      "Furnaces",
+      "Ovens",
+      "Nano Technology Equipment",
+      "Special Research Equipment",
+      "Presses - Hot & Cold",
+      "Metallurgical Equipment",
+    ],
+  },
+  {
+    id:2,
+    title: "Industries",
+    button: [
+      "Industrial Furnaces",
+      "Refractory Industry",
+      "Tile & Sanitary Ware",
+    ],
+  },
+  {
+    id:3,
+    title: "Accessories",
+    button: ["Ceramic Products", "Heating Elements", "Controllers"],
+  },
+];
+
+// product cards
+export const cards =[
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+{productName:"Glove Box",type:"Material Preparation"},
+]
+

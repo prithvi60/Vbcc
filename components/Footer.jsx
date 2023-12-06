@@ -22,17 +22,17 @@ const Footer = () => {
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-b-1 border-[#2D4152]">
         <div className="text-sm flex items-start gap-16">
           <div className="flex flex-col items-start gap-3">
-            <Link href={"#"}>Products</Link>
-            <Link href={"#"}>Testimonials</Link>
-            <Link href={"#"}>About Us</Link>
-            <Link href={"#"}>Blog/Articles</Link>
-            <Link href={"#"}>FAQs</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Products</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Testimonials</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">About Us</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Blog/Articles</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">FAQs</Link>
           </div>
           <div className="flex flex-col items-start gap-3">
-            <Link href={"#"}>Our Story</Link>
-            <Link href={"#"}>Blog/Articles</Link>
-            <Link href={"#"}>Contact Us</Link>
-            <Link href={"#"}>Gallery</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Our Story</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Blog/Articles</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Contact Us</Link>
+            <Link href={"#"} className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]">Gallery</Link>
           </div>
         </div>
         <div className="flex justify-evenly items-center gap-3">

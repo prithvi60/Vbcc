@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
+import { testimonial } from "@/libs/data";
 
 function NextArrow(props) {
   const {onClick } = props;
@@ -60,72 +61,29 @@ const Testimonials = () => {
           Testimonials
         </h3>
         <Slider {...settings}>
-          <div className="w-full p-10 bg-secondary space-y-8">
+          {testimonial.map((item,idx)=>(
+          <div className="w-full p-10 bg-secondary space-y-8" key={idx}>
             <h3 className="font-Lora sm:text-[28px] md:text-[32px]  xl:text-[40px] leading-tight text-center">
-              &quot;No Company in India, except VB Ceramic Consultants, took
-              this challenging task to succession&quot;
+              &ldquo;{item.header}&rdquo;
             </h3>
             <div className="relative h-[120px] w-[120px]mx-auto">
               <Image
                 fill
-                src="/Isro svg.svg"
+                src={item.logo}
                 alt="product"
                 className="absolute object-contain object-center"
               />
             </div>
             <div className="text-center">
               <p className="text-xl md:text-[20px] tracking-tight">
-                Vikram Sarabhai Space Centre
+                {item.title}
               </p>
               <p className="text-xs md:text-base">
-                on building Microwave Hybrid Furnace
+                {item.subTitle}
               </p>
             </div>
           </div>
-          <div className="w-full p-10 bg-secondary space-y-8">
-            <h3 className="font-Lora sm:text-[28px] md:text-[32px]  xl:text-[40px] leading-tight text-center">
-              &quot;No Company in India, except VB Ceramic Consultants, took
-              this challenging task to succession&quot;
-            </h3>
-            <div className="relative h-[120px] w-[120px]mx-auto">
-              <Image
-                fill
-                src="/Isro svg.svg"
-                alt="product"
-                className="absolute object-contain object-center"
-              />
-            </div>
-            <div className="text-center">
-              <p className="text-xl md:text-[20px] tracking-tight">
-                Vikram Sarabhai Space Centre
-              </p>
-              <p className="text-xs md:text-base">
-                on building Microwave Hybrid Furnace
-              </p>
-            </div>
-          </div>
-          <div className="w-full p-10 bg-secondary space-y-8">
-            <h3 className="font-Lora sm:text-[28px] md:text-[32px]  xl:text-[40px] leading-tight text-center">
-              &quot;No Company in India, except VB Ceramic Consultants, took
-              this challenging task to succession&quot;
-            </h3>
-            <div className="relative h-[120px] w-[120px]mx-auto">
-              <Image
-                fill
-                src="/Isro svg.svg"
-                alt="product"
-                className="absolute object-contain object-center"
-              />
-            </div>
-            <div className="text-center">
-              <p className="text-xl md:text-[20px] tracking-tight">
-                Vikram Sarabhai Space Centre
-              </p>
-              <p className="text-xs md:text-base">
-                on building Microwave Hybrid Furnace
-              </p>
-            </div>
-          </div>
+          ))}
         </Slider>
         <div className="text-center">
           <Button

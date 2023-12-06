@@ -38,14 +38,14 @@ const Products = () => {
                 <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[73vh]">
                   {item.sub.map((card, id) => (
                     <Card
-                      className="w-[340px] md:w-[300px] bg-primary rounded-none font-urbanist p-5 space-y-2"
+                      className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
                       key={id}
                     >
                       <CardHeader className="flex justify-between items-center">
                         <p className="text-md">in-stock</p>
                         <p className="text-small">$718</p>
                       </CardHeader>
-                      <CardBody className="space-y-4">
+                      <CardBody className="space-y-4 relative">
                         <div className="relative h-[225px] w-full">
                           <Image
                             fill
@@ -54,6 +54,12 @@ const Products = () => {
                             className="absolute object-contain object-center"
                           />
                         </div>
+                        {/* <div> */}
+                        <p className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block">
+                          View
+                        </p>
+                        {/* </div> */}
                         <div>
                           <h4 className="text-sm uppercase">{card.title}</h4>
                           <p className="font-Lora text-xl">{card.desc}</p>
@@ -75,15 +81,15 @@ const Products = () => {
             ))}
           </Tabs>
         </div>
-          <Button
-            color="secondary"
-            variant="bordered"
-            className="text-warning px-6 py-5 border-warning"
-            size="lg"
-            radius="full"
-          >
-            View All Products
-          </Button>
+        <Button
+          color="secondary"
+          variant="bordered"
+          className="text-warning px-6 py-5 border-warning"
+          size="lg"
+          radius="full"
+        >
+          View All Products
+        </Button>
       </div>
     </section>
   );

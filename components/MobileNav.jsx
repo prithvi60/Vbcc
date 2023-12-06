@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const MobileNav = ({ isOpen, setIsOpen }) => {
   return (
-    <section className="fixed top-0 left-0 z-30 bg-primary h-screen w-screen p-4 md:p-10 lg:px-20 lg:py-12 flex flex-col gap-14 md:gap-3 font-urbanist font-medium">
+    <section className="fixed top-0 left-0 z-30 bg-primary h-screen w-screen p-4 md:p-10 lg:px-20 lg:py-12 flex flex-col gap-7 md:gap-3 font-urbanist font-medium overflow-auto">
       <div className="flex justify-between items-center mt-6 md:mt-0">
         <div className="relative h-5 w-32">
           <Image
@@ -25,15 +26,15 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         />
         </div>
       </div>
-      <div className="flex justify-between items-center py-14 md:py-2 ">
+      <div className="flex justify-center md:justify-between items-center py-14 md:py-2 ">
         <ul className="p-3">
           {Navlink.map((link, idx) => (
             <li key={idx} className="text-secondary uppercase text-xl md:text-3xl mb-3 hover:text-info">
-              <Link href={link.href}>{link.title}</Link>
+              <Link className="flex items-center gap-2" href={link.href}>{link.title}<RiArrowRightUpLine className="h-10 w-10 mt-2"/></Link>
             </li>
           ))}
         </ul>
-        <div className="relative w-[500px] h-[220px] md:w-96 md:h-[500px] lg:w-[500px]">
+        <div className="hidden md:block relative w-[500px] h-[220px] md:w-96 md:h-[500px] lg:w-[500px]">
           <Image
             fill
             src={"/mobile-nav.png"}

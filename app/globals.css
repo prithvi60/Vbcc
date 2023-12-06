@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+   .btn_hover{
+    @apply rounded-lg after:h-0.5 after:w-0 after:block after:transition-all hover:after:h-0.5 hover:after:w-full  hover:after:block hover:after:ease-linear hover:after:duration-[3000]
+  }
+}
+
+
 * {
   margin: 0;
   padding: 0;
