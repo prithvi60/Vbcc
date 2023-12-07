@@ -1,8 +1,7 @@
 import "../globals.css";
-
 export const metadata = {
-  title: "VBCC Products",
-  description: "Vbbc All Products Pages",
+  title: "VBCC Blog/Article",
+  description: "Vbbc Blog/Article Pages",
 };
 
 export default function RootLayout({ children }) {

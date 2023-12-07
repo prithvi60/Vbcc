@@ -19,7 +19,7 @@ export const CustomSelect = ({
   return (
     <div className="block space-y-5 bg-secondary h-auto">
       <div className="flex justify-center items-center gap-6 px-4 py-2 border border-warning w-[350px] font-Lora rounded-full bg-secondary">
-        <h4 class="font-Lora w-[40%] text-warning text-2xl font-medium">
+        <h4 className="font-Lora w-[40%] text-warning text-2xl font-medium">
           Sort By :
         </h4>
         <div

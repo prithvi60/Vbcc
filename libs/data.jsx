@@ -1,18 +1,18 @@
 // Navbar
 export const Navlinks = [
-  { href: "/", title: "Products" },
-  { href: "/", title: "TESTIMONIALS" },
-  { href: "/", title: "BLOG" },
-  { href: "/", title: "ABOUT US" },
+  { href: "/products", title: "Products" },
+  { href: "/testimonials", title: "TESTIMONIALS" },
+  { href: "/blog", title: "BLOG" },
+  { href: "/about", title: "ABOUT US" },
 ];
 
 export const Navlink = [
   { href: "/", title: "home" },
-  { href: "/", title: "about" },
-  { href: "/", title: "TESTIMONIALS" },
-  { href: "/", title: "Products" },
-  { href: "/", title: "gallery" },
-  { href: "/", title: "blog" },
+  { href: "/about", title: "about" },
+  { href: "/testimonials", title: "TESTIMONIALS" },
+  { href: "/products", title: "Products" },
+  { href: "/gallery", title: "gallery" },
+  { href: "/blog", title: "blog" },
 ];
 
 // Hero
@@ -40,6 +40,7 @@ export const logos = [
   "/drdo.svg",
 ];
 
+// testimonial
 export const testimonial = [
   {
     header:
@@ -89,6 +90,26 @@ export const testimonial = [
     logo: "/AU.svg",
     title: "Department of Ceramic Technology, Anna University.",
     subTitle: "on multiple Units working effectively",
+  },
+];
+
+// Why Choose Us
+export const chooseItem = [
+  {
+    img: "/Vectortool.svg",
+    desc: "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience.",
+  },
+  {
+    img: "/Vectorsquare.svg",
+    desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way.",
+  },
+  {
+    img: "/Vectorresearch.svg",
+    desc: "We offer cutting-edge Research & Development services, dedicated to innovation and problem-solving, pushing the boundaries of possibility.",
+  },
+  {
+    img: "/Vectorbox.svg",
+    desc: "We specialize in thorough installation and training services, ensuring your staff gains proficiency in equipment operation and management, empowering them with essential knowledge and skills.",
   },
 ];
 
@@ -297,29 +318,34 @@ export const data = [
 // Product Page
 
 // Category
-export const category=[
-  "All Products","Research Institutions","Industries","Accessories"
-]
+export const category = [
+  "All Products",
+  "Research Institutions",
+  "Industries",
+  "Accessories",
+];
 
 // Filters
-export const filters=[
+export const filters = [
   "Microwave Heating Systems",
-      "Furnaces",
-      "Ovens",
-      "Nano Technology Equipment",
-      "Special Research Equipment",
-      "Presses - Hot & Cold",
-      "Metallurgical Equipment",
-      "Industrial Furnaces",
-      "Refractory Industry",
-      "Tile & Sanitary Ware",
-      "Ceramic Products", "Heating Elements", "Controllers"
-]
+  "Furnaces",
+  "Ovens",
+  "Nano Technology Equipment",
+  "Special Research Equipment",
+  "Presses - Hot & Cold",
+  "Metallurgical Equipment",
+  "Industrial Furnaces",
+  "Refractory Industry",
+  "Tile & Sanitary Ware",
+  "Ceramic Products",
+  "Heating Elements",
+  "Controllers",
+];
 
 // Filter product Mobile view
 export const filter = [
   {
-    id:1,
+    id: 1,
     title: "Research Institutions",
     button: [
       "Microwave Heating Systems",
@@ -332,7 +358,7 @@ export const filter = [
     ],
   },
   {
-    id:2,
+    id: 2,
     title: "Industries",
     button: [
       "Industrial Furnaces",
@@ -341,22 +367,73 @@ export const filter = [
     ],
   },
   {
-    id:3,
+    id: 3,
     title: "Accessories",
     button: ["Ceramic Products", "Heating Elements", "Controllers"],
   },
 ];
 
 // product cards
-export const cards =[
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-{productName:"Glove Box",type:"Material Preparation"},
-]
+export const cards = [
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+];
 
+// About Us Page
+
+// Story and Vision Image
+export const story = [
+  "/about-1.png",
+  "/about-2.png",
+  "/about-3.png",
+  "/about-3.png",
+];
+
+// Vision & Mission
+export const VM = [
+  {
+    title: "Vision",
+    img: ["/about-1.png", "/about-2.png"],
+    para1:
+      "At VBCC High Temperature Instruments Pvt. Ltd., our vision centers on excellence and innovation in Instruments and Furnaces. We are committed to key elements:",
+    lists: [
+      "Innovative Designs: We aim to deliver cutting-edge ceramic solutions with unique and advanced designs.",
+      "Complete Technology Concept: Our commitment extends to providing comprehensive technology concepts, ensuring holistic and integrated approaches.",
+      "Cutting-Edge Solutions: Staying at the forefront of industrial technology, we offer solutions that evolve with industry needs through continuous research and development.",
+      "Efficient Customer Service: Clear communication, prompt responses, and personalized attention are fundamental to ensuring customer satisfaction and success.",
+    ],
+    para2:
+      "Our commitment lies in contributing to the Indian economy while ensuring customer satisfaction and excellence in our offerings.",
+  },
+  {
+    title: "Mission",
+    img: ["/about-3.png", "/about-1.png"],
+    para1:
+      "At VBCC High Temperature Instruments Pvt. Ltd., our vision centers on excellence and innovation in Instruments and Furnaces. We are committed to key elements:",
+    lists: [
+      "Drive Indian Innovation: Contribute to Indian R&D, industries, and institutions, supporting the Make in India Movement.",
+      "Ensure Quality Excellence: Deliver top-quality products meeting international standards.",
+      "Customer-Centric Approach: Be customer-focused, offering customization and technological solutions to align with their goals.",
+      "Continuous R&D: Innovate by consistently updating products through research and development, providing cutting-edge solutions.",
+    ],
+    para2:
+      "Our commitment lies in contributing to the Indian economy while ensuring customer satisfaction and excellence in our offerings.",
+  },
+];
+
+// Our Team
+export const Team = [
+  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
+  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
+  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
+  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
+  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
+  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
+]

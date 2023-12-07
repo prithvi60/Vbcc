@@ -19,7 +19,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           />
         </div>
         <div className="flex items-center gap-7">
-        <Button variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5 capitalize">Contact us</Button>
+        <Button as={Link} href="/contact" variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5 capitalize">Contact us</Button>
         <RxCross1
           className="h-5 w-5 md:h-7 md:w-7 text-[#EFF3F6] cursor-pointer hover:text-info"
           onClick={() => setIsOpen(!isOpen)}

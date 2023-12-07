@@ -6,7 +6,7 @@ const HowWeDo = () => {
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
-        <div className=" rounded-lg lg:rounded-none py-6 px-4 bg-primary w-full lg:w-1/2 xl:w-2/5 flex flex-col lg:flex-row lg:items-center gap-4 lg:sticky lg:top-44">
+        <div className=" rounded-lg lg:rounded-none py-6 px-4 bg-primary w-full lg:w-1/2 xl:w-2/5 flex flex-col lg:flex-row lg:items-center gap-4 lg:sticky lg:top-0">
           <div className="flex flex-row items-center lg:flex-col lg:items-center gap-3 h-full">
             <h5>00</h5> 
             <div className="w-full h-3 lg:h-96 lg:w-3 bg-secondary border-2 border-slate-200 ">

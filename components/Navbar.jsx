@@ -18,14 +18,14 @@ const NavBar = () => {
     <nav>
       <Navbar position="static" maxWidth="2xl" className="font-urbanist font-medium py-2  ">
         <NavbarBrand>
-          <div className="relative h-5 w-32">
+          <Link href="/" className="relative h-5 w-32 cursor-pointer">
             <Image
               fill
               src={"/logo.svg"}
               alt="Logo"
               className="absolute object-contain object-center"
             />
-          </div>
+          </Link>
         </NavbarBrand>
         <NavbarContent
           className="hidden lg:flex gap-10 text-warning  uppercase"
@@ -43,7 +43,7 @@ const NavBar = () => {
           <NavbarItem>
             <Button
               as={Link}
-              href="#"
+              href="/contact"
               variant="bordered"
               className="text-warning  border-warning  rounded-3xl font-normal hidden md:flex hover:bg-primary hover:text-white"
             >
