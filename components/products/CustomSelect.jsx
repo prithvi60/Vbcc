@@ -114,7 +114,7 @@ export const CustomFilter = () => {
 
   const handleSetIndex = (Id) => index !== Id && setIndex(Id);
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 ">
       {filter.map((item) => (
         <div
           className="block space-y-3 w-full h-auto"
@@ -133,7 +133,7 @@ export const CustomFilter = () => {
           </div>
           {index === item.id && (
           <ul
-            className={`w-full md:w-72 border border-warning rounded-3xl h-auto overflow-hidden transition-all duration-1000 p-3 flex flex-wrap items-center gap-2`}
+            className={`w-full border border-warning rounded-3xl h-auto overflow-hidden transition-all duration-1000 p-3 flex flex-wrap items-center gap-2`}
           >
             {item.button.map((t,idx)=>(
             <li

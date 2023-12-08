@@ -2,7 +2,7 @@ import { CustomFilter } from "./CustomSelect";
 
 const Filter = ({ setIsFilter }) => {
   return (
-    <section className="h-screen w-full fixed top-0 left-0 bg-white px-5 py-10 z-10 overflow-auto">
+    <section className="h-screen w-full fixed top-0 left-0 bg-white px-5 py-10 z-50 overflow-auto">
       <div className="w-full block space-y-8">
         <div className="block space-y-10 h-[80vh]">
           <div className="flex justify-between items-center text-warning">

@@ -35,10 +35,20 @@ module.exports = {
           from: { transform: "translateY(100%)" },
           to: { transform: "translateY(0%)" },
         },
+        smooth: {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0%)" },
+        },
+        smooth2: {
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(100%)" },
+        },
       },
       animation: {
         horizontal_carousel: 'marquee_h 20s linear infinite',
         spin_word: "spinner 0.5s linear",
+        reveal_In : "smooth 0.5s linear",
+        reveal_Out : "smooth2 2s linear 1s"
         }
     },
   },

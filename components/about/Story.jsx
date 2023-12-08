@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Story = () => {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist relative">
+    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist relative" id="story">
       <div className="flex flex-col items-center lg:flex-row gap-16 lg:justify-between lg:items-start">
         <div className="w-full lg:w-1/2 space-y-8 lg:sticky lg:top-20">
           <div className="space-y-6 text-warning">

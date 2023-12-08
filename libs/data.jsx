@@ -430,10 +430,128 @@ export const VM = [
 
 // Our Team
 export const Team = [
-  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
-  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
-  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
-  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
-  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
-  {img:"/Employee Image.png",name:"Name",designation:"Designation",grade:"Designation"},
-]
+  {
+    img: "/Employee Image.png",
+    name: "Name",
+    designation: "Designation",
+    grade: "Designation",
+  },
+  {
+    img: "/Employee Image.png",
+    name: "Name",
+    designation: "Designation",
+    grade: "Designation",
+  },
+  {
+    img: "/Employee Image.png",
+    name: "Name",
+    designation: "Designation",
+    grade: "Designation",
+  },
+  {
+    img: "/Employee Image.png",
+    name: "Name",
+    designation: "Designation",
+    grade: "Designation",
+  },
+  {
+    img: "/Employee Image.png",
+    name: "Name",
+    designation: "Designation",
+    grade: "Designation",
+  },
+  {
+    img: "/Employee Image.png",
+    name: "Name",
+    designation: "Designation",
+    grade: "Designation",
+  },
+];
+
+// FAQ Page
+
+// FAQ Accordion
+export const FAQ = [
+  {
+    id: "1",
+    title: "All FAQs",
+    lists: [
+      {
+        ques: "How long will it take for my order to get to me?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "What is the Warranty Duration for the Furnaces and Equipment?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "What's the Annual Maintenance Contract(AMC)?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "Do you have a Buyback Program for your Products?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "Will you provide the Sample Holders?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "Are we allowed to conduct a Pre-Delivery Inspection (PDI) of your products?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "Are Customers Responsible for covering the Transportation Cost?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "Is there a Separate Cost for Installation?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+      {
+        ques: "What is the process for unloading the Furnace/Equipment?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+    ],
+  },
+  {
+    id: "2",
+    title: "Order & Delivery",
+    lists: [
+      {
+        ques: "How long will it take for my order to get to me?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+    ],
+  },
+  {
+    id: "3",
+    title: "Product Information",
+    lists: [
+      {
+        ques: "How long will it take for my order to get to me?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Service and Maintenance",
+    lists: [
+      {
+        ques: "How long will it take for my order to get to me?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+    ],
+  },
+  {
+    id: "5",
+    title: "Installation",
+    lists: [
+      {
+        ques: "How long will it take for my order to get to me?",
+        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+      },
+    ],
+  },
+];

@@ -8,7 +8,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 
 const MobileNav = ({ isOpen, setIsOpen }) => {
   return (
-    <section className="fixed top-0 left-0 z-30 bg-primary h-screen w-screen p-4 md:p-10 lg:px-20 lg:py-12 flex flex-col gap-7 md:gap-3 font-urbanist font-medium overflow-auto">
+    <section className={`fixed top-0 ${open ?"right-0 animate-reveal_In" : "-right-full"} z-30 bg-primary h-screen w-screen p-4 md:p-10 lg:px-20 lg:py-12 flex flex-col gap-7 md:gap-3 font-urbanist font-medium overflow-auto transition-all delay-200 duration-[3000]`}>
       <div className="flex justify-between items-center mt-6 md:mt-0">
         <div className="relative h-5 w-32">
           <Image
@@ -21,7 +21,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         <div className="flex items-center gap-7">
         <Button as={Link} href="/contact" variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5 capitalize">Contact us</Button>
         <RxCross1
-          className="h-5 w-5 md:h-7 md:w-7 text-[#EFF3F6] cursor-pointer hover:text-info"
+          className={` h-5 w-5 md:h-7 md:w-7 text-[#EFF3F6] cursor-pointer hover:text-info`}
           onClick={() => setIsOpen(!isOpen)}
         />
         </div>
@@ -29,8 +29,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       <div className="flex justify-center md:justify-between items-center py-14 md:py-2 ">
         <ul className="p-3">
           {Navlink.map((link, idx) => (
-            <li key={idx} className="text-secondary uppercase text-xl md:text-3xl mb-3 hover:text-info">
-              <Link className="flex items-center gap-2" href={link.href}>{link.title}<RiArrowRightUpLine className="h-10 w-10 mt-2"/></Link>
+            <li key={idx} className="text-secondary uppercase text-xl md:text-3xl mb-3 group">
+              <Link className="flex items-center gap-4 group-hover:text-info" href={link.href}>{link.title}<RiArrowRightUpLine className="h-8 w-8 hidden group-hover:block group-hover:text-info"/></Link>
             </li>
           ))}
         </ul>
