@@ -36,3 +36,8 @@ body::-webkit-scrollbar-thumb {
   width: 0px;
   display: none;
 }
+
+/* animate play&pause */
+.pause:hover{
+  animation-play-state: paused;
+}

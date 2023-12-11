@@ -12,7 +12,7 @@ export const FAQAccordion = () => {
     trigger: "h-auto lg:h-10",
     indicator: "text-xl md:text-2xl text-white",
     content:
-      "p-4 md:p-5 font-urbanist text-sm md:text-base bg-warning text-white",
+      "p-4 md:p-5 font-urbanist text-sm md:text-base text-warning bg-white",
   };
   return (
     <section>

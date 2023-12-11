@@ -555,3 +555,89 @@ export const FAQ = [
     ],
   },
 ];
+
+// Testimonials
+// logos
+export const testimonials = [
+  { id: "1", logo: "/AU.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "2", logo: "/CGCRI.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "3", logo: "/csir.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "4", logo: "/Isro svg.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "5", logo: "/IIT-Madras.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "6", logo: "/vit.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "7", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "8", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "9", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "10", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "11", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "12", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+];
+
+// Blog
+// Blog Cards
+export const BlogCard = [
+  {
+    id:"1",
+    title: "All Blogs",
+    featureCard: 
+      {
+        img: "/blog-2.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+    blogCard: [
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+    ],
+  },
+  { id:"2",
+    title: "Featured",
+    featureCard: 
+      {
+        img: "/blog-2.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+    blogCard: [
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+      {
+        img: "/blog-1.png",
+        productTitile: "Dilatometer Principle and Working",
+        desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      },
+    ],
+  },
+];
+

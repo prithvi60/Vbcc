@@ -16,7 +16,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <Navbar position="static" maxWidth="2xl" className="font-urbanist font-medium py-2  ">
+      <Navbar position="static" maxWidth="2xl" className="font-urbanist font-medium py-2  border border-[#B6BABD]">
         <NavbarBrand>
           <Link href="/" className="relative h-5 w-32 cursor-pointer">
             <Image

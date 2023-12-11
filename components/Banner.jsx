@@ -9,7 +9,7 @@ function NextArrow(props) {
       className="hidden md:block absolute top-0 -right-8 -mt-1 cursor-pointer"
       onClick={onClick}
     >
-      <MdOutlineKeyboardArrowRight className="text-secondary h-8 w-8"/>
+      <MdOutlineKeyboardArrowRight className="text-secondary h-8 w-8 hover:text-info"/>
     </div>
   );
 }
@@ -21,7 +21,7 @@ function PrevArrow(props) {
       className="hidden md:block absolute top-0 -left-8 -mt-1 cursor-pointer"
       onClick={onClick}
     >
-      <MdKeyboardArrowLeft className=" text-secondary h-8 w-8"/>
+      <MdKeyboardArrowLeft className=" text-secondary h-8 w-8 hover:text-info"/>
     </div>
   );
 }

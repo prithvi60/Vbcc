@@ -1,4 +1,5 @@
 import { AllPageHero } from "@/components/AllPageHero";
+import { BlogSection } from "@/components/blog/BlogSection";
 
 const obj ={
   title:"Blog/Article",
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main>
       <AllPageHero title={obj.title} desc={obj.desc} ImgSrc={obj.ImgSrc}/>
+      <BlogSection/>
     </main>
   );
 }
