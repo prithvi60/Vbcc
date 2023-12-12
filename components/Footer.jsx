@@ -107,7 +107,7 @@ const Footer = () => {
       </div>
       <div className=" p-5 md:px-16 md:py-5 text-zinc-500 border-y-1 border-[#2D4152] bg-primary col-span-3 tracking-tight font-semibold font-urbanist leading-snug">
         <h1 className="hidden md:block text-7xl">VBCC HIGH TEMPERATURE INSTRUMENTS</h1>
-        <h1 className="md:hidden block text-[134px]">VBCC</h1>
+        <h1 className="md:hidden block text-8xl sm:text-[134px]">VBCC</h1>
       </div>
       <div className="text-sm p-5 md:px-16 md:py-5 text-zinc-500 border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
         <div className="flex justify-center md:justify-between items-center">

@@ -17,7 +17,7 @@ export const BlogProductPage = () => {
           </Button>
         </div>
         <div className="space-y-10 lg:space-y-[60px]">
-          <div className="relative w-full h-[505px]">
+          <div className="relative w-full h-[300px] md:h-[505px]">
             <Image
               fill
               src={"/blog-2.png"}
@@ -25,15 +25,15 @@ export const BlogProductPage = () => {
               className="absolute object-cover object-center"
             />
           </div>
-          <div>
+          <div className="space-y-3">
             <h4 className="font-Lora text-2xl lg:text-[32px] tracking-wide">Dilatometer Principle and Working</h4>
             <p className="font-urbanist text-base lg:text-xl leading-loose">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
           </div>
-          <div>
+          <div className="space-y-3">
             <h4 className="font-Lora text-2xl tracking-wide">Dilatometer Principle and Working</h4>
             <p className="font-urbanist text-base lg:text-xl leading-loose">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
           </div>
-          <div>
+          <div className="space-y-3">
             <h4 className="font-Lora text-2xl lg:text-[32px] tracking-wide">Dilatometer Principle and Working</h4>
             <p className="font-urbanist text-base lg:text-xl leading-loose">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
           </div>

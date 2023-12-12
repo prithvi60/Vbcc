@@ -4,7 +4,7 @@ import { BlogCards } from "./BlogCards";
 import { BlogCard } from "@/libs/data";
 export const BlogSection = () => {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist bg-secondary">
+    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:p-[60px] font-urbanist bg-secondary">
         <Tabs
         aria-label="Options"
         classNames={{

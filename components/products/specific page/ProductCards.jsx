@@ -1,18 +1,19 @@
-import { cards, relatedProducts } from "@/libs/data";
-import { Dumbbell } from "@/svg_components/Dumbbell";
-import { Glass } from "@/svg_components/Glass";
-import { Card, CardBody, CardFooter, Link } from "@nextui-org/react";
-import Image from "next/image";
+import { Dumbbell } from '@/svg_components/Dumbbell'
+import { Glass } from '@/svg_components/Glass'
+import { Card, CardBody, CardFooter } from '@nextui-org/react'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
-export const ProductCard = () => {
+export const ProductCards = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
-      {relatedProducts.map((card, idx) => (
+    <section>
+        {cards.map((card, idx) => (
         <div className="block group space-y-4" key={idx}>
           <Card
             className="min-w-full md:min-w-[50%] pb-4 md:last:min-w-full md:last:col-span-2 z-10"
           >
-            <CardBody className="h-[335px] w-full">
+            <CardBody>
               <div className="block space-y-1.5">
                 <div className="p-3.5 border border-info w-max rounded-full">
                   <Dumbbell className={"fill-info h-6 w-6 "} />
@@ -27,7 +28,7 @@ export const ProductCard = () => {
               >
                 View
               </p>
-              <div className="relative h-full w-full">
+              <div className="relative h-[195px] xl:h-[250px] w-full">
                 <Image
                   fill
                   src={"/product-img.png"}
@@ -65,5 +66,5 @@ export const ProductCard = () => {
         </div>
       ))}
     </section>
-  );
-};
+  )
+}

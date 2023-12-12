@@ -6,6 +6,13 @@ import { CiSearch } from "react-icons/ci";
 import Filter from "./Filter";
 import ProductFC from "./ProductF&C";
 
+const sortProduct = [
+  { value: "relevance" },
+  { value: "new products" },
+  { value: "featured" },
+  { value: "best sellers" },
+];
+
 const ProductSection = () => {
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
@@ -37,6 +44,7 @@ const ProductSection = () => {
           setOpen={setOpen}
           selectedItem={selectedItem}
           SetselectedItem={SetselectedItem}
+          source={sortProduct}
         />
         <div className="flex md:hidden items-center gap-2 border border-warning px-4 py-2 rounded-full">
           <CiSearch className="h-7 w-7 text-warning" />

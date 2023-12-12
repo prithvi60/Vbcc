@@ -67,6 +67,7 @@ export const CustomSelectMd = ({
   setOpen,
   selectedItem,
   SetselectedItem,
+  source
 }) => {
   return (
     <div className="block space-y-5 bg-secondary w-full h-auto">
@@ -90,7 +91,7 @@ export const CustomSelectMd = ({
             : "hidden"
         }`}
       >
-        {sortProduct.map((item, idx) => (
+        {source.map((item, idx) => (
           <li
             className={`p-3 border-b border-warning last:border-b-0 capitalize cursor-pointer font-Lora text-base md:text-2xl text-primary hover:bg-info hover:duration-1000 hover:bg-opacity-30 ${
               selectedItem === item.value ? "bg-white" : ""

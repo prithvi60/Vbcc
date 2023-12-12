@@ -29,15 +29,6 @@ export const logos = [
   "/bhel.svg",
   "/IIT_Hyderabad.svg",
   "/drdo.svg",
-  "/Isro svg.svg",
-  "/vit.svg",
-  "/IIT-Madras.svg",
-  "/AU.svg",
-  "/CGCRI.svg",
-  "/csir.svg",
-  "/bhel.svg",
-  "/IIT_Hyderabad.svg",
-  "/drdo.svg",
 ];
 
 // testimonial
@@ -275,17 +266,17 @@ export const blog = [
 export const statistics = [
   {
     title: "Satisfied Clientele",
-    count: "500+",
+    count: "500",
     firm: "ISRO, IITM, VIT, CERI, CGCRI",
   },
   {
     title: "Years of Expertise",
-    count: "20+",
+    count: "20",
     firm: "Ceramics, Furnaces, Industrial",
   },
   {
     title: "Instruments Installed",
-    count: "8000+",
+    count: "8000",
     firm: "Ganpule, Aristocrat, Rivere",
   },
 ];
@@ -381,6 +372,22 @@ export const cards = [
   { productName: "Glove Box", type: "Material Preparation" },
   { productName: "Glove Box", type: "Material Preparation" },
   { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+  { productName: "Glove Box", type: "Material Preparation" },
+];
+
+// Product Specific
+// Product Carousel
+export const carousel = [
+  {id:"1", img:"/sample 1.png"},
+  {id:"2", img:"/sample 2.png"},
+  {id:"3", img:"/sample 3.png"},
+  {id:"4", img:"/sample 4.png"},
+]
+
+// Related Products
+export const relatedProducts = [
   { productName: "Glove Box", type: "Material Preparation" },
   { productName: "Glove Box", type: "Material Preparation" },
   { productName: "Glove Box", type: "Material Preparation" },
@@ -560,17 +567,17 @@ export const FAQ = [
 // logos
 export const testimonials = [
   { id: "1", logo: "/AU.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "2", logo: "/CGCRI.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "3", logo: "/csir.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "4", logo: "/Isro svg.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "5", logo: "/IIT-Madras.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "6", logo: "/vit.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "7", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "8", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "2", logo: "/CGCRI.svg", pdf: "/CGCRI testimonial.png" },
+  { id: "3", logo: "/csir.svg", pdf: "/CERI testimonial.png" },
+  { id: "4", logo: "/Isro svg.svg", pdf: "/ISRO - VSSC testimonial.png" },
+  { id: "5", logo: "/IIT-Madras.svg", pdf: "/IIT Madras testimonial.png" },
+  { id: "6", logo: "/vit.svg", pdf: "/VIT University testimonial.png" },
+  { id: "7", logo: "/Layer.svg", pdf: "/Velammal Engineering testimonial.png" },
+  { id: "8", logo: "/Layer.svg", pdf: "/CERI testimonial.png" },
   { id: "9", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "10", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "11", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "12", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
+  { id: "10", logo: "/Layer.svg", pdf: "/CERI testimonial.png" },
+  { id: "11", logo: "/Layer.svg", pdf: "/VIT University testimonial.png" },
+  { id: "12", logo: "/Layer.svg", pdf: "/Velammal Engineering testimonial.png" },
 ];
 
 // Blog
@@ -641,3 +648,21 @@ export const BlogCard = [
   },
 ];
 
+// Explore cards
+export const explore = [
+  {
+    img: "/blog-1.png",
+    productTitile: "Dilatometer Principle and Working",
+    desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  },
+  {
+    img: "/blog-1.png",
+    productTitile: "Dilatometer Principle and Working",
+    desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  },
+  {
+    img: "/blog-1.png",
+    productTitile: "Dilatometer Principle and Working",
+    desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  },
+]
