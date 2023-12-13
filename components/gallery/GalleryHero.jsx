@@ -1,5 +1,7 @@
-import Link from "next/link";
+"use client";
+// import Link from "next/link";
 import React from "react";
+import { Link } from "react-scroll";
 
 export const GalleryHero = () => {
   return (
@@ -9,9 +11,36 @@ export const GalleryHero = () => {
           Gallery
         </h2>
         <div className="flex flex-col gap-1.5 space-y-1.5 font-urbanist">
-            <Link href={"#culture"} className="border border-secondary px-6 py-3 rounded-full w-max">Culture</Link>
-            <Link href={"#visitation"} className="border border-secondary px-6 py-3 rounded-full w-max">Visitations</Link>
-            <Link href={"#awards"} className="border border-secondary px-6 py-3 rounded-full w-max">Awards</Link>
+          <Link
+            to="culture"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={800}
+            className="border border-secondary px-6 py-3 rounded-full w-max cursor-pointer"
+          >
+            Culture
+          </Link>
+          <Link
+          to="visitation"
+          spy={true}
+          smooth={true}
+          offset={10}
+          duration={800}
+            className="border border-secondary px-6 py-3 rounded-full w-max cursor-pointer"
+          >
+            Visitations
+          </Link>
+          <Link
+          to="awards"
+          spy={true}
+          smooth={true}
+          offset={10}
+          duration={800}
+            className="border border-secondary px-6 py-3 rounded-full w-max cursor-pointer"
+          >
+            Awards
+          </Link>
         </div>
       </div>
     </section>

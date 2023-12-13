@@ -10,14 +10,15 @@ import {
   Button,
 } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 const Blog = () => {
-    const [selected, setSelected] = useState("photos");
+  const [selected, setSelected] = useState("photos");
   return (
     <section className="py-16 px-6 md:px-10 xl:p-16 bg-primary font-urbanist">
       <div className="flex flex-col justify-center items-center gap-8">
         <h3 className="font-Lora text-3xl md:text-5xl text-secondary">
-        News/Journal
+          News/Journal
         </h3>
         <div className="flex flex-col justify-center items-center w-full">
           <Tabs
@@ -38,7 +39,7 @@ const Blog = () => {
               >
                 <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[65vh] lg:h-[74vh]">
                   {item.sub.map((card, id) => (
-                    <Card
+                    <Card as={Link} href={"/blog/1"}
                       className="w-[340px] md:w-[300px] bg-secondary text-warning rounded-none font-urbanist p-5 space-y-2"
                       key={id}
                     >
@@ -73,18 +74,15 @@ const Blog = () => {
             ))}
           </Tabs>
         </div>
-          <Button
-            color="secondary"
-            variant="bordered"
-            className="text-secondary px-6 py-5 border-secondary"
-            size="lg"
-            radius="full"
-          >
-            View All
-          </Button>
+        <Link
+          href="/blog"
+          className="text-secondary px-6 py-5 border border-secondary font-urbanist rounded-full"
+        >
+          View All
+        </Link>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

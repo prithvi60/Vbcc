@@ -19,7 +19,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           />
         </div>
         <div className="flex items-center gap-7">
-        <Button as={Link} href="/contact" variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5 capitalize">Contact us</Button>
+        <Button as={Link} href="/contact" variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5 capitalize"  onClick={() => setIsOpen(!isOpen)}>Contact us</Button>
         <RxCross1
           className={` h-5 w-5 md:h-7 md:w-7 text-[#EFF3F6] cursor-pointer hover:text-info`}
           onClick={() => setIsOpen(!isOpen)}
@@ -29,8 +29,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       <div className="flex justify-center md:justify-between items-center py-14 md:py-2 ">
         <ul className="p-3">
           {Navlink.map((link, idx) => (
-            <li key={idx} className="text-secondary uppercase text-xl md:text-3xl mb-3 group">
-              <Link className="flex items-center gap-4 group-hover:text-info" href={link.href}>{link.title}<RiArrowRightUpLine className="h-8 w-8 hidden group-hover:block group-hover:text-info"/></Link>
+            <li key={idx} className="w-max uppercase text-xl md:text-3xl mb-3 group rounded-lg after:h-1 after:w-full after:bg-info after:block after:transition-all hover:after:h-1 md:after:w-0 md:hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-white"  onClick={() => setIsOpen(!isOpen)}>
+              <Link className="flex items-center gap-4  " href={link.href}>{link.title}<RiArrowRightUpLine className="h-8 w-8 hidden group-hover:block group-hover:text-info"/></Link>
             </li>
           ))}
         </ul>
@@ -45,8 +45,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       </div>
       <div className="flex flex-wrap justify-between items-center gap-5">
         <div className="space-x-5">
-          <Button variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5">Location?</Button>
-          <Button variant="bordered" className="border-info text-info text-sm md:text-base rounded-3xl p-5">FAQs</Button>
+          <Link href={"/location"} className="border border-info text-info text-sm md:text-base rounded-full px-6 py-5"  onClick={() => setIsOpen(!isOpen)}>Location ?</Link>
+          <Link href={"/faq"} className="border border-info text-info text-sm md:text-base rounded-full px-6 py-5"  onClick={() => setIsOpen(!isOpen)}>FAQs</Link>
         </div>
         <div className="flex justify-evenly items-center gap-3">
               <Link href={"/"} className="p-2.5 rounded-full border border-info hover:bg-info">

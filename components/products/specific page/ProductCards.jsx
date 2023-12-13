@@ -1,3 +1,4 @@
+import { relatedProducts } from '@/libs/data'
 import { Dumbbell } from '@/svg_components/Dumbbell'
 import { Glass } from '@/svg_components/Glass'
 import { Card, CardBody, CardFooter } from '@nextui-org/react'
@@ -7,10 +8,10 @@ import React from 'react'
 
 export const ProductCards = () => {
   return (
-    <section>
-        {cards.map((card, idx) => (
+    <section className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary'> 
+        {relatedProducts.map((card, idx) => (
         <div className="block group space-y-4" key={idx}>
-          <Card
+          <Card 
             className="min-w-full md:min-w-[50%] pb-4 md:last:min-w-full md:last:col-span-2 z-10"
           >
             <CardBody>
@@ -22,12 +23,12 @@ export const ProductCards = () => {
                   <Glass className={"h-6 w-6"} />
                 </div>
               </div>
-              <p
+              <Link href={"/products/1"}
                 className="group-hover:absolute group-hover:top-3.5 group-hover:right-4 group-hover:px-3.5
                         group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
               >
                 View
-              </p>
+              </Link>
               <div className="relative h-[195px] xl:h-[250px] w-full">
                 <Image
                   fill
@@ -42,7 +43,7 @@ export const ProductCards = () => {
                 <h4 className="text-[#0D0D0D] font-urbanist">{card.productName}</h4>
                 <h4 className="text-[#6C6C6C] font-urbanist text-sm">{card.type}</h4>
             </div>
-          <Link href="/" className="border border-warning px-4 py-2.5 rounded-full font-urbanist text-warning">
+          <Link href="/contact" className="border border-warning px-4 py-2.5 rounded-full font-urbanist text-warning">
             Contact
           </Link>
         </CardFooter>
@@ -57,7 +58,7 @@ export const ProductCards = () => {
               </h4>
             </div>
             <Link
-              href="/"
+              href="/contact"
               className="border border-warning px-4 py-2.5 rounded-full font-urbanist text-warning"
             >
               Contact

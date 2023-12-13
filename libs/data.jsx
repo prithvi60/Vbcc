@@ -16,7 +16,7 @@ export const Navlink = [
 ];
 
 // Hero
-export const hero = ["/hero-bg.png", "/hero-bg-2.jpg", "/hero-bg-3.jpg"];
+export const hero = ["/hero-bg.png", "/hero-bg-2.png", "/hero-bg-3.png"];
 
 // Clients
 export const logos = [

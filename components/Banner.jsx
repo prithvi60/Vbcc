@@ -39,15 +39,15 @@ const Banner = () => {
   };
   return (
     <section className="py-2 bg-primary">
-        <div className="md:w-[70%] lg:w-[50%] mx-auto">
+        <div className="md:w-[70%] lg:w-[50%] mx-auto font-urbanist text-white text-sm">
         <Slider {...settings}>
-          <div className="text-secondary text-center">
+          <div className="text-center">
             <h3>Free Shipping on orders over $4000 US</h3>
           </div>
-          <div className="text-secondary text-center">
+          <div className="text-center">
             <h3>Free Shipping on orders over</h3>
           </div>
-          <div className="text-secondary text-center">
+          <div className="text-center">
             <h3>Free Shipping on orders over $4000 US</h3>
           </div>
         </Slider>

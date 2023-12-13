@@ -10,6 +10,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 const Products = () => {
   const [selected, setSelected] = useState("photos");
@@ -38,6 +39,8 @@ const Products = () => {
                 <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[73vh]">
                   {item.sub.map((card, id) => (
                     <Card
+                      as={Link}
+                      href={"/products/1"}
                       className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
                       key={id}
                     >
@@ -55,8 +58,10 @@ const Products = () => {
                           />
                         </div>
                         {/* <div> */}
-                        <p className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
-                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block">
+                        <p
+                          className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
+                        >
                           View
                         </p>
                         {/* </div> */}
@@ -81,15 +86,12 @@ const Products = () => {
             ))}
           </Tabs>
         </div>
-        <Button
-          color="secondary"
-          variant="bordered"
-          className="text-warning px-6 py-5 border-warning"
-          size="lg"
-          radius="full"
+        <Link
+          href="/products"
+          className="text-warning px-6 py-5 border border-warning rounded-full "
         >
           View All Products
-        </Button>
+        </Link>
       </div>
     </section>
   );

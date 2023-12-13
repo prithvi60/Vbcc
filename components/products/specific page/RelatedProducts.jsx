@@ -1,6 +1,6 @@
 import { Button } from '@nextui-org/react'
 import React from 'react'
-import { ProductCard } from '../ProductCard'
+import { ProductCards } from './ProductCards'
 
 export const RelatedProducts = () => {
   return (
@@ -9,7 +9,7 @@ export const RelatedProducts = () => {
             <h5 className='text-sm font-urbanist'>Related products</h5>
             <h3 className='font-Lora text-[40px]'>Material Preparation</h3>
         </div>
-        <ProductCard/>
+        <ProductCards/>
         <Button variant='bordered' color='primary' radius='full' className='px-6 py-5 font-urbanist'>View All</Button>
     </section>
   )

@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee"
 
 const Clients = () => {
   return (
-    <section className="py-16 bg-secondary space-y-8">
+    <section className="py-16 bg-secondary space-y-8" id="client">
       <h3 className="px-8 md:px-16 text-lg md:text-xl text-primary">Our Prestigious Clients</h3>
         <Marquee pauseOnHover speed={70}>
       <div className="flex items-center gap-[100px]">

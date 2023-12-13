@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import { testimonial } from "@/libs/data";
+import Link from "next/link";
 
 function NextArrow(props) {
   const {onClick } = props;
@@ -86,15 +87,11 @@ const Testimonials = () => {
           ))}
         </Slider>
         <div className="text-center">
-          <Button
-            color="secondary"
-            variant="bordered"
-            className="px-6 py-5 border-secondary text-secondary"
-            size="lg"
-            radius="full"
+          <Link href="/testimonials"
+            className="px-6 py-5 rounded-full border border-secondary text-secondary"
           >
             View All
-          </Button>
+          </Link>
         </div>
       </div>
     </section>

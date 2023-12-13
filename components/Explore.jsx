@@ -9,7 +9,7 @@ const Explore = () => {
         <div className="space-y-5">
             <h3 className="text-xl md:text-4xl text-white text-center">Your Visualization of your Product, We bring to life.</h3>
             <div className="w-max mx-auto">
-            <Link href={"/"} className="text-2xl rounded-lg after:h-1 after:w-full  after:bg-info after:block after:transition-all hover:after:h-1 md:after:w-0 md:hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-white group mx-auto">
+            <Link href="/products" className="text-2xl rounded-lg after:h-1 after:w-full after:bg-info after:block after:transition-all hover:after:h-1 md:after:w-0 md:hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-white group mx-auto">
             <h4 className="text-xl md:text-4xl flex justify-center items-center gap-4">Explore Products
             <RiArrowRightUpLine className="h-10 w-10 mt-2 text-info md:text-secondary md:group-hover:text-info"/>
             </h4>

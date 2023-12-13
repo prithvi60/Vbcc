@@ -1,10 +1,10 @@
 "use client";
 import Slider from "react-slick";
 import { Button } from "@nextui-org/react";
-import Link from "next/link";
+import { Link as Mylink } from "react-scroll";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import Carousel from "./Carousel";
-import { hero } from "@/libs/data";
+import Link from "next/link";
 const Hero = () => {
   return (
     <section className="h-screen w-full relative">
@@ -36,40 +36,33 @@ const Hero = () => {
           <h3 className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2 ">
             Tailor Made
           </h3>
-          {/* <div> */}
           <Carousel />
-          {/* </div> */}
         </div>
         <div className="flex justify-center items-center gap-6">
-          <Button
-            variant="bordered"
-            className="border-secondary text-secondary text-sm md:text-base rounded-3xl p-6 bg-black/30 backdrop-blur-md"
+          <Link
+            href="/products"
+            className="border border-secondary text-secondary text-sm md:text-base rounded-full px-6 py-5 bg-black/30 backdrop-blur-md font-urbanist"
           >
             Our Products
-          </Button>
-          {/* <Link 
-          href={"#"}
-            className="px-6 py-5 h-10 w-auto border  hover:border hover:text-white rounded-3xl duration-500 group overflow-hidden border-secondary text-secondary text-sm md:text-base bg-black/30 backdrop-blur-md"
-          >
-            <div className="group-hover:animate-spin_word space-y-4">
-              <p>Our Products</p>
-              <p>Our Products</p>
-            </div>
-          </Link> */}
-          <Button
-            variant="bordered"
-            className="border-secondary text-secondary text-sm md:text-base rounded-3xl p-6 bg-black/30 backdrop-blur-md"
+          </Link>
+          <Link
+            href="/contact"
+            className="border border-secondary text-secondary text-sm md:text-base rounded-full px-6 py-5 bg-black/30 backdrop-blur-md font-urbanist"
           >
             Contact Us
-          </Button>
+          </Link>
         </div>
       </div>
-      <Link
-        href={"#"}
-        className="absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-3 border border-secondary bg-black/30 backdrop-blur-md hover:opacity-70"
+      <Mylink
+        to="client"
+        spy={true}
+        smooth={true}
+        offset={20}
+        duration={800}
+        className="absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-3 border border-secondary bg-black/30 backdrop-blur-md hover:opacity-70 cursor-pointer"
       >
         <HiOutlineArrowNarrowDown className="h-7 w-7 text-secondary" />
-      </Link>
+      </Mylink>
     </section>
   );
 };

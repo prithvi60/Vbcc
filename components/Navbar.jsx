@@ -15,7 +15,7 @@ import MobileNav from "./MobileNav";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav>
+    <nav id="nav">
       <Navbar position="static" maxWidth="2xl" className="font-urbanist font-medium py-2  border border-[#B6BABD]">
         <NavbarBrand>
           <Link href="/" className="relative h-5 w-32 cursor-pointer">
@@ -32,10 +32,11 @@ const NavBar = () => {
           justify="center"
         >
           {Navlinks.map((link, idx) => (
-            <NavbarItem key={idx}>
-              <Link href={link.href} className="text-warning py-[26px]  hover:border-b-8 hover:border-info">
-                {link.title}
+            <NavbarItem key={idx} className="h-full relative group">
+              <Link href={link.href} className="h-full text-warning">
+               {link.title} 
               </Link>
+               <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-2 group-hover:left-0 group-hover:h-2 group-hover:w-full bg-info"/>
             </NavbarItem>
           ))}
         </NavbarContent>
