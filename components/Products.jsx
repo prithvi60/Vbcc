@@ -25,16 +25,22 @@ const Products = () => {
             aria-label="Options"
             selectedKey={selected}
             onSelectionChange={setSelected}
-            variant={"light"}
-            color="primary"
-            radius="full"
-            size="lg"
+            classNames={{
+              tabList:
+                "gap-4 w-full relative rounded-none p-0 h-auto justify-center flex-wrap bg-secondary pb-5",
+              cursor: "w-full bg-primary rounded-full px-4 py-4",
+              tab: "w-max text-base tracking-tight border border-warning p-5 rounded-full font-Lora",
+              tabContent: "group-data-[selected=true]:text-white",
+            }}
           >
             {products.map((item) => (
               <Tab
                 key={item.title}
-                title={item.title}
-                className="rounded-full text-base capitalize"
+                title={
+                  <span className="text-warning group-data-[selected=true]:text-white capitalize">
+                    {item.title}
+                  </span>
+                }
               >
                 <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[73vh]">
                   {item.sub.map((card, id) => (

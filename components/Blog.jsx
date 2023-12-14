@@ -25,21 +25,28 @@ const Blog = () => {
             aria-label="Options"
             selectedKey={selected}
             onSelectionChange={setSelected}
-            // variant={""}
-            color="primary"
-            radius="full"
-            size="lg"
-            className="text-secondary bg-primary"
+            classNames={{
+              tabList:
+                "gap-4 w-full relative rounded-none p-0 h-auto justify-center flex-wrap bg-primary pb-5",
+              cursor: "w-full bg-secondary rounded-full px-4 py-4",
+              tab: "w-max text-base tracking-tight border border-white p-5 rounded-full font-Lora",
+              tabContent: "group-data-[selected=true]:text-warning",
+            }}
           >
             {blog.map((item) => (
               <Tab
                 key={item.title}
-                title={item.title}
-                className="rounded-full text-base capitalize"
+                title={
+                  <span className="text-white group-data-[selected=true]:text-warning capitalize">
+                    {item.title}
+                  </span>
+                }
               >
                 <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[65vh] lg:h-[74vh]">
                   {item.sub.map((card, id) => (
-                    <Card as={Link} href={"/blog/1"}
+                    <Card
+                      as={Link}
+                      href={"/blog/1"}
                       className="w-[340px] md:w-[300px] bg-secondary text-warning rounded-none font-urbanist p-5 space-y-2"
                       key={id}
                     >

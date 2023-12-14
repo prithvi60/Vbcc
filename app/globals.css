@@ -3,13 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components{
-   .btn_hover{
-    @apply rounded-lg after:h-0.5 after:w-0 after:block after:transition-all hover:after:h-0.5 hover:after:w-full  hover:after:block hover:after:ease-linear hover:after:duration-[3000]
+@layer components {
+  .btn_hover {
+    @apply rounded-lg after:h-0.5 after:w-0 after:block after:transition-all hover:after:h-0.5 hover:after:w-full  hover:after:block hover:after:ease-linear hover:after:duration-[3000];
   }
 }
-
 
 * {
   margin: 0;
@@ -32,12 +30,22 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
+/* React Slider custom */
+.slick-vertical,
+.slick-slide,
+.slick-slider {
+  border: none !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .custom::-webkit-scrollbar {
   width: 0px;
   display: none;
 }
 
 /* animate play&pause */
-.pause:hover{
+.pause:hover {
   animation-play-state: paused;
 }

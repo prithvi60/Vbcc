@@ -20,13 +20,10 @@ const Hero = () => {
         vertical={true}
         verticalSwiping={true}
         pauseOnHover={false}
-        className="!gap-0"
       >
-        {/* {hero.map((item,idx)=>( */}
-        <div className="h-screen w-full bg-hero-pattern bg-cover bg-center flex justify-center items-center font-urbanist font-medium text-secondary "></div>
-        <div className="h-screen w-full bg-hero-pattern-2 bg-cover bg-center flex justify-center items-center font-urbanist font-medium text-secondary "></div>
-        <div className="h-screen w-full bg-hero-pattern-3 bg-cover bg-center flex justify-center items-center font-urbanist font-medium text-secondary "></div>
-        {/* ))}  */}
+        <div className="h-screen w-full bg-hero-pattern bg-cover bg-center"></div>
+        <div className="h-screen w-full bg-hero-pattern-2 bg-cover bg-center"></div>
+        <div className="h-screen w-full bg-hero-pattern-3 bg-cover bg-center"></div>
       </Slider>
       <div className="text-center space-y-4 md:space-y-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h4 className="text-xl md:text-2xl uppercase">

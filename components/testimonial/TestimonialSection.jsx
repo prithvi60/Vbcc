@@ -9,23 +9,35 @@ export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
   const slideVariants = {
     slide: {
-      x: 1000,
+      // x: 1000,
       opacity: 0,
     },
     visible: {
-      x: 0,
+      // x: 0,
       opacity: 1,
-      transition :{
-        x: {type : "spring",stiffness: 400,damping: 50,},
+      transition: {
+        duration: 1,
+        delay : 0.2,
         opacity :{duration: 0.5}
-      }
+      },
+      // transition :{
+      //   x: {type : "spring",stiffness: 400,damping: 50,},
+      //   opacity :{duration: 0.5}
+      // }
     },
     exit: {
       opacity: 0,
-      transition :{
-        x: {type : "spring",stiffness: 400,damping: 50,},
+      scale: 0.8,
+      transition: {
+        duration: 0.5,
+        delay : 0.4,
         opacity :{duration: 0.5}
-      }
+      },
+      // transition :{
+      //   duration: 0.5,
+      //   x: {type : "spring",stiffness: 400,damping: 50,},
+      //   opacity :{duration: 0.5}
+      // }
     },
   };
   const handleChangePDF = (id) => {
@@ -35,7 +47,7 @@ export const TestimonialSection = () => {
     <section className="w-full h-screen px-5 py-10 md:px-10 md:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start">
       <div className="w-full md:w-1/2 xl:w-[65%] space-y-9">
         <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
-          Gallery
+        Testimonials
         </h2>
         <div className="w-full md:w-96 h-full md:h-auto overflow-hidden flex gap-4">
           <div className="flex flex-nowrap md:flex-wrap items-center gap-4 h-[70px] md:h-full animate-horizontal_carousel md:animate-none pause ">
