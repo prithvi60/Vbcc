@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Btn, Btn2 } from "./Btn";
 const Products = () => {
   const [selected, setSelected] = useState("photos");
   return (
@@ -77,13 +78,23 @@ const Products = () => {
                         </div>
                       </CardBody>
                       <CardFooter className="p-0">
-                        <Button
-                          color="secondary"
-                          radius="full"
-                          className="py-3 px-4 text-black w-full"
+                        <Link
+                          href={"/product"}
+                          className={`rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                         >
-                          Request a Quote
-                        </Button>
+                          <div className={`h-6 w-full overflow-hidden`}>
+                            <h4
+                              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                            >
+                              Request a Quote
+                            </h4>
+                            <h4
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                          </div>
+                        </Link>
                       </CardFooter>
                     </Card>
                   ))}
@@ -92,12 +103,20 @@ const Products = () => {
             ))}
           </Tabs>
         </div>
-        <Link
+        <Btn2
+          Hbgcolor={"bg-primary"}
+          textColor={"text-warning"}
+          HtextColor={"text-white"}
+          bColor={"border-warning"}
+          title={"View All Products"}
+          href={"/product"}
+        />
+        {/* <Link
           href="/products"
           className="text-warning px-6 py-5 border border-warning rounded-full "
         >
           View All Products
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

@@ -2,7 +2,6 @@
 import { blog } from "@/libs/data";
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Tabs,
@@ -12,6 +11,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Btn2 } from "./Btn";
 const Blog = () => {
   const [selected, setSelected] = useState("photos");
   return (
@@ -65,14 +65,31 @@ const Blog = () => {
                         </div>
                       </CardBody>
                       <CardFooter className="p-0">
-                        <Button
+                        {/* <Button
                           color="warning"
                           radius="full"
                           size="lg"
                           className="py-3 px-4 text-secondary w-full"
                         >
                           Read More
-                        </Button>
+                        </Button> */}
+                        <Link
+                          href={"/product"}
+                          className={`rounded-full px-4 py-3 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                        >
+                          <div className={`h-6 w-full overflow-hidden`}>
+                            <h4
+                              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                            <h4
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                          </div>
+                        </Link>
                       </CardFooter>
                     </Card>
                   ))}
@@ -81,12 +98,20 @@ const Blog = () => {
             ))}
           </Tabs>
         </div>
-        <Link
+        {/* <Link
           href="/blog"
           className="text-secondary px-6 py-5 border border-secondary font-urbanist rounded-full"
         >
           View All
-        </Link>
+        </Link> */}
+        <Btn2
+          Hbgcolor={"bg-white"}
+          textColor={"text-white"}
+          HtextColor={"text-warning"}
+          bColor={"border-white"}
+          title={"View All"}
+          href={"/blog"}
+        />
       </div>
     </section>
   );

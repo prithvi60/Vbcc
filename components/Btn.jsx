@@ -1,28 +1,37 @@
 import { Button } from "@nextui-org/react"
+import Link from "next/link"
 
-export const Btn = ({bgColor,HBgColor,title}) => {
+
+export const Btn = ({Hbgcolor,textColor,HtextColor,title,href,bColor}) => {
   return (
-    <Button as={Link}
-    href="#" radius="full" className={`px-4 py-3 h-10 w-auto border border-stone-800 hover:border text-gray-500 hover:text-white rounded-3xl duration-500 group overflow-hidden ${bgColor} ${HBgColor}`}>
-        <div className="group-hover:animate-spin_word">
-          <p>{title}</p>
-          <p>{title}</p>
-        </div>
-    </Button>
+    <Link href={href} className={`block rounded-full px-4 py-3 border ${bColor} bg-transparent hover:${Hbgcolor} group text-center text-base duration-700 delay-75 font-urbanist capitalize h-full w-full`}>
+      <div className={`block h-6 w-full overflow-hidden`}>
+        <h4 className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 ${textColor}`}>{title}</h4>
+        <h4 className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 ${HtextColor}`}>{title}</h4>
+      </div>
+        </Link>
   )
 }
 
-import React from 'react'
-
-export const Btn2 = ({bgColor,HBgColor,title}) => {
+export const BtnMN = ({Hbgcolor,textColor,HtextColor,title,href,bColor,isOpen,setIsOpen}) => {
   return (
-    <Button as={Link}
-    href="#" radius="full" className={`px-6 py-5 h-10 w-auto border border-stone-800 hover:border text-gray-500 hover:text-white rounded-3xl duration-500 group overflow-hidden ${bgColor} ${HBgColor}`}>
-        <div className="group-hover:animate-spin_word">
-          <p>{title}</p>
-          <p>{title}</p>
-        </div>
-    </Button>
+    <Link href={href} className={`rounded-full px-4 py-3 border ${bColor} bg-transparent hover:${Hbgcolor} group text-center text-base duration-700 delay-75 font-urbanist capitalize`} onClick={() => setIsOpen(!isOpen)}
+    >
+      <div className={`h-6 w-full overflow-hidden`}>
+        <h4 className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 ${textColor}`}>{title}</h4>
+        <h4 className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 ${HtextColor}`}>{title}</h4>
+      </div>
+        </Link>
   )
 }
 
+export const Btn2 = ({Hbgcolor,textColor,HtextColor,title,href,bColor}) => {
+  return (
+    <Link href={href} className={`rounded-full px-6 py-5 border ${bColor} bg-transparent hover:${Hbgcolor} group text-center text-base duration-700 delay-75 font-urbanist capitalize`}>
+      <div className={`h-6 w-full overflow-hidden`}>
+        <h4 className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 ${textColor}`}>{title}</h4>
+        <h4 className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 ${HtextColor}`}>{title}</h4>
+      </div>
+        </Link>
+  )
+}

@@ -64,6 +64,7 @@ module.exports = {
           warning : "#0D1924",
           danger :"#1D252D",
           info : "#FD6C2E",
+          info1: "#F1F1F1",
         }
       },
     },

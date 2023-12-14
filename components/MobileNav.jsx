@@ -5,6 +5,7 @@ import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import { Btn2 } from "./Btn";
 
 const MobileNav = ({ isOpen, setIsOpen }) => {
   return (
@@ -21,16 +22,27 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           alt="Logo"
           className=" object-contain object-center"
         />
-        <div className="flex items-center gap-7">
-          <Button
-            as={Link}
-            href="/contact"
-            variant="bordered"
-            className="border-info text-info text-sm md:text-base rounded-3xl p-5 capitalize"
+        <div
+          className="flex items-center gap-7"
+        >
+          <Link
+            href={"/contact"}
+            className={`block rounded-full px-4 py-3 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
-            Contact us
-          </Button>
+            <div className={`block h-6 w-full overflow-hidden`}>
+              <h4
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-info`}
+              >
+                Contact Us
+              </h4>
+              <h4
+                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+              >
+                Contact Us
+              </h4>
+            </div>
+          </Link>
           <RxCross1
             className={` h-5 w-5 md:h-7 md:w-7 text-[#EFF3F6] cursor-pointer hover:text-info`}
             onClick={() => setIsOpen(!isOpen)}
@@ -64,20 +76,42 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 p-5 md:px-[60px] md:py-[32px]">
-        <div className="space-x-5">
+        <div className="flex items-center gap-5">
           <Link
-            href={"/location"}
-            className="border border-info text-info text-sm md:text-base rounded-full px-6 py-5"
+            href={"/"}
+            className={`block rounded-full px-4 py-3 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
-            Location ?
+            <div className={`block h-6 w-full overflow-hidden`}>
+              <h4
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-info`}
+              >
+                 Location ?
+              </h4>
+              <h4
+                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+              >
+                 Location ?
+              </h4>
+            </div>
           </Link>
           <Link
             href={"/faq"}
-            className="border border-info text-info text-sm md:text-base rounded-full px-6 py-5"
+            className={`block rounded-full px-4 py-3 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
-            FAQs
+            <div className={`block h-6 w-full overflow-hidden`}>
+              <h4
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-info`}
+              >
+                  FAQs
+              </h4>
+              <h4
+                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+              >
+                  FAQs
+              </h4>
+            </div>
           </Link>
         </div>
         <div className="flex md:justify-evenly items-center gap-3 mt-5 mx-2 md:mt-0 md:mx-0">

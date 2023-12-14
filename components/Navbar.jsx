@@ -6,12 +6,12 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 import Image from "next/image";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileNav from "./MobileNav";
+import { Btn } from "./Btn";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -42,14 +42,7 @@ const NavBar = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button
-              as={Link}
-              href="/contact"
-              variant="bordered"
-              className="text-warning  border-warning  rounded-3xl font-normal hidden md:flex hover:bg-primary hover:text-white"
-            >
-              Contact us
-            </Button>
+            <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"contact us"} href={"/contact"}/>
           </NavbarItem>
           <NavbarItem onClick={() => setIsOpen(!isOpen)}>
               <RxHamburgerMenu className="h-5 w-5 md:h-7 md:w-7 text-warning cursor-pointer hover:text-info" />

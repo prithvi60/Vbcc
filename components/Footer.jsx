@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Link as Mylink } from "react-scroll";
 import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { HiOutlineArrowNarrowUp } from "react-icons/hi";
+import { Btn2 } from "./Btn";
 
 const Footer = () => {
   return (
@@ -119,13 +120,14 @@ const Footer = () => {
               <p className="text-info">+91 94440 12468</p>
             </div>
           </div>
-          <Button
+          {/* <Button
             variant="bordered"
             radius="full"
             className="border-info text-info"
           >
             Location ?
-          </Button>
+          </Button> */}
+          <Btn2 Hbgcolor={"bg-info"} textColor={"text-info"} HtextColor={"text-white"} bColor={"border-info"} title={"Location ?"} href={"/"}/>
         </div>
         <div className="w-full flex justify-start gap-16 md:justify-between items-center font-urbanist pt-10">
           <div className="space-y-3">
