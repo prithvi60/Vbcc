@@ -17,7 +17,7 @@ const Explore = () => {
             </div>
         </div>
         <div className="flex flex-col justify-center items-center md:grid md:grid-cols-2 xl:grid xl:grid-cols-3 gap-4">
-        <div className="bg-secondary py-8 px-5 text-center group md:text-left md:py-6 md:px-10 space-y-5 md:space-y-4 w-full sm:w-[310px] md:w-auto hover:bg-transparent hover:transition-all hover:duration-1000 hover:bg-hero-pattern bg-cover bg-center">
+        <div className="bg-secondary bg-opacity-100 py-8 px-5 text-center group md:text-left md:py-6 md:px-10 space-y-5 md:space-y-4 w-full sm:w-[310px] md:w-auto transition-all duration-500 hover:bg-opacity-0 hover:bg-hero-pattern bg-cover bg-center">
           <Ceramics className={"fill-black group-hover:fill-white h-20 w-20 "}/>
           <div className="space-y-4">
             <h3 className="text-black group-hover:text-white">Industries</h3>
