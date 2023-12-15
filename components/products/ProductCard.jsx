@@ -20,7 +20,7 @@ export const ProductCard = () => {
   return (
     <section className="bg-secondary space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-[60vh] md:h-full">
-        {cards.slice(firstIndex, lastIndex).map((card, idx) => (
+        {cards.slice(0, lastIndex).map((card, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
             <Link
               href={"/products/1"}
