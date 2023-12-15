@@ -16,24 +16,28 @@ export const Culture = () => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? 1000 : -1000, opacity: 0 };
+      return { y: direction > 0 ? "100% ": "-100%", opacity: 0 };
     },
     visible: {
       y: 0,
       opacity: 1,
-      transition :{
-        y: {type : "spring",stiffness: 400,damping: 50,},
-        opacity :{duration: 0.5}
-      }
+      transition: {
+        // y: { type: "spring", stiffness: 400, damping: 50 },
+        duration: 1,
+        opacity: { duration: 0.5 },
+      },
     },
     exit: (direction) => {
       return {
-        y: direction > 0 ? -1000 : 1000,
+        y: direction > 0 ? "-100% ": "100%",
         opacity: 0,
-        transition :{
-          y: {type : "spring",stiffness: 400,damping: 50,},
-          opacity :{duration: 0.5}
-        }
+        scale: 0.5,
+        transition: {
+          y: { type: "spring", stiffness: 400, damping: 50 },
+          duration: 0.5,
+          opacity: { duration: 0.5 },
+          delay: 2
+        },
       };
     },
   };
@@ -55,16 +59,16 @@ export const Culture = () => {
     setCurrentIndex(id);
   };
   return (
-    <section className="px-5 py-10 md:py-[60px] md:px-[60px]" id="culture">
+    <section className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10" id="culture">
       <div className="w-full xl:px-10 flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning">
-        <div className="w-full md:w-1/2 xl:w-[65%]">
+        <div className="w-full md:w-1/2 lg:w-[65%]">
           <AnimatePresence initial={false} custom={direction}>
             <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
               <motion.img
                 // fill
                 src={imgSrc[currentIndex]}
                 alt="Logo"
-                key={imgSrc[currentIndex]}
+                key={currentIndex}
                 className="w-full h-full object-cover object-center "
                 variants={slideVariants}
                 initial="slide"
@@ -79,8 +83,10 @@ export const Culture = () => {
           <div className="hidden md:flex flex-wrap items-center gap-2.5">
             {imgSrc.map((img, idx) => (
               <div
-                className={`relative md:h-[105px] md:w-[160px]  lg:w-[195px] cursor-pointer ${
-                  currentIndex === idx ? " rounded-2xl border-2 border-info" : " "
+                className={`relative md:h-[105px] md:w-[160px] lg:w-[185px]  xl:w-[205px] 2xl:w-[230px] cursor-pointer ${
+                  currentIndex === idx
+                    ? " rounded-2xl border-2 border-info"
+                    : " "
                 } `}
                 key={idx}
                 onClick={() => handleThumbnail(idx)}
@@ -94,12 +100,11 @@ export const Culture = () => {
               </div>
             ))}
           </div>
-          <div className="block space-y-10 md:space-y-24 h-full w-full">
+          <div className="block space-y-10 md:space-y-24 w-full h-full">
             <h4 className="font-Lora text-xl md:text-[40px]">Culture</h4>
             <div className="flex justify-between items-center">
               <p className="font-urbanist text-base w-3/5">
-                Redefining what it means to be a team. Showcasing our Work life
-                through the years.
+                Redefining what it means to be a team. Showcasing our Work lifethrough the years.
               </p>
               <div className="flex items-center gap-3">
                 <div

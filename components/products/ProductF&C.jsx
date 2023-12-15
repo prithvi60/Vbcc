@@ -8,7 +8,7 @@ const ProductFC = () => {
     const [selectedItem, SetselectedItem] = useState("All Products");
   return (
     <section className="flex items-start gap-[60px] xl:px-[60px]">
-        <div className="hidden lg:block space-y-10">
+        <div className="hidden lg:block space-y-10 lg:sticky lg:top-5">
             <div className="block space-y-6">
                 <h4 className="uppercase text-xl text-warning font-Lora">category</h4>
                 <ul className="text-warning text-opacity-50 font-Lora text-2xl space-y-2">
@@ -25,7 +25,7 @@ const ProductFC = () => {
             </div>
             <Divider className="bg-warning bg-opacity-40"/>
             <div className="hidden lg:block space-y-6">
-                <h4 className="uppercase text-xl text-warning font-Lora">category</h4>
+                <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>
                 <ul className="space-y-3">
                     {filters.map((f,idx)=>(
                     <li key={idx} className={`flex items-center gap-2 w-max cursor-pointer`} 
@@ -42,7 +42,9 @@ const ProductFC = () => {
             </div>
             <div className="text-base text-warning font-urbanist uppercase tracking-wide cursor-pointer">Clear Filters</div>
         </div>
+        <div className="block w-full h-full space-y-10">
         <ProductCard/>
+        </div>
     </section>
   )
 }

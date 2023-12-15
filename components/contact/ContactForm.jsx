@@ -1,4 +1,4 @@
-import { Input } from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 export const ContactForm = () => {
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 text-warning space-y-10">
@@ -80,9 +80,20 @@ export const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="px-4 py-3 bg-primary font-urbanist w-full md:w-[350px] text-white rounded-full"
+          className={`block rounded-full px-4 py-3 border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full md:w-[350px] group`}
         >
-          Contact
+          <div className={`h-6 w-full overflow-hidden`}>
+            <h4
+              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white`}
+            >
+              Contact
+            </h4>
+            <h4
+              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+            >
+              Contact
+            </h4>
+          </div>
         </button>
       </form>
     </section>

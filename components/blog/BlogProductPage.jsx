@@ -9,12 +9,28 @@ export const BlogProductPage = () => {
           <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
             Dilatometer Principle and Working
           </h2>
-          <Button
+          {/* <Button
             variant="bordered"
             className="px-4 py-2.5 border border-warning w-max rounded-full font-urbanist text-warning"
           >
             Feature
-          </Button>
+          </Button> */}
+          <div
+              className={`block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                >
+                  Feature
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                >
+                  Feature
+                </h4>
+              </div>
+            </div>
         </div>
         <div className="space-y-10 lg:space-y-[60px]">
           <div className="relative w-full h-[300px] md:h-[505px]">

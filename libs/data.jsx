@@ -129,7 +129,27 @@ export const products = [
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
-    ],
+      {
+        img: "/product.png",
+        title: "thermal testing",
+        desc: "Dilatometer up to 1000°C (Thermal Expansion)",
+      },
+      {
+        img: "/product.png",
+        title: "thermal testing",
+        desc: "Dilatometer up to 1000°C (Thermal Expansion)",
+      },
+      {
+        img: "/product.png",
+        title: "thermal testing",
+        desc: "Dilatometer up to 1000°C (Thermal Expansion)",
+      },
+      {
+        img: "/product.png",
+        title: "thermal testing",
+        desc: "Dilatometer up to 1000°C (Thermal Expansion)",
+      },
+    ],  
   },
   {
     title: "Best Sellers",
@@ -375,6 +395,16 @@ export const cards = [
   { productName: "Glove Box", type: "Material Preparation" },
   { productName: "Glove Box", type: "Material Preparation" },
   { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
+  // { productName: "Glove Box", type: "Material Preparation" },
 ];
 
 // Product Specific

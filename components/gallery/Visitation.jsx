@@ -11,24 +11,28 @@ export const Visitation = () => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? 1000 : -1000, opacity: 0 };
+      return { y: direction > 0 ? "100% ": "-100%", opacity: 0 };
     },
     visible: {
       y: 0,
       opacity: 1,
-      transition :{
-        y: {type : "spring",stiffness: 400,damping: 50,},
-        opacity :{duration: 0.5}
-      }
+      transition: {
+        // y: { type: "spring", stiffness: 400, damping: 50 },
+        duration: 1,
+        opacity: { duration: 0.5 },
+      },
     },
     exit: (direction) => {
       return {
-        y: direction > 0 ? -1000 : 1000,
+        y: direction > 0 ? "-100% ": "100%",
         opacity: 0,
-        transition :{
-          y: {type : "spring",stiffness: 400,damping: 50,},
-          opacity :{duration: 0.5}
-        }
+        scale: 0.5,
+        transition: {
+          y: { type: "spring", stiffness: 400, damping: 50 },
+          duration: 0.5,
+          opacity: { duration: 0.5 },
+          delay: 2
+        },
       };
     },
   };
@@ -51,12 +55,12 @@ export const Visitation = () => {
   }
   return (
     // <AnimatePresence></AnimatePresence>
-    <section className="px-5 py-10 md:py-[60px] md:px-[60px] bg-primary" id="visitation">
+    <section className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-primary" id="visitation">
       <div className="w-full xl:px-10 flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-white">
       <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
         <div className="hidden md:flex flex-wrap items-center gap-2.5">
         {imgSrc.map((img,idx)=>(
-        <div className={`relative md:h-[105px] md:w-[160px]  lg:w-[195px] cursor-pointer ${currentIndex === idx ? " rounded-2xl border-2 border-info" : " "} `} key={idx} onClick={()=>handleThumbnail(idx)}>
+        <div className={`relative md:h-[105px] md:w-[160px] lg:w-[185px]  xl:w-[205px] 2xl:w-[230px] cursor-pointer ${currentIndex === idx ? " rounded-2xl border-2 border-info" : " "} `} key={idx} onClick={()=>handleThumbnail(idx)}>
           <Image
             fill
             src={img}
@@ -81,7 +85,7 @@ export const Visitation = () => {
             </div>
         </div>
         </div>
-        <div className="w-full md:w-1/2 xl:w-[65%]">
+        <div className="w-full md:w-1/2 lg:w-[65%]">
         <AnimatePresence initial={false} custom={direction}>
         <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
           <motion.img

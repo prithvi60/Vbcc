@@ -127,7 +127,14 @@ const Footer = () => {
           >
             Location ?
           </Button> */}
-          <Btn2 Hbgcolor={"bg-info"} textColor={"text-info"} HtextColor={"text-white"} bColor={"border-info"} title={"Location ?"} href={"/"}/>
+          <Btn2
+            Hbgcolor={"bg-info"}
+            textColor={"text-info"}
+            HtextColor={"text-white"}
+            bColor={"border-info"}
+            title={"Location ?"}
+            href={"/"}
+          />
         </div>
         <div className="w-full flex justify-start gap-16 md:justify-between items-center font-urbanist pt-10">
           <div className="space-y-3">
@@ -151,18 +158,29 @@ const Footer = () => {
             spy={true}
             smooth={true}
             duration={1000}
-            className="rounded-full p-4 border border-secondary  hover:bg-secondary cursor-pointer"
+            className={`block rounded-full px-[18px] py-5 bg-transparent border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer`}
           >
-            <HiOutlineArrowNarrowUp className="h-7 w-7 text-secondary hover:text-primary" />
+            <div className={`h-6 w-full overflow-hidden`}>
+              <h4
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+              >
+                <HiOutlineArrowNarrowUp className="h-7 w-7 text-secondary " />
+              </h4>
+              <h4
+                className={`translate-y-20 transition group-hover:-translate-y-[30px] duration-700`}
+              >
+                <HiOutlineArrowNarrowUp className="h-7 w-7 text-warning" />
+              </h4>
+            </div>
           </Mylink>
         </div>
       </div>
-      <div className=" p-5 md:px-16 md:py-5 text-zinc-500 border-y-1 border-[#2D4152] bg-primary col-span-3 tracking-tight font-semibold font-urbanist leading-snug">
+      {/* <div className=" p-5 md:px-16 md:py-5 text-zinc-500 border-y-1 border-[#2D4152] bg-primary col-span-3 tracking-tight font-semibold font-urbanist leading-snug">
         <h1 className="hidden md:block text-7xl">
           VBCC HIGH TEMPERATURE INSTRUMENTS
         </h1>
         <h1 className="md:hidden block text-8xl sm:text-[134px]">VBCC</h1>
-      </div>
+      </div> */}
       <div className="text-sm p-5 md:px-16 md:py-5 text-zinc-500 border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
         <div className="flex justify-center md:justify-between items-center">
           <p>©VB Ceramic Consultants. All Rights Reserved.</p>

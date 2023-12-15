@@ -57,7 +57,7 @@ const Testimonials = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    <section className="py-16 px-6 md:px-10 xl:p-16 font-urbanist bg-primary h-full">
+    <section className="block py-16 px-6 md:px-10 xl:p-16 font-urbanist bg-primary h-full">
       <div className="block text-warning">
         <h3 className="font-Lora text-3xl md:text-5xl text-secondary text-center pb-10">
           Testimonials
@@ -85,14 +85,15 @@ const Testimonials = () => {
             </div>
           ))}
         </Slider>
-        <div className="text-center mt-10">
-        {/* <Btn2 Hbgcolor={"bg-white"} textColor={"text-white"} HtextColor={"text-warning"} bColor={"border-white"} title={"View All Products"} href={"/testimonials"}/> */}
-          <Link
-            href="/testimonials"
-            className="px-6 py-5 rounded-full border border-secondary text-secondary"
-          >
-            View All
-          </Link>
+        <div className="flex justify-center items-center mt-10">
+        <Btn2
+          Hbgcolor={"bg-white"}
+          textColor={"text-white"}
+          HtextColor={"text-warning"}
+          bColor={"border-white"}
+          title={"View All"}
+          href={"/"}
+        />
         </div>
       </div>
     </section>

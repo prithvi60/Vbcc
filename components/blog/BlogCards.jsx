@@ -1,8 +1,6 @@
-import { BlogCard } from "@/libs/data";
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import { Btn } from "../Btn";
 
 export const BlogCards = ({ BlogCard, card, item }) => {
   return (
@@ -13,24 +11,30 @@ export const BlogCards = ({ BlogCard, card, item }) => {
             style={{ backgroundImage: `url(${card.img})` }}
             className="bg-[url('/blog-2.png')] bg-cover bg-center w-full h-[520px] p-5"
           >
-            <div className="px-4 py-2.5 bg-white w-max rounded-md">
-              {item.title}
+            <div
+              className={`block rounded-full px-4 py-3 bg-white hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                >
+                  {item.title}
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                >
+                  {item.title}
+                </h4>
+              </div>
             </div>
           </div>
           <h4 className="text-lg lg:text-[32px] font-Lora">
             {card.productTitile}
           </h4>
           <p className="text-sm md:text-base w-[90%]">{card.desc}</p>
-          <Button
-            as={Link}
-            href={"/blog/1"}
-            variant="bordered"
-            className="border border-warning rounded-full px-4 py-3 text-sm md:text-base text-warning"
-          >
-            Read More
-          </Button>
+             <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"Read More"} href={"/blog/1"}/>
         </div>
-        <div className="space-y-[50px] w-full lg:w-[45%] xl:w-[30%]">
+        <div className="block space-y-[50px] w-full lg:w-[45%] xl:w-[30%]">
           {BlogCard.map((list, idx) => (
             <div className="md:block space-y-5 text-warning w-full" key={idx}>
               <div className="relative w-full h-[330px] overflow-hidden">
@@ -48,14 +52,7 @@ export const BlogCards = ({ BlogCard, card, item }) => {
                 {list.productTitile}
               </h4>
               <p className="text-sm md:text-base">{list.desc}</p>
-              <Button
-                as={Link}
-                href={"/blog/1"}
-                variant="bordered"
-                className="border border-warning rounded-full px-4 py-3 text-sm md:text-base text-warning"
-              >
-                Read More
-              </Button>
+              <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"Read More"} href={"/blog/1"}/>
             </div>
           ))}
         </div>
@@ -63,7 +60,7 @@ export const BlogCards = ({ BlogCard, card, item }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {BlogCard.map((list, idx) => (
           <div
-            className="md:block space-y-5 text-warning w-full xl:last:col-span-3"
+            className=" space-y-5 text-warning w-full xl:last:col-span-3"
             key={idx}
           >
             <div className="relative w-full h-[330px] overflow-hidden">
@@ -81,14 +78,7 @@ export const BlogCards = ({ BlogCard, card, item }) => {
               {list.productTitile}
             </h4>
             <p className="text-sm md:text-base">{list.desc}</p>
-            <Button
-              as={Link}
-              href={"/blog/1"}
-              variant="bordered"
-              className="border border-warning rounded-full px-4 py-3 text-sm md:text-base text-warning"
-            >
-              Read More
-            </Button>
+            <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"Read More"} href={"/blog/1"}/>
           </div>
         ))}
       </div>

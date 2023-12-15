@@ -1,14 +1,12 @@
 "use client";
 import Slider from "react-slick";
-import { Button } from "@nextui-org/react";
 import { Link as Mylink } from "react-scroll";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import Carousel from "./Carousel";
-import Link from "next/link";
-import { Btn, Btn2 } from "./Btn";
+import { Btn2 } from "./Btn";
 const Hero = () => {
   return (
-    <section className="h-screen w-full relative">
+    <section className="h-[90vh] w-full relative z-0">
       <Slider
         dots={false}
         infinite={true}
@@ -22,11 +20,13 @@ const Hero = () => {
         verticalSwiping={true}
         pauseOnHover={false}
       >
-        <div className="h-screen w-full bg-hero-pattern bg-cover bg-center"></div>
-        <div className="h-screen w-full bg-hero-pattern-2 bg-cover bg-center"></div>
-        <div className="h-screen w-full bg-hero-pattern-3 bg-cover bg-center"></div>
+        <div className="h-[90vh] w-full bg-hero-pattern bg-cover bg-center"></div>
+        <div className="h-[90vh] w-full bg-hero-pattern-2 bg-cover bg-center"></div>
+        <div className="h-[90vh] w-full bg-hero-pattern-3 bg-cover bg-center"></div>
       </Slider>
-      <div className="text-center space-y-4 md:space-y-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80">
+      </div>
+      <div className="text-center space-y-4 md:space-y-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
         <h4 className="text-xl md:text-2xl uppercase">
           Vb Ceramic Consultants
         </h4>
@@ -37,31 +37,44 @@ const Hero = () => {
           <Carousel />
         </div>
         <div className="flex justify-center items-center gap-6">
-          {/* <Link
-            href="/products"
-            className="border border-secondary text-secondary text-sm md:text-base rounded-full px-6 py-5 bg-black/30 backdrop-blur-md font-urbanist"
-          >
-            Our Products
-          </Link> */}
-          <Btn2 Hbgcolor={"bg-white"} textColor={"text-white"} HtextColor={"text-warning"} bColor={"border-white"} title={"Our Products"} href={"/products"}/>
-          {/* <Link
-            href="/contact"
-            className="border border-secondary text-secondary text-sm md:text-base rounded-full px-6 py-5 bg-black/30 backdrop-blur-md font-urbanist"
-          >
-            Contact Us
-          </Link> */}
-          <Btn2 Hbgcolor={"bg-white"} textColor={"text-white"} HtextColor={"text-warning"} bColor={"border-white"} title={"Contact Us"} href={"/contact"}/>
+          <Btn2
+            Hbgcolor={"bg-white"}
+            textColor={"text-white"}
+            HtextColor={"text-warning"}
+            bColor={"border-white"}
+            title={"Our Products"}
+            href={"/products"}
+          />
+          <Btn2
+            Hbgcolor={"bg-white"}
+            textColor={"text-white"}
+            HtextColor={"text-warning"}
+            bColor={"border-white"}
+            title={"Contact Us"}
+            href={"/contact"}
+          />
         </div>
       </div>
-      {/* <Mylink  Hbgcolor={"bg-secondary"} textColor={"text-white"} HtextColor={"text-warning"} bColor={"border-white"} title={<HiOutlineArrowNarrowDown className="h-7 w-7 text-secondary" />} href={"/contact"} /> */}
       <Mylink
         to="client"
         spy={true}
         smooth={true}
         offset={20}
         duration={800}
-        className="absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-3 border border-secondary bg-black/30 backdrop-blur-md hover:opacity-70 cursor-pointer">
-        <HiOutlineArrowNarrowDown className="h-7 w-7 text-secondary" />
+        className={`absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 block rounded-full px-[18px] py-5 bg-transparent border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer z-30`}
+      >
+        <div className={`h-6 w-full overflow-hidden`}>
+          <h4
+            className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+          >
+            <HiOutlineArrowNarrowDown className="h-7 w-7 text-secondary " />
+          </h4>
+          <h4
+            className={`translate-y-20 transition group-hover:-translate-y-[30px] duration-700`}
+          >
+            <HiOutlineArrowNarrowDown className="h-7 w-7 text-warning" />
+          </h4>
+        </div>
       </Mylink>
     </section>
   );

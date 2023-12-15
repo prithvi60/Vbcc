@@ -43,7 +43,7 @@ const Products = () => {
                   </span>
                 }
               >
-                <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[73vh]">
+                <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
                   {item.sub.map((card, id) => (
                     <Card
                       as={Link}
@@ -80,7 +80,7 @@ const Products = () => {
                       <CardFooter className="p-0">
                         <Link
                           href={"/product"}
-                          className={`rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                          className={`rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                         >
                           <div className={`h-6 w-full overflow-hidden`}>
                             <h4
@@ -89,7 +89,7 @@ const Products = () => {
                               Request a Quote
                             </h4>
                             <h4
-                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 group-hover:text-white`}
                             >
                               Request a Quote
                             </h4>

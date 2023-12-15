@@ -1,3 +1,4 @@
+import { Btn } from "@/components/Btn";
 import { relatedProducts } from "@/libs/data";
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
@@ -39,7 +40,7 @@ export const ProductCards = () => {
             </div>
             {/* Card Footer */}
             <div className="flex group-hover:bg-white group-hover:rounded-b-2xl bg-transparent transition-all duration-1000 items-center justify-between py-3">
-              <div className="-translate-x-1000 group-hover:translate-x-3   group-hover:transition-transform group-hover:duration-700">
+              <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75">
                 <h4 className="text-[#0D0D0D] font-urbanist">
                   {card.productName}
                 </h4>
@@ -47,12 +48,25 @@ export const ProductCards = () => {
                   {card.type}
                 </h4>
               </div>
+              <div className="flex items-center">
               <Link
-                href="/contact"
-                className="border border-warning px-4 py-2.5 rounded-full font-urbanist text-warning translate-x-1000 group-hover:-translate-x-3 group-hover:transition-transform group-hover:duration-700"
+                href={"/contact"}
+                className={`block rounded-full px-4 py-3 border border-warning bg-transparent group-hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
               >
-                Contact
+                <div className={`block h-6 w-full overflow-hidden`}>
+                  <h4
+                    className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                  >
+                    contact
+                  </h4>
+                  <h4
+                    className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                  >
+                    contact
+                  </h4>
+                </div>
               </Link>
+              </div>
             </div>
           </Link>
         </div>

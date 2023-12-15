@@ -42,7 +42,7 @@ const Blog = () => {
                   </span>
                 }
               >
-                <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-[100vh] md:h-[65vh] lg:h-[74vh]">
+                <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
                   {item.sub.map((card, id) => (
                     <Card
                       as={Link}
@@ -65,14 +65,6 @@ const Blog = () => {
                         </div>
                       </CardBody>
                       <CardFooter className="p-0">
-                        {/* <Button
-                          color="warning"
-                          radius="full"
-                          size="lg"
-                          className="py-3 px-4 text-secondary w-full"
-                        >
-                          Read More
-                        </Button> */}
                         <Link
                           href={"/product"}
                           className={`rounded-full px-4 py-3 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
@@ -98,12 +90,6 @@ const Blog = () => {
             ))}
           </Tabs>
         </div>
-        {/* <Link
-          href="/blog"
-          className="text-secondary px-6 py-5 border border-secondary font-urbanist rounded-full"
-        >
-          View All
-        </Link> */}
         <Btn2
           Hbgcolor={"bg-white"}
           textColor={"text-white"}
