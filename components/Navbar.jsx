@@ -21,7 +21,7 @@ const NavBar = () => {
           <Link href="/" className="relative h-5 w-32 cursor-pointer">
             <Image
               fill
-              src={"/logo.svg"}
+              src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
               alt="Logo"
               className="absolute object-contain object-center"
             />

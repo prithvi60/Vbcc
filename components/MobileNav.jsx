@@ -18,7 +18,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         <Image
           width={70}
           height={20}
-          src={"/logo-white.svg"}
+          src={"https://ik.imagekit.io/webibee/VBCC/logo-white.svg"}
           alt="Logo"
           className=" object-contain object-center"
         />
@@ -69,7 +69,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         <div className="hidden md:flex relative w-full h-[425px]">
           <Image
             fill
-            src={"/mobile-nav.png"}
+            src={"https://ik.imagekit.io/webibee/VBCC/mobile-nav.png"}
             alt="Logo"
             className="absolute object-cover object-center"
           />

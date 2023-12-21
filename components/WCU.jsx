@@ -32,7 +32,7 @@ export const WCU = () => {
       <div className="relative h-32 w-32">
         <Image
           fill
-          src="/VectorISO.svg"
+          src="https://ik.imagekit.io/webibee/VBCC/VectorISO.svg"
           alt="Logo"
           className="absolute object-contain object-center"
         />
@@ -40,7 +40,7 @@ export const WCU = () => {
       <div className="relative h-32 w-32">
         <Image
           fill
-          src="/Conformité_Européenne_(logo) 1.svg"
+          src="https://ik.imagekit.io/webibee/VBCC/Conformité_Européenne_(logo) 1.svg"
           alt="Logo"
           className="absolute object-contain object-center"
         />
@@ -48,7 +48,7 @@ export const WCU = () => {
       <div className="relative h-32 w-32">
         <Image
           fill
-          src="/MakeinIndia 1.svg"
+          src="https://ik.imagekit.io/webibee/VBCC/MakeinIndia 1.svg"
           alt="Logo"
           className="absolute object-contain object-center"
         />

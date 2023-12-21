@@ -4,7 +4,7 @@ import { BlogSection } from "@/components/blog/BlogSection";
 const obj ={
   title:"Blog/Article",
   desc:"Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-  ImgSrc:"/blog-2.png"
+  ImgSrc:"https://ik.imagekit.io/webibee/VBCC/blog-2.png"
 }
 
 export default function Home() {

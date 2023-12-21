@@ -16,7 +16,7 @@ function NextArrow(props) {
       <div className="relative h-8 w-10">
         <Image
           fill
-          src="/arrow-right.svg"
+          src="https://ik.imagekit.io/webibee/VBCC/arrow-right.svg"
           alt="Logo"
           className="absolute object-contain object-center"
         />
@@ -35,7 +35,7 @@ function PrevArrow(props) {
       <div className="relative h-8 w-10">
         <Image
           fill
-          src="/arrow-left.svg"
+          src="https://ik.imagekit.io/webibee/VBCC/arrow-left.svg"
           alt="Logo"
           className="absolute object-contain object-center"
         />

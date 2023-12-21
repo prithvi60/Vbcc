@@ -16,19 +16,19 @@ export const Navlink = [
 ];
 
 // Hero
-export const hero = ["/hero-bg.png", "/hero-bg-2.png", "/hero-bg-3.png"];
+export const hero = ["https://ik.imagekit.io/webibee/VBCC/hero-bg.png", "https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png", "https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"];
 
 // Clients
 export const logos = [
-  "/Isro svg.svg",
-  "/vit.svg",
-  "/IIT-Madras.svg",
-  "/AU.svg",
-  "/CGCRI.svg",
-  "/csir.svg",
-  "/bhel.svg",
-  "/IIT_Hyderabad.svg",
-  "/drdo.svg",
+  "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
+  "https://ik.imagekit.io/webibee/VBCC/vit.svg",
+  "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg",
+  "https://ik.imagekit.io/webibee/VBCC/AU.svg",
+  "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg",
+  "https://ik.imagekit.io/webibee/VBCC/csir.svg",
+  "https://ik.imagekit.io/webibee/VBCC/bhel.svg",
+  "https://ik.imagekit.io/webibee/VBCC/IIT_Hyderabad.svg",
+  "https://ik.imagekit.io/webibee/VBCC/drdo.svg",
 ];
 
 // testimonial
@@ -36,49 +36,49 @@ export const testimonial = [
   {
     header:
       "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it.",
-    logo: "/vit.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/vit.svg",
     title: "Centre for Nanotechnology Research, VIT University.",
     subTitle: "on the Custom Made Hot Press",
   },
   {
     header:
       "No Company in India, except VB Ceramic Consultants, took this challenging task to succession ",
-    logo: "/Isro svg.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
     title: "Vikram Sarabhai Space Centre",
     subTitle: "on building Microwave Hybrid Furnace",
   },
   {
     header:
       "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.",
-    logo: "/AU.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/AU.svg",
     title: "Department of Ceramic Technology, Anna University.",
     subTitle: "on multiple Units working effectively",
   },
   {
     header:
       "Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
-    logo: "/csir.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/csir.svg",
     title: "CSIR-CECRI",
     subTitle: "on Custom made Supercritical Reactors",
   },
   {
     header:
       "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it.",
-    logo: "/vit.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/vit.svg",
     title: "Centre for Nanotechnology Research, VIT University.",
     subTitle: "on the Custom Made Hot Press",
   },
   {
     header:
       "No Company in India, except VB Ceramic Consultants, took this challenging task to succession ",
-    logo: "/Isro svg.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
     title: "Vikram Sarabhai Space Centre",
     subTitle: "on building Microwave Hybrid Furnace",
   },
   {
     header:
       "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.",
-    logo: "/AU.svg",
+    logo: "https://ik.imagekit.io/webibee/VBCC/AU.svg",
     title: "Department of Ceramic Technology, Anna University.",
     subTitle: "on multiple Units working effectively",
   },
@@ -87,19 +87,19 @@ export const testimonial = [
 // Why Choose Us
 export const chooseItem = [
   {
-    img: "/Vectortool.svg",
+    img: "https://ik.imagekit.io/webibee/VBCC/Vectortool.svg",
     desc: "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience.",
   },
   {
-    img: "/Vectorsquare.svg",
+    img: "https://ik.imagekit.io/webibee/VBCC/Vectorsquare.svg",
     desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way.",
   },
   {
-    img: "/Vectorresearch.svg",
+    img: "https://ik.imagekit.io/webibee/VBCC/Vectorresearch.svg",
     desc: "We offer cutting-edge Research & Development services, dedicated to innovation and problem-solving, pushing the boundaries of possibility.",
   },
   {
-    img: "/Vectorbox.svg",
+    img: "https://ik.imagekit.io/webibee/VBCC/VectorBox.svg",
     desc: "We specialize in thorough installation and training services, ensuring your staff gains proficiency in equipment operation and management, empowering them with essential knowledge and skills.",
   },
 ];
@@ -110,42 +110,42 @@ export const products = [
     title: "feature",
     sub: [
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
@@ -155,22 +155,22 @@ export const products = [
     title: "Best Sellers",
     sub: [
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
@@ -180,22 +180,22 @@ export const products = [
     title: "Sophisticated",
     sub: [
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
       {
-        img: "/product.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/product.png",
         title: "thermal testing",
         desc: "Dilatometer up to 1000°C (Thermal Expansion)",
       },
@@ -209,22 +209,22 @@ export const blog = [
     title: "Articles",
     sub: [
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
@@ -234,22 +234,22 @@ export const blog = [
     title: "Popular",
     sub: [
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/hero-bg.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
@@ -259,22 +259,22 @@ export const blog = [
     title: "Guides",
     sub: [
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
       {
-        img: "/N-J.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/N-J.png",
         title: "Dilatometer up to 1000°C (Thermal Expansion)",
         desc: "VB Ceramic Consultants (VBCC) is a renowned manufacturer of high-quality ceramic instruments",
       },
@@ -410,10 +410,10 @@ export const cards = [
 // Product Specific
 // Product Carousel
 export const carousel = [
-  {id:"1", img:"/sample 1.png"},
-  {id:"2", img:"/sample 2.png"},
-  {id:"3", img:"/sample 3.png"},
-  {id:"4", img:"/sample 4.png"},
+  {id:"1", img:"https://ik.imagekit.io/webibee/VBCC/sample 1.png"},
+  {id:"2", img:"https://ik.imagekit.io/webibee/VBCC/sample 2.png"},
+  {id:"3", img:"https://ik.imagekit.io/webibee/VBCC/sample 3.png"},
+  {id:"4", img:"https://ik.imagekit.io/webibee/VBCC/sample 4.png"},
 ]
 
 // Related Products
@@ -427,17 +427,17 @@ export const relatedProducts = [
 
 // Story and Vision Image
 export const story = [
-  "/about-1.png",
-  "/about-2.png",
-  "/about-3.png",
-  "/about-3.png",
+  "https://ik.imagekit.io/webibee/VBCC/about-1.png",
+  "https://ik.imagekit.io/webibee/VBCC/about-2.png",
+  "https://ik.imagekit.io/webibee/VBCC/about-3.png",
+  "https://ik.imagekit.io/webibee/VBCC/about-3.png",
 ];
 
 // Vision & Mission
 export const VM = [
   {
     title: "Vision",
-    img: ["/about-1.png", "/about-2.png"],
+    img: ["https://ik.imagekit.io/webibee/VBCC/about-1.png", "https://ik.imagekit.io/webibee/VBCC/about-2.png"],
     para1:
       "At VBCC High Temperature Instruments Pvt. Ltd., our vision centers on excellence and innovation in Instruments and Furnaces. We are committed to key elements:",
     lists: [
@@ -451,7 +451,7 @@ export const VM = [
   },
   {
     title: "Mission",
-    img: ["/about-3.png", "/about-1.png"],
+    img: ["https://ik.imagekit.io/webibee/VBCC/about-3.png", "https://ik.imagekit.io/webibee/VBCC/about-1.png"],
     para1:
       "At VBCC High Temperature Instruments Pvt. Ltd., our vision centers on excellence and innovation in Instruments and Furnaces. We are committed to key elements:",
     lists: [
@@ -468,37 +468,37 @@ export const VM = [
 // Our Team
 export const Team = [
   {
-    img: "/Employee Image.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/Employee Image.png",
     name: "Name",
     designation: "Designation",
     grade: "Designation",
   },
   {
-    img: "/Employee Image.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/Employee Image.png",
     name: "Name",
     designation: "Designation",
     grade: "Designation",
   },
   {
-    img: "/Employee Image.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/Employee Image.png",
     name: "Name",
     designation: "Designation",
     grade: "Designation",
   },
   {
-    img: "/Employee Image.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/Employee Image.png",
     name: "Name",
     designation: "Designation",
     grade: "Designation",
   },
   {
-    img: "/Employee Image.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/Employee Image.png",
     name: "Name",
     designation: "Designation",
     grade: "Designation",
   },
   {
-    img: "/Employee Image.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/Employee Image.png",
     name: "Name",
     designation: "Designation",
     grade: "Designation",
@@ -596,18 +596,18 @@ export const FAQ = [
 // Testimonials
 // logos
 export const testimonials = [
-  { id: "1", logo: "/AU.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "2", logo: "/CGCRI.svg", pdf: "/CGCRI testimonial.png" },
-  { id: "3", logo: "/csir.svg", pdf: "/CERI testimonial.png" },
-  { id: "4", logo: "/Isro svg.svg", pdf: "/ISRO - VSSC testimonial.png" },
-  { id: "5", logo: "/IIT-Madras.svg", pdf: "/IIT Madras testimonial.png" },
-  { id: "6", logo: "/vit.svg", pdf: "/VIT University testimonial.png" },
-  { id: "7", logo: "/Layer.svg", pdf: "/Velammal Engineering testimonial.png" },
-  { id: "8", logo: "/Layer.svg", pdf: "/CERI testimonial.png" },
-  { id: "9", logo: "/Layer.svg", pdf: "/AnnaUniv Testimonial.png" },
-  { id: "10", logo: "/Layer.svg", pdf: "/CERI testimonial.png" },
-  { id: "11", logo: "/Layer.svg", pdf: "/VIT University testimonial.png" },
-  { id: "12", logo: "/Layer.svg", pdf: "/Velammal Engineering testimonial.png" },
+  { id: "1", logo: "https://ik.imagekit.io/webibee/VBCC/AU.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png" },
+  { id: "2", logo: "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CGCRI testimonial.png" },
+  { id: "3", logo: "https://ik.imagekit.io/webibee/VBCC/csir.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
+  { id: "4", logo: "https://ik.imagekit.io/webibee/VBCC/Isro.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/ISRO - VSSC testimonial.png" },
+  { id: "5", logo: "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/IIT Madras testimonial.png" },
+  { id: "6", logo: "https://ik.imagekit.io/webibee/VBCC/vit.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png" },
+  { id: "7", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png" },
+  { id: "8", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
+  { id: "9", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png" },
+  { id: "10", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
+  { id: "11", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png" },
+  { id: "12", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png" },
 ];
 
 // Blog
@@ -618,28 +618,28 @@ export const BlogCard = [
     title: "All Blogs",
     featureCard: 
       {
-        img: "/blog-2.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     blogCard: [
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
@@ -649,28 +649,28 @@ export const BlogCard = [
     title: "Featured",
     featureCard: 
       {
-        img: "/blog-2.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     blogCard: [
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        img: "/blog-1.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         productTitile: "Dilatometer Principle and Working",
         desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
@@ -681,17 +681,17 @@ export const BlogCard = [
 // Explore cards
 export const explore = [
   {
-    img: "/blog-1.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
     productTitile: "Dilatometer Principle and Working",
     desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
   },
   {
-    img: "/blog-1.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
     productTitile: "Dilatometer Principle and Working",
     desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
   },
   {
-    img: "/blog-1.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
     productTitile: "Dilatometer Principle and Working",
     desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
   },

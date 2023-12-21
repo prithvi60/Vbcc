@@ -143,13 +143,13 @@ const Footer = () => {
               <div className="relative h-[55px] w-[75px]">
                 <Image
                   fill
-                  src={"/VBCC_Logo.png"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png"}
                   alt="Logo"
                   className="-ml-6"
                 />
               </div>
               <div className="relative h-[50px] w-[70px]">
-                <Image fill src={"/hi-temp.png"} alt="Logo" className="-ml-6" />
+                <Image fill src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" className="-ml-6" />
               </div>
             </div>
           </div>

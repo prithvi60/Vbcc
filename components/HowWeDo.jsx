@@ -19,7 +19,7 @@ const HowWeDo = () => {
             <div className="relative h-[182px] lg:h-[400px] w-full">
               <Image
                 fill
-                src={"/VBCC.png"}
+                src={"https://ik.imagekit.io/webibee/VBCC/VBCC.png"}
                 alt="Logo"
                 className="object-cover object-center"
               />
