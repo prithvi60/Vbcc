@@ -15,7 +15,7 @@ export const ProductHero = () => {
             {obj.title}
           </h2>
           <p className="font-urbanist text-sm lg:text-base">{obj.desc}</p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 md:hidden">
           {category.map((item,idx)=>(
           <div
             className={`h-full md:hidden rounded-full px-4 py-3 border border-white bg-transparent hover:bg-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer`}

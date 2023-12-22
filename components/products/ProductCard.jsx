@@ -9,7 +9,6 @@ import { useState } from "react";
 export const ProductCard = () => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
-  // const firstIndex = lastIndex - 6;
   const t = Math.ceil(cards.length / 6);
   const handlePage = () => {
     let pageIndex = page + 1;
@@ -19,7 +18,7 @@ export const ProductCard = () => {
   };
   return (
     <section className="bg-secondary space-y-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-[60vh] md:h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
         {cards.slice(0, lastIndex).map((card, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
             <Link
@@ -110,9 +109,3 @@ export const ProductCard = () => {
   );
 };
 
-{
-  /* {[...Array(Math.ceil(cards.length / 6))].map((_,idx) =>( */
-}
-{
-  /* ))} */
-}
