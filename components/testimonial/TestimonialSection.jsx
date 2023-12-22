@@ -78,22 +78,23 @@ export const TestimonialSection = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-1/2 xl:w-[35%] w-full h-full z-30">
         <AnimatePresence initial={false}>
-          <div className="h-full w-full rounded-md overflow-hidden">
+        {/* bg-white px-12 py-4 rounded-3xl */}
+      <div className="md:w-1/2 xl:w-[35%] w-full h-full z-30">
+          <div className="h-full w-full overflow-hidden">
             <motion.img
               src={testimonials[selectedItem].pdf}
               alt="Logo"
               key={selectedItem}
-              className="w-full h-full object-contain object-center rounded-md"
+              className="w-full h-full"
               variants={slideVariants}
               initial="slide"
               animate="visible"
               exit="exit"
             />
           </div>
-        </AnimatePresence>
       </div>
+        </AnimatePresence>
     </section>
   );
 };

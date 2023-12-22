@@ -1,8 +1,8 @@
 import { Button, Input } from "@nextui-org/react";
 export const ContactForm = () => {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 text-warning space-y-10">
-      <div className="w-full h-full space-y-6 md:px-10">
+    <section className="px-5 md:px-10 py-[60px] md:py-[60px] lg:px-[60px] lg:py-20 text-warning space-y-10">
+      <div className="w-full h-full space-y-6">
         <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
           Contact Us
         </h2>
@@ -13,7 +13,7 @@ export const ContactForm = () => {
       </div>
       <form
         action=""
-        className="md:px-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:gap-x-8 md:gap-y-10"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:gap-x-8 md:gap-y-10"
       >
         <div className="w-full block space-y-3">
           <label htmlFor="company" className="text-xl md:text-2xl font-Lora">

@@ -1,9 +1,7 @@
 "use client";
 import Slider from "react-slick";
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import { testimonial } from "@/libs/data";
-import Link from "next/link";
 import { Btn2 } from "./Btn";
 
 function NextArrow(props) {

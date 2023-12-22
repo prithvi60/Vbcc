@@ -16,9 +16,11 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav id="nav">
-      <Navbar position="static" maxWidth="2xl" className="font-urbanist font-medium py-2  border border-[#B6BABD]">
+      <Navbar position="static" maxWidth="full" classNames={{
+        wrapper :["!px-0"]
+      }} className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 lg:px-[60px] lg:py-0 border border-[#B6BABD]">
         <NavbarBrand>
-          <Link href="/" className="relative h-5 w-32 cursor-pointer">
+          <Link href="/" className="relative h-5 w-20 cursor-pointer">
             <Image
               fill
               src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
@@ -41,11 +43,11 @@ const NavBar = () => {
           ))}
         </NavbarContent>
         <NavbarContent justify="end">
-          <NavbarItem>
+          <NavbarItem className="hidden md:flex">
             <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"contact us"} href={"/contact"}/>
           </NavbarItem>
           <NavbarItem onClick={() => setIsOpen(!isOpen)}>
-              <RxHamburgerMenu className="h-5 w-5 md:h-7 md:w-7 text-warning cursor-pointer hover:text-info" />
+              <RxHamburgerMenu className="h-7 w-7 md:h-8 md:w-8 text-warning cursor-pointer hover:text-info" />
           </NavbarItem>
         </NavbarContent>
       </Navbar>

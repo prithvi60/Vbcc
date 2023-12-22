@@ -6,9 +6,16 @@ import Link from "next/link";
 import React, { useRef, useCallback, useState } from "react";
 // import { useInView } from 'react-intersection-observer';
 import { InView } from "react-intersection-observer";
+const ImgSlider =[
+  {img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png",title:"Vbcc"},
+  {img: "/HWD1.png",title:"Strategize"},
+  {img: "/HWD2.png",title:"Design"},
+  {img: "/HWD3.png",title:"Engineering"},
+]
 
 const HowWeDo = () => {
-  const [slide, setSlide] = useState(0);
+  const [slide, setSlide] = useState(ImgSlider[0]);
+  // console.log(slide.title);
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
@@ -24,13 +31,13 @@ const HowWeDo = () => {
             <div className="relative h-[182px] lg:h-[400px] w-full">
               <Image
                 fill
-                src={"https://ik.imagekit.io/webibee/VBCC/VBCC.png"}
+                src={slide.img}
                 alt="Logo"
                 className="object-cover object-center"
               />
             </div>
             <h3 className="text-3xl  absolute top-[50%] left-[42%] ">
-              Vbcc - {slide}
+               {slide.title}
             </h3>
           </div>
         </div>
@@ -43,36 +50,29 @@ const HowWeDo = () => {
           {data.map((item, idx) => (
             <InView
               as="div"
-              threshold={0.6}
-              triggerOnce={true}
+              threshold={1}
+              // rootMargin="50px"
+              // triggerOnce={true}
               onChange={(inView, entry) => {
                 console.log("Inview:", inView, item.title, entry);
                 setSlide(
-                  inView && item.title === "Working Strategy"
-                    ? 1
-                    : inView && item.title === "Design"
-                    ? 2
-                    : inView && item.title === "Engineering"
-                    ? 3
-                    : 0
+                  entry.isIntersecting && item.title === "Working Strategy"
+                    ? ImgSlider[1]
+                    : entry.isIntersecting && item.title === "Design"
+                    ? ImgSlider[2]
+                    : entry.isIntersecting && item.title === "Engineering"
+                    ? ImgSlider[3]
+                    : ImgSlider[0]
                 );
               }}
-              className="py-[70px] px-5 lg:py-32 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8"
+              // py-[70px] px-5 lg:py-32
+              className="py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8"
               key={idx}
             >
               <h4 className="font-Lora text-[32px] tracking-tighter">
                 {item.title}
               </h4>
               <p className="lg:text-danger">{item.desc}</p>
-              {/* <Button
-                radius="full"
-                color="warning"
-                variant="bordered"
-                size="lg"
-                className="hidden lg:flex px-6 py-5"
-              >
-                {item.btn}
-              </Button> */}
               <Link
                 href={"/contact"}
                 className={`hidden lg:block px-6 py-5 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
@@ -90,15 +90,6 @@ const HowWeDo = () => {
                   </h4>
                 </div>
               </Link>
-              {/* <Button
-                radius="full"
-                // color="warning"
-                variant="bordered"
-                size="lg"
-                className="hidden md:flex lg:hidden px-6 py-5 border-secondary text-secondary"
-              >
-                {item.btn2}
-              </Button> */}
               <Link
                 href={"/"}
                 className={`hidden md:flex lg:hidden px-6 py-5 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
@@ -116,15 +107,6 @@ const HowWeDo = () => {
                   </h4>
                 </div>
               </Link>
-              {/* <Button
-                radius="full"
-                // color="warning"
-                variant="bordered"
-                size="lg"
-                className="flex md:hidden px-6 py-5 border-secondary text-secondary"
-              >
-                {item.btn3}
-              </Button> */}
               <Link
                 href={"/"}
                 className={`block md:hidden px-6 py-5 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
