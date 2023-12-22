@@ -1,30 +1,14 @@
-"use client"
+"use client";
 import { data } from "@/libs/data";
+import { Progress } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef, useCallback } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useRef, useCallback, useState } from "react";
+// import { useInView } from 'react-intersection-observer';
+import { InView } from "react-intersection-observer";
 
 const HowWeDo = () => {
-  // const ref = useRef(null);
-  // const { ref: inViewRef, inView } = useInView({
-  //   trackVisibility :true,
-  //   threshold: 1,
-  //   delay :100
-  // });
-
-  // Use `useCallback` so we don't recreate the function on each render
-  // const setRefs = useCallback(
-  //   (node) => {
-  //     // Ref's from useRef needs to have the node assigned to `current`
-  //     ref.current = node;
-  //     console.log("node",node);
-  //     // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
-  //     inViewRef(node);
-  //   },
-  //   [inViewRef],
-  // );
-
+  const [slide, setSlide] = useState(0);
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
@@ -32,7 +16,7 @@ const HowWeDo = () => {
           <div className="flex flex-row items-center lg:flex-col lg:items-center gap-3 h-full">
             <h5>00</h5>
             <div className="w-full h-3 lg:h-96 lg:w-3 bg-secondary border-2 border-slate-200 ">
-              {/* <Progress aria-label="Loading..." value={20} className="max-w-sm rotate-90" color="primary"/> */}
+              {/* <Progress aria-label="Loading..." value={60} className="max-w-lg rotate-90" color="primary"/> */}
             </div>
             <h5>03</h5>
           </div>
@@ -45,7 +29,9 @@ const HowWeDo = () => {
                 className="object-cover object-center"
               />
             </div>
-            <h3 className="text-3xl  absolute top-[50%] left-[42%] ">Vbcc</h3>
+            <h3 className="text-3xl  absolute top-[50%] left-[42%] ">
+              Vbcc - {slide}
+            </h3>
           </div>
         </div>
         <div className="w-full lg:w-1/2 xl:w-3/5 space-y-0.5">
@@ -55,10 +41,24 @@ const HowWeDo = () => {
             </p>
           </div>
           {data.map((item, idx) => (
-            <div
+            <InView
+              as="div"
+              threshold={0.6}
+              triggerOnce={true}
+              onChange={(inView, entry) => {
+                console.log("Inview:", inView, item.title, entry);
+                setSlide(
+                  inView && item.title === "Working Strategy"
+                    ? 1
+                    : inView && item.title === "Design"
+                    ? 2
+                    : inView && item.title === "Engineering"
+                    ? 3
+                    : 0
+                );
+              }}
               className="py-[70px] px-5 lg:py-32 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8"
               key={idx}
-              // ref={setRefs}
             >
               <h4 className="font-Lora text-[32px] tracking-tighter">
                 {item.title}
@@ -142,7 +142,7 @@ const HowWeDo = () => {
                   </h4>
                 </div>
               </Link>
-            </div>
+            </InView>
           ))}
         </div>
       </div>
