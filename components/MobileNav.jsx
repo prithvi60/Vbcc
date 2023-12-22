@@ -1,11 +1,9 @@
 import { Navlink } from "@/libs/data";
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import { Btn2 } from "./Btn";
 
 const MobileNav = ({ isOpen, setIsOpen }) => {
   return (
