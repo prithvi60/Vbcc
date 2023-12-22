@@ -10,19 +10,29 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
 const Products = () => {
   const [selected, setSelected] = useState("photos");
-  const [count] = useState(() =>
-    window.innerWidth >= 1440
-      ? 8
-      : window.innerWidth >= 1024
-      ? 6
-      : window.innerWidth >= 810
-      ? 4
-      : 6
-  );
+  const [width, setWidth] = useState(0)
+  const [count,setCount] = useState(8);
+
+  // console.log(width);
+useEffect(() =>{
+  setWidth(window.innerWidth)
+},[])
+
+useEffect(() =>{
+  width >= 1440
+  ? setCount(8)
+  : width >= 1024
+  ? setCount(6)
+  : width >= 810
+  ? setCount(4)
+  : setCount(6)
+},[width])
+
+
   // const [windowSize, setWindowSize] = useState(window.innerWidth)
 
   // const windowSize = window.innerWidth

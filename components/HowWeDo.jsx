@@ -6,24 +6,24 @@ import React, { useRef, useCallback } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const HowWeDo = () => {
-  const ref = useRef(null);
-  const { ref: inViewRef, inView } = useInView({
-    trackVisibility :true,
-    threshold: 1,
-    delay :100
-  });
+  // const ref = useRef(null);
+  // const { ref: inViewRef, inView } = useInView({
+  //   trackVisibility :true,
+  //   threshold: 1,
+  //   delay :100
+  // });
 
   // Use `useCallback` so we don't recreate the function on each render
-  const setRefs = useCallback(
-    (node) => {
-      // Ref's from useRef needs to have the node assigned to `current`
-      ref.current = node;
-      console.log("node",node);
-      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
-      inViewRef(node);
-    },
-    [inViewRef],
-  );
+  // const setRefs = useCallback(
+  //   (node) => {
+  //     // Ref's from useRef needs to have the node assigned to `current`
+  //     ref.current = node;
+  //     console.log("node",node);
+  //     // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+  //     inViewRef(node);
+  //   },
+  //   [inViewRef],
+  // );
 
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
@@ -58,10 +58,10 @@ const HowWeDo = () => {
             <div
               className="py-[70px] px-5 lg:py-32 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8"
               key={idx}
-              ref={setRefs}
+              // ref={setRefs}
             >
               <h4 className="font-Lora text-[32px] tracking-tighter">
-                {item.title} `Header inside viewport ${inView}.`
+                {item.title}
               </h4>
               <p className="lg:text-danger">{item.desc}</p>
               {/* <Button
