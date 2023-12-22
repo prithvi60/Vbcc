@@ -1,5 +1,5 @@
 "use client";
-import { Button, Tab, Tabs } from "@nextui-org/react";
+import { Tab, Tabs } from "@nextui-org/react";
 import { BlogCards } from "./BlogCards";
 import { BlogCard } from "@/libs/data";
 export const BlogSection = () => {

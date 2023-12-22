@@ -85,20 +85,23 @@ const Footer = () => {
         </div>
         <div className="flex justify-evenly items-center gap-3">
           <Link
-            href={"/"}
+            href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
             className="p-4 rounded-full border border-info hover:bg-info"
+            target="_blank"
           >
             <FaYoutube className="h-7 w-7 text-white" />
           </Link>
           <Link
-            href={"/"}
+            href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
             className="p-4 rounded-full border border-info hover:bg-info"
+            target="_blank"
           >
             <FaLinkedin className="h-7 w-7 text-white" />
           </Link>
           <Link
-            href={"/"}
+            href={"https://wa.me/7338894199"}
             className="p-4 rounded-full border border-info hover:bg-info"
+            target="_blank"
           >
             <FaWhatsapp className="h-7 w-7 text-white" />
           </Link>
@@ -133,24 +136,24 @@ const Footer = () => {
             HtextColor={"text-white"}
             bColor={"border-info"}
             title={"Location ?"}
-            href={"/"}
+            href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
           />
         </div>
         <div className="w-full flex justify-start gap-16 md:justify-between items-center font-urbanist pt-10">
           <div className="space-y-3">
             <h4>Our Groups</h4>
             <div className="flex items-center gap-4 ml-6">
-              <div className="relative h-[55px] w-[75px]">
+              <Link href={"https://www.drvbceramicresearch.com/"} className="relative h-[55px] w-[75px]" target="_blank">
                 <Image
                   fill
                   src={"https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png"}
                   alt="Logo"
                   className="-ml-6"
                 />
-              </div>
-              <div className="relative h-[50px] w-[70px]">
+              </Link>
+              <Link href={"https://www.hitechceramics.in/"} className="relative h-[50px] w-[70px]" target="_blank">
                 <Image fill src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" className="-ml-6" />
-              </div>
+              </Link>
             </div>
           </div>
           <Mylink

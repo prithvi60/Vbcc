@@ -1,10 +1,22 @@
+"use client"
 import { explore } from "@/libs/data";
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const ExploreCards = () => {
+  const [width, setWidth] = useState(0)
+  const [count,setCount] = useState(3);
+
+useEffect(() =>{
+  setWidth(window.innerWidth)
+},[])
+
+useEffect(() =>{
+  width >= 1440
+  ? setCount(3)
+  :  setCount(2)
+},[width])
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:p-[60px] font-urbanist bg-secondary text-warning ">
       <div className="block w-full space-y-10">
@@ -31,9 +43,9 @@ export const ExploreCards = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {explore.map((list, idx) => (
+          {explore.slice(0,count).map((list, idx) => (
             <div className="block space-y-5" key={idx}>
-              <div className="relative h-[200px] w-full md:h-[330px]   overflow-hidden">
+              <div className="relative h-[200px] w-full md:h-[330px]   overflow-hidden">  
                 <Image
                   fill
                   src={list.img}

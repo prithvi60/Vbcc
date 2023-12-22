@@ -9,7 +9,7 @@ import { useState } from "react";
 export const ProductCard = () => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
-  const firstIndex = lastIndex - 6;
+  // const firstIndex = lastIndex - 6;
   const t = Math.ceil(cards.length / 6);
   const handlePage = () => {
     let pageIndex = page + 1;
@@ -105,29 +105,7 @@ export const ProductCard = () => {
             </div>
           </button>
         </div>
-      ) : cards.length <= 6 ? (
-        null
-      ) : (
-        <div className="flex justify-center items-center">
-          <button
-            onClick={() => setPage(1)}
-            className={`block rounded-full px-6 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer`}
-          >
-            <div className={`block h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
-              >
-                Back To Main
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
-              >
-                Back To Main
-              </h4>
-            </div>
-          </button>
-        </div>
-      )}
+      ) : null}
     </section>
   );
 };

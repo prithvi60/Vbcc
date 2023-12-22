@@ -1,10 +1,24 @@
+"use client"
 import { story } from "@/libs/data";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export const Story = () => {
+  const [width, setWidth] = useState(0)
+  const [count,setCount] = useState(3);
+
+useEffect(() =>{
+  setWidth(window.innerWidth)
+},[])
+
+useEffect(() =>{
+  width >= 1440
+  ? setCount(4)
+  : setCount(1)
+},[width])
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist relative" id="story">
-      <div className="flex flex-col items-center lg:flex-row gap-16 lg:justify-between lg:items-start">
+      <div className="flex flex-col-reverse items-center lg:flex-row gap-16 lg:justify-between lg:items-start">
         <div className="w-full lg:w-1/2 space-y-8 lg:sticky lg:top-20">
           <div className="space-y-6 text-warning">
             <h3 className="text-[32px] xl:text-[40px] font-Lora">
@@ -34,7 +48,7 @@ export const Story = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6">
-          {story.map((item, idx) => (
+          {story.slice(0,count).map((item, idx) => (
               <div className="relative h-[350px] md:h-[392px] w-full" key={idx}>
                 <Image
                   fill

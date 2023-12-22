@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
+import Slider from "react-slick";
 const Products = () => {
   const [selected, setSelected] = useState("photos");
   const [width, setWidth] = useState(0)
@@ -32,6 +33,16 @@ useEffect(() =>{
   : setCount(6)
 },[width])
 
+const settings = {
+  infinite: true,
+  autoplay: true,
+  speed: 1500,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // nextArrow: <NextArrow />,
+  // prevArrow: <PrevArrow />,
+};
 
   // const [windowSize, setWindowSize] = useState(window.innerWidth)
 
@@ -181,6 +192,210 @@ useEffect(() =>{
                     </Card>
                   ))}
                 </div>
+                {/* <div className="flex items-center gap-4 md:hidden overflow-scroll"> */}
+                {/* <Slider {...settings}> */}
+                {/* {item.sub.slice(0, count).map((card, id) => (
+                    <Card
+                      as={Link}
+                      href={"/products/1"}
+                      className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
+                      key={id}
+                    >
+                      <CardHeader className="flex justify-between items-center">
+                        <p className="text-md">in-stock</p>
+                        <p className="text-small">$718</p>
+                      </CardHeader>
+                      <CardBody className="space-y-4 relative">
+                        <div className="relative h-[225px] w-full">
+                          <Image
+                            fill
+                            src={card.img}
+                            alt="product"
+                            className="absolute object-contain object-center"
+                          />
+                        </div>
+                        <p
+                          className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
+                        >
+                          View
+                        </p>
+                        <div>
+                          <h4 className="text-sm uppercase">{card.title}</h4>
+                          <p className="font-Lora text-xl">{card.desc}</p>
+                        </div>
+                      </CardBody>
+                      <CardFooter className="p-0">
+                        <Link
+                          href={"/product"}
+                          className={`rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                        >
+                          <div className={`h-6 w-full overflow-hidden`}>
+                            <h4
+                              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                            >
+                              Request a Quote
+                            </h4>
+                            <h4
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 group-hover:text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                          </div>
+                        </Link>
+                      </CardFooter>
+                    </Card>
+                  ))} */}
+                  {/* {item.sub.slice(0, count).map((card, id) => ( */}
+                    {/* <Card
+                      as={Link}
+                      href={"/products/1"}
+                      className="!w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
+                    >
+                      <CardHeader className="flex justify-between items-center">
+                        <p className="text-md">in-stock</p>
+                        <p className="text-small">$718</p>
+                      </CardHeader>
+                      <CardBody className="space-y-4 relative">
+                        <div className="relative h-[225px] w-full">
+                          <Image
+                            fill
+                            src={"/product.png"}
+                            alt="product"
+                            className="absolute object-contain object-center"
+                          />
+                        </div>
+                        <p
+                          className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
+                        >
+                          View
+                        </p>
+                        <div>
+                          <h4 className="text-sm uppercase">diplomatic</h4>
+                          <p className="font-Lora text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo perspiciatis enim, neque ex dolorem nemo.</p>
+                        </div>
+                      </CardBody>
+                      <CardFooter className="p-0">
+                        <Link
+                          href={"/product"}
+                          className={`rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                        >
+                          <div className={`h-6 w-full overflow-hidden`}>
+                            <h4
+                              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                            >
+                              Request a Quote
+                            </h4>
+                            <h4
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 group-hover:text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                          </div>
+                        </Link>
+                      </CardFooter>
+                    </Card>
+                    <Card
+                      as={Link}
+                      href={"/products/1"}
+                      className="!w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
+                    >
+                      <CardHeader className="flex justify-between items-center">
+                        <p className="text-md">in-stock</p>
+                        <p className="text-small">$718</p>
+                      </CardHeader>
+                      <CardBody className="space-y-4 relative">
+                        <div className="relative h-[225px] w-full">
+                          <Image
+                            fill
+                            src={"/product.png"}
+                            alt="product"
+                            className="absolute object-contain object-center"
+                          />
+                        </div>
+                        <p
+                          className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
+                        >
+                          View
+                        </p>
+                        <div>
+                          <h4 className="text-sm uppercase">diplomatic</h4>
+                          <p className="font-Lora text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo perspiciatis enim, neque ex dolorem nemo.</p>
+                        </div>
+                      </CardBody>
+                      <CardFooter className="p-0">
+                        <Link
+                          href={"/product"}
+                          className={`rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                        >
+                          <div className={`h-6 w-full overflow-hidden`}>
+                            <h4
+                              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                            >
+                              Request a Quote
+                            </h4>
+                            <h4
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 group-hover:text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                          </div>
+                        </Link>
+                      </CardFooter>
+                    </Card>
+                    <Card
+                      as={Link}
+                      href={"/products/1"}
+                      className="!w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
+                    >
+                      <CardHeader className="flex justify-between items-center">
+                        <p className="text-md">in-stock</p>
+                        <p className="text-small">$718</p>
+                      </CardHeader>
+                      <CardBody className="space-y-4 relative">
+                        <div className="relative h-[225px] w-full">
+                          <Image
+                            fill
+                            src={"/product.png"}
+                            alt="product"
+                            className="absolute object-contain object-center"
+                          />
+                        </div>
+                        <p
+                          className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
+                        >
+                          View
+                        </p>
+                        <div>
+                          <h4 className="text-sm uppercase">diplomatic</h4>
+                          <p className="font-Lora text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo perspiciatis enim, neque ex dolorem nemo.</p>
+                        </div>
+                      </CardBody>
+                      <CardFooter className="p-0">
+                        <Link
+                          href={"/product"}
+                          className={`rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                        >
+                          <div className={`h-6 w-full overflow-hidden`}>
+                            <h4
+                              className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                            >
+                              Request a Quote
+                            </h4>
+                            <h4
+                              className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 group-hover:text-white`}
+                            >
+                              Request a Quote
+                            </h4>
+                          </div>
+                        </Link>
+                      </CardFooter>
+                    </Card> */}
+                {/* </Slider> */}
+                {/* </div> */}
               </Tab>
             ))}
           </Tabs>
@@ -191,14 +406,8 @@ useEffect(() =>{
           HtextColor={"text-white"}
           bColor={"border-warning"}
           title={"View All Products"}
-          href={"/product"}
+          href={"/products"}
         />
-        {/* <Link
-          href="/products"
-          className="text-warning px-6 py-5 border border-warning rounded-full "
-        >
-          View All Products
-        </Link> */}
       </div>
     </section>
   );

@@ -10,24 +10,39 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
 const Blog = () => {
   const [selected, setSelected] = useState("photos");
+  const [width, setWidth] = useState(0)
+  const [count,setCount] = useState(4);
+
+useEffect(() =>{
+  setWidth(window.innerWidth)
+},[])
+
+useEffect(() =>{
+  width >= 1440
+  ? setCount(4)
+  : width >= 1024
+  ? setCount(3)
+  : setCount(2)
+},[width])
   return (
     <section className="py-16 px-6 md:px-10 xl:p-16 bg-primary font-urbanist">
       <div className="flex flex-col justify-center items-center gap-8">
         <h3 className="font-Lora text-3xl md:text-5xl text-secondary">
           News/Journal
         </h3>
-        <div className="flex flex-col justify-center items-center w-full">
+        <div className="block w-full space-y-8">
           <Tabs
             aria-label="Options"
             selectedKey={selected}
             onSelectionChange={setSelected}
             classNames={{
+              base: "w-full",
               tabList:
-                "gap-4 w-full relative rounded-none p-0 h-auto justify-center flex-wrap bg-primary pb-5",
+                "gap-4 w-full relative rounded-none p-0 h-auto justify-center flex item-center flex-wrap bg-primary",
               cursor: "w-full bg-secondary rounded-full px-4 py-4",
               tab: "w-max text-base tracking-tight border border-white p-5 rounded-full font-Lora",
               tabContent: "group-data-[selected=true]:text-warning",
@@ -42,12 +57,12 @@ const Blog = () => {
                   </span>
                 }
               >
-                <div className="flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
-                  {item.sub.map((card, id) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4">
+                  {item.sub.slice(0,count).map((card, id) => (
                     <Card
                       as={Link}
                       href={"/blog/1"}
-                      className="w-[340px] md:w-[300px] bg-secondary text-warning rounded-none font-urbanist p-5 space-y-2"
+                      className="w-full bg-secondary text-warning rounded-none font-urbanist p-5 space-y-2"
                       key={id}
                     >
                       <CardBody className="space-y-4 p-0">
@@ -56,7 +71,7 @@ const Blog = () => {
                             fill
                             src={card.img}
                             alt="product"
-                            className="absolute object-contain object-center"
+                            className="absolute object-cover object-center"
                           />
                         </div>
                         <div className="space-y-5">

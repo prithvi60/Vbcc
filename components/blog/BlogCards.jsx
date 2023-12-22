@@ -1,8 +1,24 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Btn } from "../Btn";
 
 export const BlogCards = ({ BlogCard, card, item }) => {
+  const [width, setWidth] = useState(0)
+  const [count,setCount] = useState(6);
+
+useEffect(() =>{
+  setWidth(window.innerWidth)
+},[])
+
+useEffect(() =>{
+  width >= 1440
+  ? setCount(6)
+  : width >= 1024
+  ? setCount(4)
+  : width >= 810
+  ? setCount(6)
+  : setCount(5)
+},[width])
   return (
     <section className="block space-y-8">
       <div className="hidden lg:flex items-start gap-8">
@@ -35,7 +51,7 @@ export const BlogCards = ({ BlogCard, card, item }) => {
              <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"Read More"} href={"/blog/1"}/>
         </div>
         <div className="block space-y-[50px] w-full lg:w-[45%] xl:w-[30%]">
-          {BlogCard.map((list, idx) => (
+          {BlogCard.slice(0,3).map((list, idx) => (
             <div className="md:block space-y-5 text-warning w-full" key={idx}>
               <div className="relative w-full h-[330px] overflow-hidden">
                 <Image
@@ -58,9 +74,9 @@ export const BlogCards = ({ BlogCard, card, item }) => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {BlogCard.map((list, idx) => (
+        {BlogCard.slice(0,count).map((list, idx) => (
           <div
-            className=" space-y-5 text-warning w-full xl:last:col-span-3"
+            className=" space-y-5 text-warning w-full"
             key={idx}
           >
             <div className="relative w-full h-[330px] overflow-hidden">

@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const WCU = () => {
   return (
-    <section className="px-6  md:px-10 py-16 xl:px-20 xl:py-20 font-urbanist relative">
+    <section className="px-6 md:px-10 py-16 xl:px-20 xl:py-20 font-urbanist relative">
         <div className="flex flex-col items-center lg:flex-row gap-16 lg:justify-between  lg:items-start">
-        <div className="w-full lg:w-1/2 space-y-8 lg:sticky lg:top-0">
+        <div className="w-full lg:w-1/2 space-y-8 lg:sticky lg:top-20">
       <div className="space-y-6 text-warning">
         <h3 className="text-[28px] md:text-[32px] xl:text-[40px] font-Lora">
           Why Choose Us?
