@@ -15,7 +15,6 @@ const ImgSlider =[
 
 const HowWeDo = () => {
   const [slide, setSlide] = useState(ImgSlider[0]);
-  // console.log(slide.title);
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
@@ -52,7 +51,7 @@ const HowWeDo = () => {
               as="div"
               threshold={1}
               // rootMargin="50px"
-              // triggerOnce={true}
+              triggerOnce={true}
               onChange={(inView, entry) => {
                 console.log("Inview:", inView, item.title, entry);
                 setSlide(

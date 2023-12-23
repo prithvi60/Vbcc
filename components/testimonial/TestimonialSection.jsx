@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonials } from "@/libs/data";
+import { testimonial, testimonials } from "@/libs/data";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,6 +9,8 @@ import FsLightbox from "fslightbox-react";
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
   const [toggler, setToggler] = useState(false);
+  // console.log(testimonials[0].pdf);
+  // console.log(typeof(testimonials));
   const slideVariants = {
     slide: {
       // x: 1000,
@@ -98,8 +100,9 @@ export const TestimonialSection = () => {
       </div>
         </AnimatePresence>
         <FsLightbox
+        exitFullscreenOnClose={true}
 				toggler={toggler}
-				sources={testimonials[selectedItem].pdf}
+				sources={[testimonials[selectedItem].pdf]}
 				key={selectedItem}
         type="image"
 			/>

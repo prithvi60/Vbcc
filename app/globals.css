@@ -31,14 +31,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* React Slider custom */
-.slick-vertical,
+/* .slick-vertical,
 .slick-slide,
 .slick-slider {
   border: none !important;
   gap: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-}
+} */
 
 .custom::-webkit-scrollbar {
   width: 0px;
@@ -49,3 +49,8 @@ body::-webkit-scrollbar-thumb {
 .pause:hover {
   animation-play-state: paused;
 }
+
+/* react slick  custom css for product item*/
+/* .slick-slide > div{
+  margin: 0px 15px;
+} */
