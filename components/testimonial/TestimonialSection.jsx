@@ -4,9 +4,11 @@ import { testimonials } from "@/libs/data";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import FsLightbox from "fslightbox-react";
 
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
+  const [toggler, setToggler] = useState(false);
   const slideVariants = {
     slide: {
       // x: 1000,
@@ -42,7 +44,7 @@ export const TestimonialSection = () => {
   };
   const handleChangePDF = (id) => {
     SetselectedItem(id);
-  };
+  };    
   return (
     <section className="w-full h-[95vh] md:h-[90vh] px-5 py-10 md:px-10 md:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start relative">
       <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80">
@@ -81,10 +83,10 @@ export const TestimonialSection = () => {
         <AnimatePresence initial={false}>
         {/* bg-white px-12 py-4 rounded-3xl */}
       <div className="md:w-1/2 xl:w-[35%] w-full h-full z-30">
-          <div className="h-full w-full overflow-hidden">
+          <div className="h-full w-full overflow-hidden cursor-pointer"  onClick={() => setToggler(!toggler)}>
             <motion.img
               src={testimonials[selectedItem].pdf}
-              alt="Logo"
+              alt="Logo"  
               key={selectedItem}
               className="w-full h-full"
               variants={slideVariants}
@@ -95,6 +97,12 @@ export const TestimonialSection = () => {
           </div>
       </div>
         </AnimatePresence>
+        <FsLightbox
+				toggler={toggler}
+				sources={testimonials[selectedItem].pdf}
+				key={selectedItem}
+        type="image"
+			/>
     </section>
   );
 };
