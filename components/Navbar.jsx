@@ -38,7 +38,7 @@ const NavBar = () => {
               <Link href={link.href} className="h-full text-warning">
                {link.title} 
               </Link>
-               <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-2 group-hover:left-0 group-hover:h-2 group-hover:w-full bg-info"/>
+               <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[2px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info"/>
             </NavbarItem>
           ))}
         </NavbarContent>

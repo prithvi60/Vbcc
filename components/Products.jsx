@@ -69,7 +69,6 @@ const Products = () => {
     centerMode: true,
     centerPadding: "60px",
   };
-
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
@@ -232,20 +231,21 @@ const Products = () => {
                     </Card>
                   ))}
                 </div>
-                <div className="block w-[390px] h-auto md:hidden">
-                  <Slider {...settings}>
+                {/* Mobile view Product items */}
+                {/* <div className="w-[350px] h-full overflow-hidden"> */}
+                <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
                     {item.sub.slice(0, count).map((card, id) => (
-                      <Card
-                        as={Link}
+                      <Link
+                        // as={Link}
                         href={"/products/1"}
-                        className="w-[280px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-x-2 group"
+                        className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                         key={id}
                       >
-                        <CardHeader className="flex justify-between items-center">
+                        <div className="flex justify-between items-center">
                           <p className="text-md">in-stock</p>
                           <p className="text-small">$718</p>
-                        </CardHeader>
-                        <CardBody className="space-y-4 relative">
+                        </div>
+                        <div className="relative">
                           <div className="relative h-[225px] w-full">
                             <Image
                               fill
@@ -264,11 +264,10 @@ const Products = () => {
                             <h4 className="text-sm uppercase">{card.title}</h4>
                             <p className="font-Lora text-xl">{card.desc}</p>
                           </div>
-                        </CardBody>
-                        <CardFooter className="p-0">
+                        </div>
                           <Link
                             href={"/product"}
-                            className={`rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                            className={`block rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                           >
                             <div className={`h-6 w-full overflow-hidden`}>
                               <h4
@@ -283,11 +282,10 @@ const Products = () => {
                               </h4>
                             </div>
                           </Link>
-                        </CardFooter>
-                      </Card>
+                      </Link>
                     ))}
-                  </Slider>
                 </div>
+                {/* </div> */}
               </Tab>
             ))}
           </Tabs>

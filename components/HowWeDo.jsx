@@ -1,11 +1,13 @@
 "use client";
 import { data } from "@/libs/data";
 import { Progress } from "@nextui-org/react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef, useCallback, useState } from "react";
 // import { useInView } from 'react-intersection-observer';
 import { InView } from "react-intersection-observer";
+import { ProgressBar } from "./ProgressBar";
 const ImgSlider =[
   {img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png",title:"Vbcc"},
   {img: "/HWD1.png",title:"Strategize"},
@@ -14,34 +16,55 @@ const ImgSlider =[
 ]
 
 const HowWeDo = () => {
-  const [slide, setSlide] = useState(ImgSlider[0]);
+  const [slide, setSlide] = useState(0);
+  const slideVariants = {
+    entry:{
+      y: 70
+    },
+    visible: {
+      y: 0,
+    },
+    exit :{
+      y:  -70,
+    }
+    ,
+  };
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
-        <div className=" rounded-lg lg:rounded-none py-6 px-4 bg-primary w-full lg:w-1/2 xl:w-2/5 flex flex-col lg:flex-row lg:items-center gap-4 lg:sticky lg:top-6">
-          <div className="flex flex-row items-center lg:flex-col lg:items-center gap-3 h-full">
+        <div className=" rounded-lg lg:rounded-none py-6 px-4 bg-primary w-full lg:w-1/2 xl:w-2/5 flex flex-col lg:flex-row lg:items-center gap-4 sticky top-4 lg:static">
+          {/* <div className="flex flex-row items-center lg:flex-col lg:items-center gap-3 h-full">
             <h5>00</h5>
             <div className="w-full h-3 lg:h-96 lg:w-3 bg-secondary border-2 border-slate-200 ">
-              {/* <Progress aria-label="Loading..." value={60} className="max-w-lg rotate-90" color="primary"/> */}
             </div>
             <h5>03</h5>
-          </div>
-          <div className="relative h-full w-full">
-            <div className="relative h-[182px] lg:h-[400px] w-full">
-              <Image
-                fill
-                src={slide.img}
+          </div> */}
+          <ProgressBar slide={slide}/>
+            <AnimatePresence initial={false}>
+          <div className="relative h-full w-full overflow-hidden">
+            <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
+              <motion.img
+                // fill
+                variants={slideVariants}
+                initial="entry"
+                animate="visible"
+                transition={{duration : 1}}
+                exit="exit"
+                // custom={direction} 
+                key={slide}
+                src={ImgSlider[slide].img}
                 alt="Logo"
-                className="object-cover object-center"
+                className="absolute w-full h-full object-cover object-center"
               />
             </div>
             <h3 className="text-3xl  absolute top-[50%] left-[42%] ">
-               {slide.title}
+               {ImgSlider[slide].title}
             </h3>
           </div>
+            </AnimatePresence>
         </div>
         <div className="w-full lg:w-1/2 xl:w-3/5 space-y-0.5">
-          <div className="py-[70px] px-5 lg:py-48  bg-primary lg:bg-transparent text-secondary lg:text-warning  rounded-lg lg:rounded-none">
+          <div className="py-[70px] px-5 lg:py-48  bg-primary lg:bg-transparent text-secondary lg:text-warning  rounded-lg lg:rounded-none sticky top-80 lg:static">
             <p className="font-Lora text-[40px] tracking-tighter">
               How we do it?
             </p>
@@ -53,19 +76,19 @@ const HowWeDo = () => {
               // rootMargin="50px"
               triggerOnce={true}
               onChange={(inView, entry) => {
-                console.log("Inview:", inView, item.title, entry);
+                // console.log("Inview:", inView, item.title, entry);
                 setSlide(
                   entry.isIntersecting && item.title === "Working Strategy"
-                    ? ImgSlider[1]
+                    ? 1
                     : entry.isIntersecting && item.title === "Design"
-                    ? ImgSlider[2]
+                    ? 2
                     : entry.isIntersecting && item.title === "Engineering"
-                    ? ImgSlider[3]
-                    : ImgSlider[0]
+                    ? 3
+                    : 0
                 );
               }}
               // py-[70px] px-5 lg:py-32
-              className="py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8"
+              className="py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static"
               key={idx}
             >
               <h4 className="font-Lora text-[32px] tracking-tighter">

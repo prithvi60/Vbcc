@@ -16,28 +16,26 @@ export const Culture = () => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? "100% ": "-100%", opacity: 0 };
+      return { y: direction > 0 ? 420 : -420};
     },
     visible: {
       y: 0,
-      opacity: 1,
-      transition: {
-        // y: { type: "spring", stiffness: 400, damping: 50 },
-        duration: 1,
-        opacity: { duration: 0.5 },
-      },
+      // opacity: 1,
+      // transition: {
+      //   y: { type: "spring", stiffness: 420, damping: 50 },
+      //   // duration: 1,
+      //   //  opacity: { duration: 0.5 },
+      // },
     },
     exit: (direction) => {
       return {
-        y: direction > 0 ? "-100% ": "100%",
-        opacity: 0,
-        scale: 0.5,
-        transition: {
-          y: { type: "spring", stiffness: 400, damping: 50 },
-          duration: 0.5,
-          opacity: { duration: 0.5 },
-          delay: 2
-        },
+        y: direction > 0 ? -420 : 420,
+        // opacity: 0,
+        // scale: 0.9,
+        // transition: {
+        //   y: { type: "spring", stiffness: 420, damping: 50 },
+        //   // duration: 0.5,
+        // },
       };
     },
   };
@@ -62,22 +60,23 @@ export const Culture = () => {
     <section className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10" id="culture">
       <div className="w-full xl:px-10 flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning">
         <div className="w-full md:w-1/2 lg:w-[65%]">
-          <AnimatePresence initial={false} custom={direction}>
             <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+          <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 // fill
                 src={imgSrc[currentIndex]}
                 alt="Logo"
                 key={currentIndex}
-                className="w-full h-full object-cover object-center "
+                className="absolute w-full h-full object-cover object-center "
                 variants={slideVariants}
                 initial="slide"
                 animate="visible"
+                transition={{duration : 1}}
                 exit="exit"
                 custom={direction}
               />
-            </div>
           </AnimatePresence>
+            </div>
         </div>
         <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
           <div className="hidden md:flex flex-wrap items-center gap-2.5">
