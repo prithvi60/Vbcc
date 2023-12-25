@@ -9,8 +9,6 @@ import FsLightbox from "fslightbox-react";
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
   const [toggler, setToggler] = useState(false);
-  // console.log(testimonials[0].pdf);
-  // console.log(typeof(testimonials));
   const slideVariants = {
     slide: {
       // x: 1000,
@@ -21,8 +19,8 @@ export const TestimonialSection = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        delay : 0.2,
-        opacity :{duration: 0.5}
+        delay: 0.2,
+        opacity: { duration: 0.5 },
       },
       // transition :{
       //   x: {type : "spring",stiffness: 400,damping: 50,},
@@ -34,8 +32,8 @@ export const TestimonialSection = () => {
       scale: 0.8,
       transition: {
         duration: 0.5,
-        delay : 0.4,
-        opacity :{duration: 0.5}
+        delay: 0.4,
+        opacity: { duration: 0.5 },
       },
       // transition :{
       //   duration: 0.5,
@@ -46,17 +44,16 @@ export const TestimonialSection = () => {
   };
   const handleChangePDF = (id) => {
     SetselectedItem(id);
-  };    
+  };
   return (
-    <section className="w-full h-[95vh] md:h-[90vh] px-5 py-10 md:px-10 md:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start relative">
-      <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80">
-      </div>
+    <section className="w-full h-[99vh] md:h-[90vh] px-5 py-10 md:px-10 md:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start relative">
+      <div className="absolute top-0 left-0 h-[99vh] md:h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
       <div className="w-full md:w-1/2 xl:w-[65%] space-y-9 z-30">
         <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
-        Testimonials
+          Testimonials
         </h2>
         <div className="w-full md:w-96 h-full md:h-auto overflow-hidden flex gap-4">
-          <div className="flex flex-nowrap md:flex-wrap items-center gap-4 h-[70px] md:h-full animate-horizontal_carousel md:animate-none pause ">
+          <div className="flex flex-nowrap md:flex-wrap items-center gap-4 h-[70px] md:h-full animate-horizontal_carousel md:animate-none pause">
             {testimonials.map((item, idx) => (
               <div
                 className={`p-1 rounded-md ${
@@ -82,30 +79,45 @@ export const TestimonialSection = () => {
           </div>
         </div>
       </div>
-        <AnimatePresence initial={false}>
+      <AnimatePresence initial={false}>
         {/* bg-white px-12 py-4 rounded-3xl */}
-      <div className="md:w-1/2 xl:w-[35%] w-full h-full z-30">
-          <div className="h-full w-full overflow-hidden cursor-pointer"  onClick={() => setToggler(!toggler)}>
-            <motion.img
+        <div className="md:w-[35%] w-full h-full z-30 flex items-center justify-start md:justify-end">
+          <motion.div
+            className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
+            // bg-white px-4 rounded-lg
+            onClick={() => setToggler(!toggler)}
+            variants={slideVariants}
+            initial="slide"
+            animate="visible"
+            exit="exit"
+            key={selectedItem}
+          >
+            {/* <motion.img
               src={testimonials[selectedItem].pdf}
               alt="Logo"  
               key={selectedItem}
-              className="w-full h-full"
+              className="w-full h-full object-contain object-center"
               variants={slideVariants}
               initial="slide"
               animate="visible"
               exit="exit"
+            /> */}
+            <Image
+              fill
+              src={testimonials[selectedItem].pdf}
+              alt="Logo"
+              className="w-full h-full object-contain object-center py-4"
             />
-          </div>
-      </div>
-        </AnimatePresence>
-        <FsLightbox
+          </motion.div>
+        </div>
+      </AnimatePresence>
+      <FsLightbox
         exitFullscreenOnClose={true}
-				toggler={toggler}
-				sources={[testimonials[selectedItem].pdf]}
-				key={selectedItem}
+        toggler={toggler}
+        sources={[testimonials[selectedItem].pdf]}
+        key={selectedItem}
         type="image"
-			/>
+      />
     </section>
   );
 };
