@@ -1,20 +1,28 @@
-import { category } from "@/libs/data";
+"use client"
 
-const obj = {
-  title: "All Products",
-  desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-  ImgSrc: "/product-bg.png",
-};
+import { ProductCategory, category } from "@/libs/data";
+import { useSearchParams } from "next/navigation";
+import { useState } from "react";
+
+// const obj = {
+//   title: "All Products",
+//   desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+//   ImgSrc: "/product-bg.png",
+// };
 
 export const ProductHero = () => {
+  // const [products, setproducts] = useState(ProductCategory);
+  const searchParams = useSearchParams()
+  const search = searchParams.get('category')
+ const product = ProductCategory.find(val => val.title === search) || ProductCategory[0]
   return (
     <section className="h-full w-full flex flex-wrap-reverse md:flex-nowrap bg-success">
       <div className="w-full md:w-1/2 px-5 py-10 md:px-10 md:py-[60px] lg:p-[60px]">
         <div className="w-full h-full md:max-w-[550px] lg:max-w-[440px] md:flex md:flex-col md:justify-between md:items-center md:gap-10 block space-y-6">
           <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
-            {obj.title}
+            {product.title}
           </h2>
-          <p className="font-urbanist text-sm lg:text-base">{obj.desc}</p>
+          <p className="font-urbanist text-sm lg:text-base">{product.desc}</p>
           <div className="flex flex-wrap gap-3 md:hidden">
           {category.map((item,idx)=>(
           <div
@@ -39,7 +47,7 @@ export const ProductHero = () => {
         </div>
       </div>
       <div
-        style={{ backgroundImage: `url(${obj.ImgSrc})` }}
+        style={{ backgroundImage: `url(${product.ImgSrc})` }}
         className="h-[400px] md:h-[50vh] w-full md:w-1/2  bg-cover bg-center bg-no-repeat"
       ></div>
     </section>

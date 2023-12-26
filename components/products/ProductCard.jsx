@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export const ProductCard = () => {
+export const ProductCard = ({products}) => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
   const t = Math.ceil(cards.length / 6);
@@ -16,25 +16,28 @@ export const ProductCard = () => {
       setPage(pageIndex);
     }
   };
+  // console.log(products);
   return (
     <section className="bg-secondary space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
-        {cards.slice(0, lastIndex).map((card, idx) => (
+        {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
             <Link
               href={"/products/1"}
               className="min-w-full md:min-w-[50%] z-10"
             >
               {/*Card Body */}
-              <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2">
-                <div className="block space-y-1.5">
-                  <div className="p-3.5 border border-info w-max rounded-full">
+              <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2 h-[330px]">
+                  {list.feature.map((val,i) => (
+                <div className="block space-y-1.5" key={i}>
+                  <div className={`${val === "robust" ? "block" : "hidden"} p-3.5 border border-info w-max rounded-full `}>
                     <Dumbbell className={"fill-info h-6 w-6 "} />
                   </div>
-                  <div className="p-3.5 border border-info w-max rounded-full">
+                  <div className={`${val === "fragile" ? "block" : "hidden"} p-3.5 border border-info w-max rounded-full`}>
                     <Glass className={"h-6 w-6"} />
                   </div>
                 </div>
+                 ))}
                 <div
                   className="group-hover:absolute group-hover:top-3.5 group-hover:right-4 group-hover:px-3.5
                         group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
@@ -44,9 +47,9 @@ export const ProductCard = () => {
                 <div className="relative h-[200px] w-full">
                   <Image
                     fill
-                    src={"/product-img.png"}
+                    src={list?.img}
                     alt="product"
-                    className="absolute object-cover object-bottom md:odd:last:object-contain"
+                    className="absolute object-cover object-center md:odd:last:object-contain"
                   />
                 </div>
               </div>
@@ -54,10 +57,10 @@ export const ProductCard = () => {
               <div className="flex group-hover:bg-white group-hover:rounded-b-2xl bg-transparent transition-all duration-1000 items-center justify-between py-3">
                 <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75">
                   <h4 className="text-[#0D0D0D] font-urbanist">
-                    {card.productName}
+                    {list?.productName}
                   </h4>
                   <h4 className="text-[#6C6C6C] font-urbanist text-sm">
-                    {card.type}
+                    {list?.productType}
                   </h4>
                 </div>
                 <div className="flex items-center">

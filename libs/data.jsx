@@ -328,6 +328,117 @@ export const data = [
 
 // Product Page
 
+// Product Herosection
+export const ProductCategory = [
+  {title: "All Products",
+  desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  ImgSrc: "/product-bg.png"},
+  {title: "Research Institutions",
+  desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  ImgSrc: "/product-bg.png"},
+  {title: "Industries",
+  desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  ImgSrc: "/product-bg.png"},
+  {title: "Accessories",
+  desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+  ImgSrc: "/product-bg.png"},
+]
+
+// Our Products
+export const AllProducts = [
+  {
+    category :"Research Institutions",
+    feature : ["robust","fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Microwave Heating Systems", 
+  },
+  {
+    category :"Research Institutions",
+    feature : ["robust"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Furnaces", 
+  },
+  {
+    category :"Research Institutions",
+    feature : ["robust","fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Ovens", 
+  },
+  {
+    category :"Research Institutions",
+    feature : ["fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Nano Technology Equipment", 
+  },
+  {
+    category :"Research Institutions",
+    feature : ["robust","fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Special Research Equipment", 
+  },
+  {
+    category :"Research Institutions",
+    feature : ["robust"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Presses - Hot & Cold", 
+  },
+  {
+    category :"Research Institutions",
+    feature : ["robust","fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Metallurgical Equipment", 
+  },
+  {
+    category :"Industries",
+    feature : ["robust","fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Industrial Furnaces", 
+  },
+  {
+    category :"Industries",
+    feature : ["fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Refractory Industry", 
+  },
+  {
+    category :"Industries",
+    feature : ["fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Tile & Sanitary Ware", 
+  },
+  {
+    category :"Accessories",
+    feature : ["fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Ceramic Products", 
+  },
+  {
+    category :"Accessories",
+    feature : ["fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Heating Elements", 
+  },
+  {
+    category :"Accessories",
+    feature : ["fragile"],
+    img: "/product-img.png",
+    productName :"Glove Box",
+    productType :"Controllers", 
+  },
+]
+
 // Category
 export const category = [
   "All Products",
@@ -356,7 +467,6 @@ export const filters = [
 // Filter product Mobile view
 export const filter = [
   {
-    id: 1,
     title: "Research Institutions",
     button: [
       "Microwave Heating Systems",
@@ -369,7 +479,6 @@ export const filter = [
     ],
   },
   {
-    id: 2,
     title: "Industries",
     button: [
       "Industrial Furnaces",
@@ -378,7 +487,6 @@ export const filter = [
     ],
   },
   {
-    id: 3,
     title: "Accessories",
     button: ["Ceramic Products", "Heating Elements", "Controllers"],
   },
@@ -596,18 +704,18 @@ export const FAQ = [
 // Testimonials
 // logos
 export const testimonials = [
-  { id: "1", logo: "https://ik.imagekit.io/webibee/VBCC/AU.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png" },
-  { id: "2", logo: "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CGCRI testimonial.png" },
-  { id: "3", logo: "https://ik.imagekit.io/webibee/VBCC/csir.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
-  { id: "4", logo: "https://ik.imagekit.io/webibee/VBCC/Isro.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/ISRO - VSSC testimonial.png" },
-  { id: "5", logo: "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/IIT Madras testimonial.png" },
-  { id: "6", logo: "https://ik.imagekit.io/webibee/VBCC/vit.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png" },
-  { id: "7", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png" },
-  { id: "8", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
-  { id: "9", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png" },
-  { id: "10", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
-  { id: "11", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png" },
-  { id: "12", logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png" },
+  { id: 1, logo: "https://ik.imagekit.io/webibee/VBCC/AU.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png" },
+  { id: 2, logo: "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CGCRI testimonial.png" },
+  { id: 3, logo: "https://ik.imagekit.io/webibee/VBCC/csir.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
+  { id: 4, logo: "https://ik.imagekit.io/webibee/VBCC/Isro.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/ISRO - VSSC testimonial.png" },
+  { id: 5, logo: "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/IIT Madras testimonial.png" },
+  { id: 6, logo: "https://ik.imagekit.io/webibee/VBCC/vit.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png" },
+  { id: 7, logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png" },
+  { id: 8, logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
+  { id: 9, logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png" },
+  { id: 10, logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png" },
+  { id: 11, logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png" },
+  { id: 12, logo: "https://ik.imagekit.io/webibee/VBCC/Layer.svg", pdf: "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png" },
 ];
 
 // Blog

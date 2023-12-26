@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonial, testimonials } from "@/libs/data";
+import { testimonials } from "@/libs/data";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,7 +8,21 @@ import FsLightbox from "fslightbox-react";
 
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
-  const [toggler, setToggler] = useState(false);
+  // const [toggler, setToggler] = useState(false);
+  const fsTool = testimonials.map(val => val.pdf)
+  const [lightboxController, setLightboxController] = useState({
+		toggler: false,
+		slide: selectedItem + 1
+	});
+
+	function openLightboxOnSlide(number) {
+    // SetselectedItem(number);
+		setLightboxController({
+			toggler: !lightboxController.toggler,
+			slide: number + 1
+		});
+	}
+
   const slideVariants = {
     slide: {
       // x: 1000,
@@ -44,6 +58,10 @@ export const TestimonialSection = () => {
   };
   const handleChangePDF = (id) => {
     SetselectedItem(id);
+    // setLightboxController({
+		// 	toggler: !lightboxController.toggler,
+		// 	slide: id
+		// });
   };
   return (
     <section className="w-full h-[99vh] md:h-[90vh] px-5 py-10 md:px-10 md:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start relative">
@@ -85,7 +103,7 @@ export const TestimonialSection = () => {
           <motion.div
             className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
             // bg-white px-4 rounded-lg
-            onClick={() => setToggler(!toggler)}
+            onClick={() => openLightboxOnSlide(selectedItem)}
             variants={slideVariants}
             initial="slide"
             animate="visible"
@@ -113,10 +131,10 @@ export const TestimonialSection = () => {
       </AnimatePresence>
       <FsLightbox
         exitFullscreenOnClose={true}
-        toggler={toggler}
-        sources={[testimonials[selectedItem].pdf]}
-        key={selectedItem}
+        toggler={lightboxController.toggler}
+        sources={fsTool}
         type="image"
+        slide={lightboxController.slide}
       />
     </section>
   );
