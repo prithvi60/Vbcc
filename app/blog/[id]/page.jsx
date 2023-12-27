@@ -1,11 +1,11 @@
-import { BlogProductPage } from "@/components/blog/BlogProductPage";
+import { BlogSpecificPage } from "@/components/blog/BlogSpecificPage";
 import { ExploreCards } from "@/components/blog/ExploreCards";
 
 
 export default function Home() {
   return (
     <main>
-      <BlogProductPage/>
+      <BlogSpecificPage/>
       <ExploreCards/>
     </main>
   );

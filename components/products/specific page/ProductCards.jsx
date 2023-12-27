@@ -1,17 +1,20 @@
-import { Btn } from "@/components/Btn";
-import { relatedProducts } from "@/libs/data";
+
+import { AllProducts } from "@/libs/data";
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const ProductCards = () => {
+export const ProductCards = ({value,name}) => {
+
+    const filteredProduct = AllProducts.filter(val => val.productType === value && val.productName !== name)
+    // console.log(filteredProduct);
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
-      {relatedProducts.map((card, idx) => (
+      {filteredProduct.map((card, idx) => (
         <div className="block group" key={idx}>
-          <Link href={"/products/1"} className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10">
+          <Link href={`/products/${card.productName}`} className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10">
             {/*Card Body */}
             <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2">
               <div className="block space-y-1.5">
@@ -32,7 +35,7 @@ export const ProductCards = () => {
               <div className="relative h-[195px] xl:h-[250px] w-full">
                 <Image
                   fill
-                  src={"/product-img.png"}
+                  src={card.img}
                   alt="product"
                   className="absolute object-cover object-bottom last:object-contain"
                 />
@@ -45,7 +48,7 @@ export const ProductCards = () => {
                   {card.productName}
                 </h4>
                 <h4 className="text-[#6C6C6C] font-urbanist text-sm">
-                  {card.type}
+                  {card.productType}
                 </h4>
               </div>
               <div className="flex items-center">

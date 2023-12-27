@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const BlogProductPage = () => {
+export const BlogSpecificPage = () => {
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 text-warning">
       <div className="block w-full xl:w-3/4 mx-auto space-y-[34px]">
@@ -8,12 +8,6 @@ export const BlogProductPage = () => {
           <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
             Dilatometer Principle and Working
           </h2>
-          {/* <Button
-            variant="bordered"
-            className="px-4 py-2.5 border border-warning w-max rounded-full font-urbanist text-warning"
-          >
-            Feature
-          </Button> */}
           <div
               className={`block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
             >

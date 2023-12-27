@@ -1,20 +1,17 @@
 "use client"
 
 import { ProductCategory, category } from "@/libs/data";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
-
-// const obj = {
-//   title: "All Products",
-//   desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-//   ImgSrc: "/product-bg.png",
-// };
+import { CategoryTab } from "./ProductF&C";
+// import { useCallback, useState } from "react";
 
 export const ProductHero = () => {
-  // const [products, setproducts] = useState(ProductCategory);
+  // const [products, setproducts] = useState(AllProducts);
   const searchParams = useSearchParams()
   const search = searchParams.get('category')
  const product = ProductCategory.find(val => val.title === search) || ProductCategory[0]
+
   return (
     <section className="h-full w-full flex flex-wrap-reverse md:flex-nowrap bg-success">
       <div className="w-full md:w-1/2 px-5 py-10 md:px-10 md:py-[60px] lg:p-[60px]">
@@ -23,13 +20,14 @@ export const ProductHero = () => {
             {product.title}
           </h2>
           <p className="font-urbanist text-sm lg:text-base">{product.desc}</p>
-          <div className="flex flex-wrap gap-3 md:hidden">
+          {/* <div className="flex flex-wrap gap-3 md:hidden">
           {category.map((item,idx)=>(
           <div
             className={`h-full md:hidden rounded-full px-4 py-3 border border-white bg-transparent hover:bg-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer`}
-            // onClick={() => setIsOpen(!isOpen)}
           key={idx}>
-            <div className={`block h-6 w-full overflow-hidden`}>
+            <Link href={pathname + "?" + createQueryString("category", c)} 
+            className={`block h-6 w-full overflow-hidden`} 
+            onClick={() => handleCategory(c)}>
               <h4
                 className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white`}
               >
@@ -40,10 +38,11 @@ export const ProductHero = () => {
               >
                 {`${item} (150)`}
               </h4>
-            </div>
+            </Link>
           </div>
           ))}
-          </div>
+          </div> */}
+          <CategoryTab/>
         </div>
       </div>
       <div

@@ -1,5 +1,5 @@
 "use client";
-import { cards } from "@/libs/data";
+
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
 import Image from "next/image";
@@ -9,7 +9,7 @@ import { useState } from "react";
 export const ProductCard = ({products}) => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
-  const t = Math.ceil(cards.length / 6);
+  const t = Math.ceil(products.length / 6);
   const handlePage = () => {
     let pageIndex = page + 1;
     if (pageIndex <= t && pageIndex >= 1) {
@@ -23,7 +23,8 @@ export const ProductCard = ({products}) => {
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
             <Link
-              href={"/products/1"}
+            // .replace(/\s/g, '')
+              href={`/products/${list?.productName}`}
               className="min-w-full md:min-w-[50%] z-10"
             >
               {/*Card Body */}

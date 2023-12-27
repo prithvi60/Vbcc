@@ -1,24 +1,20 @@
 "use client";
 
-import { carousel } from "@/libs/data";
-import { Accordion, AccordionItem, Button } from "@nextui-org/react";
-import { motion, AnimatePresence, spring } from "framer-motion";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
-const variants = [
-  { value: "Variant 1" },
-  { value: "Variant 2" },
-  { value: "Variant 3" },
-  { value: "Variant 4" },
-];
-
-export const CustomVariant = () => {
-  const [open, setOpen] = useState(false);
-  const [selectedItem, SetselectedItem] = useState("No Variant");
+export const CustomVariant = ({
+  variant,
+  handleClick,
+  open,
+  setOpen,
+  selectedItem,
+}) => {
   return (
     <section>
       <div className="block space-y-5 h-auto w-full">
@@ -47,18 +43,17 @@ export const CustomVariant = () => {
               : "hidden"
           }`}
         >
-          {variants.map((item, idx) => (
+          {variant.map((item, idx) => (
             <li
               className={`p-3 capitalize cursor-pointer font-Lora text-2xl text-primary hover:bg-info border-b border-warning last:border-b-0 hover:duration-1000 hover:bg-opacity-30 ${
-                selectedItem === item.value ? "bg-white" : ""
+                selectedItem === item ? "bg-white" : ""
               } `}
               key={idx}
               onClick={() => {
-                SetselectedItem(item.value);
-                setOpen(!open);
+                handleClick(idx, item);
               }}
             >
-              {item.value}
+              {item}
             </li>
           ))}
         </ul>
@@ -67,7 +62,11 @@ export const CustomVariant = () => {
   );
 };
 
-export const CustomAccordion = () => {
+export const CustomAccordion = ({ specification, specificId }) => {
+  const specificDimension = specification[specificId].dimension
+  const specificQuantity = specification[specificId].Quantity
+  console.log(specificDimension);
+  console.log(specificQuantity);
   const itemClasses = {
     title: "font-Lora text-xl text-warning",
   };
@@ -90,7 +89,25 @@ export const CustomAccordion = () => {
             )
           }
         >
-          {<CustomTable />}
+          {
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                {/* {specificDimension.map{(list,idx) => (
+                  
+                )}} */}
+                <tr>
+                  <td className="border border-[#B9B9B9] p-3">
+                    {/* {specificDimension.dimensionName} */}
+                    hello
+                  </td>
+                  <td className="border border-[#B9B9B9] p-3">
+                    {/* {specificDimension.dimensionValue} */}
+                    hello
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          }
         </AccordionItem>
         <AccordionItem
           key="2"
@@ -105,45 +122,42 @@ export const CustomAccordion = () => {
           }
           className="border-b-3 border-[#F1F1F1]"
         >
-          {<CustomTable />}
+          {
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                <tr>
+                  <td className="border border-[#B9B9B9] p-3">
+                    {/* {specificQuantity.quantityName} */}
+                    hello
+                  </td>
+                  <td className="border border-[#B9B9B9] p-3">
+                    {/* {specificQuantity.quantityValue} */}
+                    hello
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          }
         </AccordionItem>
       </Accordion>
     </section>
   );
 };
 
-export const CustomTable = () => {
-  return (
-    <table className="w-full border border-[#B9B9B9] text-xl my-5">
-      <tr>
-        <td className="border border-[#B9B9B9] p-3">Available Space</td>
-        <td className="border border-[#B9B9B9] p-3">150 x 150 x 200 mm</td>
-      </tr>
-      <tr>
-        <td className="border border-[#B9B9B9] p-3">Rate of Heating</td>
-        <td className="border border-[#B9B9B9] p-3">5&deg;C/Min</td>
-      </tr>
-      <tr>
-        <td className="border border-[#B9B9B9] p-3">Rate of Heating</td>
-        <td className="border border-[#B9B9B9] p-3">5&deg;C/Min</td>
-      </tr>
-      <tr>
-        <td className="border border-[#B9B9B9] p-3">Rate of Heating</td>
-        <td className="border border-[#B9B9B9] p-3">5&deg;C/Min</td>
-      </tr>
-      <tr>
-        <td className="border border-[#B9B9B9] p-3">Rate of Heating</td>
-        <td className="border border-[#B9B9B9] p-3">5&deg;C/Min</td>
-      </tr>
-      <tr>
-        <td className="border border-[#B9B9B9] p-3">Rate of Heating</td>
-        <td className="border border-[#B9B9B9] p-3">5&deg;C/Min</td>
-      </tr>
-    </table>
-  );
-};
+// export const CustomTable = ({ spec }) => {
+//   return (
+//     <table className="w-full border border-[#B9B9B9] text-xl my-5">
+//       <tbody>
+//         <tr>
+//           <td className="border border-[#B9B9B9] p-3">{spec.dimensionName}</td>
+//           <td className="border border-[#B9B9B9] p-3">{dimensionValue}</td>
+//         </tr>
+//       </tbody>
+//     </table>
+//   );
+// };
 
-export const CustomCarousel = () => {
+export const CustomCarousel = ({ gallery }) => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
@@ -153,29 +167,29 @@ export const CustomCarousel = () => {
     visible: {
       x: 0,
       opacity: 1,
-      transition :{
-        x: {type : "spring",stiffness: 400,damping: 50,},
-        opacity :{duration: 0.5}
-      }
+      transition: {
+        x: { type: "spring", stiffness: 400, damping: 50 },
+        opacity: { duration: 0.5 },
+      },
     },
     exit: (direction) => {
       return {
         x: direction > 0 ? -1000 : 1000,
         opacity: 0,
-        transition :{
-          x: {type : "spring",stiffness: 400,damping: 50,},
-          opacity :{duration: 0.5}
-        }
+        transition: {
+          x: { type: "spring", stiffness: 400, damping: 50 },
+          opacity: { duration: 0.5 },
+        },
       };
     },
   };
   const handleNext = () => {
     setDirection(1);
-    setIndex(() => (index === carousel.length - 1 ? 0 : index + 1));
+    setIndex(() => (index === gallery.length - 1 ? 0 : index + 1));
   };
   const handlePrev = () => {
     setDirection(-1);
-    setIndex(() => (index === 0 ? carousel.length - 1 : index - 1));
+    setIndex(() => (index === 0 ? gallery.length - 1 : index - 1));
   };
   const handleThumbnail = (id) => {
     setDirection(id == index ? -1 : 1);
@@ -185,12 +199,12 @@ export const CustomCarousel = () => {
   return (
     <>
       <section className="block space-y-5">
-            <AnimatePresence initial={false} custom={direction} >
+        <AnimatePresence initial={false} custom={direction}>
           <div className="relative w-full h-[490px] overflow-hidden">
             <motion.img
               // fill
-              key={carousel[index].img}
-              src={carousel[index].img}
+              key={gallery[index].img}
+              src={gallery[index].img}
               alt="..."
               className="w-full h-full object-cover object-center rounded-md"
               variants={slideVariants}
@@ -202,7 +216,7 @@ export const CustomCarousel = () => {
           </div>
         </AnimatePresence>
         <div className="flex items-center gap-5 w-full h-auto">
-          {carousel.map((item, idx) => (
+          {gallery.map((item, idx) => (
             <div
               className={`relative w-full h-[120px] mb-5 overflow-hidden cursor-pointer ${
                 idx === index ? " rounded-md border-2 border-info" : ""
@@ -227,20 +241,20 @@ export const CustomCarousel = () => {
             <GoArrowLeft className="h-5 w-5 text-warning active:text-warning" />
           </div>
           <div className="text-xl">
-          <AnimatePresence initial={false} custom={direction} >
-            <motion.span
-              key={index}
-              variants={slideVariants}
-              initial= "slide"
-              animate="visible"
-              exit="exit"
-              className="w-max h-auto"
-              custom={direction}
-            >
-              {carousel[index].id}
-            </motion.span>
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.span
+                key={index}
+                variants={slideVariants}
+                initial="slide"
+                animate="visible"
+                exit="exit"
+                className="w-max h-auto"
+                custom={direction}
+              >
+                {gallery[index].id}
+              </motion.span>
             </AnimatePresence>
-            / {carousel.length}
+            / {gallery.length}
           </div>
           <div
             className="p-4 rounded-full cursor-pointer border border-warning active:border-warning"
