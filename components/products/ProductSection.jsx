@@ -1,10 +1,11 @@
 "use client";
 import { CustomSelect, CustomSelectMd } from "./CustomSelect";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GrFilter } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
 import Filter from "./Filter";
 import ProductFC from "./ProductF&C";
+import { AllProducts } from "@/libs/data";
 
 const sortProduct = [
   { value: "relevance" },
@@ -13,13 +14,24 @@ const sortProduct = [
   { value: "best sellers" },
 ];
 
-const ProductSection = () => {
+const ProductSection = ({ products, setProducts }) => {
+  const [searchValue, setSearchValue] = useState("");
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
   const [selectedItem, SetselectedItem] = useState("Relevance");
+
+  useEffect(() => {
+    const allProducts = AllProducts.filter(
+      (val) =>
+        val.productName.toLowerCase().includes(searchValue.toLowerCase()) ||
+        val.productType.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setProducts(allProducts);
+  }, [searchValue, setProducts]);
+
   return (
     <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
-      {/* Filter Section */}
+      {/* Sort Section */}
       <div className="w-full hidden lg:flex justify-end items-center space-y-5 xl:px-[60px]">
         <div className="block space-y-5">
           <CustomSelect
@@ -33,11 +45,14 @@ const ProductSection = () => {
             <input
               type="text"
               placeholder="Search"
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
               className=" text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-2xl"
             />
           </div>
         </div>
       </div>
+      {/* Tablet view filter */}
       <div className="w-full flex flex-col-reverse gap-4 md:flex md:flex-row md:gap-0 lg:hidden md:justify-between md:items-start xl:px-[60px]">
         <CustomSelectMd
           open={open}
@@ -51,6 +66,8 @@ const ProductSection = () => {
           <input
             type="text"
             placeholder="Search"
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
             className=" text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-base md:text-2xl"
           />
         </div>
@@ -75,7 +92,7 @@ const ProductSection = () => {
         {isFilter && <Filter setIsFilter={setIsFilter} />}
       </div>
       {/* Product Section */}
-      <ProductFC />
+      <ProductFC products={products} setProducts={setProducts} />
     </section>
   );
 };

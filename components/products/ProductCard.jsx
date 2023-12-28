@@ -4,18 +4,24 @@ import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const ProductCard = ({products}) => {
+  // console.log(products);
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
   const t = Math.ceil(products.length / 6);
+  // console.log(t);
   const handlePage = () => {
     let pageIndex = page + 1;
     if (pageIndex <= t && pageIndex >= 1) {
       setPage(pageIndex);
     }
   };
+
+  useEffect(()=>{
+
+  },[products,page,t])
   // console.log(products);
   return (
     <section className="bg-secondary space-y-10">
@@ -24,7 +30,7 @@ export const ProductCard = ({products}) => {
           <div className="block group md:odd:last:col-span-2" key={idx}>
             <Link
             // .replace(/\s/g, '')
-              href={`/products/${list?.productName}`}
+              href={`/products/${list?.productName.replace(/\s/g, '')}`}
               className="min-w-full md:min-w-[50%] z-10"
             >
               {/*Card Body */}

@@ -113,7 +113,10 @@ export const CustomSelectMd = ({
 export const CustomFilter = () => {
    const [index, setIndex] = useState(false);
 
-  const handleSetIndex = (Id) => index !== Id && setIndex(Id);
+  const handleSetIndex = (Id) => {
+    console.log(Id);
+    // index !== Id && setIndex(Id)
+  }
   return (
     <div className="space-y-4 ">
       {filter.map((item) => (

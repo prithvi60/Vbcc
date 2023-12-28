@@ -63,6 +63,8 @@ export const CustomVariant = ({
 };
 
 export const CustomAccordion = ({ specification, specificId }) => {
+  // const noVariantDimension = specification[0].dimension
+  // const noVariantQuantity = specification[0].quantity
   const specificDimension = specification[specificId].dimension
   const specificQuantity = specification[specificId].quantity
   const itemClasses = {
@@ -87,7 +89,6 @@ export const CustomAccordion = ({ specification, specificId }) => {
             )
           }
         >
-
             <table className="w-full border border-[#B9B9B9] text-xl my-5">
               <tbody >
                 {specificDimension.map((list,idx) =>(

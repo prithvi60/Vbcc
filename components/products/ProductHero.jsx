@@ -1,16 +1,14 @@
-"use client"
+"use client";
 
-import { ProductCategory, category } from "@/libs/data";
-import Link from "next/link";
+import { ProductCategory } from "@/libs/data";
 import { useSearchParams } from "next/navigation";
 import { CategoryTab } from "./ProductF&C";
-// import { useCallback, useState } from "react";
 
-export const ProductHero = () => {
-  // const [products, setproducts] = useState(AllProducts);
-  const searchParams = useSearchParams()
-  const search = searchParams.get('category')
- const product = ProductCategory.find(val => val.title === search) || ProductCategory[0]
+export const ProductHero = ({ setProducts }) => {
+  const searchParams = useSearchParams();
+  const search = searchParams.get("category");
+  const product =
+    ProductCategory.find((val) => val.title === search) || ProductCategory[0];
 
   return (
     <section className="h-full w-full flex flex-wrap-reverse md:flex-nowrap bg-success">
@@ -42,7 +40,7 @@ export const ProductHero = () => {
           </div>
           ))}
           </div> */}
-          <CategoryTab/>
+          <CategoryTab setProducts={setProducts} />
         </div>
       </div>
       <div

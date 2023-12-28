@@ -9,7 +9,7 @@ export const ProductVariant = ({ product }) => {
   const [selectedItem, SetselectedItem] = useState("No Variant");
   const [specificId, setSpecificId] = useState(0);
 
-  const handleClick = (id,item) => {
+  const handleClick = (id, item) => {
     setSpecificId(id);
     // const filtered = product.variant.filter(val => val.variantType === item)
     SetselectedItem(item);
@@ -18,6 +18,7 @@ export const ProductVariant = ({ product }) => {
   return (
     <section className="space-y-[52px]">
       <div className="block space-y-10 max-w-[390px]">
+        {product.variant && (
         <CustomVariant
           variant={product.variant}
           handleClick={handleClick}
@@ -25,6 +26,7 @@ export const ProductVariant = ({ product }) => {
           setOpen={setOpen}
           selectedItem={selectedItem}
         />
+        )}
         <h4 className="text-[40px] font-Lora tracking-wider">
           {product.price}
         </h4>
@@ -46,11 +48,22 @@ export const ProductVariant = ({ product }) => {
           </div>
         </Link>
       </div>
-      {specificId >= 0 ? ( <div className="block space-y-5 max-w-lg">
-        <h4 className="font-Lora text-[32px]">Specifications</h4>
-        <CustomAccordion specification={product.specification} specificId={specificId}/>
-      </div>) : (null)}
-     
+      <h4 className="font-Lora text-[32px]">Specifications</h4>
+      {specificId >= 0 ? (
+        <div className="block space-y-5 max-w-lg">
+          <CustomAccordion
+            specification={product.specification}
+            specificId={specificId}
+          />
+        </div>
+      ) : (
+        <div className="block space-y-5 max-w-lg">
+          <CustomAccordion
+            specification={product.specification}
+            specificId={0}
+          />
+        </div>
+      )}
     </section>
   );
 };
