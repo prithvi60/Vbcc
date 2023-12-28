@@ -7,7 +7,7 @@ import { useState } from "react";
 export const ProductVariant = ({ product }) => {
   const [open, setOpen] = useState(false);
   const [selectedItem, SetselectedItem] = useState("No Variant");
-  const [specificId, setSpecificId] = useState(null);
+  const [specificId, setSpecificId] = useState(0);
 
   const handleClick = (id,item) => {
     setSpecificId(id);
@@ -46,10 +46,10 @@ export const ProductVariant = ({ product }) => {
           </div>
         </Link>
       </div>
-      {/* {specificId >= 0 ? ( <div className="block space-y-5 max-w-lg">
+      {specificId >= 0 ? ( <div className="block space-y-5 max-w-lg">
         <h4 className="font-Lora text-[32px]">Specifications</h4>
         <CustomAccordion specification={product.specification} specificId={specificId}/>
-      </div>) : (null)} */}
+      </div>) : (null)}
      
     </section>
   );

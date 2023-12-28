@@ -1,6 +1,6 @@
-                  /******  VBCC Home Page ******/
-                  
-                      /****** Navbar *******/
+/******  VBCC Home Page ******/
+
+/****** Navbar *******/
 export const Navlinks = [
   { href: "/products", title: "Products" },
   { href: "/testimonials", title: "TESTIMONIALS" },
@@ -332,7 +332,7 @@ export const data = [
   },
 ];
 
-                /******  Product Page ******/
+/******  Product Page ******/
 
 // Product Herosection
 export const ProductCategory = [
@@ -368,7 +368,7 @@ export const AllProducts = [
     productType: "Microwave Heating Systems",
     description:
       "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-    variant: ["variant-1", "variant-2"],
+    variant: ["No variant", "variant-1", "variant-2"],
     price: "₹7.2L",
     gallery: [
       { id: "1", img: "https://ik.imagekit.io/webibee/VBCC/sample 1.png" },
@@ -378,7 +378,7 @@ export const AllProducts = [
     ],
     specification: [
       {
-        variantType: "variant1",
+        variantType: "No variant",
         dimension: [
           {
             dimensionName: "Available Space",
@@ -397,7 +397,7 @@ export const AllProducts = [
             dimensionValue: "5°C/Min",
           },
         ],
-        Quantity:[
+        quantity: [
           {
             quantityName: "Available Space",
             quantityValue: "150 x 150 x 200 mm",
@@ -413,6 +413,45 @@ export const AllProducts = [
           {
             quantityName: "Rate of Heating",
             quantityValue: "5°C/Min",
+          },
+        ],
+      },
+      {
+        variantType: "variant1",
+        dimension: [
+          {
+            dimensionName: "Available Space",
+            dimensionValue: "180 x 180 x 200 mm",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+        ],
+        quantity: [
+          {
+            quantityName: "Available Space",
+            quantityValue: "180 x 180 x 200 mm",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
           },
         ],
       },
@@ -436,7 +475,7 @@ export const AllProducts = [
             dimensionValue: "10°C/Min",
           },
         ],
-        Quantity:[
+        quantity: [
           {
             quantityName: "Available Space",
             quantityValue: "200 x 200 x 200 mm",
@@ -456,12 +495,12 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg : "/sample 1.png",
-    overViewDescription : [
+    overViewImg: "/sample 1.png",
+    overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
       "What sets VBCC apart is our commitment to providing high-quality solutions at a fraction of the cost of imported alternatives. Our Dilatometer not only matches imports in performance but also delivers incredible value for your investment. It's built to last, with rugged durability, and our 24/7 service support ensures you're never left in the lurch.",
-      "For high-quality research and precise measurements, VBCC's Dilatometer is your trusted companion. Explore our range, including horizontal and vertical Dilatometers, as well as quenching Dilatometers, covering a temperature range from -RT to 1600°C."
+      "For high-quality research and precise measurements, VBCC's Dilatometer is your trusted companion. Explore our range, including horizontal and vertical Dilatometers, as well as quenching Dilatometers, covering a temperature range from -RT to 1600°C.",
     ],
   },
   {
@@ -472,7 +511,7 @@ export const AllProducts = [
     productType: "Microwave Heating Systems",
     description:
       "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-    variant: ["variant-1", "variant-2"],
+    variant: ["No variant", "variant-1", "variant-2"],
     price: "₹7.2L",
     gallery: [
       { id: "1", img: "https://ik.imagekit.io/webibee/VBCC/sample 1.png" },
@@ -482,7 +521,7 @@ export const AllProducts = [
     ],
     specification: [
       {
-        variantType: "variant1",
+        variantType: "No variant",
         dimension: [
           {
             dimensionName: "Available Space",
@@ -501,7 +540,7 @@ export const AllProducts = [
             dimensionValue: "5°C/Min",
           },
         ],
-        Quantity:[
+        quantity: [
           {
             quantityName: "Available Space",
             quantityValue: "150 x 150 x 200 mm",
@@ -521,7 +560,111 @@ export const AllProducts = [
         ],
       },
       {
+        variantType: "variant1",
+        dimension: [
+          {
+            dimensionName: "Available Space",
+            dimensionValue: "180 x 180 x 200 mm",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+        ],
+        quantity: [
+          {
+            quantityName: "Available Space",
+            quantityValue: "180 x 180 x 200 mm",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+        ],
+      },
+      {
         variantType: "variant2",
+        dimension: [
+          {
+            dimensionName: "Available Space",
+            dimensionValue: "200 x 200 x 200 mm",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "10°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "10°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "10°C/Min",
+          },
+        ],
+        quantity: [
+          {
+            quantityName: "Available Space",
+            quantityValue: "200 x 200 x 200 mm",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "6°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "6°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "6°C/Min",
+          },
+        ],
+      },
+    ],
+    overViewImg: "/sample 1.png",
+    overViewDescription: [
+      "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
+      "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
+      "What sets VBCC apart is our commitment to providing high-quality solutions at a fraction of the cost of imported alternatives. Our Dilatometer not only matches imports in performance but also delivers incredible value for your investment. It's built to last, with rugged durability, and our 24/7 service support ensures you're never left in the lurch.",
+      "For high-quality research and precise measurements, VBCC's Dilatometer is your trusted companion. Explore our range, including horizontal and vertical Dilatometers, as well as quenching Dilatometers, covering a temperature range from -RT to 1600°C.",
+    ],
+  },
+  {
+    category: "Research Institutions",
+    feature: ["robust", "fragile"],
+    img: "/product-img.png",
+    productName: "MicrowaveBox3",
+    productType: "Microwave Heating Systems",
+    description:
+      "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+    variant: ["No variant", "variant-1", "variant-2"],
+    price: "₹7.2L",
+    gallery: [
+      { id: "1", img: "https://ik.imagekit.io/webibee/VBCC/sample 1.png" },
+      { id: "2", img: "https://ik.imagekit.io/webibee/VBCC/sample 2.png" },
+      { id: "3", img: "https://ik.imagekit.io/webibee/VBCC/sample 3.png" },
+      { id: "4", img: "https://ik.imagekit.io/webibee/VBCC/sample 4.png" },
+    ],
+    specification: [
+      {
+        variantType: "No variant",
         dimension: [
           {
             dimensionName: "Available Space",
@@ -540,7 +683,7 @@ export const AllProducts = [
             dimensionValue: "5°C/Min",
           },
         ],
-        Quantity:[
+        quantity: [
           {
             quantityName: "Available Space",
             quantityValue: "150 x 150 x 200 mm",
@@ -559,13 +702,91 @@ export const AllProducts = [
           },
         ],
       },
+      {
+        variantType: "variant1",
+        dimension: [
+          {
+            dimensionName: "Available Space",
+            dimensionValue: "180 x 180 x 200 mm",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "8°C/Min",
+          },
+        ],
+        quantity: [
+          {
+            quantityName: "Available Space",
+            quantityValue: "180 x 180 x 200 mm",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "8°C/Min",
+          },
+        ],
+      },
+      {
+        variantType: "variant2",
+        dimension: [
+          {
+            dimensionName: "Available Space",
+            dimensionValue: "200 x 200 x 200 mm",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "10°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "10°C/Min",
+          },
+          {
+            dimensionName: "Rate of Heating",
+            dimensionValue: "10°C/Min",
+          },
+        ],
+        quantity: [
+          {
+            quantityName: "Available Space",
+            quantityValue: "200 x 200 x 200 mm",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "6°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "6°C/Min",
+          },
+          {
+            quantityName: "Rate of Heating",
+            quantityValue: "6°C/Min",
+          },
+        ],
+      },
     ],
-    overViewImg : "/sample 1.png",
-    overViewDescription : [
+    overViewImg: "/sample 1.png",
+    overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
       "What sets VBCC apart is our commitment to providing high-quality solutions at a fraction of the cost of imported alternatives. Our Dilatometer not only matches imports in performance but also delivers incredible value for your investment. It's built to last, with rugged durability, and our 24/7 service support ensures you're never left in the lurch.",
-      "For high-quality research and precise measurements, VBCC's Dilatometer is your trusted companion. Explore our range, including horizontal and vertical Dilatometers, as well as quenching Dilatometers, covering a temperature range from -RT to 1600°C."
+      "For high-quality research and precise measurements, VBCC's Dilatometer is your trusted companion. Explore our range, including horizontal and vertical Dilatometers, as well as quenching Dilatometers, covering a temperature range from -RT to 1600°C.",
     ],
   },
   {
@@ -730,7 +951,7 @@ export const filter = [
 //   // { productName: "Glove Box", type: "Material Preparation" },
 // ];
 
-                /******* Product Specific ********/
+/******* Product Specific ********/
 // Product Carousel
 // export const carousel = [
 //   { id: "1", img: "https://ik.imagekit.io/webibee/VBCC/sample 1.png" },
@@ -746,7 +967,7 @@ export const relatedProducts = [
   { productName: "Glove Box", type: "Material Preparation" },
 ];
 
-                /******* About Us Page ********/
+/******* About Us Page ********/
 
 // Story and Vision Image
 export const story = [
@@ -834,7 +1055,7 @@ export const Team = [
   },
 ];
 
-                  /******* FAQ Page *******/
+/******* FAQ Page *******/
 
 // FAQ Accordion
 export const FAQ = [
@@ -922,7 +1143,7 @@ export const FAQ = [
   },
 ];
 
-              /******** Testimonials ********/
+/******** Testimonials ********/
 
 // logos
 export const testimonials = [
@@ -988,7 +1209,7 @@ export const testimonials = [
   },
 ];
 
-                    /******* Blog ********/
+/******* Blog ********/
 
 // Blog Cards
 export const BlogCard = [
@@ -1093,50 +1314,58 @@ export const allBlogContent = [
     MainBlog: {
       img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
       blogTitile: "Dilatometer Principle and Working",
-      blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      blogDescription:
+        "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
     },
     blogContents: [
       {
-        id:"1",
+        id: "1",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"2",
+        id: "2",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"3",
+        id: "3",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"4",
+        id: "4",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"5",
+        id: "5",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"6",
+        id: "6",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"7",
+        id: "7",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     ],
   },
@@ -1146,50 +1375,58 @@ export const allBlogContent = [
     MainBlog: {
       img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
       blogTitile: "Dilatometer Principle and Working",
-      blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      blogDescription:
+        "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
     },
     blogContents: [
       {
-        id:"1",
+        id: "1",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"2",
+        id: "2",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"3",
+        id: "3",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"4",
+        id: "4",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"5",
+        id: "5",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"6",
+        id: "6",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"7",
+        id: "7",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     ],
   },
@@ -1199,50 +1436,58 @@ export const allBlogContent = [
     MainBlog: {
       img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
       blogTitile: "Dilatometer Principle and Working",
-      blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      blogDescription:
+        "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
     },
     blogContents: [
       {
-        id:"1",
+        id: "1",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"2",
+        id: "2",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"3",
+        id: "3",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"4",
+        id: "4",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"5",
+        id: "5",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"6",
+        id: "6",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"7",
+        id: "7",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     ],
   },
@@ -1252,50 +1497,58 @@ export const allBlogContent = [
     MainBlog: {
       img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
       blogTitile: "Dilatometer Principle and Working",
-      blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      blogDescription:
+        "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
     },
     blogContents: [
       {
-        id:"1",
+        id: "1",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"2",
+        id: "2",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"3",
+        id: "3",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"4",
+        id: "4",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"5",
+        id: "5",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"6",
+        id: "6",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"7",
+        id: "7",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     ],
   },
@@ -1305,54 +1558,62 @@ export const allBlogContent = [
     MainBlog: {
       img: "https://ik.imagekit.io/webibee/VBCC/blog-2.png",
       blogTitile: "Dilatometer Principle and Working",
-      blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+      blogDescription:
+        "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
     },
     blogContents: [
       {
-        id:"1",
+        id: "1",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"2",
+        id: "2",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"3",
+        id: "3",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"4",
+        id: "4",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"5",
+        id: "5",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"6",
+        id: "6",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
       {
-        id:"7",
+        id: "7",
         img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
         blogTitile: "Dilatometer Principle and Working",
-        blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+        blogDescription:
+          "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
       },
     ],
   },
-]
+];
 
 // Explore cards
 export const explore = [

@@ -64,9 +64,7 @@ export const CustomVariant = ({
 
 export const CustomAccordion = ({ specification, specificId }) => {
   const specificDimension = specification[specificId].dimension
-  const specificQuantity = specification[specificId].Quantity
-  console.log(specificDimension);
-  console.log(specificQuantity);
+  const specificQuantity = specification[specificId].quantity
   const itemClasses = {
     title: "font-Lora text-xl text-warning",
   };
@@ -89,25 +87,22 @@ export const CustomAccordion = ({ specification, specificId }) => {
             )
           }
         >
-          {
+
             <table className="w-full border border-[#B9B9B9] text-xl my-5">
-              <tbody>
-                {/* {specificDimension.map{(list,idx) => (
-                  
-                )}} */}
-                <tr>
+              <tbody >
+                {specificDimension.map((list,idx) =>(
+                  <tr key={idx}>
                   <td className="border border-[#B9B9B9] p-3">
-                    {/* {specificDimension.dimensionName} */}
-                    hello
+                    {list.dimensionName} 
                   </td>
                   <td className="border border-[#B9B9B9] p-3">
-                    {/* {specificDimension.dimensionValue} */}
-                    hello
+                     {list.dimensionValue} 
                   </td>
                 </tr>
+                ))}
               </tbody>
             </table>
-          }
+
         </AccordionItem>
         <AccordionItem
           key="2"
@@ -122,22 +117,20 @@ export const CustomAccordion = ({ specification, specificId }) => {
           }
           className="border-b-3 border-[#F1F1F1]"
         >
-          {
             <table className="w-full border border-[#B9B9B9] text-xl my-5">
-              <tbody>
-                <tr>
+              <tbody >
+                {specificQuantity.map((list,idx) =>(
+                  <tr key={idx}>
                   <td className="border border-[#B9B9B9] p-3">
-                    {/* {specificQuantity.quantityName} */}
-                    hello
+                    {list.quantityName} 
                   </td>
                   <td className="border border-[#B9B9B9] p-3">
-                    {/* {specificQuantity.quantityValue} */}
-                    hello
+                     {list.quantityValue} 
                   </td>
                 </tr>
+                ))}
               </tbody>
             </table>
-          }
         </AccordionItem>
       </Accordion>
     </section>

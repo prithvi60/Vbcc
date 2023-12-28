@@ -13,6 +13,8 @@ const ProductFC = () => {
   const [selectedItem, SetselectedItem] = useState("All Products");
   const [isSelected, setIsSelected] = useState(false);
   const [filteredCategory, setFilteredCategory] = useState([]);
+  const filterArray = [...new Set(AllProducts.map(val =>  val.productType))]
+  console.log(filterArray);
 
   const createQueryString = useCallback(
     (name, value) => {
@@ -78,13 +80,13 @@ const ProductFC = () => {
         <div className="hidden lg:block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>
           <ul className="space-y-3">
-            {products.map((type, idx) => (
+            {filterArray.map((type, idx) => (
               <li
                 key={idx}
                 className={`flex items-center gap-2 w-max cursor-pointer`}
               >
                 <Checkbox
-                  value={type.productType}
+                  value={type}
                   // isSelected={isSelected}
                   // onValueChange={setIsSelected}
                   onChange={(e) => handleFilter(e)}
@@ -92,7 +94,7 @@ const ProductFC = () => {
                   color="success"
                 >
                   <h4 className="text-warning text-opacity-50 font-urbanist text-base hover:text-warning">
-                    {type.productType}
+                    {type}
                   </h4>
                 </Checkbox>
               </li>
