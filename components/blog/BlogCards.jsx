@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Btn } from "../Btn";
+import { BlogGridComponent } from "./BlogGridComponent";
 
 export const BlogCards = ({ blogContents, MainBlog, item }) => {
   const [width, setWidth] = useState(0);
@@ -42,12 +43,12 @@ export const BlogCards = ({ blogContents, MainBlog, item }) => {
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h4
-                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning tracking-wider`}
                 >
                   Featured
                 </h4>
                 <h4
-                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white tracking-wider`}
                 >
                   Featured
                 </h4>
@@ -72,62 +73,14 @@ export const BlogCards = ({ blogContents, MainBlog, item }) => {
         {/* other Blogs Section */}
         <div className="block space-y-[50px] w-full lg:w-1/2 xl:w-[32%]">
           {blogContents.slice(0, 3).map((list, idx) => (
-            <div className="md:block space-y-5 text-warning w-full" key={idx}>
-              <div className="relative w-full h-[330px] overflow-hidden">
-                <Image
-                  fill
-                  src={list.img}
-                  alt="product"
-                  className="absolute object-cover object-center hover:scale-125 transition-all duration-1000"
-                />
-                <div className="px-4 py-2.5 absolute top-5 left-5 bg-white w-max rounded-md lg:hidden">
-                  Featured
-                </div>
-              </div>
-              <h4 className="text-lg lg:text-[32px] font-Lora">
-                {list.blogTitile}
-              </h4>
-              <p className="text-sm md:text-base">{list.blogDescription}</p>
-              <Btn
-                Hbgcolor={"bg-primary"}
-                textColor={"text-warning"}
-                HtextColor={"text-white"}
-                bColor={"border-warning"}
-                title={"Read More"}
-                href={"/blog/1"}
-              />
-            </div>
+            <BlogGridComponent key={idx} list={list} />
           ))}
         </div>
       </div>
       {/* Blogs wrapper Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
         {blogContents.slice(0, lastIndex).map((list, idx) => (
-          <div className=" space-y-5 text-warning w-full" key={idx}>
-            <div className="relative w-full h-[330px] overflow-hidden">
-              <Image
-                fill
-                src={list.img}
-                alt="product"
-                className="absolute object-cover object-center hover:scale-125 transition-all duration-1000"
-              />
-              <div className="px-4 py-2.5 absolute top-5 left-5 bg-white w-max rounded-md lg:hidden">
-                Featured
-              </div>
-            </div>
-            <h4 className="text-lg lg:text-[32px] font-Lora">
-              {list.blogTitile}
-            </h4>
-            <p className="text-sm md:text-base">{list.blogDescription}</p>
-            <Btn
-              Hbgcolor={"bg-primary"}
-              textColor={"text-warning"}
-              HtextColor={"text-white"}
-              bColor={"border-warning"}
-              title={"Read More"}
-              href={"/blog/1"}
-            />
-          </div>
+          <BlogGridComponent key={idx} list={list} />
         ))}
       </div>
       {/* Pagination */}

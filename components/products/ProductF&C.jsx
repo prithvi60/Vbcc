@@ -39,13 +39,15 @@ const ProductFC = ({products,setProducts}) => {
   const handleFilter = (e) => {
     let value = e.target.value;
     let check = e.target.checked;
-    if (check) {
-      setFilteredCategory((val) => [...val, value]);
-      setIsSelected(true);
-    } else {
-      setFilteredCategory((prev) => prev.filter((val) => val !== value));
-      setIsSelected(false);
-    }
+    check = false
+    // console.log(e);
+    // if (check) {
+    //   setFilteredCategory((val) => [...val, value]);
+    //   setIsSelected(true);
+    // } else {
+    //   setFilteredCategory((prev) => prev.filter((val) => val !== value));
+    //   setIsSelected(false);
+    // }
   };
 
   const handleClear = () => {

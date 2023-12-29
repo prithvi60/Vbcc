@@ -4050,55 +4050,6 @@ export const filter = [
   },
 ];
 
-// Filters
-// export const filters = [
-//   "Microwave Heating Systems",
-//   "Furnaces",
-//   "Ovens",
-//   "Nano Technology Equipment",
-//   "Special Research Equipment",
-//   "Presses - Hot & Cold",
-//   "Metallurgical Equipment",
-//   "Industrial Furnaces",
-//   "Refractory Industry",
-//   "Tile & Sanitary Ware",
-//   "Ceramic Products",
-//   "Heating Elements",
-//   "Controllers",
-// ];
-
-// product cards
-// export const cards = [
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   { productName: "Glove Box", type: "Material Preparation" },
-//   // { productName: "Glove Box", type: "Material Preparation" },
-//   // { productName: "Glove Box", type: "Material Preparation" },
-//   // { productName: "Glove Box", type: "Material Preparation" },
-//   // { productName: "Glove Box", type: "Material Preparation" },
-//   // { productName: "Glove Box", type: "Material Preparation" },
-// ];
-
-/******* Product Specific ********/
-// Product Carousel
-// export const carousel = [
-//   { id: "1", img: "https://ik.imagekit.io/webibee/VBCC/sample 1.png" },
-//   { id: "2", img: "https://ik.imagekit.io/webibee/VBCC/sample 2.png" },
-//   { id: "3", img: "https://ik.imagekit.io/webibee/VBCC/sample 3.png" },
-//   { id: "4", img: "https://ik.imagekit.io/webibee/VBCC/sample 4.png" },
-// ];
-
 // Related Products
 export const relatedProducts = [
   { productName: "Glove Box", type: "Material Preparation" },
@@ -4208,41 +4159,41 @@ export const FAQ = [
       },
       {
         ques: "What is the Warranty Duration for the Furnaces and Equipment?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "One year from the date of installation.Please note that The Melting Crucible, heating elements, alumina tubes, ceramic materials and quartz items are not covered under warranty. This is because of poor thermal shock resistance of the material property. Hence these materials are not covered under warranty.",
       },
       {
         ques: "What's the Annual Maintenance Contract(AMC)?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "The Annual Maintenance Contract is 10% of the Base Cost of the Product.The AMC covers Service for up to 3 times a Year.",
       },
       {
         ques: "Do you have a Buyback Program for your Products?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "We do offer a Buyback program, contingent upon the condition of the furnace or instrument, and it must be of our own make.",
       },
       {
         ques: "Will you provide the Sample Holders?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "We will supply a limited quantity of sample holders. Additional quantities are available at an extra cost.",
       },
       {
         ques: "Are we allowed to conduct a Pre-Delivery Inspection (PDI) of your products?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "It holds significant importance for us, and we invite your representatives for a pre-delivery inspection at our site in Chennai.",
       },
       {
         ques: "Are Customers Responsible for covering the Transportation Cost?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "Transportation is on a pay basis by the customer. On special occasions, transport charges may be waived off.",
       },
       {
         ques: "Is there a Separate Cost for Installation?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "The fixed installation fee, encompassing travel, accommodation, and service charges for our installation engineer, may vary based on location, with potential increases for more distant places. Additionally, on special occasions, installation can be performed free of cost.",
       },
       {
         ques: "What is the process for unloading the Furnace/Equipment?",
-        ans: "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times.",
+        ans: "The customer is responsible for handling the unloading process and any associated charges.",
       },
     ],
   },
   {
     id: "2",
-    title: "Order & Delivery",
+    title: "Service",
     lists: [
       {
         ques: "How long will it take for my order to get to me?",
@@ -4252,7 +4203,7 @@ export const FAQ = [
   },
   {
     id: "3",
-    title: "Product Information",
+    title: "Custom",
     lists: [
       {
         ques: "How long will it take for my order to get to me?",
@@ -4262,7 +4213,7 @@ export const FAQ = [
   },
   {
     id: "4",
-    title: "Service and Maintenance",
+    title: "Delivery",
     lists: [
       {
         ques: "How long will it take for my order to get to me?",
@@ -4758,17 +4709,17 @@ export const allBlogContent = [
 export const explore = [
   {
     img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
-    productTitile: "Dilatometer Principle and Working",
-    desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+    blogTitile: "Dilatometer Principle and Working",
+    blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
   },
   {
     img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
-    productTitile: "Dilatometer Principle and Working",
-    desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+    blogTitile: "Dilatometer Principle and Working",
+    blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
   },
   {
     img: "https://ik.imagekit.io/webibee/VBCC/blog-1.png",
-    productTitile: "Dilatometer Principle and Working",
-    desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+    blogTitile: "Dilatometer Principle and Working",
+    blogDescription: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
   },
 ];

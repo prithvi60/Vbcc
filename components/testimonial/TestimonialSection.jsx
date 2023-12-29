@@ -8,7 +8,6 @@ import FsLightbox from "fslightbox-react";
 
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
-  // const [toggler, setToggler] = useState(false);
   const fsTool = testimonials.map(val => val.pdf)
   const [lightboxController, setLightboxController] = useState({
 		toggler: false,
@@ -16,7 +15,6 @@ export const TestimonialSection = () => {
 	});
 
 	function openLightboxOnSlide(number) {
-    // SetselectedItem(number);
 		setLightboxController({
 			toggler: !lightboxController.toggler,
 			slide: number + 1
@@ -58,20 +56,16 @@ export const TestimonialSection = () => {
   };
   const handleChangePDF = (id) => {
     SetselectedItem(id);
-    // setLightboxController({
-		// 	toggler: !lightboxController.toggler,
-		// 	slide: id
-		// });
   };
   return (
-    <section className="w-full h-[99vh] md:h-[90vh] px-5 py-10 md:px-10 md:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between items-start relative">
-      <div className="absolute top-0 left-0 h-[99vh] md:h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
-      <div className="w-full md:w-1/2 xl:w-[65%] space-y-9 z-30">
-        <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
+    <section className="w-full h-screen md:h-[90vh] px-5 py-10 md:px-10 lg:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between items-start relative">
+      <div className="absolute top-0 left-0 h-screen lg:h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
+      <div className="w-full lg:w-1/2 xl:w-[65%] space-y-9 z-30">
+        <h2 className="font-Lora text-2xl lg:text-4xl xl:text-6xl w-full">
           Testimonials
         </h2>
-        <div className="w-full md:w-96 h-full md:h-auto overflow-hidden flex gap-4">
-          <div className="flex flex-nowrap md:flex-wrap items-center gap-4 h-[70px] md:h-full animate-horizontal_carousel md:animate-none pause">
+        <div className="w-full lg:w-96 h-full lg:h-auto overflow-hidden flex gap-4">
+          <div className="flex flex-nowrap lg:flex-wrap items-center gap-3 h-[70px] lg:h-full animate-horizontal_carousel lg:animate-none pause mt-2">
             {testimonials.map((item, idx) => (
               <div
                 className={`p-1 rounded-md ${
@@ -89,7 +83,7 @@ export const TestimonialSection = () => {
                     fill
                     src={item.logo}
                     alt="Logo"
-                    className="absolute object-contain object-center p-3"
+                    className="object-contain object-center p-3"
                   />
                 </div>
               </div>
@@ -99,7 +93,7 @@ export const TestimonialSection = () => {
       </div>
       <AnimatePresence initial={false}>
         {/* bg-white px-12 py-4 rounded-3xl */}
-        <div className="md:w-[35%] w-full h-full z-30 flex items-center justify-start md:justify-end">
+        <div className="lg:w-[35%] w-full h-full z-30 flex items-center justify-start lg:justify-end">
           <motion.div
             className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
             // bg-white px-4 rounded-lg
@@ -124,7 +118,7 @@ export const TestimonialSection = () => {
               fill
               src={testimonials[selectedItem].pdf}
               alt="Logo"
-              className="w-full h-full object-contain object-center py-4"
+              className="w-full h-full object-contain object-center rounded-xl"
             />
           </motion.div>
         </div>

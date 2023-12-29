@@ -13,14 +13,14 @@ export const BlogSpecificPage = () => {
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h4
-                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning font-normal tracking-wider`}
                 >
-                  Feature
+                  Featured
                 </h4>
                 <h4
-                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white font-normal tracking-wider`}
                 >
-                  Feature
+                  Featured
                 </h4>
               </div>
             </div>

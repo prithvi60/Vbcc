@@ -5,7 +5,7 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 export const FAQAccordion = () => {
   const itemClasses = {
-    base: "mb-2 !px-0 w-full rounded-2xl !bg-primary border border-white overflow-hidden",
+    base: "mb-2 !px-0 w-full !rounded-[20px] !bg-primary border border-white overflow-hidden",
     heading: "p-4 md:p-5",
     title:
       "font-Lora text-xl md:text-2xl text-white focus-within:outline-none focus-within:border-transparent focus-within:ring-0",
@@ -19,10 +19,11 @@ export const FAQAccordion = () => {
       <Tabs
         aria-label="Options"
         classNames={{
+          base: "flex",
           tabList:
-            "gap-4 w-full relative rounded-none p-0 h-auto justify-center flex-wrap bg-primary pb-5",
-          cursor: "w-full bg-secondary rounded-full px-4 py-4",
-          tab: "w-max text-base tracking-tight border border-white p-5 rounded-full font-Lora",
+            "gap-3 relative rounded-none p-0 h-auto md:flex md:justify-start md:item-center bg-primary pb-5 md:flex-wrap !overflow-x-scroll md:!overflow-auto w-full",
+          cursor: "bg-secondary rounded-full px-4 py-4",
+          tab: "w-max text-base tracking-tight border border-white p-5 rounded-full font-urbanist",
           tabContent: "group-data-[selected=true]:text-warning",
         }}
       >

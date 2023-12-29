@@ -1,4 +1,3 @@
-import { Button, Input } from "@nextui-org/react";
 export const ContactForm = () => {
   return (
     <section className="px-5 md:px-10 py-[60px] md:py-[60px] lg:px-[60px] lg:py-20 text-warning space-y-10">

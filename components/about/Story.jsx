@@ -12,7 +12,7 @@ useEffect(() =>{
 },[])
 
 useEffect(() =>{
-  width >= 1440
+  width >= 1024
   ? setCount(4)
   : setCount(1)
 },[width])
@@ -24,7 +24,7 @@ useEffect(() =>{
             <h3 className="text-[32px] xl:text-[40px] font-Lora">
               Our Story
             </h3>
-            <p className="text-sm md:text-base">
+            <p className="text-sm md:text-base font-urbanist">
               Explore the compelling journey of VBCC High Temperature
               Instruments, formerly VB Ceramic Consultants, led by Dr.
               Viswabaskaran since 2002. With over two decades of industry
@@ -44,6 +44,9 @@ useEffect(() =>{
               As former President of the Student Chapter of the Indian Ceramic
               Society, he envisions international expansion, dedicated to
               enhancing VBCC&apos;s product quality and maintaining innovation.
+              <br />
+              <br />
+              Our journey is marked by an unwavering commitment to quality, upholding international standards for our equipment through continuous research and development. Join us in this extraordinary adventure where expertise, innovation, and dedication converge to deliver excellence.
             </p>
           </div>
         </div>

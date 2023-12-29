@@ -83,70 +83,6 @@ const Products = () => {
       : setCount(6);
   }, [width]);
 
-  // const [windowSize, setWindowSize] = useState(window.innerWidth)
-
-  // const windowSize = window.innerWidth
-  // console.log(windowSize);
-  // useEffect(()=>{
-  //   const tabWidth = () => {
-  //     if(windowSize > 1440){
-  //       setWindowSize(window.innerWidth)
-  //       setCount(8)
-  //       // console.log("desk");
-  //     }
-  //     else if(windowSize > 1024){
-  //       setWindowSize(window.innerWidth)
-  //       setCount(6)
-  //       // console.log("lag");
-  //     } else if (windowSize > 810){
-  //       setWindowSize(window.innerWidth)
-  //       setCount(4)
-  //       // console.log("tab");
-  //     } else if(windowSize > 390){
-  //       setWindowSize(window.innerWidth)
-  //       setCount(6)
-  //       // console.log("mob");
-  //     } else{
-  //       setWindowSize(window.innerWidth)
-  //       setCount(8)
-  //       // console.log("tag");
-  //     }
-  //   }
-  //   window.addEventListener("resize",tabWidth)
-
-  //   return () =>{
-  //     window.removeEventListener("resize",tabWidth)
-  //   }
-  // },[windowSize,count])
-
-  // const deskWidth = () =>setCount(8)
-  // const tabWidth2 = () =>setCount(4)
-  // const mobileWidth = () =>setCount(6)
-  // useEffect(()=>{
-
-  //   const deskHandler = window.matchMedia("(max-widht: 1440px)")
-  //   const tabHandler = window.matchMedia("(max-widht: 1024px)")
-  //   const tab2Handler = window.matchMedia("(max-widht: 810px)")
-  //   const mobileHandler = window.matchMedia("(max-widht: 390px)")
-
-  //   window.innerWidth()
-
-  //   deskHandler.addEventListener("change",deskWidth)
-  //   tabHandler.addEventListener("change",tabWidth)
-  //   tab2Handler.addEventListener("change",tabWidth2)
-  //   mobileHandler.addEventListener("change",mobileWidth)
-
-  //   return ()=>{
-  //     deskHandler.removeEventListener("change",deskWidth)
-  //     tabHandler.removeEventListener("change",tabWidth)
-  //     tab2Handler.removeEventListener("change",tabWidth2)
-  //     mobileHandler.removeEventListener("change",mobileWidth)
-  //   }
-
-  // },[count])
-
-  // console.log("after",count);
-
   return (
     <section className="py-16 px-6 md:px-10 xl:p-16 bg-secondary font-urbanist">
       <div className="flex flex-col justify-center items-center gap-8">
@@ -232,7 +168,6 @@ const Products = () => {
                   ))}
                 </div>
                 {/* Mobile view Product items */}
-                {/* <div className="w-[350px] h-full overflow-hidden"> */}
                 <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
                     {item.sub.slice(0, count).map((card, id) => (
                       <Link
@@ -285,7 +220,6 @@ const Products = () => {
                       </Link>
                     ))}
                 </div>
-                {/* </div> */}
               </Tab>
             ))}
           </Tabs>
