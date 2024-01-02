@@ -4,9 +4,9 @@ const Filter = ({ setIsFilter }) => {
   return (
     <section className="h-screen w-full fixed top-0 left-0 bg-white px-5 py-10 z-50 overflow-auto">
       <div className="w-full block space-y-8">
-        <div className="block space-y-10 h-[80vh]">
+        <div className="block space-y-10 h-[77vh]">
           <div className="flex justify-between items-center text-warning">
-            <h4 className="font-lora text-lg">Filter</h4>
+            <h4 className="font-lora text-base">Filter</h4>
             <p
               className="font-urbanist text-base text-warning cursor-pointer"
               onClick={() => setIsFilter((prev) => !prev)}

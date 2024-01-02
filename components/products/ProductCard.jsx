@@ -6,8 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export const ProductCard = ({products}) => {
-  // console.log(products);
+export const ProductCard = ({ products }) => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
   const t = Math.ceil(products.length / 6);
@@ -19,39 +18,44 @@ export const ProductCard = ({products}) => {
     }
   };
 
-  useEffect(()=>{
-
-  },[products,page,t])
+  useEffect(() => {}, [products, page, t]);
   // console.log(products);
   return (
     <section className="bg-secondary space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
-            <Link
-            // .replace(/\s/g, '')
-              href={`/products/${list?.productName.replace(/\s/g, '')}`}
-              className="min-w-full md:min-w-[50%] z-10"
+            <Link href={`/products/${list?.productName.replace(/\s/g, "")}`}
+              className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
-              <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2 h-[330px]">
-                  {list.feature.map((val,i) => (
-                <div className="block space-y-1.5" key={i}>
-                  <div className={`${val === "robust" ? "block" : "hidden"} p-3.5 border border-info w-max rounded-full `}>
-                    <Dumbbell className={"fill-info h-6 w-6 "} />
+              <div className="bg-white p-2">
+                {list.feature.map((val, i) => (
+                  <div className="space-y-1.5 block w-max" key={i}>
+                      <div
+                        className={`${
+                          val === "robust" ? "flex" : "hidden"
+                        } p-3.5 border border-info w-max rounded-full`}
+                      >
+                        <Dumbbell className={"fill-info h-6 w-6"} />
+                      </div>
+                      <div
+                        className={`${
+                          val === "fragile" ? "flex" : "hidden"
+                        } p-3.5 border border-info w-max rounded-full`}
+                      >
+                        <Glass className={"h-6 w-6"} />
+                      </div>
                   </div>
-                  <div className={`${val === "fragile" ? "block" : "hidden"} p-3.5 border border-info w-max rounded-full`}>
-                    <Glass className={"h-6 w-6"} />
-                  </div>
-                </div>
-                 ))}
+                ))}
                 <div
                   className="group-hover:absolute group-hover:top-3.5 group-hover:right-4 group-hover:px-3.5
-                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block
+                        -translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75"
                 >
                   View
                 </div>
-                <div className="relative h-[200px] w-full">
+                <div className="relative h-[275px] w-full">
                   <Image
                     fill
                     src={list?.img}
@@ -73,16 +77,16 @@ export const ProductCard = ({products}) => {
                 <div className="flex items-center">
                   <Link
                     href={"/contact"}
-                    className={`block rounded-full px-4 py-3 border border-warning bg-transparent group-hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
+                    className={`group/btn block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base group-hover:duration-700 group-hover:delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
                   >
                     <div className={`block h-6 w-full overflow-hidden`}>
                       <h4
-                        className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                        className={`transition translate-y-0 group-hover/btn:-translate-y-20 duration-700 text-warning`}
                       >
                         contact
                       </h4>
                       <h4
-                        className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                        className={`translate-y-20 transition group-hover/btn:-translate-y-[25px] duration-700 text-white`}
                       >
                         contact
                       </h4>
@@ -104,12 +108,12 @@ export const ProductCard = ({products}) => {
               <h4
                 className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
               >
-                View All
+                View More
               </h4>
               <h4
                 className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
               >
-                View All
+                View More
               </h4>
             </div>
           </button>
@@ -118,4 +122,3 @@ export const ProductCard = ({products}) => {
     </section>
   );
 };
-

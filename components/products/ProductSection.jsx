@@ -47,7 +47,7 @@ const ProductSection = ({ products, setProducts }) => {
               placeholder="Search"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
-              className=" text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-2xl"
+              className="font-Lora placeholder:font-Lora text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-2xl"
             />
           </div>
         </div>
@@ -68,7 +68,7 @@ const ProductSection = ({ products, setProducts }) => {
             placeholder="Search"
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
-            className=" text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-base md:text-2xl"
+            className="font-Lora placeholder:font-Lora text-warning border-none outline-none focus:outline-none focus:ring-0 focus:border-none w-full placeholder:text-warning bg-secondary text-base md:text-2xl"
           />
         </div>
         <div

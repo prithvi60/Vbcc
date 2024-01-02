@@ -24,9 +24,9 @@ const Explore = () => {
             <p className="text-[#404040] group-hover:text-white group-hover:text-opacity-90 font-urbanist tracking-tighter">Over 100 products for Ceramic Industry.</p>
           </div>
         </div>
-        <div className="bg-secondary py-8 px-5 text-center group md:text-left md:py-6 md:px-10 space-y-5 md:space-y-4 w-full sm:w-[310px] md:w-auto hover:bg-transparent hover:transition-all hover:duration-1000 hover:bg-hero-pattern-2 bg-cover bg-center">
+        <div className="bg-secondary py-8 px-5 text-center group md:text-left md:py-6 md:px-10 space-y-5 md:space-y-4 w-full sm:w-[310px] md:w-auto hover:transition-all hover:duration-1000 hover:bg-hero-pattern-2 bg-cover bg-center ">
         <Research className={"fill-black group-hover:fill-white h-20 w-20 "}/>
-          <div  className="space-y-4">
+          <div  className="space-y-4 ">
             <h3 className="text-black group-hover:text-white">Research Institutions</h3>
             <p className="text-[#404040] group-hover:text-white group-hover:text-opacity-90 font-urbanist tracking-tighter">Over 200 products for Research Institutions.</p>
           </div>

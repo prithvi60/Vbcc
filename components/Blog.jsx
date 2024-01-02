@@ -75,8 +75,8 @@ useEffect(() =>{
                           />
                         </div>
                         <div className="space-y-5">
-                          <h4 className="text-xl uppercase">{card.title}</h4>
-                          <p className="font-Lora text-sm">{card.desc}</p>
+                          <h4 className="text-xl uppercase font-Lora">{card.title}</h4>
+                          <p className="font-urbanist text-sm">{card.desc}</p>
                         </div>
                       </CardBody>
                       <CardFooter className="p-0">

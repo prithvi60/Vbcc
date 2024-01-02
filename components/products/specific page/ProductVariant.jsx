@@ -64,6 +64,7 @@ export const ProductVariant = ({ product }) => {
           />
         </div>
       )}
+      <h5 className="font-urbanist text-sm text-info">*Customizable</h5>
     </section>
   );
 };

@@ -10,20 +10,17 @@ const Newsletter = () => {
           <h2 className="text-2xl md:text-[32px] xl:text-[40px] 2xl:text-5xl font-Lora">
             Get the Latest Updates
           </h2>
-          <p className="text-sm md:text-xl 2xl:text-2xl font-urbanist w-full lg:w-[65%] mx-auto">
+          <p className="text-sm md:text-xl 2xl:text-2xl font-urbanist w-full lg:w-[65%] mx-auto text-[#CACACA]">
             Stay updated on our digital marketplace`&apos;s latest launches of
             products, updates, and valuable content revisions.
           </p>
         </div>
-        <div className="flex items-center gap-5 max-w-[300px] md:w-[350px] rounded-full border py-2 px-3 border-zinc-500 focus:border-secondary mx-auto">
+        <div className="flex items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
           <input
             type="email"
-            placeholder="Enter your email"
-            className="w-full bg-primary placeholder:text-zinc-500 !border-none !outline-none"
+            placeholder="Your Email"
+            className="bg-primary placeholder:text-zinc-500 !border-none !outline-none placeholder:font-Nunito w-[175px] md:w-[198px]"
           />
-          {/* <Button size="lg" color="secondary" radius="full" className="text-warning">
-            Subscribe
-            </Button> */}
           <Link
             href={"/"}
             className={`rounded-full px-4 py-3 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}

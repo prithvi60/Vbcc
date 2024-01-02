@@ -97,7 +97,8 @@ export const chooseItem = [
     desc: "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience.",
   },
   {
-    img: "https://ik.imagekit.io/webibee/VBCC/Vectorsquare.svg",
+    // img: "https://ik.imagekit.io/webibee/VBCC/Vectorsquare.svg",
+    img: "/square.svg",
     desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way.",
   },
   {

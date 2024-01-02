@@ -18,6 +18,7 @@ module.exports = {
     fontFamily: {
       Lora: ['Lora', 'serif'],
       urbanist: ['Urbanist', 'sans-serif'],
+      Nunito: ['Nunito', "sans-serif"]
     },
     extend: {
       backgroundImage: {

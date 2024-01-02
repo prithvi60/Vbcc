@@ -16,10 +16,14 @@ export const Culture = () => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? 420 : -420};
+      return { y: direction > 0 ? 400 : -400};
     },
     visible: {
       y: 0,
+      // transition: {
+      //   type: "tween",
+      //   duration: 0.8
+      // }
       // opacity: 1,
       // transition: {
       //   y: { type: "spring", stiffness: 420, damping: 50 },
@@ -29,7 +33,7 @@ export const Culture = () => {
     },
     exit: (direction) => {
       return {
-        y: direction > 0 ? -420 : 420,
+        y: direction > 0 ? -400 : 400,
         // opacity: 0,
         // scale: 0.9,
         // transition: {

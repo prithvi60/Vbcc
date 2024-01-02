@@ -6,7 +6,7 @@ import Carousel from "./Carousel";
 import { Btn2 } from "./Btn";
 const Hero = () => {
   return (
-    <section className="h-[90vh] w-full relative z-0">
+    <section className="h-[90vh] w-full relative">
       <Slider
         dots={false}
         infinite={true}
@@ -19,19 +19,20 @@ const Hero = () => {
         vertical={true}
         verticalSwiping={true}
         pauseOnHover={false}
+        className="!z-0"
       >
         <div className="h-[90vh] w-full bg-hero-pattern bg-cover bg-center"></div>
         <div className="h-[90vh] w-full bg-hero-pattern-2 bg-cover bg-center"></div>
         <div className="h-[90vh] w-full bg-hero-pattern-3 bg-cover bg-center"></div>
       </Slider>
-      <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80">
+      <div className="absolute top-0 left-0 h-[90.5vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80">
       </div>
-      <div className="text-center space-y-4 md:space-y-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-        <h4 className="text-xl md:text-2xl uppercase">
+      <div className="text-center space-y-4 md:space-y-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+        <h4 className="text-xl md:text-2xl uppercase font-Lora">
           Vb Ceramic Consultants
         </h4>
         <div className="space-y-1 md:space-y-3">
-          <h3 className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2 ">
+          <h3 className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
             Tailor Made
           </h3>
           <Carousel />
@@ -44,6 +45,7 @@ const Hero = () => {
             bColor={"border-white"}
             title={"Our Products"}
             href={"/products"}
+            background = {"backdrop-blur-md bg-black/30"}
           />
           <Btn2
             Hbgcolor={"bg-white"}
@@ -52,6 +54,7 @@ const Hero = () => {
             bColor={"border-white"}
             title={"Contact Us"}
             href={"/contact"}
+            background = {"backdrop-blur-md bg-black/30"}
           />
         </div>
       </div>
@@ -61,7 +64,7 @@ const Hero = () => {
         smooth={true}
         offset={20}
         duration={800}
-        className={`absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 block rounded-full px-[18px] py-5 bg-transparent border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer z-30`}
+        className={`absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 block rounded-full p-[18px] border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer z-30 backdrop-blur-md bg-black/30`}
       >
         <div className={`h-6 w-full overflow-hidden`}>
           <h4

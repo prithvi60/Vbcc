@@ -202,16 +202,16 @@ const Products = () => {
                         </div>
                           <Link
                             href={"/product"}
-                            className={`block rounded-full px-4 py-3 border border-warning bg-white group-hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                            className={`group/button block rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                           >
                             <div className={`h-6 w-full overflow-hidden`}>
                               <h4
-                                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                                className={`transition translate-y-0 group-hover/button:-translate-y-20 duration-700 text-warning`}
                               >
                                 Request a Quote
                               </h4>
                               <h4
-                                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 group-hover:text-white`}
+                                className={`translate-y-20 transition group-hover/button:-translate-y-[25px] duration-700 group-hover/button:text-white`}
                               >
                                 Request a Quote
                               </h4>

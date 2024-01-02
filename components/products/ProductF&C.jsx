@@ -39,15 +39,15 @@ const ProductFC = ({products,setProducts}) => {
   const handleFilter = (e) => {
     let value = e.target.value;
     let check = e.target.checked;
-    check = false
+    // check = false
     // console.log(e);
-    // if (check) {
-    //   setFilteredCategory((val) => [...val, value]);
-    //   setIsSelected(true);
-    // } else {
-    //   setFilteredCategory((prev) => prev.filter((val) => val !== value));
-    //   setIsSelected(false);
-    // }
+    if (check) {
+      setFilteredCategory((val) => [...val, value]);
+      setIsSelected(true);
+    } else {
+      setFilteredCategory((prev) => prev.filter((val) => val !== value));
+      setIsSelected(false);
+    }
   };
 
   const handleClear = () => {
@@ -57,7 +57,7 @@ const ProductFC = ({products,setProducts}) => {
 
   
   return (
-    <section className="flex items-start gap-[60px] xl:px-[60px]">
+    <section className="flex items-start gap-[60px] ">
       <div className="hidden lg:block space-y-10 lg:sticky lg:top-5">
         <div className="block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">category</h4>

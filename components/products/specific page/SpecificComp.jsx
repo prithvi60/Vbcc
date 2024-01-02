@@ -156,24 +156,25 @@ export const CustomCarousel = ({ gallery }) => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { x: direction > 0 ? 1000 : -1000, opacity: 0 };
+      return { x: direction > 0 ? 650 : -650,
+      };
     },
     visible: {
       x: 0,
-      opacity: 1,
-      transition: {
-        x: { type: "spring", stiffness: 400, damping: 50 },
-        opacity: { duration: 0.5 },
-      },
+      // opacity: 1,
+      // transition: {
+      //   x: { type: "spring", stiffness: 400, damping: 50 },
+      //   opacity: { duration: 0.5 },
+      // },
     },
     exit: (direction) => {
       return {
-        x: direction > 0 ? -1000 : 1000,
-        opacity: 0,
-        transition: {
-          x: { type: "spring", stiffness: 400, damping: 50 },
-          opacity: { duration: 0.5 },
-        },
+        x: direction > 0 ? -650 : 650,
+        // opacity: 0,
+        // transition: {
+        //   x: { type: "spring", stiffness: 400, damping: 50 },
+        //   opacity: { duration: 0.5 },
+        // },
       };
     },
   };
@@ -193,8 +194,8 @@ export const CustomCarousel = ({ gallery }) => {
   return (
     <>
       <section className="block space-y-5">
-        <AnimatePresence initial={false} custom={direction}>
           <div className="relative w-full h-[490px] overflow-hidden">
+        <AnimatePresence initial={false} custom={direction}>
             <motion.img
               // fill
               key={gallery[index].img}
@@ -207,8 +208,8 @@ export const CustomCarousel = ({ gallery }) => {
               animate="visible"
               exit="exit"
             />
-          </div>
         </AnimatePresence>
+          </div>
         <div className="flex items-center gap-5 w-full h-auto">
           {gallery.map((item, idx) => (
             <div
@@ -235,7 +236,6 @@ export const CustomCarousel = ({ gallery }) => {
             <GoArrowLeft className="h-5 w-5 text-warning active:text-warning" />
           </div>
           <div className="text-xl">
-            <AnimatePresence initial={false} custom={direction}>
               <motion.span
                 key={index}
                 variants={slideVariants}
@@ -243,12 +243,10 @@ export const CustomCarousel = ({ gallery }) => {
                 animate="visible"
                 exit="exit"
                 className="w-max h-auto"
-                custom={direction}
               >
-                {gallery[index].id}
+                {gallery[index].id}&nbsp; 
               </motion.span>
-            </AnimatePresence>
-            / {gallery.length}
+             / {gallery.length}
           </div>
           <div
             className="p-4 rounded-full cursor-pointer border border-warning active:border-warning"
