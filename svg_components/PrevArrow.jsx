@@ -1,0 +1,18 @@
+import React from "react";
+
+export const PrevArrowSvg = ({ className, ...props }) => {
+  return (
+    <svg
+      viewBox="0 0 30 18"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+      className={className}
+    >
+      <path
+        d="M10 0C10 0.954 9.08375 2.37857 8.15625 3.57429C6.96375 5.11714 5.53875 6.46329 3.905 7.49057C2.68 8.26071 1.195 9 0 9M0 9C1.195 9 2.68125 9.73929 3.905 10.5094C5.53875 11.538 6.96375 12.8841 8.15625 14.4244C9.08375 15.6214 10 17.0486 10 18M0 9L30 9"
+        // stroke="#0C1F3F"
+        stroke-width="2"
+      />
+    </svg>
+  );
+};
