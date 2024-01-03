@@ -29,9 +29,10 @@ export const ProductCard = ({ products }) => {
               className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
-              <div className="bg-white p-2">
+              <div className="bg-white p-2 h-[335px]">
+                <div className="h-[85px] w-full">
                 {list.feature.map((val, i) => (
-                  <div className="space-y-1.5 block w-max" key={i}>
+                  <div className="space-y-1.5 block" key={i}>
                       <div
                         className={`${
                           val === "robust" ? "flex" : "hidden"
@@ -48,14 +49,15 @@ export const ProductCard = ({ products }) => {
                       </div>
                   </div>
                 ))}
+                </div>
                 <div
-                  className="group-hover:absolute group-hover:top-3.5 group-hover:right-4 group-hover:px-3.5
+                  className="group-hover:absolute group-hover:top-3.5 group-hover:right-6 group-hover:px-3.5
                         group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block
                         -translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75"
                 >
                   View
                 </div>
-                <div className="relative h-[275px] w-full">
+                <div className="relative h-[250px] w-full">
                   <Image
                     fill
                     src={list?.img}

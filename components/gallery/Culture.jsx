@@ -16,7 +16,7 @@ export const Culture = () => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? 400 : -400};
+      return { y: direction > 0 ? 400 : -400 };
     },
     visible: {
       y: 0,
@@ -61,11 +61,14 @@ export const Culture = () => {
     setCurrentIndex(id);
   };
   return (
-    <section className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10" id="culture">
-      <div className="w-full xl:px-10 flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning">
+    <section
+      className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-secondary"
+      id="culture"
+    >
+      <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning">
         <div className="w-full md:w-1/2 lg:w-[65%]">
-            <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
-          <AnimatePresence initial={false} custom={direction}>
+          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+            <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 // fill
                 src={imgSrc[currentIndex]}
@@ -75,18 +78,18 @@ export const Culture = () => {
                 variants={slideVariants}
                 initial="slide"
                 animate="visible"
-                transition={{duration : 1}}
+                transition={{ duration: 1 }}
                 exit="exit"
                 custom={direction}
               />
-          </AnimatePresence>
-            </div>
+            </AnimatePresence>
+          </div>
         </div>
         <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
           <div className="hidden md:flex flex-wrap items-center gap-2.5">
             {imgSrc.map((img, idx) => (
               <div
-                className={`relative md:h-[105px] md:w-[160px] lg:w-[185px]  xl:w-[205px] 2xl:w-[230px] cursor-pointer ${
+                className={`relative md:h-[105px] md:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px] cursor-pointer overflow-hidden rounded-2xl ${
                   currentIndex === idx
                     ? " rounded-2xl border-2 border-info"
                     : " "
@@ -98,7 +101,7 @@ export const Culture = () => {
                   fill
                   src={img}
                   alt="Logo"
-                  className="absolute object-cover rounded-2xl"
+                  className="absolute object-cover hover:scale-125 transition-all duration-1000"
                 />
               </div>
             ))}
@@ -107,20 +110,44 @@ export const Culture = () => {
             <h4 className="font-Lora text-xl md:text-[40px]">Culture</h4>
             <div className="flex justify-between items-center">
               <p className="font-urbanist text-base w-3/5">
-                Redefining what it means to be a team. Showcasing our Work lifethrough the years.
+                Redefining what it means to be a team. Showcasing our Work
+                lifethrough the years.
               </p>
+              {/* Buttons */}
               <div className="flex items-center gap-3">
                 <div
-                  className="p-4 rounded-full cursor-pointer border border-warning active:border-warning"
+                  className="p-4 rounded-full cursor-pointer border border-warning hover:bg-white block duration-700 delay-75 w-max group"
                   onClick={handlePrev}
                 >
-                  <GoArrowLeft className="h-5 w-5 text-warning active:text-warning" />
+                  <div className={`h-6 w-full overflow-hidden`}>
+                    <h4
+                      className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+                    >
+                      <GoArrowLeft className="h-6 w-6 text-warning" />
+                    </h4>
+                    <h4
+                      className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+                    >
+                      <GoArrowLeft className="h-6 w-6 text-warning" />
+                    </h4>
+                  </div>
                 </div>
                 <div
-                  className="p-4 rounded-full cursor-pointer border border-warning active:border-warning"
+                  className="p-4 rounded-full cursor-pointer border border-warning hover:bg-white block duration-700 delay-75 w-max group"
                   onClick={handleNext}
                 >
-                  <GoArrowRight className="h-5 w-5 text-warning active:text-warning" />
+                  <div className={`h-6 w-full overflow-hidden`}>
+                    <h4
+                      className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+                    >
+                      <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+                    </h4>
+                    <h4
+                      className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+                    >
+                      <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>

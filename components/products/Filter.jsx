@@ -1,6 +1,16 @@
+"use client";
+import { useEffect, useState } from "react";
 import { CustomFilter } from "./CustomSelect";
 
-const Filter = ({ setIsFilter }) => {
+const Filter = ({ setIsFilter, filteredCategory, setFilteredCategory }) => {
+  
+  const [Filters, setFilters] = useState(filteredCategory);
+
+  const handleApplyFilter = () => {
+    setFilteredCategory(Filters);
+    setIsFilter((prev) => !prev);
+  };
+
   return (
     <section className="h-screen w-full fixed top-0 left-0 bg-white px-5 py-10 z-50 overflow-auto">
       <div className="w-full block space-y-8">
@@ -14,15 +24,27 @@ const Filter = ({ setIsFilter }) => {
               Close
             </p>
           </div>
-          <CustomFilter />
+          <CustomFilter
+            Filters={Filters}
+            setFilters={setFilters}
+          />
         </div>
         <div className="flex justify-between items-center gap-4 font-urbanist">
-        <h4 className="w-full px-4 py-3 bg-warning text-secondary rounded-full cursor-pointer text-center">
-        Apply Filters
-        </h4>
-        <h4 className="w-max px-4 py-3 text-warning border border-warning rounded-full cursor-pointer">
-        Clear
-        </h4>
+          <button
+            disabled={Filters.length > 0 ? false : true}
+            className={`w-full px-4 py-3 bg-warning text-secondary rounded-full cursor-pointer text-center disabled:bg-opacity-40 disabled:cursor-not-allowed`}
+            onClick={handleApplyFilter}
+          >
+            Apply Filters
+          </button>
+          <h4
+            className="w-max px-4 py-3 text-warning border border-warning rounded-full cursor-pointer"
+            onClick={() => {
+              setFilteredCategory([]);
+            }}
+          >
+            Clear
+          </h4>
         </div>
       </div>
     </section>

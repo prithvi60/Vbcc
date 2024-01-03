@@ -65,8 +65,8 @@ export const CustomVariant = ({
 export const CustomAccordion = ({ specification, specificId }) => {
   // const noVariantDimension = specification[0].dimension
   // const noVariantQuantity = specification[0].quantity
-  const specificDimension = specification[specificId].dimension
-  const specificQuantity = specification[specificId].quantity
+  const specificDimension = specification[specificId].dimension;
+  const specificQuantity = specification[specificId].quantity;
   const itemClasses = {
     title: "font-Lora text-xl text-warning",
   };
@@ -89,21 +89,20 @@ export const CustomAccordion = ({ specification, specificId }) => {
             )
           }
         >
-            <table className="w-full border border-[#B9B9B9] text-xl my-5">
-              <tbody >
-                {specificDimension.map((list,idx) =>(
-                  <tr key={idx}>
+          <table className="w-full border border-[#B9B9B9] text-xl my-5">
+            <tbody>
+              {specificDimension.map((list, idx) => (
+                <tr key={idx}>
                   <td className="border border-[#B9B9B9] p-3">
-                    {list.dimensionName} 
+                    {list.dimensionName}
                   </td>
                   <td className="border border-[#B9B9B9] p-3">
-                     {list.dimensionValue} 
+                    {list.dimensionValue}
                   </td>
                 </tr>
-                ))}
-              </tbody>
-            </table>
-
+              ))}
+            </tbody>
+          </table>
         </AccordionItem>
         <AccordionItem
           key="2"
@@ -118,20 +117,20 @@ export const CustomAccordion = ({ specification, specificId }) => {
           }
           className="border-b-3 border-[#F1F1F1]"
         >
-            <table className="w-full border border-[#B9B9B9] text-xl my-5">
-              <tbody >
-                {specificQuantity.map((list,idx) =>(
-                  <tr key={idx}>
+          <table className="w-full border border-[#B9B9B9] text-xl my-5">
+            <tbody>
+              {specificQuantity.map((list, idx) => (
+                <tr key={idx}>
                   <td className="border border-[#B9B9B9] p-3">
-                    {list.quantityName} 
+                    {list.quantityName}
                   </td>
                   <td className="border border-[#B9B9B9] p-3">
-                     {list.quantityValue} 
+                    {list.quantityValue}
                   </td>
                 </tr>
-                ))}
-              </tbody>
-            </table>
+              ))}
+            </tbody>
+          </table>
         </AccordionItem>
       </Accordion>
     </section>
@@ -156,8 +155,7 @@ export const CustomCarousel = ({ gallery }) => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { x: direction > 0 ? 650 : -650,
-      };
+      return { x: direction > 0 ? 650 : -650 };
     },
     visible: {
       x: 0,
@@ -194,8 +192,8 @@ export const CustomCarousel = ({ gallery }) => {
   return (
     <>
       <section className="block space-y-5">
-          <div className="relative w-full h-[490px] overflow-hidden">
-        <AnimatePresence initial={false} custom={direction}>
+        <div className="relative w-full h-[490px] overflow-hidden">
+          <AnimatePresence initial={false} custom={direction}>
             <motion.img
               // fill
               key={gallery[index].img}
@@ -208,8 +206,8 @@ export const CustomCarousel = ({ gallery }) => {
               animate="visible"
               exit="exit"
             />
-        </AnimatePresence>
-          </div>
+          </AnimatePresence>
+        </div>
         <div className="flex items-center gap-5 w-full h-auto">
           {gallery.map((item, idx) => (
             <div
@@ -229,30 +227,54 @@ export const CustomCarousel = ({ gallery }) => {
           ))}
         </div>
         <div className="hidden md:flex justify-between items-center">
+          {/* Prev button */}
           <div
-            className="p-4 rounded-full cursor-pointer border border-warning active:border-warning"
+            className="p-4 rounded-full cursor-pointer border border-warning block duration-700 delay-75 w-max group"
             onClick={handlePrev}
           >
-            <GoArrowLeft className="h-5 w-5 text-warning active:text-warning" />
+            <div className={`h-6 w-full overflow-hidden`}>
+              <h4
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+              >
+                <GoArrowLeft className="h-6 w-6 text-text-warning active:text-warning" />
+              </h4>
+              <h4
+                className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+              >
+                <GoArrowLeft className="h-6 w-6 text-text-warning active:text-warning" />
+              </h4>
+            </div>
           </div>
           <div className="text-xl">
-              <motion.span
-                key={index}
-                variants={slideVariants}
-                initial="slide"
-                animate="visible"
-                exit="exit"
-                className="w-max h-auto"
-              >
-                {gallery[index].id}&nbsp; 
-              </motion.span>
-             / {gallery.length}
+            <motion.span
+              key={index}
+              variants={slideVariants}
+              initial="slide"
+              animate="visible"
+              exit="exit"
+              className="w-max h-auto"
+            >
+              {gallery[index].id}&nbsp;
+            </motion.span>
+            / {gallery.length}
           </div>
+          {/* Next button */}
           <div
-            className="p-4 rounded-full cursor-pointer border border-warning active:border-warning"
+            className="p-4 rounded-full cursor-pointer border border-warning block duration-700 delay-75 w-max group"
             onClick={handleNext}
           >
-            <GoArrowRight className="h-5 w-5 text-text-warning active:text-warning" />
+            <div className={`h-6 w-full overflow-hidden`}>
+              <h4
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+              >
+                <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+              </h4>
+              <h4
+                className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+              >
+                <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+              </h4>
+            </div>
           </div>
         </div>
       </section>

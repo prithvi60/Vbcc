@@ -6,8 +6,25 @@ import { Link as Mylink } from "react-scroll";
 import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { HiOutlineArrowNarrowUp } from "react-icons/hi";
 import { Btn2 } from "./Btn";
+import { useState } from "react";
 
 const Footer = () => {
+  const [Copied, setCopied] = useState(false)
+  const [Copied2, setCopied2] = useState(false)
+  const handlequote = (text)=>{
+   navigator.clipboard.writeText(text)
+    setCopied(true)
+    setInterval(() => {
+      setCopied(false)
+    }, 3000);
+  }
+  const handleinquire = (text)=>{
+    navigator.clipboard.writeText(text)
+     setCopied2(true)
+     setInterval(() => {
+       setCopied2(false)
+     }, 3000);
+   }
   return (
     <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-urbanist">
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
@@ -114,22 +131,15 @@ const Footer = () => {
               <h5 className="text-[rgba(245, 245, 245, 0.70)]">
                 Connect for quote
               </h5>
-              <p className="text-info">+91 94441 69365</p>
+              <ConnectComponent text={"+91 94441 69365"} copied={Copied} handleClick={handlequote}/>
             </div>
             <div>
               <h5 className="text-[rgba(245, 245, 245, 0.70)]">
                 Connect for inquiries
               </h5>
-              <p className="text-info">+91 94440 12468</p>
+              <ConnectComponent text={"+91 94440 12468"} copied={Copied2} handleClick={handleinquire}/>
             </div>
           </div>
-          {/* <Button
-            variant="bordered"
-            radius="full"
-            className="border-info text-info"
-          >
-            Location ?
-          </Button> */}
           <Btn2
             Hbgcolor={"bg-info"}
             textColor={"text-info"}
@@ -202,3 +212,13 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+export const ConnectComponent = ({text,copied,handleClick}) =>{
+  return(
+    <div>
+              <button className="text-info cursor-pointer" onClick={()=>handleClick(text)}>{text}</button>
+              {copied && (<span>✔️Copied</span>) }
+              </div>
+  )
+}

@@ -507,7 +507,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
-    feature: ["robust", "fragile"],
+    feature: ["robust"],
     img: "/product-img.png",
     productName: "Microwave Box 2",
     productType: "Microwave Heating Systems",

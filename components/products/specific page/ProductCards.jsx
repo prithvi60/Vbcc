@@ -9,14 +9,13 @@ import React from "react";
 export const ProductCards = ({value,name}) => {
 
     const filteredProduct = AllProducts.filter(val => val.productType === value && val.productName !== name)
-    // console.log(filteredProduct);
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
       {filteredProduct.map((card, idx) => (
         <div className="block group" key={idx}>
           <Link href={`/products/${card?.productName.replace(/\s/g, "")}`} className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10">
             {/*Card Body */}
-            <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2">
+            {/* <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2">
               <div className="block space-y-1.5">
                 <div className="p-3.5 border border-info w-max rounded-full">
                   <Dumbbell className={"fill-info h-6 w-6 "} />
@@ -41,7 +40,44 @@ export const ProductCards = ({value,name}) => {
                   className="absolute object-cover object-bottom last:object-contain"
                 />
               </div>
-            </div>
+            </div> */}
+            <div className="bg-white p-2 h-[335px]">
+                <div className="h-[85px] w-full">
+                {card.feature.map((val, i) => (
+                  <div className="space-y-1.5 block" key={i}>
+                      <div
+                        className={`${
+                          val === "robust" ? "flex" : "hidden"
+                        } p-3.5 border border-info w-max rounded-full`}
+                      >
+                        <Dumbbell className={"fill-info h-6 w-6"} />
+                      </div>
+                      <div
+                        className={`${
+                          val === "fragile" ? "flex" : "hidden"
+                        } p-3.5 border border-info w-max rounded-full`}
+                      >
+                        <Glass className={"h-6 w-6"} />
+                      </div>
+                  </div>
+                ))}
+                </div>
+                <div
+                  className="group-hover:absolute group-hover:top-3.5 group-hover:right-6 group-hover:px-3.5
+                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block
+                        -translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75"
+                >
+                  View
+                </div>
+                <div className="relative h-[250px] w-full">
+                  <Image
+                    fill
+                    src={card?.img}
+                    alt="product"
+                    className="absolute object-cover object-center md:odd:last:object-contain"
+                  />
+                </div>
+              </div>
             {/* Card Footer */}
             <div className="flex group-hover:bg-white group-hover:rounded-b-2xl bg-transparent transition-all duration-1000 items-center justify-between py-3">
               <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75">

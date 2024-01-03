@@ -6,12 +6,11 @@ import { ProductCard } from "./ProductCard";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 
-const ProductFC = ({products,setProducts}) => {
+const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [selectedItem, SetselectedItem] = useState("All Products");
   const [isSelected, setIsSelected] = useState(false);
-  const [filteredCategory, setFilteredCategory] = useState([]);
 
   const filteredProductType = [...new Set(products.map((val) => val.productType))];
 
@@ -55,7 +54,6 @@ const ProductFC = ({products,setProducts}) => {
     // setIsSelected(false);
   };
 
-  
   return (
     <section className="flex items-start gap-[60px] ">
       <div className="hidden lg:block space-y-10 lg:sticky lg:top-5">
@@ -153,10 +151,10 @@ export const CategoryTab = ({setProducts}) => {
     }
   };
   return (
-    <div className="flex flex-wrap gap-3 md:hidden">
-      {category.map((item, idx) => (
+    <div className="flex flex-wrap gap-3 lg:hidden">
+      {category.map((item, idx) => (  
         <div
-          className={`h-full md:hidden rounded-full px-4 py-3 border border-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer ${selectedItem === item ? "bg-white text-warning hover:bg-white" : "bg-transparent text-white hover:bg-success"}`}
+          className={`h-full lg:hidden rounded-full px-4 py-3 border border-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer ${selectedItem === item ? "bg-white text-warning hover:bg-white" : "bg-transparent text-white hover:bg-success"}`}
           key={idx}
         >
           <Link

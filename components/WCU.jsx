@@ -32,7 +32,7 @@ export const WCU = () => {
       <div className="relative h-32 w-32">
         <Image
           fill
-          src="/iso.svg"
+          src="/iso.png"
           alt="Logo"
           className="absolute object-contain object-center"
         />

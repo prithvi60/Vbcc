@@ -19,7 +19,7 @@ const ProductSection = ({ products, setProducts }) => {
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
   const [selectedItem, SetselectedItem] = useState("Relevance");
-
+  const [filteredCategory, setFilteredCategory] = useState([]);
   useEffect(() => {
     const allProducts = AllProducts.filter(
       (val) =>
@@ -28,7 +28,6 @@ const ProductSection = ({ products, setProducts }) => {
     );
     setProducts(allProducts);
   }, [searchValue, setProducts]);
-
   return (
     <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
       {/* Sort Section */}
@@ -81,7 +80,7 @@ const ProductSection = ({ products, setProducts }) => {
           <GrFilter className="w-5 h-5 text-warning" />
         </div>
         <div
-          className="flex justify-between items-center gap-2 w-full md:hidden border-warning border px-4 py-2 rounded-full"
+          className="flex justify-between items-center gap-2 w-full md:hidden border-warning border px-4 py-2 rounded-full cursor-pointer"
           onClick={() => setIsFilter(!isFilter)}
         >
           <h5 className="text-warning font-Lora text-base md:text-2xl">
@@ -89,10 +88,10 @@ const ProductSection = ({ products, setProducts }) => {
           </h5>
           <GrFilter className="w-5 h-5 text-warning" />
         </div>
-        {isFilter && <Filter setIsFilter={setIsFilter} />}
+        {isFilter && <Filter setIsFilter={setIsFilter} filteredCategory={filteredCategory} setFilteredCategory={setFilteredCategory}/>}
       </div>
       {/* Product Section */}
-      <ProductFC products={products} setProducts={setProducts} />
+      <ProductFC products={products} setProducts={setProducts} filteredCategory={filteredCategory} setFilteredCategory={setFilteredCategory} />
     </section>
   );
 };
