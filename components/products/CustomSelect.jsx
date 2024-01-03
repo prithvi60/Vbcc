@@ -1,6 +1,6 @@
 "use Client";
 import { filter } from "@/libs/data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 const sortProduct = [
@@ -120,21 +120,24 @@ export const CustomFilter = () => {
     setIndex(id);
   };
 
-  const handleCheck = (title) =>{
-    console.log(title);
-    // const data = filter.map(val => val.title === title)
-    // if (data) {
-    //   setIsSelected((val) => [...val, title]);
-    //   setIsActive(true);
-    // } else {
-    //   setIsSelected((prev) => prev.filter((val) => val !== title));
-    //   setIsActive(false);
-    // }
-  }
+  const handleCheck = (button) => {
+    console.log(button);
+    if( isSelected.includes(button)){
+      // remove tag
+      setIsSelected((val) => val.filter(del=>del !== button));
+    }else{
+      // add tag
+      setIsSelected((val) => [...val, button]);
+
+    }
+  };
   // console.log("after", isSelected);
+  useEffect(()=>{
+console.log("mod array",isSelected)
+  },[isSelected])
   return (
     <div className="space-y-4">
-      {filter.map((item,idx) => (
+      {filter.map((item, idx) => (
         <div
           className="block space-y-3 w-full h-auto"
           key={idx}
@@ -151,20 +154,25 @@ export const CustomFilter = () => {
             )}
           </div>
           {index === idx && (
-            <div className={`w-full border border-warning rounded-3xl h-auto overflow-hidden transition-all duration-1000 p-3 space-y-4 text-sm`}>
-            <div className="font-Lora tracking-tighter text-warning flex items-center"><span className="w-3 h-3 rounded-full bg-warning mx-2"></span> Select Filters</div>
-          <ul className="flex flex-wrap items-center gap-2">
-            {item.button.map((t,idx)=>(
-            <li
-              className={`p-2 w-max capitalize border border-warning rounded-full cursor-pointer font-urbanist text-primary hover:bg-info hover:duration-1000 hover:bg-opacity-30 tracking-wider`}
-              onClick={() => handleCheck(t)}
-              key={idx}
+            <div
+              className={`w-full border border-warning rounded-3xl h-auto overflow-hidden transition-all duration-1000 p-3 space-y-4 text-sm`}
             >
-              {t}
-            </li>
-            ))}
-          </ul>
-          </div>
+              <div className="font-Lora tracking-tighter text-warning flex items-center">
+                <span className="w-3 h-3 rounded-full bg-warning mx-2"></span>{" "}
+                Select Filters
+              </div>
+              <ul className="flex flex-wrap items-center gap-2">
+                {item.button.map((t, idx) => (
+                  <li
+                    className={`p-2 w-max capitalize border border-warning rounded-full cursor-pointer font-urbanist text-primary hover:bg-info hover:duration-1000 hover:bg-opacity-30 tracking-wider`}
+                    onClick={() => handleCheck(t)}
+                    key={idx}
+                  >
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
       ))}
