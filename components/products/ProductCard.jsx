@@ -2,6 +2,7 @@
 
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
+import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -25,21 +26,37 @@ export const ProductCard = ({ products }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
-            <Link href={`/products/${list?.productName.replace(/\s/g, "")}`}
+            <Link
+              href={`/products/${list?.productName.replace(/\s/g, "")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
               <div className="bg-white p-2 h-[335px]">
                 <div className="h-[85px] w-full">
-                {list.feature.map((val, i) => (
-                  <div className="space-y-1.5 block" key={i}>
-                      <div
-                        className={`${
-                          val === "robust" ? "flex" : "hidden"
-                        } p-3.5 border border-info w-max rounded-full`}
+                  {list.feature.map((val, i) => (
+                    <div className="space-y-1.5 block" key={i}>
+                      <Tooltip
+                        key={val}
+                        placement={"right"}
+                        content={val}
+                        color="success"
+                        className="text-base font-Lora capitalize px-3 py-2"
                       >
-                        <Dumbbell className={"fill-info h-6 w-6"} />
-                      </div>
+                        <div
+                          className={`${
+                            val === "robust" ? "flex" : "hidden"
+                          } p-3.5 border border-info w-max rounded-full`}
+                        >
+                          <Dumbbell className={"fill-info h-6 w-6"} />
+                        </div>
+                      </Tooltip>
+                      <Tooltip
+                        key={val}
+                        placement={"right"}
+                        content={val}
+                        color="success"
+                        className="text-base font-Lora capitalize px-3 py-2"
+                      >
                       <div
                         className={`${
                           val === "fragile" ? "flex" : "hidden"
@@ -47,8 +64,9 @@ export const ProductCard = ({ products }) => {
                       >
                         <Glass className={"h-6 w-6"} />
                       </div>
-                  </div>
-                ))}
+                      </Tooltip>
+                    </div>
+                  ))}
                 </div>
                 <div
                   className="group-hover:absolute group-hover:top-3.5 group-hover:right-6 group-hover:px-3.5
