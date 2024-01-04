@@ -1,18 +1,25 @@
 "use client";
 import { AllProducts, category } from "@/libs/data";
-import { Checkbox, Divider } from "@nextui-org/react";
+import { Checkbox, CheckboxGroup, Divider } from "@nextui-org/react";
 import { useCallback, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 
-const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) => {
+const ProductFC = ({
+  products,
+  setProducts,
+  filteredCategory,
+  setFilteredCategory,
+}) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [selectedItem, SetselectedItem] = useState("All Products");
-  const [isSelected, setIsSelected] = useState(false);
+  const [selected, setSelected] = useState([]);
 
-  const filteredProductType = [...new Set(products.map((val) => val.productType))];
+  const filteredProductType = [
+    ...new Set(products.map((val) => val.productType)),
+  ];
 
   const createQueryString = useCallback(
     (name, value) => {
@@ -38,20 +45,16 @@ const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) 
   const handleFilter = (e) => {
     let value = e.target.value;
     let check = e.target.checked;
-    // check = false
-    // console.log(e);
     if (check) {
       setFilteredCategory((val) => [...val, value]);
-      // setIsSelected(true);
     } else {
       setFilteredCategory((prev) => prev.filter((val) => val !== value));
-      // setIsSelected(false);
     }
   };
 
   const handleClear = () => {
     setFilteredCategory([]);
-    // setIsSelected(false);
+    setSelected([]);
   };
 
   return (
@@ -80,7 +83,11 @@ const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) 
         {/* Filters */}
         <div className="hidden lg:block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>
-          <ul className="space-y-3">
+          <CheckboxGroup
+            value={selected}
+            onValueChange={setSelected}
+            className="space-y-3"
+          >
             {filteredProductType.map((type, idx) => (
               <li
                 key={idx}
@@ -88,8 +95,6 @@ const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) 
               >
                 <Checkbox
                   value={type}
-                  // isSelected={isSelected}
-                  // onValueChange={setIsSelected}
                   onChange={(e) => handleFilter(e)}
                   size="md"
                   color="success"
@@ -100,7 +105,7 @@ const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) 
                 </Checkbox>
               </li>
             ))}
-          </ul>
+          </CheckboxGroup>
         </div>
         <div
           className="text-base text-warning font-urbanist uppercase tracking-wide cursor-pointer"
@@ -126,8 +131,7 @@ const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) 
 
 export default ProductFC;
 
-
-export const CategoryTab = ({setProducts}) => {
+export const CategoryTab = ({ setProducts }) => {
   const [selectedItem, SetselectedItem] = useState("All Products");
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -152,9 +156,13 @@ export const CategoryTab = ({setProducts}) => {
   };
   return (
     <div className="flex flex-wrap gap-3 lg:hidden">
-      {category.map((item, idx) => (  
+      {category.map((item, idx) => (
         <div
-          className={`h-full lg:hidden rounded-full px-4 py-3 border border-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer ${selectedItem === item ? "bg-white text-warning hover:bg-white" : "bg-transparent text-white hover:bg-success"}`}
+          className={`h-full lg:hidden rounded-full px-4 py-3 border border-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer ${
+            selectedItem === item
+              ? "bg-white text-warning hover:bg-white"
+              : "bg-transparent text-white hover:bg-success"
+          }`}
           key={idx}
         >
           <Link
