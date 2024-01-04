@@ -159,7 +159,7 @@ export const products = [
     ],
   },
   {
-    title: "Best Sellers",
+    title: "New Products",
     sub: [
       {
         img: "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
@@ -184,7 +184,7 @@ export const products = [
     ],
   },
   {
-    title: "Sophisticated",
+    title: "Best Sellers",
     sub: [
       {
         img: "https://ik.imagekit.io/webibee/VBCC/product.png",

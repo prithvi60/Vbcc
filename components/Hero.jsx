@@ -48,9 +48,9 @@ const Hero = () => {
             background = {"backdrop-blur-md bg-black/30"}
           />
           <Btn2
-            Hbgcolor={"bg-white"}
+            Hbgcolor={"bg-info hover:border-info "}
             textColor={"text-white"}
-            HtextColor={"text-warning"}
+            HtextColor={"text-white"}
             bColor={"border-white"}
             title={"Contact Us"}
             href={"/contact"}
