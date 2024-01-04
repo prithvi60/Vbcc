@@ -39,7 +39,7 @@ export const BlogCards = ({ blogContents, MainBlog, item }) => {
             className="bg-[url('/blog-2.png')] bg-cover bg-center w-full h-[520px] p-5"
           >
             <div
-              className={`block rounded-full px-4 py-3 bg-white hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
+              className={`block rounded-full px-4 py-2 bg-white hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h4
@@ -88,7 +88,7 @@ export const BlogCards = ({ blogContents, MainBlog, item }) => {
         <div className="flex justify-center items-center">
           <button
             onClick={handlePage}
-            className={`block rounded-full px-6 py-5 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer`}
+            className={`block rounded-full px-6 py-4 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer`}
           >
             <div className={`block h-6 w-full overflow-hidden`}>
               <h4

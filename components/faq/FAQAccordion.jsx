@@ -19,12 +19,12 @@ export const FAQAccordion = () => {
       <Tabs
         aria-label="Options"
         classNames={{
-          base: "flex",
+          base: "flex !data-[hover=true]:bg-white",
           tabList:
-            "gap-3 relative rounded-none p-0 h-auto md:flex md:justify-start md:item-center bg-primary pb-5 md:flex-wrap !overflow-x-scroll md:!overflow-auto w-full",
+            "gap-3 relative rounded-none p-0 h-auto md:flex md:justify-start md:item-center bg-primary pb-5 md:flex-wrap !overflow-x-scroll md:!overflow-auto w-full !data-[hover=true]:bg-white",
           cursor: "bg-secondary rounded-full px-4 py-4",
           tab: "w-max text-base tracking-tight border border-white p-5 rounded-full font-urbanist",
-          tabContent: "group-data-[selected=true]:text-warning",
+          tabContent: "!group-data-[selected=true]:text-warning",
         }}
       >
         {FAQ.map((item) => (

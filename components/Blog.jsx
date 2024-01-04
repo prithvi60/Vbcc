@@ -82,7 +82,7 @@ useEffect(() =>{
                       <CardFooter className="p-0">
                         <Link
                           href={"/product"}
-                          className={`rounded-full px-4 py-3 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                          className={`rounded-full px-4 py-2 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                         >
                           <div className={`h-6 w-full overflow-hidden`}>
                             <h4

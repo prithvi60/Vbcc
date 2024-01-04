@@ -79,7 +79,7 @@ export const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className={`block rounded-full px-4 py-3 border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full md:w-[350px] group`}
+          className={`block rounded-full px-4 py-2 border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full md:w-[350px] group`}
         >
           <div className={`h-6 w-full overflow-hidden`}>
             <h4

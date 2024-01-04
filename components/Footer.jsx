@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-start gap-3">
             <Link
-              href={"#story"}
+              href={"/about"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Our Story

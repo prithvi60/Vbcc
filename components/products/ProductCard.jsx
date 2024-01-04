@@ -80,7 +80,7 @@ export const ProductCard = ({ products }) => {
                     fill
                     src={list?.img}
                     alt="product"
-                    className="absolute object-cover object-center md:odd:last:object-contain"
+                    className="absolute object-contain lg:object-cover object-center md:odd:last:object-contain"
                   />
                 </div>
               </div>

@@ -93,7 +93,7 @@ const HowWeDo = () => {
               <p className="lg:text-danger">{item.desc}</p>
               <Link
                 href={"/contact"}
-                className={`hidden lg:block px-6 py-5 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
+                className={`hidden lg:block px-6 py-4 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
                   <h4
@@ -110,7 +110,7 @@ const HowWeDo = () => {
               </Link>
               <Link
                 href={"/"}
-                className={`hidden md:flex lg:hidden px-6 py-5 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
+                className={`hidden md:flex lg:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
                   <h4
@@ -127,7 +127,7 @@ const HowWeDo = () => {
               </Link>
               <Link
                 href={"/"}
-                className={`block md:hidden px-6 py-5 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
+                className={`block md:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
                   <h4

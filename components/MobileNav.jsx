@@ -9,8 +9,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
   return (
     <section
       className={`fixed top-0 ${
-        open ? "right-0 animate-reveal_In" : "-right-full"
-      } z-30 bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium overflow-auto transition-all delay-200 duration-[3000]`}
+        open ? "right-0 animate-reveal_In" : "-right-[100%]"
+      } z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium overflow-auto transition-all delay-200 duration-[3000]`}
     >
       <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-[32px]">
         <Image
@@ -25,7 +25,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         >
           <Link
             href={"/contact"}
-            className={`block rounded-full px-4 py-3 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
+            className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className={`block h-6 w-full overflow-hidden`}>
@@ -76,8 +76,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 p-5 md:px-[60px] md:py-[32px]">
         <div className="flex items-center gap-5">
           <Link
-            href={"/"}
-            className={`block rounded-full px-4 py-3 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
+            href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
+            className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className={`block h-6 w-full overflow-hidden`}>
@@ -95,7 +95,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           </Link>
           <Link
             href={"/faq"}
-            className={`block rounded-full px-4 py-3 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
+            className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
             <div className={`block h-6 w-full overflow-hidden`}>
@@ -114,20 +114,20 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         </div>
         <div className="flex md:justify-evenly items-center gap-3 mt-5 mx-2 md:mt-0 md:mx-0">
           <Link
-            href={"/"}
-            className="p-2.5 rounded-full border border-info hover:bg-info"
+            href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
+            className="p-4 rounded-full border border-info hover:bg-info"
           >
             <FaYoutube className="h-7 w-7 text-white" />
           </Link>
           <Link
-            href={"/"}
-            className="p-2.5 rounded-full border border-info hover:bg-info"
+            href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
+            className="p-4 rounded-full border border-info hover:bg-info"
           >
             <FaLinkedin className="h-7 w-7 text-white" />
           </Link>
           <Link
-            href={"/"}
-            className="p-2.5 rounded-full border border-info hover:bg-info"
+            href={"https://wa.me/7338894199"}
+            className="p-4 rounded-full border border-info hover:bg-info"
           >
             <FaWhatsapp className="h-7 w-7 text-white" />
           </Link>
