@@ -4,6 +4,7 @@ import { Link as Mylink } from "react-scroll";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import Carousel from "./Carousel";
 import { Btn2 } from "./Btn";
+import Image from "next/image";
 const Hero = () => {
   return (
     <section className="h-[90vh] w-full relative">
@@ -17,16 +18,44 @@ const Hero = () => {
         slidesToShow={1}
         slidesToScroll={1}
         vertical={true}
-        verticalSwiping={true}
         pauseOnHover={false}
         className="!z-0"
       >
-        <div className="h-[90vh] w-full bg-hero-pattern bg-cover bg-center"></div>
-        <div className="h-[90vh] w-full bg-hero-pattern-2 bg-cover bg-center"></div>
-        <div className="h-[90vh] w-full bg-hero-pattern-3 bg-cover bg-center"></div>
+        {/* Relative is affecting height */}
+        <div className="h-[90vh] relative m-0 ">
+          <Image
+            src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"}
+            alt="test"
+            fill
+            objectFit="cover"
+            objectPosition="center"
+          />
+        </div>
+        <div className="h-[90vh] relative m-0">
+          <Image
+            src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png"}
+            alt="test"
+            fill
+            objectFit="cover"
+            objectPosition="center"
+
+          />
+        </div>
+        <div className="h-[90vh] relative m-0">
+          <Image
+            src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"}
+            alt="test"
+            fill
+            objectFit="cover"
+            objectPosition="center"
+
+          />
+        </div>
+        {/* <div className="h-[90vh] w-full bg-hero-pattern bg-cover bg-center m-0 p-0"></div>
+        <div className="h-[90vh] w-full bg-hero-pattern-2 bg-cover bg-center m-0 p-0"></div>
+        <div className="h-[90vh] w-full bg-hero-pattern-3 bg-cover bg-center m-0 p-0"></div> */}
       </Slider>
-      <div className="absolute top-0 left-0 h-[90.5vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80">
-      </div>
+      <div className="absolute top-0 left-0 h-[90.5vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
       <div className="text-center space-y-4 md:space-y-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
         <h4 className="text-xl md:text-2xl uppercase font-Lora">
           Vb Ceramic Consultants
@@ -45,7 +74,7 @@ const Hero = () => {
             bColor={"border-white"}
             title={"Our Products"}
             href={"/products"}
-            background = {"backdrop-blur-md bg-black/30"}
+            background={"backdrop-blur-md bg-black/30"}
           />
           <Btn2
             Hbgcolor={"bg-info hover:border-info "}
@@ -54,7 +83,7 @@ const Hero = () => {
             bColor={"border-white"}
             title={"Contact Us"}
             href={"/contact"}
-            background = {"backdrop-blur-md bg-black/30"}
+            background={"backdrop-blur-md bg-black/30"}
           />
         </div>
       </div>

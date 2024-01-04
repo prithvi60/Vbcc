@@ -55,3 +55,8 @@ body::-webkit-scrollbar-thumb {
 .hideScroll::-webkit-scrollbar {
   display: none;
 }
+.slick-slide, .slick-active, .slick-current{
+  margin: 0 !important;
+  padding: 0 !important;
+
+}

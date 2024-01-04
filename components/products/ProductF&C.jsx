@@ -42,10 +42,10 @@ const ProductFC = ({products,setProducts,filteredCategory,setFilteredCategory}) 
     // console.log(e);
     if (check) {
       setFilteredCategory((val) => [...val, value]);
-      setIsSelected(true);
+      // setIsSelected(true);
     } else {
       setFilteredCategory((prev) => prev.filter((val) => val !== value));
-      setIsSelected(false);
+      // setIsSelected(false);
     }
   };
 
