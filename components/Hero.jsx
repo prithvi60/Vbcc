@@ -12,12 +12,13 @@ const Hero = () => {
         dots={false}
         infinite={true}
         autoplay={true}
-        speed={1500}
-        autoplaySpeed={3000}
+        speed={2000}
+        autoplaySpeed={2500}
         arrows={false}
         slidesToShow={1}
         slidesToScroll={1}
         vertical={true}
+        verticalSwiping={false}
         pauseOnHover={false}
         className="!z-0"
       >
@@ -27,6 +28,8 @@ const Hero = () => {
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"}
             alt="test"
             fill
+            placeholder="blur"
+            blurDataURL="https://ik.imagekit.io/webibee/VBCC/hero-bg.png?tr=bl-6"
             className="object-cover object-center"
           />
         </div>
@@ -35,6 +38,8 @@ const Hero = () => {
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png"}
             alt="test"
             fill
+            placeholder="blur"
+            blurDataURL="https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png?tr=bl-6"
             className="object-cover object-center"
           />
         </div>
@@ -43,12 +48,11 @@ const Hero = () => {
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"}
             alt="test"
             fill
+            placeholder="blur"
+            blurDataURL="https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png?tr=bl-6"
             className="object-cover object-center"
           />
         </div>
-        {/* <div className="h-[90vh] w-full bg-hero-pattern bg-cover bg-center m-0 p-0"></div>
-        <div className="h-[90vh] w-full bg-hero-pattern-2 bg-cover bg-center m-0 p-0"></div>
-        <div className="h-[90vh] w-full bg-hero-pattern-3 bg-cover bg-center m-0 p-0"></div> */}
       </Slider>
       <div className="absolute top-0 left-0 h-[90.5vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
       <div className="text-center space-y-4 md:space-y-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">

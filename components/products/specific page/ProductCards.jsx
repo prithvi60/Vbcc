@@ -15,32 +15,6 @@ export const ProductCards = ({value,name}) => {
         <div className="block group" key={idx}>
           <Link href={`/products/${card?.productName.replace(/\s/g, "")}`} className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10">
             {/*Card Body */}
-            {/* <div className="bg-white rounded-2xl group-hover:rounded-t-2xl group-hover:rounded-b-none relative p-2">
-              <div className="block space-y-1.5">
-                <div className="p-3.5 border border-info w-max rounded-full">
-                  <Dumbbell className={"fill-info h-6 w-6 "} />
-                </div>
-                <div className="p-3.5 border border-info w-max rounded-full">
-                  <Glass className={"h-6 w-6"} />
-                </div>
-              </div>
-              <Link
-                href={"/products/1"}
-                className="group-hover:absolute group-hover:top-3.5 group-hover:right-4 group-hover:px-3.5
-                        group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block
-                        -translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75"
-              >
-                View
-              </Link>
-              <div className="relative h-[195px] xl:h-[250px] w-full">
-                <Image
-                  fill
-                  src={card.img}
-                  alt="product"
-                  className="absolute object-cover object-bottom last:object-contain"
-                />
-              </div>
-            </div> */}
             <div className="bg-white p-2 h-[335px]">
                 <div className="h-[85px] w-full">
                 {card.feature.map((val, i) => (
@@ -73,6 +47,8 @@ export const ProductCards = ({value,name}) => {
                   <Image
                     fill
                     src={card?.img}
+                    // placeholder="blur"
+                    // blurDataURL=""
                     alt="product"
                     className="absolute object-cover object-center md:odd:last:object-contain"
                   />

@@ -30,6 +30,8 @@ const Explore = () => {
             <Image
               fill
               src={"/hero-bg.png"}
+              // placeholder="blur"
+              // blurDataURL=""
               alt="product"
               className="absolute object-cover object-center"
             />
@@ -57,6 +59,8 @@ const Explore = () => {
               fill
               src={"/hero-bg-2.png"}
               alt="product"
+              // placeholder="blur"
+              // blurDataURL=""
               className="absolute object-cover object-center"
             />
           </div>
@@ -83,6 +87,8 @@ const Explore = () => {
               fill
               src={"/hero-bg-3.png"}
               alt="product"
+              // placeholder="blur"
+              // blurDataURL=""
               className="absolute object-cover object-center"
             />
           </div>

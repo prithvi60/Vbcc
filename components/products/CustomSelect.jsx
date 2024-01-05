@@ -47,7 +47,7 @@ export const CustomSelect = ({
       >
         {sortProduct.map((item,idx) => (
           <li
-            className={`p-3 capitalize cursor-pointer font-Lora text-2xl text-primary hover:bg-info border-b border-warning last:border-b-0 hover:duration-1000 hover:bg-opacity-30 ${
+            className={`p-3 capitalize cursor-pointer font-Lora text-2xl text-primary hover:bg-info border-b border-warning last:border-b-0 hover:duration-1000 hover:bg-opacity-10 ${
               selectedItem === item.value ? "bg-white" : ""
             } `}
             key={idx}
@@ -91,7 +91,7 @@ export const CustomSelectMd = ({
       >
         {sortProduct.map((item, idx) => (
           <li
-            className={`p-3 border-b border-warning last:border-b-0 capitalize cursor-pointer font-Lora text-base md:text-2xl text-primary hover:bg-info hover:duration-1000 hover:bg-opacity-30 ${
+            className={`p-3 border-b border-warning last:border-b-0 capitalize cursor-pointer font-Lora text-base md:text-2xl text-primary hover:bg-info hover:duration-1000 hover:bg-opacity-10 ${
               selectedItem === item.value ? "bg-white" : ""
             } `}
             key={idx}

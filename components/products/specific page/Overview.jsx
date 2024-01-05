@@ -9,7 +9,9 @@ export const Overview = ({product}) => {
         </h4>
         <div className='bg-secondary rounded-lg text-base p-5 xl:p-10 flex flex-col md:flex-row items-start gap-5'>
         <div className="relative w-full md:w-[300px] xl:w-80 h-[180px]">
-                <Image fill src={product.overViewImg} alt="..." className="absolute object-cover object-center rounded-md"/>
+                <Image fill src={product.overViewImg} alt="..."
+                //  placeholder='blur' blurDataURL=''
+                  className="absolute object-cover object-center rounded-md"/>
             </div>
             <ul className='font-urbanist text-base md:text-xl text-warning w-full md:w-[60%] xl:w-[80%] space-y-6'>
               {product.overViewDescription.map((list,idx) => (

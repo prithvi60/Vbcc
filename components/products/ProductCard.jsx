@@ -80,6 +80,8 @@ export const ProductCard = ({ products }) => {
                     fill
                     src={list?.img}
                     alt="product"
+                    // placeholder="blur"
+                    // blurDataURL=""
                     className="absolute object-contain lg:object-cover object-center md:odd:last:object-contain"
                   />
                 </div>

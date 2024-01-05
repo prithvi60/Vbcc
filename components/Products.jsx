@@ -39,7 +39,6 @@ const Products = () => {
           Our Products
         </h3>
         <div className="flex flex-col justify-center items-center w-full space-y-8">
-
           <div className="flex justify-center items-center gap-3 w-full h-auto flex-wrap bg-secondary">
             {products.map((item, idx) => (
               <div
@@ -87,6 +86,8 @@ const Products = () => {
                     <Image
                       fill
                       src={card.img}
+                      placeholder="blur"
+                      blurDataURL={`${card.img}?tr=bl-100`}
                       alt="product"
                       className="absolute object-contain object-center"
                     />

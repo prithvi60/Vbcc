@@ -71,6 +71,8 @@ const Blog = () => {
                     <Image
                       fill
                       src={card.img}
+                      placeholder="blur"
+                      blurDataURL={`${card.img}?tr=bl-100`}
                       alt="product"
                       className="absolute object-cover object-center"
                     />

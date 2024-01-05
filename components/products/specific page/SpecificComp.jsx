@@ -137,18 +137,6 @@ export const CustomAccordion = ({ specification, specificId }) => {
   );
 };
 
-// export const CustomTable = ({ spec }) => {
-//   return (
-//     <table className="w-full border border-[#B9B9B9] text-xl my-5">
-//       <tbody>
-//         <tr>
-//           <td className="border border-[#B9B9B9] p-3">{spec.dimensionName}</td>
-//           <td className="border border-[#B9B9B9] p-3">{dimensionValue}</td>
-//         </tr>
-//       </tbody>
-//     </table>
-//   );
-// };
 
 export const CustomCarousel = ({ gallery }) => {
   const [index, setIndex] = useState(0);

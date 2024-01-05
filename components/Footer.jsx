@@ -156,13 +156,17 @@ const Footer = () => {
               <Link href={"https://www.drvbceramicresearch.com/"} className="relative h-[55px] w-[75px]" target="_blank">
                 <Image
                   fill
+                  sizes="75px"
                   src={"https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png"}
+                  placeholder="blur"
+                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-6"
                   alt="Logo"
                   className="-ml-6"
                 />
               </Link>
               <Link href={"https://www.hitechceramics.in/"} className="relative h-[50px] w-[70px]" target="_blank">
-                <Image fill src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" className="-ml-6" />
+                <Image fill sizes="70px" src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" placeholder="blur"
+                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-6" className="-ml-6" />
               </Link>
             </div>
           </div>
