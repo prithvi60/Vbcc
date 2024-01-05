@@ -1,6 +1,6 @@
 export const ContactForm = () => {
   return (
-    <section className="px-5 md:px-10 py-[60px] md:py-[60px] lg:px-[60px] lg:py-20 text-warning space-y-10">
+    <section className="px-5 md:px-10 py-10 md:py-[60px] lg:px-[60px] lg:py-20 text-warning space-y-10">
       <div className="w-full h-full space-y-6">
         <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
           Contact Us
@@ -24,7 +24,7 @@ export const ContactForm = () => {
             type="text"
             id="company"
             placeholder="Enter your Name"
-            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base"
+            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base placeholder:font-urbanist"
           />
         </div>
         <div className="w-full block space-y-3">
@@ -36,7 +36,7 @@ export const ContactForm = () => {
             type="text"
             id="position"
             placeholder="Enter your Position at the Company"
-            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base"
+            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base placeholder:font-urbanist"
           />
         </div>
         <div className="w-full block space-y-3">
@@ -49,7 +49,7 @@ export const ContactForm = () => {
             type="email"
             id="email"
             placeholder="Enter your email"
-            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base"
+            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:font-urbanist"
           />
         </div>
         <div className="w-full block space-y-3">
@@ -61,7 +61,7 @@ export const ContactForm = () => {
             type="text"
             id="phone"
             placeholder="Enter your Phone Number"
-            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base"
+            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base placeholder:font-urbanist"
           />
         </div>
         <div className="w-full block space-y-3 col-auto md:col-span-2">
@@ -74,7 +74,7 @@ export const ContactForm = () => {
             id="message"
             rows={"10"}
             placeholder="Type in your Message"
-            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base"
+            className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:font-urbanist"
           />
         </div>
         <button

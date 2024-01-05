@@ -7,19 +7,14 @@ import Filter from "./Filter";
 import ProductFC from "./ProductF&C";
 import { AllProducts } from "@/libs/data";
 
-const sortProduct = [
-  { value: "relevance" },
-  { value: "new products" },
-  { value: "featured" },
-  { value: "best sellers" },
-];
-
 const ProductSection = ({ products, setProducts }) => {
   const [searchValue, setSearchValue] = useState("");
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
   const [selectedItem, SetselectedItem] = useState("Relevance");
+  // console.log(selectedItem);
   const [filteredCategory, setFilteredCategory] = useState([]);
+
   useEffect(() => {
     const allProducts = AllProducts.filter(
       (val) =>
@@ -28,16 +23,29 @@ const ProductSection = ({ products, setProducts }) => {
     );
     setProducts(allProducts);
   }, [searchValue, setProducts]);
+
+  const handleSortBy = (value) => {
+    // console.log(value);
+    SetselectedItem(value);
+    const sortedBy = AllProducts.filter(
+      (val) => val.sortBy.toLowerCase() === value
+    );
+    // console.log(sortedBy);
+    setProducts(sortedBy);
+    setOpen(!open);
+  };
+
   return (
     <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
       {/* Sort Section */}
       <div className="w-full hidden lg:flex justify-end items-center space-y-5 xl:px-[60px]">
         <div className="block space-y-5">
           <CustomSelect
+            handleSortBy={handleSortBy}
             open={open}
             setOpen={setOpen}
             selectedItem={selectedItem}
-            SetselectedItem={SetselectedItem}
+            // sortByValue={sortByValue}
           />
           <div className="flex items-center gap-2 border border-warning px-4 py-2 rounded-full">
             <CiSearch className="h-7 w-7 text-warning" />
@@ -56,9 +64,8 @@ const ProductSection = ({ products, setProducts }) => {
         <CustomSelectMd
           open={open}
           setOpen={setOpen}
+          handleSortBy={handleSortBy}
           selectedItem={selectedItem}
-          SetselectedItem={SetselectedItem}
-          source={sortProduct}
         />
         <div className="flex md:hidden items-center gap-2 border border-warning px-4 py-2 rounded-full">
           <CiSearch className="h-7 w-7 text-warning" />
@@ -88,10 +95,21 @@ const ProductSection = ({ products, setProducts }) => {
           </h5>
           <GrFilter className="w-5 h-5 text-warning" />
         </div>
-        {isFilter && <Filter setIsFilter={setIsFilter} filteredCategory={filteredCategory} setFilteredCategory={setFilteredCategory}/>}
+        {isFilter && (
+          <Filter
+            setIsFilter={setIsFilter}
+            filteredCategory={filteredCategory}
+            setFilteredCategory={setFilteredCategory}
+          />
+        )}
       </div>
       {/* Product Section */}
-      <ProductFC products={products} setProducts={setProducts} filteredCategory={filteredCategory} setFilteredCategory={setFilteredCategory} />
+      <ProductFC
+        products={products}
+        setProducts={setProducts}
+        filteredCategory={filteredCategory}
+        setFilteredCategory={setFilteredCategory}
+      />
     </section>
   );
 };

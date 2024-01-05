@@ -12,7 +12,7 @@ export const Work = () => {
         </div>
         <div className="block space-y-7 md:space-y-10">
           <div className="space-y-3 md:space-y-5 w-full lg:w-4/5">
-            <h5 className="font-urbanist capitalize">Address</h5>
+            <h5 className="font-urbanist capitalize">Office Address</h5>
             <p className="font-Lora text-xl md:text-2xl ">
               27A, 14th Link Road, 3rd cross, Venkateswara colony, Nehru Nagar
               Industrial Estate,Kottivakkam, Nehru Nagar, Perungudi,

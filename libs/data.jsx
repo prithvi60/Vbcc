@@ -364,6 +364,7 @@ export const AllProducts = [
   // microwave
   {
     category: "Research Institutions",
+    sortBy: "Relevance",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Microwave Box",
@@ -507,6 +508,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "New Products",
     feature: ["robust"],
     img: "/product-img.png",
     productName: "Microwave Box 2",
@@ -572,6 +574,7 @@ export const AllProducts = [
   // Furnaces
   {
     category: "Research Institutions",
+    sortBy: "Featured",
     feature: ["robust"],
     img: "/product-img.png",
     productName: "Furnaces Box 1",
@@ -715,6 +718,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "Relevance",
     feature: ["robust"],
     img: "/product-img.png",
     productName: "Furnaces Box 2",
@@ -859,6 +863,7 @@ export const AllProducts = [
   // Ovens
   {
     category: "Research Institutions",
+    sortBy: "Relevance",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Ovens 1",
@@ -1002,6 +1007,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Ovens 2",
@@ -1146,6 +1152,7 @@ export const AllProducts = [
   // Nano Technology
   {
     category: "Research Institutions",
+    sortBy: "New Products",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Nano Technology 1",
@@ -1289,6 +1296,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "Featured",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Nano Technology 2",
@@ -1433,6 +1441,7 @@ export const AllProducts = [
   // Special Research
   {
     category: "Research Institutions",
+    sortBy: "New Products",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Special Research 1",
@@ -1576,6 +1585,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Special Research 2",
@@ -1720,6 +1730,7 @@ export const AllProducts = [
   // Presses
   {
     category: "Research Institutions",
+    sortBy: "Relevance",
     feature: ["robust"],
     img: "/product-img.png",
     productName: "Presses 1",
@@ -1863,6 +1874,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "Featured",
     feature: ["robust"],
     img: "/product-img.png",
     productName: "Presses 2",
@@ -2007,6 +2019,7 @@ export const AllProducts = [
   // Metallurgical
   {
     category: "Research Institutions",
+    sortBy: "Relevance",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Metallurgical 1",
@@ -2150,6 +2163,7 @@ export const AllProducts = [
   },
   {
     category: "Research Institutions",
+    sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Metallurgical 2",
@@ -2294,6 +2308,7 @@ export const AllProducts = [
 // Industrial Furnaces
   {
     category: "Industries",
+    sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Industrial Furnaces 1",
@@ -2437,6 +2452,7 @@ export const AllProducts = [
   },
   {
     category: "Industries",
+    sortBy: "Featured",
     feature: ["robust", "fragile"],
     img: "/product-img.png",
     productName: "Industrial Furnaces 2",
@@ -2581,6 +2597,7 @@ export const AllProducts = [
   // Refractory Industry
   {
     category: "Industries",
+    sortBy: "New Products",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Refractory Industry 1",
@@ -2724,6 +2741,7 @@ export const AllProducts = [
   },
   {
     category: "Industries",
+    sortBy: "Best Sellers",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Refractory Industry 2",
@@ -2868,6 +2886,7 @@ export const AllProducts = [
   // Tile & Sanitary Ware
   {
     category: "Industries",
+    sortBy: "Relevance",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Tile & Sanitary Ware 1",
@@ -3011,6 +3030,7 @@ export const AllProducts = [
   },
   {
     category: "Industries",
+    sortBy: "Best Sellers",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Tile & Sanitary Ware 2",
@@ -3155,6 +3175,7 @@ export const AllProducts = [
   // Ceramic Products
   {
     category: "Accessories",
+    sortBy: "New Products",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Ceramic Products 1",
@@ -3298,6 +3319,7 @@ export const AllProducts = [
   },
   {
     category: "Accessories",
+    sortBy: "Best Sellers",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Ceramic Products 2",
@@ -3442,6 +3464,7 @@ export const AllProducts = [
   // Heating Elements
   {
     category: "Accessories",
+    sortBy: "Best Sellers",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Heating Box 1",
@@ -3585,6 +3608,7 @@ export const AllProducts = [
   },
   {
     category: "Accessories",
+    sortBy: "Relevance",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Heating Box 2",
@@ -3729,6 +3753,7 @@ export const AllProducts = [
   // Controllers
   {
     category: "Accessories",
+    sortBy: "New Products",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Controllers Box1",
@@ -3872,6 +3897,7 @@ export const AllProducts = [
   },
   {
     category: "Accessories",
+    sortBy: "Featured",
     feature: ["fragile"],
     img: "/product-img.png",
     productName: "Controllers Box 2",

@@ -22,12 +22,15 @@ useEffect(() =>{
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist relative bg-success" key={idx}>
       <div className="flex flex-col items-center lg:flex-row gap-16 lg:justify-between lg:items-start" >
         <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6">
-          {item.img.slice(0,count).map((i,id) => (
+          {item.img.slice(0,count).map((image,id) => (
             <div className="relative h-[350px] md:h-[392px] w-full" key={id}>
               <Image
                 fill
-                src={i}
+                src={image}
                 alt="Image..."
+                placeholder="blur"
+                  blurDataURL={`${image}?tr=bl-6`}
+                  sizes="(min-width: 1040px) calc(50vw - 92px), (min-width: 820px) calc(100vw - 80px), calc(100vw - 40px)"
                 className="absolute object-cover object-center"
               />
             </div>

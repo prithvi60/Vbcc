@@ -27,8 +27,7 @@ const Hero = () => {
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"}
             alt="test"
             fill
-            objectFit="cover"
-            objectPosition="center"
+            className="object-cover object-center"
           />
         </div>
         <div className="h-[90vh] relative m-0">
@@ -36,9 +35,7 @@ const Hero = () => {
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png"}
             alt="test"
             fill
-            objectFit="cover"
-            objectPosition="center"
-
+            className="object-cover object-center"
           />
         </div>
         <div className="h-[90vh] relative m-0">
@@ -46,9 +43,7 @@ const Hero = () => {
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"}
             alt="test"
             fill
-            objectFit="cover"
-            objectPosition="center"
-
+            className="object-cover object-center"
           />
         </div>
         {/* <div className="h-[90vh] w-full bg-hero-pattern bg-cover bg-center m-0 p-0"></div>

@@ -1,10 +1,10 @@
 "use client";
 import { AllProducts, category } from "@/libs/data";
 import { Checkbox, CheckboxGroup, Divider } from "@nextui-org/react";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams,useRouter } from "next/navigation";
 
 const ProductFC = ({
   products,
@@ -14,6 +14,7 @@ const ProductFC = ({
 }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const router = useRouter()
   const [selectedItem, SetselectedItem] = useState("All Products");
   const [selected, setSelected] = useState([]);
 
@@ -56,6 +57,10 @@ const ProductFC = ({
     setFilteredCategory([]);
     setSelected([]);
   };
+
+  useEffect(()=>{
+    router.replace('/products')
+  },[router])
 
   return (
     <section className="flex items-start gap-[60px] ">

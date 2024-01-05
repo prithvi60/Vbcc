@@ -57,7 +57,7 @@ export const Visitation = () => {
     setCurrentIndex(id);
   };
   return (
-    // <AnimatePresence></AnimatePresence>
+
     <section
       className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-primary"
       id="visitations"

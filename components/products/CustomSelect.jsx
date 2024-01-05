@@ -16,7 +16,7 @@ export const CustomSelect = ({
   open,
   setOpen,
   selectedItem,
-  SetselectedItem,
+  handleSortBy,
 }) => {
   return (
     <div className="block space-y-5 bg-secondary h-auto">
@@ -45,16 +45,13 @@ export const CustomSelect = ({
             : "hidden"
         }`}
       >
-        {sortProduct.map((item, idx) => (
+        {sortProduct.map((item,idx) => (
           <li
             className={`p-3 capitalize cursor-pointer font-Lora text-2xl text-primary hover:bg-info border-b border-warning last:border-b-0 hover:duration-1000 hover:bg-opacity-30 ${
               selectedItem === item.value ? "bg-white" : ""
             } `}
             key={idx}
-            onClick={() => {
-              SetselectedItem(item.value);
-              setOpen(!open);
-            }}
+            onClick={() => handleSortBy(item.value)}
           >
             {item.value}
           </li>
@@ -68,8 +65,7 @@ export const CustomSelectMd = ({
   open,
   setOpen,
   selectedItem,
-  SetselectedItem,
-  source,
+  handleSortBy,
 }) => {
   return (
     <div className="block space-y-5 bg-secondary w-full h-auto">
@@ -93,16 +89,13 @@ export const CustomSelectMd = ({
             : "hidden"
         }`}
       >
-        {source.map((item, idx) => (
+        {sortProduct.map((item, idx) => (
           <li
             className={`p-3 border-b border-warning last:border-b-0 capitalize cursor-pointer font-Lora text-base md:text-2xl text-primary hover:bg-info hover:duration-1000 hover:bg-opacity-30 ${
               selectedItem === item.value ? "bg-white" : ""
             } `}
             key={idx}
-            onClick={() => {
-              SetselectedItem(item.value);
-              setOpen(!open);
-            }}
+            onClick={() => handleSortBy(item.value)}
           >
             {item.value}
           </li>

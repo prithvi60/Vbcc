@@ -57,6 +57,7 @@ export const TestimonialSection = () => {
   const handleChangePDF = (id) => {
     SetselectedItem(id);
   };
+
   return (
     <section className="w-full h-screen md:h-[90vh] px-5 py-10 md:px-10 lg:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between items-start relative">
       <div className="absolute top-0 left-0 h-screen lg:h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
@@ -82,6 +83,8 @@ export const TestimonialSection = () => {
                   <Image
                     fill
                     src={item.logo}
+                    placeholder="blur"
+                    blurDataURL={`${item.logo}?tr=bl-100`}
                     alt="Logo"
                     className="object-contain object-center p-3"
                   />
@@ -92,11 +95,9 @@ export const TestimonialSection = () => {
         </div>
       </div>
       <AnimatePresence initial={false}>
-        {/* bg-white px-12 py-4 rounded-3xl */}
         <div className="lg:w-[35%] w-full h-full z-30 flex items-center justify-start lg:justify-end">
           <motion.div
             className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
-            // bg-white px-4 rounded-lg
             onClick={() => openLightboxOnSlide(selectedItem)}
             variants={slideVariants}
             initial="slide"
@@ -104,19 +105,12 @@ export const TestimonialSection = () => {
             exit="exit"
             key={selectedItem}
           >
-            {/* <motion.img
-              src={testimonials[selectedItem].pdf}
-              alt="Logo"  
-              key={selectedItem}
-              className="w-full h-full object-contain object-center"
-              variants={slideVariants}
-              initial="slide"
-              animate="visible"
-              exit="exit"
-            /> */}
             <Image
               fill
               src={testimonials[selectedItem].pdf}
+              placeholder="blur"
+              blurDataURL={`${testimonials[selectedItem].pdf}?tr=bl-20`}
+              sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
               alt="Logo"
               className="w-full h-full object-contain object-center rounded-xl"
             />

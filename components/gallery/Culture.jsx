@@ -16,14 +16,10 @@ export const Culture = () => {
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? 400 : -400 };
+      return { y: direction > 0 ? 420 : -420 };
     },
     visible: {
       y: 0,
-      // transition: {
-      //   type: "tween",
-      //   duration: 0.8
-      // }
       // opacity: 1,
       // transition: {
       //   y: { type: "spring", stiffness: 420, damping: 50 },
@@ -33,7 +29,7 @@ export const Culture = () => {
     },
     exit: (direction) => {
       return {
-        y: direction > 0 ? -400 : 400,
+        y: direction > 0 ? -420 : 420,
         // opacity: 0,
         // scale: 0.9,
         // transition: {
@@ -67,13 +63,14 @@ export const Culture = () => {
     >
       <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning">
         <div className="w-full md:w-1/2 lg:w-[65%]">
+          {/* sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px" */}
           <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 // fill
                 src={imgSrc[currentIndex]}
                 alt="Logo"
-                key={currentIndex}
+                key={imgSrc[currentIndex]}
                 className="absolute w-full h-full object-cover object-center "
                 variants={slideVariants}
                 initial="slide"
@@ -100,6 +97,8 @@ export const Culture = () => {
                 <Image
                   fill
                   src={img}
+                  // placeholder="blur"
+                  sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px" 
                   alt="Logo"
                   className="absolute object-cover hover:scale-125 transition-all duration-1000"
                 />

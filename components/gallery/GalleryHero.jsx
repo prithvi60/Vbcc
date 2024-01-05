@@ -7,7 +7,10 @@ const gallery = ["Culture", "Visitations", "Awards"];
 
 export const GalleryHero = () => {
   return (
-    <section className="block w-full h-[715px] px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-[url('/hero-bg.png')] bg-cover bg-center z-0 overflow-hidden  relative ">
+    <section className="block w-full h-[715px] px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-[url('/hero-bg.png')] bg-cover bg-center z-0 overflow-hidden relative ">
+       {/* <div className="relative h-[715px] w-full z-0  px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10">
+        <Image src={"/hero-bg.png"} fill  alt="backgroun image" className="object-cover object-center" />
+      </div> */}
       <div className="absolute top-0 left-0 h-[715px]  w-full -z-10 backdrop-sepia-0 bg-black/30"></div>
       <div className="block space-y-6 w-full md:w-4/5 z-50">
         <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full ">

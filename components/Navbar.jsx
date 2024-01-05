@@ -16,9 +16,14 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav id="nav">
-      <Navbar position="static" maxWidth="full" classNames={{
-        wrapper :["!px-0"]
-      }} className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 lg:px-[60px] lg:py-0 border border-[#B6BABD]">
+      <Navbar
+        position="static"
+        maxWidth="full"
+        classNames={{
+          wrapper: ["!px-0 !h-auto lg:!h-20"],
+        }}
+        className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-0 border-b border-[#B6BABD]"
+      >
         <NavbarBrand>
           <Link href="/" className="relative h-5 w-20 cursor-pointer">
             <Image
@@ -36,24 +41,29 @@ const NavBar = () => {
           {Navlinks.map((link, idx) => (
             <NavbarItem key={idx} className="h-full relative group">
               <Link href={link.href} className="h-full text-warning">
-               {link.title} 
+                {link.title}
               </Link>
-               <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[2px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info"/>
+              <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[2px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
             </NavbarItem>
           ))}
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden md:flex">
-            <Btn Hbgcolor={"bg-primary"} textColor={"text-warning"} HtextColor={"text-white"} bColor={"border-warning"} title={"contact us"} href={"/contact"}/>
+            <Btn
+              Hbgcolor={"bg-primary"}
+              textColor={"text-warning"}
+              HtextColor={"text-white"}
+              bColor={"border-warning"}
+              title={"contact us"}
+              href={"/contact"}
+            />
           </NavbarItem>
           <NavbarItem onClick={() => setIsOpen(!isOpen)}>
-              <RxHamburgerMenu className="h-7 w-7 md:h-8 md:w-8 text-warning cursor-pointer hover:text-info" />
+            <RxHamburgerMenu className="h-7 w-7 md:h-8 md:w-8 text-warning cursor-pointer hover:text-info" />
           </NavbarItem>
         </NavbarContent>
       </Navbar>
-      {isOpen &&(
-            <MobileNav setIsOpen={setIsOpen} isOpen={isOpen}/>
-            )}
+      {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} />}
     </nav>
   );
 };

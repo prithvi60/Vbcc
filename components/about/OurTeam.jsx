@@ -46,6 +46,9 @@ export const OurTeam = () => {
                 fill
                 src={item.img}
                 alt="Image..."
+                placeholder="blur"
+                blurDataURL={`${item.img}?tr=bl-100`}
+                sizes="(min-width: 1440px) 265px, (min-width: 1040px) 365px, (min-width: 400px) 315px, 88px"
                 className="absolute object-cover object-center"
               />
             </div>

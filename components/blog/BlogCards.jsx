@@ -34,12 +34,20 @@ export const BlogCards = ({ blogContents, MainBlog, item }) => {
       <div className="hidden lg:flex items-start gap-8">
         {/* Main Blog Section */}
         <div className="block space-y-5 lg:w-1/2 xl:w-[66%] text-warning sticky top-6">
-          <div
-            style={{ backgroundImage: `url(${MainBlog.img})` }}
-            className="bg-[url('/blog-2.png')] bg-cover bg-center w-full h-[520px] p-5"
-          >
+          <div className="relative">
+            <div className="relative w-full h-[520px] p-5">
+              <Image
+                fill
+                src={MainBlog.img}
+                alt={MainBlog.blogTitile}
+                placeholder="blur"
+                blurDataURL={`${MainBlog.img}?tr=bl-100`}
+                sizes="(min-width: 1440px) calc(66.28vw - 87px), calc(50vw - 76px)"
+                className="object-cover object-center"
+              />
+            </div>
             <div
-              className={`block rounded-full px-4 py-2 bg-white hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
+              className={`absolute top-5 left-5 block rounded-full  px-4 py-2.5 bg-white hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h4

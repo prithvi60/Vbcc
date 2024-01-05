@@ -57,7 +57,7 @@ export const WCU = () => {
       </div>
       <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6">
         {chooseItem.map((item,idx)=>(
-        <div className="p-6 bg-primary space-y-4 rounded-lg w-full xl:w-[85%] sticky top-20 min-h-[220px]" key={idx}>
+        <div className="p-6 bg-primary space-y-4 rounded-lg w-full xl:w-[85%] sticky top-20 min-h-[220px] border border-secondary" key={idx}>
         <div className="relative h-12 w-12">
         <Image
           fill
