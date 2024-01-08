@@ -17,7 +17,6 @@ const Carousel = () => {
           vertical={true}
           verticalSwiping={false}
           pauseOnHover={false}
-          onLazyLoad={true}
         >
           <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
             <h3>Industrial Equipment</h3>
