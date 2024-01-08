@@ -29,6 +29,8 @@ const NavBar = () => {
             <Image
               fill
               src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
+              placeholder="blur"
+              blurDataURL="https://ik.imagekit.io/webibee/VBCC/logo.svg?tr=bl-100"
               alt="Logo"
               className="absolute object-contain object-center"
             />

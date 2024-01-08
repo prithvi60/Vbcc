@@ -3,8 +3,7 @@ import Slider from "react-slick";
 
 const Carousel = () => {
   return (
-    <section className="py-2 bg-transparent">
-      <div className="w-full md:w-[75%] mx-auto">
+      <section className="w-full md:w-[75%] mx-auto">
         <Slider
           dots={false}
           infinite={true}
@@ -28,8 +27,7 @@ const Carousel = () => {
             <h3>Research Equipment</h3>
           </div>
         </Slider>
-      </div>
-    </section>
+      </section>
   );
 };
 

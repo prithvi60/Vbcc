@@ -24,7 +24,7 @@ export const ProductHero = ({ setProducts }) => {
         </div>
       </div>
       <div className="relative h-[400px] lg:h-[50vh] w-full lg:w-1/2">
-            <Image fill src={product.ImgSrc} alt={product.title} 
+            <Image priority={true} quality={100} fill src={product.ImgSrc} alt={product.title} 
             // placeholder="blur" blurDataURL=""
             sizes="(min-width: 820px) 50vw, 100vw"
             className="object-cover object-center" />

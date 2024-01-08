@@ -102,6 +102,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-evenly items-center gap-3">
           <Link
+          aria-label="youtube page"
             href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
             className="p-4 rounded-full border border-info hover:bg-info"
             target="_blank"
@@ -109,6 +110,7 @@ const Footer = () => {
             <FaYoutube className="h-7 w-7 text-white" />
           </Link>
           <Link
+          aria-label="linkedin page"
             href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
             className="p-4 rounded-full border border-info hover:bg-info"
             target="_blank"
@@ -116,6 +118,7 @@ const Footer = () => {
             <FaLinkedin className="h-7 w-7 text-white" />
           </Link>
           <Link
+          aria-label="Whatsapp page"
             href={"https://wa.me/7338894199"}
             className="p-4 rounded-full border border-info hover:bg-info"
             target="_blank"
@@ -192,19 +195,19 @@ const Footer = () => {
           </Mylink>
         </div>
       </div>
-      <div className="text-sm p-5 md:px-16 md:py-5 text-zinc-500 border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
+      <div className="text-sm p-5 md:px-16 md:py-5 text-secondary border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
         <div className="flex justify-center md:justify-between items-center">
           <p>©VB Ceramic Consultants. All Rights Reserved.</p>
           <div className="hidden md:flex items-center gap-3">
             <Link
               href={"/"}
-              className="underline underline-offset-1 hover:text-secondary"
+              className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Privacy Policy
             </Link>
             <Link
               href={"/"}
-              className="underline underline-offset-1 hover:text-secondary"
+              className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Terms of Service
             </Link>

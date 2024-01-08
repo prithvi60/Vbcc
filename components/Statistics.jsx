@@ -5,7 +5,7 @@ import CountUp from "react-countup"
 
 const Statistics = () => {
   return (
-    <section className="py-20 px-5 md:px-16 lg:px-20 w-full bg-statistics bg-cover bg-center">
+    <section className="py-20 px-5 md:px-16 lg:px-20 w-full bg-statistics bg-cover bg-center bg-no-repeat">
         <div className="flex flex-wrap justify-evenly items-center gap-10 xl:gap-16 2xl:gap-20">
             {statistics.map((item,idx)=>(
             <div className="font-Lora text-center space-y-4 md:mt-10 mb-20 md:mb-0 xl:mt-0" key={idx}>
@@ -14,7 +14,7 @@ const Statistics = () => {
                   </h4>
                 <Divider className="bg-secondary"/>
                 <h2 className="text-[60px] md:text-[90px]">
-                <CountUp start={0} end={item.count} duration={2} delay={0} suffix="+" enableScrollSpy />
+                <CountUp start={0} end={item.count} duration={2} delay={0} suffix="+" enableScrollSpy scrollSpyDelay={800} />
                   </h2>
                 <Divider className="bg-secondary"/>
                 <p className="font-urbanist">{item.firm}</p>
