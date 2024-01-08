@@ -58,7 +58,7 @@ useEffect(() =>{
                   src={item}
                   alt="Image..."
                   placeholder="blur"
-                  blurDataURL={`${item}?tr=bl-6`}
+                  blurDataURL={`${item}?tr=bl-100`}
                   sizes="(min-width: 1040px) calc(50vw - 92px), (min-width: 820px) calc(100vw - 80px), calc(100vw - 40px)"
                   className="absolute object-cover object-center"
                 />

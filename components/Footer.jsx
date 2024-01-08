@@ -159,14 +159,14 @@ const Footer = () => {
                   sizes="75px"
                   src={"https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png"}
                   placeholder="blur"
-                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-6"
+                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-100"
                   alt="Logo"
                   className="-ml-6"
                 />
               </Link>
               <Link href={"https://www.hitechceramics.in/"} className="relative h-[50px] w-[70px]" target="_blank">
                 <Image fill sizes="70px" src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" placeholder="blur"
-                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-6" className="-ml-6" />
+                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100" className="-ml-6" />
               </Link>
             </div>
           </div>
