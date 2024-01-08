@@ -8,11 +8,13 @@ import { WCU } from '@/components/WCU'
 import Newsletter from '@/components/Newsletter'
 import Blog from '@/components/Blog'
 import HowWeDo from '@/components/HowWeDo'
+import dynamic from 'next/dynamic'
+const HeroComponent = dynamic(() => import('@/components/Hero'))
 
 export default function Home() {
   return (
     <main>
-      <Hero/>
+      <HeroComponent/>
       <Clients/>
       <Explore/>
       <Products/>

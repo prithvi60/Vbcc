@@ -40,6 +40,7 @@ const HowWeDo = () => {
             <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
               <motion.img
                 // fill
+                loading="lazy"
                 variants={slideVariants}
                 initial="entry"
                 animate="visible"
