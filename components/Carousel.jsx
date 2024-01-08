@@ -9,7 +9,7 @@ const Carousel = () => {
           dots={false}
           infinite={true}
           autoplay={true}
-          speed={2000}
+          speed={1950}
           autoplaySpeed={2400}
           arrows={false}
           slidesToShow={1}
@@ -17,6 +17,7 @@ const Carousel = () => {
           vertical={true}
           verticalSwiping={false}
           pauseOnHover={false}
+          onLazyLoad={true}
         >
           <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
             <h3>Industrial Equipment</h3>

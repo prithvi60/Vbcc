@@ -1,5 +1,4 @@
 "use client";
-import { Tab, Tabs } from "@nextui-org/react";
 import { BlogCards } from "./BlogCards";
 import { allBlogContent } from "@/libs/data";
 import { useState } from "react";

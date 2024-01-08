@@ -2,6 +2,7 @@
 import { explore } from "@/libs/data";
 import React, { useEffect, useState } from "react";
 import { BlogGridComponent } from "./BlogGridComponent";
+import Link from "next/link";
 
 export const ExploreCards = () => {
   const [width, setWidth] = useState(0);
@@ -24,7 +25,7 @@ export const ExploreCards = () => {
           <div className="block md:hidden bg-transparent px-6 py-5 text-base underline underline-offset-4 cursor-pointer decoration-warning">
             View All
           </div>
-          <div
+          <Link href={"/blog"}
             className={`hidden md:block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
           >
             <div className={`h-6 w-full overflow-hidden`}>
@@ -39,7 +40,7 @@ export const ExploreCards = () => {
                 View All
               </h4>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {explore.slice(0, count).map((list, idx) => (

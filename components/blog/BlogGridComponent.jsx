@@ -2,9 +2,9 @@ import React from "react";
 import { Btn } from "../Btn";
 import Image from "next/image";
 
-export const BlogGridComponent = ({ list, key }) => {
+export const BlogGridComponent = ({ list }) => {
   return (
-    <div className="md:block space-y-5 w-full" key={key}>
+    <div className="md:block space-y-5 w-full">
       <div className="text-warning space-y-5 group">
         <div className="relative w-full h-[330px] overflow-hidden">
           <Image
