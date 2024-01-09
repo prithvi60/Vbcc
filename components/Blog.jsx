@@ -9,10 +9,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
+import { useRouter } from "next/navigation";
 const Blog = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(4);
+  const router = useRouter()
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -85,8 +87,8 @@ const Blog = () => {
                   </div>
                 </CardBody>
                 <CardFooter className="p-0">
-                  <Link
-                    href={"/contact"}
+                <button   
+                 onClick={()=>router.push("/contact")}
                     className={`rounded-full px-4 py-2 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>
@@ -101,7 +103,7 @@ const Blog = () => {
                         Request a Quote
                       </h4>
                     </div>
-                  </Link>
+                  </button>
                 </CardFooter>
               </Card>
             ))}

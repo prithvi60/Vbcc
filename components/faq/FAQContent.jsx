@@ -13,7 +13,8 @@ export const FAQContent = () => {
             FAQs
           </h2>
           <p className="font-urbanist text-sm lg:text-base">
-            If you cannot find what you’re looking for, feel free to <span className="underline underline-offset-1"><Link href={"/contact"}>contact us.</Link></span>
+            If you cannot find what you’re looking for, feel free to <span className="underline underline-offset-1">  <Link  passHref 
+                  href={"/contact"}>contact us.</Link></span>
           </p>
           <div className="relative h-[440px] w-full overflow-hidden">
             <Image fill src={ImgSrc} alt={"Faq Image"} 

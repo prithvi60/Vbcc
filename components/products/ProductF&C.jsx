@@ -70,7 +70,8 @@ const ProductFC = ({
           <ul className="text-warning text-opacity-50 font-Lora text-2xl space-y-2">
             {category.map((c, idx) => (
               <li className="w-max" key={idx}>
-                <Link
+                  <Link  passHref 
+                 
                   href={pathname + "?" + createQueryString("category", c)}
                   key={idx}
                   className={`w-full cursor-pointer btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-warning hover:after:bg-opacity-50 ${
@@ -170,7 +171,8 @@ export const CategoryTab = ({ setProducts }) => {
           }`}
           key={idx}
         >
-          <Link
+            <Link  passHref 
+                 
             href={pathname + "?" + createQueryString("category", item)}
             className={`block h-6 w-full overflow-hidden`}
             onClick={() => handleCategory(item)}

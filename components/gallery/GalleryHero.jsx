@@ -18,7 +18,8 @@ export const GalleryHero = () => {
         </h2>
         <div className="flex flex-col gap-1.5 space-y-1.5 font-urbanist">
           {gallery.map((text, idx) => (
-            <Link
+              <Link  passHref 
+                 
               key={idx}
               to={text.toLowerCase()}
               spy={true}

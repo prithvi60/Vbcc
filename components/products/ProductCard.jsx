@@ -26,7 +26,8 @@ export const ProductCard = ({ products }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
-            <Link
+              <Link  passHref 
+                 
               href={`/products/${list?.productName.replace(/\s/g, "")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
@@ -97,7 +98,8 @@ export const ProductCard = ({ products }) => {
                   </h4>
                 </div>
                 <div className="flex items-center">
-                  <Link
+                    <Link  passHref 
+                 
                     href={"/contact"}
                     className={`group/btn block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base group-hover:duration-700 group-hover:delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
                   >

@@ -23,7 +23,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         <div
           className="flex items-center gap-7"
         >
-          <Link
+            <Link  passHref 
+                 
             href={"/contact"}
             className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
@@ -55,7 +56,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
               className="w-max uppercase font-semibold text-[40px]"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <Link className="flex items-center gap-2 group" href={link.href}>
+                <Link  passHref 
+                  className="flex items-center gap-2 group" href={link.href}>
                 <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-secondary">
                   {link.title}
                 </span>
@@ -75,7 +77,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       </div>
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 p-5 md:px-[60px] md:py-[32px]">
         <div className="flex items-center gap-5">
-          <Link
+            <Link  passHref 
+                 
             href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
             className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
@@ -93,7 +96,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
               </h4>
             </div>
           </Link>
-          <Link
+            <Link  passHref 
+                 
             href={"/faq"}
             className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
@@ -113,19 +117,22 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           </Link>
         </div>
         <div className="flex md:justify-evenly items-center gap-3 mt-5 mx-2 md:mt-0 md:mx-0">
-          <Link
+            <Link  passHref 
+                 
             href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
             className="p-4 rounded-full border border-info hover:bg-info"
           >
             <FaYoutube className="h-7 w-7 text-white" />
           </Link>
-          <Link
+            <Link  passHref 
+                 
             href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
             className="p-4 rounded-full border border-info hover:bg-info"
           >
             <FaLinkedin className="h-7 w-7 text-white" />
           </Link>
-          <Link
+            <Link  passHref 
+                 
             href={"https://wa.me/7338894199"}
             className="p-4 rounded-full border border-info hover:bg-info"
           >

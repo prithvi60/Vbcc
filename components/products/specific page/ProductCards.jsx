@@ -13,7 +13,8 @@ export const ProductCards = ({value,name}) => {
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
       {filteredProduct.map((card, idx) => (
         <div className="block group" key={idx}>
-          <Link href={`/products/${card?.productName.replace(/\s/g, "")}`} className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10">
+            <Link  passHref 
+                  href={`/products/${card?.productName.replace(/\s/g, "")}`} className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10">
             {/*Card Body */}
             <div className="bg-white p-2 h-[335px]">
                 <div className="h-[85px] w-full">
@@ -65,7 +66,8 @@ export const ProductCards = ({value,name}) => {
                 </h4>
               </div>
               <div className="flex items-center">
-              <Link
+                <Link  passHref 
+                 
                 href={"/contact"}
                 className={`group/btn block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
               >

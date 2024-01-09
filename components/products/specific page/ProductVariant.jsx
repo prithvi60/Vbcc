@@ -30,7 +30,8 @@ export const ProductVariant = ({ product }) => {
         <h4 className="text-[40px] font-Lora tracking-wider">
           {product.price}
         </h4>
-        <Link
+          <Link  passHref 
+                 
           href={"/contact"}
           className={`block rounded-full px-4 py-3 border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full group`}
         >

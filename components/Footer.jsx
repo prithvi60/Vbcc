@@ -42,31 +42,36 @@ const Footer = () => {
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
         <div className="text-sm flex items-start gap-16">
           <div className="flex flex-col items-start gap-3">
-            <Link
+              <Link  passHref 
+                 
               href={"/product"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Products
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/testimonial"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Testimonials
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/about"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               About Us
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/blog"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Blog/Articles
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/faq"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
@@ -74,25 +79,29 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex flex-col items-start gap-3">
-            <Link
+              <Link  passHref 
+                 
               href={"/about"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Our Story
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/blog"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Blog/Articles
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/contact"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Contact Us
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/gallery"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
@@ -101,7 +110,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-evenly items-center gap-3">
-          <Link
+            <Link  passHref 
+                 
           aria-label="youtube page"
             href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
             className="p-4 rounded-full border border-info hover:bg-info"
@@ -109,7 +119,8 @@ const Footer = () => {
           >
             <FaYoutube className="h-7 w-7 text-white" />
           </Link>
-          <Link
+            <Link  passHref 
+                 
           aria-label="linkedin page"
             href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
             className="p-4 rounded-full border border-info hover:bg-info"
@@ -117,7 +128,8 @@ const Footer = () => {
           >
             <FaLinkedin className="h-7 w-7 text-white" />
           </Link>
-          <Link
+            <Link  passHref 
+                 
           aria-label="Whatsapp page"
             href={"https://wa.me/7338894199"}
             className="p-4 rounded-full border border-info hover:bg-info"
@@ -156,7 +168,8 @@ const Footer = () => {
           <div className="space-y-3">
             <h4>Our Groups</h4>
             <div className="flex items-center gap-4 ml-6">
-              <Link href={"https://www.drvbceramicresearch.com/"} className="relative h-[55px] w-[75px]" target="_blank">
+                <Link  passHref 
+                  href={"https://www.drvbceramicresearch.com/"} className="relative h-[55px] w-[75px]" target="_blank">
                 <Image
                   fill
                   sizes="75px"
@@ -167,7 +180,8 @@ const Footer = () => {
                   className="-ml-6"
                 />
               </Link>
-              <Link href={"https://www.hitechceramics.in/"} className="relative h-[50px] w-[70px]" target="_blank">
+                <Link  passHref 
+                  href={"https://www.hitechceramics.in/"} className="relative h-[50px] w-[70px]" target="_blank">
                 <Image fill sizes="70px" src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" placeholder="blur"
                   blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100" className="-ml-6" />
               </Link>
@@ -200,13 +214,15 @@ const Footer = () => {
         <div className="flex justify-center md:justify-between items-center">
           <p>©VB Ceramic Consultants. All Rights Reserved.</p>
           <div className="hidden md:flex items-center gap-3">
-            <Link
+              <Link  passHref 
+                 
               href={"/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Privacy Policy
             </Link>
-            <Link
+              <Link  passHref 
+                 
               href={"/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >

@@ -89,7 +89,8 @@ const HowWeDo = () => {
                 {item.title}
               </h4>
               <p className="lg:text-danger">{item.desc}</p>
-              <Link
+                <Link  passHref 
+                 
                 href={"/contact"}
                 className={`hidden lg:block px-6 py-4 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
@@ -106,7 +107,8 @@ const HowWeDo = () => {
                   </h4>
                 </div>
               </Link>
-              <Link
+                <Link  passHref 
+                 
                 href={"/"}
                 className={`hidden md:flex lg:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
@@ -123,7 +125,8 @@ const HowWeDo = () => {
                   </h4>
                 </div>
               </Link>
-              <Link
+                <Link  passHref 
+                 
                 href={"/"}
                 className={`block md:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >

@@ -5,8 +5,9 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
+  // Link,
 } from "@nextui-org/react";
+import Link from "next/link"
 import Image from "next/image";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -26,7 +27,8 @@ const NavBar = () => {
         className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-0 border-b border-[#B6BABD]"
       >
         <NavbarBrand>
-          <Link href="/" className="relative h-5 w-20 cursor-pointer">
+            <Link  passHref 
+                  href="/" className="relative h-5 w-20 cursor-pointer">
             <Image
               fill
               src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
@@ -43,7 +45,8 @@ const NavBar = () => {
         >
           {Navlinks.map((link, idx) => (
             <NavbarItem key={idx} className="h-full relative group">
-              <Link href={link.href} className="h-full text-warning">
+                <Link  passHref 
+                  href={link.href} className="h-full text-warning">
                 {link.title}
               </Link>
               <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[2px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />

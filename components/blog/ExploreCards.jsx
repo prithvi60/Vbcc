@@ -25,7 +25,8 @@ export const ExploreCards = () => {
           <div className="block md:hidden bg-transparent px-6 py-5 text-base underline underline-offset-4 cursor-pointer decoration-warning">
             View All
           </div>
-          <Link href={"/blog"}
+            <Link  passHref 
+                  href={"/blog"}
             className={`hidden md:block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
           >
             <div className={`h-6 w-full overflow-hidden`}>

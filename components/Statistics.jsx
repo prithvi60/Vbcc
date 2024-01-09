@@ -21,6 +21,7 @@ const Statistics = () => {
           <div
             className="font-Lora text-center space-y-4 md:mt-10 mb-20 md:mb-0 xl:mt-0"
             key={idx}
+            id="counter"
           >
             <h2 className="text-2xl md:text-3xl 2xl:text-4xl">{item.title}</h2>
             <Divider className="bg-secondary" />

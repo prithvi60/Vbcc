@@ -23,7 +23,7 @@ export default function Home() {
       <WCU/>
       <StatisticsComponent/>
       <HowWeDo/>
-      <Blog/>
+      {/* <Blog/> */}
       <Newsletter/>
     </main>
   )

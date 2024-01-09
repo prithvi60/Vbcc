@@ -12,12 +12,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
+import { useRouter } from 'next/navigation'
 
 const Products = () => {
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(8);
   const [activeTab, setActiveTab] = useState(0);
-
+  const router = useRouter()
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
@@ -73,6 +74,7 @@ const Products = () => {
             {products[activeTab].sub.slice(0, count).map((card, id) => (
               <Card
                 as={Link}
+                passHref
                 href={"/products/1"}
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
                 key={id}
@@ -105,8 +107,8 @@ const Products = () => {
                   </div>
                 </CardBody>
                 <CardFooter className="p-0">
-                  <Link
-                    href={"/contact"}
+                <button   
+                 onClick={()=>router.push("/contact")}
                     className={`group/btn rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>
@@ -121,7 +123,7 @@ const Products = () => {
                         Request a Quote
                       </h4>
                     </div>
-                  </Link>
+                  </button>
                 </CardFooter>
               </Card>
             ))}
@@ -129,7 +131,8 @@ const Products = () => {
           {/* Mobile view Product items */}
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {products[activeTab].sub.slice(0, count).map((card, id) => (
-              <Link
+                <Link  passHref 
+                 
                 // as={Link}
                 href={"/products/1"}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
@@ -159,8 +162,8 @@ const Products = () => {
                     <p className="font-Lora text-xl">{card.desc}</p>
                   </div>
                 </div>
-                <Link
-                  href={"/product"}
+                  <button   
+                 onClick={()=>router.push("/product")}
                   className={`group/button block rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                 >
                   <div className={`h-6 w-full overflow-hidden`}>
@@ -175,7 +178,7 @@ const Products = () => {
                       Request a Quote
                     </h4>
                   </div>
-                </Link>
+                </button>
               </Link>
             ))}
           </div>
