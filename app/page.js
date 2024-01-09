@@ -6,10 +6,12 @@ import Testimonials from '@/components/Testimonials'
 import { WCU } from '@/components/WCU'
 import Newsletter from '@/components/Newsletter'
 import Blog from '@/components/Blog'
-import HowWeDo from '@/components/HowWeDo'
+// import HowWeDo from '@/components/HowWeDo'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 const StatisticsComponent = dynamic(() => import('@/components/Statistics'))
+const HowWeDoComponent = dynamic(() => import('@/components/HowWeDo'))
+
 
 export default function Home() {
   return (
@@ -22,7 +24,7 @@ export default function Home() {
       <Testimonials/>
       <WCU/>
       <StatisticsComponent/>
-      <HowWeDo/>
+      <HowWeDoComponent/>
       <Blog/>
       <Newsletter/>
       </Suspense>

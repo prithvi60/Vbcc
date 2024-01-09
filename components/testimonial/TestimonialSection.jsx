@@ -2,10 +2,11 @@
 
 import { testimonials } from "@/libs/data";
 import Image from "next/image";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import FsLightbox from "fslightbox-react";
-
+import dynamic from "next/dynamic";
+// import FsLightbox from "fslightbox-react";
+ const FsLightbox= dynamic(() => import('fslightbox-react'), {ssr: false});
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
   const fsTool = testimonials.map(val => val.pdf)
@@ -117,6 +118,7 @@ export const TestimonialSection = () => {
           </motion.div>
         </div>
       </AnimatePresence>
+      <Suspense fallback={<div>Loading...</div>}>
       <FsLightbox
         exitFullscreenOnClose={true}
         toggler={lightboxController.toggler}
@@ -124,6 +126,7 @@ export const TestimonialSection = () => {
         type="image"
         slide={lightboxController.slide}
       />
+      </Suspense>
     </section>
   );
 };
