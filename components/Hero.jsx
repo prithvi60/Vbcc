@@ -65,17 +65,17 @@ const Hero = () => {
         </div>
       </Slider>
       {/* <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-10 bg-black/40"></div> */}
-      <div className="text-center space-y-4 md:space-y-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-        <h4 className="text-xl md:text-2xl uppercase font-Lora">
+      <div className="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+        <h4 className="text-xl md:text-2xl uppercase font-Lora mb-4 md:mb-6">
           Vb Ceramic Consultants
         </h4>
-        <div className="pb-1 md:pb-3">
+        {/* <div className=""> */}
           <p className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
             Tailor Made
           </p>
           <Carousel />
-        </div>
-        <div className="flex justify-center items-center gap-6">
+        {/* </div> */}
+        <span className="flex justify-center items-center gap-6">
           <Btn2
             Hbgcolor={"bg-white"}
             textColor={"text-white"}
@@ -94,11 +94,11 @@ const Hero = () => {
             href={"/contact"}
             background={"backdrop-blur-md bg-black/30"}
           />
-        </div>
+        </span>
       </div>
       <Mylink
         to="client"
-        href=""
+        href="#client"
         spy={true}
         smooth={true}
         offset={20}

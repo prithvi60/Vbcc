@@ -175,7 +175,7 @@ const Footer = () => {
           </div>
           <Mylink
             to="nav"
-            href=""
+            href="#nav"
             spy={true}
             smooth={true}
             duration={1000}

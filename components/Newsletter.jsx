@@ -33,16 +33,16 @@ const Newsletter = () => {
               className={`rounded-full px-4 py-2 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
             >
               <div className={`h-6 w-full overflow-hidden`}>
-                <h4
+                <h3
                   className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
                 >
                   Subscribe
-                </h4>
-                <h4
+                </h3>
+                <h3
                   className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
                 >
                   Subscribe
-                </h4>
+                </h3>
               </div>
             </button>
           </div>

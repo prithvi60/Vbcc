@@ -13,6 +13,9 @@ const Statistics = () => {
   });
   return (
     <section className="py-20 px-5 md:px-16 lg:px-20 w-full bg-statistics bg-cover bg-center bg-no-repeat">
+      {/* <div className="relative h-[50vh] w-full py-20 px-5 md:px-16 lg:px-20">
+        <Image src={"/Statistics.png"} alt="statistics" fill className="object-cover object-center brightness-50"/>
+      </div> */}
       <div className="flex flex-wrap justify-evenly items-center gap-10 xl:gap-16 2xl:gap-20">
         {statistics.map((item, idx) => (
           <div

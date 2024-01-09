@@ -10,6 +10,7 @@ import Blog from '@/components/Blog'
 import HowWeDo from '@/components/HowWeDo'
 import dynamic from 'next/dynamic'
 const HeroComponent = dynamic(() => import('@/components/Hero'))
+const StatisticsComponent = dynamic(() => import('@/components/Statistics'))
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <Products/>
       <Testimonials/>
       <WCU/>
-      <Statistics/>
+      <StatisticsComponent/>
       <HowWeDo/>
       <Blog/>
       <Newsletter/>

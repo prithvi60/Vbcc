@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 const Carousel = () => {
   return (
-      <div className="w-full mx-auto">
+      <div className="w-full mx-auto pb-1 md:pb-3">
         <Slider
           dots={false}
           infinite={true}
