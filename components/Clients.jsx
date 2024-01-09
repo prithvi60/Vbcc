@@ -1,8 +1,9 @@
 import { logos } from "@/libs/data"
 import Image from "next/image"
-import Marquee from "react-fast-marquee"
+// import Marquee from "react-fast-marquee"
 
-const Clients = () => {
+const Clients = async() => {
+  const Marquee = (await (import('react-fast-marquee'))).default
   return (
     <section className="py-16 bg-secondary space-y-8" id="client">
       <h3 className="px-8 md:px-16 text-lg md:text-xl text-primary">Our Prestigious Clients</h3>

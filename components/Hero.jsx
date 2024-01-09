@@ -5,7 +5,7 @@ import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import Carousel from "./Carousel";
 import { Btn2 } from "./Btn";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 const Hero = () => {
 //   const [start,setStart]=useState(false)
 //   useEffect(()=>{
@@ -17,6 +17,7 @@ const Hero = () => {
 //   clearTimeout(timer);
 // };
 //   },[])
+
   return (
     <section className="h-[90vh] w-full relative">
       <Slider
