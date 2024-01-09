@@ -10,7 +10,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
     <section
       className={`fixed top-0 ${
         open ? "right-0 animate-reveal_In" : "-right-[100%]"
-      } z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium overflow-auto transition-all delay-200 duration-[3000]`}
+      } z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium transition-all duration-[2000]`}
     >
       <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-[32px]">
         <Image

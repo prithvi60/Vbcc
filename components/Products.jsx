@@ -106,7 +106,7 @@ const Products = () => {
                 </CardBody>
                 <CardFooter className="p-0">
                   <Link
-                    href={"/product"}
+                    href={"/contact"}
                     className={`group/btn rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>

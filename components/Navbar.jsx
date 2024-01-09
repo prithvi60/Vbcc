@@ -14,6 +14,7 @@ import MobileNav from "./MobileNav";
 import { Btn } from "./Btn";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // console.log(isOpen);
   return (
     <nav id="nav">
       <Navbar

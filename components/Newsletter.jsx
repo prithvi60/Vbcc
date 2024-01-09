@@ -15,30 +15,38 @@ const Newsletter = () => {
             products, updates, and valuable content revisions.
           </p>
         </div>
-        <div className="flex items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="bg-primary placeholder:text-zinc-500 !border-none !outline-none placeholder:font-Nunito w-[175px] md:w-[198px]"
-          />
-          <Link
-            href={"/"}
-            className={`rounded-full px-4 py-2 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
-          >
-            <div className={`h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
-              >
-                Subscribe
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
-              >
-                Subscribe
-              </h4>
-            </div>
-          </Link>
-        </div>
+        <form
+          action="https://public.herotofu.com/v1/5317bdd0-ae22-11ee-870a-ff8e0d81300a"
+          method="post"
+          acceptCharset="UTF-8"
+        >
+          <div className="flex items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
+            <input
+             required
+             name="Email"
+              type="email"
+              placeholder="Your Email"
+              className="bg-primary placeholder:text-zinc-500 !border-none !outline-none placeholder:font-Nunito w-[175px] md:w-[198px]"
+            />
+            <button
+              type="submit"
+              className={`rounded-full px-4 py-2 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+                >
+                  Subscribe
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+                >
+                  Subscribe
+                </h4>
+              </div>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   );

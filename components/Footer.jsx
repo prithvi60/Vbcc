@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@nextui-org/react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Link as Mylink } from "react-scroll";
@@ -131,15 +131,15 @@ const Footer = () => {
         <div className="w-full flex justify-start gap-16 md:justify-between items-start font-urbanist">
           <div className="space-y-5">
             <div>
-              <h5 className="text-[rgba(245, 245, 245, 0.70)]">
+              <h3 className="text-[rgba(245, 245, 245, 0.70)]">
                 Connect for quote
-              </h5>
+              </h3>
               <ConnectComponent text={"+91 94441 69365"} copied={Copied} handleClick={handlequote}/>
             </div>
             <div>
-              <h5 className="text-[rgba(245, 245, 245, 0.70)]">
+              <h3 className="text-[rgba(245, 245, 245, 0.70)]">
                 Connect for inquiries
-              </h5>
+              </h3>
               <ConnectComponent text={"+91 94440 12468"} copied={Copied2} handleClick={handleinquire}/>
             </div>
           </div>
@@ -175,6 +175,7 @@ const Footer = () => {
           </div>
           <Mylink
             to="nav"
+            href=""
             spy={true}
             smooth={true}
             duration={1000}

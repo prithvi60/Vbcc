@@ -11,7 +11,9 @@ export const ContactForm = () => {
         </p>
       </div>
       <form
-        action=""
+         action="https://public.herotofu.com/v1/5317bdd0-ae22-11ee-870a-ff8e0d81300a"
+         method="post"
+         acceptCharset="UTF-8"
         className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:gap-x-8 md:gap-y-10"
       >
         <div className="w-full block space-y-3">
@@ -20,6 +22,7 @@ export const ContactForm = () => {
           </label>
           <input
             required
+            name="Company"
             autoComplete="on"
             type="text"
             id="company"
@@ -34,6 +37,7 @@ export const ContactForm = () => {
           <input
             autoComplete="on"
             type="text"
+            name="Position"
             id="position"
             placeholder="Enter your Position at the Company"
             className="rounded-md font-urbanist border border-warning w-full mt-1 px-4 py-3 focus:border-none focus:ring-0 focus:outline focus:outline-success  placeholder:text-sm md:placeholder:text-base placeholder:font-urbanist"
@@ -45,6 +49,7 @@ export const ContactForm = () => {
           </label>
           <input
             required
+            name="Email"
             autoComplete="on"
             type="email"
             id="email"
@@ -58,6 +63,7 @@ export const ContactForm = () => {
           </label>
           <input
             required
+            name="Phone"
             type="text"
             id="phone"
             placeholder="Enter your Phone Number"
@@ -69,6 +75,7 @@ export const ContactForm = () => {
             Message
           </label>
           <textarea
+          name="Message"
             autoComplete="on"
             type="text"
             id="message"

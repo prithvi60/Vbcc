@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 const Carousel = () => {
   return (
-      <section className="w-full md:w-[75%] mx-auto">
+      <div className="w-full mx-auto">
         <Slider
           dots={false}
           infinite={true}
@@ -27,7 +27,7 @@ const Carousel = () => {
             <h3>Research Equipment</h3>
           </div>
         </Slider>
-      </section>
+      </div>
   );
 };
 

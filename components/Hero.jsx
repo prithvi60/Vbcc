@@ -70,9 +70,9 @@ const Hero = () => {
           Vb Ceramic Consultants
         </h4>
         <div className="pb-1 md:pb-3">
-          <h3 className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
+          <p className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
             Tailor Made
-          </h3>
+          </p>
           <Carousel />
         </div>
         <div className="flex justify-center items-center gap-6">
@@ -98,6 +98,7 @@ const Hero = () => {
       </div>
       <Mylink
         to="client"
+        href=""
         spy={true}
         smooth={true}
         offset={20}

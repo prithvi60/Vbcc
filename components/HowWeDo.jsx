@@ -1,11 +1,8 @@
 "use client";
 import { data } from "@/libs/data";
-import { Progress } from "@nextui-org/react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import React, { useRef, useCallback, useState } from "react";
-// import { useInView } from 'react-intersection-observer';
+import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
 import { ProgressBar } from "./ProgressBar";
 const ImgSlider =[
