@@ -8,6 +8,10 @@ const nextConfig = {
           },
         ],
       },
+      experimental: {
+        optimizePackageImports: ['@nextui-org/react','framer-motion','tailwindcss'],
+        optimizeCss: true 
+      }
 }
 
 module.exports = nextConfig

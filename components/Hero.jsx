@@ -1,5 +1,4 @@
 "use client";
-import Slider from "react-slick";
 import { Link as Mylink } from "react-scroll";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import InnerCarousel from "./Carousel";
@@ -40,7 +39,6 @@ const Hero = () => {
             alt="test"
             fill
             sizes={"100vw"}
-
             quality={100}
             priority={true}
             placeholder="blur"

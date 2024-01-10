@@ -11,6 +11,7 @@
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "@types/react-slick": "^0.23.13",
+    "critters": "^0.0.20",
     "framer-motion": "^10.16.5",
     "fslightbox-react": "^1.7.6",
     "next": "14.0.3",
