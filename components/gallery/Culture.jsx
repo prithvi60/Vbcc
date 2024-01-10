@@ -11,7 +11,7 @@ const imgSrc = [
   "/gallery04.png",
 ];
 
-export const Culture = () => {
+ const Culture = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
@@ -156,3 +156,4 @@ export const Culture = () => {
     </section>
   );
 };
+export default Culture

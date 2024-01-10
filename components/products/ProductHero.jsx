@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { CategoryTab } from "./ProductF&C";
 import Image from "next/image";
 
-export const ProductHero = ({ setProducts }) => {
+const ProductHero = ({ setProducts }) => {
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
   const product =
@@ -32,3 +32,4 @@ export const ProductHero = ({ setProducts }) => {
     </section>
   );
 };
+export  default ProductHero

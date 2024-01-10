@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { FAQAccordion } from "./FAQAccordion";
 import Image from "next/image";
+import dynamic from 'next/dynamic'
 
 const ImgSrc = "/faq.png";
+const FAQAccordionComponent = dynamic(() => import("./FAQAccordion"))
 
 export const FAQContent = () => {
   return (
@@ -23,7 +24,7 @@ export const FAQContent = () => {
             className="object-cover object-center rounded-3xl" />
         </div>
         </div>
-        <FAQAccordion />
+        <FAQAccordionComponent />
       </div>
     </section>
   );

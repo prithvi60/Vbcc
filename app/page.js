@@ -1,7 +1,5 @@
 import Hero from '@/components/Hero'
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
-
 const ClientsComponent = dynamic(() => import('@/components/Clients'))
 const ExploreComponent = dynamic(() => import('@/components/Explore'))
 const ProductsComponent = dynamic(() => import('@/components/Products'))
@@ -16,7 +14,6 @@ export default function Home() {
   return (
     <main>
       <Hero/>
-      <Suspense fallback={<div>Loading...</div>}>
       <ClientsComponent/>
       <ExploreComponent/>
       <ProductsComponent/>
@@ -26,7 +23,6 @@ export default function Home() {
       <HowWeDoComponent/>
       <BlogComponent/>
       <NewsletterComponent/>
-      </Suspense>
     </main>
   )
 }
