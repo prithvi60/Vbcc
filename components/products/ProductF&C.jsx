@@ -1,6 +1,7 @@
 "use client";
+import * as React from "react";
 import { AllProducts, category } from "@/libs/data";
-import { Checkbox, CheckboxGroup, Divider } from "@nextui-org/react";
+import { Checkbox, CheckboxGroup } from "@nextui-org/checkbox";
 import { useCallback, useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import Link from "next/link";
@@ -85,7 +86,7 @@ const ProductFC = ({
             ))}
           </ul>
         </div>
-        <Divider className="bg-warning bg-opacity-40" />
+        <hr className="h-0.5 w-full border-0 shrink-0 bg-[#0d192466] bg-opacity-40" />
         {/* Filters */}
         <div className="hidden lg:block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>

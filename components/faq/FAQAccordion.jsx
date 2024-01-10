@@ -1,6 +1,7 @@
 "use client";
+import * as React from "react";
 import { FAQ } from "@/libs/data";
-import { Accordion, AccordionItem, Tab, Tabs } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 

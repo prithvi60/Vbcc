@@ -1,6 +1,3 @@
-import { Button } from "@nextui-org/react";
-import { Btn } from "./Btn";
-import Link from "next/link";
 
 const Newsletter = () => {
   return (

@@ -1,8 +1,8 @@
 "use client";
-
+import * as React from "react";
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
-import { Tooltip } from "@nextui-org/react";
+import { Tooltip } from "@nextui-org/tooltip";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";

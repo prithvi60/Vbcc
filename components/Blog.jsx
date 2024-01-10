@@ -1,10 +1,5 @@
 "use client";
 import { blog } from "@/libs/data";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-} from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -62,13 +57,12 @@ const Blog = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4">
             {blog[activeTab].sub.slice(0, count).map((card, id) => (
-              <Card
-                as={Link}
+              <Link
                 href={"/blog/1"}
-                className="w-full bg-secondary text-warning rounded-none font-urbanist p-5 space-y-2"
+                className="w-full bg-secondary text-warning rounded-none font-urbanist p-5 space-y-4"
                 key={id}
               >
-                <CardBody className="space-y-4 p-0">
+                <div className="space-y-4 p-0">
                   <div className="relative h-[225px] w-full">
                     <Image
                       fill
@@ -85,8 +79,8 @@ const Blog = () => {
                     </h4>
                     <p className="font-urbanist text-sm">{card.desc}</p>
                   </div>
-                </CardBody>
-                <CardFooter className="p-0">
+                </div>
+                <div className="p-0">
                 <button   
                  onClick={()=>router.push("/contact")}
                     className={`rounded-full px-4 py-2 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
@@ -104,8 +98,8 @@ const Blog = () => {
                       </h4>
                     </div>
                   </button>
-                </CardFooter>
-              </Card>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

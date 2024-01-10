@@ -1,9 +1,8 @@
 "use Client";
 import { filter } from "@/libs/data";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import { button } from "@nextui-org/react";
 import { useSearchParams } from "next/navigation";
 const sortProduct = [
   { value: "relevance" },

@@ -1,6 +1,6 @@
 "use client";
-
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import * as React from "react";
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";

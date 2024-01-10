@@ -9,22 +9,22 @@ import { Btn2 } from "./Btn";
 import { useState } from "react";
 
 const Footer = () => {
-  const [Copied, setCopied] = useState(false)
-  const [Copied2, setCopied2] = useState(false)
-  const handlequote = (text)=>{
-   navigator.clipboard.writeText(text)
-    setCopied(true)
+  const [Copied, setCopied] = useState(false);
+  const [Copied2, setCopied2] = useState(false);
+  const handlequote = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
     setInterval(() => {
-      setCopied(false)
+      setCopied(false);
     }, 3000);
-  }
-  const handleinquire = (text)=>{
-    navigator.clipboard.writeText(text)
-     setCopied2(true)
-     setInterval(() => {
-       setCopied2(false)
-     }, 3000);
-   }
+  };
+  const handleinquire = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied2(true);
+    setInterval(() => {
+      setCopied2(false);
+    }, 3000);
+  };
   return (
     <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-urbanist">
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
@@ -42,36 +42,36 @@ const Footer = () => {
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
         <div className="text-sm flex items-start gap-16">
           <div className="flex flex-col items-start gap-3">
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/product"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Products
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/testimonial"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Testimonials
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/about"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               About Us
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/blog"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Blog/Articles
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/faq"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
@@ -79,29 +79,29 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex flex-col items-start gap-3">
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/about"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Our Story
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/blog"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Blog/Articles
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/contact"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
               Contact Us
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/gallery"}
               className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
             >
@@ -110,27 +110,27 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-evenly items-center gap-3">
-            <Link  passHref 
-                 
-          aria-label="youtube page"
+          <Link
+            passHref
+            aria-label="youtube page"
             href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
             className="p-4 rounded-full border border-info hover:bg-info"
             target="_blank"
           >
             <FaYoutube className="h-7 w-7 text-white" />
           </Link>
-            <Link  passHref 
-                 
-          aria-label="linkedin page"
+          <Link
+            passHref
+            aria-label="linkedin page"
             href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
             className="p-4 rounded-full border border-info hover:bg-info"
             target="_blank"
           >
             <FaLinkedin className="h-7 w-7 text-white" />
           </Link>
-            <Link  passHref 
-                 
-          aria-label="Whatsapp page"
+          <Link
+            passHref
+            aria-label="Whatsapp page"
             href={"https://wa.me/7338894199"}
             className="p-4 rounded-full border border-info hover:bg-info"
             target="_blank"
@@ -146,13 +146,21 @@ const Footer = () => {
               <h3 className="text-[rgba(245, 245, 245, 0.70)]">
                 Connect for quote
               </h3>
-              <ConnectComponent text={"+91 94441 69365"} copied={Copied} handleClick={handlequote}/>
+              <ConnectComponent
+                text={"+91 94441 69365"}
+                copied={Copied}
+                handleClick={handlequote}
+              />
             </div>
             <div>
               <h3 className="text-[rgba(245, 245, 245, 0.70)]">
                 Connect for inquiries
               </h3>
-              <ConnectComponent text={"+91 94440 12468"} copied={Copied2} handleClick={handleinquire}/>
+              <ConnectComponent
+                text={"+91 94440 12468"}
+                copied={Copied2}
+                handleClick={handleinquire}
+              />
             </div>
           </div>
           <Btn2
@@ -168,8 +176,12 @@ const Footer = () => {
           <div className="space-y-3">
             <h4>Our Groups</h4>
             <div className="flex items-center gap-4 ml-6">
-                <Link  passHref 
-                  href={"https://www.drvbceramicresearch.com/"} className="relative h-[55px] w-[75px]" target="_blank">
+              <Link
+                passHref
+                href={"https://www.drvbceramicresearch.com/"}
+                className="relative h-[55px] w-[75px]"
+                target="_blank"
+              >
                 <Image
                   fill
                   sizes="75px"
@@ -180,14 +192,26 @@ const Footer = () => {
                   className="-ml-6"
                 />
               </Link>
-                <Link  passHref 
-                  href={"https://www.hitechceramics.in/"} className="relative h-[50px] w-[70px]" target="_blank">
-                <Image fill sizes="70px" src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"} alt="Logo" placeholder="blur"
-                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100" className="-ml-6" />
+              <Link
+                passHref
+                href={"https://www.hitechceramics.in/"}
+                className="relative h-[50px] w-[70px]"
+                target="_blank"
+              >
+                <Image
+                  fill
+                  sizes="70px"
+                  src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"}
+                  alt="Logo"
+                  placeholder="blur"
+                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100"
+                  className="-ml-6"
+                />
               </Link>
             </div>
           </div>
           <Mylink
+            aria-label="back to navbar"
             to="nav"
             href="#nav"
             name="gotonav"
@@ -216,15 +240,15 @@ const Footer = () => {
         <div className="flex justify-center md:justify-between items-center">
           <p>©VB Ceramic Consultants. All Rights Reserved.</p>
           <div className="hidden md:flex items-center gap-3">
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Privacy Policy
             </Link>
-              <Link  passHref 
-                 
+            <Link
+              passHref
               href={"/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
@@ -239,12 +263,16 @@ const Footer = () => {
 
 export default Footer;
 
-
-export const ConnectComponent = ({text,copied,handleClick}) =>{
-  return(
+export const ConnectComponent = ({ text, copied, handleClick }) => {
+  return (
     <div>
-              <button className="text-info cursor-pointer" onClick={()=>handleClick(text)}>{text}</button>
-              {copied && (<span>✔️Copied</span>) }
-              </div>
-  )
-}
+      <button
+        className="text-info cursor-pointer"
+        onClick={() => handleClick(text)}
+      >
+        {text}
+      </button>
+      {copied && <span>✔️Copied</span>}
+    </div>
+  );
+};

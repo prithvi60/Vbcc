@@ -1,13 +1,5 @@
 "use client";
 import { products } from "@/libs/data";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Tabs,
-  Tab,
-} from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -72,17 +64,17 @@ const Products = () => {
           </div>
           <div className="hidden md:flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
             {products[activeTab].sub.slice(0, count).map((card, id) => (
-              <Card
-                as={Link}
-                href={"/products/1"}
-                className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
+              <div
+                className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group relative"
                 key={id}
               >
-                <CardHeader className="flex justify-between items-center">
+                <div className="flex justify-between items-center">
                   <p className="text-md">in-stock</p>
                   <p className="text-small">$718</p>
-                </CardHeader>
-                <CardBody className="space-y-4 relative">
+                </div>
+                <Link  
+                href={`/products/${card.productName.replace(/\s/g, "")}`}
+                className="space-y-4">
                   <div className="relative h-[225px] w-full">
                     <Image
                       fill
@@ -93,9 +85,8 @@ const Products = () => {
                       className="absolute object-contain object-center"
                     />
                   </div>
-
                   <p
-                    className="group-hover:absolute group-hover:top-2 group-hover:right-2.5 group-hover:px-3.5
+                    className="group-hover:absolute group-hover:top-10 group-hover:right-2.5 group-hover:px-3.5
                         group-hover:py-4 group-hover:border group-hover:border-info group-hover:text-info text-base group-hover:font-urbanist group-hover:rounded-full group-hover:w-max hidden group-hover:block"
                   >
                     View
@@ -104,8 +95,7 @@ const Products = () => {
                     <h4 className="text-sm uppercase">{card.title}</h4>
                     <p className="font-Lora text-xl">{card.desc}</p>
                   </div>
-                </CardBody>
-                <CardFooter className="p-0">
+                </Link>
                 <button   
                  onClick={()=>router.push("/contact")}
                     className={`group/btn rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
@@ -123,16 +113,13 @@ const Products = () => {
                       </h4>
                     </div>
                   </button>
-                </CardFooter>
-              </Card>
+                </div>
             ))}
           </div>
           {/* Mobile view Product items */}
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {products[activeTab].sub.slice(0, count).map((card, id) => (
                 <Link 
-                 
-                // as={Link}
                 href={"/products/1"}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
