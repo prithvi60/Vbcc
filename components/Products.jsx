@@ -71,8 +71,7 @@ const Products = () => {
           <div className="hidden md:flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
             {products[activeTab].sub.slice(0, count).map((card, id) => (
               <Card
-                as={Link}
-                href={`/products/${card.productName}`}
+                
                 // .replace(/\s/g, "")
                 // href={"/products/1"}
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
@@ -82,7 +81,10 @@ const Products = () => {
                   <p className="text-md">in-stock</p>
                   <p className="text-small">$718</p>
                 </CardHeader>
-                <CardBody className="space-y-4 relative">
+                <CardBody  
+                as={Link}
+                href={`/products/${card.productName.replace(/\s/g, "")}`}
+                className="space-y-4 relative">
                   <div className="relative h-[225px] w-full">
                     <Image
                       fill
