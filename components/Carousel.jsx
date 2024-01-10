@@ -9,23 +9,16 @@ const InnerCarousel = () => {
         showThumbs={false}
         showStatus={false}
         showIndicators={false}
-        className="!z-0"
         autoPlay={true}
-        swipeable
+        swipeable={false}
         interval={3000}
         infiniteLoop
         axis={"vertical"}
         stopOnHover={false}
       >
-        <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
-          <h3>Industrial Equipment</h3>
-        </div>
-        <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
-          <h3>Ceramics Products</h3>
-        </div>
-        <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
-          <h3>Research Equipment</h3>
-        </div>
+          <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">Industrial Equipment</h3>
+          <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">Ceramics Products</h3>
+          <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">Research Equipment</h3>
       </Carousel>
     </div>
   );

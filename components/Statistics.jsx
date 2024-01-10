@@ -20,19 +20,20 @@ const Statistics = () => {
           <div
             className="font-Lora text-center space-y-4 md:mt-10 mb-20 md:mb-0 xl:mt-0"
             key={idx}
-            // id="counter"
-          >
+            // id="counterup"
+            >
             <h2 className="text-2xl md:text-3xl 2xl:text-4xl">{item.title}</h2>
             <hr className="w-full h-[3px] bg-secondary" />
-            <h3 className="text-[60px] md:text-[90px]">
+            <div className="text-[60px] md:text-[90px]">
               <CountUp
-              start={0}
+                start={0}
                 end={item.count}
                 duration={2}
                 suffix="+"
                 enableScrollSpy
               />
-            </h3>
+            </div>
+            <span id="counter" className="hidden" />
             <hr className="w-full h-[3px] bg-secondary" />
             <p className="font-urbanist">{item.firm}</p>
             <hr className="w-full h-[3px] bg-secondary" />

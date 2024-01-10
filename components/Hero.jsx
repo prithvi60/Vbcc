@@ -113,6 +113,7 @@ const Hero = () => {
         </span>
       </div>
       <Mylink
+        aria-label="back to client"
         to="client"
         name="gotoclient"
         id="gotoclient"
