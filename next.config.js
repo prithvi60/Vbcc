@@ -1,3 +1,5 @@
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
@@ -7,11 +9,14 @@ const nextConfig = {
             hostname: "ik.imagekit.io",
           },
         ],
-      },
-      experimental: {
-        optimizePackageImports: ['@nextui-org/react','framer-motion','tailwindcss'],
-        optimizeCss: true 
       }
+      // ,
+      // experimental: {
+      //   optimizePackageImports: ['@nextui-org/react','framer-motion','tailwindcss'],
+      //   optimizeCss: true 
+      // }
 }
-
-module.exports = nextConfig
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+module.exports = withBundleAnalyzer(nextConfig)
