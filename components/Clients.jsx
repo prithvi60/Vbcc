@@ -15,7 +15,7 @@ const Clients = async() => {
               fill
               src={logo}
               alt="Logo"
-              className="absolute object-contain object-center"
+              className="object-contain object-center w-full"
             />
           </div>
         ))}
