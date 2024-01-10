@@ -34,7 +34,7 @@ const Hero = () => {
         stopOnHover={false}
       >
         {/* Relative is affecting height */}
-        <div className="h-[90vh] relative m-0">
+        <div className="h-[90vh] relative m-0" role="img" aria-label="Description of the hero image">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"}
             alt="test"
@@ -43,13 +43,14 @@ const Hero = () => {
             quality={100}
             priority={true}
             placeholder="blur"
+            
             blurDataURL={
               "data:image/webp;base64,UklGRhoDAABXRUJQVlA4WAoAAAAgAAAACgEAsQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggLAEAALATAJ0BKgsBsgA/cbbSZDStqSah0ukCkC4JaW7dX1o7hfYViHTBHkXM9fsZh9I3yL3TE9mLEOmaaltvKxPTIg5NpWQbie0x5u56L1jvwR4b7xVqLsfk9TKdSdmF4sptnlhL+8qw2lSemJ+l257nlOpOyBuy+NRWlvN3Vd+sqOqoYNYezdoI/Suz15pNTup7+6JLbG502IIN2V3Y71QpzPIRcVguZAAAeY3OK5Da/CFfpIwrqBCDMsql1ZAAAAbhqwaL0hRkqTCpSF83jQXmSKGvMYZ8LDRk3lZ1u+fkPyatDPTugyZEJMTyX5TvfMnVCry1CNC1s5XTiZiASWuoLfzCIwctXPVabwp2zExSI/Uud7cy0iFcfMW+tXlM9ulrulPeGaAYKHmATdIAAA=="
             }
             className="object-cover object-center brightness-50 aspect-auto"
           />
         </div>
-        <div className="h-[90vh] relative m-0">
+        <div className="h-[90vh] relative m-0" role="img" aria-label="Description of the hero image">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png"}
             alt="test"
@@ -64,7 +65,7 @@ const Hero = () => {
             className="object-cover object-center brightness-50"
           />
         </div>
-        <div className="h-[90vh] relative m-0">
+        <div className="h-[90vh] relative m-0" role="img" aria-label="Description of the hero image">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"}
             alt="test"
