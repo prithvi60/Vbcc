@@ -2,9 +2,10 @@
 import Slider from "react-slick";
 import { Link as Mylink } from "react-scroll";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
-import Carousel from "./Carousel";
+import InnerCarousel from "./Carousel";
 import { Btn2 } from "./Btn";
 import Image from "next/image";
+import { Carousel } from 'react-responsive-carousel';
 // import { useEffect, useState } from "react";
 const Hero = () => {
 //   const [start,setStart]=useState(false)
@@ -20,21 +21,18 @@ const Hero = () => {
 
   return (
     <section className="h-[90vh] w-full relative">
-      <Slider
-        dots={false}
-        infinite={true}
-        autoplay={true}
-        speed={1900}
-        autoplaySpeed={2300}
-        // lazyLoad="true"
-        arrows={false}
-        slidesToShow={1}
-        slidesToScroll={1}
-        vertical={true}
-        verticalSwiping={false}
-        pauseOnHover={false}
-        className="!z-0"
-      >
+          <Carousel
+          showArrows={false}
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={false}
+          className="!z-0" 
+          autoPlay={true}
+          swipeable
+          interval={3000}
+          infiniteLoop
+          axis={"vertical"}
+          >
         {/* Relative is affecting height */}
         <div className="h-[90vh] relative m-0">
           <Image
@@ -83,7 +81,7 @@ loading={"lazy"}
             className="object-cover object-center brightness-50"
           />
         </div>
-      </Slider>
+        </Carousel>
       {/* <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-10 bg-black/40"></div> */}
       <div className="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
         <h4 className="text-xl md:text-2xl uppercase font-Lora mb-4 md:mb-6">
@@ -93,7 +91,7 @@ loading={"lazy"}
           <p className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
             Tailor Made
           </p>
-          <Carousel />
+          <InnerCarousel />
         {/* </div> */}
         <span className="flex justify-center items-center gap-6">
           <Btn2

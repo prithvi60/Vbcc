@@ -1,22 +1,22 @@
 "use client";
+import { Carousel } from "react-responsive-carousel";
 import Slider from "react-slick";
 
-const Carousel = () => {
+const InnerCarousel = () => {
   return (
       <div className="w-full mx-auto pb-1 md:pb-3">
-        <Slider
-          dots={false}
-          infinite={true}
-          autoplay={true}
-          speed={1950}
-          autoplaySpeed={2400}
-          arrows={false}
-          slidesToShow={1}
-          slidesToScroll={1}
-          vertical={true}
-          verticalSwiping={false}
-          pauseOnHover={false}
-        >
+          <Carousel
+          showArrows={false}
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={false}
+          className="!z-0" 
+          autoPlay={true}
+          swipeable
+          interval={3000}
+          infiniteLoop
+          axis={"vertical"}
+          >
           <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
             <h3>Industrial Equipment</h3>
           </div>
@@ -26,9 +26,9 @@ const Carousel = () => {
           <div className="font-Lora text-[32px] md:text-[40px] tracking-tight">
             <h3>Research Equipment</h3>
           </div>
-        </Slider>
+        </Carousel>
       </div>
   );
 };
 
-export default Carousel;
+export default InnerCarousel;
