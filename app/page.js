@@ -1,32 +1,31 @@
-import Clients from '@/components/Clients'
-import Explore from '@/components/Explore'
 import Hero from '@/components/Hero'
-import Products from '@/components/Products'
-import Testimonials from '@/components/Testimonials'
-import { WCU } from '@/components/WCU'
-import Newsletter from '@/components/Newsletter'
-import Blog from '@/components/Blog'
-// import HowWeDo from '@/components/HowWeDo'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
+
+const ClientsComponent = dynamic(() => import('@/components/Clients'))
+const ExploreComponent = dynamic(() => import('@/components/Explore'))
+const ProductsComponent = dynamic(() => import('@/components/Products'))
+const TestimonialsComponent = dynamic(() => import('@/components/Testimonials'))
+const NewsletterComponent = dynamic(() => import('@/components/Newsletter'))
+const BlogComponent = dynamic(() => import('@/components/Blog'))
+const WCUComponent = dynamic(() => import('@/components/WCU'))
 const StatisticsComponent = dynamic(() => import('@/components/Statistics'))
 const HowWeDoComponent = dynamic(() => import('@/components/HowWeDo'))
-
 
 export default function Home() {
   return (
     <main>
       <Hero/>
       <Suspense fallback={<div>Loading...</div>}>
-      <Clients/>
-      <Explore/>
-      <Products/>
-      <Testimonials/>
-      <WCU/>
+      <ClientsComponent/>
+      <ExploreComponent/>
+      <ProductsComponent/>
+      <TestimonialsComponent/>
+      <WCUComponent/>
       <StatisticsComponent/>
       <HowWeDoComponent/>
-      <Blog/>
-      <Newsletter/>
+      <BlogComponent/>
+      <NewsletterComponent/>
       </Suspense>
     </main>
   )
