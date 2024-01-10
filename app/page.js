@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <main>
       <Hero/>
-      <Clients/>
       <Suspense fallback={<div>Loading...</div>}>
+      <Clients/>
       <Explore/>
       <Products/>
       <Testimonials/>
