@@ -1,6 +1,6 @@
-import { Culture } from "@/components/gallery/Culture";
 import { GalleryHero } from "@/components/gallery/GalleryHero";
-import { Visitation } from "@/components/gallery/Visitation";
+import dynamic from 'next/dynamic'
+
 const VisitationComponent = dynamic(() => import("@/components/gallery/Visitation"))
 const CultureComponent = dynamic(() => import("@/components/gallery/Culture"))
 
