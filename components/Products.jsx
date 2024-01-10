@@ -5,8 +5,6 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  Tabs,
-  Tab,
 } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -74,7 +72,9 @@ const Products = () => {
             {products[activeTab].sub.slice(0, count).map((card, id) => (
               <Card
                 as={Link}
-                href={"/products/1"}
+                href={`/products/${card.productName}`}
+                // .replace(/\s/g, "")
+                // href={"/products/1"}
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
                 key={id}
               >
@@ -131,8 +131,6 @@ const Products = () => {
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {products[activeTab].sub.slice(0, count).map((card, id) => (
                 <Link 
-                 
-                // as={Link}
                 href={"/products/1"}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
