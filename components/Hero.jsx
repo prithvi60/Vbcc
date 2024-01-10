@@ -34,7 +34,7 @@ const Hero = () => {
         stopOnHover={false}
       >
         {/* Relative is affecting height */}
-        <div className="h-[90vh] relative m-0" role="img" aria-label="Description of the hero image">
+        <div className="h-[90vh] relative m-0">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"}
             alt="test"
@@ -50,7 +50,7 @@ const Hero = () => {
             className="object-cover object-center brightness-50 aspect-auto"
           />
         </div>
-        <div className="h-[90vh] relative m-0" role="img" aria-label="Description of the hero image">
+        <div className="h-[90vh] relative m-0">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png"}
             alt="test"
@@ -65,7 +65,7 @@ const Hero = () => {
             className="object-cover object-center brightness-50"
           />
         </div>
-        <div className="h-[90vh] relative m-0" role="img" aria-label="Description of the hero image">
+        <div className="h-[90vh] relative m-0">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"}
             alt="test"
