@@ -2,7 +2,7 @@
 import { products } from "@/libs/data";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Btn2 } from "./Btn";
 import { useRouter } from 'next/navigation'
 
@@ -11,6 +11,8 @@ const Products = () => {
   const [count, setCount] = useState(8);
   const [activeTab, setActiveTab] = useState(0);
   const router = useRouter()
+  const memoizedProducts = useMemo(() => products, []);
+
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
@@ -33,7 +35,7 @@ const Products = () => {
         </h3>
         <div className="flex flex-col justify-center items-center w-full space-y-8">
           <div className="flex justify-center items-center gap-3 w-full h-auto flex-wrap bg-secondary">
-            {products.map((item, idx) => (
+           {memoizedProducts.map((item, idx) => (
               <div
                 className={`text-base tracking-tight border border-warning p-5 rounded-full font-Lora min-w-fit px-4 py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
                   activeTab === idx ? "!bg-primary !hover:bg-primary" : ""
@@ -63,7 +65,7 @@ const Products = () => {
             ))}
           </div>
           <div className="hidden md:flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
-            {products[activeTab].sub.slice(0, count).map((card, id) => (
+           {memoizedProducts[activeTab].sub.slice(0, count).map((card, id) => (
               <div
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group relative"
                 key={id}
@@ -118,7 +120,7 @@ const Products = () => {
           </div>
           {/* Mobile view Product items */}
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
-            {products[activeTab].sub.slice(0, count).map((card, id) => (
+           {memoizedProducts[activeTab].sub.slice(0, count).map((card, id) => (
                 <Link 
                 href={"/products/1"}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
