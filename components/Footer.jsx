@@ -190,6 +190,8 @@ const Footer = () => {
           <Mylink
             to="nav"
             href="#nav"
+            name="gotonav"
+            id="gotonav"
             spy={true}
             smooth={true}
             duration={1000}

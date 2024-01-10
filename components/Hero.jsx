@@ -114,6 +114,8 @@ loading={"lazy"}
       </div>
       <Mylink
         to="client"
+        name="gotoclient"
+        id="gotoclient"
         href="#client"
         spy={true}
         smooth={true}
