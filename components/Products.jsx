@@ -74,7 +74,6 @@ const Products = () => {
             {products[activeTab].sub.slice(0, count).map((card, id) => (
               <Card
                 as={Link}
-                passHref
                 href={"/products/1"}
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-2 group"
                 key={id}
@@ -131,7 +130,7 @@ const Products = () => {
           {/* Mobile view Product items */}
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {products[activeTab].sub.slice(0, count).map((card, id) => (
-                <Link  passHref 
+                <Link 
                  
                 // as={Link}
                 href={"/products/1"}
@@ -163,7 +162,7 @@ const Products = () => {
                   </div>
                 </div>
                   <button   
-                 onClick={()=>router.push("/product")}
+                 onClick={()=>router.push("/contact")}
                   className={`group/button block rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                 >
                   <div className={`h-6 w-full overflow-hidden`}>
