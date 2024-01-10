@@ -1,9 +1,10 @@
 "use client"
-import { Checkbox } from "@nextui-org/react"
+import * as React from "react";
+import { Checkbox } from "@nextui-org/checkbox"
 import { useState } from "react";
 
 
-export const TagsComponent = ({handleFilter,key,type}) => {
+export const TagsComponent = ({key,type}) => {
     const [isSelected, setIsSelected] = useState(false);
   return (
     <li

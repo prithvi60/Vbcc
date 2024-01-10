@@ -1,12 +1,5 @@
 "use client";
 import { Navlinks } from "@/libs/data";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  // Link,
-} from "@nextui-org/react";
 import Link from "next/link"
 import Image from "next/image";
 import { useState } from "react";
@@ -18,17 +11,10 @@ const NavBar = () => {
   // console.log(isOpen);
   return (
     <nav id="nav">
-      <Navbar
-        position="static"
-        maxWidth="full"
-        classNames={{
-          wrapper: ["!px-0 !h-auto lg:!h-20"],
-        }}
-        className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-0 border-b border-[#B6BABD]"
+      <div
+        className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-3.5 border-b border-[#B6BABD] static max-w-full flex justify-between items-center"
       >
-        <NavbarBrand>
-            <Link  passHref 
-                  href="/" className="relative h-5 w-20 cursor-pointer">
+          <Link passHref href="/" className="relative h-5 w-20 cursor-pointer">
             <Image
               fill
               src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
@@ -38,23 +24,20 @@ const NavBar = () => {
               className="absolute object-contain object-center"
             />
           </Link>
-        </NavbarBrand>
-        <NavbarContent
-          className="hidden lg:flex gap-10 text-warning  uppercase"
-          justify="center"
+        <div
+          className="hidden lg:flex gap-10 text-warning uppercase"
         >
           {Navlinks.map((link, idx) => (
-            <NavbarItem key={idx} className="h-full relative group">
-                <Link  passHref 
-                  href={link.href} className="h-full text-warning">
+            <div key={idx} className="relative group">
+              <Link passHref href={link.href} className="h-full text-warning">
                 {link.title}
               </Link>
-              <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[2px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
-            </NavbarItem>
+              <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[23px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
+            </div>
           ))}
-        </NavbarContent>
-        <NavbarContent justify="end">
-          <NavbarItem className="hidden md:flex">
+        </div>
+        <div className="flex items-center gap-4">
+          <div className="hidden md:flex">
             <Btn
               Hbgcolor={"bg-primary"}
               textColor={"text-warning"}
@@ -63,12 +46,12 @@ const NavBar = () => {
               title={"contact us"}
               href={"/contact"}
             />
-          </NavbarItem>
-          <NavbarItem onClick={() => setIsOpen(!isOpen)}>
+          </div>
+          <div onClick={() => setIsOpen(!isOpen)}>
             <RxHamburgerMenu className="h-7 w-7 md:h-8 md:w-8 text-warning cursor-pointer hover:text-info" />
-          </NavbarItem>
-        </NavbarContent>
-      </Navbar>
+          </div>
+        </div>
+      </div>
       {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} />}
     </nav>
   );

@@ -102,7 +102,7 @@ const Testimonials = () => {
             HtextColor={"text-warning"}
             bColor={"border-white"}
             title={"View All"}
-            href={"/"}
+            href={"/testimonials"}
           />
         </div>
       </div>

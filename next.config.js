@@ -9,7 +9,7 @@ const nextConfig = {
         ],
       },
       experimental: {
-        optimizePackageImports: ['@nextui-org/react','framer-motion','tailwindcss'],
+        optimizePackageImports: ["@nextui-org/system","@nextui-org/theme",'framer-motion',"@nextui-org/accordion",'tailwindcss',"@nextui-org/checkbox","@nextui-org/tooltip"],
         optimizeCss: true 
       }
 }
