@@ -4,7 +4,6 @@ import { Providers } from "./providers";
 import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import "react-multi-carousel/lib/styles.css";
 import { Lora, Nunito,Urbanist } from 'next/font/google'
 import Footer from "@/components/Footer";
 const lora = Lora({

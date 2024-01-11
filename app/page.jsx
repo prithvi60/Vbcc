@@ -1,5 +1,4 @@
-// import Hero from '@/components/Hero'
-import HeroSSR from '@/components/Hero-ssr'
+import Hero from '@/components/Hero'
 import dynamic from 'next/dynamic'
 const ClientsComponent = dynamic(() => import('@/components/Clients'))
 const ExploreComponent = dynamic(() => import('@/components/Explore'))
@@ -14,7 +13,7 @@ const HowWeDoComponent = dynamic(() => import('@/components/HowWeDo'))
 export default function Home() {
   return (
     <main>
-      <HeroSSR/>
+      <Hero/>
       <ClientsComponent/>
       <ExploreComponent/>
       <ProductsComponent/>

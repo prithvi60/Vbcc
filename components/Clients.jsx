@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useMemo } from "react";
 import dynamic from 'next/dynamic'
 const MarqueeComponent = dynamic(() => import("react-fast-marquee"),{ssr:false})
+
 const Clients = () => {
   const memoizedLogos = useMemo(() => othersData.clientLogos, []);
   return (
