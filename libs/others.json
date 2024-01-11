@@ -104,7 +104,7 @@
             "desc": "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience."
         },
         {
-            "img": "/square.svg",
+            "img": "https://ik.imagekit.io/webibee/VBCC/square.svg",
             "desc": "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way."
         },
         {
@@ -158,41 +158,41 @@
     ],
     "footerLinks1": [
         {
-            "href": "/products",
+            "href": "https://ik.imagekit.io/webibee/VBCC/products",
             "title": "Products"
         },
         {
-            "href": "/testimonials",
+            "href": "https://ik.imagekit.io/webibee/VBCC/testimonials",
             "title": "Testimonials"
         },
         {
-            "href": "/about",
+            "href": "https://ik.imagekit.io/webibee/VBCC/about",
             "title": "About Us"
         },
         {
-            "href": "/blog",
+            "href": "https://ik.imagekit.io/webibee/VBCC/blog",
             "title": "Blog/Articles"
         },
         {
-            "href": "/faq",
+            "href": "https://ik.imagekit.io/webibee/VBCC/faq",
             "title": "FAQs"
         }
     ],
     "footerLinks2": [
         {
-            "href": "/about",
+            "href": "https://ik.imagekit.io/webibee/VBCC/about",
             "title": "Our Story"
         },
         {
-            "href": "/blog",
+            "href": "https://ik.imagekit.io/webibee/VBCC/blog",
             "title": "Blog/Articles"
         },
         {
-            "href": "/contact",
+            "href": "https://ik.imagekit.io/webibee/VBCC/contact",
             "title": "Contact Us"
         },
         {
-            "href": "/gallery",
+            "href": "https://ik.imagekit.io/webibee/VBCC/gallery",
             "title": "Gallery"
         }
     ],

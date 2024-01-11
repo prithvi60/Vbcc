@@ -32,7 +32,7 @@ const WCU = () => {
             <div className="relative h-32 w-32">
               <Image
                 fill
-                src="/iso.png"
+                src="https://ik.imagekit.io/webibee/VBCC/iso.png"
                 alt="Logo"
                 className="absolute object-contain object-center"
               />

@@ -3,10 +3,26 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
-import dynamic from 'next/dynamic'
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-const FooterComponent = dynamic(() => import('@/components/Footer'))
+import { Lora, Nunito,Urbanist } from 'next/font/google'
+import Footer from "@/components/Footer";
+const lora = Lora({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lora',
+})
+ 
+const nunito = Nunito({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-nunito',
+})
+  
+const urbanist = Urbanist({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-urbanist',
+})
 
 export const metadata = {
   title: "VBCC",
@@ -15,13 +31,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lora.variable} ${nunito.variable} ${urbanist.variable}`}>
       <body>
         <Providers>
         <Banner/>
         <NavBar/>
           {children}
-          <FooterComponent/>
+          <Footer/>
           </Providers>
       </body>
     </html>

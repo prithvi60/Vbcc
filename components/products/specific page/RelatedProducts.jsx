@@ -19,7 +19,7 @@ export const RelatedProducts = ({product}) => {
           HtextColor={"text-white"}
           bColor={"border-warning"}
           title={"View All"}
-          href={"/products"}
+          href={"https://ik.imagekit.io/webibee/VBCC/products"}
         />
     </section>
   )

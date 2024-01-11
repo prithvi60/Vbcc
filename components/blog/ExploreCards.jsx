@@ -26,7 +26,7 @@ export const ExploreCards = () => {
             View All
           </div>
             <Link  passHref 
-                  href={"/blog"}
+                  href={"https://ik.imagekit.io/webibee/VBCC/blog"}
             className={`hidden md:block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
           >
             <div className={`h-6 w-full overflow-hidden`}>

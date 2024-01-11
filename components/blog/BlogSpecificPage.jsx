@@ -29,7 +29,7 @@ export const BlogSpecificPage = () => {
           <div className="relative w-full h-[300px] md:h-[505px]">
             <Image
               fill
-              src={"/blog-2.png"}
+              src={"https://ik.imagekit.io/webibee/VBCC/blog-2.png"}
               alt="product"
               className="absolute object-cover object-center"
             />

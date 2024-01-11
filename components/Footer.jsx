@@ -29,7 +29,7 @@ const Footer = () => {
     <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-urbanist">
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
         <div className="relative h-5 w-32">
-          <Image fill src={"/logo-white.svg"} alt="Logo" className="-ml-6" />
+          <Image fill src={"https://ik.imagekit.io/webibee/VBCC/logo-white.svg"} alt="Logo" className="-ml-6" />
         </div>
         <div className="text-sm space-y-5">
           <h4 className="uppercase">Kottivakkam,Chennai.</h4>
@@ -199,14 +199,14 @@ const Footer = () => {
           <div className="hidden md:flex items-center gap-3">
             <Link
               passHref
-              href={"/"}
+              href={"https://ik.imagekit.io/webibee/VBCC/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Privacy Policy
             </Link>
             <Link
               passHref
-              href={"/"}
+              href={"https://ik.imagekit.io/webibee/VBCC/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Terms of Service

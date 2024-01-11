@@ -98,7 +98,7 @@ export const chooseItem = [
   },
   {
     // img: "https://ik.imagekit.io/webibee/VBCC/Vectorsquare.svg",
-    img: "/square.svg",
+    img: "https://ik.imagekit.io/webibee/VBCC/square.svg",
     desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way.",
   },
   {
@@ -356,22 +356,22 @@ export const ProductCategory = [
   {
     title: "All Products",
     desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-    ImgSrc: "/product-bg.png",
+    ImgSrc: "https://ik.imagekit.io/webibee/VBCC/product-bg.png",
   },
   {
     title: "Research Institutions",
     desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-    ImgSrc: "/product-bg.png",
+    ImgSrc: "https://ik.imagekit.io/webibee/VBCC/product-bg.png",
   },
   {
     title: "Industries",
     desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-    ImgSrc: "/product-bg.png",
+    ImgSrc: "https://ik.imagekit.io/webibee/VBCC/product-bg.png",
   },
   {
     title: "Accessories",
     desc: "Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-    ImgSrc: "/product-bg.png",
+    ImgSrc: "https://ik.imagekit.io/webibee/VBCC/product-bg.png",
   },
 ];
 
@@ -382,7 +382,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Relevance",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Microwave Box",
     productType: "Microwave Heating Systems",
     description:
@@ -514,7 +514,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -526,7 +526,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "New Products",
     feature: ["robust"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Microwave Box 2",
     productType: "Microwave Heating Systems",
     description:
@@ -579,7 +579,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -592,7 +592,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Featured",
     feature: ["robust"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Furnaces Box 1",
     productType: "Furnaces",
     description:
@@ -724,7 +724,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -736,7 +736,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Relevance",
     feature: ["robust"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Furnaces Box 2",
     productType: "Furnaces",
     description:
@@ -868,7 +868,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -881,7 +881,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Relevance",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Ovens 1",
     productType: "Ovens",
     description:
@@ -1013,7 +1013,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1025,7 +1025,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Ovens 2",
     productType: "Ovens",
     description:
@@ -1157,7 +1157,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1170,7 +1170,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "New Products",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Nano Technology 1",
     productType: "Nano Technology Equipment",
     description:
@@ -1302,7 +1302,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1314,7 +1314,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Featured",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Nano Technology 2",
     productType: "Nano Technology Equipment",
     description:
@@ -1446,7 +1446,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1459,7 +1459,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "New Products",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Special Research 1",
     productType: "Special Research Equipment",
     description:
@@ -1591,7 +1591,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1603,7 +1603,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Special Research 2",
     productType: "Special Research Equipment",
     description:
@@ -1735,7 +1735,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1748,7 +1748,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Relevance",
     feature: ["robust"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Presses 1",
     productType: "Presses - Hot & Cold",
     description:
@@ -1880,7 +1880,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -1892,7 +1892,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Featured",
     feature: ["robust"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Presses 2",
     productType: "Presses - Hot & Cold",
     description:
@@ -2024,7 +2024,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2037,7 +2037,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Relevance",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Metallurgical 1",
     productType: "Metallurgical Equipment",
     description:
@@ -2169,7 +2169,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2181,7 +2181,7 @@ export const AllProducts = [
     category: "Research Institutions",
     sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Metallurgical 2",
     productType: "Metallurgical Equipment",
     description:
@@ -2313,7 +2313,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2326,7 +2326,7 @@ export const AllProducts = [
     category: "Industries",
     sortBy: "Best Sellers",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Industrial Furnaces 1",
     productType: "Industrial Furnaces",
     description:
@@ -2458,7 +2458,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2470,7 +2470,7 @@ export const AllProducts = [
     category: "Industries",
     sortBy: "Featured",
     feature: ["robust", "fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Industrial Furnaces 2",
     productType: "Industrial Furnaces",
     description:
@@ -2602,7 +2602,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2615,7 +2615,7 @@ export const AllProducts = [
     category: "Industries",
     sortBy: "New Products",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Refractory Industry 1",
     productType: "Refractory Industry",
     description:
@@ -2747,7 +2747,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2759,7 +2759,7 @@ export const AllProducts = [
     category: "Industries",
     sortBy: "Best Sellers",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Refractory Industry 2",
     productType: "Refractory Industry",
     description:
@@ -2891,7 +2891,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -2904,7 +2904,7 @@ export const AllProducts = [
     category: "Industries",
     sortBy: "Relevance",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Tile & Sanitary Ware 1",
     productType: "Tile & Sanitary Ware",
     description:
@@ -3036,7 +3036,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3048,7 +3048,7 @@ export const AllProducts = [
     category: "Industries",
     sortBy: "Best Sellers",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Tile & Sanitary Ware 2",
     productType: "Tile & Sanitary Ware",
     description:
@@ -3180,7 +3180,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3193,7 +3193,7 @@ export const AllProducts = [
     category: "Accessories",
     sortBy: "New Products",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Ceramic Products 1",
     productType: "Ceramic Products",
     description:
@@ -3325,7 +3325,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3337,7 +3337,7 @@ export const AllProducts = [
     category: "Accessories",
     sortBy: "Best Sellers",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Ceramic Products 2",
     productType: "Ceramic Products",
     description:
@@ -3469,7 +3469,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3482,7 +3482,7 @@ export const AllProducts = [
     category: "Accessories",
     sortBy: "Best Sellers",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Heating Box 1",
     productType: "Heating Elements",
     description:
@@ -3614,7 +3614,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3626,7 +3626,7 @@ export const AllProducts = [
     category: "Accessories",
     sortBy: "Relevance",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Heating Box 2",
     productType: "Heating Elements",
     description:
@@ -3758,7 +3758,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3771,7 +3771,7 @@ export const AllProducts = [
     category: "Accessories",
     sortBy: "New Products",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Controllers Box1",
     productType: "Controllers",
     description:
@@ -3903,7 +3903,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
@@ -3915,7 +3915,7 @@ export const AllProducts = [
     category: "Accessories",
     sortBy: "Featured",
     feature: ["fragile"],
-    img: "/product-img.png",
+    img: "https://ik.imagekit.io/webibee/VBCC/product-img.png",
     productName: "Controllers Box 2",
     productType: "Controllers",
     description:
@@ -4047,7 +4047,7 @@ export const AllProducts = [
         ],
       },
     ],
-    overViewImg: "/sample 1.png",
+    overViewImg: "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
     overViewDescription: [
       "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
       "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",

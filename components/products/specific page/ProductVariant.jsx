@@ -32,7 +32,7 @@ export const ProductVariant = ({ product }) => {
         </h4>
           <Link  passHref 
                  
-          href={"/contact"}
+          href={"https://ik.imagekit.io/webibee/VBCC/contact"}
           className={`block rounded-full px-4 py-3 border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full group`}
         >
           <div className={`h-6 w-full overflow-hidden`}>

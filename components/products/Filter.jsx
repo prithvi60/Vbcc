@@ -10,7 +10,7 @@ const Filter = ({ setIsFilter, filteredCategory, setFilteredCategory }) => {
     setFilteredCategory(filters);
     setIsFilter((prev) => !prev);
   };
-console.log("state",filters)
+// console.log("state",filters)
   return (
     <section className="h-screen w-full fixed top-0 left-0 bg-white px-5 py-10 z-50 overflow-auto">
       <div className="w-full block space-y-8">

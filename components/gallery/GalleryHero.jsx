@@ -9,7 +9,7 @@ export const GalleryHero = () => {
   return (
     <section className="block w-full h-[715px] px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-[url('/hero-bg.png')] bg-cover bg-center z-0 overflow-hidden relative ">
        {/* <div className="relative h-[715px] w-full z-0  px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10">
-        <Image src={"/hero-bg.png"} fill  alt="backgroun image" className="object-cover object-center" />
+        <Image src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"} fill  alt="backgroun image" className="object-cover object-center" />
       </div> */}
       <div className="absolute top-0 left-0 h-[715px]  w-full -z-10 backdrop-sepia-0 bg-black/30"></div>
       <div className="block space-y-6 w-full md:w-4/5 z-50">
@@ -25,7 +25,7 @@ export const GalleryHero = () => {
               smooth={true}
               offset={10}
               duration={800}
-              href={"/contact"}
+              href={"https://ik.imagekit.io/webibee/VBCC/contact"}
               className={`border border-secondary px-6 py-3 rounded-full w-max cursor-pointer group/btn block bg-transparent hover:bg-primary text-center text-base group-hover:duration-700 group-hover:delay-75 font-urbanist capitalize translate-x-1000 group-hover:-translate-x-3`}
             >
               <div className={`block h-6 w-full overflow-hidden`}>
