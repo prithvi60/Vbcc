@@ -6,11 +6,13 @@ import { Tooltip } from "@nextui-org/tooltip";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export const ProductCard = ({ products }) => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6;
   const t = Math.ceil(products.length / 6);
+  const router = useRouter()
   // console.log(t);
   const handlePage = () => {
     let pageIndex = page + 1;
@@ -27,6 +29,7 @@ export const ProductCard = ({ products }) => {
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
               <Link
+              passHref
               href={`/products/${list?.productName.replace(/\s/g, "")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
@@ -34,7 +37,7 @@ export const ProductCard = ({ products }) => {
               <div className="bg-white p-2 h-[335px]">
                 <div className="h-[85px] w-full">
                   {list.feature.map((val) => (
-                    <div className="space-y-1.5 block" key={val.robust}>
+                    <div className="space-y-1.5 block" key={val.id}>
                       <Tooltip
                         key={val.robust}
                         placement={"right"}
@@ -97,8 +100,8 @@ export const ProductCard = ({ products }) => {
                   </h4>
                 </div>
                 <div className="flex items-center">
-                    <Link
-                    href={"/contact"}
+                    <button
+                    onClick={()=>router.push("/contact")}
                     className={`group/btn block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base group-hover:duration-700 group-hover:delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
                   >
                     <div className={`block h-6 w-full overflow-hidden`}>
@@ -113,7 +116,7 @@ export const ProductCard = ({ products }) => {
                         contact
                       </h4>
                     </div>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </Link>
