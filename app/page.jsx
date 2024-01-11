@@ -1,4 +1,3 @@
-import Clients from '@/components/Clients'
 import Explore from '@/components/Explore'
 import Hero from '@/components/Hero'
 import Products from '@/components/Products'
@@ -9,6 +8,7 @@ import Blog from '@/components/Blog'
 // import HowWeDo from '@/components/HowWeDo'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
+import { Clients } from '@/components/Clients'
 const StatisticsComponent = dynamic(() => import('@/components/Statistics'))
 const HowWeDoComponent = dynamic(() => import('@/components/HowWeDo'))
 
