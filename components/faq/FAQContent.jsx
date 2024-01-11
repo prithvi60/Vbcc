@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from 'next/dynamic'
 
-const ImgSrc = "/faq.png";
+const ImgSrc = "https://ik.imagekit.io/webibee/VBCC/faq.png";
 const FAQAccordionComponent = dynamic(() => import("./FAQAccordion"))
 
 export const FAQContent = () => {
@@ -15,7 +15,7 @@ export const FAQContent = () => {
           </h2>
           <p className="font-urbanist text-sm lg:text-base">
             If you cannot find what you’re looking for, feel free to <span className="underline underline-offset-1">  <Link  passHref 
-                  href={"/contact"}>contact us.</Link></span>
+                  href={"https://ik.imagekit.io/webibee/VBCC/contact"}>contact us.</Link></span>
           </p>
           <div className="relative h-[440px] w-full overflow-hidden">
             <Image fill src={ImgSrc} alt={"Faq Image"} 

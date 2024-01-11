@@ -99,7 +99,7 @@ const Products = () => {
                   </div>
                 </Link>
                 <button   
-                 onClick={()=>router.push("/contact")}
+                 onClick={()=>router.push("https://ik.imagekit.io/webibee/VBCC/contact")}
                     className={`group/btn rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>
@@ -122,7 +122,7 @@ const Products = () => {
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
            {memoizedProducts[activeTab].sub.slice(0, count).map((card, id) => (
                 <Link 
-                href={"/products/1"}
+                href={"https://ik.imagekit.io/webibee/VBCC/products/1"}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
               >
@@ -151,7 +151,7 @@ const Products = () => {
                   </div>
                 </div>
                   <button   
-                 onClick={()=>router.push("/contact")}
+                 onClick={()=>router.push("https://ik.imagekit.io/webibee/VBCC/contact")}
                   className={`group/button block rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                 >
                   <div className={`h-6 w-full overflow-hidden`}>
@@ -177,7 +177,7 @@ const Products = () => {
           HtextColor={"text-white"}
           bColor={"border-warning"}
           title={"View All Products"}
-          href={"/products"}
+          href={"https://ik.imagekit.io/webibee/VBCC/products"}
         />
       </div>
     </section>

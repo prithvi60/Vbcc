@@ -25,7 +25,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         >
             <Link  passHref 
                  
-            href={"/contact"}
+            href={"https://ik.imagekit.io/webibee/VBCC/contact"}
             className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -98,7 +98,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           </Link>
             <Link  passHref 
                  
-            href={"/faq"}
+            href={"https://ik.imagekit.io/webibee/VBCC/faq"}
             className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
             onClick={() => setIsOpen(!isOpen)}
           >

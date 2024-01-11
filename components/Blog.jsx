@@ -58,7 +58,7 @@ const Blog = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4">
             {blogData.blog[activeTab].sub.slice(0, count).map((card, id) => (
               <Link
-                href={"/blog/1"}
+                href={"https://ik.imagekit.io/webibee/VBCC/blog/1"}
                 className="w-full bg-secondary text-warning rounded-none font-urbanist p-5 space-y-4"
                 key={id}
               >
@@ -82,7 +82,7 @@ const Blog = () => {
                 </div>
                 <div className="p-0">
                 <button   
-                 onClick={()=>router.push("/contact")}
+                 onClick={()=>router.push("https://ik.imagekit.io/webibee/VBCC/contact")}
                     className={`rounded-full px-4 py-2 group border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>
@@ -109,7 +109,7 @@ const Blog = () => {
           HtextColor={"text-warning"}
           bColor={"border-white"}
           title={"View All"}
-          href={"/blog"}
+          href={"https://ik.imagekit.io/webibee/VBCC/blog"}
         />
       </div>
     </section>

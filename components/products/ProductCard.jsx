@@ -98,7 +98,7 @@ export const ProductCard = ({ products }) => {
                 </div>
                 <div className="flex items-center">
                     <Link
-                    href={"/contact"}
+                    href={"https://ik.imagekit.io/webibee/VBCC/contact"}
                     className={`group/btn block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base group-hover:duration-700 group-hover:delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
                   >
                     <div className={`block h-6 w-full overflow-hidden`}>

@@ -5,18 +5,8 @@ import InnerCarousel from "./Carousel";
 import { Btn2 } from "./Btn";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
-// import { useEffect, useState } from "react";
+// import { Suspense } from "react";
 const Hero = () => {
-  //   const [start,setStart]=useState(false)
-  //   useEffect(()=>{
-  // const timer= setTimeout(() => {
-  //   setStart(true)
-  // }, 2000);
-  // // console.log(start)
-  // return () => {
-  //   clearTimeout(timer);
-  // };
-  //   },[])
 
   return (
     <section className="h-[90vh] w-full relative">
@@ -40,10 +30,8 @@ const Hero = () => {
             alt="test"
             fill
             sizes={"100vw"}
-            quality={100}
             priority={true}
             placeholder="blur"
-            
             blurDataURL={
               "data:image/webp;base64,UklGRhoDAABXRUJQVlA4WAoAAAAgAAAACgEAsQAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggLAEAALATAJ0BKgsBsgA/cbbSZDStqSah0ukCkC4JaW7dX1o7hfYViHTBHkXM9fsZh9I3yL3TE9mLEOmaaltvKxPTIg5NpWQbie0x5u56L1jvwR4b7xVqLsfk9TKdSdmF4sptnlhL+8qw2lSemJ+l257nlOpOyBuy+NRWlvN3Vd+sqOqoYNYezdoI/Suz15pNTup7+6JLbG502IIN2V3Y71QpzPIRcVguZAAAeY3OK5Da/CFfpIwrqBCDMsql1ZAAAAbhqwaL0hRkqTCpSF83jQXmSKGvMYZ8LDRk3lZ1u+fkPyatDPTugyZEJMTyX5TvfMnVCry1CNC1s5XTiZiASWuoLfzCIwctXPVabwp2zExSI/Uud7cy0iFcfMW+tXlM9ulrulPeGaAYKHmATdIAAA=="
             }
@@ -53,8 +41,7 @@ const Hero = () => {
         <div className="h-[90vh] relative m-0">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png"}
-            alt="test"
-            quality={100}
+            alt="test1"
             fill
             sizes={"100vw"}
             placeholder="blur"
@@ -67,8 +54,7 @@ const Hero = () => {
         <div className="h-[90vh] relative m-0">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png"}
-            alt="test"
-            quality={100}
+            alt="test2"
             fill
             placeholder="blur"
             sizes={"100vw"}
@@ -80,16 +66,15 @@ const Hero = () => {
         </div>
       </Carousel>
       {/* <div className="absolute top-0 left-0 h-[90vh] w-full z-20 backdrop-opacity-10 bg-black/40"></div> */}
+      {/* <Suspense fallback={<div>Loading..</div>}> */}
       <div className="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
         <h4 className="text-xl md:text-2xl uppercase font-Lora mb-4 md:mb-6">
           Vb Ceramic Consultants
         </h4>
-        {/* <div className=""> */}
         <p className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
           Tailor Made
         </p>
         <InnerCarousel />
-        {/* </div> */}
         <span className="flex justify-center items-center gap-6">
           <Btn2
             Hbgcolor={"bg-white"}
@@ -97,7 +82,7 @@ const Hero = () => {
             HtextColor={"text-warning"}
             bColor={"border-white"}
             title={"Our Products"}
-            href={"/products"}
+            href={"https://ik.imagekit.io/webibee/VBCC/products"}
             background={"backdrop-blur-md bg-black/30"}
           />
           <Btn2
@@ -106,7 +91,7 @@ const Hero = () => {
             HtextColor={"text-white"}
             bColor={"border-white"}
             title={"Contact Us"}
-            href={"/contact"}
+            href={"https://ik.imagekit.io/webibee/VBCC/contact"}
             background={"backdrop-blur-md bg-black/30"}
           />
         </span>
@@ -136,6 +121,7 @@ const Hero = () => {
           </h4>
         </div>
       </Mylink>
+      {/* </Suspense> */}
     </section>
   );
 };

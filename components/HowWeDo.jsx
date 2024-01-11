@@ -7,9 +7,9 @@ import { InView } from "react-intersection-observer";
 import { ProgressBar } from "./ProgressBar";
 const ImgSlider =[
   {img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png",title:"Vbcc"},
-  {img: "/HWD1.png",title:"Strategize"},
-  {img: "/HWD2.png",title:"Design"},
-  {img: "/HWD3.png",title:"Engineering"},
+  {img: "https://ik.imagekit.io/webibee/VBCC/HWD1.png",title:"Strategize"},
+  {img: "https://ik.imagekit.io/webibee/VBCC/HWD2.png",title:"Design"},
+  {img: "https://ik.imagekit.io/webibee/VBCC/HWD3.png",title:"Engineering"},
 ]
 
 const HowWeDo = () => {
@@ -91,7 +91,7 @@ const HowWeDo = () => {
               <p className="lg:text-danger">{item.desc}</p>
                 <Link  passHref 
                  
-                href={"/contact"}
+                href={"https://ik.imagekit.io/webibee/VBCC/contact"}
                 className={`hidden lg:block px-6 py-4 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
@@ -109,7 +109,7 @@ const HowWeDo = () => {
               </Link>
                 <Link  passHref 
                  
-                href={"/"}
+                href={"https://ik.imagekit.io/webibee/VBCC/"}
                 className={`hidden md:flex lg:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
@@ -127,7 +127,7 @@ const HowWeDo = () => {
               </Link>
                 <Link  passHref 
                  
-                href={"/"}
+                href={"https://ik.imagekit.io/webibee/VBCC/"}
                 className={`block md:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>

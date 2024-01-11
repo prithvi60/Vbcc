@@ -5,10 +5,10 @@ import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
 const imgSrc = [
-  "/gallery01.png",
-  "/gallery02.png",
-  "/gallery03.png",
-  "/gallery04.png",
+  "https://ik.imagekit.io/webibee/VBCC/gallery01.png",
+  "https://ik.imagekit.io/webibee/VBCC/gallery02.png",
+  "https://ik.imagekit.io/webibee/VBCC/gallery03.png",
+  "https://ik.imagekit.io/webibee/VBCC/gallery04.png",
 ];
 
  const Visitation = () => {

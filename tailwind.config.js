@@ -22,15 +22,6 @@ module.exports = {
       Nunito: ["Nunito", "sans-serif"],
     },
     extend: {
-      backgroundImage: {
-        "hero-pattern":
-          "url('https://ik.imagekit.io/webibee/VBCC/hero-bg.png')",
-        "hero-pattern-2":
-          "url('https://ik.imagekit.io/webibee/VBCC/hero-bg-2.png')",
-        "hero-pattern-3":
-          "url('https://ik.imagekit.io/webibee/VBCC/hero-bg-3.png')",
-        statistics: "url('https://ik.imagekit.io/webibee/VBCC/Statistics.png')",
-      },
       keyframes: {
         marquee_h: {
           from: { transform: "translateX(0%)" },
