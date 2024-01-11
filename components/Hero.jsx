@@ -9,7 +9,12 @@ import { useState, useEffect } from "react";
 const Hero = () => {
   const [client, setClient] = useState(false);
   useEffect(() => {
-    setClient(true);
+    const timer= setTimeout(() => {
+      setClient(true);
+    }, 1500);
+    return ()=>{
+      clearTimeout(timer)
+    }
   }, []);
 
   return (
