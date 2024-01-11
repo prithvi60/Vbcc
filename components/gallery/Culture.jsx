@@ -1,8 +1,9 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+// import { Carousel } from "react-responsive-carousel";
 
 const imgSrc = [
   "/gallery01.png",
@@ -61,10 +62,10 @@ const imgSrc = [
       className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-secondary"
       id="culture"
     >
-      <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning">
+      <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning relative">
         <div className="w-full md:w-1/2 lg:w-[65%]">
           {/* sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px" */}
-          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+          {/* <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 // fill
@@ -80,8 +81,108 @@ const imgSrc = [
                 custom={direction}
               />
             </AnimatePresence>
+          </div> */}
+        
+        {/* <Carousel
+        showArrows={false}
+        ariaLabel={"testimonail content"}
+        renderArrowPrev={(clickHandler)=>{
+          return (
+            <div
+                  className="p-4 rounded-full cursor-pointer border border-warning hover:bg-white block duration-700 delay-75 w-max group"
+                  onClick={clickHandler}
+                >
+                  <div className={`h-6 w-full overflow-hidden`}>
+                    <h4
+                      className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+                    >
+                      <GoArrowLeft className="h-6 w-6 text-warning" />
+                    </h4>
+                    <h4
+                      className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+                    >
+                      <GoArrowLeft className="h-6 w-6 text-warning" />
+                    </h4>
+                  </div>
+                </div>
+          );
+        }}
+        renderArrowNext={(clickHandler)=>{
+          return (
+            <div
+                  className="p-4 rounded-full cursor-pointer border border-warning hover:bg-white block duration-700 delay-75 w-max group"
+                  onClick={clickHandler}
+                >
+                  <div className={`h-6 w-full overflow-hidden`}>
+                    <h4
+                      className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+                    >
+                      <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+                    </h4>
+                    <h4
+                      className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+                    >
+                      <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+                    </h4>
+                  </div>
+                </div>
+          );
+        }}
+        showThumbs={false}
+        renderThumbs={(children) =>(
+          <div className="hidden md:flex flex-wrap items-center gap-2.5">
+            {imgSrc.map((img, idx) => (
+              <div
+                className={`relative md:h-[105px] md:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px] cursor-pointer overflow-hidden rounded-2xl ${
+                  currentIndex === idx
+                    ? " rounded-2xl border-2 border-info"
+                    : " "
+                } `}
+                key={idx}
+                onClick={() => handleThumbnail(idx)}
+              >
+                <Image
+                  fill
+                  src={img}
+                  // placeholder="blur"
+                  sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px" 
+                  alt="Logo"
+                  className="absolute object-cover hover:scale-125 transition-all duration-1000"
+                />
+              </div>
+            ))}
           </div>
-        </div>
+        )}
+        showStatus={false}
+        showIndicators={false}
+        autoPlay
+        swipeable
+        interval={3000}
+        infiniteLoop
+        stopOnHover={false}
+      >
+        {imgSrc.map((img, idx) => (
+        <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl" key={idx}>
+              <Image
+                fill
+                src={img}
+                alt="Logo"
+                // key={}
+                className="absolute w-full h-full object-cover object-center "
+              />
+          </div>
+          ))}
+      </Carousel> */}
+      <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+              <Image
+                fill
+                src={imgSrc[currentIndex]}
+                alt="Logo"
+                key={imgSrc[currentIndex]}
+                className="absolute w-full h-full object-cover object-center "
+              />
+          </div>
+      </div>
         <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
           <div className="hidden md:flex flex-wrap items-center gap-2.5">
             {imgSrc.map((img, idx) => (

@@ -180,7 +180,7 @@ export const CustomCarousel = ({ gallery }) => {
   return (
     <>
       <section className="block space-y-5">
-        <div className="relative w-full h-[490px] overflow-hidden">
+        {/* <div className="relative w-full h-[490px] overflow-hidden">
           <AnimatePresence initial={false} custom={direction}>
             <motion.img
               // fill
@@ -195,6 +195,15 @@ export const CustomCarousel = ({ gallery }) => {
               exit="exit"
             />
           </AnimatePresence>
+        </div> */}
+        <div className="relative w-full h-[490px] overflow-hidden">
+            <Image
+              fill
+              key={gallery[index].img}
+              src={gallery[index].img}
+              alt="..."
+              className="w-full h-full object-cover object-center rounded-md"
+            />
         </div>
         <div className="flex items-center gap-5 w-full h-auto">
           {gallery.map((item, idx) => (

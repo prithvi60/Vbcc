@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
 import { ProgressBar } from "./ProgressBar";
+import Image from "next/image";
 const ImgSlider =[
   {img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png",title:"Vbcc"},
   {img: "/HWD1.png",title:"Strategize"},
@@ -32,9 +33,9 @@ const HowWeDo = () => {
         <div className="sticky top-4 lg:top-20 lg:w-1/2 xl:w-2/5 h-full w-full">
           <div className="relative rounded-lg lg:rounded-none py-6 px-4 bg-primary flex flex-col lg:flex-row lg:items-center gap-4">
           <ProgressBar slide={slide}/>
-            <AnimatePresence initial={false}>
+            {/* <AnimatePresence initial={false}> */}
           <div className="h-full w-full overflow-hidden">
-            <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
+            {/* <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
               <motion.img
                 // fill
                 loading="lazy"
@@ -49,12 +50,21 @@ const HowWeDo = () => {
                 alt="Logo"
                 className="absolute w-full h-full object-cover object-center"
               />
+            </div> */}
+            <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
+              <Image
+                fill
+                key={slide}
+                src={ImgSlider[slide].img}
+                alt="Logo"
+                className="absolute w-full h-full object-cover object-center"
+              />
             </div>
             <h3 className="text-[32px] absolute top-[48%] left-1/4 md:left-[40%] font-Lora">
                {ImgSlider[slide].title}
             </h3>
           </div>
-            </AnimatePresence>
+            {/* </AnimatePresence> */}
             </div>
         </div>
         <div className="w-full lg:w-1/2 xl:w-3/5 space-y-0.5">
