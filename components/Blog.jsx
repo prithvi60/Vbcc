@@ -1,5 +1,5 @@
 "use client";
-import { blog } from "@/libs/data";
+import blogData from "@/libs/blog.json"
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -26,7 +26,7 @@ const Blog = () => {
         </h3>
         <div className="block w-full space-y-8">
           <div className="gap-3 w-full h-auto justify-center flex item-center flex-wrap bg-primary items-center">
-            {blog.map((item, idx) => (
+            {blogData.blog.map((item, idx) => (
               <div
                 className={`text-base tracking-tight border border-white p-5 rounded-full font-Lora min-w-fit px-4 py-2 group/button block bg-transparent hover:bg-warning text-center duration-700 delay-75 capitalize cursor-pointer ${
                   activeTab === idx ? "!bg-white !hover:bg-white" : ""
@@ -56,7 +56,7 @@ const Blog = () => {
             ))}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4">
-            {blog[activeTab].sub.slice(0, count).map((card, id) => (
+            {blogData.blog[activeTab].sub.slice(0, count).map((card, id) => (
               <Link
                 href={"/blog/1"}
                 className="w-full bg-secondary text-warning rounded-none font-urbanist p-5 space-y-4"

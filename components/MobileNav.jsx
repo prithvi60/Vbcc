@@ -1,4 +1,4 @@
-import { Navlink } from "@/libs/data";
+import othersData from "@/libs/others.json"
 import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
@@ -50,7 +50,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       </div>
       <div className="flex justify-center md:justify-between items-center p-5 md:px-[60px] md:py-[24px]">
         <ul className="space-y-2 w-full">
-          {Navlink.map((link, idx) => (
+          {othersData.navlink.map((link, idx) => (
             <li
               key={idx}
               className="w-max uppercase font-semibold text-[40px]"

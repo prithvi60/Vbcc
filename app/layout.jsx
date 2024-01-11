@@ -1,7 +1,8 @@
-import NavBar from "@/components/Navbar";
+
 import "./globals.css";
 import { Providers } from "./providers";
 import Banner from "@/components/Banner";
+import NavBar from "@/components/Navbar";
 import dynamic from 'next/dynamic'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

@@ -1,11 +1,11 @@
 "use client"
-import { logos } from "@/libs/data"
+import othersData from "@/libs/others.json"
 import Image from "next/image"
 import { useMemo } from "react";
 import dynamic from 'next/dynamic'
 const MarqueeComponent = dynamic(() => import("react-fast-marquee"),{ssr:false})
 const Clients = () => {
-  const memoizedLogos = useMemo(() => logos, []);
+  const memoizedLogos = useMemo(() => othersData.clientLogos, []);
   return (
     <section className="py-16 bg-secondary space-y-8" id="client">
       <h3 className="px-8 md:px-16 text-lg md:text-xl text-primary">Our Prestigious Clients</h3>

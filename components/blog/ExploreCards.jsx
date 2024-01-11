@@ -1,5 +1,5 @@
 "use client";
-import { explore } from "@/libs/data";
+import blogData from "@/libs/blog.json";
 import React, { useEffect, useState } from "react";
 import { BlogGridComponent } from "./BlogGridComponent";
 import Link from "next/link";
@@ -44,7 +44,7 @@ export const ExploreCards = () => {
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {explore.slice(0, count).map((list, idx) => (
+          {blogData.explore.slice(0, count).map((list, idx) => (
             <BlogGridComponent key={idx} list={list} />
           ))}
         </div>

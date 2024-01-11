@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Btn } from "../Btn";
 import { BlogGridComponent } from "./BlogGridComponent";
 
-export const BlogCards = ({ blogContents, MainBlog, item }) => {
+export const BlogCards = ({ blogContents, MainBlog }) => {
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(6);
   const [page, setPage] = useState(1);

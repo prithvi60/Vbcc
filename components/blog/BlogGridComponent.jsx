@@ -32,9 +32,6 @@ export const BlogGridComponent = ({ list }) => {
                 </h4>
               </div>
             </div>
-          {/* <div className="px-4 py-2.5 absolute top-5 left-5 bg-white w-max rounded-md lg:hidden">
-            Featured
-          </div> */}
         </div>
         <h4 className="text-lg lg:text-[32px] font-Lora">{list.blogTitile}</h4>
         <p className="text-sm md:text-base">{list.blogDescription}</p>

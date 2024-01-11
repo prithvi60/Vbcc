@@ -20,47 +20,46 @@ export const ProductCard = ({ products }) => {
   };
 
   useEffect(() => {}, [products, page, t]);
-  // console.log(products);
+  
   return (
     <section className="bg-secondary space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
-              <Link  passHref 
-                 
+              <Link
               href={`/products/${list?.productName.replace(/\s/g, "")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
               <div className="bg-white p-2 h-[335px]">
                 <div className="h-[85px] w-full">
-                  {list.feature.map((val, i) => (
-                    <div className="space-y-1.5 block" key={i}>
+                  {list.feature.map((val) => (
+                    <div className="space-y-1.5 block" key={val.robust}>
                       <Tooltip
-                        key={val}
+                        key={val.robust}
                         placement={"right"}
-                        content={val}
+                        content={val.robust}
                         color="success"
                         className="text-base font-Lora capitalize px-3 py-2"
                       >
                         <div
                           className={`${
-                            val === "robust" ? "flex" : "hidden"
+                            val.robust ? "flex" : "hidden"
                           } p-3.5 border border-info w-max rounded-full`}
                         >
                           <Dumbbell className={"fill-info h-6 w-6"} />
                         </div>
                       </Tooltip>
                       <Tooltip
-                        key={val}
+                        key={val.fragile}
                         placement={"right"}
-                        content={val}
+                        content={val.fragile}
                         color="success"
                         className="text-base font-Lora capitalize px-3 py-2"
                       >
                       <div
                         className={`${
-                          val === "fragile" ? "flex" : "hidden"
+                          val.fragile ? "flex" : "hidden"
                         } p-3.5 border border-info w-max rounded-full`}
                       >
                         <Glass className={"h-6 w-6"} />
@@ -98,8 +97,7 @@ export const ProductCard = ({ products }) => {
                   </h4>
                 </div>
                 <div className="flex items-center">
-                    <Link  passHref 
-                 
+                    <Link
                     href={"/contact"}
                     className={`group/btn block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base group-hover:duration-700 group-hover:delay-75 font-urbanist capitalize w-max translate-x-1000 group-hover:-translate-x-3`}
                   >

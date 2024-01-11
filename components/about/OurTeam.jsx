@@ -1,4 +1,4 @@
-import { Team } from "@/libs/data";
+import othersData from "@/libs/others.json";
 import Image from "next/image";
 
 export const OurTeam = () => {
@@ -39,7 +39,7 @@ export const OurTeam = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-5 lg:gap-0 lg:gap-y-20">
-          {Team.map((item, idx) => (
+          {othersData.team.map((item, idx) => (
           <div className="p-5 space-y-5 w-full h-full bg-primary" key={idx}>
             <div className="relative h-[260px] w-full sm:w-[315px] lg:w-[365px] xl:w-[265px]" >
               <Image

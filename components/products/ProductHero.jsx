@@ -1,6 +1,6 @@
 "use client";
 
-import { ProductCategory } from "@/libs/data";
+import productsData from "@/libs/products.json"
 import { useSearchParams } from "next/navigation";
 import { CategoryTab } from "./ProductF&C";
 import Image from "next/image";
@@ -9,7 +9,7 @@ const ProductHero = ({ setProducts }) => {
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
   const product =
-    ProductCategory.find((val) => val.title === search) || ProductCategory[0];
+  productsData.productCategory.find((val) => val.title === search) || productsData.productCategory[0];
 
   return (
     <section className="h-full w-full flex flex-wrap-reverse lg:flex-nowrap bg-success">

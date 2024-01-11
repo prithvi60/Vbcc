@@ -1,5 +1,5 @@
 "use client";
-import { data } from "@/libs/data";
+import othersData from "@/libs/others.json"
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -63,7 +63,7 @@ const HowWeDo = () => {
               How we do it?
             </p>
           </div>
-          {data.map((item, idx) => (
+          {othersData.howWeDoIt.map((item, idx) => (
             <InView
               as="div"
               threshold={1}

@@ -1,5 +1,5 @@
-"use Client";
-import { filter } from "@/libs/data";
+"use client";
+import productsData from "@/libs/products.json";
 import {  useState } from "react";
 import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
@@ -111,7 +111,7 @@ export const CustomFilter = ({setFilters,Filters}) => {
 
   // console.log(search);
   const product =
-    filter.find((val) => val.title === search) || filter;
+  productsData.filter.find((val) => val.title === search) || productsData.filter;
 
     const handleSetIndex = (title) => {
       setIndex(title);
@@ -131,7 +131,7 @@ export const CustomFilter = ({setFilters,Filters}) => {
     <>
     {search === null ? (
     <div className="space-y-4">
-      {filter.map((item, idx) => (
+      {productsData.filter.map((item, idx) => (
         <div
           className="block space-y-3 w-full h-auto"
           key={idx}

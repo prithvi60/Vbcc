@@ -1,5 +1,5 @@
 "use client"
-import { story } from "@/libs/data";
+import othersData from "@/libs/others.json"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -51,7 +51,7 @@ useEffect(() =>{
           </div>
         </div>
         <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6">
-          {story.slice(0,count).map((item, idx) => (
+          {othersData.story.slice(0,count).map((item, idx) => (
               <div className="relative h-[350px] md:h-[392px] w-full" key={idx}>
                 <Image
                   fill

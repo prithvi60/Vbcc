@@ -1,6 +1,6 @@
 "use client";
 import { BlogCards } from "./BlogCards";
-import { allBlogContent } from "@/libs/data";
+import blogData from "@/libs/blog.json";
 import { useState } from "react";
 export const BlogSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -8,7 +8,7 @@ export const BlogSection = () => {
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:p-[60px] bg-secondary space-y-8">
       <ul className="gap-4 w-full h-auto flex-wrap flex justify-start items-end md:flex md:justify-start md:item-center md:flex-wrap">
-        {allBlogContent.map((item, idx) => (
+        {blogData.allBlogContent.map((item, idx) => (
           <li
             className={`text-base tracking-tight border border-warning p-5 rounded-full font-urbanist min-w-fit px-4 py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
               activeTab === idx ? "!bg-primary !hover:bg-primary" : ""
@@ -39,7 +39,7 @@ export const BlogSection = () => {
           </li>
         ))}
       </ul>
-      <BlogCards item={allBlogContent[activeTab]} blogContents={allBlogContent[activeTab].blogContents} MainBlog={allBlogContent[activeTab].MainBlog}/>
+      <BlogCards item={blogData.allBlogContent[activeTab]} blogContents={blogData.allBlogContent[activeTab].blogContents} MainBlog={blogData.allBlogContent[activeTab].MainBlog}/>
     </section>
   );
 };

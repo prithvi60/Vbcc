@@ -1,5 +1,5 @@
 "use client";
-
+import othersData from "@/libs/others.json";
 import Image from "next/image";
 import Link from "next/link";
 import { Link as Mylink } from "react-scroll";
@@ -42,71 +42,28 @@ const Footer = () => {
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
         <div className="text-sm flex items-start gap-16">
           <div className="flex flex-col items-start gap-3">
-            <Link
-              passHref
-              href={"/product"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Products
-            </Link>
-            <Link
-              passHref
-              href={"/testimonial"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Testimonials
-            </Link>
-            <Link
-              passHref
-              href={"/about"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              About Us
-            </Link>
-            <Link
-              passHref
-              href={"/blog"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Blog/Articles
-            </Link>
-            <Link
-              passHref
-              href={"/faq"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              FAQs
-            </Link>
+            {othersData.footerLinks1.map((list, id) => (
+              <Link
+                passHref
+                key={id}
+                href={list.href}
+                className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
+              >
+                {list.title}
+              </Link>
+            ))}
           </div>
           <div className="flex flex-col items-start gap-3">
-            <Link
-              passHref
-              href={"/about"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Our Story
-            </Link>
-            <Link
-              passHref
-              href={"/blog"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Blog/Articles
-            </Link>
-            <Link
-              passHref
-              href={"/contact"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Contact Us
-            </Link>
-            <Link
-              passHref
-              href={"/gallery"}
-              className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-            >
-              Gallery
-            </Link>
+            {othersData.footerLinks2.map((list, id) => (
+              <Link
+                key={id}
+                passHref
+                href={list.href}
+                className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
+              >
+                {list.title}
+              </Link>
+            ))}
           </div>
         </div>
         <div className="flex justify-evenly items-center gap-3">

@@ -1,5 +1,6 @@
 "use client";
-import { Navlinks } from "@/libs/data";
+
+import othersData from "@/libs/others.json"
 import Link from "next/link"
 import Image from "next/image";
 import { useState } from "react";
@@ -8,7 +9,7 @@ import MobileNav from "./MobileNav";
 import { Btn } from "./Btn";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // console.log(isOpen);
+  // console.log(othersData.navlinks);
   return (
     <nav id="nav">
       <div
@@ -27,7 +28,7 @@ const NavBar = () => {
         <div
           className="hidden lg:flex gap-10 text-warning uppercase"
         >
-          {Navlinks.map((link, idx) => (
+          {othersData.navlinks.map((link, idx) => (
             <div key={idx} className="relative group">
               <Link passHref href={link.href} className="h-full text-warning">
                 {link.title}

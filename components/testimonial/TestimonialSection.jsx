@@ -1,26 +1,24 @@
 "use client";
-
-import { testimonials } from "@/libs/data";
+import othersData from "@/libs/others.json";
 import Image from "next/image";
 import { Suspense, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-// import FsLightbox from "fslightbox-react";
- const FsLightbox= dynamic(() => import('fslightbox-react'), {ssr: false});
+const FsLightbox = dynamic(() => import("fslightbox-react"), { ssr: false });
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
-  const fsTool = testimonials.map(val => val.pdf)
+  const fsTool = othersData.testimonials.map((val) => val.pdf);
   const [lightboxController, setLightboxController] = useState({
-		toggler: false,
-		slide: selectedItem + 1
-	});
+    toggler: false,
+    slide: selectedItem + 1,
+  });
 
-	function openLightboxOnSlide(number) {
-		setLightboxController({
-			toggler: !lightboxController.toggler,
-			slide: number + 1
-		});
-	}
+  function openLightboxOnSlide(number) {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: number + 1,
+    });
+  }
 
   const slideVariants = {
     slide: {
@@ -68,7 +66,7 @@ export const TestimonialSection = () => {
         </h2>
         <div className="w-full lg:w-96 h-full lg:h-auto overflow-hidden flex gap-4">
           <div className="flex flex-nowrap lg:flex-wrap items-center gap-3 h-[70px] lg:h-full animate-horizontal_carousel lg:animate-none pause mt-2">
-            {testimonials.map((item, idx) => (
+            {othersData.testimonials.map((item, idx) => (
               <div
                 className={`p-1 rounded-md ${
                   idx === selectedItem
@@ -108,9 +106,9 @@ export const TestimonialSection = () => {
           >
             <Image
               fill
-              src={testimonials[selectedItem].pdf}
+              src={othersData.testimonials[selectedItem].pdf}
               placeholder="blur"
-              blurDataURL={`${testimonials[selectedItem].pdf}?tr=bl-20`}
+              blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
               sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
               alt="Logo"
               className="w-full h-full object-contain object-center rounded-xl"
@@ -119,13 +117,13 @@ export const TestimonialSection = () => {
         </div>
       </AnimatePresence>
       <Suspense fallback={<div>Loading...</div>}>
-      <FsLightbox
-        exitFullscreenOnClose={true}
-        toggler={lightboxController.toggler}
-        sources={fsTool}
-        type="image"
-        slide={lightboxController.slide}
-      />
+        <FsLightbox
+          exitFullscreenOnClose={true}
+          toggler={lightboxController.toggler}
+          sources={fsTool}
+          type="image"
+          slide={lightboxController.slide}
+        />
       </Suspense>
     </section>
   );

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { AllProducts, category } from "@/libs/data";
+import productsData from "@/libs/products.json"
 import { Checkbox, CheckboxGroup } from "@nextui-org/checkbox";
 import { useCallback, useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
@@ -35,10 +35,10 @@ const ProductFC = ({
   const handleCategory = (c) => {
     SetselectedItem(c);
     if (c === "All Products") {
-      setProducts(AllProducts);
+      setProducts(productsData.allProducts);
       setFilteredCategory([]);
     } else {
-      const filtered = AllProducts.filter((val) => val.category === c);
+      const filtered = productsData.allProducts.filter((val) => val.category === c);
       setProducts(filtered);
       setFilteredCategory([]);
     }
@@ -69,10 +69,9 @@ const ProductFC = ({
         <div className="block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">category</h4>
           <ul className="text-warning text-opacity-50 font-Lora text-2xl space-y-2">
-            {category.map((c, idx) => (
+            {productsData.category.map((c, idx) => (
               <li className="w-max" key={idx}>
                   <Link  passHref 
-                 
                   href={pathname + "?" + createQueryString("category", c)}
                   key={idx}
                   className={`w-full cursor-pointer btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-warning hover:after:bg-opacity-50 ${
@@ -155,15 +154,15 @@ export const CategoryTab = ({ setProducts }) => {
   const handleCategory = (item) => {
     SetselectedItem(item);
     if (item === "All Products") {
-      setProducts(AllProducts);
+      setProducts(productsData.allProducts);
     } else {
-      const filterCategory = AllProducts.filter((val) => val.category === item);
+      const filterCategory = productsData.allProducts.filter((val) => val.category === item);
       setProducts(filterCategory);
     }
   };
   return (
     <div className="flex flex-wrap gap-3 lg:hidden">
-      {category.map((item, idx) => (
+      {productsData.category.map((item, idx) => (
         <div
           className={`h-full lg:hidden rounded-full px-4 py-3 border border-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer ${
             selectedItem === item

@@ -1,5 +1,5 @@
 "use client";
-import { statistics } from "@/libs/data";
+import othersData from "@/libs/others.json"
 import CountUp, { useCountUp } from "react-countup";
 
 const Statistics = () => {
@@ -15,7 +15,7 @@ const Statistics = () => {
         <Image src={"/Statistics.png"} alt="statistics" fill className="object-cover object-center brightness-50"/>
       </div> */}
       <div className="flex flex-wrap justify-evenly items-center gap-10 xl:gap-16 2xl:gap-20">
-        {statistics.map((item, idx) => (
+        {othersData.statistics.map((item, idx) => (
           <div
             className="font-Lora text-center space-y-4 md:mt-10 mb-20 md:mb-0 xl:mt-0"
             key={idx}

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { GrFilter } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
 import Filter from "./Filter";
+import productsData from "@/libs/products.json"
 import ProductFC from "./ProductF&C";
-import { AllProducts } from "@/libs/data";
 
 const ProductSection = ({ products, setProducts }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -16,7 +16,7 @@ const ProductSection = ({ products, setProducts }) => {
   const [filteredCategory, setFilteredCategory] = useState([]);
 
   useEffect(() => {
-    const allProducts = AllProducts.filter(
+    const allProducts = productsData.allProducts.filter(
       (val) =>
         val.productName.toLowerCase().includes(searchValue.toLowerCase()) ||
         val.productType.toLowerCase().includes(searchValue.toLowerCase())
@@ -27,7 +27,7 @@ const ProductSection = ({ products, setProducts }) => {
   const handleSortBy = (value) => {
     // console.log(value);
     SetselectedItem(value);
-    const sortedBy = AllProducts.filter(
+    const sortedBy = productsData.allProducts.filter(
       (val) => val.sortBy.toLowerCase() === value
     );
     // console.log(sortedBy);
