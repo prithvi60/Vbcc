@@ -4,28 +4,6 @@ import { Carousel } from "react-responsive-carousel";
 
 const bannerContext = ["Free Shipping on orders over $4000 US","Free Shipping on orders over","Free Shipping on orders over $4000 US"]
 
-// function renderArrowNext({clickHandler}) {
-//   return (
-//     <div
-//       className="hidden md:block absolute top-0 -right-8 -mt-1 cursor-pointer"
-//       onClick={clickHandler}
-//     >
-//       <MdOutlineKeyboardArrowRight className="text-secondary h-8 w-8 hover:text-info"/>
-//     </div>
-//   );
-// }
-
-// function renderArrowPrev({clickHandler}) {
-//   return (
-//     <div
-//       className="hidden md:block absolute top-0 -left-8 -mt-1 cursor-pointer"
-//       onClick={clickHandler}
-//     >
-//       <MdKeyboardArrowLeft className=" text-secondary h-8 w-8 hover:text-info"/>
-//     </div>
-//   );
-// }
-
 const Banner = () => {
   return (
     <section className="py-2 bg-primary">

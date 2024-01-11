@@ -31,3 +31,5 @@ const Clients = () => {
     </section>
   )
 }
+
+export default Clients;
