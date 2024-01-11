@@ -17,9 +17,9 @@ module.exports = {
       "2xl": "1536px",
     },
     fontFamily: {
-      Lora: ["Lora", "serif"],
-      urbanist: ["Urbanist", "sans-serif"],
-      Nunito: ["Nunito", "sans-serif"],
+      Lora: ['var(--font-lora)'],
+      urbanist: ['var(--font-urbanist)'],
+      Nunito: ['var(--font-nunito)'],
     },
     extend: {
       keyframes: {
