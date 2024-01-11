@@ -1,7 +1,26 @@
 "use client";
+import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 
 const InnerCarousel = () => {
+  const [client, setClient] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setClient(true);
+    }, 1500);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+  if (!client) {
+    return (
+      <div className="w-full mx-auto pb-1 md:pb-3">
+        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
+          Industrial Equipment
+        </h3>
+      </div>
+    );
+  }
   return (
     <div className="w-full mx-auto pb-1 md:pb-3">
       <Carousel
@@ -16,9 +35,15 @@ const InnerCarousel = () => {
         axis={"vertical"}
         stopOnHover={false}
       >
-          <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">Industrial Equipment</h3>
-          <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">Ceramics Products</h3>
-          <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">Research Equipment</h3>
+        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
+          Industrial Equipment
+        </h3>
+        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
+          Ceramics Products
+        </h3>
+        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
+          Research Equipment
+        </h3>
       </Carousel>
     </div>
   );
