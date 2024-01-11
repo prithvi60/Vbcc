@@ -1,5 +1,5 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -132,7 +132,7 @@ const imgSrc = [
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-[65%]">
-          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+          {/* <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <motion.img
                 // fill
@@ -148,6 +148,15 @@ const imgSrc = [
                 custom={direction}
               />
             </AnimatePresence>
+          </div> */}
+          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+              <Image
+                fill
+                src={imgSrc[currentIndex]}
+                alt="Logo"
+                key={imgSrc[currentIndex]}
+                className="absolute w-full h-full object-cover object-center "
+              />
           </div>
         </div>
       </div>
