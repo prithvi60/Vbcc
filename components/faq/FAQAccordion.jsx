@@ -5,7 +5,8 @@ import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-export const FAQAccordion = () => {
+ const FAQAccordion = () => {
+
   const [activeTab, setActiveTab] = useState(0);
 
 
@@ -113,3 +114,4 @@ export const FAQAccordion = () => {
     </section>
   );
 };
+export default FAQAccordion;

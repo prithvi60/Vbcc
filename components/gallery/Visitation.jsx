@@ -11,7 +11,7 @@ const imgSrc = [
   "/gallery04.png",
 ];
 
-export const Visitation = () => {
+ const Visitation = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
@@ -154,3 +154,4 @@ export const Visitation = () => {
     </section>
   );
 };
+export default Visitation 

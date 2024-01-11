@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useMemo } from "react";
 import dynamic from 'next/dynamic'
 const MarqueeComponent = dynamic(() => import("react-fast-marquee"),{ssr:false})
-export const Clients = () => {
+const Clients = () => {
   const memoizedLogos = useMemo(() => logos, []);
   return (
     <section className="py-16 bg-secondary space-y-8" id="client">

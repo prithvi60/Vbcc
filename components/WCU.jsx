@@ -1,7 +1,7 @@
 import { chooseItem } from "@/libs/data";
 import Image from "next/image";
 
-export const WCU = () => {
+const WCU = () => {
   return (
     <section className="px-6 md:px-10 py-16 xl:px-20 xl:py-20 font-urbanist relative">
       <div className="flex flex-col items-center lg:flex-row gap-16 lg:justify-between  lg:items-start">
@@ -79,3 +79,5 @@ export const WCU = () => {
     </section>
   );
 };
+
+export default WCU
