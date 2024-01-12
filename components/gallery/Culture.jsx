@@ -1,5 +1,5 @@
 "use client";
-// import { motion, AnimatePresence } from "framer-motion";
+// import { m, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";

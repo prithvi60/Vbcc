@@ -1,6 +1,6 @@
 "use client";
 import othersData from "@/libs/others.json"
-import { motion, AnimatePresence } from "framer-motion";
+// import { m, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
 import { InView } from "react-intersection-observer";

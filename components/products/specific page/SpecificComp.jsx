@@ -1,13 +1,15 @@
 "use client";
 import * as React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, LazyMotion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-
+// Make sure to return the specific export containing the feature bundle.
+const loadFeatures = () =>
+  import("../../../libs/framer_feature").then((res) => res.default);
 export const CustomVariant = ({
   variant,
   handleClick,
@@ -137,7 +139,6 @@ export const CustomAccordion = ({ specification, specificId }) => {
   );
 };
 
-
 export const CustomCarousel = ({ gallery }) => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -197,13 +198,13 @@ export const CustomCarousel = ({ gallery }) => {
           </AnimatePresence>
         </div> */}
         <div className="relative w-full h-[490px] overflow-hidden">
-            <Image
-              fill
-              key={gallery[index].img}
-              src={gallery[index].img}
-              alt="..."
-              className="w-full h-full object-cover object-center rounded-md"
-            />
+          <Image
+            fill
+            key={gallery[index].img}
+            src={gallery[index].img}
+            alt="..."
+            className="w-full h-full object-cover object-center rounded-md"
+          />
         </div>
         <div className="flex items-center gap-5 w-full h-auto">
           {gallery.map((item, idx) => (
@@ -243,17 +244,19 @@ export const CustomCarousel = ({ gallery }) => {
             </div>
           </div>
           <div className="text-xl">
-            <motion.span
-              key={index}
-              variants={slideVariants}
-              initial="slide"
-              animate="visible"
-              exit="exit"
-              className="w-max h-auto"
-            >
-              {gallery[index].id}&nbsp;
-            </motion.span>
-            / {gallery.length}
+            <LazyMotion features={loadFeatures}>
+              <m.span
+                key={index}
+                variants={slideVariants}
+                initial="slide"
+                animate="visible"
+                exit="exit"
+                className="w-max h-auto"
+              >
+                {gallery[index].id}&nbsp;
+              </m.span>
+              / {gallery.length}
+            </LazyMotion>
           </div>
           {/* Next button */}
           <div
