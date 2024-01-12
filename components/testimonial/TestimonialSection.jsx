@@ -1,9 +1,12 @@
 "use client";
 import othersData from "@/libs/others.json";
 import Image from "next/image";
-import { Suspense, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {  useState } from "react";
+import { m, AnimatePresence, LazyMotion } from "framer-motion";
 import dynamic from "next/dynamic";
+// Make sure to return the specific export containing the feature bundle.
+const loadFeatures = () =>
+  import("../../libs/framer_feature").then((res) => res.default);
 const FsLightbox = dynamic(() => import("fslightbox-react"), { ssr: false });
 export const TestimonialSection = () => {
   const [selectedItem, SetselectedItem] = useState(0);
@@ -95,28 +98,29 @@ export const TestimonialSection = () => {
       </div>
       <AnimatePresence initial={false}>
         <div className="lg:w-[35%] w-full h-full z-30 flex items-center justify-start lg:justify-end">
-          <motion.div
-            className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
-            onClick={() => openLightboxOnSlide(selectedItem)}
-            variants={slideVariants}
-            initial="slide"
-            animate="visible"
-            exit="exit"
-            key={selectedItem}
-          >
-            <Image
-              fill
-              src={othersData.testimonials[selectedItem].pdf}
-              placeholder="blur"
-              blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
-              sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
-              alt="Logo"
-              className="w-full h-full object-contain object-center rounded-xl"
-            />
-          </motion.div>
+          <LazyMotion features={loadFeatures}>
+            <m.div
+              className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
+              onClick={() => openLightboxOnSlide(selectedItem)}
+              variants={slideVariants}
+              initial="slide"
+              animate="visible"
+              exit="exit"
+              key={selectedItem}
+            >
+              <Image
+                fill
+                src={othersData.testimonials[selectedItem].pdf}
+                placeholder="blur"
+                blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
+                sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
+                alt="Logo"
+                className="w-full h-full object-contain object-center rounded-xl"
+              />
+            </m.div>
+          </LazyMotion>
         </div>
       </AnimatePresence>
-      <Suspense fallback={<div>Loading...</div>}>
         <FsLightbox
           exitFullscreenOnClose={true}
           toggler={lightboxController.toggler}
@@ -124,7 +128,6 @@ export const TestimonialSection = () => {
           type="image"
           slide={lightboxController.slide}
         />
-      </Suspense>
     </section>
   );
 };
