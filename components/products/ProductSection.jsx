@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { GrFilter } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
 import Filter from "./Filter";
+import productsData from "@/libs/products.json"
 import ProductFC from "./ProductF&C";
 
 const ProductSection = ({ products, setProducts }) => {
@@ -13,37 +14,27 @@ const ProductSection = ({ products, setProducts }) => {
   const [selectedItem, SetselectedItem] = useState("Relevance");
   // console.log(selectedItem);
   const [filteredCategory, setFilteredCategory] = useState([]);
-  const [data,setData]=useState(null)
-
-  useEffect(()=>{
-    import('@/libs/products.json').then(data => {
-      setData(JSON.parse(JSON.stringify(data)));
-    });
-  },[])
 
   useEffect(() => {
-    console.log("data",data)
-    const allProducts = data?.allProducts.filter(
+    const allProducts = productsData.allProducts.filter(
       (val) =>
         val.productName.toLowerCase().includes(searchValue.toLowerCase()) ||
         val.productType.toLowerCase().includes(searchValue.toLowerCase())
     );
-    data && setProducts(allProducts);
-  }, [data, searchValue, setProducts]);
+    setProducts(allProducts);
+  }, [searchValue, setProducts]);
 
   const handleSortBy = (value) => {
     // console.log(value);
     SetselectedItem(value);
-    const sortedBy = data?.allProducts.filter(
+    const sortedBy = productsData.allProducts.filter(
       (val) => val.sortBy.toLowerCase() === value
     );
     // console.log(sortedBy);
-    data&& setProducts(sortedBy);
+    setProducts(sortedBy);
     setOpen(!open);
   };
-  if(!data){
-    return <div>Loading...</div>
-  }
+
   return (
     <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
       {/* Sort Section */}
