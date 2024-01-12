@@ -1,16 +1,24 @@
 "use client";
 
-import productsData from "@/libs/products.json"
 import { useSearchParams } from "next/navigation";
 import { CategoryTab } from "./ProductF&C";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const ProductHero = ({ setProducts }) => {
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
+  const [data,setData]=useState(null)
   const product =
-  productsData.productCategory.find((val) => val.title === search) || productsData.productCategory[0];
-
+  data?.productCategory.find((val) => val.title === search) || data?.productCategory[0];
+  useEffect(()=>{
+    import('@/libs/products.json').then(data => {
+      setData(JSON.parse(JSON.stringify(data)));
+    });
+  },[])
+  if(!data){
+    return <div>Loading...</div>
+  }
   return (
     <section className="h-full w-full flex flex-wrap-reverse lg:flex-nowrap bg-success">
       <div className="w-full lg:w-1/2 px-5 py-10 lg:px-[60px] lg:py-[60px]">
