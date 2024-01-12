@@ -158,7 +158,7 @@
     ],
     "footerLinks1": [
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/products",
+            "href": "/products",
             "title": "Products"
         },
         {
@@ -188,7 +188,7 @@
             "title": "Blog/Articles"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/contact",
+            "href": "/contact",
             "title": "Contact Us"
         },
         {

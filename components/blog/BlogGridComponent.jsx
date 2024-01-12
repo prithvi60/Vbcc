@@ -42,7 +42,7 @@ export const BlogGridComponent = ({ list }) => {
         HtextColor={"text-white"}
         bColor={"border-warning"}
         title={"Read More"}
-        href={"https://ik.imagekit.io/webibee/VBCC/blog/1"}
+        href={"/blog/1"}
       />
     </div>
   );

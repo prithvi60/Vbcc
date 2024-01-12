@@ -61,7 +61,7 @@ export const TestimonialSection = () => {
   };
 
   return (
-    <section className="w-full h-screen md:h-[90vh] px-5 py-10 md:px-10 lg:py-20 lg:px-[60px] bg-[url('/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between items-start relative">
+    <section className="w-full h-screen md:h-[90vh] px-5 py-10 md:px-10 lg:py-20 lg:px-[60px] bg-[url('https://ik.imagekit.io/webibee/VBCC/Testimonials-BG.png')] bg-cover bg-center flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between items-start relative">
       <div className="absolute top-0 left-0 h-screen lg:h-[90vh] w-full z-20 backdrop-opacity-5 backdrop-invert bg-black/40 opacity-80"></div>
       <div className="w-full lg:w-1/2 xl:w-[65%] space-y-9 z-30">
         <h2 className="font-Lora text-2xl lg:text-4xl xl:text-6xl w-full">

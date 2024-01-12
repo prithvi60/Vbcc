@@ -101,7 +101,7 @@ const HowWeDo = () => {
               <p className="lg:text-danger">{item.desc}</p>
                 <Link  passHref 
                  
-                href={"https://ik.imagekit.io/webibee/VBCC/contact"}
+                href={"/contact"}
                 className={`hidden lg:block px-6 py-4 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
@@ -119,7 +119,7 @@ const HowWeDo = () => {
               </Link>
                 <Link  passHref 
                  
-                href={"https://ik.imagekit.io/webibee/VBCC/"}
+                href={"/"}
                 className={`hidden md:flex lg:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
@@ -137,7 +137,7 @@ const HowWeDo = () => {
               </Link>
                 <Link  passHref 
                  
-                href={"https://ik.imagekit.io/webibee/VBCC/"}
+                href={"/"}
                 className={`block md:hidden px-6 py-4 rounded-full border group border-white bg-transparent hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>

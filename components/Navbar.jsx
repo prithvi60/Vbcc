@@ -41,7 +41,7 @@ const NavBar = () => {
               HtextColor={"text-white"}
               bColor={"border-warning"}
               title={"contact us"}
-              href={"https://ik.imagekit.io/webibee/VBCC/contact"}
+              href={"/contact"}
             />
           </div>
           <div onClick={() => setIsOpen(!isOpen)}>

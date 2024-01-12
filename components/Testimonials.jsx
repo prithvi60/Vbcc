@@ -100,7 +100,7 @@ const Testimonials = () => {
             HtextColor={"text-warning"}
             bColor={"border-white"}
             title={"View All"}
-            href={"https://ik.imagekit.io/webibee/VBCC/testimonials"}
+            href={"/testimonials"}
           />
         </div>
       </div>

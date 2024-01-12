@@ -14,7 +14,7 @@ const Explore = () => {
         <div className="w-max mx-auto">
             <Link  passHref 
                  
-            href="https://ik.imagekit.io/webibee/VBCC/products"
+            href="/products"
             className="text-2xl rounded-lg after:h-1 after:w-full after:bg-info after:block after:transition-all hover:after:h-1 md:after:w-0 md:hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-white group mx-auto"
           >
             <h4 className="text-xl md:text-4xl flex justify-center items-center gap-4">
