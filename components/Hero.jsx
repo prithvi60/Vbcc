@@ -110,7 +110,7 @@ const Hero = () => {
             HtextColor={"text-warning"}
             bColor={"border-white"}
             title={"Our Products"}
-            href={"https://ik.imagekit.io/webibee/VBCC/products"}
+            href={"/products"}
             background={"backdrop-blur-md bg-black/30"}
           />
           <Btn2
@@ -119,7 +119,7 @@ const Hero = () => {
             HtextColor={"text-white"}
             bColor={"border-white"}
             title={"Contact Us"}
-            href={"https://ik.imagekit.io/webibee/VBCC/contact"}
+            href={"/contact"}
             background={"backdrop-blur-md bg-black/30"}
           />
         </span>

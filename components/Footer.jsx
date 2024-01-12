@@ -199,14 +199,14 @@ const Footer = () => {
           <div className="hidden md:flex items-center gap-3">
             <Link
               passHref
-              href={"https://ik.imagekit.io/webibee/VBCC/"}
+              href={"/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Privacy Policy
             </Link>
             <Link
               passHref
-              href={"https://ik.imagekit.io/webibee/VBCC/"}
+              href={"/"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Terms of Service
