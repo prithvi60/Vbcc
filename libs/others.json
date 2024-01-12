@@ -162,29 +162,29 @@
             "title": "Products"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/testimonials",
+            "href": "/testimonials",
             "title": "Testimonials"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/about",
+            "href": "/about",
             "title": "About Us"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/blog",
+            "href": "/blog",
             "title": "Blog/Articles"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/faq",
+            "href": "/faq",
             "title": "FAQs"
         }
     ],
     "footerLinks2": [
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/about",
+            "href": "/about",
             "title": "Our Story"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/blog",
+            "href": "/blog",
             "title": "Blog/Articles"
         },
         {
@@ -192,7 +192,7 @@
             "title": "Contact Us"
         },
         {
-            "href": "https://ik.imagekit.io/webibee/VBCC/gallery",
+            "href": "/gallery",
             "title": "Gallery"
         }
     ],

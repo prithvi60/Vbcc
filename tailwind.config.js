@@ -22,6 +22,9 @@ module.exports = {
       Nunito: ['var(--font-nunito)'],
     },
     extend: {
+      backgroundImage: {
+        'statistics': "url('https://ik.imagekit.io/webibee/VBCC/Statistics.png')",
+      },
       keyframes: {
         marquee_h: {
           from: { transform: "translateX(0%)" },

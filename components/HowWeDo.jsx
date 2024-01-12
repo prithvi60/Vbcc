@@ -5,13 +5,16 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
 import { ProgressBar } from "./ProgressBar";
-import Image from "next/image";
+// import Image from "next/image";
+import { m, AnimatePresence, LazyMotion } from "framer-motion";
 const ImgSlider =[
   {img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png",title:"Vbcc"},
   {img: "https://ik.imagekit.io/webibee/VBCC/HWD1.png",title:"Strategize"},
   {img: "https://ik.imagekit.io/webibee/VBCC/HWD2.png",title:"Design"},
   {img: "https://ik.imagekit.io/webibee/VBCC/HWD3.png",title:"Engineering"},
 ]
+
+const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.default);
 
 const HowWeDo = () => {
   const [slide, setSlide] = useState(0);
@@ -33,10 +36,11 @@ const HowWeDo = () => {
         <div className="sticky top-4 lg:top-20 lg:w-1/2 xl:w-2/5 h-full w-full">
           <div className="relative rounded-lg lg:rounded-none py-6 px-4 bg-primary flex flex-col lg:flex-row lg:items-center gap-4">
           <ProgressBar slide={slide}/>
-            {/* <AnimatePresence initial={false}> */}
+            <AnimatePresence initial={false}>
+            <LazyMotion features={loadFeatures}>
           <div className="h-full w-full overflow-hidden">
-            {/* <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
-              <motion.img
+            <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
+              <m.img
                 // fill
                 loading="lazy"
                 variants={slideVariants}
@@ -50,8 +54,8 @@ const HowWeDo = () => {
                 alt="Logo"
                 className="absolute w-full h-full object-cover object-center"
               />
-            </div> */}
-            <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
+            </div>
+            {/* <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
               <Image
                 fill
                 key={slide}
@@ -59,12 +63,13 @@ const HowWeDo = () => {
                 alt="Logo"
                 className="absolute w-full h-full object-cover object-center"
               />
-            </div>
+            </div> */}
             <h3 className="text-[32px] absolute top-[48%] left-1/4 md:left-[40%] font-Lora">
                {ImgSlider[slide].title}
             </h3>
           </div>
-            {/* </AnimatePresence> */}
+          </LazyMotion>
+            </AnimatePresence>
             </div>
         </div>
         <div className="w-full lg:w-1/2 xl:w-3/5 space-y-0.5">

@@ -1,5 +1,5 @@
 "use client";
-// import { m, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence, LazyMotion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -10,6 +10,8 @@ const imgSrc = [
   "https://ik.imagekit.io/webibee/VBCC/gallery03.png",
   "https://ik.imagekit.io/webibee/VBCC/gallery04.png",
 ];
+
+const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.default);
 
  const Visitation = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -132,24 +134,26 @@ const imgSrc = [
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-[65%]">
-          {/* <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+        <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
-              <motion.img
-                // fill
-                src={imgSrc[currentIndex]}
-                alt="Logo"
-                key={imgSrc[currentIndex]}
-                className="absolute w-full h-full object-cover object-center "
-                variants={slideVariants}
-                initial="slide"
-                animate="visible"
-                transition={{ duration: 1 }}
-                exit="exit"
-                custom={direction}
-              />
+              <LazyMotion features={loadFeatures}>
+                <m.img
+                  // fill
+                  src={imgSrc[currentIndex]}
+                  alt="Logo"
+                  key={imgSrc[currentIndex]}
+                  className="absolute w-full h-full object-cover object-center "
+                  variants={slideVariants}
+                  initial="slide"
+                  animate="visible"
+                  transition={{ duration: 1 }}
+                  exit="exit"
+                  custom={direction}
+                />
+              </LazyMotion>
             </AnimatePresence>
-          </div> */}
-          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+          </div>
+          {/* <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
               <Image
                 fill
                 src={imgSrc[currentIndex]}
@@ -157,7 +161,7 @@ const imgSrc = [
                 key={imgSrc[currentIndex]}
                 className="absolute w-full h-full object-cover object-center "
               />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

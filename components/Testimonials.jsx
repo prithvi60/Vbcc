@@ -63,7 +63,6 @@ const Testimonials = () => {
         showStatus={false}
         showIndicators={false}
         autoPlay
-        swipeable
         interval={3000}
         infiniteLoop
         stopOnHover={false}

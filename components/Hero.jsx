@@ -27,7 +27,6 @@ const Hero = () => {
           showIndicators={false}
           className="!z-0"
           autoPlay={true}
-          swipeable
           interval={3000}
           infiniteLoop
           axis={"vertical"}
