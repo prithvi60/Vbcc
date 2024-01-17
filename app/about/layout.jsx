@@ -1,4 +1,3 @@
-import "../globals.css";
 export const metadata = {
   title: "VBCC About",
   description: "Vbbc About Us Pages",

@@ -2,7 +2,7 @@ import React from 'react'
 import { ProductCards } from './ProductCards'
 import { Btn2 } from '@/components/Btn'
 
-export const RelatedProducts = ({product}) => {
+ const RelatedProducts = ({product}) => {
   const value = product.productType
   const name = product.productName
 
@@ -24,3 +24,4 @@ export const RelatedProducts = ({product}) => {
     </section>
   )
 }
+export default RelatedProducts

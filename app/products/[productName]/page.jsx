@@ -1,17 +1,20 @@
-
-import { Overview } from "@/components/products/specific page/Overview";
-import { ProductPage } from "@/components/products/specific page/ProductPage";
-import { RelatedProducts } from "@/components/products/specific page/RelatedProducts";
 import productsData from "@/libs/products.json";
+import dynamic from 'next/dynamic'
+
+const OverviewComponent = dynamic(() => import("@/components/products/specific page/Overview"))
+const ProductPageComponent = dynamic(() => import("@/components/products/specific page/ProductPage"))
+const RelatedProductsComponent = dynamic(() => import("@/components/products/specific page/RelatedProducts"))
+
+
 
 export default function Home({params}) {
   const{productName} = params
   const product = productsData.allProducts.find(val => val.productName.replace(/\s/g, '') === productName)
   return (
     <main>
-      <ProductPage product={product}/>
-      <Overview product={product}/>
-      <RelatedProducts product={product}/>
+      <ProductPageComponent product={product}/>
+      <OverviewComponent product={product}/>
+      <RelatedProductsComponent product={product}/>
     </main>
   );
 }

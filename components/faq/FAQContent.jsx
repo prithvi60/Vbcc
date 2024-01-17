@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 const ImgSrc = "https://ik.imagekit.io/webibee/VBCC/faq.png";
 const FAQAccordionComponent = dynamic(() => import("./FAQAccordion"))
 
-export const FAQContent = () => {
+ const FAQContent = () => {
   return (
     <section className="h-full w-full px-5 py-[60px] md:px-10 lg:px-[60px] bg-primary ">
       <div className="w-full lg:w-3/5 h-auto mx-auto space-y-8">
@@ -30,3 +30,4 @@ export const FAQContent = () => {
   );
 };
 
+export default FAQContent
