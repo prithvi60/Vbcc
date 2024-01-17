@@ -2,7 +2,7 @@ import React from 'react'
 import { CustomCarousel } from './SpecificComp'
 import { ProductVariant } from './ProductVariant'
 
-export const ProductPage = ({product}) => {
+ const ProductPage = ({product}) => {
   // console.log(product);
   return (
     <section className='px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist text-warning xl:px-20'>
@@ -22,3 +22,4 @@ export const ProductPage = ({product}) => {
     </section>
   )
 }
+export default ProductPage

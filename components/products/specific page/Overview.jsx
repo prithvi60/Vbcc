@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export const Overview = ({product}) => {
+ const Overview = ({product}) => {
   return (
     <section className='px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 xl:px-20 font-urbanist text-white bg-primary'>
         <h4 className='font-Lora text-[40px]'>
@@ -22,3 +22,4 @@ export const Overview = ({product}) => {
     </section>
   )
 }
+export default Overview
