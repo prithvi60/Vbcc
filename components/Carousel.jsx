@@ -5,12 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 const InnerCarousel = () => {
   const [client, setClient] = useState(false);
   useEffect(() => {
-    const timer = setTimeout(() => {
       setClient(true);
-    }, 1);
-    return () => {
-      clearTimeout(timer);
-    };
   }, []);
   if (!client) {
     return (
@@ -28,7 +23,7 @@ const InnerCarousel = () => {
         showThumbs={false}
         showStatus={false}
         showIndicators={false}
-        autoPlay={true}
+        autoPlay={client}
         swipeable={false}
         interval={3000}
         infiniteLoop
