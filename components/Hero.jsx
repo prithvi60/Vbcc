@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     const timer= setTimeout(() => {
       setClient(true);
-    }, 1500);
+    }, 1);
     return ()=>{
       clearTimeout(timer)
     }
