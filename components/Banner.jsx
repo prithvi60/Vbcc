@@ -35,7 +35,6 @@ const Banner = () => {
         showStatus={false}
         showIndicators={false}
         autoPlay={true}
-        swipeable={true}
         interval={3000}
         infiniteLoop
         stopOnHover={false}
