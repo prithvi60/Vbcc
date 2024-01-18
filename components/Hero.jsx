@@ -9,12 +9,7 @@ import { useState, useEffect } from "react";
 const Hero = () => {
   const [client, setClient] = useState(false);
   useEffect(() => {
-    const timer= setTimeout(() => {
       setClient(true);
-    }, 1);
-    return ()=>{
-      clearTimeout(timer)
-    }
   }, []);
 
   return (
@@ -26,7 +21,8 @@ const Hero = () => {
           showStatus={false}
           showIndicators={false}
           className="!z-0"
-          autoPlay={true}
+          autoPlay={client}
+          swipeable
           interval={3000}
           infiniteLoop
           axis={"vertical"}
