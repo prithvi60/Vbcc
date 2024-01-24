@@ -5,7 +5,9 @@ import { Carousel } from "react-responsive-carousel";
 const InnerCarousel = () => {
   const [client, setClient] = useState(false);
   useEffect(() => {
+    setTimeout(() => {
       setClient(true);
+    }, 200);
   }, []);
   if (!client) {
     return (
