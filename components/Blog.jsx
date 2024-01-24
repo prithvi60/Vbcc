@@ -1,11 +1,11 @@
 "use client";
-import blogData from "@/libs/blog.json"
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
 import { useRouter } from "next/navigation";
-const Blog = () => {
+const Blog = ({blogData}) => {
   const [activeTab, setActiveTab] = useState(0);
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(4);

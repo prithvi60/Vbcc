@@ -1,17 +1,16 @@
 "use client";
-import productsData from "@/libs/products.json"
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Btn2 } from "./Btn";
 import { useRouter } from 'next/navigation'
 
-const Products = () => {
+const Products = ({productsData}) => {
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(8);
   const [activeTab, setActiveTab] = useState(0);
   const router = useRouter()
-  const memoizedProducts = useMemo(() => productsData.ourProducts, []);
+  const memoizedProducts = productsData;
 
   useEffect(() => {
     setWidth(window.innerWidth);
