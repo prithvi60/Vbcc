@@ -1,11 +1,9 @@
 "use client";
 import othersData from "@/libs/others.json";
-// import { m, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import React, { useState ,useEffect} from "react";
+import React, { useState} from "react";
 import { InView } from "react-intersection-observer";
 import { ProgressBar } from "./ProgressBar";
-// import Image from "next/image";
 import { m, AnimatePresence, LazyMotion } from "framer-motion";
 const ImgSlider = [
   { img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png", title: "Vbcc" },
@@ -19,8 +17,6 @@ const loadFeatures = () =>
 
 const HowWeDo = () => {
   const [slide, setSlide] = useState(0);
-  const [width, setWidth] = useState(null);
-
   
   const slideVariants = {
     entry: {
@@ -33,10 +29,6 @@ const HowWeDo = () => {
       y: -70,
     },
   };
-  useEffect(() => {
-    setWidth(window.innerWidth)
-  }, [])
-  // console.log(width);
   return (
     <section className="py-16 px-6 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
@@ -62,15 +54,7 @@ const HowWeDo = () => {
                       className="absolute w-full h-full object-cover object-center"
                     />
                   </div>
-                  {/* <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden" >
-              <Image
-                fill
-                key={slide}
-                src={ImgSlider[slide].img}
-                alt="Logo"
-                className="absolute w-full h-full object-cover object-center"
-              />
-            </div> */}
+      
                   <h3 className="text-[32px] absolute top-[48%] left-1/4 md:left-[40%] font-Lora">
                     {ImgSlider[slide].title}
                   </h3>
@@ -89,7 +73,7 @@ const HowWeDo = () => {
             <InView
               as="div"
               threshold={1}
-              rootMargin={width>= 400?"50px":"0px"}
+              rootMargin={"50px"}
               onChange={(inView, entry) => {
                 // console.log("Inview:", inView, item.title, entry);
                 if( item.title === "Working Strategy" && slide === 1){
@@ -108,7 +92,7 @@ const HowWeDo = () => {
               
               }}
               // py-[70px] px-5 lg:py-32
-              className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${item.title === "Engineering"? "pb-[800px] ":""}`}
+              className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${item.title === "Engineering"? "md: pb-[800px] ":""}`}
               key={idx}
             >
 
