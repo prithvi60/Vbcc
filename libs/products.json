@@ -149,158 +149,311 @@
                 }
             ],
             "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
-            "productName": "Microwave Box",
+            "productName": "Microwave Furnace",
             "productType": "Microwave Heating Systems",
-            "description": "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
+            "description": "Seamlessly blending conventional and microwave heating technologies, the Hybrid Model offers adaptive solutions for diverse thermal processing needs.",
             "variant": [
-                "No variant",
-                "variant-1",
-                "variant-2"
+                "Hybrid",
+                "Super",
+                "Premium",
+                "Big"
             ],
-            "price": "₹7.2L",
+            "price": "₹ Enquire for Estimate",
             "gallery": [
                 {
                     "id": "1",
-                    "img": "https://ik.imagekit.io/webibee/VBCC/sample 1.png"
+                    "img": "/img 1.jpg"
                 },
                 {
                     "id": "2",
-                    "img": "https://ik.imagekit.io/webibee/VBCC/sample 2.png"
+                    "img": "/img 2.jpg"
                 },
                 {
                     "id": "3",
-                    "img": "https://ik.imagekit.io/webibee/VBCC/sample 3.png"
+                    "img": "/img 3.jpg"
                 },
                 {
                     "id": "4",
-                    "img": "https://ik.imagekit.io/webibee/VBCC/sample 4.png"
+                    "img": "/img 4.jpg"
                 }
             ],
             "specification": [
                 {
-                    "variantType": "No variant",
-                    "dimension": [
+                    "variantType": "Hybrid",
+                    "title": [
+                        "General",
+                        "Temperature",
+                        "Size"
+                    ],
+                    "General": [
                         {
-                            "dimensionName": "Available Space",
-                            "dimensionValue": "150 x 150 x 200 mm"
+                            "name": "Model",
+                            "value": "VBCC_MW_67"
                         },
                         {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "5°C/Min"
+                            "name": "Electrical Requirements",
+                            "value": "Three phase / AC /230V (32A MCCB with neutral to be arranged)"
                         },
                         {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "5°C/Min"
-                        },
-                        {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "5°C/Min"
+                            "name": "Power",
+                            "value": "4kW"
                         }
                     ],
-                    "quantity": [
+                    "Temperature": [
                         {
-                            "quantityName": "Available Space",
-                            "quantityValue": "150 x 150 x 200 mm"
+                            "name": "Min. Working Temperature",
+                            "value": "Ambient"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "5°C/Min"
+                            "name": "Max. Working Temperature Conventional",
+                            "value": "1800°C (3272°F)"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "5°C/Min"
+                            "name": "Max. Working Temperature Microwave",
+                            "value": "1600°C (2912°F)"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "5°C/Min"
+                            "name": "Insulation",
+                            "value": "Zircar(USA)"
+                        },
+                        {
+                            "name": "Heating Element",
+                            "value": "I Squared R (MoSi2)"
+                        },
+                        {
+                            "name": "Rate of Heating",
+                            "value": "5°C-25°C/Min"
+                        },
+                        {
+                            "name": "Temperature sensor",
+                            "value": "RAYTEK / IMPAC / AST"
+                        },
+                        {
+                            "name": "Temperature Controller",
+                            "value": "Eurotherm 2416 Controller"
                         }
+                    ],
+                    "Size": [
+                        {
+                            "name": "Shell Size",
+                            "value": "700(W) x 1350(H) x 800 (D) mm"
+                        },
+                        {
+                            "name": "Useful Hot zone",
+                            "value": "120mmx120mmx120mm (hxwxl) (Customisable)"
+                        }
+                    ],
+                    "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+                    "overViewDescription": [
+                        "VBCC's Hybrid Microwave Furnace stands as a pioneering solution, seamlessly merging conventional and microwave heating technologies to offer unmatched versatility in thermal processing. This innovative furnace is designed for applications that demand adaptive and dynamic heating methods, providing users with the flexibility to choose between conventional and microwave heating based on specific process requirements.",
+                        "The Hybrid model inherits the precision and reliability of microwave heating while introducing the adaptability of conventional methods. This unique combination empowers users to tailor the heating approach to different stages or characteristics of their processes, optimizing overall efficiency.",
+                        "Engineered for diverse thermal processing needs, the Hybrid Microwave Furnace is a sophisticated solution for researchers and industries requiring the best of both heating technologies. With a robust construction and advanced features, it exemplifies VBCC's commitment to providing cutting-edge solutions that adapt to the evolving demands of thermal processing applications. The Hybrid Microwave Furnace signifies a new era of flexibility, efficiency, and precision in thermal operations, where innovation meets adaptability for optimal performance."
                     ]
                 },
                 {
-                    "variantType": "variant1",
-                    "dimension": [
+                    "variantType": "Super",
+                    "title": [
+                        "General",
+                        "Temperature",
+                        "Size"
+                    ],
+                    "General": [
                         {
-                            "dimensionName": "Available Space",
-                            "dimensionValue": "180 x 180 x 200 mm"
+                            "name": "Model",
+                            "value": "VBCC_MW_65"
                         },
                         {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "8°C/Min"
+                            "name": "Electrical Requirements",
+                            "value": "Three phase / AC /230V (32A MCCB with neutral to be arranged)"
                         },
                         {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "8°C/Min"
-                        },
-                        {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "8°C/Min"
+                            "name": "Power",
+                            "value": "4kW"
                         }
                     ],
-                    "quantity": [
+                    "Temperature": [
                         {
-                            "quantityName": "Available Space",
-                            "quantityValue": "180 x 180 x 200 mm"
+                            "name": "Min. Working Temperature",
+                            "value": "Ambient"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "8°C/Min"
+                            "name": "Max. Working Temperature Conventional",
+                            "value": "1600°C (2912°F)"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "8°C/Min"
+                            "name": "Heating System",
+                            "value": "Magnetron (2.45GHz)"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "8°C/Min"
+                            "name": "Rate of Heating",
+                            "value": "5°C-25°C/Min"
+                        },
+                        {
+                            "name": "Temperature sensor",
+                            "value": "RAYTEK / IMPAC / AST"
+                        },
+                        {
+                            "name": "Temperature Controller",
+                            "value": "Eurotherm 2416 Controller"
                         }
+                    ],
+                    "Size": [
+                        {
+                            "name": "Shell Size",
+                            "value": "700(W) x 1350(H) x 800 (D) mm"
+                        },
+                        {
+                            "name": "Useful Hot zone",
+                            "value": "120mmx120mmx120mm (hxwxl) (Customisable)"
+                        }
+                    ],
+                    "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+                    "overViewDescription": [
+                        "VBCC's Microwave Furnace Super Model serves as the foundational cornerstone in the lineup of advanced thermal processing solutions. As the basic starting model, it lays the groundwork for efficient and reliable large-scale thermal operations. Built upon the efficacy of microwave heating, the Super Model introduces users to a world of versatile possibilities for extensive applications.",
+                        "Designed with a substantial working volume, the Super Model is adept at addressing tasks requiring higher capacities, providing users with a reliable entry point into the realm of thermal processing. While serving as the foundational model, it inherits the innovative features and robust construction synonymous with VBCC's commitment to cutting-edge technology.",
+                        "The Microwave Furnace Super Model, though the starting point, is far from basic in performance. It signifies VBCC's dedication to offering an accessible yet powerful solution, setting the stage for advancements in thermal processing technology. With its foundational capabilities, the Super Model is an invitation to explore the potential of efficient, large-scale thermal operations within a versatile and reliable framework."
                     ]
                 },
                 {
-                    "variantType": "variant2",
-                    "dimension": [
+                    "variantType": "Premium",
+                    "title": [
+                        "General",
+                        "Temperature",
+                        "Size"
+                    ],
+                    "General": [
                         {
-                            "dimensionName": "Available Space",
-                            "dimensionValue": "200 x 200 x 200 mm"
+                            "name": "Model",
+                            "value": "VBCC_MW_66"
                         },
                         {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "10°C/Min"
+                            "name": "Electrical Requirements",
+                            "value": "Three phase / AC /230V (32A MCCB with neutral to be arranged)"
                         },
                         {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "10°C/Min"
-                        },
-                        {
-                            "dimensionName": "Rate of Heating",
-                            "dimensionValue": "10°C/Min"
+                            "name": "Power",
+                            "value": "4kW"
                         }
                     ],
-                    "quantity": [
+                    "Temperature": [
                         {
-                            "quantityName": "Available Space",
-                            "quantityValue": "200 x 200 x 200 mm"
+                            "name": "Min. Working Temperature",
+                            "value": "Ambient"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "6°C/Min"
+                            "name": "Max. Working Temperature Microwave",
+                            "value": "1600°C (2912°F)"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "6°C/Min"
+                            "name": "Insulation",
+                            "value": "Zircar(USA)"
                         },
                         {
-                            "quantityName": "Rate of Heating",
-                            "quantityValue": "6°C/Min"
+                            "name": "Heating System",
+                            "value": "Magnetron (2.45GHz)"
+                        },
+                        {
+                            "name": "Rate of Heating",
+                            "value": "5°C-25°C/Min"
+                        },
+                        {
+                            "name": "Temperature sensor",
+                            "value": "RAYTEK / IMPAC / AST"
+                        },
+                        {
+                            "name": "Temperature Controller",
+                            "value": "Eurotherm 2416 Controller"
                         }
+                    ],
+                    "Size": [
+                        {
+                            "name": "Shell Size",
+                            "value": "700(W) x 1350(H) x 800 (D) mm"
+                        },
+                        {
+                            "name": "Useful Hot zone",
+                            "value": "120mmx120mmx120mm (hxwxl) (Customisable)"
+                        }
+                    ],
+                    "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+                    "overViewDescription": [
+                        "VBCC's Microwave Furnace Premium Model epitomizes the next tier in advanced thermal processing, surpassing the foundational Super Model with added insulation technology for superior efficiency. Designed with a focus on precision, this model introduces cutting-edge insulation features, setting it as a tier higher for applications demanding uncompromised thermal performance.",
+                        "The Premium Model seamlessly integrates microwave energy with state-of-the-art insulation, ensuring superior and uniform heating across diverse high-temperature processes. Its advanced insulation technology not only enhances efficiency but also provides a level of thermal control that goes beyond the capabilities of the Super Model.",
+                        "Engineered for reliability and precision, the Microwave Furnace Premium Model inherits the innovative features of its predecessor while introducing a higher standard of thermal efficiency. With a robust construction and the added advantage of advanced insulation, it caters to applications that demand precision and reliability in every thermal processing task. VBCC's commitment to technological excellence is evident in the Premium Model, making it an ideal choice for those seeking a tier higher in performance and thermal control."
+                    ]
+                },
+                {
+                    "variantType": "Big",
+                    "title": [
+                        "General",
+                        "Temperature",
+                        "Size"
+                    ],
+                    "General": [
+                        {
+                            "name": "Model",
+                            "value": "VBCC_MW_67"
+                        },
+                        {
+                            "name": "Electrical Requirements",
+                            "value": "Three phase / AC /230V (32A MCCB with neutral to be arranged)"
+                        },
+                        {
+                            "name": "Power",
+                            "value": "4kW"
+                        }
+                    ],
+                    "Temperature": [
+                        {
+                            "name": "Min. Working Temperature",
+                            "value": "Ambient"
+                        },
+                        {
+                            "name": "Max. Working Temperature Conventional",
+                            "value": "Customizable"
+                        },
+                        {
+                            "name": "Max. Working Temperature Microwave",
+                            "value": "Customizable"
+                        },
+                        {
+                            "name": "Insulation",
+                            "value": "Zircar(USA)"
+                        },
+                        {
+                            "name": "Heating System",
+                            "value": "Magnetron (2.45GHz)"
+                        },
+                        {
+                            "name": "Rate of Heating",
+                            "value": "5°C-25°C/Min"
+                        },
+                        {
+                            "name": "Temperature sensor",
+                            "value": "RAYTEK / IMPAC / AST"
+                        },
+                        {
+                            "name": "Temperature Controller",
+                            "value": "Eurotherm 2416 Controller"
+                        }
+                    ],
+                    "Size": [
+                        {
+                            "name": "Shell Size",
+                            "value": "Customizable"
+                        },
+                        {
+                            "name": "Useful Hot zone",
+                            "value": "Customizable"
+                        }
+                    ],
+                    "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+                    "overViewDescription": [
+                        "VBCC's Microwave Furnace Big Model introduces a new dimension to large-scale thermal processing, offering an expansive working volume and formidable capabilities. Built upon the efficiency of microwave heating, this model is purposefully designed for substantial tasks that demand higher capacities, making it the ultimate solution for extensive thermal operations.",
+                        "With a substantial increase in working volume, the Big Model caters to the unique requirements of large-scale applications, providing users with an efficient and reliable tool for processing higher quantities. Its robust construction and advanced features align seamlessly with VBCC's commitment to cutting-edge solutions, ensuring uncompromised efficiency and performance.",
+                        "The Microwave Furnace Big Model stands as a testament to VBCC's dedication to advancing technology in thermal processing for extensive applications. It combines the innovation of microwave heating with an enlarged capacity, offering users an unparalleled solution for tackling the challenges of large-scale thermal operations with precision and reliability. The Big Model signifies a new era in thermal processing, where efficiency, adaptability, and expansive capabilities converge for optimal performance."
                     ]
                 }
-            ],
-            "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
-            "overViewDescription": [
-                "Dilatometer, A precision instrument for measuring thermal expansion with unparalleled accuracy. VBCC takes pride in offering a Dilatometer that sets the standard for precision and control, with features that make it an ideal choice for various industries.",
-                "Our Dilatometer boasts one-micron resolution thanks to LVDT technology, ensuring meticulous measurements. With a one-degree temperature accuracy, you can trust the results for your research and production needs. This Dilatometer is specifically tailored for tile, sanitary ware, and refractories industries.",
-                "What sets VBCC apart is our commitment to providing high-quality solutions at a fraction of the cost of imported alternatives. Our Dilatometer not only matches imports in performance but also delivers incredible value for your investment. It's built to last, with rugged durability, and our 24/7 service support ensures you're never left in the lurch.",
-                "For high-quality research and precise measurements, VBCC's Dilatometer is your trusted companion. Explore our range, including horizontal and vertical Dilatometers, as well as quenching Dilatometers, covering a temperature range from -RT to 1600°C."
             ]
         },
         {

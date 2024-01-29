@@ -2,36 +2,32 @@
 
 import Link from "next/link";
 import { CustomAccordion, CustomVariant } from "./SpecificComp";
-import { useState } from "react";
 
-export const ProductVariant = ({ product }) => {
-  const [open, setOpen] = useState(false);
-  const [selectedItem, SetselectedItem] = useState("No Variant");
-  const [specificId, setSpecificId] = useState(0);
-
-  const handleClick = (id, item) => {
-    setSpecificId(id);
-    // const filtered = product.variant.filter(val => val.variantType === item)
-    SetselectedItem(item);
-    setOpen(!open);
-  };
+export const ProductVariant = ({
+  product,
+  open,
+  setOpen,
+  selectedItem,
+  specificId,
+  handleClick,
+}) => {
   return (
     <section className="space-y-[52px]">
       <div className="block space-y-10 max-w-[390px]">
         {product.variant && (
-        <CustomVariant
-          variant={product.variant}
-          handleClick={handleClick}
-          open={open}
-          setOpen={setOpen}
-          selectedItem={selectedItem}
-        />
+          <CustomVariant
+            variant={product.variant}
+            handleClick={handleClick}
+            open={open}
+            setOpen={setOpen}
+            selectedItem={selectedItem}
+          />
         )}
-        <h4 className="text-[40px] font-Lora tracking-wider">
+        <h4 className="text-[32px] md:text-[36px] font-Lora">
           {product.price}
         </h4>
-          <Link  passHref 
-                 
+        <Link
+          passHref
           href={"/contact"}
           className={`block rounded-full px-4 py-3 border border-warning bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full group`}
         >
@@ -65,7 +61,9 @@ export const ProductVariant = ({ product }) => {
           />
         </div>
       )}
-      <h5 className="font-urbanist text-sm text-info">*Customizable</h5>
+      <h5 className="font-urbanist text-base md:text-lg text-info">
+        *Customizable to your Requirements
+      </h5>
     </section>
   );
 };

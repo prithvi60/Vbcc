@@ -1,7 +1,7 @@
 import productsData from "@/libs/products.json";
 import dynamic from 'next/dynamic'
 
-const OverviewComponent = dynamic(() => import("@/components/products/specific page/Overview"))
+// const OverviewComponent = dynamic(() => import("@/components/products/specific page/Overview"))
 const ProductPageComponent = dynamic(() => import("@/components/products/specific page/ProductPage"))
 const RelatedProductsComponent = dynamic(() => import("@/components/products/specific page/RelatedProducts"))
 
@@ -13,7 +13,7 @@ export default function Home({params}) {
   return (
     <main>
       <ProductPageComponent product={product}/>
-      <OverviewComponent product={product}/>
+      {/* <OverviewComponent product={product}/> */}
       <RelatedProductsComponent product={product}/>
     </main>
   );
