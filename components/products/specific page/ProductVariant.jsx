@@ -11,10 +11,11 @@ export const ProductVariant = ({
   specificId,
   handleClick,
 }) => {
+
   return (
     <section className="space-y-[52px]">
       <div className="block space-y-10 max-w-[390px]">
-        {product.variant && (
+        {(product.variant).length > 0 && (
           <CustomVariant
             variant={product.variant}
             handleClick={handleClick}

@@ -21,7 +21,7 @@ export default function Home() {
       <WCU/>
       <Statistics/>
       <HowWeDo/>
-      <BlogLayout/>
+      {/* <BlogLayout/> */}
       <Newsletter/>
     </main>
   )

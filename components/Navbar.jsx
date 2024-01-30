@@ -13,12 +13,22 @@ const NavBar = () => {
   return (
     <nav id="nav">
       <div className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-3.5 border-b border-[#B6BABD] static max-w-full flex justify-between items-center">
-        <Link passHref href="/" className="relative h-5 w-20 cursor-pointer">
+        {/* <Link passHref href="/" className="relative h-5 w-20 cursor-pointer">
           <Image
             fill
             src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
             placeholder="blur"
             blurDataURL="https://ik.imagekit.io/webibee/VBCC/logo.svg?tr=bl-100"
+            alt="Logo"
+            className="absolute object-contain object-center"
+          />
+        </Link> */}
+        <Link passHref href="/" className="relative h-8 w-16 cursor-pointer">
+          <Image
+            fill
+            src={"/VBCC logo.svg"}
+            // placeholder="blur"
+            // blurDataURL=""
             alt="Logo"
             className="absolute object-contain object-center"
           />

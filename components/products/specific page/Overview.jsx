@@ -4,6 +4,8 @@ import React from "react";
 const Overview = ({ specification,specificId }) => {
   const specificImg = specification[specificId].overViewImg;
   const specificDesc = specification[specificId].overViewDescription;
+  const specificList = specification[specificId].overViewList;
+  const specificPara = specification[specificId].overViewLastPara;
 
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 xl:px-20 font-urbanist text-white bg-primary space-y-5">
@@ -23,6 +25,13 @@ const Overview = ({ specification,specificId }) => {
               {list}
             </li>
           ))}
+          {specificList.map((list, idx) => (
+          <li key={idx}>
+            <h5>{list.title}</h5>
+            <p className="ps-5">{list.para}</p>
+          </li>
+          ))}
+          <li>{specificPara}</li>
         </ul>
       </div>
     </section>

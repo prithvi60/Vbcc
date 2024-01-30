@@ -65,9 +65,9 @@ export const CustomVariant = ({
 };
 
 export const CustomAccordion = ({ specification, specificId }) => {
-  const specificGeneral = specification[specificId].General;
-  const specificTemperature = specification[specificId].Temperature;
-  const specificSize = specification[specificId].Size;
+  const specificGeneral = specification[specificId].Title1;
+  const specificTemperature = specification[specificId].Title2;
+  const specificSize = specification[specificId].Title3;
   const itemClasses = {
     base: "border-b-3 border-[#F1F1F1] pb-3",
     title: "font-Lora text-xl text-warning",
@@ -102,6 +102,7 @@ export const CustomAccordion = ({ specification, specificId }) => {
             </tbody>
           </table>
         </AccordionItem>
+        {specification[specificId].title[1] && (
         <AccordionItem
           key="2"
           aria-label={specification[specificId].title[1]}
@@ -125,6 +126,8 @@ export const CustomAccordion = ({ specification, specificId }) => {
             </tbody>
           </table>
         </AccordionItem>
+        )}
+        {specification[specificId].title[2] && (
         <AccordionItem
           key="3"
           aria-label={specification[specificId].title[2]}
@@ -149,6 +152,33 @@ export const CustomAccordion = ({ specification, specificId }) => {
             </tbody>
           </table>
         </AccordionItem>
+        )}
+        {specification[specificId].title[3] && (
+        <AccordionItem
+          key="4"
+          aria-label={specification[specificId].title[3]}
+          title={specification[specificId].title[3]}
+          indicator={({ isOpen }) =>
+            isOpen ? (
+              <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+            ) : (
+              <AiOutlinePlus className="h-5 w-5 text-warning" />
+            )
+          }
+          // className="border-b-3 border-[#F1F1F1]"
+        >
+          <table className="w-full border border-[#B9B9B9] text-xl my-5">
+            <tbody>
+              {specificSize.map((list, idx) => (
+                <tr key={idx}>
+                  <td className="border border-[#B9B9B9] p-3">{list.name}</td>
+                  <td className="border border-[#B9B9B9] p-3">{list.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </AccordionItem>
+        )}
       </Accordion>
     </section>
   );

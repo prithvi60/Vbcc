@@ -9,8 +9,8 @@
             "title": "TESTIMONIALS"
         },
         {
-            "href": "/blog",
-            "title": "BLOG"
+            "href": "/gallery",
+            "title": "Gallery"
         },
         {
             "href": "/about",
@@ -37,10 +37,6 @@
         {
             "href": "/gallery",
             "title": "gallery"
-        },
-        {
-            "href": "/blog",
-            "title": "blog"
         }
     ],
     "clientLogos": [
@@ -170,10 +166,6 @@
             "title": "About Us"
         },
         {
-            "href": "/blog",
-            "title": "Blog/Articles"
-        },
-        {
             "href": "/faq",
             "title": "FAQs"
         }
@@ -182,10 +174,6 @@
         {
             "href": "/about",
             "title": "Our Story"
-        },
-        {
-            "href": "/blog",
-            "title": "Blog/Articles"
         },
         {
             "href": "/contact",
