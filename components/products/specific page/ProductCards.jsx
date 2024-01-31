@@ -1,17 +1,29 @@
+"use client"
 import productsData from "@/libs/products.json";
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const ProductCards = ({ value, name }) => {
+  const [width, setWidth] = useState(0);
+  const [count, setCount] = useState(3);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    width <= 1024 ? setCount(2) : setCount(3);
+  }, [width]);
+
   const filteredProduct = productsData.allProducts.filter(
     (val) => val.productType === value && val.productName !== name
   );
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
-      {filteredProduct.map((card, idx) => (
+      {filteredProduct.slice(0,count).map((card, idx) => (
         <div className="block group" key={idx}>
           <Link
             passHref

@@ -28,8 +28,8 @@ const Footer = () => {
   return (
     <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-urbanist">
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
-        <div className="relative h-5 w-32">
-          <Image fill src={"https://ik.imagekit.io/webibee/VBCC/logo-white.svg"} alt="Logo" className="-ml-6" />
+        <div className="relative h-[40px] w-[70px]">
+          <Image fill src={"/vbcc logo 2.svg"} alt="Logo"/>
         </div>
         <div className="text-sm space-y-5">
           <h4 className="uppercase">Kottivakkam,Chennai.</h4>
@@ -136,15 +136,15 @@ const Footer = () => {
               <Link
                 passHref
                 href={"https://www.drvbceramicresearch.com/"}
-                className="relative h-[55px] w-[75px]"
+                className="relative h-[40px] w-[70px]"
                 target="_blank"
               >
                 <Image
                   fill
                   sizes="75px"
-                  src={"https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png"}
-                  placeholder="blur"
-                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-100"
+                  src={"/vbcc-research.svg"}
+                  // placeholder="blur"
+                  // blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-100"
                   alt="Logo"
                   className="-ml-6"
                 />
@@ -152,16 +152,16 @@ const Footer = () => {
               <Link
                 passHref
                 href={"https://www.hitechceramics.in/"}
-                className="relative h-[50px] w-[70px]"
+                className="relative h-[40px] w-[70px]"
                 target="_blank"
               >
                 <Image
                   fill
-                  sizes="70px"
-                  src={"https://ik.imagekit.io/webibee/VBCC/hi-temp.png"}
+                  sizes="75px"
+                  src={"/vbcc-hitech.svg"}
                   alt="Logo"
-                  placeholder="blur"
-                  blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100"
+                  // placeholder="blur"
+                  // blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100"
                   className="-ml-6"
                 />
               </Link>

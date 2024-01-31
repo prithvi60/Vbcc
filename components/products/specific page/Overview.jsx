@@ -28,7 +28,7 @@ const Overview = ({ specification,specificId }) => {
           {specificList.map((list, idx) => (
           <li key={idx}>
             <h5>{list.title}</h5>
-            <p className="ps-5">{list.para}</p>
+            <p>{list.para}</p>
           </li>
           ))}
           <li>{specificPara}</li>
