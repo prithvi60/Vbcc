@@ -1,10 +1,6 @@
 {
     "navlinks": [
         {
-            "href": "/products",
-            "title": "Products"
-        },
-        {
             "href": "/testimonials",
             "title": "TESTIMONIALS"
         },

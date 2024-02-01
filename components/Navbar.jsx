@@ -7,7 +7,40 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileNav from "./MobileNav";
 import { Btn } from "./Btn";
+import { Tooltip } from "@nextui-org/tooltip";
+import { ToolTipContent } from "./ToolTipContent";
+
+const productList = [
+  {
+    category: "Research Institutions",
+    lists: [
+      "Microwave Heating Systems",
+      "Furnaces",
+      "Ovens",
+      "Nano Technology Equipment",
+      "Special Research Equipment",
+      "Presses",
+      "Metallurgical Equipment",
+    ],
+  },
+  {
+    category: "Industries",
+    lists: [
+      "Industrial Furnaces",
+      "Refractory Industry",
+      "Tile & Sanitary Ware",
+    ],
+  },
+  {
+    category: "Accessories",
+    lists: ["Heating Elements", "Controllers", "Ceramic Products"],
+  },
+];
+
+const sortBy = ["Featured", "New Products", "Best Selling"];
+
 const NavBar = () => {
+
   const [isOpen, setIsOpen] = useState(false);
   // console.log(othersData.navlinks);
   return (
@@ -34,6 +67,26 @@ const NavBar = () => {
           />
         </Link>
         <div className="hidden lg:flex gap-10 text-warning uppercase">
+          <Tooltip
+            classNames={{
+              content: "p-6 text-warning bg-secondary",
+            }}
+            content={
+              <ToolTipContent productList={productList} sortBy={sortBy} />
+            }
+            showArrow={true}
+            placement="bottom-start"
+            offset={30}
+            color="secondary"
+            closeDelay={1000}
+          >
+            <div className="relative group">
+              <Link passHref href={"/products"} className="h-full text-warning">
+                Products
+              </Link>
+              <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[23px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
+            </div>
+          </Tooltip>
           {othersData.navlinks.map((link, idx) => (
             <div key={idx} className="relative group">
               <Link passHref href={link.href} className="h-full text-warning">
