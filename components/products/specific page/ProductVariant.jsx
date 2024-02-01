@@ -46,25 +46,29 @@ export const ProductVariant = ({
           </div>
         </Link>
       </div>
+      {product.specification[specificId].title[0] && (
       <h4 className="font-Lora text-[32px]">Specifications</h4>
+      )}
       {specificId >= 0 ? (
-        <div className="block space-y-5 max-w-lg">
+        <div className="block space-y-5 max-w-xl">
           <CustomAccordion
             specification={product.specification}
             specificId={specificId}
           />
         </div>
       ) : (
-        <div className="block space-y-5 max-w-lg">
+        <div className="block space-y-5 max-w-xl">
           <CustomAccordion
             specification={product.specification}
             specificId={0}
           />
         </div>
       )}
+      {product.specification[specificId].title[0] && (
       <h5 className="font-urbanist text-base md:text-lg text-info">
         *Customizable to your Requirements
       </h5>
+      )}
     </section>
   );
 };

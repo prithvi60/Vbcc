@@ -71,8 +71,8 @@ export const CustomAccordion = ({ specification, specificId }) => {
   const specificTitle4 = specification[specificId].Title4;
   const specificTitle5 = specification[specificId].Title5;
   const itemClasses = {
-    base: "border-b-3 border-[#F1F1F1] pb-3",
-    title: "font-Lora text-xl text-warning",
+    base: "border-b-3 border-[#F1F1F1] pb-3 w-full",
+    title: "font-Lora text-xl text-warning"
   };
   return (
     <section>
@@ -81,6 +81,7 @@ export const CustomAccordion = ({ specification, specificId }) => {
         selectionMode="multiple"
         itemClasses={itemClasses}
       >
+        {specification[specificId].title[0] && (
         <AccordionItem
           key="1"
           aria-label={specification[specificId].title[0]}
@@ -97,13 +98,14 @@ export const CustomAccordion = ({ specification, specificId }) => {
             <tbody>
               {specificTitle1.map((list, idx) => (
                 <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3">{list.value}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </AccordionItem>
+        )}
         {specification[specificId].title[1] && (
         <AccordionItem
           key="2"
@@ -121,8 +123,8 @@ export const CustomAccordion = ({ specification, specificId }) => {
             <tbody>
               {specificTitle2.map((list, idx) => (
                 <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3">{list.value}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
                 </tr>
               ))}
             </tbody>
@@ -147,8 +149,8 @@ export const CustomAccordion = ({ specification, specificId }) => {
             <tbody>
               {specificTitle3.map((list, idx) => (
                 <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3">{list.value}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
                 </tr>
               ))}
             </tbody>
@@ -173,8 +175,8 @@ export const CustomAccordion = ({ specification, specificId }) => {
             <tbody>
               {specificTitle4.map((list, idx) => (
                 <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3">{list.value}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
                 </tr>
               ))}
             </tbody>
@@ -199,8 +201,8 @@ export const CustomAccordion = ({ specification, specificId }) => {
             <tbody>
               {specificTitle5.map((list, idx) => (
                 <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3">{list.value}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
+                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
                 </tr>
               ))}
             </tbody>
