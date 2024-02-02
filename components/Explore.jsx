@@ -12,8 +12,7 @@ const Explore = () => {
           Your Visualization of your Product, We bring to life.
         </h3>
         <div className="w-max mx-auto">
-            <Link  passHref 
-                 
+            <Link  passHref    
             href="/products"
             className="text-2xl rounded-lg after:h-1 after:w-full after:bg-info after:block after:transition-all hover:after:h-1 md:after:w-0 md:hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-white group mx-auto"
           >

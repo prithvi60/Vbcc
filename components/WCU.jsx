@@ -55,7 +55,7 @@ const WCU = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6 md:mb-[800px]">
+        <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6 md:mb-[220px]">
           {othersData.whyChooseUs.map((item, idx) => (
             <div
               className={`p-6 bg-primary space-y-4 rounded-lg w-full xl:w-[85%] sticky top-20 min-h-[220px] border border-secondary `}
@@ -81,3 +81,11 @@ const WCU = () => {
 };
 
 export default WCU
+
+
+// Two or Three Zone Furnace up to 1800 - done
+// ChemicalVapourDeposition(CVD)upto1200°C - done
+// Dilatometer(ThermalExpansionupto1600°C) - done
+// Alumina-Boats,Crucibles - done
+
+// deg, comma

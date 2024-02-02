@@ -97,7 +97,7 @@ const ProductFC = ({
             {filteredProductType.map((type, idx) => (
               <li
                 key={idx}
-                className={`flex items-center gap-2 w-max cursor-pointer`}
+                className={`flex items-center gap-2 w-max cursor-pointer capitalize`}
               >
                 <Checkbox
                   value={type}
@@ -105,7 +105,7 @@ const ProductFC = ({
                   size="md"
                   color="success"
                 >
-                  <h4 className="text-warning text-opacity-50 font-urbanist text-base hover:text-warning">
+                  <h4 className="text-warning text-opacity-50 font-urbanist text-base hover:text-warning capitalize">
                     {type}
                   </h4>
                 </Checkbox>
@@ -172,7 +172,6 @@ export const CategoryTab = ({ setProducts }) => {
           key={idx}
         >
             <Link  passHref 
-                 
             href={pathname + "?" + createQueryString("category", item)}
             className={`block h-6 w-full overflow-hidden`}
             onClick={() => handleCategory(item)}

@@ -69,16 +69,16 @@ const NavBar = () => {
         <div className="hidden lg:flex gap-10 text-warning uppercase">
           <Tooltip
             classNames={{
-              content: "p-6 text-warning bg-secondary",
+              content: "p-6 text-warning bg-white shadow-lg",
             }}
             content={
               <ToolTipContent productList={productList} sortBy={sortBy} />
             }
             showArrow={true}
-            placement="bottom-start"
+            placement="bottom"
             offset={30}
-            color="secondary"
-            closeDelay={1000}
+            // color="secondary"
+            closeDelay={500}
           >
             <div className="relative group">
               <Link passHref href={"/products"} className="h-full text-warning">

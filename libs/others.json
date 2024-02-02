@@ -343,63 +343,119 @@
     "testimonials": [
         {
             "id": 1,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/AU.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
+            "pdf": "/ISRO _ testimonial.png"
         },
         {
             "id": 2,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/CGCRI testimonial.png"
+            "logo": "/csir_nal.png",
+            "pdf": "/NAL_testimonial.png"
         },
         {
             "id": 3,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/csir.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png"
+            "logo": "/MET.png",
+            "pdf": "/CMET_testimonial.png"
         },
         {
             "id": 4,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/ISRO - VSSC testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/drdo.svg",
+            "pdf": "/DMRL_testimonial.png"
         },
         {
             "id": 5,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/IIT Madras testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/csir.svg",
+            "pdf": "/CGCRI_testimonial 1.png"
         },
         {
             "id": 6,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/vit.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg",
+            "pdf": "/CERI_testimonial.png"
         },
         {
             "id": 7,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Layer.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/AU.svg",
+            "pdf": "/AnnaUniv_Testimonial.png"
         },
         {
             "id": 8,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Layer.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png"
+            "logo": "/somany.png",
+            "pdf": "/Somany_Testimonial.png"
         },
         {
             "id": 9,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Layer.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/AnnaUniv Testimonial.png"
+            "logo": "/IIT_varanasi.png",
+            "pdf": "/IIT BHU_Testimonial.png"
         },
         {
             "id": 10,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Layer.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/CERI testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/vit.svg",
+            "pdf": "/VIT University_testimonial.png"
         },
         {
             "id": 11,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Layer.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/VIT University testimonial.png"
+            "logo": "/IIT_manddi.png",
+            "pdf": "/IIT Mandi_testimonial.png"
         },
         {
             "id": 12,
-            "logo": "https://ik.imagekit.io/webibee/VBCC/Layer.svg",
-            "pdf": "https://ik.imagekit.io/webibee/VBCC/Velammal Engineering testimonial.png"
+            "logo": "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg",
+            "pdf": "/IIT Madras_testimonial.png"
         }
+    ],
+    "ourPresenceLocation": [
+        {
+            "location": "USA",
+            "States": [
+                "State 1",
+                "State 2",
+                "State 3",
+                "State 4",
+                "State 5"
+            ]
+        },
+        {
+            "location": "Uk",
+            "States": [
+                "State 1",
+                "State 2",
+                "State 3",
+                "State 4",
+                "State 5"
+            ]
+        },
+        {
+            "location": "Delhi",
+            "States": [
+                "State 1",
+                "State 2",
+                "State 3",
+                "State 4",
+                "State 5"
+            ]
+        },
+        {
+            "location": "Gujarat",
+            "States": [
+                "State 1",
+                "State 2",
+                "State 3",
+                "State 4",
+                "State 5"
+            ]
+        },
+        {
+            "location": "Dubai",
+            "States": [
+                "State 1",
+                "State 2",
+                "State 3",
+                "State 4",
+                "State 5"
+            ]
+        }
+    ],
+    "presenceSpecificImg": [
+        "/presence 1.png",
+        "/presence 2.png"
     ]
 }

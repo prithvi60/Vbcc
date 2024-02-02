@@ -14,6 +14,7 @@ const Testimonials = () => {
         <h3 className="font-Lora text-3xl md:text-5xl text-secondary text-center pb-10">
           Testimonials
         </h3>
+        <div className="block bg-secondary h-auto w-full">
         <Carousel
         showArrows
         ariaLabel={"testimonail content"}
@@ -69,7 +70,7 @@ const Testimonials = () => {
       >
         {othersData.heroTestimonial.map((item, idx) => (
             <div
-              className="w-full p-10 bg-secondary space-y-8 min-h-[650px] md:min-h-[430px]"
+              className="w-full p-10 bg-secondary space-y-8 min-h-auto md:min-h-[430px]"
               key={idx}
             >
               <h3 className="font-Lora sm:text-[28px] md:text-[32px] xl:text-[40px] leading-[52px] tracking-[-1.6px] text-center">
@@ -92,6 +93,7 @@ const Testimonials = () => {
             </div>
           ))}
       </Carousel>
+      </div>
         <div className="flex justify-center items-center mt-10">
           <Btn2
             Hbgcolor={"bg-white"}

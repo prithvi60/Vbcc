@@ -60,13 +60,13 @@
           "img": "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
           "title": "thermal testing",
           "desc": "Dilatometer up to 1000°C (Thermal Expansion)",
-          "productName": "Refractory Industry 1"
+          "productName": "Refactory Industry 1"
         },
         {
           "img": "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
           "title": "thermal testing",
           "desc": "Dilatometer up to 1000°C (Thermal Expansion)",
-          "productName": "Tile & Sanitary Ware 1"
+          "productName": "Tile & Santiary Ware 1"
         },
         {
           "img": "https://ik.imagekit.io/webibee/VBCC/hero-bg.png",
@@ -152,7 +152,12 @@
       "productName": "Microwave Furnace",
       "productType": "Microwave Heating Systems",
       "description": "Seamlessly blending conventional and microwave heating technologies, the Hybrid Model offers adaptive solutions for diverse thermal processing needs.",
-      "variant": ["Hybrid", "Super", "Premium", "Big"],
+      "variant": [
+        "Hybrid",
+        "Super",
+        "Premium",
+        "Big"
+      ],
       "price": "₹ Enquire for Estimate",
       "gallery": [
         {
@@ -175,7 +180,11 @@
       "specification": [
         {
           "variantType": "Hybrid",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -245,7 +254,11 @@
         },
         {
           "variantType": "Super",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -307,7 +320,11 @@
         },
         {
           "variantType": "Premium",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -373,7 +390,11 @@
         },
         {
           "variantType": "Big",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -456,7 +477,12 @@
       "productName": "Microwave Furnace Computerized",
       "productType": "Microwave Heating Systems",
       "description": "Precision meets automation in this computerized model, providing programmable controls for optimal temperature management in thermal processes.",
-      "variant": ["Hybrid", "Super", "Premium", "Big"],
+      "variant": [
+        "Hybrid",
+        "Super",
+        "Premium",
+        "Big"
+      ],
       "price": "₹ Enquire for Estimate",
       "gallery": [
         {
@@ -479,7 +505,11 @@
       "specification": [
         {
           "variantType": "Hybrid",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -550,7 +580,11 @@
         },
         {
           "variantType": "Super",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -613,7 +647,11 @@
         },
         {
           "variantType": "Premium",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -680,7 +718,11 @@
         },
         {
           "variantType": "Big",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -786,7 +828,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -888,7 +934,12 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size", "Agitation"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Agitation"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1004,7 +1055,12 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size", "Agitation"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Agitation"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1100,9 +1156,14 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Tubular Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "Offering controlled thermal processing up to 1200°C, this tubular furnace is a reliable solution for applications like annealing and materials research",
-      "variant": ["1200°C", "1400°C", "1600°C", "1800°C"],
+      "variant": [
+        "1200°C",
+        "1400°C",
+        "1600°C",
+        "1800°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "gallery": [
         {
@@ -1125,7 +1186,11 @@
       "specification": [
         {
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1208,7 +1273,11 @@
         },
         {
           "variantType": "1400°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1291,7 +1360,11 @@
         },
         {
           "variantType": "1600°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1374,7 +1447,11 @@
         },
         {
           "variantType": "1800°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1478,7 +1555,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Tubular Furnace - Tiltable Model",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "VBCC's tiltable tubular furnace offers precise thermal processing with a dynamic design, allowing optimal control over the heating environment.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -1502,7 +1579,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1602,7 +1683,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Rotary Tubular Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "VBCC's rotary tubular furnace combines rotation with high-temperature capabilities (up to 1800°C), enhancing material exposure and mixing for advanced thermal treatments",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -1626,7 +1707,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1728,7 +1813,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Ageing Tubular Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "Specifically designed for controlled ageing or heat treatment, this tubular furnace from VBCC is engineered for precise and reproducible thermal processing",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -1752,7 +1837,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1881,7 +1970,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Hot Corrosion Tubular Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "Tailored for studying hot corrosion effects, this tubular furnace simulates high-temperature corrosive environments, contributing to advancements in materials science and corrosion-resistant materials",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -1905,7 +1994,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2026,9 +2119,14 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Box Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "This versatile box furnace reaches temperatures up to 1200°C, providing reliable and controlled high-temperature thermal processing for various applications",
-      "variant": ["1200°C", "1400°C", "1600°C", "1800°C"],
+      "variant": [
+        "1200°C",
+        "1400°C",
+        "1600°C",
+        "1800°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "gallery": [
         {
@@ -2051,7 +2149,11 @@
       "specification": [
         {
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2126,7 +2228,11 @@
         },
         {
           "variantType": "1400°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2201,7 +2307,11 @@
         },
         {
           "variantType": "1600°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2276,7 +2386,11 @@
         },
         {
           "variantType": "1800°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2362,7 +2476,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Box Type Vacuum Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "This box-type furnace, with a max temperature of 1200°C, provides controlled high-temperature processing in a vacuum environment, essential for applications like brazing and heat treatment",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -2386,7 +2500,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2484,7 +2602,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Thermal Cycling Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "Specifically designed for thermal cycling, this furnace reaches temperatures up to 1800°C, crucial for studies involving repeated temperature variations",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -2508,7 +2626,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2610,7 +2732,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Raising Hearth Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "VBCC's raising hearth furnace, reaching temperatures up to 1800°C, offers convenient sample handling, making it efficient for various high-temperature applications",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -2634,7 +2756,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2736,7 +2862,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Pit Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "Featuring a positive temperature coefficient design, this furnace ensures stable control up to 1800°C, making it ideal for processes demanding precise and consistent temperatures",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -2760,7 +2886,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2849,8 +2979,8 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
-      "productName": "Two/Three Zone Furnace up to 1800°C",
-      "productType": "FURNACES",
+      "productName": "Two - Three Zone Furnace",
+      "productType": "Furnaces",
       "description": "This furnace features distinct temperature zones, offering precise control up to 1800°C, making it ideal for tailored thermal profiles and diverse applications",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -2874,7 +3004,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2964,7 +3098,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Fire Side Corrosion Simulator Furnace",
-      "productType": "FURNACES",
+      "productType": "Furnaces",
       "description": "VBCC's Fire Side Corrosion Simulator Furnace replicates industrial fire side conditions, allowing in-depth studies on materials' responses to high temperatures, corrosive gases, and ash deposition",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -2988,7 +3122,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3096,8 +3234,146 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "productName": "Hot Air Oven",
+      "productType": "Ovens",
+      "description": "VBCC's Hot Air Oven combines advanced convection heating technology with digital controls for precise temperature regulation, offering a versatile solution for sterilization, drying, and heat treatment applications in laboratories and industries",
+      "variant": [],
+      "price": "₹ Enquire for Estimate",
+      "gallery": [
+        {
+          "id": "1",
+          "img": "/img 1.jpg"
+        },
+        {
+          "id": "2",
+          "img": "/img 2.jpg"
+        },
+        {
+          "id": "3",
+          "img": "/img 3.jpg"
+        },
+        {
+          "id": "4",
+          "img": "/img 4.jpg"
+        }
+      ],
+      "specification": [
+        {
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
+          "Title1": [
+            {
+              "name": "Model",
+              "value": ""
+            },
+            {
+              "name": "Electrical Requirements",
+              "value": "Single phase / AC (32A MCB with neutral to be arranged)"
+            },
+            {
+              "name": "Power",
+              "value": "2kW"
+            }
+          ],
+          "Title2": [
+            {
+              "name": "Min. Working Temperature",
+              "value": "Ambient"
+            },
+            {
+              "name": "Max. Temperature",
+              "value": "250°C (482°F)"
+            },
+            {
+              "name": "Max. Continuous Working Temperature",
+              "value": "200°C (392°F)"
+            },
+            {
+              "name": "Power Control",
+              "value": "VBCC Make Thyristor"
+            },
+            {
+              "name": "Heater Provision",
+              "value": "Heating coil provided three sides of the inner chamber"
+            },
+            {
+              "name": "Temperature Controller",
+              "value": "TAIE Controller (8 x 8 = 144 segments)"
+            }
+          ],
+          "Title3": [
+            {
+              "name": "Shell Size",
+              "value": "700 x 700 x 700 (lxwxh) mm"
+            },
+            {
+              "name": "Useful volume",
+              "value": "450 x 450 x 450 (lxwxh) mm"
+            },
+            {
+              "name": "Outer Shell",
+              "value": "M.S. with Neat Powder Coating"
+            },
+            {
+              "name": "Inner Chamber",
+              "value": "SS"
+            },
+            {
+              "name": "Number of Trays",
+              "value": "2 SS Trays"
+            }
+          ],
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewDescription": [
+            "VBCC's Hot Air Oven stands as a reliable and versatile thermal processing solution designed to meet the diverse needs of laboratories and industrial applications. Featuring cutting-edge technology and precision engineering, the VBCC Hot Air Oven offers a range of features to facilitate various thermal processes.",
+            "Key Features:"
+          ],
+          "overViewList": [
+            {
+              "title": "1. Uniform Convection Heating:",
+              "para": "VBCC's Hot Air Oven employs convection heating to ensure uniform temperature distribution within the oven chamber, providing consistent and reliable results."
+            },
+            {
+              "title": "2. Digital Temperature Controls:",
+              "para": "Equipped with advanced digital controls, the oven allows users to precisely set and maintain specific temperatures, enhancing accuracy in thermal processing."
+            },
+            {
+              "title": "3. Safety Measures:",
+              "para": "The oven incorporates safety features, including over-temperature protection and alarms, ensuring secure operation and safeguarding samples from undesirable conditions."
+            },
+            {
+              "title": "4. Adjustable Shelves:",
+              "para": " Designed with adjustable shelves, the oven accommodates various sample sizes and configurations, enhancing versatility for different applications."
+            },
+            {
+              "title": "5. Diverse Applications:",
+              "para": "VBCC's Hot Air Oven finds applications in sterilization, drying, heat treatment, and research across industries such as pharmaceuticals, materials science, and laboratories."
+            },
+            {
+              "title": "6. Robust Construction:",
+              "para":   "Constructed with durability in mind, the oven is built to withstand continuous use and maintain its performance over time."
+
+            }
+          ],
+          "overViewLastPara": "Whether utilized for sterilizing equipment, drying samples, or conducting heat treatment processes, VBCC's Hot Air Oven stands as a dependable thermal processing tool, contributing to the efficiency and precision of laboratory and industrial applications."
+        }
+      ]
+    },
+    {
+      "category": "Research Institutions",
+      "sortBy": "New Products",
+      "feature": [
+        {
+          "id": "1",
+          "fragile": "fragile"
+        }
+      ],
+      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Humidity Oven",
-      "productType": "OVENS",
+      "productType": "Ovens",
       "description": "VBCC's Humidity Oven integrates cutting-edge controls for both temperature and humidity, providing a comprehensive solution for industries demanding controlled humidity environments. Its robust construction and intuitive interface make it a crucial tool for various applications in materials science and research",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -3121,7 +3397,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3226,7 +3506,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Vacuum Oven",
-      "productType": "OVENS",
+      "productType": "Ovens",
       "description": "Experience unparalleled control with VBCC's Vacuum Oven, featuring advanced vacuum management and temperature uniformity. Ideal for processes like drying and degassing, it ensures precise conditions for sensitive applications in research and industrial settings",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -3250,7 +3530,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3358,10 +3642,14 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
-      "productName": "Chemical Vapour Deposition (CVD) up to 1200°C",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productName": "Chemical Vapour Deposition (CVD)",
+      "productType": "Nano Techology Equipment",
       "description": "VBCC's CVD Furnace at 1200°C enables precise deposition of thin films, showcasing advanced materials synthesis capabilities in controlled environments.",
-      "variant": ["1200°C", "1400°C", "1600°C"],
+      "variant": [
+        "1200°C",
+        "1400°C",
+        "1600°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "gallery": [
         {
@@ -3384,7 +3672,11 @@
       "specification": [
         {
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3470,7 +3762,11 @@
         },
         {
           "variantType": "1400°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3552,7 +3848,11 @@
         },
         {
           "variantType": "1600°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3645,7 +3945,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Chemical Vapour Synthesis (CVS)",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productType": "Nano Techology Equipment",
       "description": "Harness the power of nano materials with VBCC's Synthesis Furnace at 1600°C, specializing in precise and controlled synthesis through chemical vapor processes for cutting-edge applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -3669,7 +3969,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3766,7 +4070,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Dip Coating",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productType": "Nano Techology Equipment",
       "description": "Achieve uniform coatings effortlessly with VBCC's DIP Coating Unit, offering automated dipping processes for consistent and controlled deposition on diverse substrates.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -3790,7 +4094,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Speed"],
+          "title": [
+            "General",
+            "Speed"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3889,7 +4196,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Spin Coating",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productType": "Nano Techology Equipment",
       "description": "VBCC's Spin Coating Unit delivers precision in thin film deposition, featuring variable speeds and programmable cycles for uniform coatings on a variety of substrates.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -3913,7 +4220,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Additional Information"],
+          "title": [
+            "General",
+            "Additional Information"
+          ],
           "Title1": [
             {
               "name": "Shell Construction",
@@ -4008,7 +4318,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Spray Pyrolysis",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productType": "Nano Techology Equipment",
       "description": "Experience controlled thin film deposition with VBCC's Spray Pyrolysis Unit, providing automated spray processes for reproducible results in diverse coating applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4032,7 +4342,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4141,7 +4455,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Planetary Mill (Wet and Dry)",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productType": "Nano Techology Equipment",
       "description": "VBCC's Planetary Mill is engineered for high-energy grinding, enabling mechanical alloying and nanoparticle synthesis with variable speed control and planetary motion for superior results.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4165,7 +4479,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Additional Information"],
+          "title": [
+            "General",
+            "Additional Information"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4264,7 +4581,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Flame Reactor For Nano",
-      "productType": "NANO TECHNOLOGY EQUIPMENT",
+      "productType": "Nano Techology Equipment",
       "description": "VBCC's Flame Reactor is tailored for nano material synthesis, utilizing a flame-based process to achieve controlled reactions and produce high-quality nano materials with exceptional properties.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4288,7 +4605,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature"],
+          "title": [
+            "General",
+            "Temperature"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4391,7 +4711,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Pellet Press - 10 tons",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Pellet Press (10 tons) ensures precise material compaction for various applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4415,7 +4735,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4488,7 +4810,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Plasma Assisted Metal Oxide CVD (MOCVD)",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "Advanced thin film deposition is achieved through VBCC's Plasma Assisted Metal Oxide CVD system.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4512,7 +4834,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4625,7 +4951,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Gas Sensing Unit",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Gas Sensing Unit provides reliable detection for diverse gas monitoring needs.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4649,7 +4975,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4778,7 +5108,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Melt Extrusion",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "For versatile material processing, VBCC's Melt Extrusion equipment offers efficient and controlled extrusion capabilities.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4802,7 +5132,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4927,7 +5261,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Carbon Fibre Chopping Equipment",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Carbon Fibre Chopping Equipment facilitates the production of finely chopped carbon fibers for composite materials.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -4951,7 +5285,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5028,7 +5364,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Fibre Forming Chambers - Cold Spinning",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "Enabling precise fiber formation, VBCC's Cold Spinning Fibre Forming Chambers cater to material research and development.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5052,7 +5388,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Size"],
+          "title": [
+            "General",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5143,7 +5482,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Lab Extruder",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Lab Extruder is designed for laboratory-scale extrusion, allowing for controlled material processing and experimentation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5167,7 +5506,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Size"],
+          "title": [
+            "General",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5246,7 +5588,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Co2 Humidity Chamber",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's CO2 Humidity Chamber provides a controlled environment for humidity and CO2 experiments in laboratory settings.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5270,7 +5612,10 @@
       ],
       "specification": [
         {
-          "title": ["General", "Size"],
+          "title": [
+            "General",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5361,7 +5706,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Multi Deck Roller Pot Mill",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Multi Deck Roller Pot Mill is a versatile tool for mixing, grinding, and blending of materials in laboratory applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5385,7 +5730,11 @@
       ],
       "specification": [
         {
-          "title": ["Construction", "Power", "Operation"],
+          "title": [
+            "Construction",
+            "Power",
+            "Operation"
+          ],
           "Title1": [
             {
               "name": "Arrangement",
@@ -5478,7 +5827,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Thermal Conductivity Measurement Setup",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Thermal Conductivity equipment enables precise measurement of thermal conductivity in various materials.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5521,7 +5870,7 @@
           ],
           "Title2": [
             {
-              "name": "Heating elements",
+              "name": "Heating Elements",
               "value": "Silicon carbide (six numbers with even distribution)"
             },
             {
@@ -5625,7 +5974,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Vacuum Pump",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "Essential for creating and maintaining vacuum environments, VBCC's Vacuum Pump ensures reliable vacuum operations.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5649,7 +5998,9 @@
       ],
       "specification": [
         {
-          "title": ["Vacuum System"],
+          "title": [
+            "Vacuum System"
+          ],
           "Title1": [
             {
               "name": "Ultimate Vacuum",
@@ -5710,7 +6061,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Bio Mass Pyrolysis Unit",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Bio Mass Pyrolysis Unit allows for controlled pyrolysis of biomass for research and development purposes.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5850,7 +6201,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Water Chiller (Cooling Arrangement)",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Water Chiller provides efficient cooling arrangements for temperature-sensitive processes and equipment.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5874,7 +6225,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Water chilling unit",
@@ -5947,7 +6300,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Glove Box",
-      "productType": "SPECIAL RESEARCH EQUIPMENT",
+      "productType": "Special Research Equipment",
       "description": "VBCC's Glove Box creates a controlled atmosphere for sensitive experiments, providing a sealed and protected environment for handling materials.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -5971,7 +6324,12 @@
       ],
       "specification": [
         {
-          "title": ["Structure", "Gas System", "Antechamber", "Vacuum"],
+          "title": [
+            "Structure",
+            "Gas System",
+            "Antechamber",
+            "Vacuum"
+          ],
           "Title1": [
             {
               "name": "Inside Dimensions",
@@ -6078,7 +6436,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Hydraulic Press 40 tons",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "VBCC's 40-ton Hydraulic Press provides powerful and precise material compaction for various industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -6202,9 +6560,13 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Vacuum Hot Press",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "Achieve controlled material densification at elevated temperatures with VBCC's Vacuum Hot Press (up to 1200°C).",
-      "variant": ["1200°C", "1700°C", "2000°C"],
+      "variant": [
+        "1200°C",
+        "1700°C",
+        "2000°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "gallery": [
         {
@@ -6227,7 +6589,12 @@
       "specification": [
         {
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size", "Pressure System"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Pressure System"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -6347,7 +6714,12 @@
         },
         {
           "variantType": "1700°C",
-          "title": ["General", "Temperature", "Size", "Pressure System"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Pressure System"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -6475,7 +6847,12 @@
         },
         {
           "variantType": "2000°C",
-          "title": ["General", "Temperature", "Size", "Pressure System"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Pressure System"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -6614,7 +6991,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Compression Moulding Press",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "VBCC's Compression Moulding Press enables efficient and controlled molding of materials for industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -6739,7 +7116,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Manual Press",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "VBCC's Manual Press is a user-friendly and versatile tool for precision pressing and forming operations. Ideal for laboratories and small-scale industrial applications, it provides reliable performance in tasks such as sample preparation and material compaction.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -6763,7 +7140,10 @@
       ],
       "specification": [
         {
-          "title": ["Press Specifications", "Design and Model"],
+          "title": [
+            "Press Specifications",
+            "Design and Model"
+          ],
           "Title1": [
             {
               "name": "Capacity",
@@ -6840,7 +7220,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Automatic Press",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "Offering automation for enhanced efficiency, VBCC's Automatic Press streamlines pressing and shaping processes.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -6992,7 +7372,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Mini Hot Press",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "Compact yet powerful, VBCC's Mini Hot Press is designed for small-scale material compaction and molding.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7016,7 +7396,11 @@
       ],
       "specification": [
         {
-          "title": ["Press", "Heating System", "Control System"],
+          "title": [
+            "Press",
+            "Heating System",
+            "Control System"
+          ],
           "Title1": [
             {
               "name": "Capacity",
@@ -7129,7 +7513,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Computerized Shaping Machine",
-      "productType": "PRESSES",
+      "productType": "Presses",
       "description": "VBCC's Computerized Shaping Machine provides automated and precise shaping capabilities for diverse materials and applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7281,7 +7665,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Magnesium Stir Casting",
-      "productType": "METTALURGICAL EQUIPMENT",
+      "productType": "Mettalurgial Equipment",
       "description": "VBCC's Magnesium Stir Casting process ensures controlled and efficient casting of magnesium alloys, offering precise material properties and applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7305,7 +7689,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size and Construction"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size and Construction"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -7438,7 +7826,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Aluminium Stir Casting",
-      "productType": "METTALURGICAL EQUIPMENT",
+      "productType": "Mettalurgial Equipment",
       "description": "VBCC's Aluminium Stir Casting method combines stirring and casting, producing high-quality aluminum components with improved mechanical characteristics for diverse industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7462,7 +7850,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size and Construction"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size and Construction"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -7591,7 +7983,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Squeeze Casting",
-      "productType": "METTALURGICAL EQUIPMENT",
+      "productType": "Mettalurgial Equipment",
       "description": "VBCC's Squeeze Casting process integrates casting and forging, resulting in components with enhanced density, strength, and dimensional accuracy, making them suitable for demanding applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7615,7 +8007,10 @@
       ],
       "specification": [
         {
-          "title": ["Melting Furnace", "Stirring Unit"],
+          "title": [
+            "Melting Furnace",
+            "Stirring Unit"
+          ],
           "Title1": [
             {
               "name": "Melting Capacity",
@@ -7710,7 +8105,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Rheo Casting",
-      "productType": "METTALURGICAL EQUIPMENT",
+      "productType": "Mettalurgial Equipment",
       "description": "VBCC's Rheo Casting technology showcases advanced manufacturing for components with superior mechanical properties, combining elements of casting and controlled solidification for exceptional performance.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7885,7 +8280,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "PIT Furnace",
-      "productType": "INDUSTRIAL FURNACES",
+      "productType": "Industrial Furnaces",
       "description": "VBCC's PIT Furnace is designed for precision heat treatment, providing a controlled environment for various industrial processes.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -7909,7 +8304,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -7947,7 +8346,7 @@
             },
             {
               "name": "Heating Element",
-              "value": "Kanthal make heating elements"
+              "value": "Kanthal make Heating Elements"
             },
             {
               "name": "Heating Rate",
@@ -8034,7 +8433,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Enamel Furnace",
-      "productType": "INDUSTRIAL FURNACES",
+      "productType": "Industrial Furnaces",
       "description": "The Enamel Furnace from VBCC ensures efficient and uniform enamel coating for diverse applications, meeting high-quality standards.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8058,7 +8457,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8179,7 +8582,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Raising Hearth",
-      "productType": "INDUSTRIAL FURNACES",
+      "productType": "Industrial Furnaces",
       "description": "VBCC's Raising Hearth Furnace is engineered for controlled temperature environments, ideal for processes requiring precision heating and treatment.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8203,7 +8606,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8344,7 +8751,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Top Hat Furnace",
-      "productType": "INDUSTRIAL FURNACES",
+      "productType": "Industrial Furnaces",
       "description": "The Top Hat Furnace by VBCC is a versatile solution for heat treatment processes, offering reliability and efficiency in industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8368,7 +8775,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8509,7 +8920,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Lab Roller Hearth",
-      "productType": "INDUSTRIAL FURNACES",
+      "productType": "Industrial Furnaces",
       "description": "VBCC's Lab Roller Hearth Furnace provides a controlled atmosphere for laboratory-scale heat treatment, ensuring precision in research and development.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8533,7 +8944,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8654,7 +9069,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Industrial Auto Clave",
-      "productType": "INDUSTRIAL FURNACES",
+      "productType": "Industrial Furnaces",
       "description": "The Industrial Auto Clave from VBCC is a reliable and automated solution for controlled pressure and temperature environments, suitable for various industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8678,7 +9093,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8711,8 +9130,8 @@
               "value": "Immersed heaters"
             },
             {
-                "name": "Heating Rate",
-                "value": "Rapid heating 1 to 10 deg/minute"
+              "name": "Heating Rate",
+              "value": "Rapid heating 1 to 10 deg/minute"
             },
             {
               "name": "Temperature sensor",
@@ -8807,7 +9226,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Hot Modulus of Rupture (HMOR)",
-      "productType": "REFRACTORY INDUSTRY",
+      "productType": "Refactory Industry",
       "description": "VBCC's Hot Modulus of Rupture apparatus measures material strength at elevated temperatures, providing crucial data for high-temperature applications and structural analysis.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8831,7 +9250,12 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size", "Specimen and Testing"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Specimen and Testing"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8860,16 +9284,16 @@
               "value": "1450°C (2642°F)"
             },
             {
-                "name": "Max. Continuous Working Temperature",
-                "value": "1400°C (2552°F)"
+              "name": "Max. Continuous Working Temperature",
+              "value": "1400°C (2552°F)"
             },
             {
               "name": "Heating Element",
               "value": "Silicon carbide (12 numbers with even distribution)"
             },
             {
-                "name": "Heating Rate",
-                "value": "Rapid heating 1 to 10 deg/minute"
+              "name": "Heating Rate",
+              "value": "Rapid heating 1 to 10 deg/minute"
             },
             {
               "name": "Temperature sensor",
@@ -8890,8 +9314,8 @@
               "value": "200 x 200 x 400 mm"
             },
             {
-                "name": "Hot Zone Length per Zone",
-                "value": "190mm"
+              "name": "Hot Zone Length per Zone",
+              "value": "190mm"
             },
             {
               "name": "Shell Construction",
@@ -8908,8 +9332,8 @@
               "value": "125mm"
             },
             {
-                "name": "Maximum Load",
-                "value": "200kg"
+              "name": "Maximum Load",
+              "value": "200kg"
             }
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
@@ -8966,7 +9390,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Cold Compression Strength",
-      "productType": "REFRACTORY INDUSTRY",
+      "productType": "Refactory Industry",
       "description": "VBCC's Cold Compression Strength testing evaluates material strength at lower temperatures, offering insights into its performance under compressive forces in diverse environments.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -8990,7 +9414,12 @@
       ],
       "specification": [
         {
-          "title": ["Structure", "Hydraulic System", "Press Operation", "Power Requirement and Indication"],
+          "title": [
+            "Structure",
+            "Hydraulic System",
+            "Press Operation",
+            "Power Requirement and Indication"
+          ],
           "Title1": [
             {
               "name": "Size",
@@ -9019,16 +9448,16 @@
               "value": "Ceramic Powder pressing"
             },
             {
-                "name": "Piston Stroke/Dia",
-                "value": "150mm/150mm"
+              "name": "Piston Stroke/Dia",
+              "value": "150mm/150mm"
             },
             {
               "name": "Loading/Compaction",
               "value": "Vertical up/Uni axial"
             },
             {
-                "name": "Day Light",
-                "value": "200 mm"
+              "name": "Day Light",
+              "value": "200 mm"
             },
             {
               "name": "Platen Size",
@@ -9045,8 +9474,8 @@
               "value": "Digitally programmed via HMI (Human Machine Interface)"
             },
             {
-                "name": "Pressure",
-                "value": "Programmable and adjustable (0.1 Ton resolution)"
+              "name": "Pressure",
+              "value": "Programmable and adjustable (0.1 Ton resolution)"
             },
             {
               "name": "PLC and Automation Drive",
@@ -9129,7 +9558,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Creep in Compression",
-      "productType": "REFRACTORY INDUSTRY",
+      "productType": "Refactory Industry",
       "description": "VBCC's Creep in Compression testing assesses a material's ability to withstand prolonged compression, providing essential data for applications requiring long-term structural integrity.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -9153,7 +9582,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9207,7 +9640,7 @@
             },
             {
               "name": "Heating Element",
-              "value": "Silicon Carbide heating elements (U-shape, 6/12 size, 200mm hot zone, 6 numbers)"
+              "value": "Silicon Carbide Heating Elements (U-shape, 6/12 size, 200mm hot zone, 6 numbers)"
             },
             {
               "name": "Rate of Heating",
@@ -9263,7 +9696,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Thermal Conductivity",
-      "productType": "REFRACTORY INDUSTRY",
+      "productType": "Refactory Industry",
       "description": "VBCC's Thermal Conductivity apparatus enables precise measurement of a material's thermal conductivity, offering valuable insights into its heat transfer capabilities for thermal management applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -9287,7 +9720,13 @@
       ],
       "specification": [
         {
-          "title": ["Heating Chamber", "Heating System", "Control System", "Hot Cross Wire Assembly", "Instrumentation"],
+          "title": [
+            "Heating Chamber",
+            "Heating System",
+            "Control System",
+            "Hot Cross Wire Assembly",
+            "Instrumentation"
+          ],
           "Title1": [
             {
               "name": "Shell size and useful volume",
@@ -9300,7 +9739,7 @@
           ],
           "Title2": [
             {
-              "name": "Heating elements",
+              "name": "Heating Elements",
               "value": "Silicon carbide (six numbers with even distribution)"
             },
             {
@@ -9308,16 +9747,16 @@
               "value": "I SQUIRED R, USA (Imported)"
             },
             {
-                "name": "Hot zone length",
-                "value": "140mm"
+              "name": "Hot zone length",
+              "value": "140mm"
             },
             {
               "name": "Furnace operation",
               "value": "SINGLE PHASE / AC"
             },
             {
-                "name": "Power",
-                "value": "4 kW"
+              "name": "Power",
+              "value": "4 kW"
             },
             {
               "name": "Maximum temperature",
@@ -9342,8 +9781,8 @@
               "value": "R Type Thermocouple"
             },
             {
-                "name": "Accuracy",
-                "value": "1°C"
+              "name": "Accuracy",
+              "value": "1°C"
             }
           ],
           "Title4": [
@@ -9407,8 +9846,8 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
-      "productName": "Dilatometer (Thermal Expansion up to 1600°C)",
-      "productType": "REFRACTORY INDUSTRY",
+      "productName": "Dilatometer - Thermal Expansion up to 1600C",
+      "productType": "Refactory Industry",
       "description": "VBCC's Dilatometer assesses a material's thermal expansion up to 1600°C, providing critical information for applications where dimensional stability under high temperatures is crucial.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -9432,7 +9871,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9565,8 +10008,8 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Tap Hole Testing Apparatus",
-      "productType": "REFRACTORY INDUSTRY",
-      "description": "VBCC's Tap Hole Testing Apparatus evaluates the performance of tap holes in furnaces, ensuring reliability and efficiency in industrial processes such as metal production.",
+      "productType": "Refactory Industry",
+      "description": "VBCC's Tap Hole Testing Apparatus evaluates the performance of tap holes in Furnaces, ensuring reliability and efficiency in industrial processes such as metal production.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
       "gallery": [
@@ -9589,7 +10032,12 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size","Extrusion of Taphole Mass"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Extrusion of Taphole Mass"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9684,7 +10132,7 @@
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "Introducing VBCC's Tap Hole Testing Apparatus, a specialized instrument designed for precise assessments in industries requiring accurate analysis of tap hole conditions in furnaces. Engineered with precision and reliability, this apparatus is an essential tool for understanding and optimizing tap hole performance, ensuring efficient and effective furnace operation.",
+            "Introducing VBCC's Tap Hole Testing Apparatus, a specialized instrument designed for precise assessments in industries requiring accurate analysis of tap hole conditions in Furnaces. Engineered with precision and reliability, this apparatus is an essential tool for understanding and optimizing tap hole performance, ensuring efficient and effective furnace operation.",
             "Key Features:"
           ],
           "overViewList": [
@@ -9736,7 +10184,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Brick Cutting Machine",
-      "productType": "REFRACTORY INDUSTRY",
+      "productType": "Refactory Industry",
       "description": "VBCC's Brick Cutting Machine provides a precise and efficient solution for cutting bricks to specific dimensions, catering to the diverse needs of construction and industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -9760,7 +10208,10 @@
       ],
       "specification": [
         {
-          "title": ["Structure", "Cutting System"],
+          "title": [
+            "Structure",
+            "Cutting System"
+          ],
           "Title1": [
             {
               "name": "Size of the Machine",
@@ -9851,7 +10302,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Flexural Strength (MOR)",
-      "productType": "TILE & SANITARY WARE",
+      "productType": "Tile & Santiary Ware",
       "description": "VBCC's Flexural Strength testing assesses a material's resistance to bending, providing crucial data for structural analysis and applications requiring flexural performance.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -9875,7 +10326,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Size of the machine",
@@ -9972,7 +10425,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Torsion Viscometer",
-      "productType": "TILE & SANITARY WARE",
+      "productType": "Tile & Santiary Ware",
       "description": "VBCC's Torsion Viscometer provides accurate measurements of a fluid's viscosity, aiding in the characterization of materials for industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -9996,7 +10449,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Torsion Wire",
@@ -10072,165 +10527,8 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
-      "productName": "Torsion Viscometer",
-      "productType": "TILE & SANITARY WARE",
-      "description": "VBCC's Torsion Viscometer provides accurate measurements of a fluid's viscosity, aiding in the characterization of materials for industrial applications.",
-      "variant": [],
-      "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
-      "specification": [
-        {
-          "title": ["General", "Temperature", "Size"],
-          "Title1": [
-            {
-              "name": "Model",
-              "value": ""
-            },
-            {
-              "name": "Electrical Requirements",
-              "value": "15 Amps / 230 V / AC"
-            },
-            {
-              "name": "Number of Zones",
-              "value": "Single Zone"
-            },
-            {
-              "name": "Measuring Method",
-              "value": "LVDT technique with digital readout"
-            },
-            {
-              "name": "Measuring Accuracy",
-              "value": "1 Micron"
-            },
-            {
-              "name": "Measuring Range",
-              "value": "0 to 2000 Microns"
-            },
-            {
-              "name": "Specimen Size",
-              "value": "10 x 10 x 45 mm ± 2 mm"
-            }
-          ],
-          "Title2": [
-            {
-              "name": "Min. Working Temperature",
-              "value": "Ambient"
-            },
-            {
-              "name": "Max. Working Temperature",
-              "value": "1600°C (2912°F)"
-            },
-            {
-              "name": "Max. Continuous Working Temperature",
-              "value": "1500°C (2732°F)"
-            },
-            {
-              "name": "Insulation",
-              "value": "Low thermal mass zirconia blend fibre boar"
-            },
-            {
-              "name": "Heating Element",
-              "value": "Special MOSi2 (I squirred R, USA make)"
-            },
-            {
-              "name": "Heating Rate",
-              "value": "1 to 10 deg/minute"
-            },
-            {
-              "name": "Temperature sensor",
-              "value": "B – Type thermocouple"
-            },
-            {
-              "name": "Temperature Controller",
-              "value": "TAIE make PID Programmable Digital Temperature Indicator cum Controller"
-            }
-          ],
-          "Title3": [
-            {
-              "name": "Shell Size",
-              "value": "250 x 1000 x 300 mm"
-            },
-            {
-              "name": "Shell Construction",
-              "value": "Double wall structure with high-quality fabrication of M. S. Body with neat powder coat painting and elegant design"
-            }
-          ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
-          "overViewDescription": [
-            "VBCC proudly presents its Dilatometer designed for precise thermal expansion measurements up to 1600°C. This cutting-edge instrument is tailored for industries requiring accurate assessments of material expansion under high-temperature conditions. Engineered with precision and reliability, the VBCC Dilatometer is an essential tool for understanding thermal behavior in diverse applications.",
-            "Key Features:"
-          ],
-          "overViewList": [
-            {
-              "title": "",
-              "para": "1. Temperature Range: The Dilatometer is equipped to handle thermal expansion measurements up to 1600°C, providing a comprehensive understanding of material response to elevated temperatures."
-            },
-            {
-              "title": "",
-              "para": "2. High Accuracy: VBCC's Dilatometer ensures high-precision measurements, allowing for detailed analysis of material expansion and contraction characteristics."
-            },
-            {
-              "title": "",
-              "para": "3. Thermal Cycling: The instrument facilitates thermal cycling experiments, enabling the study of material behavior under varying temperature conditions and repeated thermal stresses."
-            },
-            {
-              "title": "",
-              "para": "4. Sample Holder Design: The Dilatometer features a secure sample holder design for stable and repeatable measurements, ensuring reliability and consistency in thermal expansion results."
-            },
-            {
-              "title": "",
-              "para": "5. Advanced Data Acquisition: Equipped with advanced data acquisition systems, including sensors and analysis software, the Dilatometer captures detailed information on material expansion throughout the testing process."
-            },
-            {
-              "title": "",
-              "para": "6. Real-Time Monitoring: The user-friendly interface, complete with a touchscreen display or computer interface, enables real-time monitoring, control, and adjustment of testing parameters."
-            },
-            {
-              "title": "",
-              "para": "7. Durability in Design: Constructed from high-quality materials capable of withstanding extreme temperatures, VBCC's Dilatometer reflects a commitment to durability and long-lasting performance."
-            },
-            {
-              "title": "",
-              "para": "8. Compliance with Standards: The Dilatometer adheres to industry standards and specifications, ensuring that results are reliable, consistent, and compliant with relevant regulations."
-            }
-          ],
-          "overViewLastPara": "Trust VBCC's Dilatometer for unparalleled precision, durability, and insightful thermal expansion measurements. Elevate your understanding of material behavior under high-temperature conditions with this state-of-the-art instrument."
-        }
-      ]
-    },
-    {
-      "category": "Industries",
-      "sortBy": "Relevance",
-      "feature": [
-        {
-          "id": "1",
-          "robust": "robust"
-        },
-        {
-          "id": "2",
-          "fragile": "fragile"
-        }
-      ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Auto Clave",
-      "productType": "TILE & SANITARY WARE",
+      "productType": "Tile & Santiary Ware",
       "description": "The Auto Clave from VBCC is an automated pressure vessel designed for controlled pressure and temperature environments, catering to diverse industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -10254,7 +10552,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -10379,7 +10681,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Lab Roller Hearth Furnace",
-      "productType": "TILE & SANITARY WARE",
+      "productType": "Tile & Santiary Ware",
       "description": "VBCC's Lab Roller Hearth Furnaces create a controlled atmosphere for laboratory-scale heat treatment, ensuring precision in material research and development.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -10403,7 +10705,11 @@
       ],
       "specification": [
         {
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -10528,7 +10834,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Water Chiller",
-      "productType": "TILE & SANITARY WARE",
+      "productType": "Tile & Santiary Ware",
       "description": "A Microwave Furnace is a device that uses microwaves to heat materials quickly and uniformly, often employed in processes such as sintering, melting, or chemical reactions for efficient material processing.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -10552,7 +10858,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Water chilling unit",
@@ -10629,7 +10937,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Silicon Carbide Heating Elements",
-      "productType": "HEATING ELEMENTS",
+      "productType": "Heating Elements",
       "description": "VBCC's Silicon Carbide Heating Elements are high-performance electric heaters known for their excellent thermal conductivity and durability, ideal for high-temperature industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -10653,7 +10961,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -10677,7 +10987,7 @@
             },
             {
               "name": "Application",
-              "value": "Industrial furnaces, metallurgy, ceramics, material processing"
+              "value": "Industrial Furnaces, metallurgy, ceramics, material processing"
             },
             {
               "name": "Advantages",
@@ -10686,7 +10996,7 @@
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "VBCC presents Silicon Carbide Heating Elements, a cutting-edge solution for high-temperature heating applications in diverse industries. Engineered with precision and durability, these heating elements offer exceptional performance, reliability, and longevity, making them a preferred choice for applications requiring elevated temperatures.",
+            "VBCC presents Silicon Carbide Heating Elements, a cutting-edge solution for high-temperature heating applications in diverse industries. Engineered with precision and durability, these Heating Elements offer exceptional performance, reliability, and longevity, making them a preferred choice for applications requiring elevated temperatures.",
             "Key Features:"
           ],
           "overViewList": [
@@ -10696,11 +11006,11 @@
             },
             {
               "title": "",
-              "para": "2. Rapid Heating and Cooling: The heating elements are designed for rapid heating and cooling cycles, contributing to efficient and responsive temperature control in applications."
+              "para": "2. Rapid Heating and Cooling: The Heating Elements are designed for rapid heating and cooling cycles, contributing to efficient and responsive temperature control in applications."
             },
             {
               "title": "",
-              "para": "3. Long Service Life: Constructed from high-quality silicon carbide, these heating elements exhibit excellent durability, ensuring a long service life and minimizing downtime."
+              "para": "3. Long Service Life: Constructed from high-quality silicon carbide, these Heating Elements exhibit excellent durability, ensuring a long service life and minimizing downtime."
             },
             {
               "title": "",
@@ -10708,7 +11018,7 @@
             },
             {
               "title": "",
-              "para": "5. Resistance to Chemical Corrosion: Silicon Carbide is inherently resistant to chemical corrosion, making these heating elements suitable for applications involving corrosive atmospheres."
+              "para": "5. Resistance to Chemical Corrosion: Silicon Carbide is inherently resistant to chemical corrosion, making these Heating Elements suitable for applications involving corrosive atmospheres."
             },
             {
               "title": "",
@@ -10716,7 +11026,7 @@
             },
             {
               "title": "",
-              "para": "7. Energy Efficiency: The heating elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
+              "para": "7. Energy Efficiency: The Heating Elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
             },
             {
               "title": "",
@@ -10727,7 +11037,7 @@
               "para": "9. Compliance with Standards: VBCC's Silicon Carbide Heating Elements adhere to industry standards, ensuring reliability, consistency, and compliance with relevant regulations."
             }
           ],
-          "overViewLastPara": "Trust VBCC's Silicon Carbide Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art heating elements, designed to meet the demanding requirements of industrial heating processes."
+          "overViewLastPara": "Trust VBCC's Silicon Carbide Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art Heating Elements, designed to meet the demanding requirements of industrial heating processes."
         }
       ]
     },
@@ -10746,7 +11056,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "MOSi2 Heating Elements",
-      "productType": "HEATING ELEMENTS",
+      "productType": "Heating Elements",
       "description": "VBCC's MOSi2 Heating Elements, made of molybdenum disilicide, offer high-temperature stability and oxidation resistance, making them suitable for diverse heating applications in extreme environments.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -10770,7 +11080,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -10798,7 +11110,7 @@
             },
             {
               "name": "Application",
-              "value": "Used in high-temperature industrial furnaces, sintering, and heat treatment processes"
+              "value": "Used in high-temperature Industrial Furnaces, sintering, and heat treatment processes"
             },
             {
               "name": "Advantages",
@@ -10807,7 +11119,7 @@
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "Experience advanced high-temperature heating solutions with VBCC MoSi2 Heating Elements. Engineered for exceptional performance in extreme heat conditions, these heating elements offer reliability, durability, and precise temperature control, making them a preferred choice for various industrial applications.",
+            "Experience advanced high-temperature heating solutions with VBCC MoSi2 Heating Elements. Engineered for exceptional performance in extreme heat conditions, these Heating Elements offer reliability, durability, and precise temperature control, making them a preferred choice for various industrial applications.",
             "Key Features:"
           ],
           "overViewList": [
@@ -10817,11 +11129,11 @@
             },
             {
               "title": "",
-              "para": "2. Rapid Heating and Cooling: The heating elements are designed for rapid heating and cooling cycles, contributing to efficient and responsive temperature control in applications."
+              "para": "2. Rapid Heating and Cooling: The Heating Elements are designed for rapid heating and cooling cycles, contributing to efficient and responsive temperature control in applications."
             },
             {
               "title": "",
-              "para": "3. Long Service Life: Constructed from high-quality molybdenum disilicide (MoSi2), these heating elements exhibit excellent durability, ensuring a long service life and minimizing downtime."
+              "para": "3. Long Service Life: Constructed from high-quality molybdenum disilicide (MoSi2), these Heating Elements exhibit excellent durability, ensuring a long service life and minimizing downtime."
             },
             {
               "title": "",
@@ -10837,7 +11149,7 @@
             },
             {
               "title": "",
-              "para": "7. Energy Efficiency: The heating elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
+              "para": "7. Energy Efficiency: The Heating Elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
             },
             {
               "title": "",
@@ -10848,7 +11160,7 @@
               "para": "9. Compliance with Standards: VBCC's MoSi2 Heating Elements adhere to industry standards, ensuring reliability, consistency, and compliance with relevant regulations."
             }
           ],
-          "overViewLastPara": "Trust VBCC's MoSi2 Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art heating elements, designed to meet the demanding requirements of industrial heating processes."
+          "overViewLastPara": "Trust VBCC's MoSi2 Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art Heating Elements, designed to meet the demanding requirements of industrial heating processes."
         }
       ]
     },
@@ -10867,8 +11179,8 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "APM Kanthal",
-      "productType": "HEATING ELEMENTS",
-      "description": "APM Kanthal, offered by VBCC, is a versatile heating alloy known for its high-temperature strength and oxidation resistance. It is a reliable choice for heating elements in various industrial processes.",
+      "productType": "Heating Elements",
+      "description": "APM Kanthal, offered by VBCC, is a versatile heating alloy known for its high-temperature strength and oxidation resistance. It is a reliable choice for Heating Elements in various industrial processes.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
       "gallery": [
@@ -10891,7 +11203,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -10919,7 +11233,7 @@
             },
             {
               "name": "Application",
-              "value": "Electrical heating elements in industrial furnaces."
+              "value": "Electrical Heating Elements in industrial Furnaces."
             },
             {
               "name": "Advantages",
@@ -10928,7 +11242,7 @@
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "Explore cutting-edge heating solutions with APM Kanthal Heating Elements, designed to deliver reliable and efficient performance in a variety of industrial applications. Engineered with precision and durability, these heating elements offer advanced thermal processing capabilities for enhanced operational efficiency.",
+            "Explore cutting-edge heating solutions with APM Kanthal Heating Elements, designed to deliver reliable and efficient performance in a variety of industrial applications. Engineered with precision and durability, these Heating Elements offer advanced thermal processing capabilities for enhanced operational efficiency.",
             "Key Features:"
           ],
           "overViewList": [
@@ -10942,7 +11256,7 @@
             },
             {
               "title": "",
-              "para": "3. Long Service Life: Constructed from high-quality APM Kanthal, these heating elements exhibit excellent durability, ensuring a prolonged service life and minimizing downtime."
+              "para": "3. Long Service Life: Constructed from high-quality APM Kanthal, these Heating Elements exhibit excellent durability, ensuring a prolonged service life and minimizing downtime."
             },
             {
               "title": "",
@@ -10950,7 +11264,7 @@
             },
             {
               "title": "",
-              "para": "5. Resistance to Corrosion: APM Kanthal is inherently resistant to corrosion, making these heating elements suitable for applications in corrosive environments."
+              "para": "5. Resistance to Corrosion: APM Kanthal is inherently resistant to corrosion, making these Heating Elements suitable for applications in corrosive environments."
             },
             {
               "title": "",
@@ -10958,7 +11272,7 @@
             },
             {
               "title": "",
-              "para": "7. Energy Efficiency: The heating elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
+              "para": "7. Energy Efficiency: The Heating Elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
             },
             {
               "title": "",
@@ -10969,7 +11283,7 @@
               "para": "9. Compliance with Standards: APM Kanthal Heating Elements adhere to industry standards, ensuring reliability, consistency, and compliance with relevant regulations."
             }
           ],
-          "overViewLastPara": "Trust APM Kanthal Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art heating elements, designed to meet the demanding requirements of industrial heating processes."
+          "overViewLastPara": "Trust APM Kanthal Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art Heating Elements, designed to meet the demanding requirements of industrial heating processes."
         }
       ]
     },
@@ -10988,8 +11302,8 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Graphite Heating Elements",
-      "productType": "HEATING ELEMENTS",
-      "description": "VBCC's Graphite Heating Elements provide efficient and uniform heating in high-temperature environments, making them suitable for applications requiring precision and durability, such as in industrial furnaces.",
+      "productType": "Heating Elements",
+      "description": "VBCC's Graphite Heating Elements provide efficient and uniform heating in high-temperature environments, making them suitable for applications requiring precision and durability, such as in industrial Furnaces.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
       "gallery": [
@@ -11012,7 +11326,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -11049,7 +11365,7 @@
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "Explore advanced heating solutions with Graphite Heating Elements, meticulously designed to deliver reliable and efficient performance in diverse industrial applications. Engineered with precision and durability, these heating elements offer superior thermal processing capabilities for enhanced operational efficiency.",
+            "Explore advanced heating solutions with Graphite Heating Elements, meticulously designed to deliver reliable and efficient performance in diverse industrial applications. Engineered with precision and durability, these Heating Elements offer superior thermal processing capabilities for enhanced operational efficiency.",
             "Key Features:"
           ],
           "overViewList": [
@@ -11063,7 +11379,7 @@
             },
             {
               "title": "",
-              "para": "3. Long Service Life: Constructed from high-quality graphite materials, these heating elements exhibit excellent durability, ensuring a prolonged service life and minimizing downtime."
+              "para": "3. Long Service Life: Constructed from high-quality graphite materials, these Heating Elements exhibit excellent durability, ensuring a prolonged service life and minimizing downtime."
             },
             {
               "title": "",
@@ -11071,7 +11387,7 @@
             },
             {
               "title": "",
-              "para": "5. Resistance to Thermal Shock: Graphite's inherent resistance to thermal shock makes these heating elements suitable for applications requiring rapid temperature changes."
+              "para": "5. Resistance to Thermal Shock: Graphite's inherent resistance to thermal shock makes these Heating Elements suitable for applications requiring rapid temperature changes."
             },
             {
               "title": "",
@@ -11079,7 +11395,7 @@
             },
             {
               "title": "",
-              "para": "7. Energy Efficiency: The heating elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
+              "para": "7. Energy Efficiency: The Heating Elements are designed for energy efficiency, minimizing heat loss and optimizing power consumption in heating processes."
             },
             {
               "title": "",
@@ -11090,7 +11406,7 @@
               "para": "9. Compliance with Standards: VBCC's Graphite Heating Elements adhere to industry standards, ensuring reliability, consistency, and compliance with relevant regulations."
             }
           ],
-          "overViewLastPara": "Trust VBCC's Graphite Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art heating elements, designed to meet the demanding requirements of industrial heating processes."
+          "overViewLastPara": "Trust VBCC's Graphite Heating Elements for superior performance in high-temperature heating applications. Elevate your thermal processing capabilities with these state-of-the-art Heating Elements, designed to meet the demanding requirements of industrial heating processes."
         }
       ]
     },
@@ -11109,8 +11425,8 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Vacuum Fiber Board Insulation",
-      "productType": "CONTROLLERS",
-      "description": "VBCC's Vacuum Fiber Board Insulation is a cost-effective and high-temperature insulation solution designed for kilns, furnaces, and thermal process systems, offering low thermal conductivity and excellent thermal shock resistance.",
+      "productType": "Controllers",
+      "description": "VBCC's Vacuum Fiber Board Insulation is a cost-effective and high-temperature insulation solution designed for kilns, Furnaces, and thermal process systems, offering low thermal conductivity and excellent thermal shock resistance.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
       "gallery": [
@@ -11137,7 +11453,7 @@
           "Title1": [],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "VBCC Vacuum Fiber Board Insulation is a versatile and cost-effective hot face insulation solution meticulously designed for kilns, furnaces, and thermal process systems operating at temperatures up to 1800°C. Manufactured by VBCC, this insulation is crafted from a carefully controlled blend of polycrystalline Al₂O₃ fiber (PCW), high-purity alumina filler, and inorganic refractory binders.",
+            "VBCC Vacuum Fiber Board Insulation is a versatile and cost-effective hot face insulation solution meticulously designed for kilns, Furnaces, and thermal process systems operating at temperatures up to 1800°C. Manufactured by VBCC, this insulation is crafted from a carefully controlled blend of polycrystalline Al₂O₃ fiber (PCW), high-purity alumina filler, and inorganic refractory binders.",
             "Key Features:"
           ],
           "overViewList": [
@@ -11174,7 +11490,7 @@
               "para": "8. Manufactured by VBCC: As a product of VBCC, the Vacuum Fiber Board Insulation adheres to the company's commitment to quality manufacturing, ensuring consistent performance and reliability."
             }
           ],
-          "overViewLastPara": "Trust VBCC Vacuum Fiber Board Insulation for cost-effective, high-performance thermal insulation in industrial applications. Elevate your kilns, furnaces, and thermal process systems with this state-of-the-art insulation solution designed to meet the demanding requirements of high-temperature operations."
+          "overViewLastPara": "Trust VBCC Vacuum Fiber Board Insulation for cost-effective, high-performance thermal insulation in industrial applications. Elevate your kilns, Furnaces, and thermal process systems with this state-of-the-art insulation solution designed to meet the demanding requirements of high-temperature operations."
         }
       ]
     },
@@ -11193,7 +11509,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Thyristors",
-      "productType": "CONTROLLERS",
+      "productType": "Controllers",
       "description": "VBCC's Thyristors are semiconductor devices designed for precise electrical power control, acting as efficient switches for regulating high-power electrical circuits with reliability and accuracy.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11273,8 +11589,8 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "PID Controllers",
-      "productType": "CONTROLLERS",
-      "description": "VBCC's PID Controllers, or Proportional-Integral-Derivative controllers, are feedback control systems widely used in industrial and process automation. They ensure accurate and adaptable control over diverse processes, including temperature, pressure, and flow.",
+      "productType": "Controllers",
+      "description": "VBCC's PID Controllers, or Proportional-Integral-Derivative Controllers, are feedback control systems widely used in industrial and process automation. They ensure accurate and adaptable control over diverse processes, including temperature, pressure, and flow.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
       "gallery": [
@@ -11297,7 +11613,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Brand",
@@ -11334,7 +11652,7 @@
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "PID controllers, short for Proportional-Integral-Derivative controllers, are indispensable feedback control systems widely applied in the realm of industrial and process automation. These controllers play a crucial role in continuously monitoring and adjusting a system's output to maintain a desired setpoint, ensuring precision and stability in complex systems.",
+            "PID Controllers, short for Proportional-Integral-Derivative Controllers, are indispensable feedback control systems widely applied in the realm of industrial and process automation. These Controllers play a crucial role in continuously monitoring and adjusting a system's output to maintain a desired setpoint, ensuring precision and stability in complex systems.",
             "Key Features:"
           ],
           "overViewList": [
@@ -11356,7 +11674,7 @@
             },
             {
               "title": "",
-              "para": "PID controllers dynamically adjust the system's input to minimize the difference between the desired setpoint and the actual process variable. The versatility of PID control lies in its ability to adapt to varying conditions and maintain precise regulation across diverse applications."
+              "para": "PID Controllers dynamically adjust the system's input to minimize the difference between the desired setpoint and the actual process variable. The versatility of PID control lies in its ability to adapt to varying conditions and maintain precise regulation across diverse applications."
             },
             {
               "title": "Applications:",
@@ -11364,15 +11682,15 @@
             },
             {
               "title": "",
-              "para": "1. Temperature Control: PID controllers are extensively used in temperature control systems, ensuring that the temperature remains closely aligned with the desired setpoint."
+              "para": "1. Temperature Control: PID Controllers are extensively used in temperature control systems, ensuring that the temperature remains closely aligned with the desired setpoint."
             },
             {
               "title": "",
-              "para": "2. Pressure Regulation: In industrial processes where pressure control is critical, PID controllers excel in maintaining optimal pressure levels."
+              "para": "2. Pressure Regulation: In industrial processes where pressure control is critical, PID Controllers excel in maintaining optimal pressure levels."
             },
             {
               "title": "",
-              "para": "3. Flow Control: PID controllers play a key role in regulating fluid flow, providing accurate adjustments to meet specific flow rate requirements."
+              "para": "3. Flow Control: PID Controllers play a key role in regulating fluid flow, providing accurate adjustments to meet specific flow rate requirements."
             },
             {
               "title": "Advantages",
@@ -11380,7 +11698,7 @@
             },
             {
               "title": "",
-              "para": "1. Accuracy: PID controllers offer accurate control, minimizing deviations between the desired and actual process variables."
+              "para": "1. Accuracy: PID Controllers offer accurate control, minimizing deviations between the desired and actual process variables."
             },
             {
               "title": "",
@@ -11388,14 +11706,14 @@
             },
             {
               "title": "",
-              "para": "3. Adaptability: PID controllers adapt to different processes and applications, making them versatile and widely applicable."
+              "para": "3. Adaptability: PID Controllers adapt to different processes and applications, making them versatile and widely applicable."
             },
             {
               "title": "Conclusion:",
               "para": ""
             }
           ],
-          "overViewLastPara": "PID controllers are valued for their ability to provide accurate, responsive, and adaptable control in industrial and process automation. Their widespread use in temperature, pressure, and flow control underscores their significance in achieving precise regulation and stability in diverse and complex systems."
+          "overViewLastPara": "PID Controllers are valued for their ability to provide accurate, responsive, and adaptable control in industrial and process automation. Their widespread use in temperature, pressure, and flow control underscores their significance in achieving precise regulation and stability in diverse and complex systems."
         }
       ]
     },
@@ -11414,7 +11732,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Mass Flow Controllers",
-      "productType": "CONTROLLERS",
+      "productType": "Controllers",
       "description": "VBCC's Mass Flow Controllers offer precise control of gas flow rates in various industrial processes, ensuring accuracy and stability in applications such as gas mixing and flow regulation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11442,10 +11760,10 @@
           "Title1": [],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
-            "Compact and self-contained, VBCC's mass flow controllers are engineered for precise gas flow indication and control. Featuring a rugged design and instrumentation-grade accuracy, these controllers offer a versatile and cost-effective solution for flow control applications. Available in aluminum or stainless steel, with readout options in engineering units or 0 to 100 percent displays, they cater to diverse needs.",
-            "Equipped with a built-in electromagnetic valve, these controllers enable precise flow rate adjustments within the specified range, and the normally closed valve ensures safety during power outages. Setpoints can be controlled locally or remotely, providing flexibility.",
+            "Compact and self-contained, VBCC's mass flow Controllers are engineered for precise gas flow indication and control. Featuring a rugged design and instrumentation-grade accuracy, these Controllers offer a versatile and cost-effective solution for flow control applications. Available in aluminum or stainless steel, with readout options in engineering units or 0 to 100 percent displays, they cater to diverse needs.",
+            "Equipped with a built-in electromagnetic valve, these Controllers enable precise flow rate adjustments within the specified range, and the normally closed valve ensures safety during power outages. Setpoints can be controlled locally or remotely, providing flexibility.",
             "The LCD readout, tiltable over 90 degrees for optimal visibility, is easily removable for remote installations. For OEM applications, transducers without LCD readout are available. Flow ranges from 10 sccm to 1000 sL/min N2 are supported, with gas connections through 1/4', 3/8', or optional 1/8' compression fittings and 3/4' FNPT fittings. Additional fittings are optional.",
-            "These controllers, suitable for benchtop or mounted use, ensure reliability with fuse and polarity-protected transducer power supply ports. VBCC's mass flow controllers combine precision, safety, and user-friendly features for efficient gas flow management."
+            "These Controllers, suitable for benchtop or mounted use, ensure reliability with fuse and polarity-protected transducer power supply ports. VBCC's mass flow Controllers combine precision, safety, and user-friendly features for efficient gas flow management."
           ],
           "overViewList": [],
           "overViewLastPara": ""
@@ -11467,7 +11785,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Silicon O-Rings",
-      "productType": "CONTROLLERS",
+      "productType": "Controllers",
       "description": "VBCC's Silicon O-Rings are precision-engineered sealing components crafted from high-quality silicone rubber, known for exceptional heat resistance and durability. Widely applied in automotive, electronics, and medical devices, they exemplify VBCC's commitment to advanced sealing solutions.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11559,7 +11877,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Agate Pestle and Mortar",
-      "productType": "CERAMIC PRODUCTS",
+      "productType": "Ceramic Products",
       "description": "Precision-crafted Agate Pestle and Motors by VBCC are essential tools for laboratory grinding and mixing, featuring agate material for hardness and wear resistance, ensuring meticulous sample preparation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11583,23 +11901,28 @@
       ],
       "specification": [
         {
-          "title": ["Agate Pestle and Mortar Grey", "Agate Pestle and Mortar Black"],
+          "title": [
+            "Agate Pestle and Mortar Grey",
+            "Agate Pestle and Mortar Black"
+          ],
           "Title1": [
-            {   "name" : "Size OD (inch)",
-                "value" : "2.5-6.5"
+            {
+              "name": "Size OD (inch)",
+              "value": "2.5-6.5"
             },
             {
-                "name": "Size ID (inch)",
-                "value": "2.0-6.0"
+              "name": "Size ID (inch)",
+              "value": "2.0-6.0"
             }
           ],
           "Title2": [
-            {   "name" : "Size OD (inch)",
-                "value" : "2.5-6.5"
+            {
+              "name": "Size OD (inch)",
+              "value": "2.5-6.5"
             },
             {
-                "name": "Size ID (inch)",
-                "value": "2.0-6.0"
+              "name": "Size ID (inch)",
+              "value": "2.0-6.0"
             }
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
@@ -11627,8 +11950,8 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
-      "productName": "Alumina - Boats, Crucibles",
-      "productType": "CERAMIC PRODUCTS",
+      "productName": "Alumina - Boats and Crucibles",
+      "productType": "Ceramic Products",
       "description": "VBCC's Alumina Boats and Crucibles are high-performance components designed for demanding high-temperature applications in laboratories and industries, providing excellent thermal conductivity and resistance to chemical corrosion.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11652,73 +11975,101 @@
       ],
       "specification": [
         {
-          "title": ["99.9% Alumina Boats", "99.9% Alumina Cylindrical shaped Crucibles","99.9% Alumina Bowl shaped Crucibles", "99.9% Alumina Low Form Crucibles", "99.9% Alumina Conical Crucibles"],
+          "title": [
+            "99.9% Alumina Boats",
+            "99.9% Alumina Cylindrical shaped Crucibles",
+            "99.9% Alumina Bowl shaped Crucibles",
+            "99.9% Alumina Low Form Crucibles",
+            "99.9% Alumina Conical Crucibles"
+          ],
           "Title1": [
-            {   "name" : "OD (mm)",
-                "value" : "20-100"
+            {
+              "name": "Length (mm)",
+              "value": "80-250"
             },
             {
-                "name": "ID (mm)",
-                "value": "15-90"
+              "name": "Width (mm)",
+              "value": "8-50"
             },
             {
-                "name": "Height (mm)",
-                "value": "30-170"
+              "name": "Height (mm)",
+              "value": "8-100"
             },
             {
-                "name": "Volume (cc)",
-                "value": "5-1000"
+              "name": "Volume (cc)",
+              "value": "2-1000"
             }
           ],
           "Title2": [
-            {   "name" : "Top OD (mm)",
-                "value" : "30-115"
+            {
+              "name": "OD (mm)",
+              "value": "20-100"
             },
             {
-                "name": "Bottom OD (mm)",
-                "value": "20-105"
+              "name": "ID (mm)",
+              "value": "15-90"
             },
             {
-                "name": "Height (mm)",
-                "value": "35-140"
+              "name": "Height (mm)",
+              "value": "30-170"
             },
             {
-                "name": "Volume (cc)",
-                "value": "10-1000"
+              "name": "Volume (cc)",
+              "value": "5-1000"
             }
           ],
           "Title3": [
-            {   "name" : "Top OD (mm)",
-                "value" : "40-85"
+            {
+              "name": "Top OD (mm)",
+              "value": "30-115"
             },
             {
-                "name": "Bottom OD (mm)",
-                "value": "25-50"
+              "name": "Bottom OD (mm)",
+              "value": "20-105"
             },
             {
-                "name": "Height (mm)",
-                "value": "25-60"
+              "name": "Height (mm)",
+              "value": "35-140"
             },
             {
-                "name": "Volume (cc)",
-                "value": "10-220"
+              "name": "Volume (cc)",
+              "value": "10-1000"
             }
           ],
           "Title4": [
-            {   "name" : "Top OD (mm)",
-                "value" : "36-85"
+            {
+              "name": "Top OD (mm)",
+              "value": "40-85"
             },
             {
-                "name": "Bottom OD (mm)",
-                "value": "28-62"
+              "name": "Bottom OD (mm)",
+              "value": "25-50"
             },
             {
-                "name": "Height (mm)",
-                "value": "18-125"
+              "name": "Height (mm)",
+              "value": "25-60"
             },
             {
-                "name": "Volume (cc)",
-                "value": "10-500"
+              "name": "Volume (cc)",
+              "value": "10-220"
+            }
+          ],
+          "Title5": [
+            {
+              "name": "Top OD (mm)",
+              "value": "36-85"
+            },
+            {
+              "name": "Bottom OD (mm)",
+              "value": "28-62"
+            },
+            {
+              "name": "Height (mm)",
+              "value": "18-125"
+            },
+            {
+              "name": "Volume (cc)",
+              "value": "10-500"
             }
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
@@ -11747,7 +12098,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Alumina Tubes",
-      "productType": "CERAMIC PRODUCTS",
+      "productType": "Ceramic Products",
       "description": "VBCC's Alumina Tubes are versatile components used in laboratories and industries, offering high thermal stability, electrical insulation, and resistance to chemical corrosion for precise temperature control and insulation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11771,18 +12122,21 @@
       ],
       "specification": [
         {
-          "title": ["99.8% Recrystallized Alumina Tubes"],
+          "title": [
+            "99.8% Recrystallized Alumina Tubes"
+          ],
           "Title1": [
-            {   "name" : "OD (mm)",
-                "value" : "50-110"
+            {
+              "name": "OD (mm)",
+              "value": "50-110"
             },
             {
-                "name": "ID (mm)",
-                "value": "40-100"
+              "name": "ID (mm)",
+              "value": "40-100"
             },
             {
-                "name": "Length (mm)",
-                "value": "1000"
+              "name": "Length (mm)",
+              "value": "1000"
             }
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
@@ -11811,7 +12165,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Zirconia Wares",
-      "productType": "CERAMIC PRODUCTS",
+      "productType": "Ceramic Products",
       "description": "VBCC's Zirconia Wares, made from ZrO2, serve diverse applications in laboratories, dental ceramics, and industries, providing high strength, wear resistance, and exceptional thermal and chemical stability.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11835,61 +12189,70 @@
       ],
       "specification": [
         {
-          "title": ["Zirconia Crucibles", "Zirconia Boats","Zirconia Disc", "Zirconia Plate"],
+          "title": [
+            "Zirconia Crucibles",
+            "Zirconia Boats",
+            "Zirconia Disc",
+            "Zirconia Plate"
+          ],
           "Title1": [
-            {   "name" : "OD (mm)",
-                "value" : "30-50"
+            {
+              "name": "OD (mm)",
+              "value": "30-50"
             },
             {
-                "name": "ID (mm)",
-                "value": "25-45"
+              "name": "ID (mm)",
+              "value": "25-45"
             },
             {
-                "name": "Height (mm)",
-                "value": "40-60"
+              "name": "Height (mm)",
+              "value": "40-60"
             },
             {
-                "name": "Volume (cc)",
-                "value": "20-100"
+              "name": "Volume (cc)",
+              "value": "20-100"
             }
           ],
           "Title2": [
-            {   "name" : "OD (mm)",
-                "value" : "40-100"
+            {
+              "name": "OD (mm)",
+              "value": "40-100"
             },
             {
-                "name": "ID (mm)",
-                "value": "25-30"
+              "name": "ID (mm)",
+              "value": "25-30"
             },
             {
-                "name": "Height (mm)",
-                "value": "20"
+              "name": "Height (mm)",
+              "value": "20"
             },
             {
-                "name": "Volume (cc)",
-                "value": "10-20"
+              "name": "Volume (cc)",
+              "value": "10-20"
             }
           ],
           "Title3": [
-            {   "name" : "Diameter (mm)",
-                "value" : "10-100"
+            {
+              "name": "Diameter (mm)",
+              "value": "10-100"
             },
             {
-                "name": "Thickness (mm)",
-                "value": "3"
+              "name": "Thickness (mm)",
+              "value": "3"
             }
           ],
           "Title4": [
-            {   "name" : "Length (mm)",
-                "value" : "10-100"
+            {
+              "name": "Length (mm)",
+              "value": "10-100"
             },
             {
-                "name": "Width (mm)",
-                "value": "10-100"
+              "name": "Width (mm)",
+              "value": "10-100"
             },
             {
-                "name": "Thickness (mm)",
-                "value": "3"
+              "name": "Thickness (mm)",
+              "value": "3"
             }
           ],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
@@ -11918,7 +12281,7 @@
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
       "productName": "Grinding Media",
-      "productType": "CERAMIC PRODUCTS",
+      "productType": "Ceramic Products",
       "description": "VBCC's Grinding Media, available in materials like alumina, zirconia, and stainless steel, are crucial for grinding and milling processes in various industries, contributing to the production of materials with tailored particle size distributions and superior quality.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
@@ -11989,7 +12352,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Water chilling unit",
@@ -12054,6 +12419,167 @@
           "overViewLastPara": "VBCC's Water Chiller with a Cooling Arrangement is a testament to the company's commitment to providing reliable and efficient cooling solutions. It plays a crucial role in maintaining the integrity of equipment and processes that depend on precise temperature control, contributing to overall operational efficiency."
         }
       ]
+    },
+    {
+      "category": "Industries",
+      "sortBy": "Relevance",
+      "feature": [
+        {
+          "id": "1",
+          "robust": "robust"
+        },
+        {
+          "id": "2",
+          "fragile": "fragile"
+        }
+      ],
+      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "productName": "Dilatometer - Thermal Expansion",
+      "productType": "Tile & Santiary Ware",
+      "description": "VBCC's Dilatometer assesses a material's thermal expansion up to 1600°C, providing critical information for applications where dimensional stability under high temperatures is crucial.",
+      "variant": [],
+      "price": "₹ Enquire for Estimate",
+      "gallery": [
+        {
+          "id": "1",
+          "img": "/img 1.jpg"
+        },
+        {
+          "id": "2",
+          "img": "/img 2.jpg"
+        },
+        {
+          "id": "3",
+          "img": "/img 3.jpg"
+        },
+        {
+          "id": "4",
+          "img": "/img 4.jpg"
+        }
+      ],
+      "specification": [
+        {
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
+          "Title1": [
+            {
+              "name": "Model",
+              "value": ""
+            },
+            {
+              "name": "Electrical Requirements",
+              "value": "15 Amps / 230 V / AC"
+            },
+            {
+              "name": "Number of Zones",
+              "value": "Single Zone"
+            },
+            {
+              "name": "Measuring Method",
+              "value": "LVDT technique with digital readout"
+            },
+            {
+              "name": "Measuring Accuracy",
+              "value": "1 Micron"
+            },
+            {
+              "name": "Measuring Range",
+              "value": "0 to 2000 Microns"
+            },
+            {
+              "name": "Specimen Size",
+              "value": "10 x 10 x 45 mm ± 2 mm"
+            }
+          ],
+          "Title2": [
+            {
+              "name": "Min. Working Temperature",
+              "value": "Ambient"
+            },
+            {
+              "name": "Max. Working Temperature",
+              "value": "1600°C (2912°F)"
+            },
+            {
+              "name": "Max. Continuous Working Temperature",
+              "value": "1500°C (2732°F)"
+            },
+            {
+              "name": "Insulation",
+              "value": "Low thermal mass zirconia blend fibre boar"
+            },
+            {
+              "name": "Heating Element",
+              "value": "Special MOSi2 (I squirred R, USA make)"
+            },
+            {
+              "name": "Heating Rate",
+              "value": "1 to 10 deg/minute"
+            },
+            {
+              "name": "Temperature sensor",
+              "value": "B – Type thermocouple"
+            },
+            {
+              "name": "Temperature Controller",
+              "value": "TAIE make PID Programmable Digital Temperature Indicator cum Controller"
+            }
+          ],
+          "Title3": [
+            {
+              "name": "Shell Size",
+              "value": "250 x 1000 x 300 mm"
+            },
+            {
+              "name": "Shell Construction",
+              "value": "Double wall structure with high-quality fabrication of M. S. Body with neat powder coat painting and elegant design"
+            }
+          ],
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewDescription": [
+            "VBCC proudly presents its Dilatometer designed for precise thermal expansion measurements up to 1600°C. This cutting-edge instrument is tailored for industries requiring accurate assessments of material expansion under high-temperature conditions. Engineered with precision and reliability, the VBCC Dilatometer is an essential tool for understanding thermal behavior in diverse applications.",
+            "Key Features:"
+          ],
+          "overViewList": [
+            {
+              "title": "",
+              "para": "1. Temperature Range: The Dilatometer is equipped to handle thermal expansion measurements up to 1600°C, providing a comprehensive understanding of material response to elevated temperatures."
+            },
+            {
+              "title": "",
+              "para": "2. High Accuracy: VBCC's Dilatometer ensures high-precision measurements, allowing for detailed analysis of material expansion and contraction characteristics."
+            },
+            {
+              "title": "",
+              "para": "3. Thermal Cycling: The instrument facilitates thermal cycling experiments, enabling the study of material behavior under varying temperature conditions and repeated thermal stresses."
+            },
+            {
+              "title": "",
+              "para": "4. Sample Holder Design: The Dilatometer features a secure sample holder design for stable and repeatable measurements, ensuring reliability and consistency in thermal expansion results."
+            },
+            {
+              "title": "",
+              "para": "5. Advanced Data Acquisition: Equipped with advanced data acquisition systems, including sensors and analysis software, the Dilatometer captures detailed information on material expansion throughout the testing process."
+            },
+            {
+              "title": "",
+              "para": "6. Real-Time Monitoring: The user-friendly interface, complete with a touchscreen display or computer interface, enables real-time monitoring, control, and adjustment of testing parameters."
+            },
+            {
+              "title": "",
+              "para": "7. Durability in Design: Constructed from high-quality materials capable of withstanding extreme temperatures, VBCC's Dilatometer reflects a commitment to durability and long-lasting performance."
+            },
+            {
+              "title": "",
+              "para": "8. Compliance with Standards: The Dilatometer adheres to industry standards and specifications, ensuring that results are reliable, consistent, and compliant with relevant regulations."
+            }
+          ],
+          "overViewLastPara": "Trust VBCC's Dilatometer for unparalleled precision, durability, and insightful thermal expansion measurements. Elevate your understanding of material behavior under high-temperature conditions with this state-of-the-art instrument."
+        }
+      ]
     }
   ],
   "category": [
@@ -12069,7 +12595,7 @@
         "Microwave Heating Systems",
         "Furnaces",
         "Ovens",
-        "Nano Technology Equipment",
+        "Nano Techology Equipment",
         "Special Research Equipment",
         "Presses - Hot & Cold",
         "Metallurgical Equipment"
@@ -12079,13 +12605,17 @@
       "title": "Industries",
       "button": [
         "Industrial Furnaces",
-        "Refractory Industry",
-        "Tile & Sanitary Ware"
+        "Refactory Industry",
+        "Tile & Santiary Ware"
       ]
     },
     {
       "title": "Accessories",
-      "button": ["Ceramic Products", "Heating Elements", "Controllers"]
+      "button": [
+        "Ceramic Products",
+        "Heating Elements",
+        "Controllers"
+      ]
     }
   ],
   "relatedProducts": [

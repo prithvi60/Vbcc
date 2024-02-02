@@ -31,11 +31,11 @@ export const TestimonialSection = () => {
     visible: {
       // x: 0,
       opacity: 1,
-      transition: {
-        duration: 1,
-        delay: 0.2,
-        opacity: { duration: 0.5 },
-      },
+      // transition: {
+      //   duration: 1,
+      //   delay: 0.2,
+      //   opacity: { duration: 0.5 },
+      // },
       // transition :{
       //   x: {type : "spring",stiffness: 400,damping: 50,},
       //   opacity :{duration: 0.5}
@@ -43,12 +43,12 @@ export const TestimonialSection = () => {
     },
     exit: {
       opacity: 0,
-      scale: 0.8,
-      transition: {
-        duration: 0.5,
-        delay: 0.4,
-        opacity: { duration: 0.5 },
-      },
+      // scale: 0.8,
+      // transition: {
+      //   duration: 0.5,
+      //   delay: 0.4,
+      //   opacity: { duration: 0.5 },
+      // },
       // transition :{
       //   duration: 0.5,
       //   x: {type : "spring",stiffness: 400,damping: 50,},
@@ -96,15 +96,16 @@ export const TestimonialSection = () => {
           </div>
         </div>
       </div>
-      <AnimatePresence initial={false}>
-        <div className="lg:w-[35%] w-full h-full z-30 flex items-center justify-start lg:justify-end">
+      <AnimatePresence initial={true}>
+        <div className="lg:w-1/2 w-full h-full z-30 flex items-center justify-start lg:justify-end">
           <LazyMotion features={loadFeatures}>
             <m.div
-              className="relative h-full w-[390px]  overflow-hidden cursor-pointer"
+              className="relative h-full w-full  overflow-hidden cursor-pointer"
               onClick={() => openLightboxOnSlide(selectedItem)}
               variants={slideVariants}
               initial="slide"
               animate="visible"
+              transition={{duration: 1.5}}
               exit="exit"
               key={selectedItem}
             >
@@ -115,7 +116,7 @@ export const TestimonialSection = () => {
                 blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
                 sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
                 alt="Logo"
-                className="w-full h-full object-contain object-center rounded-xl"
+                className="w-full h-full object-contain lg:object-cover xl:object-contain object-center rounded-xl"
               />
             </m.div>
           </LazyMotion>
