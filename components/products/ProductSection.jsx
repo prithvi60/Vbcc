@@ -13,7 +13,7 @@ const ProductSection = ({ products, setProducts }) => {
   const [isFilter, setIsFilter] = useState(false);
   const [selectedItem, SetselectedItem] = useState("Relevance");
   // console.log(selectedItem);
-  const [filteredCategory, setFilteredCategory] = useState(["Ovens"]);
+  const [filteredCategory, setFilteredCategory] = useState([]);
 
   useEffect(() => {
     const allProducts = productsData.allProducts.filter(

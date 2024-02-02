@@ -17,7 +17,7 @@ const ProductFC = ({
   const searchParams = useSearchParams();
   const router = useRouter()
   const [selectedItem, SetselectedItem] = useState("All Products");
-  const [selected, setSelected] = useState(["Ovens"]);
+  const [selected, setSelected] = useState([]);
 
   const filteredProductType = [
     ...new Set(products.map((val) => val.productType)),
@@ -172,9 +172,9 @@ export const CategoryTab = ({category, setProducts }) => {
           key={idx}
         >
             <Link  passHref 
-            href={pathname + "?" + createQueryString("category", item.list)}
+            href={pathname + "?" + createQueryString("category", item.list,{scroll: true})}
             className={`block h-6 w-full overflow-hidden`}
-            onClick={() => handleCategory(item)}
+            onClick={() => handleCategory(item.list)}
           >
             <h4
               className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 `}
