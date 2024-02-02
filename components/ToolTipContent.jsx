@@ -1,8 +1,20 @@
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 
 export const ToolTipContent = ({ productList, sortBy }) => {
-  const router = useRouter();
+  // const pathname = usePathname();
+  // const searchParams = useSearchParams();
+  const router = useRouter()
+
+  // const createQueryString = useCallback(
+  //   (name, value) => {
+  //     const params = new URLSearchParams(searchParams);
+  //     value === "All Products" ? params.delete(name) : params.set(name, value);
+  //     return params.toString();
+  //   },
+  //   [searchParams]
+  // );
   return (
     <div className="block space-y-20">
       <div className="lg:grid lg:grid-cols-3 lg:gap-10">
@@ -19,7 +31,10 @@ export const ToolTipContent = ({ productList, sortBy }) => {
                   className="cursor-pointer btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-info hover:after:bg-opacity-50 w-max"
                   key={id}
                 >
+                  <Link href={"/"}>
+                  {/* href={pathname + "?" + createQueryString("type", list)} */}
                   {list}
+                  </Link>
                 </li>
               ))}
             </ul>

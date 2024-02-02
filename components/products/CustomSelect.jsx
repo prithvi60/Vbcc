@@ -111,7 +111,7 @@ export const CustomFilter = ({setFilters,Filters}) => {
 
   // console.log(search);
   const product =
-  productsData.filter.find((val) => val.title === search) || productsData.filter;
+  productsData.filterMobile.find((val) => val.title === search) || productsData.filter;
 
     const handleSetIndex = (title) => {
       setIndex(title);
@@ -131,7 +131,7 @@ export const CustomFilter = ({setFilters,Filters}) => {
     <>
     {search === null ? (
     <div className="space-y-4">
-      {productsData.filter.map((item, idx) => (
+      {productsData.filterMobile.map((item, idx) => (
         <div
           className="block space-y-3 w-full h-auto"
           key={idx}

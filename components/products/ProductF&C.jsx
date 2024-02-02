@@ -17,7 +17,7 @@ const ProductFC = ({
   const searchParams = useSearchParams();
   const router = useRouter()
   const [selectedItem, SetselectedItem] = useState("All Products");
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState(["Ovens"]);
 
   const filteredProductType = [
     ...new Set(products.map((val) => val.productType)),
@@ -137,7 +137,7 @@ const ProductFC = ({
 
 export default ProductFC;
 
-export const CategoryTab = ({ setProducts }) => {
+export const CategoryTab = ({category, setProducts }) => {
   const [selectedItem, SetselectedItem] = useState("All Products");
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -162,29 +162,29 @@ export const CategoryTab = ({ setProducts }) => {
   };
   return (
     <div className="flex flex-wrap gap-3 lg:hidden">
-      {productsData.category.map((item, idx) => (
+      {category.map((item, idx) => (
         <div
           className={`h-full lg:hidden rounded-full px-4 py-3 border border-white group text-center text-base duration-700 delay-75 font-urbanist font-normal capitalize w-max cursor-pointer ${
-            selectedItem === item
+            selectedItem === item.list
               ? "bg-white text-warning hover:bg-white"
               : "bg-transparent text-white hover:bg-success"
           }`}
           key={idx}
         >
             <Link  passHref 
-            href={pathname + "?" + createQueryString("category", item)}
+            href={pathname + "?" + createQueryString("category", item.list)}
             className={`block h-6 w-full overflow-hidden`}
             onClick={() => handleCategory(item)}
           >
             <h4
               className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 `}
             >
-              {`${item} (150)`}
+              {`${item.list} (${item.count})`}
             </h4>
             <h4
               className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700`}
             >
-              {`${item} (150)`}
+              {`${item.list} (${item.count})`}
             </h4>
           </Link>
         </div>
