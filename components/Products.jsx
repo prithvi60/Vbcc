@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
-const Products = ({productsData}) => {
+const Products = ({ productsData }) => {
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(8);
   const [activeTab, setActiveTab] = useState(0);
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -33,7 +33,7 @@ const Products = ({productsData}) => {
         </h3>
         <div className="flex flex-col justify-center items-center w-full space-y-8">
           <div className="flex justify-center items-center gap-3 w-full h-auto flex-wrap bg-secondary">
-           {productsData.map((item, idx) => (
+            {productsData.map((item, idx) => (
               <div
                 className={`text-base tracking-tight border border-warning p-5 rounded-full font-Lora min-w-fit px-4 py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
                   activeTab === idx ? "!bg-primary !hover:bg-primary" : ""
@@ -63,7 +63,7 @@ const Products = ({productsData}) => {
             ))}
           </div>
           <div className="hidden md:flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
-           {productsData[activeTab].sub.slice(0, count).map((card, id) => (
+            {productsData[activeTab].sub.slice(0, count).map((card, id) => (
               <div
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group relative"
                 key={id}
@@ -72,9 +72,10 @@ const Products = ({productsData}) => {
                   <p className="text-md">in-stock</p>
                   <p className="text-small">$718</p>
                 </div>
-                <Link  
-                href={`/products/${card.productName.replace(/\s/g, "")}`}
-                className="space-y-4">
+                <Link
+                  href={`/products/${card.productName.replace(/\s/g, "")}`}
+                  className="space-y-4"
+                >
                   <div className="relative h-[225px] w-full">
                     <Image
                       fill
@@ -96,30 +97,30 @@ const Products = ({productsData}) => {
                     <p className="font-Lora text-xl">{card.desc}</p>
                   </div>
                 </Link>
-                <button   
-                 onClick={()=>router.push("/contact")}
-                    className={`group/btn rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
-                  >
-                    <div className={`h-6 w-full overflow-hidden`}>
-                      <h4
-                        className={`transition translate-y-0 group-hover/btn:-translate-y-20 duration-700 text-warning`}
-                      >
-                        Request a Quote
-                      </h4>
-                      <h4
-                        className={`translate-y-20 transition group-hover/btn:-translate-y-[25px] duration-700 group-hover/btn:text-white`}
-                      >
-                        Request a Quote
-                      </h4>
-                    </div>
-                  </button>
-                </div>
+                <button
+                  onClick={() => router.push("/contact")}
+                  className={`group/btn rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                >
+                  <div className={`h-6 w-full overflow-hidden`}>
+                    <h4
+                      className={`transition translate-y-0 group-hover/btn:-translate-y-20 duration-700 text-warning`}
+                    >
+                      Request a Quote
+                    </h4>
+                    <h4
+                      className={`translate-y-20 transition group-hover/btn:-translate-y-[25px] duration-700 group-hover/btn:text-white`}
+                    >
+                      Request a Quote
+                    </h4>
+                  </div>
+                </button>
+              </div>
             ))}
           </div>
           {/* Mobile view Product items */}
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
-           {productsData[activeTab].sub.slice(0, count).map((card, id) => (
-                <Link 
+            {productsData[activeTab].sub.slice(0, count).map((card, id) => (
+              <Link
                 href={"/products/1"}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
@@ -148,8 +149,8 @@ const Products = ({productsData}) => {
                     <p className="font-Lora text-xl">{card.desc}</p>
                   </div>
                 </div>
-                  <button   
-                 onClick={()=>router.push("/contact")}
+                <button
+                  onClick={() => router.push("/contact")}
                   className={`group/button block rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
                 >
                   <div className={`h-6 w-full overflow-hidden`}>

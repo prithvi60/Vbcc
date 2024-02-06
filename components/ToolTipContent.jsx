@@ -4,13 +4,14 @@ import { useCallback } from "react";
 
 export const ToolTipContent = ({ productList, sortBy }) => {
   // const pathname = usePathname();
-  // const searchParams = useSearchParams();
+  const searchParams = useSearchParams();
   const router = useRouter()
 
   // const createQueryString = useCallback(
   //   (name, value) => {
   //     const params = new URLSearchParams(searchParams);
-  //     value === "All Products" ? params.delete(name) : params.set(name, value);
+  //     // value === "All Products" ? params.delete(name) : 
+  //     params.set(name, value);
   //     return params.toString();
   //   },
   //   [searchParams]
@@ -20,7 +21,8 @@ export const ToolTipContent = ({ productList, sortBy }) => {
       <div className="lg:grid lg:grid-cols-3 lg:gap-10">
         {productList.map((item, idx) => (
           <div className="block space-y-4" key={idx}>
-            <Link href={"/"}>
+            {/* href={pathname = "products" + "?" + createQueryString("category", item.list,{scroll: true})} */}
+            <Link href={{ pathname: '/products', query: { category: item.list } }}>
               <h4 className="font-Lora text-base text-warning underline underline-offset-8 hover:no-underline rev-btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-info hover:after:bg-opacity-50 w-max">
                 {item.category}
               </h4>

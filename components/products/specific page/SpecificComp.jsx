@@ -72,7 +72,7 @@ export const CustomAccordion = ({ specification, specificId }) => {
   const specificTitle5 = specification[specificId].Title5;
   const itemClasses = {
     base: "border-b-3 border-[#F1F1F1] pb-3 w-full",
-    title: "font-Lora text-xl text-warning"
+    title: "font-Lora text-xl text-warning",
   };
   return (
     <section>
@@ -82,139 +82,159 @@ export const CustomAccordion = ({ specification, specificId }) => {
         itemClasses={itemClasses}
       >
         {specification[specificId].title[0] && (
-        <AccordionItem
-          key="1"
-          aria-label={specification[specificId].title[0]}
-          title={specification[specificId].title[0]}
-          indicator={({ isOpen }) =>
-            isOpen ? (
-              <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
-            ) : (
-              <AiOutlinePlus className="h-5 w-5 text-warning" />
-            )
-          }
-        >
-          <table className="w-full border border-[#B9B9B9] text-xl my-5">
-            <tbody>
-              {specificTitle1.map((list, idx) => (
-                <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionItem>
+          <AccordionItem
+            key="1"
+            aria-label={specification[specificId].title[0]}
+            title={specification[specificId].title[0]}
+            indicator={({ isOpen }) =>
+              isOpen ? (
+                <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+              ) : (
+                <AiOutlinePlus className="h-5 w-5 text-warning" />
+              )
+            }
+          >
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                {specificTitle1.map((list, idx) => (
+                  <tr key={idx}>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.name}
+                    </td>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </AccordionItem>
         )}
         {specification[specificId].title[1] && (
-        <AccordionItem
-          key="2"
-          aria-label={specification[specificId].title[1]}
-          title={specification[specificId].title[1]}
-          indicator={({ isOpen }) =>
-            isOpen ? (
-              <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
-            ) : (
-              <AiOutlinePlus className="h-5 w-5 text-warning" />
-            )
-          }
-        >
-          <table className="w-full border border-[#B9B9B9] text-xl my-5">
-            <tbody>
-              {specificTitle2.map((list, idx) => (
-                <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionItem>
+          <AccordionItem
+            key="2"
+            aria-label={specification[specificId].title[1]}
+            title={specification[specificId].title[1]}
+            indicator={({ isOpen }) =>
+              isOpen ? (
+                <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+              ) : (
+                <AiOutlinePlus className="h-5 w-5 text-warning" />
+              )
+            }
+          >
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                {specificTitle2.map((list, idx) => (
+                  <tr key={idx}>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.name}
+                    </td>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </AccordionItem>
         )}
         {specification[specificId].title[2] && (
-        <AccordionItem
-          key="3"
-          aria-label={specification[specificId].title[2]}
-          title={specification[specificId].title[2]}
-          indicator={({ isOpen }) =>
-            isOpen ? (
-              <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
-            ) : (
-              <AiOutlinePlus className="h-5 w-5 text-warning" />
-            )
-          }
-          // className="border-b-3 border-[#F1F1F1]"
-        >
-          <table className="w-full border border-[#B9B9B9] text-xl my-5">
-            <tbody>
-              {specificTitle3.map((list, idx) => (
-                <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionItem>
+          <AccordionItem
+            key="3"
+            aria-label={specification[specificId].title[2]}
+            title={specification[specificId].title[2]}
+            indicator={({ isOpen }) =>
+              isOpen ? (
+                <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+              ) : (
+                <AiOutlinePlus className="h-5 w-5 text-warning" />
+              )
+            }
+            // className="border-b-3 border-[#F1F1F1]"
+          >
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                {specificTitle3.map((list, idx) => (
+                  <tr key={idx}>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.name}
+                    </td>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </AccordionItem>
         )}
         {specification[specificId].title[3] && (
-        <AccordionItem
-          key="4"
-          aria-label={specification[specificId].title[3]}
-          title={specification[specificId].title[3]}
-          indicator={({ isOpen }) =>
-            isOpen ? (
-              <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
-            ) : (
-              <AiOutlinePlus className="h-5 w-5 text-warning" />
-            )
-          }
-          // className="border-b-3 border-[#F1F1F1]"
-        >
-          <table className="w-full border border-[#B9B9B9] text-xl my-5">
-            <tbody>
-              {specificTitle4.map((list, idx) => (
-                <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionItem>
+          <AccordionItem
+            key="4"
+            aria-label={specification[specificId].title[3]}
+            title={specification[specificId].title[3]}
+            indicator={({ isOpen }) =>
+              isOpen ? (
+                <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+              ) : (
+                <AiOutlinePlus className="h-5 w-5 text-warning" />
+              )
+            }
+            // className="border-b-3 border-[#F1F1F1]"
+          >
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                {specificTitle4.map((list, idx) => (
+                  <tr key={idx}>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.name}
+                    </td>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </AccordionItem>
         )}
         {specification[specificId].title[4] && (
-        <AccordionItem
-          key="5"
-          aria-label={specification[specificId].title[4]}
-          title={specification[specificId].title[4]}
-          indicator={({ isOpen }) =>
-            isOpen ? (
-              <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
-            ) : (
-              <AiOutlinePlus className="h-5 w-5 text-warning" />
-            )
-          }
-          // className="border-b-3 border-[#F1F1F1]"
-        >
-          <table className="w-full border border-[#B9B9B9] text-xl my-5">
-            <tbody>
-              {specificTitle5.map((list, idx) => (
-                <tr key={idx}>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.name}</td>
-                  <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">{list.value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </AccordionItem>
+          <AccordionItem
+            key="5"
+            aria-label={specification[specificId].title[4]}
+            title={specification[specificId].title[4]}
+            indicator={({ isOpen }) =>
+              isOpen ? (
+                <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+              ) : (
+                <AiOutlinePlus className="h-5 w-5 text-warning" />
+              )
+            }
+            // className="border-b-3 border-[#F1F1F1]"
+          >
+            <table className="w-full border border-[#B9B9B9] text-xl my-5">
+              <tbody>
+                {specificTitle5.map((list, idx) => (
+                  <tr key={idx}>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.name}
+                    </td>
+                    <td className="border border-[#B9B9B9] p-3 w-[45%] h-auto">
+                      {list.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </AccordionItem>
         )}
       </Accordion>
     </section>
   );
 };
 
-export const CustomCarousel = ({ gallery }) => {
+export const CustomCarousel = ({ specificId, specification }) => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
@@ -242,11 +262,15 @@ export const CustomCarousel = ({ gallery }) => {
   };
   const handleNext = () => {
     setDirection(1);
-    setIndex(() => (index === gallery.length - 1 ? 0 : index + 1));
+    setIndex(() =>
+      index === specification[specificId].gallery.length - 1 ? 0 : index + 1
+    );
   };
   const handlePrev = () => {
     setDirection(-1);
-    setIndex(() => (index === 0 ? gallery.length - 1 : index - 1));
+    setIndex(() =>
+      index === 0 ? specification[specificId].gallery.length - 1 : index - 1
+    );
   };
   const handleThumbnail = (id) => {
     setDirection(id == index ? -1 : 1);
@@ -260,8 +284,8 @@ export const CustomCarousel = ({ gallery }) => {
           <AnimatePresence initial={false} custom={direction}>
             <motion.img
               // fill
-              key={gallery[index].img}
-              src={gallery[index].img}
+              key={specification[specificId].gallery[index].img}
+              src={specification[specificId].gallery[index].img}
               alt="..."
               className="w-full h-full object-cover object-center rounded-md"
               variants={slideVariants}
@@ -275,17 +299,17 @@ export const CustomCarousel = ({ gallery }) => {
         <div className="relative w-full h-[490px] overflow-hidden">
           <Image
             fill
-            key={gallery[index].img}
-            src={gallery[index].img}
+            key={specification[specificId].gallery[index].img}
+            src={specification[specificId].gallery[index].img}
             alt="..."
-            className="w-full h-full object-cover object-center rounded-md"
+            className="w-full h-full object-contain object-center rounded-md"
           />
         </div>
-        <div className="flex items-center gap-5 w-full h-auto">
-          {gallery.map((item, idx) => (
+        <div className="flex justify-center items-center gap-5 w-full h-full overflow-auto">
+          {specification[specificId].gallery.map((item, idx) => (
             <div
-              className={`relative w-full h-[120px] mb-5 overflow-hidden cursor-pointer ${
-                idx === index ? " rounded-md border-2 border-info" : ""
+              className={`relative h-[100px] min-w-[120px] mb-5  cursor-pointer ${specification[specificId].gallery.length > 5 && "first:ms-64" } overflow-hidden ${
+                idx === index ? "rounded-md border-2 border-info" : ""
               }`}
               key={item.id}
               onClick={() => handleThumbnail(idx)}
@@ -299,25 +323,33 @@ export const CustomCarousel = ({ gallery }) => {
             </div>
           ))}
         </div>
-        <div className="hidden md:flex justify-between items-center">
+        <div
+          className={`hidden md:flex items-center ${
+            specification[specificId].gallery.length > 1
+              ? "justify-between"
+              : "justify-center"
+          }`}
+        >
           {/* Prev button */}
-          <div
-            className="p-4 rounded-full cursor-pointer border border-warning block duration-700 delay-75 w-max group"
-            onClick={handlePrev}
-          >
-            <div className={`h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
-              >
-                <GoArrowLeft className="h-6 w-6 text-text-warning active:text-warning" />
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
-              >
-                <GoArrowLeft className="h-6 w-6 text-text-warning active:text-warning" />
-              </h4>
+          {specification[specificId].gallery.length > 1 && (
+            <div
+              className="p-4 rounded-full cursor-pointer border border-warning block duration-700 delay-75 w-max group"
+              onClick={handlePrev}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+                >
+                  <GoArrowLeft className="h-6 w-6 text-text-warning active:text-warning" />
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+                >
+                  <GoArrowLeft className="h-6 w-6 text-text-warning active:text-warning" />
+                </h4>
+              </div>
             </div>
-          </div>
+          )}
           <div className="text-xl">
             <LazyMotion features={loadFeatures}>
               <m.span
@@ -328,29 +360,31 @@ export const CustomCarousel = ({ gallery }) => {
                 exit="exit"
                 className="w-max h-auto"
               >
-                {gallery[index].id}&nbsp;
+                {specification[specificId].gallery[index].id}&nbsp;
               </m.span>
-              / {gallery.length}
+              / {specification[specificId].gallery.length}
             </LazyMotion>
           </div>
           {/* Next button */}
-          <div
-            className="p-4 rounded-full cursor-pointer border border-warning block duration-700 delay-75 w-max group"
-            onClick={handleNext}
-          >
-            <div className={`h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
-              >
-                <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
-              >
-                <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
-              </h4>
+          {specification[specificId].gallery.length > 1 && (
+            <div
+              className="p-4 rounded-full cursor-pointer border border-warning block duration-700 delay-75 w-max group"
+              onClick={handleNext}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
+                >
+                  <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover:-translate-y-[22px] duration-700`}
+                >
+                  <GoArrowRight className="h-6 w-6 text-text-warning active:text-warning" />
+                </h4>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
     </>

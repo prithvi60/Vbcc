@@ -1659,15 +1659,15 @@
         "/presence 2.png"
     ],
     "visitationImg": [
-        "/visit/Visitations 1.jpg",
-        "/visit/Visitations 2.jpg",
-        "/visit/Visitations 3.jpg",
-        "/visit/Visitations 4.png"
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/visit/Visitations%201.jpg?updatedAt=1707191415321",
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/visit/Visitations%202.jpg?updatedAt=1707191417051",
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/visit/Visitations%203.jpg?updatedAt=1707191415334",
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/visit/Visitations%204.png?updatedAt=1707191415444"
     ],
     "awardImg": [
-        "/awards/award 1.png",
-        "/awards/award 2.png",
-        "/awards/award 3.png",
-        "/awards/award 4.png"
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%201.png?updatedAt=1707191391504",
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%202.png?updatedAt=1707191390481",
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%203.png?updatedAt=1707191391559",
+        "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%204.png?updatedAt=1707191391468"
     ]
 }

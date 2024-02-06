@@ -41,7 +41,17 @@ const ProductPage = ({ product }) => {
             />
           </div>
           <div className="w-full xl:w-1/2 xl:sticky xl:top-10">
-            <CustomCarousel gallery={product.gallery} />
+            {specificId >= 0 ? (
+              <CustomCarousel
+                specification={product.specification}
+                specificId={specificId}
+              />
+            ) : (
+              <CustomCarousel
+                specification={product.specification}
+                specificId={0}
+              />
+            )}
           </div>
         </div>
       </section>
@@ -55,10 +65,7 @@ const ProductPage = ({ product }) => {
         </div>
       ) : (
         <div className="block">
-          <Overview
-            specification={product.specification}
-            specificId={0}
-          />
+          <Overview specification={product.specification} specificId={0} />
         </div>
       )}
     </>
