@@ -46,7 +46,7 @@ module.exports = {
       animation: {
         horizontal_carousel: "marquee_h 20s linear infinite",
         spin_word: "spinner 0.5s linear",
-        reveal_In: "smooth 0.5s linear",
+        reveal_In: "smooth 0.3s linear",
         reveal_Out: "smooth2 1s linear",
       },
     },

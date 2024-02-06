@@ -4,10 +4,11 @@ import othersData from "@/libs/others.json";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export const OurPresenceAccordion = () => {
   const router = useRouter();
-//   !rounded-[20px]
+  //   !rounded-[20px]
   const itemClasses = {
     base: "mb-2 !p-0 w-full !bg-transparent !rounded-none border border-warning overflow-hidden",
     heading: "px-3.5 md:p-4",
@@ -15,8 +16,7 @@ export const OurPresenceAccordion = () => {
       "font-Lora text-xl md:text-2xl text-warning focus-within:outline-none focus-within:border-transparent focus-within:ring-0",
     trigger: "h-auto lg:h-10",
     indicator: "text-xl md:text-2xl text-warning",
-    content:
-      "p-4 font-urbanist text-sm md:text-base text-white bg-primary",
+    content: "p-4 font-urbanist text-sm md:text-base text-white bg-primary",
   };
 
   return (
@@ -40,15 +40,19 @@ export const OurPresenceAccordion = () => {
                 )
               }
               aria-label={list.location}
-              title={list.location}
+              title={
+                <Link href={`/${list.location.replace(/\s/g, "-")}`}>
+                  {list.location}
+                </Link>
+              }
               key={idx}
             >
               <ul className="gap-4 w-full h-auto flex-wrap flex justify-start items-end md:flex md:justify-start md:item-center md:flex-wrap">
-                {list.States.map((item, index) => (
+                {list.states.map((item, index) => (
                   <li
                     className={`min-w-fit text-base tracking-tight border border-secondary p-5 rounded-full font-urbanist px-4 py-2 group/button block bg-transparent hover:bg-warning text-center duration-700 delay-75 capitalize cursor-pointer`}
                     key={index}
-                    onClick={() => router.push("/ourPresence/1")}
+                    onClick={() => router.push(`/${item.replace(/\s/g, "-")}`)}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>
                       <h4

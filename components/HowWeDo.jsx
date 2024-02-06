@@ -92,7 +92,7 @@ const HowWeDo = () => {
               
               }}
               // py-[70px] px-5 lg:py-32
-              className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${item.title === "Engineering"? "md: pb-[800px] ":""}`}
+              className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${item.title === "Engineering"? "lg: pb-[50px] xl:pb-[120px]":""}`}
               key={idx}
             >
 

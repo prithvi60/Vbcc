@@ -148,7 +148,7 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/Microwave%20Furnace%20Card.png?updatedAt=1707145120107",
       "productName": "Microwave Furnace",
       "productType": "Microwave Heating Systems",
       "description": "Seamlessly blending conventional and microwave heating technologies, the Hybrid Model offers adaptive solutions for diverse thermal processing needs.",
@@ -179,6 +179,24 @@
       ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/1.%20Microwave%20Furnace%20-%20Super%20Model/Super%20Model%201.jpeg?updatedAt=1707145124976"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/1.%20Microwave%20Furnace%20-%20Super%20Model/Super%20Model%202.jpg?updatedAt=1707145123881"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/1.%20Microwave%20Furnace%20-%20Super%20Model/Super%20Model%203.JPG?updatedAt=1707145124743"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/1.%20Microwave%20Furnace%20-%20Super%20Model/Super%20Model%204.jpg?updatedAt=1707145127589"
+            }
+          ],
           "variantType": "Hybrid",
           "title": [
             "General",
@@ -243,7 +261,7 @@
               "value": "120mmx120mmx120mm (hxwxl) (Customisable)"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/1.%20Microwave%20Furnace%20-%20Super%20Model/Super%20Model%20overview.png?updatedAt=1707145125595",
           "overViewDescription": [
             "VBCC's Hybrid Microwave Furnace stands as a pioneering solution, seamlessly merging conventional and microwave heating technologies to offer unmatched versatility in thermal processing. This innovative furnace is designed for applications that demand adaptive and dynamic heating methods, providing users with the flexibility to choose between conventional and microwave heating based on specific process requirements.",
             "The Hybrid model inherits the precision and reliability of microwave heating while introducing the adaptability of conventional methods. This unique combination empowers users to tailor the heating approach to different stages or characteristics of their processes, optimizing overall efficiency.",
@@ -253,6 +271,24 @@
           "overViewLastPara": ""
         },
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "/img 1.jpg"
+            },
+            {
+              "id": "2",
+              "img": "/img 2.jpg"
+            },
+            {
+              "id": "3",
+              "img": "/img 3.jpg"
+            },
+            {
+              "id": "4",
+              "img": "/img 4.jpg"
+            }
+          ],
           "variantType": "Super",
           "title": [
             "General",
@@ -309,7 +345,7 @@
               "value": "120mmx120mmx120mm (hxwxl) (Customisable)"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/1.%20Microwave%20Furnace%20-%20Super%20Model/Super%20Model%20overview.png?updatedAt=1707145125595",
           "overViewDescription": [
             "VBCC's Microwave Furnace Super Model serves as the foundational cornerstone in the lineup of advanced thermal processing solutions. As the basic starting model, it lays the groundwork for efficient and reliable large-scale thermal operations. Built upon the efficacy of microwave heating, the Super Model introduces users to a world of versatile possibilities for extensive applications.",
             "Designed with a substantial working volume, the Super Model is adept at addressing tasks requiring higher capacities, providing users with a reliable entry point into the realm of thermal processing. While serving as the foundational model, it inherits the innovative features and robust construction synonymous with VBCC's commitment to cutting-edge technology.",
@@ -319,6 +355,24 @@
           "overViewLastPara": ""
         },
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/2.%20Microwave%20Furnace%20-%20Premium%20Model/Premium%20Model%201.JPG?updatedAt=1707145120410"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/2.%20Microwave%20Furnace%20-%20Premium%20Model/Premium%20Model%202.JPG?updatedAt=1707145122233"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/2.%20Microwave%20Furnace%20-%20Premium%20Model/Premium%20Model%203.JPG?updatedAt=1707145125821"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/2.%20Microwave%20Furnace%20-%20Premium%20Model/Premium%20Model%204.jpg?updatedAt=1707145124024"
+            }
+          ],
           "variantType": "Premium",
           "title": [
             "General",
@@ -379,7 +433,7 @@
               "value": "120mmx120mmx120mm (hxwxl) (Customisable)"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Furnace/2.%20Microwave%20Furnace%20-%20Premium%20Model/Premium%20Model%20overview.png?updatedAt=1707145128158",
           "overViewDescription": [
             "VBCC's Microwave Furnace Premium Model epitomizes the next tier in advanced thermal processing, surpassing the foundational Super Model with added insulation technology for superior efficiency. Designed with a focus on precision, this model introduces cutting-edge insulation features, setting it as a tier higher for applications demanding uncompromised thermal performance.",
             "The Premium Model seamlessly integrates microwave energy with state-of-the-art insulation, ensuring superior and uniform heating across diverse high-temperature processes. Its advanced insulation technology not only enhances efficiency but also provides a level of thermal control that goes beyond the capabilities of the Super Model.",
@@ -389,6 +443,24 @@
           "overViewLastPara": ""
         },
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "/img 1.jpg"
+            },
+            {
+              "id": "2",
+              "img": "/img 2.jpg"
+            },
+            {
+              "id": "3",
+              "img": "/img 3.jpg"
+            },
+            {
+              "id": "4",
+              "img": "/img 4.jpg"
+            }
+          ],
           "variantType": "Big",
           "title": [
             "General",
@@ -3354,8 +3426,7 @@
             },
             {
               "title": "6. Robust Construction:",
-              "para":   "Constructed with durability in mind, the oven is built to withstand continuous use and maintain its performance over time."
-
+              "para": "Constructed with durability in mind, the oven is built to withstand continuous use and maintain its performance over time."
             }
           ],
           "overViewLastPara": "Whether utilized for sterilizing equipment, drying samples, or conducting heat treatment processes, VBCC's Hot Air Oven stands as a dependable thermal processing tool, contributing to the efficiency and precision of laboratory and industrial applications."

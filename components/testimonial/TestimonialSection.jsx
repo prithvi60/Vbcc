@@ -97,7 +97,7 @@ export const TestimonialSection = () => {
         </div>
       </div>
       <AnimatePresence initial={true}>
-        <div className="lg:w-1/2 w-full h-full z-30 flex items-center justify-start lg:justify-end">
+        <div className="lg:w-1/2 w-full h-full z-30 flex items-center justify-start lg:justify-end lg:mt-0 xl:-mt-10 2xl:mt-0">
           <LazyMotion features={loadFeatures}>
             <m.div
               className="relative h-full w-full  overflow-hidden cursor-pointer"

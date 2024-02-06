@@ -69,14 +69,14 @@ const NavBar = () => {
         <div className="hidden lg:flex gap-10 text-warning uppercase">
           <Tooltip
             classNames={{
-              content: "p-6 text-warning bg-white shadow-lg",
+              content: "p-6 text-warning bg-white shadow-lg w-screen lg:-mx-3 rounded-none",
             }}
             content={
               <ToolTipContent productList={productList} sortBy={sortBy} />
             }
             showArrow={true}
             placement="bottom"
-            offset={30}
+            offset={21}
             // color="secondary"
             closeDelay={500}
           >

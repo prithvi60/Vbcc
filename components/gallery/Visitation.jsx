@@ -4,16 +4,11 @@ import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
-const imgSrc = [
-  "https://ik.imagekit.io/webibee/VBCC/gallery01.png",
-  "https://ik.imagekit.io/webibee/VBCC/gallery02.png",
-  "https://ik.imagekit.io/webibee/VBCC/gallery03.png",
-  "https://ik.imagekit.io/webibee/VBCC/gallery04.png",
-];
 
-const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.default);
+const loadFeatures = () =>
+  import("@/libs/framer_feature").then((res) => res.default);
 
- const Visitation = () => {
+const Visitation = ({title,shortDesc,imgSrc,scrollId}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
@@ -45,13 +40,17 @@ const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.def
   const handleNext = () => {
     setDirection(1);
     setCurrentIndex(() =>
-      currentIndex === imgSrc.length - 1 ? 0 : currentIndex + 1
+      currentIndex === imgSrc.length - 1
+        ? 0
+        : currentIndex + 1
     );
   };
   const handlePrev = () => {
     setDirection(-1);
     setCurrentIndex(() =>
-      currentIndex === 0 ? imgSrc.length - 1 : currentIndex - 1
+      currentIndex === 0
+        ? imgSrc.length - 1
+        : currentIndex - 1
     );
   };
   const handleThumbnail = (id) => {
@@ -59,10 +58,9 @@ const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.def
     setCurrentIndex(id);
   };
   return (
-
     <section
       className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-primary"
-      id="visitations"
+      id={scrollId}
     >
       <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-white">
         <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
@@ -87,11 +85,10 @@ const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.def
             ))}
           </div>
           <div className="block space-y-10 md:space-y-24 h-full w-full">
-            <h4 className="font-Lora text-xl md:text-[40px]">Visitations</h4>
+            <h4 className="font-Lora text-xl md:text-[40px]">{title}</h4>
             <div className="flex justify-between items-center">
               <p className="font-urbanist text-base w-3/5">
-                Redefining what it means to be a team. Showcasing our Work life
-                through the years.
+                {shortDesc}
               </p>
               {/* Buttons */}
               <div className="flex items-center gap-3">
@@ -134,7 +131,7 @@ const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.def
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-[65%]">
-        <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <LazyMotion features={loadFeatures}>
                 <m.img
@@ -167,4 +164,4 @@ const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.def
     </section>
   );
 };
-export default Visitation 
+export default Visitation;

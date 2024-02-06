@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { Link } from "react-scroll";
 
@@ -8,7 +7,7 @@ const gallery = ["Culture", "Visitations", "Awards"];
 
 export const GalleryHero = () => {
   return (
-    <section className="block w-full h-[715px] px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-[url('https://ik.imagekit.io/webibee/VBCC/hero-bg.png')] bg-cover bg-center z-0 overflow-hidden relative ">
+    <section className="block w-full h-screen md:h-[715px] px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-[url('https://ik.imagekit.io/webibee/VBCC/hero-bg.png')] bg-cover bg-center z-0 relative">
       {/* <div className="relative h-[715px] w-full z-0  px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10">
         <Image
           src={"https://ik.imagekit.io/webibee/VBCC/hero-bg.png"}
@@ -17,9 +16,10 @@ export const GalleryHero = () => {
           className="object-cover object-center"
         />
       </div> */}
-      <div className="absolute top-0 left-0 h-[715px]  w-full -z-10 backdrop-sepia-0 bg-black/30"></div>
-      <div className="block space-y-6 w-full md:w-4/5 z-50">
-        <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full ">
+      <div className="absolute top-0 left-0 h-screen md:h-[715px] w-full -z-10 backdrop-sepia-0 bg-black/30"></div>
+      <div className="flex flex-col justify-around md:justify-around items-start w-full md:w-4/5 z-50 h-full lg:gap-[170px] gap-44">
+        <div className="space-y-6">
+        <h2 className="font-Lora text-4xl xl:text-6xl w-full ">
           Gallery
         </h2>
         <div className="flex flex-col gap-1.5 space-y-1.5 font-urbanist">
@@ -49,12 +49,21 @@ export const GalleryHero = () => {
             </Link>
           ))}
         </div>
-        <div className=" -rotate-90 absolute bottom-40 md:bottom-36 left-2 xl:left-12 w-max h-auto">
+        </div>
+        <Link
+          to={"culture"}
+          spy={true}
+          smooth={true}
+          offset={15}
+          duration={800}
+          // absolute bottom-40 md:bottom-36 left-2 xl:left-12
+          className="-rotate-90 w-max -ms-9 h-auto cursor-pointer"
+        >
           <div className="flex items-center gap-2.5">
             <div className="h-[1px] w-10 bg-white"></div>
-            <h5 className="text-lg font-urbanist text-white">Scroll</h5>
+            <h5 className="text-base md:text-lg font-urbanist text-white font-medium">Scroll</h5>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

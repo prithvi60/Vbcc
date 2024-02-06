@@ -101,10 +101,10 @@ const Footer = () => {
           <div className="space-y-5">
             <div>
               <h3 className="text-[rgba(245, 245, 245, 0.70)]">
-                Connect for quote
+              Mail us at
               </h3>
               <ConnectComponent
-                text={"+91 94441 69365"}
+                text={"info@vbccinstruments.com"}
                 copied={Copied}
                 handleClick={handlequote}
               />
@@ -114,7 +114,7 @@ const Footer = () => {
                 Connect for inquiries
               </h3>
               <ConnectComponent
-                text={"+91 94440 12468"}
+                text={"+91 73388 94199"}
                 copied={Copied2}
                 handleClick={handleinquire}
               />

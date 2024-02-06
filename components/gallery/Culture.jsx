@@ -5,16 +5,9 @@ import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 // import { Carousel } from "react-responsive-carousel";
 
-const imgSrc = [
-  "https://ik.imagekit.io/webibee/VBCC/gallery01.png",
-  "https://ik.imagekit.io/webibee/VBCC/gallery02.png",
-  "https://ik.imagekit.io/webibee/VBCC/gallery03.png",
-  "https://ik.imagekit.io/webibee/VBCC/gallery04.png",
-];
-
 const loadFeatures = () => import("@/libs/framer_feature").then((res) => res.default);
 
-const Culture = () => {
+const Culture = ({title,shortDesc,imgSrc,scrollId}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
@@ -62,7 +55,7 @@ const Culture = () => {
   return (
     <section
       className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-secondary"
-      id="culture"
+      id={scrollId}
     >
       <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning relative">
         <div className="w-full md:w-1/2 lg:w-[65%]">
@@ -121,11 +114,10 @@ const Culture = () => {
             ))}
           </div>
           <div className="block space-y-10 md:space-y-24 w-full h-full">
-            <h4 className="font-Lora text-xl md:text-[40px]">Culture</h4>
+            <h4 className="font-Lora text-xl md:text-[40px]">{title}</h4>
             <div className="flex justify-between items-center">
               <p className="font-urbanist text-base w-3/5">
-                Redefining what it means to be a team. Showcasing our Work
-                lifethrough the years.
+                {shortDesc}
               </p>
               {/* Buttons */}
               <div className="flex items-center gap-3">
