@@ -4,35 +4,35 @@ import Image from "next/image";
 import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 
-
 const loadFeatures = () =>
   import("@/libs/framer_feature").then((res) => res.default);
 
-const Visitation = ({title,shortDesc,imgSrc,scrollId}) => {
+const Visitation = ({ title, shortDesc, imgSrc, scrollId }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const slideVariants = {
     slide: (direction) => {
-      return { y: direction > 0 ? 420 : -420 };
+      return { x: direction > 0 ? 520 : -520 };
     },
     visible: {
-      y: 0,
-      // opacity: 1,
-      // transition: {
-      //   y: { type: "spring", stiffness: 420, damping: 50 },
-      //   // duration: 1,
-      //   //  opacity: { duration: 0.5 },
-      // },
+      x: 0,
+      opacity: 1,
+      transition: {
+        y: { type: "spring", stiffness: 420, damping: 50 },
+        duration: 1,
+        opacity: { duration: 1 },
+      },
     },
     exit: (direction) => {
       return {
-        y: direction > 0 ? -420 : 420,
-        // opacity: 0,
+        y: direction > 0 ? -520 : 520,
+        opacity: 0,
         // scale: 0.9,
-        // transition: {
-        //   y: { type: "spring", stiffness: 420, damping: 50 },
-        //   // duration: 0.5,
-        // },
+        transition: {
+          y: { type: "spring", stiffness: 420, damping: 50 },
+          duration: 0.5,
+          opacity: { duration: 1.5 },
+        },
       };
     },
   };
@@ -40,17 +40,13 @@ const Visitation = ({title,shortDesc,imgSrc,scrollId}) => {
   const handleNext = () => {
     setDirection(1);
     setCurrentIndex(() =>
-      currentIndex === imgSrc.length - 1
-        ? 0
-        : currentIndex + 1
+      currentIndex === imgSrc.length - 1 ? 0 : currentIndex + 1
     );
   };
   const handlePrev = () => {
     setDirection(-1);
     setCurrentIndex(() =>
-      currentIndex === 0
-        ? imgSrc.length - 1
-        : currentIndex - 1
+      currentIndex === 0 ? imgSrc.length - 1 : currentIndex - 1
     );
   };
   const handleThumbnail = (id) => {
@@ -87,9 +83,7 @@ const Visitation = ({title,shortDesc,imgSrc,scrollId}) => {
           <div className="block space-y-10 md:space-y-24 h-full w-full">
             <h4 className="font-Lora text-xl md:text-[40px]">{title}</h4>
             <div className="flex justify-between items-center">
-              <p className="font-urbanist text-base w-3/5">
-                {shortDesc}
-              </p>
+              <p className="font-urbanist text-base w-3/5">{shortDesc}</p>
               {/* Buttons */}
               <div className="flex items-center gap-3">
                 <div

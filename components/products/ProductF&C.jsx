@@ -1,13 +1,15 @@
 "use client";
 import * as React from "react";
-import productsData from "@/libs/products.json"
+import productsData from "@/libs/products.json";
 import { Checkbox, CheckboxGroup } from "@nextui-org/checkbox";
 import { useCallback, useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import Link from "next/link";
-import { usePathname, useSearchParams,useRouter } from "next/navigation";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 const ProductFC = ({
+  searchFilter,
+  search,
   products,
   setProducts,
   filteredCategory,
@@ -15,14 +17,17 @@ const ProductFC = ({
 }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const router = useRouter()
-  const [selectedItem, SetselectedItem] = useState("All Products");
-  const [selected, setSelected] = useState([]);
+  console.log(searchFilter);
+  // const router = useRouter()
+  // const search = searchParams.get("category");
+
+  // const [selectedItem, SetselectedItem] = useState("All Products");
+  const [selected, setSelected] = useState([searchFilter]);
 
   const filteredProductType = [
     ...new Set(products.map((val) => val.productType)),
   ];
-
+// console.log(filteredProductType);
   const createQueryString = useCallback(
     (name, value) => {
       const params = new URLSearchParams(searchParams);
@@ -33,12 +38,13 @@ const ProductFC = ({
   );
 
   const handleCategory = (c) => {
-    SetselectedItem(c);
     if (c === "All Products") {
       setProducts(productsData.allProducts);
       setFilteredCategory([]);
     } else {
-      const filtered = productsData.allProducts.filter((val) => val.category === c);
+      const filtered = productsData.allProducts.filter(
+        (val) => val.category === c
+      );
       setProducts(filtered);
       setFilteredCategory([]);
     }
@@ -50,7 +56,7 @@ const ProductFC = ({
     if (check) {
       setFilteredCategory((val) => [...val, value]);
     } else {
-      setFilteredCategory((prev) => prev.filter((val) => val !== value));
+      setFilteredCategory((prev) => prev?.filter((val) => val !== value));
     }
   };
 
@@ -59,9 +65,18 @@ const ProductFC = ({
     setSelected([]);
   };
 
-  useEffect(()=>{
-    router.replace('/products')
-  },[router])
+  // useEffect(()=>{
+  //   router.replace('/products')
+  // },[router])
+
+  // useEffect(() => {
+  //   SetselectedItem(search);
+  // }, [search]);
+
+  useEffect(() => {
+    console.log(searchFilter);
+    searchFilter && setFilteredCategory([searchFilter]);
+  }, [searchFilter,setFilteredCategory]);
 
   return (
     <section className="flex items-start gap-[60px] ">
@@ -71,11 +86,12 @@ const ProductFC = ({
           <ul className="text-warning text-opacity-50 font-Lora text-2xl space-y-2">
             {productsData.category.map((c, idx) => (
               <li className="w-max" key={idx}>
-                  <Link  passHref 
+                <Link
+                  passHref
                   href={pathname + "?" + createQueryString("category", c)}
                   key={idx}
                   className={`w-full cursor-pointer btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-warning hover:after:bg-opacity-50 ${
-                    selectedItem === c ? "text-warning text-opacity-100" : ""
+                    search !== null && search === c ? "text-warning text-opacity-100" : ""
                   }`}
                   onClick={() => handleCategory(c)}
                 >
@@ -123,7 +139,7 @@ const ProductFC = ({
       <div className="block w-full h-full space-y-10">
         <ProductCard
           products={
-            filteredCategory.length > 0
+            filteredCategory?.length > 0
               ? products.filter((val) =>
                   filteredCategory.includes(val.productType)
                 )
@@ -137,7 +153,7 @@ const ProductFC = ({
 
 export default ProductFC;
 
-export const CategoryTab = ({category, setProducts }) => {
+export const CategoryTab = ({ category, setProducts }) => {
   const [selectedItem, SetselectedItem] = useState("All Products");
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -156,7 +172,9 @@ export const CategoryTab = ({category, setProducts }) => {
     if (item === "All Products") {
       setProducts(productsData.allProducts);
     } else {
-      const filterCategory = productsData.allProducts.filter((val) => val.category === item);
+      const filterCategory = productsData.allProducts.filter(
+        (val) => val.category === item
+      );
       setProducts(filterCategory);
     }
   };
@@ -171,8 +189,13 @@ export const CategoryTab = ({category, setProducts }) => {
           }`}
           key={idx}
         >
-            <Link  passHref 
-            href={pathname + "?" + createQueryString("category", item.list,{scroll: true})}
+          <Link
+            passHref
+            href={
+              pathname +
+              "?" +
+              createQueryString("category", item.list, { scroll: true })
+            }
             className={`block h-6 w-full overflow-hidden`}
             onClick={() => handleCategory(item.list)}
           >

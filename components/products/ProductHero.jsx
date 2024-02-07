@@ -8,10 +8,14 @@ import Image from "next/image";
 const ProductHero = ({ setProducts }) => {
   const searchParams = useSearchParams();
   const search = searchParams.get("category");
+  // const searchNav = searchParams.get("filter");
+  // console.log(searchNav);
+  // const NavbarFilter = productsData.allProducts.filter(val => val.category === searchNav)
+  // setProducts(NavbarFilter)
   const product =
     productsData.productCategory.find((val) => val.title === search) ||
     productsData.productCategory[0];
-
+ 
   const AllProductList = productsData.allProducts;
 
   const RIProductList = productsData.allProducts.filter(

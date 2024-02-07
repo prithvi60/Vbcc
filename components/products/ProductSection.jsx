@@ -6,8 +6,11 @@ import { CiSearch } from "react-icons/ci";
 import Filter from "./Filter";
 import productsData from "@/libs/products.json"
 import ProductFC from "./ProductF&C";
+import { useSearchParams } from "next/navigation";
 
-const ProductSection = ({ products, setProducts }) => {
+const ProductSection = ({search, products, setProducts }) => {
+  const searchParams = useSearchParams();
+  const searchFilter = searchParams.get("filter");
   const [searchValue, setSearchValue] = useState("");
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
@@ -23,6 +26,11 @@ const ProductSection = ({ products, setProducts }) => {
     );
     setProducts(allProducts);
   }, [searchValue, setProducts]);
+
+  useEffect(() => {
+    setFilteredCategory(searchFilter)
+  }, [searchFilter])
+  
 
   const handleSortBy = (value) => {
     // console.log(value);
@@ -105,6 +113,8 @@ const ProductSection = ({ products, setProducts }) => {
       </div>
       {/* Product Section */}
       <ProductFC
+      searchFilter={searchFilter}
+      search={search}
         products={products}
         setProducts={setProducts}
         filteredCategory={filteredCategory}
