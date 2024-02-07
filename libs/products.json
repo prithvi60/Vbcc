@@ -8111,7 +8111,8 @@
             {
               "id": "2",
               "img": "https://ik.imagekit.io/webibee/VBCC/products/METTALURGICAL/2.%20Aluminium%20Stir%20Casting/2.JPG?updatedAt=1707200944672"
-            },{
+            },
+            {
               "id": "3",
               "img": "https://ik.imagekit.io/webibee/VBCC/products/METTALURGICAL/2.%20Aluminium%20Stir%20Casting/3.JPG?updatedAt=1707200944638"
             }
@@ -10602,32 +10603,48 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/Product%20Card.png?updatedAt=1707221776447",
       "productName": "Flexural Strength (MOR)",
       "productType": "Tile & Santiary Ware",
       "description": "VBCC's Flexural Strength testing assesses a material's resistance to bending, providing crucial data for structural analysis and applications requiring flexural performance.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/1.jpg?updatedAt=1707221771833"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/2.JPG?updatedAt=1707221772072"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/3.JPG?updatedAt=1707221773541"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/4.JPG?updatedAt=1707221773668"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/5.JPG?updatedAt=1707221773946"
+            },
+            {
+              "id": "6",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/6.jpg?updatedAt=1707221774941"
+            },
+            {
+              "id": "7",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/7.JPG?updatedAt=1707221774248"
+            },
+            {
+              "id": "8",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/8.JPG?updatedAt=1707221775573"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -10665,7 +10682,7 @@
               "value": "LOAD with maximum freezing"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/Product%20Card.png?updatedAt=1707221776447",
           "overViewDescription": [
             "VBCC introduces its Flexural Strength (MOR) Testing Apparatus, a specialized instrument designed for precise assessments of material flexural strength. Engineered with reliability and accuracy in mind, this apparatus is an essential tool for industries requiring a comprehensive understanding of materials' resistance to bending and flexural stress.",
             "Key Features:"
@@ -10725,32 +10742,40 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Product%20Card.png?updatedAt=1707221770145",
       "productName": "Torsion Viscometer",
       "productType": "Tile & Santiary Ware",
       "description": "VBCC's Torsion Viscometer provides accurate measurements of a fluid's viscosity, aiding in the characterization of materials for industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(1).jpg?updatedAt=1707221770514"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(2).jpg?updatedAt=1707221770281"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(3).jpg?updatedAt=1707221770226"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(4).jpg?updatedAt=1707221770483"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(5).jpg?updatedAt=1707221771622"
+            },
+            {
+              "id": "6",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(6).jpg?updatedAt=1707221771658"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -10768,7 +10793,7 @@
               "value": "Made of Stainless Steel"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/overview.jpg?updatedAt=1707221769703",
           "overViewDescription": [
             "Discover precision viscosity measurements with VBCC's Torsion Viscometer, a cutting-edge instrument designed for accurate analysis of fluid viscosity in diverse industrial applications. Engineered for reliability and performance, this viscometer is an indispensable tool for understanding and optimizing the flow properties of various liquids.",
             "Key Features:"
@@ -10828,32 +10853,32 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/Product%20Card.png?updatedAt=1707221768937",
       "productName": "Auto Clave",
       "productType": "Tile & Santiary Ware",
       "description": "The Auto Clave from VBCC is an automated pressure vessel designed for controlled pressure and temperature environments, catering to diverse industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/1.JPG?updatedAt=1707221764856"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/2.JPG?updatedAt=1707221764763"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/3.JPG?updatedAt=1707221766549"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/4.JPG?updatedAt=1707221767366"
+            }
+          ],
           "title": [
             "General",
             "Temperature",
@@ -10925,7 +10950,7 @@
               "value": "Teflon or equivalent"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/Product%20Card.png?updatedAt=1707221768937",
           "overViewDescription": [
             "VBCC's Industrial Autoclave is a robust and versatile pressure vessel designed for various industrial applications, including curing, vulcanizing, and other processes that require controlled high-pressure and temperature environments. This autoclave is engineered to meet the stringent demands of industries such as aerospace, automotive, composites, and more.",
             "Key Features:"
@@ -10981,32 +11006,28 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/Product%20Card.png?updatedAt=1707221759699",
       "productName": "Lab Roller Hearth Furnace",
       "productType": "Tile & Santiary Ware",
       "description": "VBCC's Lab Roller Hearth Furnaces create a controlled atmosphere for laboratory-scale heat treatment, ensuring precision in material research and development.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/1.jpg?updatedAt=1707221758215"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/2.jpg?updatedAt=1707221759638"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/3.JPG?updatedAt=1707221760527"
+            }
+          ],
           "title": [
             "General",
             "Temperature",
@@ -11078,7 +11099,7 @@
               "value": "High-quality fabrication of M. S. Body and M. S. Angle’s structure with proper stiffeners and neat powder coat painting"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/Product%20Card.png?updatedAt=1707221759699",
           "overViewDescription": [
             "VBCC's Lab Roller Hearth Furnace is a specialized high-temperature furnace designed for laboratory-scale heat treatment applications. With its roller hearth design, this furnace provides uniform heating and precise temperature control, making it suitable for various research and development processes.",
             "Key Features:"
@@ -11134,32 +11155,28 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/6.%20WATER%20CHILLER/Product%20Card.png?updatedAt=1707221760106",
       "productName": "Water Chiller",
       "productType": "Tile & Santiary Ware",
       "description": "A Microwave Furnace is a device that uses microwaves to heat materials quickly and uniformly, often employed in processes such as sintering, melting, or chemical reactions for efficient material processing.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/6.%20WATER%20CHILLER/1.jpg?updatedAt=1707221762895"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/6.%20WATER%20CHILLER/2.jpg?updatedAt=1707221765038"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/6.%20WATER%20CHILLER/3.jpg?updatedAt=1707221761500"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -11193,7 +11210,7 @@
               "value": "The water chilling plant is constructed with the wheel to move the equipment easily"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/6.%20WATER%20CHILLER/Product%20Card.png?updatedAt=1707221760106",
           "overViewDescription": [
             "VBCC's Water Chiller, equipped with an efficient cooling arrangement, is a vital component for maintaining optimal temperatures in various industrial processes and laboratory applications. This chiller system is designed to remove excess heat generated during operations, ensuring consistent and controlled temperatures for equipment and processes.",
             "Key Features:"
@@ -11237,32 +11254,36 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/Product%20Card.png?updatedAt=1707221875199",
       "productName": "Silicon Carbide Heating Elements",
       "productType": "Heating Elements",
       "description": "VBCC's Silicon Carbide Heating Elements are high-performance electric heaters known for their excellent thermal conductivity and durability, ideal for high-temperature industrial applications.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/1.JPG?updatedAt=1707221858016"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/2.JPG?updatedAt=1707221858133"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/3.JPG?updatedAt=1707221859025"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/4.JPG?updatedAt=1707221860097"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/5.JPG?updatedAt=1707221860981"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -11296,7 +11317,7 @@
               "value": "High-temperature stability, corrosion resistance, excellent thermal conductivity"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/Product%20Card.png?updatedAt=1707221875199",
           "overViewDescription": [
             "VBCC presents Silicon Carbide Heating Elements, a cutting-edge solution for high-temperature heating applications in diverse industries. Engineered with precision and durability, these Heating Elements offer exceptional performance, reliability, and longevity, making them a preferred choice for applications requiring elevated temperatures.",
             "Key Features:"
@@ -11356,32 +11377,36 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/Product%20Card.png?updatedAt=1707221860717",
       "productName": "MOSi2 Heating Elements",
       "productType": "Heating Elements",
       "description": "VBCC's MOSi2 Heating Elements, made of molybdenum disilicide, offer high-temperature stability and oxidation resistance, making them suitable for diverse heating applications in extreme environments.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/1.JPG?updatedAt=1707221858749"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/2.JPG?updatedAt=1707221856482"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/3.JPG?updatedAt=1707221858218"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/4.JPG?updatedAt=1707221858139"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/5.JPG?updatedAt=1707221857655"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -11419,7 +11444,7 @@
               "value": "Excellent high-temperature stability, rapid heating, long service life, and resistance to oxidation and chemical corrosion"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/Product%20Card.png?updatedAt=1707221860717",
           "overViewDescription": [
             "Experience advanced high-temperature heating solutions with VBCC MoSi2 Heating Elements. Engineered for exceptional performance in extreme heat conditions, these Heating Elements offer reliability, durability, and precise temperature control, making them a preferred choice for various industrial applications.",
             "Key Features:"
@@ -11479,32 +11504,20 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/APM%20Kanthal/Product%20Card.png?updatedAt=1707221848203",
       "productName": "APM Kanthal",
       "productType": "Heating Elements",
       "description": "APM Kanthal, offered by VBCC, is a versatile heating alloy known for its high-temperature strength and oxidation resistance. It is a reliable choice for Heating Elements in various industrial processes.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/APM%20Kanthal/Product%20Card.png?updatedAt=1707221848203"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -11542,7 +11555,7 @@
               "value": "Exceptionally good form Stability. Oxidation resistance."
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/APM%20Kanthal/Product%20Card.png?updatedAt=1707221848203",
           "overViewDescription": [
             "Explore cutting-edge heating solutions with APM Kanthal Heating Elements, designed to deliver reliable and efficient performance in a variety of industrial applications. Engineered with precision and durability, these Heating Elements offer advanced thermal processing capabilities for enhanced operational efficiency.",
             "Key Features:"
@@ -11602,32 +11615,20 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/Graphite%20Heating%C2%A0Elements/Product%20Card.png?updatedAt=1707221848165",
       "productName": "Graphite Heating Elements",
       "productType": "Heating Elements",
       "description": "VBCC's Graphite Heating Elements provide efficient and uniform heating in high-temperature environments, making them suitable for applications requiring precision and durability, such as in industrial Furnaces.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/Graphite%20Heating%C2%A0Elements/Product%20Card.png?updatedAt=1707221848165"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -11665,7 +11666,7 @@
               "value": "High temperature resistance, excellent thermal conductivity, chemical inertness, customizable shapes, long lifespan"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/Graphite%20Heating%C2%A0Elements/Product%20Card.png?updatedAt=1707221848165",
           "overViewDescription": [
             "Explore advanced heating solutions with Graphite Heating Elements, meticulously designed to deliver reliable and efficient performance in diverse industrial applications. Engineered with precision and durability, these Heating Elements offer superior thermal processing capabilities for enhanced operational efficiency.",
             "Key Features:"
@@ -11725,35 +11726,39 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/Product%20Card.png?updatedAt=1707221888477",
       "productName": "Vacuum Fiber Board Insulation",
       "productType": "Controllers",
       "description": "VBCC's Vacuum Fiber Board Insulation is a cost-effective and high-temperature insulation solution designed for kilns, Furnaces, and thermal process systems, offering low thermal conductivity and excellent thermal shock resistance.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/1.JPG?updatedAt=1707221870546"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/2.JPG?updatedAt=1707221870834"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/3.JPG?updatedAt=1707221871525"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/4.JPG?updatedAt=1707221871583"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/5.JPG?updatedAt=1707221871421"
+            }
+          ],
           "title": [],
           "Title1": [],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/Product%20Card.png?updatedAt=1707221888477",
           "overViewDescription": [
             "VBCC Vacuum Fiber Board Insulation is a versatile and cost-effective hot face insulation solution meticulously designed for kilns, Furnaces, and thermal process systems operating at temperatures up to 1800°C. Manufactured by VBCC, this insulation is crafted from a carefully controlled blend of polycrystalline Al₂O₃ fiber (PCW), high-purity alumina filler, and inorganic refractory binders.",
             "Key Features:"
@@ -11809,35 +11814,31 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/9.%20THYRISTORS/Product%20Card.png?updatedAt=1707221872710",
       "productName": "Thyristors",
       "productType": "Controllers",
       "description": "VBCC's Thyristors are semiconductor devices designed for precise electrical power control, acting as efficient switches for regulating high-power electrical circuits with reliability and accuracy.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/9.%20THYRISTORS/1.jpg?updatedAt=1707221869017"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/9.%20THYRISTORS/2.jpg?updatedAt=1707221869012"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/9.%20THYRISTORS/3.jpg?updatedAt=1707221869735"
+            }
+          ],
           "title": [],
           "Title1": [],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/9.%20THYRISTORS/Product%20Card.png?updatedAt=1707221872710",
           "overViewDescription": [
             "A semiconductor device designed for precise electrical power control, the VBCC Thyristor stands as a cutting-edge solution for industries demanding efficient regulation of high-power electrical circuits. Manufactured by VBCC, this thyristor leverages advanced semiconductor technology to deliver reliable and accurate control in diverse applications.",
             "Key Features:"
@@ -11889,32 +11890,36 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/Product%20Card.png?updatedAt=1707221887770",
       "productName": "PID Controllers",
       "productType": "Controllers",
       "description": "VBCC's PID Controllers, or Proportional-Integral-Derivative Controllers, are feedback control systems widely used in industrial and process automation. They ensure accurate and adaptable control over diverse processes, including temperature, pressure, and flow.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/1.png?updatedAt=1707221881035"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/2.png?updatedAt=1707221887423"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/3.png?updatedAt=1707221886321"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/4.png?updatedAt=1707221887605"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/5.jpg?updatedAt=1707221885669"
+            }
+          ],
           "title": [
             "General"
           ],
@@ -11952,7 +11957,7 @@
               "value": "4 Digit/7 Segment"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/Product%20Card.png?updatedAt=1707221887770",
           "overViewDescription": [
             "PID Controllers, short for Proportional-Integral-Derivative Controllers, are indispensable feedback control systems widely applied in the realm of industrial and process automation. These Controllers play a crucial role in continuously monitoring and adjusting a system's output to maintain a desired setpoint, ensuring precision and stability in complex systems.",
             "Key Features:"
@@ -12032,35 +12037,27 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/11.%20MASS%20FLOW%20CONTROLLERS/Product%20Card.png?updatedAt=1707221881173",
       "productName": "Mass Flow Controllers",
       "productType": "Controllers",
       "description": "VBCC's Mass Flow Controllers offer precise control of gas flow rates in various industrial processes, ensuring accuracy and stability in applications such as gas mixing and flow regulation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/11.%20MASS%20FLOW%20CONTROLLERS/MFC1.jpg?updatedAt=1707221883571"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/11.%20MASS%20FLOW%20CONTROLLERS/MFC.jpg?updatedAt=1707221883655"
+            }
+          ],
           "title": [],
           "Title1": [],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/11.%20MASS%20FLOW%20CONTROLLERS/Product%20Card.png?updatedAt=1707221881173",
           "overViewDescription": [
             "Compact and self-contained, VBCC's mass flow Controllers are engineered for precise gas flow indication and control. Featuring a rugged design and instrumentation-grade accuracy, these Controllers offer a versatile and cost-effective solution for flow control applications. Available in aluminum or stainless steel, with readout options in engineering units or 0 to 100 percent displays, they cater to diverse needs.",
             "Equipped with a built-in electromagnetic valve, these Controllers enable precise flow rate adjustments within the specified range, and the normally closed valve ensures safety during power outages. Setpoints can be controlled locally or remotely, providing flexibility.",
@@ -12085,35 +12082,35 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/12.%20SILICON%20O%20RINGS/Product%20Card.png?updatedAt=1707221891419",
       "productName": "Silicon O-Rings",
       "productType": "Controllers",
       "description": "VBCC's Silicon O-Rings are precision-engineered sealing components crafted from high-quality silicone rubber, known for exceptional heat resistance and durability. Widely applied in automotive, electronics, and medical devices, they exemplify VBCC's commitment to advanced sealing solutions.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/12.%20SILICON%20O%20RINGS/1.JPG?updatedAt=1707221879811"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/12.%20SILICON%20O%20RINGS/2.JPG?updatedAt=1707221881712"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/12.%20SILICON%20O%20RINGS/3.JPG?updatedAt=1707221882650"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/12.%20SILICON%20O%20RINGS/4.JPG?updatedAt=1707221882399"
+            }
+          ],
           "title": [],
           "Title1": [],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/12.%20SILICON%20O%20RINGS/Product%20Card.png?updatedAt=1707221891419",
           "overViewDescription": [
             "VBCC's Silicon O-Rings represent a pinnacle in precision engineering, serving as circular sealing components crafted from high-quality silicone rubber. Meticulously designed to offer reliable and durable sealing performance, these O-Rings find diverse applications across industries. Renowned for their exceptional heat resistance, VBCC's Silicon O-Rings excel in high-temperature environments, ensuring optimal functionality even under extreme conditions.",
             "Key Features:"
@@ -12183,26 +12180,26 @@
       "description": "Precision-crafted Agate Pestle and Motors by VBCC are essential tools for laboratory grinding and mixing, featuring agate material for hardness and wear resistance, ensuring meticulous sample preparation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "/img 1.jpg"
+            },
+            {
+              "id": "2",
+              "img": "/img 2.jpg"
+            },
+            {
+              "id": "3",
+              "img": "/img 3.jpg"
+            },
+            {
+              "id": "4",
+              "img": "/img 4.jpg"
+            }
+          ],
           "title": [
             "Agate Pestle and Mortar Grey",
             "Agate Pestle and Mortar Black"
@@ -12251,32 +12248,72 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/Product%20Card.png?updatedAt=1707221924713",
       "productName": "Alumina - Boats and Crucibles",
       "productType": "Ceramic Products",
       "description": "VBCC's Alumina Boats and Crucibles are high-performance components designed for demanding high-temperature applications in laboratories and industries, providing excellent thermal conductivity and resistance to chemical corrosion.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/1.jpg?updatedAt=1707221905550"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/2.jpg?updatedAt=1707221910660"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/3.JPG?updatedAt=1707221912556"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/4.jpg?updatedAt=1707221914152"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/5.jpg?updatedAt=1707221914274"
+            },
+            {
+              "id": "6",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/6.JPG?updatedAt=1707221924249"
+            },
+            {
+              "id": "7",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/7.JPG?updatedAt=1707221925306"
+            },
+            {
+              "id": "8",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/8.JPG?updatedAt=1707221925633"
+            },
+            {
+              "id": "9",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/9.JPG?updatedAt=1707221925606"
+            },
+            {
+              "id": "10",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/10.JPG?updatedAt=1707221913421"
+            },
+            {
+              "id": "11",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/11.JPG?updatedAt=1707221914110"
+            },
+            {
+              "id": "12",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/12.JPG?updatedAt=1707221919893"
+            },
+            {
+              "id": "13",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/13.JPG?updatedAt=1707221918120"
+            },
+            {
+              "id": "14",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/14.JPG?updatedAt=1707221919469"
+            }
+          ],
           "title": [
             "99.9% Alumina Boats",
             "99.9% Alumina Cylindrical shaped Crucibles",
@@ -12374,7 +12411,7 @@
               "value": "10-500"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/2.%20ALUMINA%20-%20BOATS,%20CRUCIBLES/Product%20Card.png?updatedAt=1707221924713",
           "overViewDescription": [
             "VBCC's Alumina Crucibles and Boats represent precision and durability in high-temperature applications. Meticulously crafted from high-purity alumina, these crucibles and boats excel in providing exceptional thermal stability and resistance to chemical corrosion.",
             "The robust construction of VBCC's Alumina Crucibles and Boats ensures reliable performance under extreme conditions, making them ideal choices for laboratories and industrial settings. With a variety of sizes and configurations available, these products cater to diverse experimental and manufacturing requirements.",
@@ -12398,32 +12435,32 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/Product%20Card.png?updatedAt=1707221924888",
       "productName": "Alumina Tubes",
       "productType": "Ceramic Products",
       "description": "VBCC's Alumina Tubes are versatile components used in laboratories and industries, offering high thermal stability, electrical insulation, and resistance to chemical corrosion for precise temperature control and insulation.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/1.JPG?updatedAt=1707221904683"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/2.JPG?updatedAt=1707221905145"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/3.JPG?updatedAt=1707221909046"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/4.JPG?updatedAt=1707221908206"
+            }
+          ],
           "title": [
             "99.8% Recrystallized Alumina Tubes"
           ],
@@ -12441,7 +12478,7 @@
               "value": "1000"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/Product%20Card.png?updatedAt=1707221924888",
           "overViewDescription": [
             "Presenting VBCC's Alumina Tubes – advanced solutions for high-temperature applications in diverse industrial and laboratory settings. Crafted with precision from high-purity alumina, these tubes offer exceptional thermal stability, making them ideal for processes requiring resistance to extreme temperatures.",
             "VBCC's Alumina Tubes boast a robust construction that ensures durability and reliability under challenging conditions. Their resistance to chemical corrosion further enhances their suitability for a wide range of applications. With a variety of sizes and configurations available, these tubes are designed to meet the diverse needs of experimental setups and industrial processes.",
@@ -12465,32 +12502,56 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/Product%20Card.png?updatedAt=1707221904417",
       "productName": "Zirconia Wares",
       "productType": "Ceramic Products",
       "description": "VBCC's Zirconia Wares, made from ZrO2, serve diverse applications in laboratories, dental ceramics, and industries, providing high strength, wear resistance, and exceptional thermal and chemical stability.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/HELI0224.JPG?updatedAt=1707221907364"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/HELI0229.JPG?updatedAt=1707221901353"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/HELI0226.JPG?updatedAt=1707221900744"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/HELI0218.JPG?updatedAt=1707221900594"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/HELI0225.JPG?updatedAt=1707221898837"
+            },
+            {
+              "id": "6",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/HELI0219.JPG?updatedAt=1707221895505"
+            },
+            {
+              "id": "7",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/Zirconia%20plates.jpg?updatedAt=1707221894725"
+            },
+            {
+              "id": "8",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/DSCN4522.JPG?updatedAt=1707221891359"
+            },
+            {
+              "id": "9",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/DSCN4523.JPG?updatedAt=1707221891108"
+            },
+            {
+              "id": "10",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/DSCN4519.JPG?updatedAt=1707221889227"
+            }
+          ],
           "title": [
             "Zirconia Crucibles",
             "Zirconia Boats",
@@ -12557,7 +12618,7 @@
               "value": "3"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/4.%20%20ZIRCONIA%20WARES/Product%20Card.png?updatedAt=1707221904417",
           "overViewDescription": [
             "Introducing VBCC's Zirconia Wares – cutting-edge solutions designed for high-performance applications in laboratories and industries. These precision-engineered wares are crafted from high-quality zirconia, providing exceptional strength and resilience in demanding environments.",
             "VBCC's Zirconia Wares exhibit outstanding resistance to high temperatures and harsh chemical conditions, making them ideal for various material processing applications. The robust construction ensures durability and reliability, making these wares a trusted choice for critical processes.",
@@ -12587,26 +12648,26 @@
       "description": "VBCC's Grinding Media, available in materials like alumina, zirconia, and stainless steel, are crucial for grinding and milling processes in various industries, contributing to the production of materials with tailored particle size distributions and superior quality.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "/img 1.jpg"
+            },
+            {
+              "id": "2",
+              "img": "/img 2.jpg"
+            },
+            {
+              "id": "3",
+              "img": "/img 3.jpg"
+            },
+            {
+              "id": "4",
+              "img": "/img 4.jpg"
+            }
+          ],
           "title": [],
           "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
           "overViewDescription": [
@@ -12735,32 +12796,40 @@
           "fragile": "fragile"
         }
       ],
-      "img": "https://ik.imagekit.io/webibee/VBCC/product-img.png",
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/Product%20Card.png?updatedAt=1707221768519",
       "productName": "Dilatometer - Thermal Expansion",
       "productType": "Tile & Santiary Ware",
       "description": "VBCC's Dilatometer assesses a material's thermal expansion up to 1600°C, providing critical information for applications where dimensional stability under high temperatures is crucial.",
       "variant": [],
       "price": "₹ Enquire for Estimate",
-      "gallery": [
-        {
-          "id": "1",
-          "img": "/img 1.jpg"
-        },
-        {
-          "id": "2",
-          "img": "/img 2.jpg"
-        },
-        {
-          "id": "3",
-          "img": "/img 3.jpg"
-        },
-        {
-          "id": "4",
-          "img": "/img 4.jpg"
-        }
-      ],
       "specification": [
         {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/1%20(2).jpg?updatedAt=1707221764832"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/2%20(2).jpg?updatedAt=1707221763801"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/3.jpeg?updatedAt=1707221765288"
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/4.png?updatedAt=1707221766483"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/5.jpg?updatedAt=1707221766766"
+            },
+            {
+              "id": "6",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/6.JPG?updatedAt=1707221768952"
+            }
+          ],
           "title": [
             "General",
             "Temperature",
@@ -12840,7 +12909,7 @@
               "value": "Double wall structure with high-quality fabrication of M. S. Body with neat powder coat painting and elegant design"
             }
           ],
-          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/sample 1.png",
+          "overViewImg": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/overview.jpg?updatedAt=1707221768205",
           "overViewDescription": [
             "VBCC proudly presents its Dilatometer designed for precise thermal expansion measurements up to 1600°C. This cutting-edge instrument is tailored for industries requiring accurate assessments of material expansion under high-temperature conditions. Engineered with precision and reliability, the VBCC Dilatometer is an essential tool for understanding thermal behavior in diverse applications.",
             "Key Features:"
