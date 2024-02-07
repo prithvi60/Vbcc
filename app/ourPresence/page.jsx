@@ -6,7 +6,7 @@ import { OurPresenceContact } from "@/components/presence/OurPresenceContact";
 const obj = {
   title: "Our Presence",
   desc: "Discover VBCC's range of Industrial and Research equipment across the Globe. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-  ImgSrc: "/presenceimg.png",
+  ImgSrc: "https://ik.imagekit.io/webibee/VBCC/presenceimg.png?updatedAt=1707283206454",
 };
 
 export default function Home() {

@@ -37,7 +37,7 @@ export const PresenceSpecificPage = () => {
               stands out as one of the most trusted names among{" "}
               <span className="font-semibold capitalize">
                 Laboratory Furnace and Instrument Manufactures in{" "}
-                <span className="underline">{place}</span>
+                <span>{place}</span>
               </span>
               . Our commitment to delivering superior quality products has
               solidified our reputation in the industry. Rigorous testing
@@ -54,8 +54,7 @@ export const PresenceSpecificPage = () => {
                 Strength (CCS) Apparatus, Presses up to 500 TON, Furnaces up to
                 2500°C, Chemical Vapour Deposition (CVD) Instrument, Tubular,
                 Vacuum, Box, Industrial Furnaces up to 2500°C, Biomass
-                Pyrolysis, and Dilatometer in{" "}
-                <span className="underline">{place}</span>
+                Pyrolysis, and Dilatometer in <span>{place}</span>
               </span>
               .
               <br />
@@ -63,7 +62,7 @@ export const PresenceSpecificPage = () => {
               As leading{" "}
               <span className="font-semibold capitalize">
                 Laboratory Furnace and Instrument Exporters and Suppliers in{" "}
-                <span className="underline">{place}</span>
+                <span>{place}</span>
               </span>
               , VBCC has established a strong presence in the market. Renowned
               companies trust us for a diverse range of laboratory instruments
@@ -75,7 +74,7 @@ export const PresenceSpecificPage = () => {
               If you are in search of{" "}
               <span className="font-semibold capitalize">
                 Laboratory Furnace and Instrument Exporters and Suppliers in{" "}
-                <span className="underline">{place}</span>
+                <span>{place}</span>
               </span>{" "}
               that can tailor products to your requirements,{" "}
               <span className="font-semibold capitalize">
@@ -86,9 +85,10 @@ export const PresenceSpecificPage = () => {
               Choose VBCC for cutting-edge technology, reliability, and
               excellence in laboratory, industrial furnaces and instruments
             </p>
+            <div className="flex items-center gap-5">
             <button
               className={`min-w-fit text-base tracking-tight border border-warning p-5 rounded-full font-urbanist px-4 py-2 group/button block bg-primary hover:bg-transparent text-center duration-700 delay-75 capitalize cursor-pointer`}
-              onClick={() => router.push("/ourPresence")}
+              onClick={() => router.push("/about")}
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h4
@@ -103,6 +103,24 @@ export const PresenceSpecificPage = () => {
                 </h4>
               </div>
             </button>
+            <button
+              className={`min-w-fit text-base tracking-tight border border-warning p-5 rounded-full font-urbanist px-4 py-2 group/button block bg-primary hover:bg-transparent text-center duration-700 delay-75 capitalize cursor-pointer`}
+              onClick={() => router.push("/products")}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover/button:-translate-y-20 duration-700 text-white`}
+                >
+                  {"Explore Our Products"}
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover/button:-translate-y-[25px] duration-700 group-hover/button:text-warning`}
+                >
+                  {"Explore Our Products"}
+                </h4>
+              </div>
+            </button>
+            </div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6">

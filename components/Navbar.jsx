@@ -59,7 +59,7 @@ const NavBar = () => {
         <Link passHref href="/" className="relative h-8 w-16 cursor-pointer">
           <Image
             fill
-            src={"/VBCC logo.svg"}
+            src={"https://ik.imagekit.io/webibee/VBCC/VBCC%20logo.svg"}
             // placeholder="blur"
             // blurDataURL=""
             alt="Logo"

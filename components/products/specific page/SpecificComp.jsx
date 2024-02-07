@@ -305,7 +305,7 @@ export const CustomCarousel = ({ specificId, specification }) => {
             className="w-full h-full object-contain object-center rounded-md"
           />
         </div>
-        <div className="flex justify-center items-center gap-5 w-full h-full overflow-auto">
+        <div className="flex justify-center items-center gap-5 w-full h-full overflow-auto thumbnail">
           {specification[specificId].gallery.map((item, idx) => (
             <div
               className={`relative h-[100px] min-w-[120px] mb-5  cursor-pointer ${specification[specificId].gallery.length > 5 && "first:ms-64" } overflow-hidden ${

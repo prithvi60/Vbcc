@@ -29,7 +29,7 @@ const Footer = () => {
     <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-urbanist">
       <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
         <div className="relative h-[40px] w-[70px]">
-          <Image fill src={"/vbcc logo 2.svg"} alt="Logo"/>
+          <Image fill src={"https://ik.imagekit.io/webibee/VBCC/vbcc%20logo%202.svg"} alt="Logo"/>
         </div>
         <div className="text-sm space-y-5">
           <h4 className="uppercase">Kottivakkam,Chennai.</h4>
@@ -142,7 +142,7 @@ const Footer = () => {
                 <Image
                   fill
                   sizes="75px"
-                  src={"/vbcc-research.svg"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/vbcc-research.svg"}
                   // placeholder="blur"
                   // blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-100"
                   alt="Logo"
@@ -158,7 +158,7 @@ const Footer = () => {
                 <Image
                   fill
                   sizes="75px"
-                  src={"/vbcc-hitech.svg"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/vbcc-hitech.svg"}
                   alt="Logo"
                   // placeholder="blur"
                   // blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100"
