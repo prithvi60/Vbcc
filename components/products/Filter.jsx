@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import { CustomFilter } from "./CustomSelect";
 
-const Filter = ({ setIsFilter, filteredCategory, setFilteredCategory }) => {
+const Filter = ({ setIsFilter, filteredCategory, setFilteredCategory,products }) => {
   
-  const [filters, setFilters] = useState(filteredCategory);
-
+  const [filters, setFilters] = useState(filteredCategory || []);
+  
   const handleApplyFilter = () => {
     setFilteredCategory(filters);
     setIsFilter((prev) => !prev);

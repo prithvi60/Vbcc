@@ -93,8 +93,8 @@ const Hero = () => {
         </div>
       )}
       <div className="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-        <h4 className="text-xl md:text-2xl uppercase font-Lora mb-4 md:mb-6">
-          Vb Ceramic Consultants
+        <h4 className="text-xl md:text-2xl uppercase font-urbanist mb-4 md:mb-6">
+          VbCC High temperature instruments
         </h4>
         <p className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">
           Tailor Made
@@ -132,9 +132,9 @@ const Hero = () => {
           smooth={true}
           offset={20}
           duration={800}
-          className={`absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 block rounded-full  p-3 md:p-[18px] border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer z-30 backdrop-blur-md bg-black/30`}
+          className={`absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 block rounded-full p-3 border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer z-30 backdrop-blur-md bg-black/30`}
         >
-          <div className={`h-6 w-full overflow-hidden`}>
+          <div className={`h-[26px] w-full overflow-hidden`}>
             <h4
               className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
             >

@@ -114,7 +114,7 @@ const ProductFC = ({
             ))}
           </ul>
         </div>
-        <hr className="h-0.5 w-full border-0 shrink-0 bg-[#0d192466] bg-opacity-40" />
+        <hr className="h-0.5 w-full border-0 shrink-0 bg-warning bg-opacity-40" />
         {/* Filters */}
         <div className="hidden lg:block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>

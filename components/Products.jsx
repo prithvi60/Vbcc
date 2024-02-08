@@ -5,10 +5,11 @@ import { useEffect, useState } from "react";
 import { Btn2 } from "./Btn";
 import { useRouter } from "next/navigation";
 
-const Products = ({ productsData }) => {
+const Products = ({ sortProduct, productsData, featureProducts }) => {
+  const [ourProducts, setOurProducts] = useState(featureProducts);
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(8);
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState("Featured");
   const router = useRouter();
 
   useEffect(() => {
@@ -25,6 +26,14 @@ const Products = ({ productsData }) => {
       : setCount(6);
   }, [width]);
 
+  const handleSortBy = (value) => {
+    setActiveTab(value);
+    const sortedBy = productsData.filter(
+      (val) => val.sortBy.toLowerCase() === value.toLowerCase()
+    );
+    setOurProducts(sortedBy);
+  };
+  // console.log(ourProducts);
   return (
     <section className="py-16 px-6 md:px-10 xl:p-16 bg-secondary font-urbanist">
       <div className="flex flex-col justify-center items-center gap-8">
@@ -33,44 +42,48 @@ const Products = ({ productsData }) => {
         </h3>
         <div className="flex flex-col justify-center items-center w-full space-y-8">
           <div className="flex justify-center items-center gap-3 w-full h-auto flex-wrap bg-secondary">
-            {productsData.map((item, idx) => (
+            {sortProduct.map((item, idx) => (
               <div
                 className={`text-base tracking-tight border border-warning p-5 rounded-full font-Lora min-w-fit px-4 py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
-                  activeTab === idx ? "!bg-primary !hover:bg-primary" : ""
+                  activeTab === item.value
+                    ? "!bg-primary !hover:bg-primary"
+                    : ""
                 }`}
                 key={idx}
-                onClick={() => setActiveTab(idx)}
+                onClick={() => handleSortBy(item.value)}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
                   <h4
                     className={`transition translate-y-0 group-hover/button:-translate-y-20 duration-700   ${
-                      activeTab === idx ? "text-secondary " : "text-warning"
+                      activeTab === item.value
+                        ? "text-secondary "
+                        : "text-warning"
                     }`}
                   >
-                    {item.title}
+                    {item.value}
                   </h4>
                   <h4
                     className={`translate-y-20 transition group-hover/button:-translate-y-[25px] duration-700  ${
-                      activeTab === idx
+                      activeTab === item.value
                         ? "text-secondary"
                         : "group-hover/button:text-primary"
                     }`}
                   >
-                    {item.title}
+                    {item.value}
                   </h4>
                 </div>
               </div>
             ))}
           </div>
           <div className="hidden md:flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
-            {productsData[activeTab].sub.slice(0, count).map((card, id) => (
+            {ourProducts.slice(0, count).map((card, id) => (
               <div
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group relative"
                 key={id}
               >
                 <div className="flex justify-between items-center">
                   <p className="text-md">in-stock</p>
-                  <p className="text-small">$718</p>
+                  {/* <p className="text-small">$718</p> */}
                 </div>
                 <Link
                   href={`/products/${card.productName.replace(/\s/g, "")}`}
@@ -93,8 +106,8 @@ const Products = ({ productsData }) => {
                     View
                   </p>
                   <div>
-                    <h4 className="text-sm uppercase">{card.title}</h4>
-                    <p className="font-Lora text-xl">{card.desc}</p>
+                    <h4 className="text-sm uppercase">{card.productType}</h4>
+                    <p className="font-Lora text-xl truncate">{card.productName}</p>
                   </div>
                 </Link>
                 <button
@@ -119,15 +132,15 @@ const Products = ({ productsData }) => {
           </div>
           {/* Mobile view Product items */}
           <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
-            {productsData[activeTab].sub.slice(0, count).map((card, id) => (
+            {ourProducts.slice(0, count).map((card, id) => (
               <Link
-                href={"/products/1"}
+                href={`/products/${card.productName.replace(/\s/g, "")}`}
                 className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
               >
                 <div className="flex justify-between items-center">
                   <p className="text-md">in-stock</p>
-                  <p className="text-small">$718</p>
+                  {/* <p className="text-small">$718</p> */}
                 </div>
                 <div className="relative">
                   <div className="relative h-[225px] w-full">
@@ -145,8 +158,8 @@ const Products = ({ productsData }) => {
                     View
                   </p>
                   <div>
-                    <h4 className="text-sm uppercase">{card.title}</h4>
-                    <p className="font-Lora text-xl">{card.desc}</p>
+                    <h4 className="text-sm uppercase">{card.productType}</h4>
+                    <p className="font-Lora text-xl">{card.productName}</p>
                   </div>
                 </div>
                 <button

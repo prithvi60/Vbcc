@@ -14,7 +14,7 @@ const ProductSection = ({ search, products, setProducts }) => {
   const [searchValue, setSearchValue] = useState("");
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
-  const [selectedItem, SetselectedItem] = useState("Relevance");
+  const [selectedItem, SetselectedItem] = useState("Featured");
   // console.log(selectedItem);
   const [filteredCategory, setFilteredCategory] = useState([]);
 
@@ -28,14 +28,13 @@ const ProductSection = ({ search, products, setProducts }) => {
   }, [searchValue, setProducts]);
 
   useEffect(() => {
-    setFilteredCategory(searchFilter);
+    searchFilter && setFilteredCategory(searchFilter);
   }, [searchFilter]);
 
   const handleSortBy = (value) => {
-    // console.log(value);
     SetselectedItem(value);
     const sortedBy = productsData.allProducts.filter(
-      (val) => val.sortBy.toLowerCase() === value
+      (val) => val.sortBy.toLowerCase() === value.toLowerCase()
     );
     // console.log(sortedBy);
     setProducts(sortedBy);
@@ -45,7 +44,7 @@ const ProductSection = ({ search, products, setProducts }) => {
   return (
     <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
       {/* Sort Section */}
-      <div className="w-full hidden lg:flex justify-end items-center space-y-5 xl:px-[60px]">
+      <div className="w-full hidden lg:flex justify-end items-center space-y-5 xl:px-[60px] relative">
         <div className="block space-y-5">
           <CustomSelect
             handleSortBy={handleSortBy}
@@ -67,7 +66,7 @@ const ProductSection = ({ search, products, setProducts }) => {
         </div>
       </div>
       {/* Tablet view filter */}
-      <div className="w-full flex flex-col-reverse gap-4 md:flex md:flex-row md:gap-0 lg:hidden md:justify-between md:items-start xl:px-[60px]">
+      <div className="w-full flex flex-col-reverse gap-4 md:flex md:flex-row md:gap-0 lg:hidden md:justify-between md:items-start xl:px-[60px] relative">
         <CustomSelectMd
           open={open}
           setOpen={setOpen}
@@ -104,6 +103,7 @@ const ProductSection = ({ search, products, setProducts }) => {
         </div>
         {isFilter && (
           <Filter
+          products={products}
             setIsFilter={setIsFilter}
             filteredCategory={filteredCategory}
             setFilteredCategory={setFilteredCategory}

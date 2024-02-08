@@ -12,8 +12,8 @@ const InnerCarousel = () => {
   if (!client) {
     return (
       <div className="w-full mx-auto pb-1 md:pb-3">
-        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
-          Industrial Equipment
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        Laboratory Instruments
         </h3>
       </div>
     );
@@ -32,14 +32,14 @@ const InnerCarousel = () => {
         axis={"vertical"}
         stopOnHover={false}
       >
-        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
-          Industrial Equipment
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        Laboratory Instruments
         </h3>
-        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
-          Ceramics Products
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        Industrial Furnaces
         </h3>
-        <h3 className="font-Lora text-[30px] md:text-[40px] tracking-tight w-full">
-          Research Equipment
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        Research Equipment
         </h3>
       </Carousel>
     </div>
