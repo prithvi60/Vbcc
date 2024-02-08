@@ -17,17 +17,18 @@ const ProductFC = ({
 }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  console.log(searchFilter);
-  // const router = useRouter()
+
+  // console.log(searchFilter);
+  const router = useRouter();
   // const search = searchParams.get("category");
 
   // const [selectedItem, SetselectedItem] = useState("All Products");
-  const [selected, setSelected] = useState([searchFilter]);
+  const [selected, setSelected] = useState([]);
 
   const filteredProductType = [
     ...new Set(products.map((val) => val.productType)),
   ];
-// console.log(filteredProductType);
+  // console.log(filteredProductType);
   const createQueryString = useCallback(
     (name, value) => {
       const params = new URLSearchParams(searchParams);
@@ -36,7 +37,6 @@ const ProductFC = ({
     },
     [searchParams]
   );
-
   const handleCategory = (c) => {
     if (c === "All Products") {
       setProducts(productsData.allProducts);
@@ -53,10 +53,20 @@ const ProductFC = ({
   const handleFilter = (e) => {
     let value = e.target.value;
     let check = e.target.checked;
+
     if (check) {
-      setFilteredCategory((val) => [...val, value]);
+      // setFilteredCategory((val) => [...val, value]);
+      setFilteredCategory([value]);
     } else {
-      setFilteredCategory((prev) => prev?.filter((val) => val !== value));
+      setFilteredCategory(
+        (prev) => prev?.filter((val) => val !== value)
+      );
+      // const params = new URLSearchParams(searchParams);
+      // searchFilter && params.delete("filter");
+
+      // const queryString = params.toString();
+      // const path = `/${queryString ? `?${queryString}` : ''}`;
+      // router.push(path, "", { scroll: false });
     }
   };
 
@@ -74,9 +84,10 @@ const ProductFC = ({
   // }, [search]);
 
   useEffect(() => {
-    console.log(searchFilter);
+    // console.log(searchFilter);
     searchFilter && setFilteredCategory([searchFilter]);
-  }, [searchFilter,setFilteredCategory]);
+    searchFilter && setSelected([searchFilter]);
+  }, [searchFilter, setFilteredCategory]);
 
   return (
     <section className="flex items-start gap-[60px] ">
@@ -91,7 +102,9 @@ const ProductFC = ({
                   href={pathname + "?" + createQueryString("category", c)}
                   key={idx}
                   className={`w-full cursor-pointer btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-warning hover:after:bg-opacity-50 ${
-                    search !== null && search === c ? "text-warning text-opacity-100" : ""
+                    search !== null && search === c
+                      ? "text-warning text-opacity-100"
+                      : ""
                   }`}
                   onClick={() => handleCategory(c)}
                 >
