@@ -28,7 +28,7 @@ const ProductSection = ({ search, products, setProducts }) => {
   }, [searchValue, setProducts]);
 
   useEffect(() => {
-    searchFilter && setFilteredCategory(searchFilter);
+    searchFilter && setFilteredCategory([searchFilter]);
   }, [searchFilter]);
 
   const handleSortBy = (value) => {

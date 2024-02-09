@@ -18,11 +18,12 @@ const ProductFC = ({
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // console.log(searchFilter);
+  console.log("prop", searchFilter);
   const router = useRouter();
-  // const search = searchParams.get("category");
 
-  // const [selectedItem, SetselectedItem] = useState("All Products");
+  const [searchCategory, setSearchCategory] = useState(
+    search || "All Products"
+  );
   const [selected, setSelected] = useState([]);
 
   const filteredProductType = [
@@ -38,6 +39,7 @@ const ProductFC = ({
     [searchParams]
   );
   const handleCategory = (c) => {
+    setSearchCategory(c);
     if (c === "All Products") {
       setProducts(productsData.allProducts);
       setFilteredCategory([]);
@@ -55,18 +57,12 @@ const ProductFC = ({
     let check = e.target.checked;
 
     if (check) {
-      // setFilteredCategory((val) => [...val, value]);
-      setFilteredCategory([value]);
-    } else {
-      setFilteredCategory(
-        (prev) => prev?.filter((val) => val !== value)
-      );
-      // const params = new URLSearchParams(searchParams);
-      // searchFilter && params.delete("filter");
+      console.log("if filter state", filteredCategory);
 
-      // const queryString = params.toString();
-      // const path = `/${queryString ? `?${queryString}` : ''}`;
-      // router.push(path, "", { scroll: false });
+      setFilteredCategory((val) => [...val, value]);
+    } else {
+      console.log("else filter state", filteredCategory);
+      setFilteredCategory((prev) => prev?.filter((val) => val !== value));
     }
   };
 
@@ -75,20 +71,12 @@ const ProductFC = ({
     setSelected([]);
   };
 
-  // useEffect(()=>{
-  //   router.replace('/products')
-  // },[router])
-
-  // useEffect(() => {
-  //   SetselectedItem(search);
-  // }, [search]);
-
   useEffect(() => {
-    // console.log(searchFilter);
+    console.log(searchFilter);
     searchFilter && setFilteredCategory([searchFilter]);
     searchFilter && setSelected([searchFilter]);
   }, [searchFilter, setFilteredCategory]);
-
+  // console.log("url state",search)
   return (
     <section className="flex items-start gap-[60px] ">
       <div className="hidden lg:block space-y-10 lg:sticky lg:top-5">
@@ -102,9 +90,7 @@ const ProductFC = ({
                   href={pathname + "?" + createQueryString("category", c)}
                   key={idx}
                   className={`w-full cursor-pointer btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-warning hover:after:bg-opacity-50 ${
-                    search !== null && search === c
-                      ? "text-warning text-opacity-100"
-                      : ""
+                    searchCategory === c ? "text-warning text-opacity-100" : ""
                   }`}
                   onClick={() => handleCategory(c)}
                 >
@@ -191,6 +177,7 @@ export const CategoryTab = ({ category, setProducts }) => {
       setProducts(filterCategory);
     }
   };
+  // console.log("state",selectedItem)
   return (
     <div className="flex flex-wrap gap-3 lg:hidden">
       {category.map((item, idx) => (
