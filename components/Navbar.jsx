@@ -41,7 +41,6 @@ const sortBy = ["Featured", "New Products", "Best Selling"];
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isTip, setIsTip] = useState(false);
 
   // console.log("tool state", isTip);
   return (
@@ -69,18 +68,12 @@ const NavBar = () => {
         </Link>
         <div className="hidden lg:flex gap-10 text-warning uppercase">
           <Tooltip
-            isOpen={isTip}
-            onOpenChange={(open) => setIsTip(open)}
             classNames={{
               content:
                 "p-6 text-warning bg-white shadow-lg w-screen lg:-mx-3 rounded-none",
             }}
             content={
-              <ToolTipContent
-                productList={productList}
-                sortBy={sortBy}
-                setIsTip={setIsTip}
-              />
+              <ToolTipContent productList={productList} sortBy={sortBy} />
             }
             showArrow={true}
             placement="bottom"

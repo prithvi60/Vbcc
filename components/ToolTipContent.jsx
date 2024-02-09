@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export const ToolTipContent = ({ productList, sortBy, setIsTip }) => {
+export const ToolTipContent = ({ productList, sortBy }) => {
   const router = useRouter();
 
   return (
@@ -13,10 +13,6 @@ export const ToolTipContent = ({ productList, sortBy, setIsTip }) => {
               href={{
                 pathname: "/products",
                 query: { category: item.category },
-              }}
-              onClick={(e) => {
-                e.preventDefault();
-                setIsTip(false);
               }}
             >
               <h4 className="font-Lora text-base text-warning underline underline-offset-8 hover:no-underline rev-btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-info hover:after:bg-opacity-50 w-max">
@@ -54,10 +50,6 @@ export const ToolTipContent = ({ productList, sortBy, setIsTip }) => {
               href={"/"}
               className="underline underline-offset-8 hover:no-underline rev-btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-info hover:after:bg-opacity-50"
               key={idx}
-              onClick={(e) => {
-                e.preventDefault();
-                setIsTip(false);
-              }}
             >
               {list}
             </Link>
