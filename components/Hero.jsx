@@ -24,11 +24,12 @@ const Hero = () => {
           showIndicators={false}
           className="!z-0"
           autoPlay={client}
-          swipeable
           interval={3000}
           infiniteLoop
           axis={"vertical"}
           stopOnHover={false}
+          swipeable={false}
+          animationHandler={"fade"}
         >
           {/* Relative is affecting height */}
           <div className="h-[90vh] relative m-0">

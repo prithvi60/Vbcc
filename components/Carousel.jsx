@@ -13,7 +13,7 @@ const InnerCarousel = () => {
     return (
       <div className="w-full mx-auto pb-1 md:pb-3">
         <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
-        Laboratory Instruments
+          Laboratory Instruments
         </h3>
       </div>
     );
@@ -31,15 +31,17 @@ const InnerCarousel = () => {
         infiniteLoop
         axis={"vertical"}
         stopOnHover={false}
+        animationHandler={"fade"}
+
       >
         <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
-        Laboratory Instruments
+          Laboratory Instruments
         </h3>
         <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
-        Industrial Furnaces
+          Industrial Furnaces
         </h3>
         <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
-        Research Equipment
+          Research Equipment
         </h3>
       </Carousel>
     </div>
