@@ -22,7 +22,7 @@ export default function Home() {
     const filtered =
       productsData.allProducts.filter((val) => val.category === search);
       search && setProducts(filtered);
-    console.log(filtered);
+    // console.log(filtered);
   }, [search, setProducts]);
   return (
     <main>
