@@ -67,7 +67,7 @@ export const TestimonialSection = () => {
         <h2 className="font-Lora text-2xl lg:text-4xl xl:text-6xl w-full">
           Testimonials
         </h2>
-        <div className="w-full lg:w-96 h-full lg:h-auto overflow-hidden flex gap-4">
+        <div className="w-full lg:w-96 2xl:w-1/2 h-full lg:h-auto overflow-hidden flex gap-4">
           <div className="flex flex-nowrap lg:flex-wrap items-center gap-3 h-[70px] lg:h-full animate-horizontal_carousel lg:animate-none pause mt-2">
             {othersData.testimonials.map((item, idx) => (
               <div
@@ -79,7 +79,7 @@ export const TestimonialSection = () => {
                 key={item.id}
               >
                 <div
-                  className="relative h-[70px] w-[90px] bg-white rounded-md cursor-pointer"
+                  className="relative h-[70px] w-[90px] 2xl:h-[80px] 2xl:w-[100px] bg-white rounded-md cursor-pointer"
                   onClick={() => handleChangePDF(idx)}
                 >
                   <Image
@@ -97,7 +97,7 @@ export const TestimonialSection = () => {
         </div>
       </div>
       <AnimatePresence initial={true}>
-        <div className="lg:w-1/2 w-full h-full z-30 flex items-center justify-start lg:justify-end lg:mt-0 xl:-mt-10 2xl:mt-0">
+        <div className="lg:w-1/2 w-full h-full z-30 flex items-center justify-start lg:justify-end">
           <LazyMotion features={loadFeatures}>
             <m.div
               className="relative h-full w-full  overflow-hidden cursor-pointer"
@@ -116,7 +116,7 @@ export const TestimonialSection = () => {
                 blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
                 sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
                 alt="Logo"
-                className="w-full h-full object-contain lg:object-cover xl:object-contain object-center rounded-xl"
+                className="w-full h-full object-contain object-center rounded-xl"
               />
             </m.div>
           </LazyMotion>

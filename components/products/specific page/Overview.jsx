@@ -10,15 +10,15 @@ const Overview = ({ specification, specificId }) => {
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 xl:px-20 font-urbanist text-white bg-primary space-y-5">
       <h4 className="font-Lora text-[40px]">Overview</h4>
-      <div className="bg-secondary rounded-lg text-base p-5 xl:p-10 flex flex-col md:flex-row items-start gap-5">
-        <div className="block space-y-10">
+      <div className="bg-secondary rounded-lg text-base p-5 xl:p-10 flex flex-col lg:flex-row items-start gap-5">
+        <div className="block space-y-10 w-full lg:w-auto">
           {specificImg === "" ? (
-            <div className="relative w-full md:w-[300px] xl:w-80 h-[180px]">
+            <div className="relative !w-full !h-[250px] md:!w-[450px] md:!h-[300px] 2xl:!w-[500px]">
               <Image
                 fill
                 src={specificGalleryImg}
                 alt="..."
-                className="absolute object-cover object-center rounded-md"
+                className="absolute object-contain lg:object-cover object-center rounded-md"
               />
             </div>
           ) : (
@@ -28,13 +28,14 @@ const Overview = ({ specification, specificId }) => {
               muted
               height={"100%"}
               width={"100%"}
-              className={"w-full md:w-[300px] xl:w-80 h-[180px] rounded-md"}
+              controls
+              className={"!w-full !h-[250px] lg:!w-[450px] md:!h-[300px] 2xl:!w-[500px]"}
               url="https://www.youtube.com/watch?v=-qObEU-WKsE"
             />
           )}
         </div>
 
-        <ul className="font-urbanist text-base md:text-xl text-warning w-full md:w-[60%] xl:w-[80%] space-y-6">
+        <ul className="font-urbanist text-base md:text-xl text-warning w-full space-y-6">
           {specificDesc.map((list, idx) => (
             <li key={idx} className="leading-normal">
               {list}

@@ -77,34 +77,6 @@ const NavBar = () => {
               </Link>
               <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[23px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
             </div>
-            {/* <Tooltip
-            classNames={{
-              content:
-                "p-6 text-warning bg-white shadow-lg w-screen lg:-mx-3 rounded-none",
-            }}
-            isOpen={open}
-        onOpenChange={(p) => setOpen(p)}
-            content={
-              <ToolTipContent productList={productList} sortBy={sortBy} setOpen={setOpen}/>
-            }
-            // showArrow={true}
-            placement="bottom"
-            offset={21}
-            // onClose={()=>
-            //   setOpen(false)
-            // }
-            // color="secondary"
-            // closeDelay={500}
-            // triggerType={`menu`}
-          >
-            
-            <div className="relative group">
-              <Link passHref href={"/products"} className="h-full text-warning">
-                Products
-              </Link>
-              <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[23px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
-            </div>
-          </Tooltip> */}
             <ToolTipContent isOpen={open} setIsOpen={setOpen} />
           </div>
           {othersData.navlinks.map((link, idx) => (

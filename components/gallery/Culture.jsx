@@ -62,7 +62,7 @@ const Culture = ({ title, shortDesc, imgSrc, scrollId }) => {
       <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning relative">
         <div className="w-full md:w-1/2 lg:w-[65%]">
           {/* sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px" */}
-          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+          <div className="relative h-[225px] md:h-[455px] 2xl:h-[725px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <LazyMotion features={loadFeatures}>
                 <m.img
@@ -92,11 +92,11 @@ const Culture = ({ title, shortDesc, imgSrc, scrollId }) => {
               />
           </div> */}
         </div>
-        <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
-          <div className="hidden md:flex flex-wrap items-center gap-2.5">
+        <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8 ">
+          <div className="hidden md:flex flex-wrap items-center gap-2.5 2xl:mb-[200px]">
             {imgSrc.map((img, idx) => (
               <div
-                className={`relative md:h-[105px] md:w-[160px] lg:w-[185px] xl:w-[205px] 2xl:w-[230px] cursor-pointer overflow-hidden rounded-2xl ${
+                className={`relative md:h-[105px] md:w-[160px] lg:w-[185px]  xl:w-[205px] 2xl:w-[230px] 2xl:h-[150px] cursor-pointer overflow-hidden rounded-2xl ${
                   currentIndex === idx
                     ? " rounded-2xl border-2 border-info"
                     : " "
