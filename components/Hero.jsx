@@ -24,7 +24,7 @@ const Hero = () => {
           showIndicators={false}
           className="!z-0"
           autoPlay={client}
-          interval={3000}
+          interval={6000}
           infiniteLoop
           axis={"vertical"}
           stopOnHover={false}

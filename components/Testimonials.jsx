@@ -64,9 +64,11 @@ const Testimonials = () => {
         showStatus={false}
         showIndicators={false}
         autoPlay
-        interval={4000}
+        interval={5000}
         infiniteLoop
         stopOnHover={false}
+      //   swipeable={false}
+      //  animationHandler={"fade"}
       >
         {othersData.heroTestimonial.map((item, idx) => (
             <div

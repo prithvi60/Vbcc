@@ -3,11 +3,14 @@ import { CustomCarousel } from "./SpecificComp";
 import { ProductVariant } from "./ProductVariant";
 import Overview from "./Overview";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const ProductPage = ({ product }) => {
+  const router = useRouter()
   const [open, setOpen] = useState(false);
   const [selectedItem, SetselectedItem] = useState(product.variant[0]);
   const [specificId, setSpecificId] = useState(0);
+  
 
   const handleClick = (id, item) => {
     setSpecificId(id);

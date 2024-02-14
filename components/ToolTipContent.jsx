@@ -44,6 +44,7 @@ export const ToolTipContent = ({isOpen,setIsOpen}) => {
         {productList.map((item, idx) => (
           <div className="block space-y-4" key={idx}>
             <Link
+            scroll={false}
               href={{
                 pathname: "/products",
                 query: { category: item.category },
@@ -61,6 +62,7 @@ export const ToolTipContent = ({isOpen,setIsOpen}) => {
                   key={id}
                 >
                   <Link
+                  scroll={false}
                     href={{
                       pathname: "/products",
                       query: { category: item.category, filter: list },
@@ -79,7 +81,12 @@ export const ToolTipContent = ({isOpen,setIsOpen}) => {
         <div className="flex items-center gap-5 font-urbanist text-lg">
           {sortBy.map((list, idx) => (
             <Link
-              href={"/"}
+            scroll={false}
+            href={{
+              pathname: "/products",
+              query: { sortBy: list },
+            }}
+            onClick={() => setIsOpen(!isOpen)}
               className="underline underline-offset-8 hover:no-underline rev-btn_hover after:bg-warning after:bg-opacity-50 hover:after:bg-info hover:after:bg-opacity-50"
               key={idx}
             >

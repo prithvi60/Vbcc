@@ -29,7 +29,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   const handleSortBy = (value) => {
     setActiveTab(value);
     const sortedBy = productsData.filter(
-      (val) => val.sortBy.toLowerCase() === value.toLowerCase()
+      (val) => val.sortBy.includes(value)
     );
     setOurProducts(sortedBy);
   };

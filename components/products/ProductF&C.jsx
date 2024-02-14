@@ -5,9 +5,10 @@ import { Checkbox, CheckboxGroup } from "@nextui-org/checkbox";
 import { useCallback, useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import Link from "next/link";
-import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const ProductFC = ({
+  setSortValue,
   searchFilter,
   search,
   products,
@@ -18,8 +19,7 @@ const ProductFC = ({
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  console.log("prop", searchFilter);
-  const router = useRouter();
+  // console.log("prop", searchFilter);
 
   const [searchCategory, setSearchCategory] = useState(
     search || "All Products"
@@ -38,9 +38,11 @@ const ProductFC = ({
     },
     [searchParams]
   );
+
   const handleCategory = (c) => {
     setSearchCategory(c);
     if (c === "All Products") {
+      setProducts(productsData.allProducts);
       setProducts(productsData.allProducts);
       setFilteredCategory([]);
     } else {
@@ -48,6 +50,7 @@ const ProductFC = ({
         (val) => val.category === c
       );
       setProducts(filtered);
+      setSortValue(filtered)
       setFilteredCategory([]);
     }
   };
@@ -57,11 +60,11 @@ const ProductFC = ({
     let check = e.target.checked;
 
     if (check) {
-      console.log("if filter state", filteredCategory);
+      // console.log("if filter state", filteredCategory);
 
       setFilteredCategory((val) => [...val, value]);
     } else {
-      console.log("else filter state", filteredCategory);
+      // console.log("else filter state", filteredCategory);
       setFilteredCategory((prev) => prev?.filter((val) => val !== value));
     }
   };
@@ -72,7 +75,7 @@ const ProductFC = ({
   };
 
   useEffect(() => {
-    console.log(searchFilter);
+    // console.log(searchFilter);
     searchFilter && setFilteredCategory([searchFilter]);
     searchFilter && setSelected([searchFilter]);
   }, [searchFilter, setFilteredCategory]);
@@ -86,6 +89,7 @@ const ProductFC = ({
             {productsData.category.map((c, idx) => (
               <li className="w-max" key={idx}>
                 <Link
+                  scroll={false}
                   passHref
                   href={pathname + "?" + createQueryString("category", c)}
                   key={idx}
@@ -104,47 +108,63 @@ const ProductFC = ({
         {/* Filters */}
         <div className="hidden lg:block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>
-          <CheckboxGroup
-            value={selected}
-            onValueChange={setSelected}
-            className="space-y-3"
-          >
-            {filteredProductType.map((type, idx) => (
-              <li
-                key={idx}
-                className={`flex items-center gap-2 w-max cursor-pointer capitalize`}
-              >
-                <Checkbox
-                  value={type}
-                  onChange={(e) => handleFilter(e)}
-                  size="md"
-                  color="success"
+          {filteredProductType.length > 0 ? (
+            <CheckboxGroup
+              value={selected}
+              onValueChange={setSelected}
+              className="space-y-3"
+            >
+              {filteredProductType.map((type, idx) => (
+                <li
+                  key={idx}
+                  className={`flex items-center gap-2 w-max cursor-pointer capitalize`}
                 >
-                  <h4 className="text-warning text-opacity-50 font-urbanist text-base hover:text-warning capitalize">
-                    {type}
-                  </h4>
-                </Checkbox>
-              </li>
-            ))}
-          </CheckboxGroup>
+                  <Checkbox
+                    value={type}
+                    onChange={(e) => handleFilter(e)}
+                    size="md"
+                    color="success"
+                  >
+                    <h4 className="text-warning text-opacity-50 font-urbanist text-base hover:text-warning capitalize">
+                      {type}
+                    </h4>
+                  </Checkbox>
+                </li>
+              ))}
+            </CheckboxGroup>
+          ) : (
+            <div className="font-urbanist font-medium text-base md:text-xl flex justify-center items-center text-warning">
+              No Products Type
+              <br />
+              Avaiable
+            </div>
+          )}
         </div>
-        <div
-          className="text-base text-warning font-urbanist uppercase tracking-wide cursor-pointer"
-          onClick={handleClear}
-        >
-          Clear Filters
-        </div>
+        {filteredProductType.length > 0 && (
+          <div
+            className="text-base text-warning font-urbanist uppercase tracking-wide cursor-pointer"
+            onClick={handleClear}
+          >
+            Clear Filters
+          </div>
+        )}
       </div>
       <div className="block w-full h-full space-y-10">
-        <ProductCard
-          products={
-            filteredCategory?.length > 0
-              ? products.filter((val) =>
-                  filteredCategory.includes(val.productType)
-                )
-              : products
-          }
-        />
+        {products.length > 0 ? (
+          <ProductCard
+            products={
+              filteredCategory?.length > 0
+                ? products.filter((val) =>
+                    filteredCategory.includes(val.productType)
+                  )
+                : products
+            }
+          />
+        ) : (
+          <div className="font-urbanist font-medium text-base md:text-xl flex justify-center items-center text-warning h-full w-full">
+             Products Not Avaiable
+          </div>
+        )}
       </div>
     </section>
   );
@@ -190,6 +210,7 @@ export const CategoryTab = ({ category, setProducts }) => {
           key={idx}
         >
           <Link
+          scroll={false}
             passHref
             href={
               pathname +

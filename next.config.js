@@ -8,7 +8,10 @@ const nextConfig = {
         hostname: "ik.imagekit.io",
       },
     ],
-  },
+  }
+  // experimental: {
+  //   scrollRestoration: false,
+  // },
   // experimental: {
   //   optimizePackageImports: ["@nextui-org/system","@nextui-org/theme",'framer-motion',"@nextui-org/accordion",'tailwindcss',"@nextui-org/checkbox","@nextui-org/tooltip"],
   //   optimizeCss: true

@@ -25,25 +25,10 @@ useEffect(() =>{
               Our Story
             </h3>
             <p className="text-sm md:text-base font-urbanist">
-              Explore the compelling journey of VBCC High Temperature
-              Instruments, formerly VB Ceramic Consultants, led by Dr.
-              Viswabaskaran since 2002. With over two decades of industry
-              experience and five years of immersive research at Anna
-              University, his passion has garnered prestigious awards and
-              accolades, shaping our remarkable trajectory.
+            Explore the compelling journey of VBCC High Temperature Instruments, Guided by Dr. Viswabaskaran. With over two decades of industry experience and five years of immersive research at Anna University, his passion has garnered prestigious awards and accolades, shaping our remarkable trajectory.
               <br />
               <br />
-              Initially rooted as VB Ceramic Consultants, our expertise tailored
-              solutions for the ceramic industry. Evolving, we expanded into
-              crafting furnaces and high-temperature instruments, supplying over
-              20,000 instruments globally.
-              <br />
-              <br />
-              Naveen, a proud Ceramic Technology graduate, continues the legacy,
-              leveraging his entrepreneurship and project management experience.
-              As former President of the Student Chapter of the Indian Ceramic
-              Society, he envisions international expansion, dedicated to
-              enhancing VBCC&apos;s product quality and maintaining innovation.
+              Naveen, a proud Ceramic Technology graduate and the CEO and founder, continues the legacy, leveraging his entrepreneurship and project management experience. As the former President of the Student Chapter of the Indian Ceramic Society, he envisions international expansion, dedicated to enhancing VBCC&apos;s product quality and maintaining innovation.
               <br />
               <br />
               Our journey is marked by an unwavering commitment to quality, upholding international standards for our equipment through continuous research and development. Join us in this extraordinary adventure where expertise, innovation, and dedication converge to deliver excellence.

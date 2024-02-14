@@ -74,6 +74,7 @@ const HowWeDo = () => {
               as="div"
               threshold={1}
               rootMargin={"50px"}
+              // initialInView={true}
               onChange={(inView, entry) => {
                 // console.log("Inview:", inView, item.title, entry);
                 if( item.title === "Working Strategy" && slide === 1){

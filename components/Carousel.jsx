@@ -27,7 +27,7 @@ const InnerCarousel = () => {
         showIndicators={false}
         autoPlay={client}
         swipeable={false}
-        interval={3000}
+        interval={6000}
         infiniteLoop
         axis={"vertical"}
         stopOnHover={false}

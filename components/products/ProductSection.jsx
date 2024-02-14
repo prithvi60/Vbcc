@@ -11,13 +11,16 @@ import { useSearchParams } from "next/navigation";
 const ProductSection = ({ search, products, setProducts }) => {
   const searchParams = useSearchParams();
   const searchFilter = searchParams.get("filter");
+  const sortBy = searchParams.get("sortBy");
+  // console.log(sortBy);
   const [searchValue, setSearchValue] = useState("");
+  const [sortValue, setSortValue] = useState(productsData.allProducts);
+  // console.log(sortValue);
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
   const [selectedItem, SetselectedItem] = useState("Featured");
   // console.log(selectedItem);
   const [filteredCategory, setFilteredCategory] = useState([]);
-
   useEffect(() => {
     const allProducts = productsData.allProducts.filter(
       (val) =>
@@ -31,15 +34,25 @@ const ProductSection = ({ search, products, setProducts }) => {
     searchFilter && setFilteredCategory([searchFilter]);
   }, [searchFilter]);
 
+  useEffect(() => {
+    if (sortBy) {
+      const sortedBy = sortValue.filter((val) => val.sortBy.includes(sortBy));
+      setProducts(sortedBy);
+    }
+  }, [sortBy, setProducts,sortValue]);
+
   const handleSortBy = (value) => {
     SetselectedItem(value);
-    const sortedBy = productsData.allProducts.filter(
-      (val) => val.sortBy.toLowerCase() === value.toLowerCase()
-    );
-    // console.log(sortedBy);
+    const sortedBy = sortValue.filter((val) => val.sortBy.includes(value));
+    console.log(sortedBy);
     setProducts(sortedBy);
     setOpen(!open);
   };
+
+  useEffect(() => {
+    if(sortBy) SetselectedItem(sortBy)
+  }, [sortBy])
+  
 
   return (
     <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
@@ -103,7 +116,7 @@ const ProductSection = ({ search, products, setProducts }) => {
         </div>
         {isFilter && (
           <Filter
-          products={products}
+            products={products}
             setIsFilter={setIsFilter}
             filteredCategory={filteredCategory}
             setFilteredCategory={setFilteredCategory}
@@ -112,6 +125,7 @@ const ProductSection = ({ search, products, setProducts }) => {
       </div>
       {/* Product Section */}
       <ProductFC
+      setSortValue={setSortValue}
         searchFilter={searchFilter}
         search={search}
         products={products}

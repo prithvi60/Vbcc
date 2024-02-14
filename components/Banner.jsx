@@ -1,7 +1,8 @@
 "use client"
 import { MdOutlineKeyboardArrowRight,MdOutlineKeyboardArrowLeft  } from "react-icons/md";
 import { Carousel } from "react-responsive-carousel";
-import othersData from "@/libs/others.json";
+
+const bannerContext = ["Free Shipping on orders over $4000 US","Free Shipping on orders over","Free Shipping on orders over $4000 US"]
 
 const Banner = () => {
   return (
@@ -34,11 +35,13 @@ const Banner = () => {
         showStatus={false}
         showIndicators={false}
         autoPlay={true}
-        interval={3000}
+        interval={5000}
         infiniteLoop
         stopOnHover={false}
+        // swipeable={false}
+        // animationHandler={"fade"}
       >
-        {othersData.bannerList.map((list,id)=>(
+        {bannerContext.map((list,id)=>(
           <div className="text-center text-secondary font-urbanist text-sm" key={id}>
           <h3>{list}</h3>
         </div>

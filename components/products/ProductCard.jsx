@@ -29,6 +29,7 @@ export const ProductCard = ({ products }) => {
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
               <Link
+              scroll={false}
               passHref
               href={`/products/${list?.productName.replace(/\s/g, "")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
