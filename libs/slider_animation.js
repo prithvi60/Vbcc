@@ -64,7 +64,7 @@ export const customVerticalAnimation = (props, state) => {
     prevStyle: {
       ...slideStyle,
       opacity: 1,
-      transform: `translateY(-100%)`,
+      transform: `translateY(-200%)`,
       transitionTimingFunction: transitionTimingFunction,
       msTransitionTimingFunction: transitionTimingFunction,
       MozTransitionTimingFunction: transitionTimingFunction,

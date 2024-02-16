@@ -34,7 +34,7 @@ const InnerCarousel = () => {
         stopOnHover={false}
         animationHandler={customVerticalAnimation}
       >
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal line-clamp-1">
           Laboratory Instruments
         </h3>
         <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">

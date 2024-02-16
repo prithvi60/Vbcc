@@ -8,7 +8,7 @@ import productsData from "@/libs/products.json";
 import ProductFC from "./ProductF&C";
 import { useSearchParams } from "next/navigation";
 
-const sortOrder= ["Featured", "New Products", "Best Selling", "All"] 
+const sortOrder = ["Featured", "New Products", "Best Selling", "All"];
 
 const ProductSection = ({ search, products, setProducts }) => {
   const searchParams = useSearchParams();
@@ -20,7 +20,7 @@ const ProductSection = ({ search, products, setProducts }) => {
   // console.log(sortValue);
   const [open, setOpen] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
-  const [selectedItem, SetselectedItem] = useState("All");
+  const [selectedItem, SetselectedItem] = useState("Featured");
   // console.log(selectedItem);
   const [filteredCategory, setFilteredCategory] = useState([]);
   useEffect(() => {
@@ -38,23 +38,27 @@ const ProductSection = ({ search, products, setProducts }) => {
 
   useEffect(() => {
     if (sortBy) {
-      const sortedBy = sortValue.filter((val) => val.sortBy.includes(sortBy));
+      const sortedBy = sortValue.sort((a, b) => {
+        return (
+          sortOrder.indexOf(a.sortBy.includes(sortBy) ? sortBy : sortOrder[3]) -
+          sortOrder.indexOf(b.sortBy.includes(sortBy) ? sortBy : sortOrder[3])
+        );
+      });
       setProducts(sortedBy);
     }
   }, [sortBy, setProducts, sortValue]);
 
-
   const handleSortBy = (value) => {
     SetselectedItem(value);
-    // const sortedBy = sortValue.filter((val) => val.sortBy.includes(value));
-    // console.log(sortedBy);
-    // setProducts(sortedBy);
-    const sortedBy = sortValue.sort((a,b)=>{
-      console.log(a.sortBy.includes(value),a);
-      console.log(b.sortBy.includes(value),b);
-     return sortOrder.indexOf(a.sortBy.includes(value)) - sortOrder.indexOf(b.sortBy.includes(value))
+
+    const sortedBy = sortValue.sort((a, b) => {
+      return (
+        sortOrder.indexOf(a.sortBy.includes(value) ? value : sortOrder[3]) -
+        sortOrder.indexOf(b.sortBy.includes(value) ? value : sortOrder[3])
+      );
     });
-    console.log(sortedBy.slice(0,10));
+    setProducts(sortedBy);
+
     setOpen(!open);
   };
 
