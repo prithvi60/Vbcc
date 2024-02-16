@@ -29,11 +29,11 @@ const WCU = () => {
               transforming challenges into opportunities.
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-x-10">
+          <div className="flex flex-wrap items-center gap-x-10 justify-center md:justify-start">
             {othersData.howWeDoImg.map((list, idx) => (
               <div
-                style={{ width: `${list.width}`, height: `${list.height}` }}
-                className="relative"
+                // style={{ width: `${list.width}`, height: `${list.height}` }}
+                className={`relative w-[6rem] h-[6rem] md:w-[10rem] md:h-[10rem]`}
                 key={idx}
               >
                 <Image

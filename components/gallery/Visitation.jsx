@@ -58,6 +58,36 @@ const Visitation = ({ title, shortDesc, imgSrc, scrollId }) => {
       className="px-5 py-10 md:py-[60px] xl:px-[60px] md:px-10 bg-primary"
       id={scrollId}
     >
+           <div className="md:hidden w-full md:w-1/2 lg:w-[65%]">
+          <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+            <AnimatePresence initial={false} custom={direction}>
+              <LazyMotion features={loadFeatures}>
+                <m.img
+                  // fill
+                  src={imgSrc[currentIndex]}
+                  alt="Logo"
+                  key={imgSrc[currentIndex]}
+                  className="absolute w-full h-full object-cover object-center "
+                  variants={slideVariants}
+                  initial="slide"
+                  animate="visible"
+                  transition={{ duration: 1 }}
+                  exit="exit"
+                  custom={direction}
+                />
+              </LazyMotion>
+            </AnimatePresence>
+          </div>
+          {/* <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
+              <Image
+                fill
+                src={imgSrc[currentIndex]}
+                alt="Logo"
+                key={imgSrc[currentIndex]}
+                className="absolute w-full h-full object-cover object-center "
+              />
+          </div> */}
+        </div>
       <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-white">
         <div className="w-full md:w-1/2 xl:w-[35%] md:space-y-8">
           <div className="hidden md:flex flex-wrap items-center gap-2.5">
@@ -81,7 +111,7 @@ const Visitation = ({ title, shortDesc, imgSrc, scrollId }) => {
             ))}
           </div>
           <div className="block space-y-10 md:space-y-24 h-full w-full">
-            <h4 className="font-Lora text-xl md:text-[40px]">{title}</h4>
+            <h4 className="font-Lora text-xl md:text-[40px] pt-8 md:pt-0">{title}</h4>
             <div className="flex justify-between items-center">
               <p className="font-urbanist text-base w-3/5">{shortDesc}</p>
               {/* Buttons */}
@@ -124,7 +154,7 @@ const Visitation = ({ title, shortDesc, imgSrc, scrollId }) => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 lg:w-[65%]">
+        <div className="hidden md:block w-full md:w-1/2 lg:w-[65%]">
           <div className="relative h-[225px] md:h-[455px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <LazyMotion features={loadFeatures}>
