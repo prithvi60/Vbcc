@@ -96,8 +96,8 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152] col-span-2 xl:col-auto text-sm">
-        <div className="w-full flex justify-start gap-16 md:justify-between items-start font-urbanist">
+      <div className="flex  flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152] col-span-2 xl:col-auto text-sm">
+        <div className="w-full flex-wrap sm:flex-nowrap  flex justify-start gap-16 md:justify-between items-start font-urbanist">
           <div className="space-y-5">
             <div>
               <h3 className="text-[rgba(245, 245, 245, 0.70)]">
@@ -129,7 +129,7 @@ const Footer = () => {
             href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
           />
         </div>
-        <div className="w-full flex justify-start gap-16 md:justify-between items-center font-urbanist pt-10">
+        <div className="w-full flex-wrap sm:flex-nowrap flex justify-start gap-16 md:justify-between items-center font-urbanist pt-10">
           <div className="space-y-3">
             <h4>Our Groups</h4>
             <div className="flex items-center gap-4 ml-6">
@@ -195,7 +195,7 @@ const Footer = () => {
       </div>
       <div className="text-sm p-5 md:px-16 md:py-5 text-secondary border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
         <div className="flex justify-center md:justify-between items-center">
-          <p>©VB Ceramic Consultants. All Rights Reserved.</p>
+          <p>©VBCC HTI. All Rights Reserved.</p>
           <div className="hidden md:flex items-center gap-3">
             <Link
               passHref

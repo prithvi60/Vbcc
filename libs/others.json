@@ -123,12 +123,12 @@
         {
             "title": "Instruments Installed",
             "count": "15000",
-            "firm": "Dilatometer, Muffle Furnaces"
+            "firm": "Dilatometer, MOR, RUL, CVD"
         },
         {
             "title": "Years of Expertise",
-            "count": "20",
-            "firm": "Ceramics, Furnaces, Industrial"
+            "count": "22    ",
+            "firm": "Instruments, Furnaces & Ceramics"
         }
     ],
     "howWeDoIt": [
@@ -269,7 +269,8 @@
     "faqDetails": [
         {
             "id": "1",
-            "title": "All FAQs",
+            "title1": "All FAQs",
+            "title2": "All FAQs",
             "lists": [
                 {
                     "ques": "How long will it take for my order to get to me?",
@@ -311,41 +312,65 @@
         },
         {
             "id": "2",
-            "title": "Service",
+            "title1": "Order & Delivery",
+            "title2": "Delivery",
             "lists": [
                 {
                     "ques": "How long will it take for my order to get to me?",
                     "ans": "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times."
+                },
+                {
+                    "ques": "Will you provide the Sample Holders?",
+                    "ans": "We will supply a limited quantity of sample holders. Additional quantities are available at an extra cost."
+                },
+                {
+                    "ques": "Are we allowed to conduct a Pre-Delivery Inspection (PDI) of your products?",
+                    "ans": "It holds significant importance for us, and we invite your representatives for a pre-delivery inspection at our site in Chennai."
+                },
+                {
+                    "ques": "What is the process for unloading the Furnace/Equipment?",
+                    "ans": "The customer is responsible for handling the unloading process and any associated charges."
                 }
             ]
         },
         {
             "id": "3",
-            "title": "Custom",
+            "title1": "Product Information",
+            "title2": "Information",
             "lists": [
                 {
-                    "ques": "How long will it take for my order to get to me?",
-                    "ans": "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times."
+                    "ques": "What is the Warranty Duration for the Furnaces and Equipment?",
+                    "ans": "One year from the date of installation.Please note that The Melting Crucible, heating elements, alumina tubes, ceramic materials and quartz items are not covered under warranty. This is because of poor thermal shock resistance of the material property. Hence these materials are not covered under warranty."
+                },
+                {
+                    "ques": "Do you have a Buyback Program for your Products?",
+                    "ans": "We do offer a Buyback program, contingent upon the condition of the furnace or instrument, and it must be of our own make."
                 }
             ]
         },
         {
             "id": "4",
-            "title": "Delivery",
+            "title1": "Service and Maintenance",
+            "title2": "Service",
             "lists": [
                 {
-                    "ques": "How long will it take for my order to get to me?",
-                    "ans": "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times."
+                    "ques": "What's the Annual Maintenance Contract(AMC)?",
+                    "ans": "The Annual Maintenance Contract is 10% of the Base Cost of the Product.The AMC covers Service for up to 3 times a Year."
                 }
             ]
         },
         {
             "id": "5",
-            "title": "Installation",
+            "title1": "Installation",
+            "title2": "Installation",
             "lists": [
                 {
-                    "ques": "How long will it take for my order to get to me?",
-                    "ans": "Standardized products usually arrive within 3 to 4 weeks, while Custom Products may take longer due to additional processing time based on the complexity of the customization. We are committed to delivering your order promptly and will provide regular updates on its status. Keep in mind that factors like location and chosen shipping method can affect delivery times."
+                    "ques": "Is there a Separate Cost for Installation?",
+                    "ans": "The fixed installation fee, encompassing travel, accommodation, and service charges for our installation engineer, may vary based on location, with potential increases for more distant places. Additionally, on special occasions, installation can be performed free of cost."
+                },
+                {
+                    "ques": "What is the process for unloading the Furnace/Equipment?",
+                    "ans": "The customer is responsible for handling the unloading process and any associated charges."
                 }
             ]
         }

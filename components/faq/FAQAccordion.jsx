@@ -10,7 +10,7 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
   const itemClasses = {
     base: "mb-2 !px-0 w-full !rounded-[20px] !bg-primary border border-white overflow-hidden",
-    heading: "p-4 md:p-5",
+    heading: "px-3 py-2 md:px-5 md:py-6",
     title:
       "font-Lora text-xl md:text-2xl text-white focus-within:outline-none focus-within:border-transparent focus-within:ring-0",
     trigger: "h-auto lg:h-10",
@@ -21,7 +21,7 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
   return (
     <section>
       <div className="space-y-8">
-        <ul className="gap-4 w-full h-auto flex-wrap flex justify-start items-end md:flex md:justify-start md:item-center md:flex-wrap">
+        <ul className="gap-x-2 gap-y-4 sm:gap-4 w-full h-auto flex-wrap flex justify-start items-end md:flex md:justify-start md:item-center md:flex-wrap">
           {othersData.faqDetails.map((item, idx) => (
             <li
               className={`min-w-fit text-base tracking-tight border border-secondary p-5 rounded-full font-urbanist px-4 py-2 group/button block bg-transparent hover:bg-warning text-center duration-700 delay-75 capitalize cursor-pointer ${
@@ -30,7 +30,7 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
               key={idx}
               onClick={() => setActiveTab(idx)}
             >
-              <div className={`h-6 w-full overflow-hidden`}>
+              <div className={`hidden md:block h-6 w-full overflow-hidden`}>
                 <h4
                   className={`transition translate-y-0 group-hover/button:-translate-y-20 duration-700 text-secondary  ${
                     activeTab === idx
@@ -38,7 +38,7 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
                       : ""
                   }`}
                 >
-                  {item.title}
+                  {item.title1}
                 </h4>
                 <h4
                   className={`translate-y-20 transition group-hover/button:-translate-y-[25px] duration-700 group-hover/button:text-secondary ${
@@ -47,7 +47,27 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
                       : ""
                   }`}
                 >
-                  {item.title}
+                  {item.title1}
+                </h4>
+              </div>
+              <div className={`block md:hidden h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover/button:-translate-y-20 duration-700 text-secondary  ${
+                    activeTab === idx
+                      ? "text-warning group-hover/button:text-warning"
+                      : ""
+                  }`}
+                >
+                  {item.title2}
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover/button:-translate-y-[25px] duration-700 group-hover/button:text-secondary ${
+                    activeTab === idx
+                      ? "text-warning group-hover/button:text-warning"
+                      : ""
+                  }`}
+                >
+                  {item.title2}
                 </h4>
               </div>
             </li>

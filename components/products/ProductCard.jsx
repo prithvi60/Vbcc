@@ -25,7 +25,7 @@ export const ProductCard = ({ products }) => {
   
   return (
     <section className="bg-secondary space-y-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full overflow-y-auto h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
               <Link
@@ -92,11 +92,11 @@ export const ProductCard = ({ products }) => {
               </div>
               {/* Card Footer */}
               <div className="flex group-hover:bg-white group-hover:rounded-b-2xl bg-transparent transition-all duration-1000 items-center justify-between py-3">
-                <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75">
-                  <h4 className="text-[#0D0D0D] font-urbanist">
+                <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75 w-9/12 xl:w-full">
+                  <h4 className="text-[#0D0D0D] font-urbanist truncate w-4/5 xl:w-full">
                     {list?.productName}
                   </h4>
-                  <h4 className="text-[#6C6C6C] font-urbanist text-sm">
+                  <h4 className="text-[#6C6C6C] font-urbanist text-sm w-max">
                     {list?.productType}
                   </h4>
                 </div>

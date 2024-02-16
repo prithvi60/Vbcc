@@ -21,7 +21,7 @@ const Testimonials = () => {
             renderArrowPrev={(clickHandler) => {
               return (
                 <div
-                  className="absolute top-80 md:top-52 xl:top-80 left-3 md:left-9 border border-primary py-3 px-6 cursor-pointer rounded-full z-20 bg-secondary block hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group"
+                  className="hidden md:block absolute top-80 md:top-52 xl:top-80 left-3 md:left-9 border border-primary py-3 px-6 cursor-pointer rounded-full z-20 bg-secondary  hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group"
                   onClick={clickHandler}
                 >
                   <div className={`h-8 w-full overflow-hidden`}>
@@ -42,7 +42,7 @@ const Testimonials = () => {
             renderArrowNext={(clickHandler) => {
               return (
                 <div
-                  className="absolute top-80 md:top-52 xl:top-80 right-3 md:right-9 border border-primary py-3 px-6 cursor-pointer rounded-full bg-secondary block hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group"
+                  className="hidden md:block absolute top-80 md:top-52 xl:top-80 right-3 md:right-9 border border-primary py-3 px-6 cursor-pointer rounded-full bg-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group"
                   onClick={clickHandler}
                 >
                   <div className={`h-8 w-full overflow-hidden`}>
@@ -75,10 +75,10 @@ const Testimonials = () => {
                 className="w-full p-10 bg-secondary space-y-8 min-h-auto md:min-h-[430px]"
                 key={idx}
               >
-                <h3 className="font-Lora sm:text-[28px] md:text-[32px] xl:text-[40px] leading-[52px] tracking-[-1.6px] text-center">
+                <h3 className="font-Lora text-base sm:text-[28px] md:text-[32px] xl:text-[40px] leading-6 sm:leading-8 md:leading-[52px] tracking-[-1.6px] text-center">
                   &ldquo;{item.header}&rdquo;
                 </h3>
-                <div className="relative h-[120px] w-[120px]mx-auto">
+                <div className="relative h-[120px] w-[120px] mx-auto">
                   <Image
                     fill
                     src={item.logo}

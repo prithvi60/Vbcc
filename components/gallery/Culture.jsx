@@ -62,7 +62,7 @@ const Culture = ({ title, shortDesc, imgSrc, scrollId }) => {
       <div className="w-full flex flex-col md:flex-row md:items-start gap-6 xl:gap-8 text-warning relative">
         <div className="w-full md:w-1/2 lg:w-[65%]">
           {/* sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px" */}
-          <div className="relative h-[225px] md:h-[455px] 2xl:h-[725px] w-full overflow-hidden rounded-3xl">
+          <div className="relative h-[225px] md:h-[455px] 3xl:h-[725px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <LazyMotion features={loadFeatures}>
                 <m.img

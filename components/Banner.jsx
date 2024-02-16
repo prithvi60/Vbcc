@@ -5,11 +5,7 @@ import {
   MdOutlineKeyboardArrowLeft,
 } from "react-icons/md";
 import { Carousel } from "react-responsive-carousel";
-const bannerContext = [
-  "Free Shipping on orders over $4000 US 1",
-  "Free Shipping on orders over 2",
-  "Free Shipping on orders over $4000 US 3",
-];
+import othersData from "@/libs/others.json";
 
 const Banner = () => {
   return (
@@ -48,7 +44,7 @@ const Banner = () => {
           // swipeable={false}
           animationHandler={customHorizontalAnimation}
         >
-          {bannerContext.map((list, id) => (
+          {othersData?.bannerList.map((list, id) => (
             <div
               className="text-center text-secondary font-urbanist text-sm"
               key={id}

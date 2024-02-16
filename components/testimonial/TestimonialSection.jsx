@@ -67,7 +67,7 @@ export const TestimonialSection = () => {
         <h2 className="font-Lora text-2xl lg:text-4xl xl:text-6xl w-full">
           Testimonials
         </h2>
-        <div className="w-full lg:w-96 2xl:w-1/2 h-full lg:h-auto overflow-hidden flex gap-4">
+        <div className="w-full lg:w-96 2xl:w-1/2 lg:h-auto overflow-hidden flex gap-4">
           <div className="flex flex-nowrap lg:flex-wrap items-center gap-3 h-[70px] lg:h-full animate-horizontal_carousel lg:animate-none pause mt-2">
             {othersData.testimonials.map((item, idx) => (
               <div
