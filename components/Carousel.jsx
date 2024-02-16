@@ -1,4 +1,5 @@
 "use client";
+import { customVerticalAnimation } from "@/libs/slider_animation";
 import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 
@@ -27,12 +28,11 @@ const InnerCarousel = () => {
         showIndicators={false}
         autoPlay={client}
         swipeable={false}
-        interval={6000}
+        interval={3000}
         infiniteLoop
         axis={"vertical"}
         stopOnHover={false}
-        animationHandler={"fade"}
-
+        animationHandler={customVerticalAnimation}
       >
         <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
           Laboratory Instruments
