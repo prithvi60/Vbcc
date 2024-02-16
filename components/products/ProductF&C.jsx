@@ -81,7 +81,7 @@ const ProductFC = ({
   }, [searchFilter, setFilteredCategory]);
   // console.log("url state",search)
   return (
-    <section className="flex items-start gap-[60px] ">
+    <section className="flex items-start gap-[60px] mt-10">
       <div className="hidden lg:block space-y-10 lg:sticky lg:top-5">
         <div className="block space-y-6">
           <h4 className="uppercase text-xl text-warning font-Lora">category</h4>

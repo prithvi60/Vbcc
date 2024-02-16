@@ -125,7 +125,7 @@ const Visitation = ({ title, shortDesc, imgSrc, scrollId }) => {
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-[65%]">
-          <div className="relative h-[225px] md:h-[455px] 2xl:h-[725px] w-full overflow-hidden rounded-3xl">
+          <div className="relative h-[225px] md:h-[455px] 3xl:h-[725px] w-full overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction}>
               <LazyMotion features={loadFeatures}>
                 <m.img

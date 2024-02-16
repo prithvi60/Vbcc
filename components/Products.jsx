@@ -37,14 +37,17 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   return (
     <section className="py-16 px-6 md:px-10 xl:p-16 bg-secondary font-urbanist">
       <div className="flex flex-col justify-center items-center gap-8">
+        <div className="flex justify-between items-center flex-wrap w-full">
         <h3 className="font-Lora text-3xl md:text-5xl text-warning">
           Our Products
         </h3>
+        <Link scroll={false} href={"/products"} className="text-warning text-base underline underline-offset-4 decoration-warning font-urbanist mt-1">View All</Link>
+        </div>
         <div className="flex flex-col justify-center items-center w-full space-y-8">
-          <div className="flex justify-center items-center gap-3 w-full h-auto flex-wrap bg-secondary">
+          <div className="flex justify-center items-center gap-1 sm:gap-3 w-full h-auto bg-secondary">
             {sortProduct.map((item, idx) => (
               <div
-                className={`text-base tracking-tight border border-warning p-5 rounded-full font-Lora min-w-fit px-4 py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
+                className={`text-sm sm:text-base tracking-tight border border-warning rounded-full font-Lora min-w-fit p-2.5  sm:px-4 sm:py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
                   activeTab === item.value
                     ? "!bg-primary !hover:bg-primary"
                     : ""
@@ -131,11 +134,11 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
             ))}
           </div>
           {/* Mobile view Product items */}
-          <div className="w-full sm:w-[350px] h-full flex flex-wrap sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
+          <div className="w-full sm:w-[350px] h-full flex  sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {ourProducts.slice(0, count).map((card, id) => (
               <Link
                 href={`/products/${card.productName.replace(/\s/g, "")}`}
-                className="min-w-[280px] h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
+                className="w-full h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
               >
                 <div className="flex justify-between items-center">
@@ -143,12 +146,12 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                   {/* <p className="text-small">$718</p> */}
                 </div>
                 <div className="relative">
-                  <div className="relative h-[225px] w-full">
+                  <div className="relative h-[160px] sm:h-[225px] sm:w-full">
                     <Image
                       fill
                       src={card.img}
                       alt="product"
-                      className="absolute object-contain object-center"
+                      className="absolute object-contain"
                     />
                   </div>
                   <p
@@ -158,13 +161,13 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                     View
                   </p>
                   <div>
-                    <h4 className="text-sm uppercase">{card.productType}</h4>
-                    <p className="font-Lora text-xl">{card.productName}</p>
+                    <h4 className="text-xs sm:text-sm uppercase truncate w-full">{card.productType}</h4>
+                    <p className="font-Lora text-sm sm:text-xl truncate w-full">{card.productName}</p>
                   </div>
                 </div>
                 <button
                   onClick={() => router.push("/contact")}
-                  className={`group/button block rounded-full px-4 py-3 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+                  className={`group/button block rounded-full p-1 sm:px-4 sm:py-3 border border-warning bg-white hover:bg-info text-center text-sm sm:text-base duration-700 delay-75 font-urbanist capitalize min-w-36 sm:w-full`}
                 >
                   <div className={`h-6 w-full overflow-hidden`}>
                     <h4
@@ -183,14 +186,14 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
             ))}
           </div>
         </div>
-        <Btn2
+        {/* <Btn2
           Hbgcolor={"bg-primary"}
           textColor={"text-warning"}
           HtextColor={"text-white"}
           bColor={"border-warning"}
           title={"View All Products"}
           href={"/products"}
-        />
+        /> */}
       </div>
     </section>
   );

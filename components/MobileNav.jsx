@@ -13,13 +13,13 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
     <section
       className={`fixed top-0
        ${!open ? "right-0 animate-reveal_In" : "-right-[120%]"} 
-       z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium transition-all duration-[2000]`}
+       z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll`}
     >
       <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-[32px]">
         <Image
           width={70}
           height={20}
-          src={"https://ik.imagekit.io/webibee/VBCC/logo-white.svg"}
+          src={"https://ik.imagekit.io/webibee/VBCC/vbcc%20logo%202.svg"}
           alt="Logo"
           className=" object-contain object-center"
         />
@@ -59,7 +59,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           {othersData.navlink.map((link, idx) => (
             <li
               key={idx}
-              className="w-max uppercase font-semibold text-[40px]"
+              className="w-max uppercase font-semibold text-3xl sm:text-[40px]"
               onClick={() => setIsOpen(!isOpen)}
             >
               <Link

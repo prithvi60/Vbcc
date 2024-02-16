@@ -11,20 +11,20 @@ export const Work = () => {
             <h3 className="font-Lora text-xl md:text-2xl capitalize">
               Naveen Viswabaskaran
             </h3>
-            <h4 className="font-Lora text-xl md:text-2xl">+91 94440 12468</h4>
+            <h4 className="font-Lora text-xl md:text-2xl">+91 73388 94199</h4>
           </div>
           <div className="block space-y-2">
             <h3 className="font-Lora text-xl md:text-2xl capitalize">
               Dr. Viswabaskaran
             </h3>
-            <h4 className="font-Lora text-xl md:text-2xl">+91 94441 53455</h4>
+            <h4 className="font-Lora text-xl md:text-2xl">+91 94440 12468</h4>
           </div>
         </div>
         <div className="block space-y-7 md:space-y-10">
           <div className="space-y-3 md:space-y-5 w-full lg:w-4/5">
             <h5 className="font-urbanist capitalize">Office Address</h5>
             <p className="font-Lora text-xl md:text-2xl ">
-              2207, 3rd Link Street, Nehru Nagar Industrial Estate, Kottivakkam,
+              207, 3rd Link Street, Nehru Nagar Industrial Estate, Kottivakkam,
               Chennai-600 041.
             </p>
           </div>

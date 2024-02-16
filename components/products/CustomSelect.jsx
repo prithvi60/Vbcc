@@ -29,7 +29,7 @@ export const CustomSelect = ({ open, setOpen, selectedItem, handleSortBy }) => {
       <ul
         className={`w-[350px] border border-warning rounded-3xl ${
           open
-            ? "block absolute top-10 right-[60px] h-auto  bg-secondary overflow-hidden transition-all duration-1000 z-20"
+            ? "block absolute top-10 right-0 h-auto  bg-secondary overflow-hidden transition-all duration-1000 z-20"
             : "hidden"
         }`}
       >

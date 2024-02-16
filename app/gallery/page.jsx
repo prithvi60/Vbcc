@@ -22,7 +22,7 @@ export default function Home() {
       <VisitationComponent
         title={"Visitations"}
         shortDesc={
-          "Awards racked by the effort of VBCC High Temperature Instruments Officials"
+          "We have welcomed countless visits from esteemed scientists all around the world."
         }
         imgSrc={othersData.visitationImg}
         scrollId={"visitations"}

@@ -8,8 +8,7 @@ const Newsletter = () => {
             Get the Latest Updates
           </h2>
           <p className="text-sm md:text-xl 2xl:text-2xl font-urbanist w-full lg:w-[65%] mx-auto text-[#CACACA]">
-            Stay updated on our digital marketplace`&apos;s latest launches of
-            products, updates, and valuable content revisions.
+          Stay connected for the latest updates in cutting edge technology, launches of products, and valuable content revisions.
           </p>
         </div>
         <form
@@ -17,7 +16,7 @@ const Newsletter = () => {
           method="post"
           acceptCharset="UTF-8"
         >
-          <div className="flex items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
+          <div className="flex flex-wrap sm:flex-wrap items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
             <input
              required
              name="Email"

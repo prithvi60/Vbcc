@@ -12,7 +12,7 @@ const InnerCarousel = () => {
   if (!client) {
     return (
       <div className="w-full mx-auto pb-1 md:pb-3">
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Laboratory Instruments
         </h3>
       </div>
@@ -34,13 +34,13 @@ const InnerCarousel = () => {
         animationHandler={"fade"}
 
       >
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Laboratory Instruments
         </h3>
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Industrial Furnaces
         </h3>
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-medium">
+        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Research Equipment
         </h3>
       </Carousel>

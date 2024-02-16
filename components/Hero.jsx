@@ -94,7 +94,7 @@ const Hero = () => {
         </div>
       )}
       <div className="text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-        <h4 className="text-xl md:text-2xl uppercase font-urbanist mb-4 md:mb-6">
+        <h4 className="text-lg uppercase font-urbanist mb-4 md:mb-6">
           VbCC High temperature instruments
         </h4>
         <p className="font-Lora text-[32px] md:text-[40px] tracking-tight mt-2">

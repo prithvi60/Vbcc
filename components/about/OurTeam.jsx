@@ -9,36 +9,17 @@ export const OurTeam = () => {
           <div className="space-y-6 text-warning">
             <h3 className="text-[32px] xl:text-[40px] font-Lora">Our Team</h3>
             <p className="text-sm md:text-base">
-              Welcome to VBCC High Temperature Instruments! Our team, led by Dr.
-              V. Viswabaskaran with over 20 years of expertise, is a perfect
-              blend of experience and innovation. Teaming up with him is Naveen,
-              a project-savvy entrepreneur, forming a dynamic leadership duo.
+            Welcome to VBCC High Temperature Instruments! Led by CEO Naveen and guided by Dr. V. Viswabaskaran, our dynamic duo brings over 20 years of expertise, blending experience and innovation. Naveen, a project-savvy entrepreneur, complements Dr. Viswabaskaran&apos;s guidance, leading our team to excellence in high-temperature instruments.
               <br />
               <br />
-              Diversity is our strength – from Ceramic to Mechanical and
-              Electrical Engineers, we bring a range of talents to the table,
-              allowing us to tackle challenges creatively.
+              Diversity is our strength – from Ceramic to Mechanical and Electrical Engineers, we bring talents to creatively tackle challenges. Our mix of seasoned and young professionals ensures a harmony of wisdom and fresh ideas, propelling us forward in an ever-changing landscape.
               <br />
               <br />
-              Our mix of seasoned and young professionals ensures a perfect
-              harmony of wisdom and fresh ideas, propelling us forward in an
-              ever-changing landscape.
-              <br />
-              <br />
-              At VBCC, we don&apos;t just bring experience; we bring innovation.
-              Our approach is not just responsive but friendly too. We
-              understand the importance of strong client relationships,
-              excelling in meeting diverse client needs.
-              <br />
-              <br />
-              Join us on our journey as we push the boundaries of
-              high-temperature instrument technology. At VBCC, we&apos;re not
-              just a team – we&apos;re a family dedicated to making a difference
-              in the world of innovation and customer satisfaction.
+              At VBCC, we don&apos;t just bring experience; we bring innovation. Our approach is not just responsive but friendly too. Understanding the importance of strong client relationships, we excel in meeting diverse client needs. Join us on our journey as we push the boundaries of high-temperature instrument technology. At VBCC, we&apos;re not just a team – we&apos;re a family dedicated to making a difference in the world of innovation and customer satisfaction.
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-5 lg:gap-0 lg:gap-y-20">
+        <div className="w-full h-full sm:w-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-5 lg:gap-0 lg:gap-y-20">
           {othersData.team.map((item, idx) => (
           <div className="p-5 space-y-5 w-full h-full bg-primary" key={idx}>
             <div className="relative h-[260px] w-full sm:w-[315px] lg:w-[365px] xl:w-[265px]" >

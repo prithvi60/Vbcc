@@ -51,7 +51,7 @@ const Explore = () => {
               <h5 className="font-Lora text-black group-hover:text-white text-2xl">
                 Industries
               </h5>
-              <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight">
+              <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight truncate">
                 Over 100 products for Ceramic Industry.
               </p>
             </div>
@@ -83,7 +83,7 @@ const Explore = () => {
               <h5 className="font-Lora text-black group-hover:text-white text-2xl">
                 Research Institutions
               </h5>
-              <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight">
+              <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight truncate">
                 Over 200 products for Research Institutions.
               </p>
             </div>
@@ -113,7 +113,7 @@ const Explore = () => {
               <h5 className="font-Lora text-black group-hover:text-white text-2xl">
                 Accessories
               </h5>
-              <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight">
+              <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight truncate">
                 Accessories for Industrial Equipment
               </p>
             </div>

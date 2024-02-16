@@ -11,21 +11,13 @@ const WCU = () => {
               Why Choose Us?
             </h3>
             <p className="">
-              With over two decades of expertise, VB Ceramic Consultants (VBCC)
-              is a distinguished leader crafting top-tier Instruments,
-              Equipment, Furnaces, and Kilns. Our unwavering commitment to
-              excellence has earned trust from diverse clientele, including
-              prestigious universities, research organizations, and thriving
-              industries.
+            With over two decades of expertise, VBCC High Temperature Instruments Pvt. Ltd. previously known as VB Ceramic Consultants  is a distinguished leader crafting top-tier Instruments, Equipment, Furnaces, and Kilns. Our unwavering commitment to excellence has earned trust from diverse clientele, including prestigious universities, research organizations, and thriving industries.
               <br />
               <br />
-              At VBCC, our dedicated team delivers comprehensive solutions
-              across the industry spectrum, providing superior products and
-              essential technical expertise through tailored turnkey solutions.
+              At VBCC, our dedicated team delivers comprehensive solutions across the industry spectrum, providing superior products and essential technical expertise through tailored turnkey solutions.
               <br />
               <br />
-              Choose VBCC for quality, innovation, and personalized service,
-              transforming challenges into opportunities.
+              Choose VBCC for quality, innovation, and personalized service, transforming challenges into opportunities.
             </p>
           </div>
           <div className="flex items-center gap-6">

@@ -21,14 +21,14 @@ export const CustomVariant = ({
     <section>
       <div className="block space-y-5 h-auto w-full">
         <div className="flex justify-center items-center px-4 py-2 border border-warning w-full font-Lora rounded-full">
-          <h4 className="font-Lora w-[40%] md:w-[28%] text-warning text-2xl font-medium">
+          <h4 className="font-Lora w-[40%] md:w-[28%] text-warning text-base sm:text-2xl font-medium">
             Variant :
           </h4>
           <div
             className="w-64 rounded-full flex justify-between items-center cursor-pointer"
             onClick={() => setOpen((prevOpen) => !prevOpen)}
           >
-            <div className="text-info font-Lora capitalize text-2xl">
+            <div className="text-info font-Lora capitalize text-base sm:text-2xl">
               {selectedItem}
             </div>
             {!open ? (
@@ -47,7 +47,7 @@ export const CustomVariant = ({
         >
           {variant.map((item, idx) => (
             <li
-              className={`p-3 capitalize cursor-pointer font-Lora text-2xl text-primary hover:bg-info border-b border-warning last:border-b-0 hover:duration-1000 hover:bg-opacity-30 ${
+              className={`p-3 capitalize cursor-pointer font-Lora text-base sm:text-2xl text-primary hover:bg-info border-b border-warning last:border-b-0 hover:duration-1000 hover:bg-opacity-30 ${
                 selectedItem === item ? "bg-white" : ""
               } `}
               key={idx}

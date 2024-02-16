@@ -39,7 +39,7 @@ const ProductSection = ({ search, products, setProducts }) => {
       const sortedBy = sortValue.filter((val) => val.sortBy.includes(sortBy));
       setProducts(sortedBy);
     }
-  }, [sortBy, setProducts,sortValue]);
+  }, [sortBy, setProducts, sortValue]);
 
   const handleSortBy = (value) => {
     SetselectedItem(value);
@@ -50,14 +50,13 @@ const ProductSection = ({ search, products, setProducts }) => {
   };
 
   useEffect(() => {
-    if(sortBy) SetselectedItem(sortBy)
-  }, [sortBy])
-  
+    if (sortBy) SetselectedItem(sortBy);
+  }, [sortBy]);
 
   return (
-    <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary space-y-10">
+    <section className="px-5 xl:px-[60px] py-10 md:p-10 bg-secondary">
       {/* Sort Section */}
-      <div className="w-full hidden lg:flex justify-end items-center space-y-5 xl:px-[60px] relative">
+      <div className="w-full hidden lg:flex justify-end items-center space-y-5 relative">
         <div className="block space-y-5">
           <CustomSelect
             handleSortBy={handleSortBy}
@@ -125,7 +124,7 @@ const ProductSection = ({ search, products, setProducts }) => {
       </div>
       {/* Product Section */}
       <ProductFC
-      setSortValue={setSortValue}
+        setSortValue={setSortValue}
         searchFilter={searchFilter}
         search={search}
         products={products}
