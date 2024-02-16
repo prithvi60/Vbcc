@@ -1,4 +1,3 @@
-
 const Newsletter = () => {
   return (
     <section className="px-6 md:px-10 xl:px-16 2xl:px-20 py-16 xl:py-12 2xl:py-16 bg-secondary">
@@ -8,7 +7,8 @@ const Newsletter = () => {
             Get the Latest Updates
           </h2>
           <p className="text-sm md:text-xl 2xl:text-2xl font-urbanist w-full lg:w-[65%] mx-auto text-[#CACACA]">
-          Stay connected for the latest updates in cutting edge technology, launches of products, and valuable content revisions.
+            Stay connected for the latest updates in cutting edge technology,
+            launches of products, and valuable content revisions.
           </p>
         </div>
         <form
@@ -16,17 +16,17 @@ const Newsletter = () => {
           method="post"
           acceptCharset="UTF-8"
         >
-          <div className="flex flex-wrap sm:flex-wrap items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
+          <div className="flex flex-wrap sm:flex-nowrap items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
             <input
-             required
-             name="Email"
+              required
+              name="Email"
               type="email"
               placeholder="Your Email"
               className="bg-primary placeholder:text-zinc-500 !border-none !outline-none placeholder:font-Nunito w-[175px] md:w-[198px]"
             />
             <button
               type="submit"
-              className={`rounded-full px-4 py-2 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+              className={`hidden sm:block rounded-full px-4 py-2 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h3
@@ -42,6 +42,23 @@ const Newsletter = () => {
               </div>
             </button>
           </div>
+          <button
+            type="submit"
+            className={`block sm:hidden rounded-full px-4 py-2 border border-warning group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full mt-5`}
+          >
+            <div className={`h-6 w-full overflow-hidden`}>
+              <h3
+                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
+              >
+                Subscribe
+              </h3>
+              <h3
+                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
+              >
+                Subscribe
+              </h3>
+            </div>
+          </button>
         </form>
       </div>
     </section>

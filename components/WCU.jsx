@@ -1,4 +1,4 @@
-import othersData from "@/libs/others.json"
+import othersData from "@/libs/others.json";
 import Image from "next/image";
 
 const WCU = () => {
@@ -11,40 +11,39 @@ const WCU = () => {
               Why Choose Us?
             </h3>
             <p className="">
-            With over two decades of expertise, VBCC High Temperature Instruments Pvt. Ltd. previously known as VB Ceramic Consultants  is a distinguished leader crafting top-tier Instruments, Equipment, Furnaces, and Kilns. Our unwavering commitment to excellence has earned trust from diverse clientele, including prestigious universities, research organizations, and thriving industries.
+              With over two decades of expertise, VBCC High Temperature
+              Instruments Pvt. Ltd. previously known as VB Ceramic Consultants
+              is a distinguished leader crafting top-tier Instruments,
+              Equipment, Furnaces, and Kilns. Our unwavering commitment to
+              excellence has earned trust from diverse clientele, including
+              prestigious universities, research organizations, and thriving
+              industries.
               <br />
               <br />
-              At VBCC, our dedicated team delivers comprehensive solutions across the industry spectrum, providing superior products and essential technical expertise through tailored turnkey solutions.
+              At VBCC, our dedicated team delivers comprehensive solutions
+              across the industry spectrum, providing superior products and
+              essential technical expertise through tailored turnkey solutions.
               <br />
               <br />
-              Choose VBCC for quality, innovation, and personalized service, transforming challenges into opportunities.
+              Choose VBCC for quality, innovation, and personalized service,
+              transforming challenges into opportunities.
             </p>
           </div>
-          <div className="flex items-center gap-6">
-            <div className="relative h-32 w-32">
-              <Image
-                fill
-                src="https://ik.imagekit.io/webibee/VBCC/iso.png"
-                alt="Logo"
-                className="absolute object-contain object-center"
-              />
-            </div>
-            <div className="relative h-32 w-32">
-              <Image
-                fill
-                src="https://ik.imagekit.io/webibee/VBCC/Conformité_Européenne_(logo) 1.svg"
-                alt="Logo"
-                className="absolute object-contain object-center"
-              />
-            </div>
-            <div className="relative h-32 w-32">
-              <Image
-                fill
-                src="https://ik.imagekit.io/webibee/VBCC/MakeinIndia 1.svg"
-                alt="Logo"
-                className="absolute object-contain object-center"
-              />
-            </div>
+          <div className="flex flex-wrap items-center gap-x-10">
+            {othersData.howWeDoImg.map((list, idx) => (
+              <div
+                style={{ width: `${list.width}`, height: `${list.height}` }}
+                className="relative"
+                key={idx}
+              >
+                <Image
+                  fill
+                  src={list.img}
+                  alt={list.alt}
+                  className="absolute object-contain object-center"
+                />
+              </div>
+            ))}
           </div>
         </div>
         <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6 md:mb-[220px]">
@@ -72,8 +71,7 @@ const WCU = () => {
   );
 };
 
-export default WCU
-
+export default WCU;
 
 // Two or Three Zone Furnace up to 1800 - done
 // ChemicalVapourDeposition(CVD)upto1200°C - done

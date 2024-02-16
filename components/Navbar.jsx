@@ -54,10 +54,10 @@ const NavBar = () => {
             className="absolute object-contain object-center"
           />
         </Link> */}
-        <Link passHref href="/" className="relative h-8 w-16 cursor-pointer">
+        <Link passHref href="/" className="relative h-8  md:h-9 w-20 cursor-pointer">
           <Image
             fill
-            src={"https://ik.imagekit.io/webibee/VBCC/VBCC%20logo.svg"}
+            src={"https://ik.imagekit.io/webibee/VBCC/vbccNavLogo.png"}
             // placeholder="blur"
             // blurDataURL=""
             alt="Logo"

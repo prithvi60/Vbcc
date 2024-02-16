@@ -37,11 +37,11 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   return (
     <section className="py-16 px-6 md:px-10 xl:p-16 bg-secondary font-urbanist">
       <div className="flex flex-col justify-center items-center gap-8">
-        <div className="flex justify-between items-center flex-wrap w-full">
+        <div className="flex justify-between md:justify-center items-center flex-wrap w-full">
         <h3 className="font-Lora text-3xl md:text-5xl text-warning">
           Our Products
         </h3>
-        <Link scroll={false} href={"/products"} className="text-warning text-base underline underline-offset-4 decoration-warning font-urbanist mt-1">View All</Link>
+        <Link scroll={false} href={"/products"} className="block md:hidden text-warning text-base underline underline-offset-4 decoration-warning font-urbanist mt-1">View All</Link>
         </div>
         <div className="flex flex-col justify-center items-center w-full space-y-8">
           <div className="flex justify-center items-center gap-1 sm:gap-3 w-full h-auto bg-secondary">
@@ -186,14 +186,16 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
             ))}
           </div>
         </div>
-        {/* <Btn2
+        <div className="hidden md:block">
+        <Btn2
           Hbgcolor={"bg-primary"}
           textColor={"text-warning"}
           HtextColor={"text-white"}
           bColor={"border-warning"}
           title={"View All Products"}
           href={"/products"}
-        /> */}
+        />
+        </div>
       </div>
     </section>
   );

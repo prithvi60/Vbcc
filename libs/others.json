@@ -1684,5 +1684,12 @@
         "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%202.png?updatedAt=1707191390481",
         "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%203.png?updatedAt=1707191391559",
         "https://ik.imagekit.io/webibee/VBCC/Gallery/awards/award%204.png?updatedAt=1707191391468"
+    ],
+    "howWeDoImg": [
+        {"img": "https://ik.imagekit.io/webibee/VBCC/iso.png", "alt": "ISO logo", "height" : "10rem", "width": "10rem"},
+        {"img": "https://ik.imagekit.io/webibee/VBCC/Conformité_Européenne_(logo) 1.svg", "alt": "Européenne logo", "height" : "9rem", "width": "9rem"},
+        {"img": "https://ik.imagekit.io/webibee/VBCC/MakeinIndia 1.svg", "alt": "MakeinIndia logo", "height" : "11rem", "width": "11rem"},
+        {"img": "https://ik.imagekit.io/webibee/VBCC/msme-logo.png?updatedAt=1708080826478", "alt": "Européenne logo", "height" : "11rem", "width": "11rem"},
+        {"img": "https://ik.imagekit.io/webibee/VBCC/Startup-logo.png?updatedAt=1708080826533", "alt": "MakeinIndia logo", "height" : "11rem", "width": "11rem"}
     ]
 }
