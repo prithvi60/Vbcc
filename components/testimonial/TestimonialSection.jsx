@@ -103,7 +103,7 @@ export const TestimonialSection = () => {
           <ReactSimplyCarousel
             activeSlideIndex={activeSlideIndex}
             updateOnItemClick={true}
-            persistentChangeCallbacks={true}
+            // persistentChangeCallbacks={true}
             onRequestChange={setActiveSlideIndex}
             onAfterChange={(o) => {
               // console.log("change", o, selectedItem);
