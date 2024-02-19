@@ -102,6 +102,8 @@ export const TestimonialSection = () => {
         <div className="md:hidden">
           <ReactSimplyCarousel
             activeSlideIndex={activeSlideIndex}
+            updateOnItemClick={true}
+            persistentChangeCallbacks={true}
             onRequestChange={setActiveSlideIndex}
             onAfterChange={(o) => {
               // console.log("change", o, selectedItem);
@@ -109,7 +111,7 @@ export const TestimonialSection = () => {
             }}
             itemsToShow={4}
             itemsToScroll={1}
-            speed={800}
+            speed={1600}
             easing={"linear"}
             infinite
             autoplay={true}

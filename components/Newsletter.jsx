@@ -1,11 +1,6 @@
-"use client";
 import Link from "next/link";
 import { ThankYouComponent } from "./ThankYouComponent";
 
-// const handleCustomPage = (e)=>{
-//   e.preventDefault();
-//   return ThankYouComponent()
-// }
 
 const Newsletter = () => {
   return (
@@ -24,7 +19,6 @@ const Newsletter = () => {
           action="https://public.herotofu.com/v1/5317bdd0-ae22-11ee-870a-ff8e0d81300a"
           method="post"
           acceptCharset="UTF-8"
-          // onSubmit={handleCustomPage}
         >
           <div className="flex flex-wrap sm:flex-nowrap items-center max-w-[320px] md:w-[375px] rounded-full border py-2 px-3 border-white focus:border-secondary mx-auto">
             <input
