@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import productsData from "@/libs/products.json";
 import { Dumbbell } from "@/svg_components/Dumbbell";
 import { Glass } from "@/svg_components/Glass";
@@ -23,7 +23,7 @@ export const ProductCards = ({ value, name }) => {
   );
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
-      {filteredProduct.slice(0,count).map((card, idx) => (
+      {filteredProduct.slice(0, count).map((card, idx) => (
         <div className="block group" key={idx}>
           <Link
             passHref
@@ -63,8 +63,8 @@ export const ProductCards = ({ value, name }) => {
                 <Image
                   fill
                   src={card?.img}
-                  // placeholder="blur"
-                  // blurDataURL=""
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                   alt="product"
                   className="absolute object-cover object-center md:odd:last:object-contain"
                 />

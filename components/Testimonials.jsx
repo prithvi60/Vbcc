@@ -84,6 +84,8 @@ const Testimonials = () => {
                     src={item.logo}
                     alt="product"
                     className="absolute object-contain object-center"
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                   />
                 </div>
                 <div className="text-center">

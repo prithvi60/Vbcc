@@ -97,7 +97,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                       fill
                       src={card.img}
                       placeholder="blur"
-                      blurDataURL={`${card.img}?tr=bl-100`}
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                       alt="product"
                       className="absolute object-contain object-center"
                     />

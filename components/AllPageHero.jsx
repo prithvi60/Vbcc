@@ -12,7 +12,8 @@ export const AllPageHero = ({title,desc,ImgSrc}) => {
         {/* <div style={{backgroundImage: `url(${ImgSrc})`}} className="bg-cover bg-center bg-no-repeat"></div> */}
         <div className="relative h-[400px] md:h-[50vh] w-full md:w-1/2">
             <Image priority={true} quality={100} fill src={ImgSrc} alt={title} 
-            // placeholder="blur" blurDataURL=""
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
             sizes="(min-width: 820px) 50vw, 100vw"
             className="object-cover object-center" />
         </div>

@@ -11,9 +11,7 @@ export const PresenceSpecificPage = () => {
   const [count, setCount] = useState(2);
   const place = name.replace(/-/g, " ");
   const places = othersData.ourPresenceLocation.find(
-    (val) =>
-      val.location === place ||
-      val.states.includes(place)
+    (val) => val.location === place || val.states.includes(place)
   );
 
   // useEffect(() => {
@@ -154,9 +152,8 @@ export const PresenceSpecificPage = () => {
                       fill
                       src={item}
                       alt="Image..."
-                      // placeholder="blur"
-                      // blurDataURL={`${item}?tr=bl-100`}
-                      // sizes="(min-width: 1040px) calc(50vw - 92px), (min-width: 820px) calc(100vw - 80px), calc(100vw - 40px)"
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                       className="absolute object-cover object-center"
                     />
                   </div>

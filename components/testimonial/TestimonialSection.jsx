@@ -90,7 +90,7 @@ export const TestimonialSection = () => {
                     fill
                     src={item.logo}
                     placeholder="blur"
-                    blurDataURL={`${item.logo}?tr=bl-100`}
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                     alt="Logo"
                     className="object-contain object-center p-3"
                   />
@@ -135,7 +135,7 @@ export const TestimonialSection = () => {
                     fill
                     src={item.logo}
                     placeholder="blur"
-                    blurDataURL={`${item.logo}?tr=bl-100`}
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                     alt="Logo"
                     className="object-contain object-center p-3"
                   />
@@ -162,7 +162,7 @@ export const TestimonialSection = () => {
                 fill
                 src={othersData.testimonials[selectedItem].pdf}
                 placeholder="blur"
-                blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                 sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
                 alt="Logo"
                 className="w-full h-full object-contain object-center rounded-xl"

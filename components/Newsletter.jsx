@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { ThankYouComponent } from "./ThankYouComponent";
-
 
 const Newsletter = () => {
   return (

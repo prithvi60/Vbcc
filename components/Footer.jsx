@@ -143,8 +143,8 @@ const Footer = () => {
                   fill
                   sizes="75px"
                   src={"https://ik.imagekit.io/webibee/VBCC/vbcc-research.svg"}
-                  // placeholder="blur"
-                  // blurDataURL="https://ik.imagekit.io/webibee/VBCC/VBCC_Logo.png?tr=bl-100"
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                   alt="Logo"
                   className="-ml-6"
                 />
@@ -160,8 +160,8 @@ const Footer = () => {
                   sizes="75px"
                   src={"https://ik.imagekit.io/webibee/VBCC/vbcc-hitech.svg"}
                   alt="Logo"
-                  // placeholder="blur"
-                  // blurDataURL="https://ik.imagekit.io/webibee/VBCC/hi-temp.png?tr=bl-100"
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                   className="-ml-6"
                 />
               </Link>
@@ -199,14 +199,14 @@ const Footer = () => {
           <div className="hidden md:flex items-center gap-3">
             <Link
               passHref
-              href={"/"}
+              href={"/privacypolicy"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Privacy Policy
             </Link>
             <Link
               passHref
-              href={"/"}
+              href={"/termsofservice"}
               className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
             >
               Terms of Service

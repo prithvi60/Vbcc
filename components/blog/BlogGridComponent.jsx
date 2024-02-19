@@ -12,7 +12,7 @@ export const BlogGridComponent = ({ list }) => {
             src={list.img}
             alt="product"
             placeholder="blur"
-            blurDataURL={`${list.img}?tr=bl-100`}
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
             sizes="(min-width: 1440px) calc(32.12vw - 41px), calc(50vw - 76px)"
             className="absolute object-cover object-center group-hover:scale-125 transition-all duration-1000"
           />

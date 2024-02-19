@@ -21,6 +21,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           height={20}
           src={"https://ik.imagekit.io/webibee/VBCC/vbcc%20logo%202.svg"}
           alt="Logo"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
           className=" object-contain object-center"
         />
         <div className="flex items-center gap-7">
