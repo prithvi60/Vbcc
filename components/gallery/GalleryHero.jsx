@@ -17,7 +17,7 @@ export const GalleryHero = () => {
         />
       </div> */}
       <div className="absolute top-0 left-0 h-screen md:h-[715px] w-full -z-10 backdrop-sepia-0 bg-black/30"></div>
-      <div className="flex flex-col justify-around md:justify-around items-start w-full md:w-4/5 z-50 h-full lg:gap-[170px] gap-44">
+      <div className="flex flex-col justify-start xl:justify-around items-start w-full md:w-4/5 z-50 h-full lg:gap-[170px] gap-52">
         <div className="space-y-6">
           <h2 className="font-Lora text-4xl xl:text-6xl w-full ">Gallery</h2>
           <div className="flex flex-col gap-1.5 space-y-1.5 font-urbanist">
