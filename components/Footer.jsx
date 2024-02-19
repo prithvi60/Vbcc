@@ -194,8 +194,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-sm p-5 md:px-16 md:py-5 text-secondary border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
-        <div className="flex justify-center md:justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-center  md:justify-between items-center">
           <p>©VBCC HTI. All Rights Reserved.</p>
+          <p>Made & Maintained By <Link href={"https://webibee.com/"} target="_blank" className="underline hover:animate-pulse underline-offset-8 decoration-white">Webibee..</Link></p>
           <div className="hidden md:flex items-center gap-3">
             <Link
               passHref

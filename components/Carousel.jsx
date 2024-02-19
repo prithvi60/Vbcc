@@ -13,14 +13,15 @@ const InnerCarousel = () => {
   if (!client) {
     return (
       <div className="w-full mx-auto pb-1 md:pb-3">
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
+        {/* text-[30px] */}
+        <h3 className="font-Lora text-[27.5px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Laboratory Instruments
         </h3>
       </div>
     );
   }
   return (
-    <div className="w-full mx-auto pb-1 md:pb-3">
+    <div className="w-full mx-auto mb-5 md:mb-0 pb-1 md:pb-3">
       <Carousel
         showArrows={false}
         showThumbs={false}
@@ -34,13 +35,13 @@ const InnerCarousel = () => {
         stopOnHover={false}
         animationHandler={customVerticalAnimation}
       >
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal line-clamp-1">
+        <h3 className="font-Lora text-[27.5px] md:text-[42px] -pb-1 tracking-tight w-full font-normal ">
           Laboratory Instruments
         </h3>
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
+        <h3 className="font-Lora text-[27.5px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Industrial Furnaces
         </h3>
-        <h3 className="font-Lora text-[30px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
+        <h3 className="font-Lora text-[27.5px] md:text-[42px] -pb-1 tracking-tight w-full font-normal">
           Research Equipment
         </h3>
       </Carousel>

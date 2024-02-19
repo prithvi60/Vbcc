@@ -10,8 +10,8 @@ import { useRouter } from "next/navigation";
 
 export const ProductCard = ({ products }) => {
   const [page, setPage] = useState(1);
-  const lastIndex = page * 6;
-  const t = Math.ceil(products.length / 6);
+  const lastIndex = page * 12;
+  const t = Math.ceil(products.length / 12);
   const router = useRouter()
   // console.log(t);
   const handlePage = () => {
