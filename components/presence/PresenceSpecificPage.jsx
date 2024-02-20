@@ -102,7 +102,7 @@ export const PresenceSpecificPage = () => {
                   reliability, and excellence in laboratory, industrial furnaces
                   and instruments
                 </p>
-                <div className="flex items-center gap-5">
+                <div className="flex flex-wrap-reverse items-center gap-2 sm:gap-5">
                   <button
                     className={`min-w-fit text-base tracking-tight border border-warning p-5 rounded-full font-urbanist px-4 py-2 group/button block bg-primary hover:bg-transparent text-center duration-700 delay-75 capitalize cursor-pointer`}
                     onClick={() => router.push("/about")}

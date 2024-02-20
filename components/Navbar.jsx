@@ -63,8 +63,8 @@ const NavBar = () => {
             loading="lazy"
             fill
             src={"https://ik.imagekit.io/webibee/VBCC/vbccsvglogo.svg"}
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
+            // placeholder="blur"
+            // blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
             alt="Logo"
             className="absolute object-contain object-center"
           />

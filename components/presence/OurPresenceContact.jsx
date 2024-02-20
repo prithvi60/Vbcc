@@ -1,6 +1,16 @@
+"use client";
+import { useState } from "react";
 import { Btn2 } from "../Btn";
 
 export const OurPresenceContact = ({ title, mobTitle, para }) => {
+  const [Copied, setCopied] = useState(false);
+  const handleInquire = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setInterval(() => {
+      setCopied(false);
+    }, 5000);
+  };
   return (
     <section className="py-16 px-5 md:py-[60px] md:px-10 xl:px-20 ">
       <div className="bg-transparent p-10 space-y-10">
@@ -14,7 +24,7 @@ export const OurPresenceContact = ({ title, mobTitle, para }) => {
           {para}
         </p>
         <span className="flex flex-col-reverse md:flex-row justify-center items-center gap-3 md:gap-6">
-          <Btn2
+          {/* <Btn2
             Hbgcolor={"bg-info"}
             textColor={"text-info"}
             HtextColor={"text-white"}
@@ -22,7 +32,31 @@ export const OurPresenceContact = ({ title, mobTitle, para }) => {
             title={"Call +91 73388 94199"}
             href={""}
             background={"transparent"}
-          />
+          /> */}
+          <div className="block space-y-2 relative">
+            <button
+              className={`group/btn rounded-full px-6 py-4 border border-info BG-transparent hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
+              onClick={() => handleInquire("+91 73388 94199")}
+            >
+              <div className={`h-6 w-full overflow-hidden`}>
+                <h4
+                  className={`transition translate-y-0 group-hover/btn:-translate-y-20 duration-700 text-info`}
+                >
+                  +91 73388 94199
+                </h4>
+                <h4
+                  className={`translate-y-20 transition group-hover/btn:-translate-y-[25px] duration-700 group-hover/btn:text-white`}
+                >
+                  +91 73388 94199
+                </h4>
+              </div>
+            </button>
+            {Copied && (
+              <div className="absolute -bottom-7 left-0 text-warning text-base text-center w-max">
+                ✔️Copied to Clipboard
+              </div>
+            )}
+          </div>
           <Btn2
             Hbgcolor={"bg-primary"}
             textColor={"text-warning"}

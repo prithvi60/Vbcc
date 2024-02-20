@@ -67,7 +67,7 @@ const Testimonials = () => {
             interval={5000}
             infiniteLoop
             stopOnHover={false}
-            //   swipeable={false}
+            swipeable={false}
             animationHandler={customHorizontalAnimation}
           >
             {othersData.heroTestimonial.map((item, idx) => (
