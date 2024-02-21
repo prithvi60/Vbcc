@@ -135,7 +135,7 @@ const Footer = () => {
             <div className="flex items-center gap-4 ml-6">
               <Link
                 passHref
-                href={"https://www.drvbceramicresearch.com/"}
+                href={"https://vbccinstruments.com/"}
                 className="relative h-[40px] w-[70px]"
                 target="_blank"
               >
