@@ -27,7 +27,7 @@ export const ProductCards = ({ value, name }) => {
         <div className="block group" key={idx}>
           <Link
             passHref
-            href={`/products/${card?.productName.replace(/\s/g, "")}`}
+            href={`/products/${card?.productName.replace(/\s/g, "-")}`}
             className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10"
           >
             {/*Card Body */}

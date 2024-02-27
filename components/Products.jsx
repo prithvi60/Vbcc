@@ -89,7 +89,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                   {/* <p className="text-small">$718</p> */}
                 </div>
                 <Link
-                  href={`/products/${card.productName.replace(/\s/g, "")}`}
+                  href={`/products/${card.productName.replace(/\s/g, "-")}`}
                   className="space-y-4"
                 >
                   <div className="relative h-[225px] w-full">
@@ -137,7 +137,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           <div className="w-full sm:w-[350px] h-full flex  sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {ourProducts.slice(0, count).map((card, id) => (
               <Link
-                href={`/products/${card.productName.replace(/\s/g, "")}`}
+                href={`/products/${card.productName.replace(/\s/g, "-")}`}
                 className="w-full h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
                 key={id}
               >

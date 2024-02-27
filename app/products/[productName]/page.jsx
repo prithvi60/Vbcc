@@ -9,7 +9,8 @@ const RelatedProductsComponent = dynamic(() => import("@/components/products/spe
 
 export default function Home({params}) {
   const{productName} = params
-  const product = productsData.allProducts.find(val => val.productName.replace(/\s/g, '') === productName)
+  const product = productsData.allProducts.find(val => val.productName === productName.replace(/-/g, " "))
+  // console.log(product);
   return (
     <main>
       <ProductPageComponent product={product}/>

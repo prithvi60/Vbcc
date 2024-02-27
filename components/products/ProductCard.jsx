@@ -31,7 +31,7 @@ export const ProductCard = ({ products }) => {
               <Link
               scroll={false}
               passHref
-              href={`/products/${list?.productName.replace(/\s/g, "")}`}
+              href={`/products/${list?.productName.replace(/\s/g, "-")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
