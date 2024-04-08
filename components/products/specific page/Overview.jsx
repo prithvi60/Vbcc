@@ -18,6 +18,8 @@ const Overview = ({ specification, specificId }) => {
                 fill
                 src={specificGalleryImg}
                 alt="..."
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                 className="absolute object-contain lg:object-cover object-center rounded-md"
               />
             </div>

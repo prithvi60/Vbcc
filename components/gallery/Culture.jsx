@@ -109,7 +109,8 @@ const Culture = ({ title, shortDesc, imgSrc, scrollId }) => {
                 <Image
                   fill
                   src={img}
-                  // placeholder="blur"
+                  placeholder="blur"
+                  blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                   sizes="(min-width: 1540px) 230px, (min-width: 1440px) 205px, (min-width: 1040px) 185px, 160px"
                   alt="Logo"
                   className="absolute object-cover hover:scale-125 transition-all duration-1000"

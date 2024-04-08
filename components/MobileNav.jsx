@@ -13,7 +13,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
     <section
       className={`fixed top-0
        ${!open ? "right-0 animate-reveal_In" : "-right-[120%]"} 
-       z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll`}
+       z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
     >
       <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-[32px]">
         <Image
@@ -21,6 +21,8 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           height={20}
           src={"https://ik.imagekit.io/webibee/VBCC/vbcc%20logo%202.svg"}
           alt="Logo"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
           className=" object-contain object-center"
         />
         <div className="flex items-center gap-7">
@@ -55,7 +57,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         </div>
       </div>
       <div className="flex justify-center md:justify-between items-center p-5 md:px-[60px] md:py-[24px]">
-        <ul className="space-y-2 w-full">
+        <ul className="space-y-4 md:space-y-6 lg:space-y-10 w-full">
           {othersData.navlink.map((link, idx) => (
             <li
               key={idx}

@@ -10,8 +10,8 @@ import { useRouter } from "next/navigation";
 
 export const ProductCard = ({ products }) => {
   const [page, setPage] = useState(1);
-  const lastIndex = page * 6;
-  const t = Math.ceil(products.length / 6);
+  const lastIndex = page * 12;
+  const t = Math.ceil(products.length / 12);
   const router = useRouter()
   // console.log(t);
   const handlePage = () => {
@@ -31,7 +31,7 @@ export const ProductCard = ({ products }) => {
               <Link
               scroll={false}
               passHref
-              href={`/products/${list?.productName.replace(/\s/g, "")}`}
+              href={`/products/${list?.productName.replace(/\s/g, "-")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
@@ -84,8 +84,8 @@ export const ProductCard = ({ products }) => {
                     fill
                     src={list?.img}
                     alt="product"
-                    // placeholder="blur"
-                    // blurDataURL=""
+                    placeholder="blur"
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                     className="absolute object-contain lg:object-cover object-center md:odd:last:object-contain"
                   />
                 </div>

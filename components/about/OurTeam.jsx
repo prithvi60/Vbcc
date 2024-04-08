@@ -28,7 +28,7 @@ export const OurTeam = () => {
                 src={item.img}
                 alt="Image..."
                 placeholder="blur"
-                blurDataURL={`${item.img}?tr=bl-100`}
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                 sizes="(min-width: 1440px) 265px, (min-width: 1040px) 365px, (min-width: 400px) 315px, 88px"
                 className="absolute object-cover object-center"
               />

@@ -1,7 +1,7 @@
 "use client";
 import othersData from "@/libs/others.json";
 import Link from "next/link";
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { InView } from "react-intersection-observer";
 import { ProgressBar } from "./ProgressBar";
 import { m, AnimatePresence, LazyMotion } from "framer-motion";
@@ -17,7 +17,7 @@ const loadFeatures = () =>
 
 const HowWeDo = () => {
   const [slide, setSlide] = useState(0);
-  
+
   const slideVariants = {
     entry: {
       y: 70,
@@ -37,8 +37,8 @@ const HowWeDo = () => {
             <ProgressBar slide={slide} />
             <AnimatePresence initial={false}>
               <LazyMotion features={loadFeatures}>
-                <div className="h-full w-full overflow-hidden">
-                  <div className="relative h-[182px] lg:h-[400px] w-full overflow-hidden">
+                <div className="h-full w-full overflow-hidden relative">
+                  <div className="h-[182px] lg:h-[400px] w-full overflow-hidden">
                     <m.img
                       // fill
                       loading="lazy"
@@ -51,11 +51,10 @@ const HowWeDo = () => {
                       key={slide}
                       src={ImgSlider[slide].img}
                       alt="Logo"
-                      className="absolute w-full h-full object-cover object-center"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
-      
-                  <h3 className="text-[32px] absolute top-[48%] left-1/4 md:left-[40%] font-Lora">
+                  <h3 className="text-[32px] absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2 font-Lora">
                     {ImgSlider[slide].title}
                   </h3>
                 </div>
@@ -77,8 +76,8 @@ const HowWeDo = () => {
               // initialInView={true}
               onChange={(inView, entry) => {
                 // console.log("Inview:", inView, item.title, entry);
-                if( item.title === "Working Strategy" && slide === 1){
-                  setSlide(0)
+                if (item.title === "Working Strategy" && slide === 1) {
+                  setSlide(0);
                 }
                 setSlide((prev) => {
                   return entry.isIntersecting &&
@@ -90,13 +89,15 @@ const HowWeDo = () => {
                     ? 3
                     : prev;
                 });
-              
               }}
               // py-[70px] px-5 lg:py-32
-              className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${item.title === "Engineering"? "lg: pb-[50px] xl:pb-[120px]":""}`}
+              className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${
+                item.title === "Engineering"
+                  ? "lg: pb-[50px] xl:pb-[120px]"
+                  : ""
+              }`}
               key={idx}
             >
-
               <h4 className="font-Lora text-[32px] tracking-tighter">
                 {item.title}
               </h4>

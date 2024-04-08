@@ -55,7 +55,8 @@ const ProductHero = ({ setProducts }) => {
           fill
           src={product.ImgSrc}
           alt={product.title}
-          // placeholder="blur" blurDataURL=""
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
           sizes="(min-width: 820px) 50vw, 100vw"
           className="object-cover object-center"
         />

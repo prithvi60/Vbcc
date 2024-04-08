@@ -41,7 +41,7 @@ export const BlogCards = ({ blogContents, MainBlog }) => {
                 src={MainBlog.img}
                 alt={MainBlog.blogTitile}
                 placeholder="blur"
-                blurDataURL={`${MainBlog.img}?tr=bl-100`}
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                 sizes="(min-width: 1440px) calc(66.28vw - 87px), calc(50vw - 76px)"
                 className="object-cover object-center"
               />

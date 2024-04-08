@@ -6,17 +6,17 @@ import { m, AnimatePresence, LazyMotion } from "framer-motion";
 import ReactSimplyCarousel from "react-simply-carousel";
 
 import dynamic from "next/dynamic";
-import { customHorizontalAnimation } from "@/libs/slider_animation";
 // Make sure to return the specific export containing the feature bundle.
 const loadFeatures = () =>
   import("../../libs/framer_feature").then((res) => res.default);
 const FsLightbox = dynamic(() => import("fslightbox-react"), { ssr: false });
 export const TestimonialSection = () => {
+  const [toggle, setToggle] = useState(false)
   const [selectedItem, SetselectedItem] = useState(0);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const fsTool = othersData.testimonials.map((val) => val.pdf);
   const [lightboxController, setLightboxController] = useState({
-    toggler: false,
+    toggler: setToggle,
     slide: selectedItem + 1,
   });
 
@@ -25,6 +25,7 @@ export const TestimonialSection = () => {
       toggler: !lightboxController.toggler,
       slide: number + 1,
     });
+    setToggle(true)
   }
 
   const slideVariants = {
@@ -60,6 +61,7 @@ export const TestimonialSection = () => {
       // }
     },
   };
+
   const handleChangePDF = (id) => {
     SetselectedItem(id);
   };
@@ -90,7 +92,7 @@ export const TestimonialSection = () => {
                     fill
                     src={item.logo}
                     placeholder="blur"
-                    blurDataURL={`${item.logo}?tr=bl-100`}
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                     alt="Logo"
                     className="object-contain object-center p-3"
                   />
@@ -108,13 +110,14 @@ export const TestimonialSection = () => {
             onAfterChange={(o) => {
               // console.log("change", o, selectedItem);
               SetselectedItem(o);
+              setActiveSlideIndex(o);
             }}
             itemsToShow={4}
             itemsToScroll={1}
-            speed={1600}
+            speed={800}
             easing={"linear"}
             infinite
-            autoplay={true}
+            autoplay={toggle === true ? false : true}
             autoplayDelay={1500}
             autoplayDirection={"forward"}
           >
@@ -135,7 +138,7 @@ export const TestimonialSection = () => {
                     fill
                     src={item.logo}
                     placeholder="blur"
-                    blurDataURL={`${item.logo}?tr=bl-100`}
+                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                     alt="Logo"
                     className="object-contain object-center p-3"
                   />
@@ -154,7 +157,7 @@ export const TestimonialSection = () => {
               variants={slideVariants}
               initial="slide"
               animate="visible"
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 0.5 }}
               exit="exit"
               key={selectedItem}
             >
@@ -162,7 +165,7 @@ export const TestimonialSection = () => {
                 fill
                 src={othersData.testimonials[selectedItem].pdf}
                 placeholder="blur"
-                blurDataURL={`${othersData.testimonials[selectedItem].pdf}?tr=bl-20`}
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                 sizes="(min-width: 1320px) 390px, (min-width: 1040px) calc(26.15vw + 50px), (min-width: 460px) 390px, calc(92.86vw - 19px)"
                 alt="Logo"
                 className="w-full h-full object-contain object-center rounded-xl"
@@ -177,6 +180,7 @@ export const TestimonialSection = () => {
         sources={fsTool}
         type="image"
         slide={lightboxController.slide}
+        onClose={()=>setToggle(false)}
       />
     </section>
   );
