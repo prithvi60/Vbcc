@@ -1,8 +1,14 @@
 {
   "sortProduct": [
-    { "value": "Featured" },
-    { "value": "New Products" },
-    { "value": "Best Selling" }
+    {
+      "value": "Featured"
+    },
+    {
+      "value": "New Products"
+    },
+    {
+      "value": "Best Selling"
+    }
   ],
   "productCategory": [
     {
@@ -29,7 +35,10 @@
   "allProducts": [
     {
       "category": "Research Institutions",
-      "sortBy": ["Featured", "New Products"],
+      "sortBy": [
+        "Featured",
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -44,7 +53,12 @@
       "productName": "Microwave Furnace",
       "productType": "Microwave Heating Systems",
       "description": "Seamlessly blending conventional and microwave heating technologies, the Hybrid Model offers adaptive solutions for diverse thermal processing needs.",
-      "variant": ["Hybrid", "Super", "Premium", "Big"],
+      "variant": [
+        "Hybrid",
+        "Super",
+        "Premium",
+        "Big"
+      ],
       "price": "₹ Enquire for Estimate",
       "specification": [
         {
@@ -67,7 +81,11 @@
             }
           ],
           "variantType": "Hybrid",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -155,7 +173,11 @@
             }
           ],
           "variantType": "Super",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -235,7 +257,11 @@
             }
           ],
           "variantType": "Premium",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -311,7 +337,11 @@
             }
           ],
           "variantType": "Big",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -383,7 +413,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -394,7 +426,12 @@
       "productName": "Microwave Furnace Computerized",
       "productType": "Microwave Heating Systems",
       "description": "Precision meets automation in this computerized model, providing programmable controls for optimal temperature management in thermal processes.",
-      "variant": ["Hybrid", "Super", "Premium", "Big"],
+      "variant": [
+        "Hybrid",
+        "Super",
+        "Premium",
+        "Big"
+      ],
       "price": "₹ Enquire for Estimate",
       "specification": [
         {
@@ -421,7 +458,11 @@
             }
           ],
           "variantType": "Hybrid",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -514,7 +555,11 @@
             }
           ],
           "variantType": "Super",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -599,7 +644,11 @@
             }
           ],
           "variantType": "Premium",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -688,7 +737,11 @@
             }
           ],
           "variantType": "Big",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -761,7 +814,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -782,7 +837,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Assited%20Stir%20Casting%20Furnace/SC%20Furnace%201.jpg?updatedAt=1707144942994"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -851,7 +910,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -880,7 +941,12 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Assisted%20Chemical%20Processing%20Unit/CP%20Unit%203.jpg?updatedAt=1707144911099"
             }
           ],
-          "title": ["General", "Temperature", "Size", "Agitation"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Agitation"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -963,7 +1029,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -1008,7 +1076,12 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/MICROWAVE%20HEATING%20SYSTEMS/Microwave%20Pyrolysis%20Reactor/Pyrolysis%20Reactor%207.jpg?updatedAt=1707145050623"
             }
           ],
-          "title": ["General", "Temperature", "Size", "Agitation"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Agitation"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1091,7 +1164,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["Best Selling"],
+      "sortBy": [
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -1106,7 +1181,12 @@
       "productName": "Tubular Furnace",
       "productType": "Furnaces",
       "description": "Offering controlled thermal processing up to 1200°C, this tubular furnace is a reliable solution for applications like annealing and materials research",
-      "variant": ["1200°C", "1400°C", "1600°C", "1800°C"],
+      "variant": [
+        "1200°C",
+        "1400°C",
+        "1600°C",
+        "1800°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "specification": [
         {
@@ -1129,7 +1209,11 @@
             }
           ],
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1222,7 +1306,11 @@
             }
           ],
           "variantType": "1400°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1343,7 +1431,11 @@
             }
           ],
           "variantType": "1600°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1448,7 +1540,11 @@
             }
           ],
           "variantType": "1800°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1539,7 +1635,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -1564,7 +1662,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/2.%20Tubular%20Furnace%20-%20Tiltable%20Model%20%20%20%20%20%20%20%20%20$/Product%20Card.png?updatedAt=1707200346471"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1655,7 +1757,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -1684,7 +1788,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/3.%20Rotary%20Tubular%20Furnace%20upto%201800%20C/3.jpg?updatedAt=1707200365947"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1777,7 +1885,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -1810,7 +1920,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/4.%20Ageing%20Tubular%20Furnace/4.jpg?updatedAt=1707200385522"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -1926,7 +2040,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -1967,7 +2083,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/5.%20Hot%20Corrosion%20Tubular%20Furnace/5.jpg?updatedAt=1707200412579"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2075,7 +2195,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -2122,7 +2244,11 @@
             }
           ],
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2215,7 +2341,11 @@
             }
           ],
           "variantType": "1400°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2308,7 +2438,11 @@
             }
           ],
           "variantType": "1600°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2401,7 +2535,11 @@
             }
           ],
           "variantType": "1800°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2478,7 +2616,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -2511,7 +2651,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/7.%20Box%20Type%20Vacuum%20Furnace/4.jpg?updatedAt=1707200461619"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2600,7 +2744,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -2641,7 +2787,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/8.%20Thermal%20Cycling%20Furnace/7.JPG?updatedAt=1707200483852"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2730,7 +2880,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -2767,7 +2919,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/9.%20Raising%20Hearth%20Furnace/4.jpg?updatedAt=1707200512244"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2856,7 +3012,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -2897,7 +3055,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/10.%20Pit%20Furnace/6.jpg?updatedAt=1707200531804"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -2974,7 +3136,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -2986,7 +3150,7 @@
         }
       ],
       "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/11.%20TwoThree%20Zone%20Furnace%20up%20to%201800%C2%B0C/Product%20Card.png?updatedAt=1707200555516",
-      "productName": "Two (or) Three Zone Furnace",
+      "productName": "Two (or) Three Zone Furnace up to 1800C",
       "productType": "Furnaces",
       "description": "This furnace features distinct temperature zones, offering precise control up to 1800°C, making it ideal for tailored thermal profiles and diverse applications",
       "variant": [],
@@ -3007,7 +3171,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/11.%20TwoThree%20Zone%20Furnace%20up%20to%201800%C2%B0C/4..jpg?updatedAt=1707200556082"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3084,7 +3252,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -3109,7 +3279,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/FURNACES/12.%20Fire%20Side%20Corrosion%20Simulator%20Furnace/1.jpeg?updatedAt=1707200580476"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3209,7 +3383,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -3242,7 +3418,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/ovens/1.%20Hot%20Air%20Oven/4.jpg?updatedAt=1707200636407"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3342,7 +3522,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -3363,7 +3545,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/ovens/2.%20Humidity%20Oven/1.jpg?updatedAt=1707200637227"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3459,7 +3645,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -3484,7 +3672,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/ovens/3.%20Vacuum%20Oven/2.JPG?updatedAt=1707200635736"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3584,7 +3776,10 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["Featured", "Best Selling"],
+      "sortBy": [
+        "Featured",
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -3595,7 +3790,11 @@
       "productName": "Chemical Vapour Deposition (CVD)",
       "productType": "Nano Techology Equipment",
       "description": "VBCC's CVD Furnace at 1200°C enables precise deposition of thin films, showcasing advanced materials synthesis capabilities in controlled environments.",
-      "variant": ["1200°C", "1400°C", "1600°C"],
+      "variant": [
+        "1200°C",
+        "1400°C",
+        "1600°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "specification": [
         {
@@ -3618,7 +3817,11 @@
             }
           ],
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3718,7 +3921,11 @@
             }
           ],
           "variantType": "1400°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3814,7 +4021,11 @@
             }
           ],
           "variantType": "1600°C",
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -3898,7 +4109,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -3923,7 +4136,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/nano/2.%20Chemical%20Vapour%20Synthesis%20(CVS)/2.jpg?updatedAt=1707200712491"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4011,7 +4228,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "2",
@@ -4036,7 +4255,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/nano/3.%20Dip%20Coating/2.JPG?updatedAt=1707200717831"
             }
           ],
-          "title": ["General", "Speed"],
+          "title": [
+            "General",
+            "Speed"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4122,7 +4344,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4155,7 +4379,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/nano/4.%20Spin%20Coating/3.JPG?updatedAt=1707200715049"
             }
           ],
-          "title": ["General", "Additional Information"],
+          "title": [
+            "General",
+            "Additional Information"
+          ],
           "Title1": [
             {
               "name": "Shell Construction",
@@ -4241,7 +4468,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4278,7 +4507,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/nano/5.%20Spray%20Pyrolysis/5.jpg?updatedAt=1707200708526"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4378,7 +4611,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["Best Selling"],
+      "sortBy": [
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4415,7 +4650,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/nano/6.%20Planetary%20Mill%20(Wet%20and%20Dry)/5.jpg?updatedAt=1707200705917"
             }
           ],
-          "title": ["General", "Additional Information"],
+          "title": [
+            "General",
+            "Additional Information"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4501,7 +4739,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4542,7 +4782,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/nano/7.%20Flame%20Reactor%20For%20Nano/5.JPG?updatedAt=1707200705598"
             }
           ],
-          "title": ["General", "Temperature"],
+          "title": [
+            "General",
+            "Temperature"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4636,7 +4879,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4673,7 +4918,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/1.%20Pellet%20Press%20-%2010%20TONE/5.jpg?updatedAt=1707200775745"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4737,7 +4984,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4774,7 +5023,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/2.%20Plasma%20Assisted%20Metal%20Oxide%20CVD%20(MOCVD)/6.jpg?updatedAt=1707200759137"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -4878,7 +5131,10 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["Featured", "Best Selling"],
+      "sortBy": [
+        "Featured",
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -4907,7 +5163,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/3.%20Gas%20Sensing%20Unit/3.jpg?updatedAt=1707200757897"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5027,7 +5287,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5064,7 +5326,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/4.%20Melt%20Extrusion/5.JPG?updatedAt=1707200752402"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5180,7 +5446,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5213,7 +5481,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/5.%20Carbon%20Fibre%20Chopping%20Equipment/3.JPG?updatedAt=1707200749194"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5281,7 +5551,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5318,7 +5590,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/6.%20Fibre%20Forming%20Chambers%20-%20Cold%20Spinning/5.JPG?updatedAt=1707200747845"
             }
           ],
-          "title": ["General", "Size"],
+          "title": [
+            "General",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5400,7 +5675,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5429,7 +5706,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/7.%20Lab%20Extruder/5.JPG?updatedAt=1707200744487"
             }
           ],
-          "title": ["General", "Size"],
+          "title": [
+            "General",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5499,7 +5779,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5532,7 +5814,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/8.%20Co2%20Humidity%20Chamber/4.jpg?updatedAt=1707200741172"
             }
           ],
-          "title": ["General", "Size"],
+          "title": [
+            "General",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -5614,7 +5899,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["Best Selling"],
+      "sortBy": [
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5647,7 +5934,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/9.%20Multi%20Deck%20Roller%20Pot%20Mill/11.jpg?updatedAt=1707200741095"
             }
           ],
-          "title": ["Construction", "Power", "Operation"],
+          "title": [
+            "Construction",
+            "Power",
+            "Operation"
+          ],
           "Title1": [
             {
               "name": "Arrangement",
@@ -5731,7 +6022,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5882,7 +6175,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -5915,7 +6210,9 @@
               "img": "/img 4.jpg"
             }
           ],
-          "title": ["Vacuum System"],
+          "title": [
+            "Vacuum System"
+          ],
           "Title1": [
             {
               "name": "Ultimate Vacuum",
@@ -5967,7 +6264,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -6103,7 +6402,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -6136,7 +6437,9 @@
               "img": "/img 4.jpg"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Water chilling unit",
@@ -6200,7 +6503,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -6237,7 +6542,12 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/special/11.%20Glove%20Box/6.jpg?updatedAt=1707200766757"
             }
           ],
-          "title": ["Structure", "Gas System", "Antechamber", "Vacuum"],
+          "title": [
+            "Structure",
+            "Gas System",
+            "Antechamber",
+            "Vacuum"
+          ],
           "Title1": [
             {
               "name": "Inside Dimensions",
@@ -6335,7 +6645,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -6463,7 +6775,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -6474,7 +6788,11 @@
       "productName": "Vacuum Hot Press",
       "productType": "Presses",
       "description": "Achieve controlled material densification at elevated temperatures with VBCC's Vacuum Hot Press (up to 1200°C).",
-      "variant": ["1200°C", "1700°C", "2000°C"],
+      "variant": [
+        "1200°C",
+        "1700°C",
+        "2000°C"
+      ],
       "price": "₹ Enquire for Estimate",
       "specification": [
         {
@@ -6501,7 +6819,12 @@
             }
           ],
           "variantType": "1200°C",
-          "title": ["General", "Temperature", "Size", "Pressure System"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Pressure System"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -6639,7 +6962,12 @@
             }
           ],
           "variantType": "1700°C",
-          "title": ["General", "Temperature", "Size", "Pressure System"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Pressure System"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -6789,7 +7117,12 @@
             }
           ],
           "variantType": "2000°C",
-          "title": ["General", "Temperature", "Size", "Pressure System"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Pressure System"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -6919,7 +7252,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7044,7 +7379,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7081,7 +7418,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/presses/4.%20Manual%20Press/5.jpg?updatedAt=1707200864094"
             }
           ],
-          "title": ["Press Specifications", "Design and Model"],
+          "title": [
+            "Press Specifications",
+            "Design and Model"
+          ],
           "Title1": [
             {
               "name": "Capacity",
@@ -7149,7 +7489,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["Best Selling"],
+      "sortBy": [
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7305,7 +7647,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7330,7 +7674,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/presses/6.%20Mini%20hot%20press/2.jpg?updatedAt=1707200850312"
             }
           ],
-          "title": ["Press", "Heating System", "Control System"],
+          "title": [
+            "Press",
+            "Heating System",
+            "Control System"
+          ],
           "Title1": [
             {
               "name": "Capacity",
@@ -7434,7 +7782,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7586,7 +7936,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7607,7 +7959,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/METTALURGICAL/1.%20Magnesium%20Stir%20Casting%E2%80%A8/1.jpg?updatedAt=1707200944817"
             }
           ],
-          "title": ["General", "Temperature", "Size and Construction"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size and Construction"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -7731,7 +8087,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7760,7 +8118,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/METTALURGICAL/2.%20Aluminium%20Stir%20Casting/3.JPG?updatedAt=1707200944638"
             }
           ],
-          "title": ["General", "Temperature", "Size and Construction"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size and Construction"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -7880,7 +8242,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -7901,7 +8265,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/METTALURGICAL/3.%20Squeeze%20Casting/1.jpg?updatedAt=1707200942563"
             }
           ],
-          "title": ["Melting Furnace", "Stirring Unit"],
+          "title": [
+            "Melting Furnace",
+            "Stirring Unit"
+          ],
           "Title1": [
             {
               "name": "Melting Capacity",
@@ -7987,7 +8354,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8152,10 +8521,11 @@
         }
       ]
     },
-
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8196,7 +8566,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/1.%20INDUSTRIAL%20FURNACE/1.%20PIT%20FURNACE/5.jpg?updatedAt=1707221825786"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8308,7 +8682,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8341,7 +8717,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/1.%20INDUSTRIAL%20FURNACE/2.%20ENAMEL%20FURNACES/3.jpg?updatedAt=1707221823567"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8449,7 +8829,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8490,7 +8872,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/1.%20INDUSTRIAL%20FURNACE/3.%20RAISING%20HEARTH/5.jpg?updatedAt=1707221822989"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8618,7 +9004,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8659,7 +9047,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/1.%20INDUSTRIAL%20FURNACE/4.%20TOP%20HAT%20FURNACES/5.jpg?updatedAt=1707221820653"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8787,7 +9179,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["Featured"],
+      "sortBy": [
+        "Featured"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8828,7 +9222,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/1.%20INDUSTRIAL%20FURNACE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/5.jpg?updatedAt=1707221816942"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -8936,7 +9334,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -8973,7 +9373,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/1.%20INDUSTRIAL%20FURNACE/6.%20INDUSTRIAL%20AUTO%20CLAVE/4.JPG?updatedAt=1707221816952"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9089,7 +9493,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["Featured"],
+      "sortBy": [
+        "Featured"
+      ],
       "feature": [
         {
           "id": "1",
@@ -9134,7 +9540,12 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/2.%20REFRACTORY%20INDUSTRY/1.%20HOT%20MODULAS%20OF%20RUPTURE%20(HMOR)/6.JPG?updatedAt=1707221811996"
             }
           ],
-          "title": ["General", "Temperature", "Size", "Specimen and Testing"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size",
+            "Specimen and Testing"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9256,7 +9667,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["Featured"],
+      "sortBy": [
+        "Featured"
+      ],
       "feature": [
         {
           "id": "1",
@@ -9424,7 +9837,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -9465,7 +9880,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/2.%20REFRACTORY%20INDUSTRY/3.%20CREEP%20IN%20COMPRESSION/5.JPG?updatedAt=1707221789609"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9562,7 +9981,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["Featured"],
+      "sortBy": [
+        "Featured"
+      ],
       "feature": [
         {
           "id": "1",
@@ -9717,7 +10138,10 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["Featured", "Best Selling"],
+      "sortBy": [
+        "Featured",
+        "Best Selling"
+      ],
       "feature": [
         {
           "id": "1",
@@ -9762,7 +10186,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/2.%20REFRACTORY%20INDUSTRY/5.%20DILATOMETER%20(THERMAL%20EXPANSION%20UP%20TO%201600%C2%B0C)/6.JPG?updatedAt=1707221784972"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -9882,7 +10310,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["New Products"],
+      "sortBy": [
+        "New Products"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10066,7 +10496,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10111,7 +10543,10 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/2.%20REFRACTORY%20INDUSTRY/7.%20BRICK%20CUTTING%20MACHINE/6.jpg?updatedAt=1707221777312"
             }
           ],
-          "title": ["Structure", "Cutting System"],
+          "title": [
+            "Structure",
+            "Cutting System"
+          ],
           "Title1": [
             {
               "name": "Size of the Machine",
@@ -10189,7 +10624,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10242,7 +10679,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/1.%20FLEXURAL%20STRENGTH%20(MOR)/8.JPG?updatedAt=1707221775573"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Size of the machine",
@@ -10326,7 +10765,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10371,7 +10812,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/2.%20TORSION%20VISCOMETER/Torsion%20Viscometer%20(6).jpg?updatedAt=1707221771658"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Torsion Wire",
@@ -10435,7 +10878,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10472,7 +10917,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/4.%20%20AUTO%20CLAVE/4.JPG?updatedAt=1707221767366"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -10584,7 +11033,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10617,7 +11068,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/5.%20LAB%20ROLLER%20HEARTH%20FURNACE/3.JPG?updatedAt=1707221760527"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -10729,7 +11184,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10762,7 +11219,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/6.%20WATER%20CHILLER/3.jpg?updatedAt=1707221761500"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Water chilling unit",
@@ -10826,7 +11285,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10867,7 +11328,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/6.%20SILICON%20CARBIDE%20HEATING%20ELEMENTS/5.JPG?updatedAt=1707221860981"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -10947,7 +11410,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -10988,7 +11453,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/7.%20MOSi2%20HEATING%20ELEMENTS/5.JPG?updatedAt=1707221857655"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -11072,7 +11539,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11097,7 +11566,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/APM%20Kanthal/Product%20Card.png?updatedAt=1707221848203"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -11181,7 +11652,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11206,7 +11679,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/HEATING%20ELEMENTS/Graphite%20Heating%C2%A0Elements/Product%20Card.png?updatedAt=1707221848165"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Material Composition",
@@ -11290,7 +11765,99 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
+      "feature": [
+        {
+          "id": "1",
+          "robust": "robust"
+        },
+        {
+          "id": "2",
+          "fragile": "fragile"
+        }
+      ],
+      "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/Product%20Card.png",
+      "productName": "Vacuum Fiber Board Insulation",
+      "productType": "Controllers",
+      "description": "VBCC's Vacuum Fiber Board Insulation is a cost-effective and high-temperature insulation solution designed for kilns, furnaces, and thermal process systems, offering low thermal conductivity and excellent thermal shock resistance.",
+      "variant": [],
+      "price": "₹ Enquire for Estimate",
+      "specification": [
+        {
+          "gallery": [
+            {
+              "id": "1",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/3.JPG?updatedAt=1707221871525"
+            },
+            {
+              "id": "2",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/2.JPG?updatedAt=1707221870834"
+            },
+            {
+              "id": "3",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/1.JPG?updatedAt=1707221870546 "
+            },
+            {
+              "id": "4",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/4.JPG?updatedAt=1707221871583"
+            },
+            {
+              "id": "5",
+              "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/8.%20VACUUM%20FIBER%20BOARD%20INSULATION/5.JPG?updatedAt=1707221871421"
+            }
+          ],
+          "title": [],
+          "Title1": [],
+          "overViewImg": "",
+          "overViewDescription": [
+            "VBCC Vacuum Fiber Board Insulation is a versatile and cost-effective hot face insulation solution meticulously designed for kilns, furnaces, and thermal process systems operating at temperatures up to 1800°C. Manufactured by VBCC, this insulation is crafted from a carefully controlled blend of polycrystalline Al₂O₃ fiber (PCW), high-purity alumina filler, and inorganic refractory binders.",
+            "Key Features:"
+          ],
+          "overViewList": [
+            {
+              "title": "",
+              "para": "1. Temperature Capability: Engineered to excel in high-temperature environments, VBCC Vacuum Fiber Board Insulation is suitable for applications requiring thermal stability and insulation at temperatures up to 1800°C."
+            },
+            {
+              "title": "",
+              "para": "2. Composition: The insulation features a precise blend of polycrystalline Al₂O₃ fiber (PCW), high-purity alumina filler, and inorganic refractory binders, ensuring a controlled and consistent composition for optimal thermal performance."
+            },
+            {
+              "title": "",
+              "para": "3. Low Mass and Thermal Conductivity: With low mass and low thermal conductivity, this insulation provides efficient thermal insulation, contributing to energy savings and improved operational efficiency."
+            },
+            {
+              "title": "",
+              "para": "4. Strength and Thermal Shock Resistance: The board exhibits good strength and thermal shock resistance, enhancing its durability and reliability in demanding thermal processes"
+            },
+            {
+              "title": "",
+              "para": "5. Pyrotechnic Treatment: The insulation undergoes pyrotechnic treatment for low thermally-induced shrinkage, ensuring dimensional stability under high-temperature conditions."
+            },
+            {
+              "title": "",
+              "para": "6. Tightly-Bound Consistency: VBCC Vacuum Fiber Board Insulation is characterized by a tightly-bound consistency, making it suitable for building into furnace roof and wall components with ease."
+            },
+            {
+              "title": "",
+              "para": "7. Versatile Application: The insulation's versatility allows it to be utilized in a variety of applications, including the construction of furnace roofs and walls, providing reliable thermal insulation in diverse industrial settings."
+            },
+            {
+              "title": "",
+              "para": "8. Manufactured by VBCC: As a product of VBCC, the Vacuum Fiber Board Insulation adheres to the company's commitment to quality manufacturing, ensuring consistent performance and reliability."
+            }
+          ],
+          "overViewLastPara": "Trust VBCC Vacuum Fiber Board Insulation for cost-effective, high-performance thermal insulation in industrial applications. Elevate your kilns, furnaces, and thermal process systems with this state-of-the-art insulation solution designed to meet the demanding requirements of high-temperature operations."
+        }
+      ]
+    },
+    {
+      "category": "Accessories",
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11366,7 +11933,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11407,7 +11976,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CONTROLLERS/10.%20PID%20CONTROLLERS/5.jpg?updatedAt=1707221885669"
             }
           ],
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Brand",
@@ -11511,7 +12082,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11556,7 +12129,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11648,7 +12223,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11663,7 +12240,10 @@
       "productName": "Agate Pestle and Mortar",
       "productType": "Ceramic Products",
       "description": "Precision-crafted Agate Pestle and Motors by VBCC are essential tools for laboratory grinding and mixing, featuring agate material for hardness and wear resistance, ensuring meticulous sample preparation.",
-      "variant": ["Grey Agate", "Black Agate"],
+      "variant": [
+        "Grey Agate",
+        "Black Agate"
+      ],
       "price": "₹ Enquire for Estimate",
       "specification": [
         {
@@ -11682,7 +12262,9 @@
             }
           ],
           "variantType": "Grey Agate",
-          "title": ["Agate Pestle and Mortar Grey"],
+          "title": [
+            "Agate Pestle and Mortar Grey"
+          ],
           "Title1": [
             {
               "name": "Size OD (inch)",
@@ -11722,7 +12304,9 @@
             }
           ],
           "variantType": "Black Agate",
-          "title": ["Agate Pestle and Mortar Black"],
+          "title": [
+            "Agate Pestle and Mortar Black"
+          ],
           "Title1": [
             {
               "name": "Size OD (inch)",
@@ -11746,7 +12330,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11933,7 +12519,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -11970,7 +12558,9 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/3.%20Accessories/CERAMIC%20PRODUCTS/3.%20ALUMINA%20TUBES/4.JPG?updatedAt=1707221908206"
             }
           ],
-          "title": ["99.8% Recrystallized Alumina Tubes"],
+          "title": [
+            "99.8% Recrystallized Alumina Tubes"
+          ],
           "Title1": [
             {
               "name": "OD (mm)",
@@ -11998,7 +12588,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -12138,7 +12730,9 @@
     },
     {
       "category": "Accessories",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -12193,7 +12787,9 @@
     },
     {
       "category": "Research Institutions",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -12226,7 +12822,9 @@
       ],
       "specification": [
         {
-          "title": ["General"],
+          "title": [
+            "General"
+          ],
           "Title1": [
             {
               "name": "Water chilling unit",
@@ -12294,7 +12892,9 @@
     },
     {
       "category": "Industries",
-      "sortBy": ["All"],
+      "sortBy": [
+        "All"
+      ],
       "feature": [
         {
           "id": "1",
@@ -12339,7 +12939,11 @@
               "img": "https://ik.imagekit.io/webibee/VBCC/products/2.%20Industries/3.%20TILES%20AND%20SANITARYWARE/3.%20DILATOMETER%20-%20THERMAL%20EXPANSION/6.JPG?updatedAt=1707221768952"
             }
           ],
-          "title": ["General", "Temperature", "Size"],
+          "title": [
+            "General",
+            "Temperature",
+            "Size"
+          ],
           "Title1": [
             {
               "name": "Model",
@@ -12487,7 +13091,11 @@
     },
     {
       "title": "Accessories",
-      "button": ["Ceramic Products", "Heating Elements", "Controllers"]
+      "button": [
+        "Ceramic Products",
+        "Heating Elements",
+        "Controllers"
+      ]
     }
   ],
   "relatedProducts": [

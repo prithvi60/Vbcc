@@ -50,7 +50,7 @@ const ProductFC = ({
         (val) => val.category === c
       );
       setProducts(filtered);
-      setSortValue(filtered)
+      setSortValue(filtered);
       setFilteredCategory([]);
     }
   };
@@ -82,10 +82,10 @@ const ProductFC = ({
   // console.log("url state",search)
   return (
     <section className="flex items-start gap-[60px] mt-10">
-      <div className="hidden lg:block space-y-10 lg:sticky lg:top-5">
+      <div className="hidden space-y-10 lg:block lg:sticky lg:top-5">
         <div className="block space-y-6">
-          <h4 className="uppercase text-xl text-warning font-Lora">category</h4>
-          <ul className="text-warning text-opacity-50 font-Lora text-2xl space-y-2">
+          <h4 className="text-xl uppercase text-warning font-Lora">category</h4>
+          <ul className="space-y-2 text-2xl text-opacity-50 text-warning font-Lora">
             {productsData.category.map((c, idx) => (
               <li className="w-max" key={idx}>
                 <Link
@@ -106,8 +106,8 @@ const ProductFC = ({
         </div>
         <hr className="h-0.5 w-full border-0 shrink-0 bg-warning bg-opacity-40" />
         {/* Filters */}
-        <div className="hidden lg:block space-y-6">
-          <h4 className="uppercase text-xl text-warning font-Lora">Filters</h4>
+        <div className="hidden space-y-6 lg:block">
+          <h4 className="text-xl uppercase text-warning font-Lora">Filters</h4>
           {filteredProductType.length > 0 ? (
             <CheckboxGroup
               value={selected}
@@ -125,7 +125,7 @@ const ProductFC = ({
                     size="md"
                     color="success"
                   >
-                    <h4 className="text-warning text-opacity-50 font-urbanist text-base hover:text-warning capitalize">
+                    <h4 className="text-base text-opacity-50 capitalize text-warning font-urbanist hover:text-warning">
                       {type}
                     </h4>
                   </Checkbox>
@@ -133,16 +133,16 @@ const ProductFC = ({
               ))}
             </CheckboxGroup>
           ) : (
-            <div className="font-urbanist font-medium text-base md:text-xl flex justify-center items-center text-warning">
+            <div className="flex items-center justify-center text-base font-medium font-urbanist md:text-xl text-warning">
               No Products Type
               <br />
-              Avaiable
+              Available
             </div>
           )}
         </div>
         {filteredProductType.length > 0 && (
           <div
-            className="text-base text-warning font-urbanist uppercase tracking-wide cursor-pointer"
+            className="text-base tracking-wide uppercase cursor-pointer text-warning font-urbanist"
             onClick={handleClear}
           >
             Clear Filters
@@ -161,8 +161,8 @@ const ProductFC = ({
             }
           />
         ) : (
-          <div className="font-urbanist font-medium text-base md:text-xl flex justify-center items-center text-warning h-full w-full">
-             Products Not Avaiable
+          <div className="flex items-center justify-center w-full h-full text-base font-medium font-urbanist md:text-xl text-warning">
+            Products Not Available
           </div>
         )}
       </div>
@@ -210,7 +210,7 @@ export const CategoryTab = ({ category, setProducts }) => {
           key={idx}
         >
           <Link
-          scroll={false}
+            scroll={false}
             passHref
             href={
               pathname +
