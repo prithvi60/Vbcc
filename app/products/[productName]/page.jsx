@@ -9,7 +9,7 @@ const RelatedProductsComponent = dynamic(() => import("@/components/products/spe
 
 export default function Home({params}) {
   const{productName} = params
-  const product = productsData.allProducts.find(val => val.productName === productName.replace(/-/g, " "))
+  const product = productsData.allProducts.find(val => val.productName === productName.replace(/_/g, " "))
   // console.log(product);
   return (
     <main>

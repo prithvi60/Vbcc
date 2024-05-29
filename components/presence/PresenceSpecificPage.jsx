@@ -9,7 +9,7 @@ export const PresenceSpecificPage = () => {
   const { name } = useParams();
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(2);
-  const place = name.replace(/-/g, " ");
+  const place = name.replace(/_/g, " ");
   const places = othersData.ourPresenceLocation.find(
     (val) => val.location === place || val.states.includes(place)
   );
@@ -36,8 +36,8 @@ export const PresenceSpecificPage = () => {
           className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist relative"
           id="story"
         >
-          <div className="flex flex-col items-center lg:flex-row gap-16 lg:justify-between lg:items-start">
-            <div className="w-full lg:w-1/2 space-y-8">
+          <div className="flex flex-col items-center gap-16 lg:flex-row lg:justify-between lg:items-start">
+            <div className="w-full space-y-8 lg:w-1/2">
               <div className="space-y-6 text-warning">
                 <h3 className="text-[30px] xl:text-[40px] font-Lora font-medium leading-snug">
                   Laboratory Furnace and Instrument Manufacturers in{" "}
@@ -140,7 +140,7 @@ export const PresenceSpecificPage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 h-full flex flex-col items-end gap-6">
+            <div className="flex flex-col items-end w-full h-full gap-6 lg:w-1/2">
               {othersData.presenceSpecificImg
                 .slice(0, count)
                 .map((item, idx) => (

@@ -22,7 +22,7 @@ export const OurPresenceAccordion = () => {
   return (
     <section className="py-16 px-5 md:py-20 md:px-10 xl:px-[60px] ">
       <div className="space-y-8">
-        <h2 className="font-Lora font-medium text-2xl md:text-4xl xl:text-6xl w-full text-warning">
+        <h2 className="w-full text-2xl font-medium font-Lora md:text-4xl xl:text-6xl text-warning">
           Locations
         </h2>
         <Accordion
@@ -34,25 +34,25 @@ export const OurPresenceAccordion = () => {
             <AccordionItem
               indicator={({ isOpen }) =>
                 isOpen ? (
-                  <AiOutlineMinus className="h-5 w-5 text-warning rotate-90" />
+                  <AiOutlineMinus className="w-5 h-5 rotate-90 text-warning" />
                 ) : (
-                  <AiOutlinePlus className="h-5 w-5 text-warning" />
+                  <AiOutlinePlus className="w-5 h-5 text-warning" />
                 )
               }
               aria-label={list.location}
               title={
-                <Link href={`/${list.location.replace(/\s/g, "-")}`}>
+                <Link href={`/${list.location.replace(/\s/g, "_")}`}>
                   {list.location}
                 </Link>
               }
               key={idx}
             >
-              <ul className="gap-4 w-full h-auto flex-wrap flex justify-start items-end md:flex md:justify-start md:item-center md:flex-wrap">
+              <ul className="flex flex-wrap items-end justify-start w-full h-auto gap-4 md:flex md:justify-start md:item-center md:flex-wrap">
                 {list.states.map((item, index) => (
                   <li
                     className={`min-w-fit text-base tracking-tight border border-secondary p-5 rounded-full font-urbanist px-4 py-2 group/button block bg-transparent hover:bg-warning text-center duration-700 delay-75 capitalize cursor-pointer`}
                     key={index}
-                    onClick={() => router.push(`/${item.replace(/\s/g, "-")}`)}
+                    onClick={() => router.push(`/${item.replace(/\s/g, "_")}`)}
                   >
                     <div className={`h-6 w-full overflow-hidden`}>
                       <h4

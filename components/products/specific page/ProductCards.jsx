@@ -22,12 +22,12 @@ export const ProductCards = ({ value, name }) => {
     (val) => val.productType === value && val.productName !== name
   );
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full overflow-hidden bg-secondary">
+    <section className="grid w-full grid-cols-1 gap-4 overflow-hidden md:grid-cols-2 xl:grid-cols-3 bg-secondary">
       {filteredProduct.slice(0, count).map((card, idx) => (
         <div className="block group" key={idx}>
           <Link
             passHref
-            href={`/products/${card?.productName.replace(/\s/g, "-")}`}
+            href={`/products/${card?.productName.replace(/\s/g, "_")}`}
             className="min-w-full md:min-w-[50%] md:last:min-w-full md:last:col-span-2 z-10"
           >
             {/*Card Body */}
@@ -71,8 +71,8 @@ export const ProductCards = ({ value, name }) => {
               </div>
             </div>
             {/* Card Footer */}
-            <div className="flex group-hover:bg-white group-hover:rounded-b-2xl bg-transparent transition-all duration-1000 items-center justify-between py-3">
-              <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75">
+            <div className="flex items-center justify-between py-3 transition-all duration-1000 bg-transparent group-hover:bg-white group-hover:rounded-b-2xl">
+              <div className="transition-all duration-100 delay-75 -translate-x-1000 group-hover:translate-x-3">
                 <h4 className="text-[#0D0D0D] font-urbanist">
                   {card.productName}
                 </h4>

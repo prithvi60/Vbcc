@@ -35,16 +35,16 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   };
   // console.log(ourProducts);
   return (
-    <section className="py-16 px-6 md:px-10 xl:p-16 bg-secondary font-urbanist">
-      <div className="flex flex-col justify-center items-center gap-8">
-        <div className="flex justify-between md:justify-center items-center flex-wrap w-full">
-        <h3 className="font-Lora text-3xl md:text-5xl text-warning">
+    <section className="px-6 py-16 md:px-10 xl:p-16 bg-secondary font-urbanist">
+      <div className="flex flex-col items-center justify-center gap-8">
+        <div className="flex flex-wrap items-center justify-between w-full md:justify-center">
+        <h3 className="text-3xl font-Lora md:text-5xl text-warning">
           Our Products
         </h3>
-        <Link scroll={false} href={"/products"} className="block md:hidden text-warning text-base underline underline-offset-4 decoration-warning font-urbanist mt-1">View All</Link>
+        <Link scroll={false} href={"/products"} className="block mt-1 text-base underline md:hidden text-warning underline-offset-4 decoration-warning font-urbanist">View All</Link>
         </div>
-        <div className="flex flex-col justify-center items-center w-full space-y-8">
-          <div className="flex justify-center items-center gap-1 sm:gap-3 w-full h-auto bg-secondary">
+        <div className="flex flex-col items-center justify-center w-full space-y-8">
+          <div className="flex items-center justify-center w-full h-auto gap-1 sm:gap-3 bg-secondary">
             {sortProduct.map((item, idx) => (
               <div
                 className={`text-sm sm:text-base tracking-tight border border-warning rounded-full font-Lora min-w-fit p-2.5  sm:px-4 sm:py-2 group/button block bg-transparent hover:bg-success hover:bg-opacity-20 text-center duration-700 delay-75 capitalize cursor-pointer ${
@@ -78,18 +78,18 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
               </div>
             ))}
           </div>
-          <div className="hidden md:flex flex-wrap justify-center items-center gap-4 overflow-hidden h-full">
+          <div className="flex-wrap items-center justify-center hidden h-full gap-4 overflow-hidden md:flex">
             {ourProducts.slice(0, count).map((card, id) => (
               <div
                 className="w-[340px] md:w-[300px] bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group relative"
                 key={id}
               >
-                <div className="flex justify-between items-center">
+                <div className="flex items-center justify-between">
                   <p className="text-md">in-stock</p>
                   {/* <p className="text-small">$718</p> */}
                 </div>
                 <Link
-                  href={`/products/${card.productName.replace(/\s/g, "-")}`}
+                  href={`/products/${card.productName.replace(/\s/g, "_")}`}
                   className="space-y-4"
                 >
                   <div className="relative h-[225px] w-full">
@@ -110,7 +110,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                   </p>
                   <div>
                     <h4 className="text-sm uppercase">{card.productType}</h4>
-                    <p className="font-Lora text-xl truncate">{card.productName}</p>
+                    <p className="text-xl truncate font-Lora">{card.productName}</p>
                   </div>
                 </Link>
                 <button
@@ -137,11 +137,11 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           <div className="w-full sm:w-[350px] h-full flex  sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
             {ourProducts.slice(0, count).map((card, id) => (
               <Link
-                href={`/products/${card.productName.replace(/\s/g, "-")}`}
-                className="w-full h-full bg-primary hover:bg-blue-950 rounded-none font-urbanist p-5 space-y-4 group block"
+                href={`/products/${card.productName.replace(/\s/g, "_")}`}
+                className="block w-full h-full p-5 space-y-4 rounded-none bg-primary hover:bg-blue-950 font-urbanist group"
                 key={id}
               >
-                <div className="flex justify-between items-center">
+                <div className="flex items-center justify-between">
                   <p className="text-md">in-stock</p>
                   {/* <p className="text-small">$718</p> */}
                 </div>
@@ -161,8 +161,8 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                     View
                   </p>
                   <div>
-                    <h4 className="text-xs sm:text-sm uppercase truncate w-full">{card.productType}</h4>
-                    <p className="font-Lora text-sm sm:text-xl truncate w-full">{card.productName}</p>
+                    <h4 className="w-full text-xs uppercase truncate sm:text-sm">{card.productType}</h4>
+                    <p className="w-full text-sm truncate font-Lora sm:text-xl">{card.productName}</p>
                   </div>
                 </div>
                 <button

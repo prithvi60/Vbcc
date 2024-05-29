@@ -24,14 +24,14 @@ export const ProductCard = ({ products }) => {
   useEffect(() => {}, [products, page, t]);
   
   return (
-    <section className="bg-secondary space-y-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
+    <section className="space-y-10 bg-secondary">
+      <div className="grid w-full h-full grid-cols-1 gap-4 md:grid-cols-2">
         {products.slice(0, lastIndex).map((list, idx) => (
           <div className="block group md:odd:last:col-span-2" key={idx}>
               <Link
               scroll={false}
               passHref
-              href={`/products/${list?.productName.replace(/\s/g, "-")}`}
+              href={`/products/${list?.productName.replace(/\s/g, "_")}`}
               className="min-w-full relative md:min-w-[50%] z-10"
             >
               {/*Card Body */}
@@ -44,7 +44,7 @@ export const ProductCard = ({ products }) => {
                         placement={"right"}
                         content={val.robust}
                         color="success"
-                        className="text-base font-Lora capitalize px-3 py-2"
+                        className="px-3 py-2 text-base capitalize font-Lora"
                       >
                         <div
                           className={`${
@@ -59,7 +59,7 @@ export const ProductCard = ({ products }) => {
                         placement={"right"}
                         content={val.fragile}
                         color="success"
-                        className="text-base font-Lora capitalize px-3 py-2"
+                        className="px-3 py-2 text-base capitalize font-Lora"
                       >
                       <div
                         className={`${
@@ -86,13 +86,13 @@ export const ProductCard = ({ products }) => {
                     alt="product"
                     placeholder="blur"
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-                    className="absolute object-contain lg:object-cover object-center md:odd:last:object-contain"
+                    className="absolute object-contain object-center lg:object-cover md:odd:last:object-contain"
                   />
                 </div>
               </div>
               {/* Card Footer */}
-              <div className="flex group-hover:bg-white group-hover:rounded-b-2xl bg-transparent transition-all duration-1000 items-center justify-between py-3">
-                <div className="-translate-x-1000 group-hover:translate-x-3 transition-all duration-100 delay-75 w-9/12 xl:w-full">
+              <div className="flex items-center justify-between py-3 transition-all duration-1000 bg-transparent group-hover:bg-white group-hover:rounded-b-2xl">
+                <div className="w-9/12 transition-all duration-100 delay-75 -translate-x-1000 group-hover:translate-x-3 xl:w-full">
                   <h4 className="text-[#0D0D0D] font-urbanist truncate w-4/5 xl:w-full">
                     {list?.productName}
                   </h4>
@@ -125,7 +125,7 @@ export const ProductCard = ({ products }) => {
         ))}
       </div>
       {page + 1 <= t ? (
-        <div className="flex justify-center items-center">
+        <div className="flex items-center justify-center">
           <button
             onClick={handlePage}
             className={`block rounded-full px-6 py-5 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer`}
