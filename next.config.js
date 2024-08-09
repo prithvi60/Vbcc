@@ -8,14 +8,20 @@ const nextConfig = {
         hostname: "ik.imagekit.io",
       },
     ],
-  }
-  // experimental: {
-  //   scrollRestoration: false,
-  // },
-  // experimental: {
-  //   optimizePackageImports: ["@nextui-org/system","@nextui-org/theme",'framer-motion',"@nextui-org/accordion",'tailwindcss',"@nextui-org/checkbox","@nextui-org/tooltip"],
-  //   optimizeCss: true
-  // }
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com",
+          },
+        ],
+      },
+    ];
+  },
 };
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
