@@ -3,7 +3,7 @@ import { Providers } from "./providers";
 import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Lora, Nunito, Urbanist } from "next/font/google";
+import { Lora, Montserrat, Nunito, Urbanist } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Partytown } from "@builder.io/partytown/react";
 
@@ -24,6 +24,12 @@ const urbanist = Urbanist({
   display: "swap",
   variable: "--font-urbanist",
 });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
 // ADD verifcation code and measurement id when account are created
 export const metadata = {
   title: "VBCC",
@@ -37,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${lora.variable} ${nunito.variable} ${urbanist.variable}`}
+      className={`${lora.variable} ${nunito.variable} ${urbanist.variable} ${montserrat.variable}`}
     >
       <head>
         <Partytown debug={true} forward={["dataLayer.push"]} />

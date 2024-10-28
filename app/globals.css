@@ -11,6 +11,15 @@
   }
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.cut-off {
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 15%);
+  border-radius: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;

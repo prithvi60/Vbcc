@@ -6,7 +6,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     // "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-    './node_modules/@nextui-org/theme/dist/components/(accordion|checkbox|tooltip).js'
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|checkbox|tooltip).js",
   ],
   theme: {
     screens: {
@@ -15,16 +15,17 @@ module.exports = {
       lg: "1023px",
       xl: "1439px",
       "2xl": "1536px",
-      "3xl": "3840px"
+      "3xl": "3840px",
     },
     fontFamily: {
-      Lora: ['var(--font-lora)'],
-      urbanist: ['var(--font-urbanist)'],
-      Nunito: ['var(--font-nunito)'],
+      Lora: ["var(--font-lora)"],
+      urbanist: ["var(--font-urbanist)"],
+      Nunito: ["var(--font-nunito)"],
+      Montserrat: ["var(--font-montserrat)"],
     },
     extend: {
       backgroundImage: {
-        'statistics': "url('https://ik.imagekit.io/webibee/VBCC/Statistics.png')",
+        statistics: "url('https://ik.imagekit.io/webibee/VBCC/Statistics.png')",
       },
       keyframes: {
         marquee_h: {
