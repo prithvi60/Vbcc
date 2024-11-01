@@ -4,6 +4,7 @@ import productsData from "@/libs/products.json";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
+import DefaultLayout from "@/components/DefaultLayout";
 
 const ProductHeroComponent = dynamic(
   () => import("@/components/products/ProductHero"),
@@ -21,21 +22,23 @@ export default function Home() {
   useEffect(() => {
     const filtered =
       productsData.allProducts.filter((val) => val.category === search);
-      search && setProducts(filtered);
+    search && setProducts(filtered);
     // console.log(filtered);
   }, [search, setProducts]);
   return (
     <main>
-      <ProductHeroComponent
-        search={search}
-        products={products}
-        setProducts={setProducts}
-      />
-      <ProductSectionComponent
-        search={search}
-        products={products}
-        setProducts={setProducts}
-      />
+      <DefaultLayout>
+        <ProductHeroComponent
+          search={search}
+          products={products}
+          setProducts={setProducts}
+        />
+        <ProductSectionComponent
+          search={search}
+          products={products}
+          setProducts={setProducts}
+        />
+      </DefaultLayout>
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import DefaultLayout from "@/components/DefaultLayout";
 import productsData from "@/libs/products.json";
 import dynamic from 'next/dynamic'
 
@@ -7,15 +8,17 @@ const RelatedProductsComponent = dynamic(() => import("@/components/products/spe
 
 
 
-export default function Home({params}) {
-  const{productName} = params
+export default function Home({ params }) {
+  const { productName } = params
   const product = productsData.allProducts.find(val => val.productName === productName.replace(/_/g, " "))
   // console.log(product);
   return (
     <main>
-      <ProductPageComponent product={product}/>
-      {/* <OverviewComponent product={product}/> */}
-      <RelatedProductsComponent product={product}/>
+      <DefaultLayout>
+        <ProductPageComponent product={product} />
+        {/* <OverviewComponent product={product}/> */}
+        <RelatedProductsComponent product={product} />
+      </DefaultLayout>
     </main>
   );
 }

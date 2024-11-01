@@ -8,21 +8,24 @@ import HowWeDo from '@/components/HowWeDo';
 import Newsletter from '@/components/Newsletter';
 import BlogLayout from '@/components/BlogLayout';
 import ProductLayout from '@/components/ProductLayout';
+import DefaultLayout from '@/components/DefaultLayout';
 
 
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <Clients/>
-      <Explore/>
-      <ProductLayout/>
-      <Testimonials/>
-      <WCU/>
-      <Statistics/>
-      <HowWeDo/>
-      {/* <BlogLayout/> */}
-      <Newsletter/>
+      <DefaultLayout >
+        <Hero />
+        <Clients />
+        <Explore />
+        <ProductLayout />
+        <Testimonials />
+        <WCU />
+        <Statistics />
+        <HowWeDo />
+        {/* <BlogLayout/> */}
+        <Newsletter />
+      </DefaultLayout>
     </main>
   )
 }

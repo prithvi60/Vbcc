@@ -1,4 +1,5 @@
 import { AllPageHero } from "@/components/AllPageHero";
+import DefaultLayout from "@/components/DefaultLayout";
 import { OurTeam } from "@/components/about/OurTeam";
 import { Story } from "@/components/about/Story";
 import { Vison } from "@/components/about/Vison";
@@ -12,10 +13,12 @@ const obj = {
 export default function Home() {
   return (
     <main>
-      <AllPageHero title={obj.title} desc={obj.desc} ImgSrc={obj.ImgSrc} />
-      <Story/>
-      <Vison/>
-      <OurTeam/>
+      <DefaultLayout>
+        <AllPageHero title={obj.title} desc={obj.desc} ImgSrc={obj.ImgSrc} />
+        <Story />
+        <Vison />
+        <OurTeam />
+      </DefaultLayout>
     </main>
   );
 }

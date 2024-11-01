@@ -15,10 +15,10 @@
   display: none;
 }
 
-.cut-off {
+/* .cut-off {
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 15%);
   border-radius: 25px;
-}
+} */
 
 * {
   margin: 0;
@@ -56,16 +56,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-/* React Slider custom */
-.slick-vertical,
-.slick-slide,
-.slick-slider {
-  border: none !important;
-  gap: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 .custom::-webkit-scrollbar {
   width: 0px;
   display: none;
@@ -83,6 +73,15 @@ body::-webkit-scrollbar-thumb {
 
 /* custom react slick */
 
-.slick-slide {
-  margin: 0 50px !important;
+.slick-slide > div {
+  margin: 0 20px !important;
+}
+
+.hero-mask {
+  mask-image: url("/heromask.png");
+  -webkit-mask-image: url("/heromask.png");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }

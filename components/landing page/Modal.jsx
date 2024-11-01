@@ -2,16 +2,17 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { FiAlertCircle } from "react-icons/fi";
 import { useState } from "react";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export const Modal = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="grid px-4 py-64 bg-slate-900 place-content-center">
-            <button
-                onClick={() => setIsOpen(true)}
-                className="px-4 py-2 font-medium text-white transition-opacity rounded bg-gradient-to-r from-violet-600 to-indigo-600 hover:opacity-90"
-            >
-                Open Modal
+        <div className="grid px-4 py-6 place-content-center">
+            <button onClick={() => setIsOpen(true)} className="px-6 font-semibold py-2 bg-info text-white w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg flex items-center text-sm md:text-base gap-3 capitalize">
+                Download Brochure
+                <span>
+                    <MdOutlineFileDownload className="text-xl" />
+                </span>
             </button>
             <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
@@ -27,7 +28,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     onClick={() => setIsOpen(false)}
-                    className="fixed inset-0 z-50 grid p-8 overflow-y-scroll cursor-pointer bg-slate-900/20 backdrop-blur place-items-center font-Montserrat"
+                    className="fixed inset-0 z-50 grid p-8 overflow-y-scroll cursor-pointer bg-blue-900/50 backdrop-blur place-items-center font-Montserrat"
                 >
                     <motion.div
                         initial={{ scale: 0, rotate: "12.5deg" }}

@@ -6,6 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Lora, Montserrat, Nunito, Urbanist } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Partytown } from "@builder.io/partytown/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -64,12 +66,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Providers>
-          <Banner />
-          <NavBar />
-          {children}
-          <Footer />
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

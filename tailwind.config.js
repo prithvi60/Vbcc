@@ -24,6 +24,9 @@ module.exports = {
       Montserrat: ["var(--font-montserrat)"],
     },
     extend: {
+      backdropColor: {
+        "custom-blue": "#293271",
+      },
       backgroundImage: {
         statistics: "url('https://ik.imagekit.io/webibee/VBCC/Statistics.png')",
       },
