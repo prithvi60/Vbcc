@@ -85,3 +85,13 @@ body::-webkit-scrollbar-thumb {
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
+.card-mask {
+  mask-image: url("/cardmask.png");
+  -webkit-mask-image: url("/cardmask.png");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 60%;
+  height: 35%;
+}

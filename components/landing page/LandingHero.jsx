@@ -7,7 +7,7 @@ const LandingHero = () => {
     return (
         <section className="relative w-full h-full text-white mb-7">
             <div className="relative w-full h-full overflow-hidden rounded-2xl">
-                <div className="relative w-full h-screen cut-off">
+                <div className="relative w-full h-screen hero-mask">
                     <Image
                         alt="background image"
                         src="/herobg.jpg"

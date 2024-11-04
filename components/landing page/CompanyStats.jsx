@@ -4,9 +4,9 @@ import { useEffect, useRef } from "react";
 
 const CompanyStats = () => {
     return (
-        <div className="absolute right-0 z-10 w-full px-6 py-8 mx-auto bg-center bg-no-repeat bg-cover -bottom-32 sm:-bottom-20 md:max-w-6xl md:px-12 xl:px-14 md:py-16 bg-primary md:-bottom-36 lg:-bottom-32 xl:-bottom-24 border-3 border-secondary" style={{ backgroundImage: "url('/counterBg.png')" }}>
-            <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
-            <div className="relative z-30 flex flex-row flex-wrap items-center justify-center gap-3 md:gap-7 xl:gap-9 md:flex-nowrap font-Montserrat">
+        <div className="card-mask  pl-[20vw] absolute right-0 z-10 w-full px-6 py-8 mx-auto  -bottom-32 sm:-bottom-20  md:px-12 xl:px-14 md:py-16 bg-primary md:-bottom-36 lg:-bottom-32 xl:-bottom-24 border-3 border-secondary" style={{ backgroundImage: "url('/counterBg.png')" }}>
+            <div className=" absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
+            <div className="relative z-30 flex flex-row flex-wrap items-center justify-center gap-3 md:gap-7 xl:gap-9 md:flex-nowrap font-Montserrat h-full">
                 <Stat
                     num={500}
                     suffix="+"
