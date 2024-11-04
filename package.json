@@ -22,6 +22,7 @@
     "framer-motion": "^10.17.12",
     "fslightbox-react": "^1.7.6",
     "next": "14.0.3",
+    "nodemailer": "^6.9.16",
     "react": "^18",
     "react-countup": "^6.5.0",
     "react-dom": "^18",

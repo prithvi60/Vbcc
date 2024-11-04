@@ -12,26 +12,26 @@ import {
 const FooterLanding = () => {
     return (
         <footer className="flex flex-col w-full h-full mt-8 text-white md:flex-row border-t-3 border-info font-Montserrat">
-            <div className="relative w-full h-full px-8 py-4 md:w-1/5 ">
-                <div className="relative w-full h-40 overflow-hidden">
+            <div className="relative hidden w-full h-full px-8 py-4 md:block md:w-1/5">
+                <div className="relative w-32 h-32 mx-auto overflow-hidden lg:w-40 xl:w-56">
                     <Image
-                        alt="logo"
-                        src={"/vbcc-logo.png"}
+                        alt="VBCC Logo"
+                        src="/VBCC - Logo.svg"
                         fill
-                        className="object-contain object-center"
+                        className="object-cover object-center"
                     />
                 </div>
-                <div className="absolute top-0 left-0 w-full h-2">
+                {/* <div className="absolute top-0 left-0 w-full h-2">
                     <Image
                         alt="svg"
                         src={"/svg 1.svg"}
                         fill
                         className="object-contain object-center"
                     />
-                </div>
+                </div> */}
             </div>
-            <div className="w-full py-5 px-8 md:w-4/5 bg-primary flex flex-col md:flex-row  justify-between items-start flex-wrap gap-3.5 md:gap-7 xl:gap-4">
-                <div className="block space-y-5 lg:space-y-7 xl:space-y-10">
+            <div className="w-full py-5 px-8 md:w-4/5 bg-primary flex flex-col md:flex-row justify-between items-start flex-wrap gap-3.5 md:gap-7 xl:gap-4">
+                <div className="flex items-center justify-between w-full md:w-auto md:block lg:space-y-7 xl:space-y-10">
                     <h4 className="text-xl font-medium tracking-wider text-center">
                         FOLLOW US
                     </h4>
@@ -75,23 +75,26 @@ const FooterLanding = () => {
                     </div>
                     <div className="flex  gap-2.5 md:gap-5 w-full xl:w-max">
                         <FaLocationDot className="text-lg text-white md:text-2xl" />
-                        <p className="w-full text-sm xl:w-3/5">
-                            Lorem Ipsum is Placeholder Text Commonly Used in The Graphic,Print
-                            And
+                        <p className="w-full text-sm !leading-6 xl:w-3/5">
+                            VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD
+                            <br />
+                            207, 3rd Link Road, Nehru Nagar Industrial Estate, Kottivakkam,
+                            Chennai, Tamil Nadu 600041
                         </p>
                     </div>
                 </div>
-                {/* <div className="w-full h-full"> */}
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.913394658277!2d80.24421957436513!3d12.977390887338512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d87b0051cd9%3A0xa24db108aa4efbaf!2sVB%20Ceramics%20Consultants!5e0!3m2!1sen!2sin!4v1730176492878!5m2!1sen!2sin"
-                    width="100%"
-                    height="100%"
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full h-64 md:w-64"
-                ></iframe>
-                {/* </div> */}
+                <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 md:w-2/5">
+                    <h4 className="text-xl font-medium tracking-wider uppercase">Our Location</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248852.35523221854!2d80.20816985922144!3d12.951488698204182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de4f794ee29%3A0x8fd9b1da364d7215!2sVBCC%20High%20Temperature%20Instruments%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1730722548513!5m2!1sen!2sin"
+                        width="100%"
+                        height="100%"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="w-full h-64 md:w-64"
+                    ></iframe>
+                </div>
             </div>
         </footer>
     );

@@ -11,10 +11,8 @@ const Page = () => {
   return (
     <section>
       <LandingHero />
-      {/* <CompanyStats /> */}
       <ExploreProduction />
       <TechnicalSupport />
-      <Modal />
       <TestimonialLanding />
       <FooterLanding />
     </section>

@@ -58,7 +58,7 @@ const TestimonialLanding = () => {
                                     className="object-contain object-center"
                                 />
                             </div>
-                            <div className="w-full h-full p-5 md:p-6">
+                            <div className="w-full p-5 md:p-6">
                                 <div className="flex items-center justify-center w-full h-56">
                                     <IoMdQuote className="text-8xl md:text-9xl text-info" />
                                 </div>

@@ -1,7 +1,11 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
-import { MdKeyboardDoubleArrowRight, MdOutlineFileDownload, MdRemoveRedEye } from "react-icons/md";
+import {
+    MdKeyboardDoubleArrowRight,
+    MdOutlineFileDownload,
+    MdRemoveRedEye,
+} from "react-icons/md";
 import Slider from "react-slick";
 import { Modal } from "./Modal";
 
@@ -28,7 +32,7 @@ const ExploreProduction = () => {
         ],
     };
     return (
-        <section className="relative w-full h-full px-6 pb-8 mb-20 space-y-5 text-4xl text-white md:space-y-10 font-Montserrat bg-primary md:px-12 xl:px-14 pt-36 md:pt-48 md:pb-8">
+        <section className="relative w-full h-full px-6 pb-8 mb-40 space-y-5 text-4xl text-white md:space-y-10 font-Montserrat bg-primary md:px-12 xl:px-14 pt-36 md:pt-48 md:pb-8">
             <div className="flex flex-col items-center justify-between gap-10 md:gap-0 md:flex-row">
                 <div className="w-full space-y-3 md:w-3/4 md:space-y-8">
                     <h2 className="text-[28px] font-bold tracking-wider !leading-10 md:text-[36px] lg:text-[44px] xl:text-[52px] w-full md:w-3/5">
@@ -45,12 +49,7 @@ const ExploreProduction = () => {
                         technology and a commitment to quality, Denkiro Dental supports
                         dental professionals in achieving the best outcomes.
                     </p>
-                    <button className="px-6 font-semibold py-2 bg-info text-white w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg flex items-center text-sm md:text-base gap-3 capitalize">
-                        Enquire now
-                        <span>
-                            <MdKeyboardDoubleArrowRight className="text-xl" />
-                        </span>
-                    </button>
+                    <Modal styles={"bg-info text-white"} title={"Enquire now"} />
                 </div>
                 <div className="relative w-full h-[380px] md:w-[280px] md:h-[420px]">
                     <Image
@@ -71,42 +70,23 @@ const ExploreProduction = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden md:grid md:grid-cols-4 place-content-center w-full h-[420px]">
-                {productLists.map((list, idx) => (
-                    <div className="relative w-full group" key={idx}>
-                        <div className="relative w-32 h-32 mx-auto transition-all duration-500 ease-linear xl:w-44 xl:h-44">
-                            {/* group-hover:w-full group-hover:h-56 group-hover:sm:w-44 */}
-                            <Image
-                                alt="image"
-                                fill
-                                src={list.img}
-                                className="z-20 object-contain object-center"
-                            />
-                            <div className="absolute top-0 z-10 left-4 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-24 xl:size-36 transition-all duration-500 ease-linear"></div>
-                            {/* <div className="group-hover:absolute group-hover:top-0 z-10 left-16 sm:left-0 xl:-left-2.5 hidden group-hover:flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] transition-all duration-500 ease-linear bg-opacity-80 size-40 xl:size-44"></div> */}
-                        </div>
-                        <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[18px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
-                            {list.title}
-                        </h4>
-                    </div>
-                ))}
+            <div className="grid w-full h-full grid-cols-2 py-10 md:grid-cols-4 place-content-center">
+                <ProductsComponent />
             </div>
-            <div className="md:hidden slider-container">
+            <div className="hidden h-full slider-container">
                 <Slider {...settings}>
                     {productLists.map((list, idx) => (
-                        <div className="relative w-full group" key={idx}>
-                            <div className="relative w-32 h-32 mx-auto transition-all duration-500 ease-linear xl:w-44 xl:h-44">
-                                {/* group-hover:w-full group-hover:h-56 group-hover:sm:w-44 */}
+                        <div className="relative w-full space-y-8 group" key={idx}>
+                            <div className="relative mx-auto transition-all duration-500 ease-linear transform size-28 group-hover:scale-150">
                                 <Image
                                     alt="image"
                                     fill
                                     src={list.img}
                                     className="z-20 object-contain object-center"
                                 />
-                                <div className="absolute top-0 z-10 left-4 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-24 xl:size-36 transition-all duration-500 ease-linear"></div>
-                                {/* <div className="group-hover:absolute group-hover:top-0 z-10 left-16 sm:left-0 xl:-left-2.5 hidden group-hover:flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] transition-all duration-500 ease-linear bg-opacity-80 size-40 xl:size-44"></div> */}
+                                <div className="absolute top-0 z-10 left-1.5 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-24 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-info"></div>
                             </div>
-                            <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[18px] xl:text-[24px] !leading-tight tracking-wider w-full">
+                            <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
                                 {list.title}
                             </h4>
                         </div>
@@ -114,19 +94,8 @@ const ExploreProduction = () => {
                 </Slider>
             </div>
             <div className="flex items-center justify-center gap-4 md:gap-8">
-                {/* <button onClick={() => setIsOpen(true)} className="px-6 font-semibold py-2 bg-info text-white w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg flex items-center text-sm md:text-base gap-3 capitalize">
-                    Download Brochure
-                    <span>
-                        <MdOutlineFileDownload className="text-xl" />
-                    </span>
-                </button> */}
-                <Modal />
-                <button className="px-6 font-semibold py-2 bg-white text-primary w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg flex items-center text-sm md:text-base gap-3 capitalize">
-                    View Online
-                    <span>
-                        <MdRemoveRedEye className="text-xl" />
-                    </span>
-                </button>
+                <Modal styles={"bg-info text-white"} title={"download now"} type={"download"} />
+                <Modal styles={"bg-white text-primary"} title={"View Online"} type={"view"} />
             </div>
         </section>
     );
@@ -140,3 +109,32 @@ const productLists = [
     { img: "/sample 3.png", title: "Zirconia Sintering Furnace" },
     { img: "/sample 4.png", title: "Vacuum Pressing Furnace" },
 ];
+
+const ProductsComponent = () => {
+    return (
+        <>
+            {productLists.map((list, idx) => (
+                <div className="relative w-full space-y-8 group font-Montserrat" key={idx}>
+                    <div className="relative mx-auto transition-all duration-500 ease-linear transform w-36 h-36 group-hover:scale-150 xl:w-52 xl:h-52">
+                        <Image
+                            alt="image"
+                            fill
+                            src={list.img}
+                            className="z-20 object-contain object-center"
+                        />
+                        <div className="absolute top-0 z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-32 xl:size-48 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-info"></div>
+                    </div>
+                    <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
+                        {list.title}
+                    </h4>
+                    <div className="absolute hidden group-hover:block -bottom-56 lg:-bottom-60 -right-10 lg:-right-6">
+                        <h4 className="flex flex-col items-center justify-center p-2 text-xs font-semibold tracking-wide transition-all duration-500 ease-linear transform bg-white border-2 rounded-xl lg:text-base xl:text-xl w-max text-primary border-info"><span>300</span> Energy Efficiency</h4>
+                    </div>
+                    <div className="absolute hidden group-hover:block -left-6 lg:left-0 -bottom-72 lg:-bottom-80">
+                        <h4 className="flex flex-col items-center justify-center p-2 text-xs font-semibold tracking-wide bg-white border-2 lg:text-base xl:text-xl w-max text-primary rounded-xl border-info"><span>900°c</span> Temperature</h4>
+                    </div>
+                </div>
+            ))}
+        </>
+    );
+};
