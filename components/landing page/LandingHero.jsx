@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { FaLinkedinIn, FaSquareWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { Modal } from "./Modal";
+import { ResponsiveSVG } from "@/svg";
 const LandingHero = () => {
     return (
         <section className="relative w-full h-full text-white mb-7">
@@ -34,6 +35,12 @@ const LandingHero = () => {
                     <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 z-10"></div>
                 </div>
                 <div className="absolute z-20 w-[80%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 font-Montserrat ">
+                    <div className="absolute left-0 hidden w-full md:block -top-20">
+                        <ResponsiveSVG />
+                    </div>
+                    <div className="absolute left-0 block w-full h-auto md:hidden -top-4">
+                        <ResponsiveSVG />
+                    </div>
                     <div className="flex flex-col items-center w-full h-full gap-10 md:flex-row">
                         <div className="flex items-center gap-5 md:gap-16 xl:gap-20">
                             <ul className="flex flex-col items-center justify-center gap-3">

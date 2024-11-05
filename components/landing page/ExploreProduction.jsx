@@ -51,7 +51,7 @@ const ExploreProduction = () => {
                     </p>
                     <Modal styles={"bg-info text-white"} title={"Enquire now"} />
                 </div>
-                <div className="relative w-full h-[380px] md:w-[280px] md:h-[420px]">
+                <div className="relative w-full h-[380px] md:w-[280px] md:h-[420px] before:absolute before:border-2 before:border-info before:top-3 before:-left-3 before:md:h-[420px] before:w-full before:z-10 before:h-[380px]">
                     <Image
                         src={"/explore 1.jpg"}
                         fill
