@@ -230,8 +230,8 @@ const SpringModal = ({ isOpen, setIsOpen, type }) => {
                                 </svg> */}
                 <form
                   //   onSubmit={handleSubmit}
-                //   action="https://public.herotofu.com/v1/8e9daf90-9b5c-11ef-a13f-b56169d4ce0e"
-                //   method="post"
+                  action="https://public.herotofu.com/v1/8e9daf90-9b5c-11ef-a13f-b56169d4ce0e"
+                  method="post"
                   accept-charset="UTF-8"
                   className="space-y-2 text-primary md:space-y-4 py-7 md:p-7"
                   onSubmit={() => {
