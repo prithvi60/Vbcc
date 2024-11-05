@@ -64,6 +64,14 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+                <script type="text/javascript">
+            {`
+              _linkedin_partner_id = "YOUR_PARTNER_ID"; // Replace with your partner ID
+              window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+              window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+            `}
+          </script>
+          <script type="text/javascript" src="//snap.licdn.com/li.lms-analytics/insights.min.js" async />
       </head>
       <body>
         <Providers>{children}</Providers>

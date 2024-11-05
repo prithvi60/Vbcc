@@ -151,6 +151,13 @@ const SpringModal = ({ isOpen, setIsOpen, type }) => {
     link.click(); // Programmatically trigger click to start download
     document.body.removeChild(link); // Clean up by removing the link
   };
+  const trackConversion = (conversionId) => {
+    if (window.lintrk) {
+      window.lintrk('track', { conversion_id: conversionId });
+    } else {
+      console.error("LinkedIn tracking is not loaded.");
+    }
+  };
   return (
     <AnimatePresence>
       {isOpen && (
@@ -223,16 +230,16 @@ const SpringModal = ({ isOpen, setIsOpen, type }) => {
                                 </svg> */}
                 <form
                   //   onSubmit={handleSubmit}
-                  action="https://public.herotofu.com/v1/8e9daf90-9b5c-11ef-a13f-b56169d4ce0e"
-                  method="post"
+                //   action="https://public.herotofu.com/v1/8e9daf90-9b5c-11ef-a13f-b56169d4ce0e"
+                //   method="post"
                   accept-charset="UTF-8"
                   className="space-y-2 text-primary md:space-y-4 py-7 md:p-7"
                   onSubmit={() => {
                     // console.log("submitted");
                     type !== "enquire" && handleDownload();
                     type === "enquire"
-                      ? window.lintrk("track", { conversion_id: 18131396 })
-                      : window.lintrk("track", { conversion_id: 18131380 });
+                      ? trackConversion(18131396)
+                      : trackConversion(18131380);
 
                   }}
                 >
