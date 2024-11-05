@@ -74,7 +74,7 @@ const LandingHero = () => {
                 </li>
                 <li>
                   <Link
-                    href={"www.youtube.com/@vbcc_hti"}
+                    href={"https://www.youtube.com/@vbcc_hti"}
                     className="hover:animate-pulse "
                     target="blank"
                   >

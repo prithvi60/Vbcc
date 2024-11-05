@@ -52,7 +52,7 @@ const FooterLanding = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"www.youtube.com/@vbcc_hti"} className="hover:animate-pulse "target="blank">
+                  <Link href={"https://www.youtube.com/@vbcc_hti"} className="hover:animate-pulse "target="blank">
                     <FaYoutube className="text-lg text-white md:text-2xl" />
                   </Link>
                 </li>
