@@ -106,8 +106,8 @@ const TestimonialList = [
     {
         icon: "/icon 3.svg",
         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
-        title: "VIT University",
-        subtle: "Centre of Nano technology research",
+        title: "ISRO",
+        subtle: "Department of Space",
     },
     {
         icon: "/icon 1.svg",
@@ -124,8 +124,8 @@ const TestimonialList = [
     {
         icon: "/icon 3.svg",
         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
-        title: "VIT University",
-        subtle: "Centre of Nano technology research",
+        title: "ISRO",
+        subtle: "Department of Space",
     },
 ];
 

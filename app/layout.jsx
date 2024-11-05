@@ -34,10 +34,10 @@ const montserrat = Montserrat({
 });
 // ADD verifcation code and measurement id when account are created
 export const metadata = {
-  title: "VBCC",
-  description: "Vb Ceramic Consultants",
+  title: "VBCC | THE TAILOR MADE",
+  description: "VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD",
   verification: {
-    google: "YOUR_GOOGLE_SITE_VERIFICATION_CODE",
+    google: "G-7T9F0FKPQM",
   },
 };
 
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
         <Partytown debug={true} forward={["dataLayer.push"]} />
         <script
           type="text/partytown"
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-7T9F0FKPQM"
         />
         <script
           type="text/partytown"
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
+              gtag('config', 'G-7T9F0FKPQM');
             `,
           }}
         />

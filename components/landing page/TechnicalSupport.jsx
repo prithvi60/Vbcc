@@ -24,7 +24,7 @@ const TechnicalSupport = () => {
                         How You WIN with <span className="text-info">VBCC ?</span>
                     </h2>
                     <div className="flex w-full md:justify-end">
-                        <Modal styles={"bg-info text-white"} title={"Enquire now"} />
+                        <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"}  />
                     </div>
                 </div>
             </div>

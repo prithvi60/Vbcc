@@ -15,7 +15,7 @@ const CompanyStats = () => {
                 <div className="relative z-30 flex flex-row flex-wrap items-center justify-center h-full gap-3 md:gap-7 xl:gap-9 md:flex-nowrap font-Montserrat">
                     <Stat num={500} suffix="+" subheading="Satisfied Clientele" />
                     <div className="bg-white h-12 w-[1px]" />
-                    <Stat num={15000} decimals={1} suffix="+" subheading="Instruments Called" />
+                    <Stat num={15000}  suffix="+" subheading="Instruments Installed" />
                     <div className="hidden sm:block bg-white h-12 w-[1px]" />
                     <Stat num={22} suffix="+" subheading="Years of Expertise" />
                 </div>
