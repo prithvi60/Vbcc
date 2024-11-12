@@ -11,6 +11,12 @@
   }
 }
 
+@layer utilities {
+  .padding {
+    @apply px-5 py-10 md:py-16 md:px-10 xl:p-16;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

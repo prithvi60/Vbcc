@@ -21,14 +21,14 @@ const FooterLanding = () => {
                         className="object-cover object-center"
                     />
                 </div>
-                {/* <div className="absolute top-0 left-0 w-full h-2">
+                <div className="absolute top-0 left-0 w-full h-2">
                     <Image
                         alt="svg"
                         src={"/svg 1.svg"}
                         fill
                         className="object-contain object-center"
                     />
-                </div> */}
+                </div>
             </div>
             <div className="w-full py-5 px-8 md:w-4/5 bg-primary flex flex-col md:flex-row justify-between items-start flex-wrap gap-3.5 md:gap-7 xl:gap-4">
                 <div className="flex items-center justify-between w-full md:w-auto md:block lg:space-y-7 xl:space-y-10">

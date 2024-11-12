@@ -13,6 +13,7 @@ import {
 import { FaLinkedinIn, FaSquareWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { Modal } from "./Modal";
 import { ResponsiveSVG } from "@/svg";
+import { HeroBox, HeroBoxBottom } from "@/svg_components/LandingHeroBox";
 const LandingHero = () => {
     return (
         <section className="relative w-full h-full text-white mb-7">
@@ -35,41 +36,38 @@ const LandingHero = () => {
                     <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 z-10"></div>
                 </div>
                 <div className="absolute z-20 w-[80%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 font-Montserrat ">
-                    <div className="absolute left-0 hidden w-full md:block -top-20">
-                        <ResponsiveSVG />
-                    </div>
-                    <div className="absolute left-0 block w-full h-auto md:hidden -top-4">
-                        <ResponsiveSVG />
-                    </div>
                     <div className="flex flex-col items-center w-full h-full gap-10 md:flex-row">
-                        <div className="flex items-center gap-5 md:gap-16 xl:gap-20">
-                            <ul className="flex flex-col items-center justify-center gap-3">
+                        <div className="relative flex items-center gap-5 md:gap-16 xl:gap-20">
+                            <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                                 <li>
                                     <Link href={""} className="hover:animate-pulse ">
-                                        <FaLinkedinIn className="text-lg text-white md:text-2xl" />
+                                        <FaLinkedinIn className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href={""} className="hover:animate-pulse ">
-                                        <FaFacebookF className="text-lg text-white md:text-2xl" />
+                                        <FaFacebookF className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href={""} className="hover:animate-pulse ">
-                                        <FaInstagram className="text-lg text-white md:text-2xl" />
+                                        <FaInstagram className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href={""} className="hover:animate-pulse ">
-                                        <FaYoutube className="text-lg text-white md:text-2xl" />
+                                        <FaYoutube className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href={""} className="hover:animate-pulse ">
-                                        <FaXTwitter className="text-lg text-white md:text-2xl" />
+                                        <FaXTwitter className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                             </ul>
+                            <div className="absolute block w-full left-2 -top-20 md:-top-24 2xl:-top-40">
+                                <HeroBox className="h-28 md:h-52 2xl:h-64 fill-none" />
+                            </div>
                             <div className="w-full md:w-4/5">
                                 <div className="w-full space-y-2 md:space-y-4 md:w-4/5 xl:w-4/5">
                                     <p className="w-full text-xs font-medium leading-tight md:text-sm xl:text-base">
@@ -81,6 +79,9 @@ const LandingHero = () => {
                                     </h2>
                                     <Modal styles={"bg-info text-white !rounded-full !z-[999]"} title={"Products"} />
                                 </div>
+                            </div>
+                            <div className="absolute z-10 block w-full left-2 -bottom-14 md:-bottom-28 2xl:-bottom-48">
+                                <HeroBoxBottom className="h-28 md:h-52 2xl:h-64 fill-none" />
                             </div>
                         </div>
                         <div className="relative w-full md:w-1/2 xl:w-2/5">
