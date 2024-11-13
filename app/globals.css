@@ -21,11 +21,6 @@
   display: none;
 }
 
-/* .cut-off {
-  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 15%);
-  border-radius: 25px;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +93,40 @@ body::-webkit-scrollbar-thumb {
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  width: 100%;
+}
+
+.card-mask_2 {
+  mask-image: url("/cardmask.png");
+  -webkit-mask-image: url("/cardmask.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.rtl_card-mask {
+  mask-image: url("/rtl-mask.png");
+  -webkit-mask-image: url("/rtl-mask.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.explore_card-mask {
+  mask-image: url("/mask-image-2.png");
+  -webkit-mask-image: url("/mask-image-2.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   /* width: 100%; */
+  height: 100%;
 }
 
 /* Breakpoints */

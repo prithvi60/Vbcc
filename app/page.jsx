@@ -9,6 +9,7 @@ import Newsletter from '@/components/Newsletter';
 import BlogLayout from '@/components/BlogLayout';
 import ProductLayout from '@/components/ProductLayout';
 import DefaultLayout from '@/components/DefaultLayout';
+import OurTeam from '@/components/OurTeam';
 
 
 export default function Home() {
@@ -18,12 +19,12 @@ export default function Home() {
         <Hero />
         <Clients />
         <Explore />
+        {/* <WCU /> */}
+        {/* <Statistics /> */}
+        <HowWeDo />
         <ProductLayout />
         <Testimonials />
-        <WCU />
-        <Statistics />
-        <HowWeDo />
-        {/* <BlogLayout/> */}
+        <OurTeam />
         <Newsletter />
       </DefaultLayout>
     </main>

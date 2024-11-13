@@ -4,7 +4,7 @@ export const ResponsiveSVG = () => (
         preserveAspectRatio="xMidYMid meet"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-[201px]"
+        className="w-full h-[201px] pointer-events-none"
     >
         <path
             d="M985 5H6.50245C5.39788 5 4.50244 5.89543 4.50244 7V209.5"

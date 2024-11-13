@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaInstagram, FaPhone, FaRegEnvelope, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaRegEnvelope, FaYoutube } from "react-icons/fa";
 import {
     FaLinkedin,
     FaLocationDot,
@@ -36,38 +36,38 @@ const FooterLanding = () => {
                         FOLLOW US
                     </h4>
                     <ul className="flex items-center justify-center gap-3">
-                        <li>
-                            <Link href={""} className="hover:animate-pulse ">
-                                <FaLinkedin className="text-lg text-white md:text-2xl" />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={""} className="hover:animate-pulse ">
-                                <FaSquareWhatsapp className="text-lg text-white md:text-2xl" />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={""} className="hover:animate-pulse ">
-                                <FaXTwitter className="text-lg text-white md:text-2xl" />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={""} className="hover:animate-pulse ">
-                                <FaInstagram className="text-lg text-white md:text-2xl" />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href={""} className="hover:animate-pulse ">
-                                <FaYoutube className="text-lg text-white md:text-2xl" />
-                            </Link>
-                        </li>
+                    <li>
+                  <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse " target="blank">
+                    <FaLinkedinIn className="text-lg text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse "target="blank">
+                    <FaFacebookF className="text-lg text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse "target="blank">
+                    <FaInstagram className="text-lg text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"https://www.youtube.com/@vbcc_hti"} className="hover:animate-pulse "target="blank">
+                    <FaYoutube className="text-lg text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse "target="blank">
+                    <FaXTwitter className="text-lg text-white md:text-2xl" />
+                  </Link>
+                </li>
                     </ul>
                 </div>
                 <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 md:w-2/5">
                     <h4 className="text-xl font-medium tracking-wider">CONTACT INFO</h4>
                     <div className="flex gap-2.5 md:gap-5 w-full md:w-max">
                         <FaPhone className="text-lg text-white md:text-2xl" />
-                        <p className="text-sm tracking-wide">98735862783</p>
+                        <p className="text-sm tracking-wide">9600478315</p>
                     </div>
                     <div className="flex gap-2.5 md:gap-5 w-full md:w-max">
                         <FaRegEnvelope className="text-lg text-white md:text-2xl" />
