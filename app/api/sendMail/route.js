@@ -22,57 +22,54 @@ const defaultPdfPath = path.join(
 const defaultPdfContent = fs.readFileSync(defaultPdfPath);
 
 export async function POST(req) {
-  const {
-    firstName,
-    lastName,
-    userEmail,
-    phone,
-    clientEmail,
-    subject,
-    message,
-    attachments,
-    type,
-  } = await req.json();
+  const { firstName, lastName, userEmail, phone, message } = await req.json();
 
-  // !userEmail || !clientEmail
-  if (!userEmail || !clientEmail) {
+  // !clientEmail
+  if (!userEmail && !process.env.EMAIL_ID) {
     return NextResponse.json(
       { success: false, message: "Recipient email(s) missing" },
       { status: 400 }
     );
   }
 
-  // // Email options for the user (acknowledgment)
-  // const userMailOptions = {
-  //   from: `DAGA & DAGA - "${clientEmail}" <${"support@webibee.com"}>`,
-  //   to: userEmail,
-  //   subject: "Acknowledgment: We received your Application",
-  //   html: `<p>Dear Applicant,</p>
-  //          <p>Greetings from Daga and Daga!</p>
-  //          <p>We appreciate your interest in joining our team and acknowledge receipt of your application.</p>
-  //          <p>Your application will be shared with the relevant department for review. If your profile aligns with any suitable openings, we will contact you to discuss the opportunity further. Thank you once again for considering a career with us.</p>
-  //          <p>Best regards,<br>Daga and Daga</p>
-  //          <p>Thanks & Regards,<br>Jayesh Kumar A.<br>Advocate<br>+91- 9551028280</p>`,
-  // };
-
   // Email options for the client (all user data and attachments)
   const clientMailOptions = {
-    from: `VBCC "${clientEmail}" <${"support@webibee.com"}>`,
-    to: userEmail,
-    subject: subject,
+    from: `"${userEmail}" <${"support@webibee.com"}>`,
+    to: process.env.EMAIL_ID,
+    subject: "New Customer Form Submitted",
     html: `
             <div className="block space-y-10 font-merriWeather">
             <h4 className="!text-lg !capitalize">Hi,</h4>
-            <p>You have a new form submission</p>
+            <p>You have a new Message from VBCC Dental</p>
+            <p>Choose VBCC for Your Dental Furnace Needs</p>
             <p className="!flex !items-center !justify-center !gap-3">
             <span className="!capitalize !font-bold">Name:</span> 
             ${firstName} ${lastName}
+            <p>Email: ${userEmail}</p>
+            <p>Phone Number: ${phone}</p>
+            <p>Message: ${message}</p>
             </p>
             <br/>
             <br/>
             <p>Thanks</p>
             </div> 
             `,
+    bcc: [""],
+  };
+
+  const userMailOptions = {
+    from: `VBCC "${process.env.EMAIL_ID}" <${"support@webibee.com"}>`,
+    to: userEmail,
+    subject: "Acknowledgment: We received your Submission",
+    html: `<p>Dear ${firstName} ${lastName} Customer,</p>
+             <p>Greetings from VBCC Dental Furnaces!</p>
+             <p>We appreciate your interest in our VBCC Dental Furnaces products and acknowledge receipt of your submission.</p>
+                   <p>Thanks & Regards,<br>
+                    <br>
+           VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD<br>
+           207, 3rd Link Road, Nehru Nagar Industrial Estate,<br>
+           Kottivakkam, Chennai, Tamil Nadu 600041<br>
+           +91- 9600478315<br></p>`,
     attachments: [
       // Default PDF attachment
       {
@@ -84,18 +81,12 @@ export async function POST(req) {
     bcc: [""],
   };
 
-  // <p>Email: ${userEmail}</p>
-  //           <p>Phone Number: ${phone}</p>
-  //           <p>Query: ${message}</p>
-
   try {
-    // Send acknowledgment email to the user
-    // await transporter.sendMail(userMailOptions);
-    // console.log("Acknowledgment email sent to user.");
+    // Send acknowledgment email to the customer
+    await transporter.sendMail(userMailOptions);
 
     // Send detailed email to the client
     await transporter.sendMail(clientMailOptions);
-    // console.log("Email with user data and attachments sent to client.");
 
     return NextResponse.json({
       success: true,
