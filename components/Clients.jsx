@@ -42,7 +42,7 @@ const Clients = () => {
     ]
   };
   return (
-    <section className='relative w-full h-screen text-white bg-primary font-Montserrat'>
+    <section className='relative w-full h-screen overflow-y-hidden text-white bg-primary font-Montserrat'>
       <div className='flex flex-col items-center gap-10 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
         <div className="relative w-[280px] h-[280px] lg:w-[340px] md:h-[480px]">
           <Image

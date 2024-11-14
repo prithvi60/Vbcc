@@ -20,7 +20,6 @@ export default function Home() {
         <Clients />
         <Explore />
         {/* <WCU /> */}
-        {/* <Statistics /> */}
         <HowWeDo />
         <ProductLayout />
         <Testimonials />

@@ -1,7 +1,10 @@
+"use client"
 import othersData from "@/libs/others.json";
 import Image from "next/image";
-import React from "react";
-
+import Link from "next/link";
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import MobileNav from "./MobileNav";
 
 // const productList = [
 //   {
@@ -33,27 +36,57 @@ import React from "react";
 // const sortBy = ["Featured", "New Products", "Best Selling"];
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <>
-      <nav className="relative w-full h-full text-white mb-7">
-        <div className="relative w-full h-full overflow-hidden rounded-2xl">
-          <div className="absolute -top-5 md:-top-3 xl:-top-5 2xl:-top-11 2xl:-left-2.5 size-28 left-1 md:size-24 2xl:size-52 xl:size-32">
-            <Image
-              alt="VBCC Logo"
-              src="/VBCC - Logo.svg"
-              fill
-              className="z-20 object-cover object-center"
-            />
+    <nav className="absolute top-0 left-0 z-10 w-full px-3 py-6 text-white xl:px-5 md:py-6 xl:py-10">
+      <div className="relative flex items-center justify-between w-full overflow-hidden rounded-2xl">
+        <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
+          <Image
+            alt="VBCC Logo"
+            src="/VBCC - Logo.svg"
+            fill
+            className="z-0 object-cover object-center"
+          />
+        </div>
+        <ul className="items-center hidden gap-6 lg:flex">
+          {navLinks.map((list, id) => (
+            <li className="text-base font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 text-secondary" key={id}>
+              <Link href={list.ref}>{list.menu}</Link>
+            </li>
+          ))}
+        </ul>
+        <button
+          className={`hidden font-semibold border border-info  w-fit transition-all rounded-full lg:flex items-center text-sm md:text-base gap-3 capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info group`}
+        >
+          <h4 className="px-2 py-2 md:px-6">
+            WE SHIP OUR INSTRUMENTS GLOBALLY
+          </h4>
+          <span className="p-4 border rounded-full border-info group-hover:border group-hover:border-primary group-hover:bg-primary">
+            {/* <MdOutlineFileDownload className="text-lg md:text-xl" /> */}
+          </span>
+        </button>
+        <div className="block group lg:hidden">
+          <div onClick={() => setIsOpen(!isOpen)} className="p-2.5 bg-primary group-hover:bg-info rounded-full cursor-pointer">
+            <GiHamburgerMenu className="font-semibold h-7 w-7 md:h-8 md:w-8 text-info group-hover:text-secondary" />
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+      {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} />}
+    </nav>
   );
 };
 
 export default NavBar;
 
-{/* <nav id="nav">
+const navLinks = [
+  { menu: "ABOUT US", ref: "/about" },
+  { menu: "CATEGORIES", ref: "/categories" },
+  { menu: "BLOGS", ref: "/blogs" },
+  { menu: "TESTIMONIALS", ref: "/testimonials" },
+];
+
+{
+  /* <nav id="nav">
   <div className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-3.5 border-b border-[#B6BABD] static max-w-full flex justify-between items-center">
     {/* <Link passHref href="/" className="relative w-20 h-5 cursor-pointer">
       <Image
@@ -121,4 +154,5 @@ export default NavBar;
     </div>
   </div>
   {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} />}
-</nav> */}
+</nav> */
+}

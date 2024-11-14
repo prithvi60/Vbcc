@@ -14,6 +14,21 @@ export const HeroBox = ({ className, ...props }) => {
     );
 };
 
+export const HeroBoxMobile = ({ className, ...props }) => {
+    return (
+        <svg viewBox="0 0 207 46" xmlns="http://www.w3.org/2000/svg" {...props}
+            className={className}>
+            <path d="M206 1.53729H3.93701C2.83245 1.53729 1.93701 2.43272 1.93701 3.53729V44.0982" stroke="url(#paint0_linear_86_177)" stroke-width="2" stroke-linecap="round" />
+            <defs>
+                <linearGradient id="paint0_linear_86_177" x1="1.93701" y1="15.2733" x2="206" y2="15.2733" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F06F38" />
+                    <stop offset="1" stop-color="#8A4020" stop-opacity="0.17" />
+                </linearGradient>
+            </defs>
+        </svg>
+    );
+};
+
 export const HeroBoxBottom = ({ className, ...props }) => {
     return (
         <svg viewBox="0 0 734 235" xmlns="http://www.w3.org/2000/svg" {...props}
@@ -29,6 +44,22 @@ export const HeroBoxBottom = ({ className, ...props }) => {
         </svg>
     );
 };
+
+export const HeroBoxBottomMobile = ({ className, ...props }) => {
+    return (
+        <svg viewBox="0 0 207 48" xmlns="http://www.w3.org/2000/svg" {...props}
+            className={className}>
+            <path d="M206 46.8386H3.93701C2.83245 46.8386 1.93701 45.9431 1.93701 44.8386V1.54744" stroke="url(#paint0_linear_86_208)" stroke-width="2" stroke-linecap="round" />
+            <defs>
+                <linearGradient id="paint0_linear_86_208" x1="1.93701" y1="32.2214" x2="206" y2="32.2214" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F06F38" />
+                    <stop offset="1" stop-color="#8A4020" stop-opacity="0.17" />
+                </linearGradient>
+            </defs>
+        </svg>
+    );
+};
+
 
 
 export const TSBox = ({ className, ...props }) => {
