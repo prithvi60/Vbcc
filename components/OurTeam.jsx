@@ -4,15 +4,15 @@ import React from 'react'
 const OurTeam = () => {
     return (
         <section className='relative w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
-            <div className='block w-full h-full space-y-6 padding'>
-                <div className='block py-10 space-y-6 md:py-20'>
+            <div className='block w-full h-full mx-auto space-y-6 max-w-[1530px] padding'>
+                <div className='block py-10 space-y-6 md:space-y-20 md:py-20'>
                     <div className='block w-full space-y-4 md:space-y-6'>
                         <h4 className='text-2xl tracking-wide md:text-4xl xl:text-5xl text-info'>Our Team</h4>
                         <p className='text-base font-bold md:text-lg text-secondary'>Welcome to VBCC High Temperature Instruments!
                         </p>
                         <p className='text-base md:text-lg !leading-[32px] text-secondary'>Our leadership, CEO Naveen and Dr. V. Viswabaskaran, brings over 32 years of combined expertise in the field, expertly blending experience with cutting-edge innovation. Our skilled team, including specialists in Ceramic, Mechanical, and Electrical Engineering, creatively tackles challenges, ensuring excellence in high-temperature equipment. We are committed to innovation, strong client relationships, and customer satisfaction. Join us as we advance the technology of high-temperature instruments and innovate to make a significant impact.</p>
                     </div>
-                    <div className='flex flex-col items-center justify-center gap-10 lg:flex-row md:gap-20'>
+                    <div className='flex flex-col items-center justify-center gap-10 lg:justify-between lg:flex-row lg:gap-0'>
                         <div className='flex items-center gap-5 group'>
                             <div className="relative size-20 md:size-28">
                                 <Image

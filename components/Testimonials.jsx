@@ -7,22 +7,26 @@ import { PrevArrowSvg } from "@/svg_components/PrevArrow";
 import { Carousel } from "react-responsive-carousel";
 import { customHorizontalAnimation } from "@/libs/slider_animation";
 import { IoMdQuote } from "react-icons/io";
+import { usePathname } from "next/navigation";
 
 const Testimonials = () => {
+  const path = usePathname()
   return (
     <section className='relative w-full overflow-hidden bg-white text-primary font-Montserrat'>
       <div className='block w-full space-y-6 padding'>
-        <div className='block py-10 space-y-6 md:space-y-16 md:py-20'>
+        <div className={`block space-y-6 md:space-y-16 ${path === "/testimonials" ? "pb-10 md:pb-20" : "py-10 md:py-20"}`}>
           <div className='block w-full space-y-4 md:space-y-6'>
             <h4 className='text-2xl tracking-wide md:text-4xl xl:text-5xl text-info'>Our Team</h4>
             <div className="flex flex-col md:flex-row">
-              <div className="relative overflow-hidden w-full h-64 md:h-80 md:w-[450px] bg-[#E5EFFF] md:border-r-1 border-primary">
-                <Image
-                  alt="VBCC Logo"
-                  src="/VBCC - Logo.svg"
-                  fill
-                  className="object-cover object-center"
-                />
+              <div className="w-full md:w-max flex justify-center items-center bg-[#E5EFFF] p-6 md:p-12 md:border-r-1 border-primary">
+                <div className="relative overflow-hidden w-64 h-20 md:w-60 md:h-20 lg:h-28 lg:w-[350px]">
+                  <Image
+                    alt="VBCC Logo"
+                    src="/VBCC - Logo.svg"
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
               </div>
               <div className="grid w-full grid-cols-2 md:grid-cols-4">
                 {/* {othersData.clientLogos2.map((item, idx) => ( */}
@@ -134,7 +138,7 @@ const Testimonials = () => {
             {othersData.heroTestimonial.map((item, idx) => (
               <div
                 key={idx}
-                className="relative border-t-3 border-info bg-gradient-to-b from-[#102242] via-[#FFFFFF1A] to-[#FFFFFF] w-full"
+                className="relative border-t-3 border-info bg-gradient-to-b from-[#102242] via-[#FFFFFF1A] to-[#FFFFFF] w-full md:mt-6"
               >
                 <div className="absolute top-0 left-0 w-full h-2">
                   <Image
@@ -171,9 +175,10 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className='absolute left-0 w-48 h-20 -top-6 md:h-28 md:w-72'>
+      {path !== "/testimonials" && (<div className='absolute left-0 w-48 h-20 -top-6 md:h-28 md:w-72'>
         <Image src={"/vector2.svg"} fill alt='' className='object-contain object-center' />
-      </div>
+      </div>)}
+
       <div className='absolute right-0 w-48 h-28 -bottom-6 md:h-28 md:w-72'>
         <Image src={"/vector1.svg"} fill alt='' className='object-contain object-center' />
       </div>

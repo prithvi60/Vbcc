@@ -9,9 +9,15 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { HeroBox, HeroBoxBottom, HeroBoxBottomMobile, HeroBoxMobile } from "@/svg_components/LandingHeroBox";
+import {
+  HeroBox,
+  HeroBoxBottom,
+  HeroBoxBottomMobile,
+  HeroBoxMobile,
+} from "@/svg_components/LandingHeroBox";
 import Statistics from "./Statistics";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from "react-icons/lia";
+import { MdDoubleArrow, MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Hero = () => {
   // const [client, setClient] = useState(false);
   // useEffect(() => {
@@ -21,7 +27,6 @@ const Hero = () => {
   // }, []);
 
   return (
-    <>
       <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
         <div className="relative w-full h-full overflow-hidden rounded-2xl">
           {/* <div className="absolute -top-5 md:-top-3 xl:-top-5 2xl:-top-11 2xl:-left-2.5 size-28 left-1 md:size-24 2xl:size-52 xl:size-32">
@@ -107,7 +112,6 @@ const Hero = () => {
                       </button>
                     </div>
                   </div>
-
                 </div>
                 <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40 lg:-bottom-52 2xl:-bottom-64">
                   <HeroBoxBottom className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
@@ -116,19 +120,90 @@ const Hero = () => {
                   <HeroBoxBottomMobile className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
                 </div>
               </div>
-              <div className="px-6">
-                <div className="rounded-lg h-96 w-80 bg-slate-200 backdrop-blur-xl"></div>
+              <div className="w-full max-w-sm px-6 lg:max-w-md lg:px-0">
+                <div className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 px-7 py-7 lg:px-10 lg:py-10">
+                  <h4 className="text-lg font-medium tracking-wide lg:text-xl">
+                    Best Selling
+                  </h4>
+                  <div className="absolute flex right-14 top-5">
+                    {/* <SamplePrevArrow />
+                    <SampleNextArrow /> */}
+                    <div className="relative px-3.5 py-1 border-l rounded-l-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-3.5 after:top-2.5 after:hover:bg-white"><LiaLongArrowAltLeftSolid className="text-base" /></div>
+                    <div className="px-3.5 py-1 border-r rounded-r-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-[25px] after:top-[10.4px] after:hover:bg-white"><LiaLongArrowAltRightSolid className="text-base" />
+                    </div>
+                  </div>
+                  <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-96 lg:max-h-full lg:h-full hideScroll">
+                    {products.map((item, id) => (
+                      <div className="flex items-center gap-5 hover:scale-110 lg:hover:scale-[1.15] transition-all duration-400 ease-linear group" key={id}>
+                        <div className="relative px-12 py-12 rounded-lg lg:py-16 lg:px-16 bg-info">
+                          <h4 className="absolute top-5 left-3 text-[9px] lg:text-xs border border-white px-3 py-1.5">
+                            IN STOCK
+                          </h4>
+                        </div>
+                        <div className="space-y-2 lg:space-y-3">
+                          <h6 className="text-xs font-medium tracking-wide uppercase">
+                            {item.type}
+                          </h6>
+                          <h4 className="flex items-center gap-2 text-sm font-semibold tracking-wide lg:text-lg">
+                            {item.productName}
+                            <span>
+                              <MdDoubleArrow className="text-2xl text-info" />
+                            </span>
+                          </h4>
+                          <div>
+                            <Link
+                              href={""}
+                              className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max hover:bg-info group-hover:block"
+                            >
+                              Request a quote
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <Statistics />
-      </section>
-    </>
+      </section >
   );
 };
 
 export default Hero;
+
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      className={"size-4  cursor-pointer"}
+      onClick={onClick}
+    >
+      <Image alt="next arrow" fill src={"/next.svg"} className="object-contain object-center" />
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      className={"size-4  cursor-pointer"}
+      onClick={onClick}
+    >
+      <Image alt="prev arrow" fill src={"/prev.svg"} className="object-contain object-center" />
+    </div>
+  );
+}
+
+const products = [
+  { productName: "APM Kanthal", type: "CERAMIC PRODUCTS" },
+  { productName: "Alumina - Boats And Crucibles ", type: "CERAMIC PRODUCTS" },
+  { productName: "Alumina - Boats And Crucibles", type: "CERAMIC PRODUCTS" },
+  { productName: "Graphite Heating Elements", type: "CERAMIC PRODUCTS" },
+];
 
 // <section className="h-[90vh] w-full relative">
 //   {client ? (

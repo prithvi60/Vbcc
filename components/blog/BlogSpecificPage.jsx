@@ -1,50 +1,29 @@
-import Image from "next/image";
+import { GiFurnace } from "react-icons/gi";
+import { TbListDetails } from "react-icons/tb";
+
 
 export const BlogSpecificPage = () => {
   return (
-    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 text-warning">
-      <div className="block w-full xl:w-3/4 mx-auto space-y-[34px]">
-        <div className="space-y-6">
-          <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
-            Dilatometer Principle and Working
+    <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 text-warning font-Montserrat">
+      <div className="block w-full xl:w-4/5 mx-auto space-y-[34px]">
+        <div>
+          <h2 className="flex items-center w-full gap-5 mb-10 text-3xl font-semibold tracking-wider font-Montserrat xl:text-4xl">
+            <TbListDetails className="text-3xl xl:text-4xl text-primary" />
+            Blog Details
           </h2>
-          <div
-              className={`block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
-            >
-              <div className={`h-6 w-full overflow-hidden`}>
-                <h4
-                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning font-normal tracking-wider`}
-                >
-                  Featured
-                </h4>
-                <h4
-                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white font-normal tracking-wider`}
-                >
-                  Featured
-                </h4>
-              </div>
-            </div>
         </div>
         <div className="space-y-10 lg:space-y-[60px]">
-          <div className="relative w-full h-[300px] md:h-[505px]">
-            <Image
-              fill
-              src={"https://ik.imagekit.io/webibee/VBCC/blog-2.png"}
-              alt="product"
-              className="absolute object-cover object-center"
-            />
+          <div className="space-y-3">
+            <h4 className="flex items-center gap-5 text-2xl tracking-wide font-Montserrat"><span><GiFurnace className="text-xl text-info" /></span> Dilatometer Principle and Working</h4>
+            <p className="ml-10 text-base leading-loose font-Montserrat lg:text-xl">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
           </div>
           <div className="space-y-3">
-            <h4 className="font-Lora text-2xl lg:text-[32px] tracking-wide">Dilatometer Principle and Working</h4>
-            <p className="font-urbanist text-base lg:text-xl leading-loose">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
+            <h4 className="flex items-center gap-5 text-2xl tracking-wide font-Montserrat"><span><GiFurnace className="text-xl text-info" /></span> Dilatometer Principle and Working</h4>
+            <p className="ml-10 text-base leading-loose font-Montserrat lg:text-xl">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
           </div>
           <div className="space-y-3">
-            <h4 className="font-Lora text-2xl tracking-wide">Dilatometer Principle and Working</h4>
-            <p className="font-urbanist text-base lg:text-xl leading-loose">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
-          </div>
-          <div className="space-y-3">
-            <h4 className="font-Lora text-2xl lg:text-[32px] tracking-wide">Dilatometer Principle and Working</h4>
-            <p className="font-urbanist text-base lg:text-xl leading-loose">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
+            <h4 className="flex items-center gap-5 text-2xl tracking-wide font-Montserrat"><span><GiFurnace className="text-xl text-info" /></span> Dilatometer Principle and Working</h4>
+            <p className="ml-10 text-base leading-loose font-Montserrat lg:text-xl">Discover VBCC&apos;s range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.</p>
           </div>
         </div>
       </div>

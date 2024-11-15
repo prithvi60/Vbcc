@@ -1,4 +1,4 @@
-import { AllPageHero } from "@/components/AllPageHero";
+import BlogHero from "@/components/blog/BlogHero";
 import { BlogSection } from "@/components/blog/BlogSection";
 import DefaultLayout from "@/components/DefaultLayout";
 
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <DefaultLayout>
-        <AllPageHero title={obj.title} desc={obj.desc} ImgSrc={obj.ImgSrc} />
+        <BlogHero />
         <BlogSection />
       </DefaultLayout>
     </main>

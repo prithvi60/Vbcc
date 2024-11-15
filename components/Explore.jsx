@@ -80,7 +80,7 @@ const Explore = () => {
           ))}
         </div>
       </div>
-      <div className="relative flex flex-col w-full h-full gap-20 overflow-hidden lg:gap-0 lg:flex-row lg:justify-between">
+      <div className="relative flex flex-col w-[96%] sm:w-full h-full gap-20 lg:gap-0 lg:flex-row lg:justify-between">
         <div className="relative w-full h-full lg:w-3/5">
           <div className="z-0 h-full md:h-[100vh] absolute -bottom-3 md:-bottom-24 lg:-bottom-10 xl:-bottom-24 left-2 w-full">
             <div
@@ -92,7 +92,6 @@ const Explore = () => {
               <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-10"></div>
             </div>
           </div>
-          {/* <div className=""> */}
           <div className="relative z-30 flex flex-col items-end w-3/4 h-auto gap-6 ml-20 lg:w-4/5">
             {othersData.whyChooseUs.map((item, idx) => (
               <div
@@ -113,7 +112,6 @@ const Explore = () => {
               </div>
             ))}
           </div>
-          {/* </div> */}
         </div>
         <div className="relative block w-full px-10 space-y-4 md:py-10 xl:py-12 md:space-y-8 lg:w-2/5 text-primary">
           <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize flex gap-1">
@@ -185,7 +183,7 @@ const Explore = () => {
             </div>
           </div>
           <div className="absolute -bottom-32 xl:-bottom-24 right-24 md:right-52 lg:right-16 xl:right-40">
-            <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
+            <div className="relative w-20 h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
                 src={"/card 1.png"}
                 fill
