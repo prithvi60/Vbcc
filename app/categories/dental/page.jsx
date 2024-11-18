@@ -1,11 +1,12 @@
-import CategoryHero from "@/components/categories/categoryHero";
+
+import DentalProducts from "@/components/categories/dental/DentalProducts";
 import DefaultLayout from "@/components/DefaultLayout";
 
 export default function Home() {
   return (
     <main>
       <DefaultLayout>
-        <CategoryHero />
+        <DentalProducts />
       </DefaultLayout>
     </main>
   );

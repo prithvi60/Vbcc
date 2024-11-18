@@ -35,7 +35,7 @@ export async function POST(req) {
   // Email options for the client (all user data and attachments)
   const clientMailOptions = {
     from: `"${userEmail}" <${"support@webibee.com"}>`,
-    to: process.env.EMAIL_ID,
+    to: "info@vbccinstruments.com",
     subject: "New Customer Form Submitted",
     html: `
             <div className="block space-y-10 font-merriWeather">
@@ -54,7 +54,7 @@ export async function POST(req) {
             <p>Thanks</p>
             </div> 
             `,
-    bcc: [""],
+    bcc: [process.env.EMAIL_ID],
   };
 
   const userMailOptions = {
@@ -78,7 +78,7 @@ export async function POST(req) {
         contentType: "application/pdf",
       },
     ],
-    bcc: [""],
+    bcc: ["info@vbccinstruments.com"],
   };
 
   try {

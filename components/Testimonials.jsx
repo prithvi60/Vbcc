@@ -1,11 +1,6 @@
 "use client";
 import Image from "next/image";
 import othersData from "@/libs/others.json";
-import { Btn2 } from "./Btn";
-import { NextArrowSvg } from "@/svg_components/NextArrow";
-import { PrevArrowSvg } from "@/svg_components/PrevArrow";
-import { Carousel } from "react-responsive-carousel";
-import { customHorizontalAnimation } from "@/libs/slider_animation";
 import { IoMdQuote } from "react-icons/io";
 import { usePathname } from "next/navigation";
 
@@ -16,9 +11,9 @@ const Testimonials = () => {
       <div className='block w-full space-y-6 padding'>
         <div className={`block space-y-6 md:space-y-16 ${path === "/testimonials" ? "pb-10 md:pb-20" : "py-10 md:py-20"}`}>
           <div className='block w-full space-y-4 md:space-y-6'>
-            <h4 className='text-2xl tracking-wide md:text-4xl xl:text-5xl text-info'>Our Team</h4>
+            <h4 className='text-2xl tracking-wide md:text-4xl xl:text-5xl text-info'>Our Testimonials</h4>
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-max flex justify-center items-center bg-[#E5EFFF] p-6 md:p-12 md:border-r-1 border-primary">
+              <div className="w-full md:w-max flex justify-center items-center bg-[#E5EFFF] p-6 md:p-12 ">
                 <div className="relative overflow-hidden w-64 h-20 md:w-60 md:h-20 lg:h-28 lg:w-[350px]">
                   <Image
                     alt="VBCC Logo"
