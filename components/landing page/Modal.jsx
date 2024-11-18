@@ -17,7 +17,7 @@ export const Modal = ({ title, styles, type, pageType }) => {
       <button
         onClick={() => setIsOpen(true)
         }
-        className={` font-semibold w-fit transition-all ${pageType === "main" ? "shadow-xl hover:scale-110" : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"} flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-6 py-2"
+        className={`font-semibold w-fit transition-all ${pageType === "main" ? "shadow-xl hover:scale-110" : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"} flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-6 py-2"
           }`}
       >
         {title === "DOWNLOAD BROCHURE" ? (

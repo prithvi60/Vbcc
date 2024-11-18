@@ -1,3 +1,4 @@
+import BreadCrumb from '@/app/categories/BreadCrumb'
 import { Modal } from '@/components/landing page/Modal'
 import Image from 'next/image'
 import React from 'react'
@@ -5,13 +6,14 @@ import React from 'react'
 const CategoryHero = ({ heroBg, title, desc1, desc2, categoryImg }) => {
     return (
         <section className='relative z-0 w-full h-full font-Montserrat'>
-            <div className="relative w-full h-[110dvh] md:h-[65dvh] hero-mask bg-primary z-10">
+            <div className="relative w-full h-[75vh] lg:h-[65dvh] hero-mask bg-primary z-10">
             </div>
             <div className='absolute left-0 z-20 block w-full top-36'>
                 <div className='relative w-full'>
                     <div className='relative w-full h-[50vh] overflow-hidden'>
                         <Image fill src={heroBg} alt='hero bg' className='object-cover object-center' />
                         <div className="absolute top-0 left-0 z-0 w-full h-[90vh] bg-gradient-to-b from-[#00000033] via-[#F06F3845] to-[#00000033]"></div>
+                        <BreadCrumb />
                     </div>
                     <h4 className='absolute z-40 px-10 py-3 text-xl left-20 -bottom-7 lg:text-2xl bg-info'>{title}</h4>
                 </div>

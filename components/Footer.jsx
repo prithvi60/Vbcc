@@ -30,7 +30,7 @@ const Footer = () => {
   };
   return (
 
-    <footer className="flex flex-col w-full h-full text-white md:flex-row border-t-3 border-info font-Montserrat">
+    <footer className="relative flex flex-col w-full h-full text-white -z-10 md:flex-row border-t-3 border-info font-Montserrat">
       <div className="relative block w-full h-full p-5 space-y-12 md:p-8 md:w-2/5 xl:w-1/5">
         <div className="block">
           <div className="relative h-20 mx-auto my-4 overflow-hidden w-60">
