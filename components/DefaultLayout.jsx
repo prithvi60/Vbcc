@@ -6,7 +6,7 @@ import Footer from "./Footer";
 const DefaultLayout = ({ children }) => {
     return (
         <div>
-            <Banner />
+            {/* <Banner /> */}
             <NavBar />
             {children}
             <Footer />

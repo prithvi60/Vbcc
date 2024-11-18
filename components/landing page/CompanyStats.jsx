@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const CompanyStats = () => {
     return (
-        <div className="absolute right-0 md:w-4/5 md:-bottom-28 lg:-bottom-40 xl:-bottom-48 2xl:-bottom-56 left-1 md:left-auto">
+        <div className="absolute right-0 z-20 md:w-4/5 md:-bottom-28 lg:-bottom-40 xl:-bottom-48 2xl:-bottom-56 left-1 md:left-auto">
             <div
                 className="relative z-10 px-6 py-8 bg-center bg-no-repeat bg-cover h-44 md:h-52 lg:h-64 xl:h-72 2xl:h-[380px] card-mask border-3 border-secondary"
                 style={{
@@ -15,7 +15,7 @@ const CompanyStats = () => {
                 <div className="relative z-30 flex flex-row flex-wrap items-center justify-center h-full gap-3 md:gap-7 xl:gap-9 md:flex-nowrap font-Montserrat">
                     <Stat num={500} suffix="+" subheading="Satisfied Clientele" />
                     <div className="bg-white h-12 w-[1px]" />
-                    <Stat num={15000}  suffix="+" subheading="Instruments Installed" />
+                    <Stat num={15000} suffix="+" subheading="Instruments Installed" />
                     <div className="hidden sm:block bg-white h-12 w-[1px]" />
                     <Stat num={22} suffix="+" subheading="Years of Expertise" />
                 </div>

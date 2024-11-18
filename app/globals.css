@@ -11,14 +11,15 @@
   }
 }
 
+@layer utilities {
+  .padding {
+    @apply px-5 py-10 md:py-16 md:px-10 xl:p-16;
+  }
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
-/* .cut-off {
-  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 15%);
-  border-radius: 25px;
-} */
 
 * {
   margin: 0;
@@ -85,6 +86,16 @@ body::-webkit-scrollbar-thumb {
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
+
+.hero-mask_home {
+  mask-image: url("/mask-image.png");
+  -webkit-mask-image: url("/mask-image.png");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 100%;
+}
 .card-mask {
   mask-image: url("/cardmask.png");
   -webkit-mask-image: url("/cardmask.png");
@@ -92,7 +103,38 @@ body::-webkit-scrollbar-thumb {
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
+  width: 100%;
+}
+
+.card-mask_2 {
+  mask-image: url("/cardmask.png");
+  -webkit-mask-image: url("/cardmask.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 100%;
+}
+
+.rtl_card-mask {
+  mask-image: url("/rtl-mask.png");
+  -webkit-mask-image: url("/rtl-mask.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 100%;
+}
+
+.explore_card-mask {
+  mask-image: url("/mask-image-2.png");
+  -webkit-mask-image: url("/mask-image-2.png");
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   /* width: 100%; */
+  height: 100%;
 }
 
 /* Breakpoints */

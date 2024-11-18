@@ -13,7 +13,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
     <section
       className={`fixed top-0
        ${!open ? "right-0 animate-reveal_In" : "-right-[120%]"} 
-       z-[100] bg-primary h-screen w-screen flex flex-col gap-7 md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
+       !z-[9999] bg-primary h-screen w-screen flex flex-col gap-7 padding md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
     >
       <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-[32px]">
         <Image
@@ -23,7 +23,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           alt="Logo"
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-          className=" object-contain object-center"
+          className="object-contain object-center "
         />
         <div className="flex items-center gap-7">
           <Link
@@ -57,7 +57,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
         </div>
       </div>
       <div className="flex justify-center md:justify-between items-center p-5 md:px-[60px] md:py-[24px]">
-        <ul className="space-y-4 md:space-y-6 lg:space-y-10 w-full">
+        <ul className="w-full space-y-4 md:space-y-6 lg:space-y-10">
           {othersData.navlink.map((link, idx) => (
             <li
               key={idx}
@@ -72,7 +72,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
                 <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-secondary">
                   {link.title}
                 </span>
-                <RiArrowRightUpLine className="h-8 w-8 hidden group-hover:block group-hover:text-info" />
+                <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
               </Link>
             </li>
           ))}
@@ -127,27 +127,27 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
             </div>
           </Link>
         </div>
-        <div className="flex md:justify-evenly items-center gap-3 mt-5 mx-2 md:mt-0 md:mx-0">
+        <div className="flex items-center gap-3 mx-2 mt-5 md:justify-evenly md:mt-0 md:mx-0">
           <Link
             passHref
             href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
-            className="p-4 rounded-full border border-info hover:bg-info"
+            className="p-4 border rounded-full border-info hover:bg-info"
           >
-            <FaYoutube className="h-7 w-7 text-white" />
+            <FaYoutube className="text-white h-7 w-7" />
           </Link>
           <Link
             passHref
             href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
-            className="p-4 rounded-full border border-info hover:bg-info"
+            className="p-4 border rounded-full border-info hover:bg-info"
           >
-            <FaLinkedin className="h-7 w-7 text-white" />
+            <FaLinkedin className="text-white h-7 w-7" />
           </Link>
           <Link
             passHref
             href={"https://wa.me/7338894199"}
-            className="p-4 rounded-full border border-info hover:bg-info"
+            className="p-4 border rounded-full border-info hover:bg-info"
           >
-            <FaWhatsapp className="h-7 w-7 text-white" />
+            <FaWhatsapp className="text-white h-7 w-7" />
           </Link>
         </div>
       </div>

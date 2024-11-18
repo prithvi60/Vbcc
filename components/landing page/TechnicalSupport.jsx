@@ -1,8 +1,6 @@
 "use client"
 import Image from "next/image";
 import React, { useState } from "react";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { FiBarChart, FiBell, FiDollarSign, FiPlay } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./UseWindowSize ";
 import { Modal } from "./Modal";
@@ -11,7 +9,7 @@ const TechnicalSupport = () => {
     const [open, setOpen] = useState(items[0].id);
     return (
         <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 py-8 overflow-hidden text-white md:flex-row font-Montserrat md:py-12 md:px-8 xl:px-14 bg-primary">
-            <div className="relative w-[280px] h-[280px] md:w-[420px] md:h-[520px]">
+            <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[480px]">
                 <Image
                     src={"/card 1.png"}
                     fill
@@ -116,17 +114,6 @@ const panelVariants = {
     closed: {
         width: "0%",
         height: "100%",
-    },
-};
-
-const panelVariantsSm = {
-    open: {
-        width: "100%",
-        height: "200px",
-    },
-    closed: {
-        width: "100%",
-        height: "0px",
     },
 };
 

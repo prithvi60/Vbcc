@@ -1,11 +1,13 @@
 import DefaultLayout from "@/components/DefaultLayout";
-import { TestimonialSection } from "@/components/testimonial/TestimonialSection";
+import TestimonialHero from "@/components/testimonial/TestimonialHero";
+import TestimonialSections from "@/components/testimonial/TestimonialSections";
 
 export default function Home() {
   return (
     <main>
       <DefaultLayout>
-        <TestimonialSection />
+        <TestimonialHero />
+        <TestimonialSections />
       </DefaultLayout>
     </main>
   );

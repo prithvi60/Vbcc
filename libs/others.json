@@ -42,58 +42,39 @@
     }
   ],
   "clientLogos": [
-    "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
-    "https://ik.imagekit.io/webibee/VBCC/vit.svg",
-    "https://ik.imagekit.io/webibee/VBCC/IIT-Madras.svg",
-    "https://ik.imagekit.io/webibee/VBCC/AU.svg",
-    "https://ik.imagekit.io/webibee/VBCC/CGCRI.svg",
-    "https://ik.imagekit.io/webibee/VBCC/csir.svg",
-    "https://ik.imagekit.io/webibee/VBCC/bhel.svg",
-    "https://ik.imagekit.io/webibee/VBCC/IIT_Hyderabad.svg",
-    "https://ik.imagekit.io/webibee/VBCC/drdo.svg"
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/bhel.svg?updatedAt=1731397608150",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/IITM%20Hyd%202.svg?updatedAt=1731397608270",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"
   ],
   "heroTestimonial": [
     {
       "header": "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it.",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/vit.svg",
+      "logo": "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
       "title": "Centre for Nanotechnology Research, VIT University.",
       "subTitle": "on the Custom Made Hot Press"
     },
     {
       "header": "No Company in India, except VB Ceramic Consultants, took this challenging task to succession ",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
+      "logo": "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
       "title": "Vikram Sarabhai Space Centre",
       "subTitle": "on building Microwave Hybrid Furnace"
     },
     {
       "header": "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/AU.svg",
+      "logo": "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
       "title": "Department of Ceramic Technology, Anna University.",
       "subTitle": "on multiple Units working effectively"
     },
     {
       "header": "Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/csir.svg",
+      "logo": "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
       "title": "CSIR-CECRI",
       "subTitle": "on Custom made Supercritical Reactors"
-    },
-    {
-      "header": "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it.",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/vit.svg",
-      "title": "Centre for Nanotechnology Research, VIT University.",
-      "subTitle": "on the Custom Made Hot Press"
-    },
-    {
-      "header": "No Company in India, except VB Ceramic Consultants, took this challenging task to succession ",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/Isro.svg",
-      "title": "Vikram Sarabhai Space Centre",
-      "subTitle": "on building Microwave Hybrid Furnace"
-    },
-    {
-      "header": "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.",
-      "logo": "https://ik.imagekit.io/webibee/VBCC/AU.svg",
-      "title": "Department of Ceramic Technology, Anna University.",
-      "subTitle": "on multiple Units working effectively"
     }
   ],
   "whyChooseUs": [
@@ -398,7 +379,7 @@
     },
     {
       "id": 5,
-      "logo": "https://ik.imagekit.io/webibee/VBCC/csir.svg",
+      "logo": "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
       "pdf": "https://ik.imagekit.io/webibee/VBCC/CGCRI_testimonial%201.png/tr:q-95"
     },
     {
@@ -1689,6 +1670,48 @@
       "alt": "MakeinIndia logo",
       "height": "11rem",
       "width": "11rem"
+    }
+  ],
+  "clientLogos2": [
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+      "styles": "bg-[#E5EFFF] md:bg-primary",
+      "name": "Anna University"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/bhel.svg?updatedAt=1731397608150",
+      "styles": "bg-primary md:bg-[#E5EFFF]",
+      "name": "BHEL"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544",
+      "styles": "bg-[#E5EFFF] md:bg-primary",
+      "name": "IIT Madras"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/IITM%20Hyd%202.svg?updatedAt=1731397608270",
+      "styles": "bg-primary md:bg-[#E5EFFF]",
+      "name": "IIT Hyderabad"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+      "styles": "bg-[#E5EFFF] md:bg-primary",
+      "name": "ISRO"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+      "styles": "bg-primary",
+      "name": "VIT"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831",
+      "styles": "bg-[#E5EFFF]",
+      "name": "DRDO"
+    },
+    {
+      "img": "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
+      "styles": "bg-primary",
+      "name": "CSIR"
     }
   ]
 }

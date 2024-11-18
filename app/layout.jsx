@@ -3,7 +3,7 @@ import { Providers } from "./providers";
 import Banner from "@/components/Banner";
 import NavBar from "@/components/Navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Lora, Montserrat, Nunito, Urbanist } from "next/font/google";
+import { Lora, Montserrat, Nunito, Urbanist, Tinos } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Partytown } from "@builder.io/partytown/react";
 import "slick-carousel/slick/slick.css";
@@ -15,10 +15,11 @@ const lora = Lora({
   variable: "--font-lora",
 });
 
-const nunito = Nunito({
+const nunito = Tinos({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-nunito",
+  weight: "700"
 });
 
 const urbanist = Urbanist({
@@ -68,7 +69,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>{children}</Providers>
         <LinkedInTracking />
-        <MetaPixelTracking /> 
+        <MetaPixelTracking />
       </body>
     </html>
   );
@@ -134,7 +135,7 @@ const MetaPixelTracking = () => {
     <>
       {/* Meta Pixel Code */}
       <script
-           id="meta-pixel"
+        id="meta-pixel"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `!function(f,b,e,v,n,t,s)

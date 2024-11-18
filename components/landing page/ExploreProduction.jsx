@@ -104,10 +104,10 @@ const ExploreProduction = () => {
 export default ExploreProduction;
 
 const productLists = [
-    { img: "/sample 1.png", title: "Vacuum Sintering Furnace",temp:"1200 C",energy:"1.5 KW" },
-    { img: "/sample 2.png", title: "Burnout Furnace",temp:"1200 C",energy:"1.5 KW" },
-    { img: "/sample 3.png", title: "Zirconia Sintering Furnace",temp:"1600 C",energy:"2 KW" },
-    { img: "/sample 4.png", title: "Vacuum Pressing Furnace",temp:"1200 C",energy:"2 KW" },
+    { img: "/sample 1.png", title: "Vacuum Sintering Furnace", temp: "1200 C", energy: "1.5 KW" },
+    { img: "/sample 2.png", title: "Burnout Furnace", temp: "1200 C", energy: "1.5 KW" },
+    { img: "/sample 3.png", title: "Zirconia Sintering Furnace", temp: "1600 C", energy: "2 KW" },
+    { img: "/sample 4.png", title: "Vacuum Pressing Furnace", temp: "1200 C", energy: "2 KW" },
 ];
 
 const ProductsComponent = () => {
@@ -122,19 +122,19 @@ const ProductsComponent = () => {
                             src={list.img}
                             className="z-20 object-contain object-center"
                         />
-                        <div className="absolute top-0 z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-32 xl:size-48 transition-all duration-500 ease-linear group-hover:scale-[0.80]   group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
+                        <div className="absolute top-0 z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-32 xl:size-48 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
                     </div>
                     <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
                         {list.title}
                     </h4>
                     <div
-                      className="absolute hidden group-hover:block -left-10 top-1/2"
+                        className="absolute hidden group-hover:block -left-10 top-1/2"
                     // className="absolute hidden group-hover:block -bottom-56 lg:-bottom-60 -right-10 lg:-right-6"
                     >
                         <h4 className="flex flex-col items-center justify-center p-2 text-xs font-semibold tracking-wide transition-all duration-500 ease-linear transform bg-white border-2 rounded-xl lg:text-base xl:text-xl w-max text-primary border-info"> Energy Efficiency<span>{list.energy}</span></h4>
                     </div>
                     <div
-                                        className="absolute hidden group-hover:block right-0 top-1/2"
+                        className="absolute right-0 hidden group-hover:block top-1/2"
                     // className="absolute hidden group-hover:block -left-6 lg:left-0 -bottom-72 lg:-bottom-80"
                     >
                         <h4 className="flex flex-col items-center justify-center p-2 text-xs font-semibold tracking-wide bg-white border-2 lg:text-base xl:text-xl w-max text-primary rounded-xl border-info">Temperature<span>{list.temp}</span> </h4>
