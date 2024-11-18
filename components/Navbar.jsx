@@ -44,21 +44,23 @@ const NavBar = () => {
   // console.log(path);
 
   return (
-    <nav className="absolute top-0 left-0 z-10 w-full px-3 py-6 text-white xl:px-5 md:py-6 xl:py-10">
+    <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-6 xl:px-5 md:py-6 xl:py-10">
       <div
         className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/")
-            ? "justify-start gap-20"
-            : "justify-between"
+          ? "justify-between lg:justify-start lg:gap-20"
+          : "justify-between"
           }`}
       >
-        <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
-          <Image
-            alt="VBCC Logo"
-            src="/VBCC - Logo.svg"
-            fill
-            className="z-0 object-cover object-center"
-          />
-        </div>
+        <Link href={"/"}>
+          <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
+            <Image
+              alt="VBCC Logo"
+              src="/VBCC - Logo.svg"
+              fill
+              className="z-0 object-cover object-center"
+            />
+          </div>
+        </Link>
         <ul className="items-center hidden gap-6 lg:flex">
           {navLinks.map((list, id) => (
             <li key={id} className="relative py-4 group">

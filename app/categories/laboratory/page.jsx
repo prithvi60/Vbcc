@@ -1,12 +1,12 @@
 
-import DentalProducts from "@/components/categories/dental/DentalProducts";
+import LabProducts from "@/components/categories/lab/LabProducts";
 import DefaultLayout from "@/components/DefaultLayout";
 
 export default function Home() {
   return (
     <main>
       <DefaultLayout>
-        <DentalProducts />
+        <LabProducts />
       </DefaultLayout>
     </main>
   );

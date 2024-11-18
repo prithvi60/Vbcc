@@ -1,10 +1,7 @@
 import "./globals.css";
 import { Providers } from "./providers";
-import Banner from "@/components/Banner";
-import NavBar from "@/components/Navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Lora, Montserrat, Nunito, Urbanist, Tinos } from "next/font/google";
-import Footer from "@/components/Footer";
 import { Partytown } from "@builder.io/partytown/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

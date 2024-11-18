@@ -7,16 +7,16 @@ const LabProducts = () => {
         <>
             <CategoryHero
                 categoryImg={"/category-2.png"}
-                heroBg={"/dental-herobg.png"}
-                title={"Dental Furnances"}
+                heroBg={"/lab-herobg.png"}
+                title={"Laboratory Furnances"}
                 desc1={
-                    "Denkiro Dental is a specialized sub-brand under VBCC, focused on providing high-precision dental furnaces for the dental industry. Tailored to meet the exacting standards of dental laboratories, Denkiro Dental furnaces offer exceptional temperature control, reliability, and ease of use."
+                    "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology. "
                 }
                 desc2={
-                    "Designed for processes such as ceramic firing, sintering, and glazing, these furnaces ensure consistent results while enhancing workflow efficiency. With advanced technology and a commitment to quality, Denkiro Dental supports dental professionals in achieving the best outcomes in prosthetics and restorative treatments."
+                    "With a focus on energy efficiency, superior temperature control, and customizable features, Denkiro furnaces are ideal for applications ranging from research labs to industrial-scale operations. By combining advanced materials with smart design, Denkiro ensures optimal results, helping customers achieve their goals in metallurgy, ceramics, and beyond"
                 }
             />
-            <CategoryProducts categoryName={"Dental"} />
+            <CategoryProducts categoryName={"Laboratory"} />
         </>
     );
 };
