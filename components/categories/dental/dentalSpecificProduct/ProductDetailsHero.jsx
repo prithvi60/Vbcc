@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+import { MdOutlineFileDownload } from "react-icons/md";
 import Slider from "react-slick";
 
 const ProductDetailsHero = () => {
@@ -29,7 +30,7 @@ const ProductDetailsHero = () => {
         beforeChange: (current, next) => setActiveIndex(next),
     };
     return (
-        <section className="relative z-0 w-full h-full overflow-hidden font-Montserrat">
+        <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
             <div className="relative w-full h-[140vh] md:h-[130vh] lg:h-[90vh] xl:h-[85vh] hero-mask bg-primary z-10"></div>
             <div className="absolute left-0 z-10 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                 <BreadCrumb />
@@ -45,17 +46,37 @@ const ProductDetailsHero = () => {
                         cutting-edge technology.{" "}
                     </p>
                     <div className="flex flex-col items-center md:flex-row md:gap-8">
-                        <Modal
-                            styles={"bg-info text-white"}
-                            title={"catalog now"}
-                            type={"download"}
-                            pageType={"main"}
-                        />
+                        <button
+                            type="submit"
+                            className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max shadow-xl`}
+                        >
+                            <a href={"/files/Denkiro - Dental - Brochure - Digital.pdf"} download={"Denkiro - Dental - Brochure - Digital.pdf"}>
+                                <div className={`h-6 w-full overflow-hidden`}>
+                                    <h3
+                                        className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
+                                    >
+                                        catalog now
+                                        <span>
+                                            <MdOutlineFileDownload className="text-xl text-white" />
+                                        </span>
+                                    </h3>
+                                    <h3
+                                        className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-primary`}
+                                    >
+                                        catalog now
+                                        <span>
+                                            <MdOutlineFileDownload className="text-xl text-primary" />
+                                        </span>
+                                    </h3>
+                                </div>
+                            </a>
+                        </button>
                         <Modal
                             styles={"bg-white text-primary"}
                             title={"Request to buy"}
                             type={""}
                             pageType={"main"}
+                            page={""}
                         />
                     </div>
                 </div>

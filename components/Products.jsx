@@ -111,7 +111,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                   src={card.img}
                   className="z-20 object-contain object-center"
                 />
-                <div className="absolute top-16 z-10 left-5 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-40 md:size-60 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-info"></div>
+                <div className="absolute top-16 z-10 left-5 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-40 md:size-60 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
               </div>
               <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
                 {card.productName}

@@ -10,10 +10,81 @@ import {
   FaLocationDot,
   FaXTwitter,
 } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
+import Loader from "./Loader";
+
+const initialFormData = {
+  firstName: "",
+  position: "",
+  phoneNo: "",
+  userEmail: "",
+  page: "",
+  message: "",
+};
 
 const Footer = () => {
   const [Copied, setCopied] = useState(false);
   const [Copied2, setCopied2] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+  const [status, setStatus] = useState(false);
+  const path = usePathname()
+
+
+  const URI = path.split("/").filter(x => x)
+  const filteredURI = URI[URI.length - 1] || "Home"
+
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus(true);
+
+
+    const emailFormData = {
+      firstName: formData.firstName,
+      userEmail: formData.userEmail,
+      phone: formData.phoneNo,
+      page: filteredURI,
+      message: formData.message,
+    };
+
+    // console.log(emailFormData);
+
+    try {
+      const response = await fetch("/api/sendMail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(emailFormData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        throw new Error(`Error: ${response.status} ${errorData}`);
+      }
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus(false);
+        window.location.href = "/thankyou";
+        setFormData(initialFormData);
+        e.target.reset();
+      }
+    } catch (error) {
+      console.error("Error sending emails:", error);
+      setStatus(false);
+    }
+  };
+
   const handlequote = (text) => {
     navigator.clipboard.writeText(text);
     setCopied(true);
@@ -30,7 +101,7 @@ const Footer = () => {
   };
   return (
 
-    <footer className="relative flex flex-col w-full h-full text-white -z-10 md:flex-row border-t-3 border-info font-Montserrat">
+    <footer className="relative flex flex-col w-full h-full text-white md:flex-row border-t-3 border-info font-Montserrat">
       <div className="relative block w-full h-full p-5 space-y-12 md:p-8 md:w-2/5 xl:w-1/5">
         <div className="block">
           <div className="relative h-20 mx-auto my-4 overflow-hidden w-60">
@@ -102,8 +173,6 @@ const Footer = () => {
           ></iframe>
         </div>
       </div>
-      {/* md:after:w-0.5 md:after:h-48 after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 md:after:left-64 lg:after:left-56 xl:after:left-80 after:absolute md:after:top-8 after:-translate-x-1/2 md:after:-translate-x-0 */}
-      {/*  */}
       <div className="grid w-full grid-cols-1 px-5 pt-10 pb-5 md:pb-3 bg-primary md:px-10 md:w-3/5 xl:w-4/5 xl:px-16 md:grid-cols-2 xl:grid-cols-3 gap-7 xl:gap-4">
         <div className="relative flex flex-col h-auto items-center w-full space-y-5 after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden md:justify-between md:flex-row md:w-max md:block lg:space-y-7">
           <h4 className="text-xl font-medium tracking-wider">
@@ -171,99 +240,92 @@ const Footer = () => {
             LET’S WORK TOGETHER
           </h4>
           <form
-            action="https://public.herotofu.com/v1/5317bdd0-ae22-11ee-870a-ff8e0d81300a"
-            method="post"
-            acceptCharset="UTF-8"
             className="block space-y-4"
+            onSubmit={handleSubmit}
           >
             <div className="block w-full space-y-1.5">
-              {/* <label htmlFor="company" className="text-xl md:text-2xl font-Lora">
-                  Name/Company<span className="text-red-600">*</span>
-                </label> */}
               <input
                 required
-                name="Company"
+                name="firstName"
                 autoComplete="on"
+                value={formData.firstName || ""}
+                onChange={handleChange}
                 type="text"
-                id="company"
+                id="firstName"
                 placeholder="Name"
-                className="w-full px-4 py-3 mt-1 font-urbanist focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-urbanist"
+                className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
             <div className="block w-full space-y-1.5">
-              {/* <label htmlFor="position" className="text-xl md:text-2xl font-Lora">
-                  Position
-                </label> */}
               <input
                 autoComplete="on"
                 type="text"
-                name="Position"
+                name="position"
+                value={formData.position || ""}
+                onChange={handleChange}
                 id="position"
                 placeholder="Enter your Position at the Company"
-                className="w-full px-4 py-3 mt-1 font-urbanist focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-urbanist"
+                className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
             <div className="block w-full space-y-1.5">
-              {/* <label htmlFor="email" className="text-xl md:text-2xl font-Lora">
-                  Email<span className="text-red-600">*</span>
-                </label> */}
               <input
                 required
-                name="Email"
+                name="userEmail"
+                value={formData.userEmail || ""}
+                onChange={handleChange}
                 autoComplete="on"
                 type="email"
-                id="email"
+                id="userEmail"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 mt-1 font-urbanist focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-urbanist"
+                className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
             <div className="block w-full space-y-1.5">
-              {/* <label htmlFor="phone" className="text-xl md:text-2xl font-Lora">
-                  Phone Number<span className="text-red-600">*</span>
-                </label> */}
               <input
                 required
-                name="Phone"
+                name="phoneNo"
                 type="text"
-                id="phone"
+                value={formData.phoneNo || ""}
+                onChange={handleChange}
+                id="phoneNo"
                 placeholder="Enter your Phone Number"
-                className="w-full px-4 py-3 mt-1 font-urbanist focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-urbanist"
+                className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
             <div className="block w-full col-auto space-y-1.5 md:col-span-2">
-              {/* <label htmlFor="message" className="text-xl md:text-2xl font-Lora">
-                  Message
-                </label> */}
               <textarea
-                name="Message"
+                name="message"
                 autoComplete="on"
+                value={formData.message || ""}
+                onChange={handleChange}
                 type="text"
                 id="message"
                 rows={"4"}
                 placeholder="Type in your Message"
-                className="w-full px-4 py-3 mt-1 font-urbanist focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-urbanist"
+                className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
             <button
               type="submit"
-              className={`block rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full xl:w-[350px] group`}
+              className={`block rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-Montserrat capitalize w-full xl:w-[350px] group`}
             >
-              <div className={`h-6 w-full overflow-hidden`}>
+              <div className={`h-6 w-full overflow-hidden font-semibold`}>
                 <h4
                   className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-primary`}
                 >
-                  Book Appointment
+                  {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Book Appointment"}
                 </h4>
                 <h4
                   className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
                 >
-                  Book Appointment
+                  {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Book Appointment"}
                 </h4>
               </div>
             </button>
           </form>
         </div>
-        <div className="w-full space-y-3 text-sm md:col-span-3 text-secondary bg-primary font-urbanist place-content-center">
+        <div className="w-full space-y-3 text-sm md:col-span-3 text-secondary bg-primary font-Montserrat place-content-center">
           <div className="flex items-center justify-center gap-2 md:justify-between">
             <p>©VBCC HTI. All Rights Reserved.</p>
             <p className="hidden text-center w-max xl:block">
@@ -326,8 +388,8 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
   );
 };
 
-{/* <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-urbanist">
-        <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
+{/* <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-Montserrat">
+        <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-Montserrat bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
           <div className="relative h-[40px] w-[70px]">
             <Image
               fill
@@ -343,7 +405,7 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
+        <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-Montserrat bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
           <div className="flex items-start gap-16 text-sm">
             <div className="flex flex-col items-start gap-3">
               {othersData.footerLinks1.map((list, id) => (
@@ -400,8 +462,8 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
             </Link>
           </div>
         </div>
-        <div className="flex  flex-col justify-start gap-16 md:justify-between items-start font-urbanist bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152] col-span-2 xl:col-auto text-sm">
-          <div className="flex flex-wrap items-start justify-start w-full gap-16 sm:flex-nowrap md:justify-between font-urbanist">
+        <div className="flex  flex-col justify-start gap-16 md:justify-between items-start font-Montserrat bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152] col-span-2 xl:col-auto text-sm">
+          <div className="flex flex-wrap items-start justify-start w-full gap-16 sm:flex-nowrap md:justify-between font-Montserrat">
             <div className="space-y-5">
               <div>
                 <h3 className="text-[rgba(245, 245, 245, 0.70)]">Mail us at</h3>
@@ -431,7 +493,7 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
               href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
             />
           </div>
-          <div className="flex flex-wrap items-center justify-start w-full gap-16 pt-10 sm:flex-nowrap md:justify-between font-urbanist">
+          <div className="flex flex-wrap items-center justify-start w-full gap-16 pt-10 sm:flex-nowrap md:justify-between font-Montserrat">
             <div className="space-y-3">
               <h4>Our Groups</h4>
               <div className="flex items-center gap-4 ml-6">
@@ -480,7 +542,7 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
               spy={true}
               smooth={true}
               duration={1000}
-              className={`block rounded-full px-[18px] py-5 bg-transparent border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group cursor-pointer`}
+              className={`block rounded-full px-[18px] py-5 bg-transparent border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-Montserrat capitalize w-max group cursor-pointer`}
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h4
@@ -497,7 +559,7 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
             </Mylink>
           </div>
         </div>
-        <div className="text-sm p-5 md:px-16 md:py-5 text-secondary border-y-1 border-[#2D4152] bg-primary col-span-3 font-urbanist">
+        <div className="text-sm p-5 md:px-16 md:py-5 text-secondary border-y-1 border-[#2D4152] bg-primary col-span-3 font-Montserrat">
           <div className="flex items-center justify-between gap-2">
             <p>©VBCC HTI. All Rights Reserved.</p>
             <p>

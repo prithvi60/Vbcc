@@ -4,7 +4,7 @@ import React from "react";
 
 const CategoryProducts = ({ categoryName }) => {
     return (
-        <section className="relative z-0 w-full h-auto space-y-10 overflow-hidden md:space-y-16 bg-primary padding">
+        <section className="w-full h-auto space-y-10 overflow-hidden md:space-y-16 bg-primary padding">
             <h4 className="text-2xl tracking-wide md:text-4xl xl:text-5xl text-info">
                 Products - {categoryName} Furnaces
             </h4>
@@ -19,9 +19,9 @@ const CategoryProducts = ({ categoryName }) => {
                                 alt="image"
                                 fill
                                 src={list.img}
-                                className="z-20 object-contain object-center"
+                                className="z-0 object-contain object-center"
                             />
-                            <div className="absolute top-0 z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-32 xl:size-48 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
+                            <div className="absolute top-0 -z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-32 xl:size-48 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
                         </div>
                         <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
                             {list.title}

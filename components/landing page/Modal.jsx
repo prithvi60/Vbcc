@@ -10,11 +10,79 @@ import {
 import Loader from "../Loader";
 import { useRouter } from "next/navigation";
 
-export const Modal = ({ title, styles, type, pageType }) => {
+export const Modal = ({ title, styles, type, pageType, page }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="grid px-4 py-6">
+    <div className="grid">
       <button
+        onClick={() => setIsOpen(true)}
+        className={`font-semibold w-fit transition-all ${pageType === "main"
+          ? "shadow-xl hover:scale-110"
+          : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
+          } flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-3 md:px-6 py-3"
+          }`}
+      >
+        {title === "DOWNLOAD BROCHURE" ? (
+          <h4 className="px-2 py-2 md:px-6">{title}</h4>
+        ) : (
+          <h4>{title}</h4>
+        )}
+        {title === "DOWNLOAD BROCHURE" ? (
+          <span className="p-2 border rounded-full border-info">
+            <MdOutlineFileDownload className="text-lg md:text-xl" />
+          </span>
+        ) : (
+          <>
+            {type === "download" ? (
+              <span>
+                <MdOutlineFileDownload className="text-xl" />
+              </span>
+            ) : type === "view" ? (
+              <span>
+                <MdRemoveRedEye className="text-xl" />
+              </span>
+            ) : (
+              <span>
+                <MdKeyboardDoubleArrowRight className="text-xl" />
+              </span>
+            )}
+          </>
+        )}
+      </button>
+      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} type={type} page={page} />
+    </div>
+  );
+};
+
+export const Modal2 = ({ pageType }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="grid">
+      <button
+        onClick={() => setIsOpen(true)}
+        type="submit"
+        className={`block px-3 md:px-6 py-3 group bg-info hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
+      >
+        <div className={`h-6 w-full overflow-hidden`}>
+          <h3
+            className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
+          >
+            Enquire Now
+            <span>
+              <MdKeyboardDoubleArrowRight className="text-xl text-white" />
+            </span>
+          </h3>
+          <h3
+            className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-white`}
+          >
+            Enquire Now
+            <span>
+              <MdKeyboardDoubleArrowRight className="text-xl text-white" />
+            </span>
+          </h3>
+        </div>
+      </button>
+      {/* <button
         onClick={() => setIsOpen(true)
         }
         className={`font-semibold w-fit transition-all ${pageType === "main" ? "shadow-xl hover:scale-110" : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"} flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-6 py-2"
@@ -46,26 +114,23 @@ export const Modal = ({ title, styles, type, pageType }) => {
             )}
           </>
         )}
-      </button>
-      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} type={type} />
+      </button> */}
+      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} type={"enquire"} />
     </div>
   );
 };
 
-const SpringModal = ({ isOpen, setIsOpen, type = "" }) => {
+const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
   const initialFormData = {
     firstName: "",
     lastName: "",
     phoneNo: "",
     userEmail: "",
-    // clientEmail: "",
-    // subject: "",
-    message: "",
+    message: ""
   };
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
-  const router = useRouter()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -85,10 +150,11 @@ const SpringModal = ({ isOpen, setIsOpen, type = "" }) => {
       lastName: formData.lastName,
       userEmail: formData.userEmail,
       phone: formData.phoneNo,
-      // clientEmail: "Prithvi@webibee.com",
-      // subject: `New Form Submission`,
       message: formData.message,
+      page: page
     };
+
+    // console.log(emailFormData);
 
     try {
       const response = await fetch("/api/sendMail", {
@@ -108,7 +174,8 @@ const SpringModal = ({ isOpen, setIsOpen, type = "" }) => {
 
       if (data.success) {
         setStatus(false);
-        window.location.href = "/denkirodental/dentalfurnace/productline/thankyou";
+        window.location.href =
+          "/denkirodental/dentalfurnace/productline/thankyou";
         // router.push("/denkirodental/dentalfurnace/productline/thankyou")
         // router.push("/denkirodental/dentalfurnace/productline/thankyou").then(() => {
         //   // Force reload to ensure useEffect runs again
@@ -123,22 +190,6 @@ const SpringModal = ({ isOpen, setIsOpen, type = "" }) => {
     }
   };
 
-
-  // const handleDownload = () => {
-  //   const link = document.createElement("a");
-  //   link.href = "/Denkiro_Dental_Brochure_Digital.pdf"; // Path to the file
-  //   link.download = "Denkiro_Dental_Brochure_Digital.pdf"; // Suggested filename for download
-  //   document.body.appendChild(link); // Append link to body to initiate the download
-  //   link.click(); // Programmatically trigger click to start download
-  //   document.body.removeChild(link); // Clean up by removing the link
-  // };
-  // const trackConversion = (conversionId) => {
-  //   if (window.lintrk) {
-  //     window.lintrk('track', { conversion_id: conversionId });
-  //   } else {
-  //     console.error("LinkedIn tracking is not loaded.");
-  //   }
-  // };
   return (
     <AnimatePresence>
       {isOpen && (
@@ -147,7 +198,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "" }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-[9999] w-full h-full grid p-8 overflow-y-scroll cursor-pointer bg-blue-900/50 backdrop-blur place-items-center font-Montserrat"
+          className="fixed inset-0 !z-[9999] grid w-full h-full p-8 overflow-y-scroll cursor-pointer bg-blue-900/50 backdrop-blur place-items-center font-Montserrat"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
@@ -269,18 +320,16 @@ const SpringModal = ({ isOpen, setIsOpen, type = "" }) => {
                   {type === "enquire" ? (
                     <button
                       type="submit"
-
                       className={`w-full py-2 text-sm font-semibold text-white transition-opacity md:text-base bg-info hover:opacity-90 disabled:cursor-not-allowed disabled:bg-opacity-80 `}
                     >
-                      {status ? (<Loader />) : "Enquire"}
+                      {status ? <Loader /> : "Enquire"}
                     </button>
                   ) : (
                     <button
                       type="submit"
-
                       className="w-full py-2 text-sm font-semibold text-white transition-opacity md:text-base bg-info hover:opacity-90 disabled:cursor-not-allowed disabled:bg-opacity-80"
                     >
-                      {status ? (<Loader />) : "Download"}
+                      {status ? <Loader /> : "Download"}
                     </button>
                   )}
                 </form>

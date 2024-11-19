@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 
-const Loader = () => {
+const Loader = ({ styles, type }) => {
     return (
         <div className="w-full">
-            <BarLoader />
+            <BarLoader styles={styles} type={type} />
         </div>
     );
 };
@@ -26,7 +26,7 @@ const variants = {
     },
 };
 
-const BarLoader = () => {
+const BarLoader = ({ styles, type }) => {
     return (
         <motion.div
             transition={{
@@ -36,11 +36,26 @@ const BarLoader = () => {
             animate="animate"
             className="flex items-center justify-center gap-1"
         >
-            <motion.div variants={variants} className="w-2 h-6 bg-white" />
-            <motion.div variants={variants} className="w-2 h-6 bg-white" />
-            <motion.div variants={variants} className="w-2 h-6 bg-white" />
-            <motion.div variants={variants} className="w-2 h-6 bg-white" />
-            <motion.div variants={variants} className="w-2 h-6 bg-white" />
+            <motion.div
+                variants={variants}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+            />
+            <motion.div
+                variants={variants}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+            />
+            <motion.div
+                variants={variants}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+            />
+            <motion.div
+                variants={variants}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+            />
+            <motion.div
+                variants={variants}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+            />
         </motion.div>
     );
 };

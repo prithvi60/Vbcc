@@ -2,6 +2,7 @@ import { AllPageHero } from "@/components/AllPageHero";
 import DefaultLayout from "@/components/DefaultLayout";
 import OurTeam from "@/components/OurTeam";
 import { Story } from "@/components/about/Story";
+import Timeline from "@/components/about/Timeline";
 import { Vison } from "@/components/about/Vison";
 
 const obj = {
@@ -16,6 +17,7 @@ export default function Home() {
       <DefaultLayout>
         <Story />
         <Vison />
+        <Timeline />
         <OurTeam />
       </DefaultLayout>
     </main>

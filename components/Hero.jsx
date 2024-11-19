@@ -16,39 +16,67 @@ import {
   HeroBoxMobile,
 } from "@/svg_components/LandingHeroBox";
 import Statistics from "./Statistics";
-import { LiaLongArrowAltLeftSolid, LiaLongArrowAltRightSolid } from "react-icons/lia";
 import { MdDoubleArrow, MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
+import Slider from "react-slick";
+import { heroSlider } from "@/libs/otherPage";
+
 const Hero = () => {
-  // const [client, setClient] = useState(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setClient(true);
-  //   }, 200);
-  // }, []);
+  const [nav1, setNav1] = useState(null);
+  const [nav2, setNav2] = useState(null);
+  const [nav3, setNav3] = useState(null);
+  let sliderRef1 = useRef(null);
+  let sliderRef2 = useRef(null);
+  let sliderRef3 = useRef(null);
+
+  useEffect(() => {
+    setNav1(sliderRef1);
+    setNav2(sliderRef2);
+    setNav3(sliderRef3);
+  }, []);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
 
   return (
     <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        {/* <div className="absolute -top-5 md:-top-3 xl:-top-5 2xl:-top-11 2xl:-left-2.5 size-28 left-1 md:size-24 2xl:size-52 xl:size-32">
-              <Image
-                alt="VBCC Logo"
-                src="/VBCC - Logo.svg"
-                fill
-                className="z-0 object-cover object-center"
-              />
-            </div> */}
-        <div className="relative w-full h-[140dvh] md:h-[85dvh] lg:h-[110vh] xl:h-[142vh] hero-mask_home">
-          <Image
-            alt="background image"
-            src="/her0bg.png"
-            fill
-            className="z-0 object-cover object-center brightness-[0.30]"
-          />
-          {/* <div className="absolute w-full h-full bg-[#293171aa] bg-opacity-60 z-10"></div> */}
+        <div className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[110vh] xl:h-[142vh] hero-mask_home overflow-hidden">
+          <Slider
+            arrows={false}
+            asNavFor={nav1}
+            waitForAnimate={false}
+            fade={true}
+            draggable={false}
+            ref={(slider) => (sliderRef3 = slider)}
+          >
+            {heroSlider.map((list, idx) => (
+              <div key={idx} className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[110vh] xl:h-[142vh]">
+                <Image
+                  alt="background image"
+                  src={list.bgImg || heroSlider[0].bgImg}
+                  fill
+                  className="z-0 object-cover object-center brightness-[0.30]"
+                />
+              </div>
+            ))}
+          </Slider>
         </div>
-        <div className="absolute z-20 w-11/12 md:w-[80%] -translate-x-1/2 -translate-y-1/2 top-[55%] md:top-1/2 left-1/2 font-Montserrat ">
-          <div className="flex flex-col items-center w-full h-full gap-28 md:gap-6 lg:justify-between md:flex-row">
-            <div className="relative flex items-center gap-5 md:gap-8 xl:gap-20">
+        <div className="absolute z-20 w-11/12 md:w-[95%] -translate-x-1/2 -translate-y-1/2 top-[55%] md:top-1/2 left-1/2 font-Montserrat ">
+          <div className="flex flex-col items-center w-full h-full gap-28 md:gap-0 lg:gap-6 lg:justify-between md:flex-row">
+            <div className="relative flex items-center w-full gap-5 md:w-[55%] lg:w-3/5 md:gap-8 xl:gap-20">
               <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                 <li>
                   <Link href={""} className="hover:animate-pulse ">
@@ -90,10 +118,23 @@ const Hero = () => {
                   <h4 className="text-[16px] font-bold tracking-wider md:text-[22px] xl:text-[38px] leading-tight uppercase">
                     TAILOR MADE
                   </h4>
-                  <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]">
-                    Laboratory Furnaces
-                  </h2>
-                  <div className="flex items-center gap-5">
+                  <div className="w-full max-w-2xl slider-container">
+                    <Slider
+                      arrows={false}
+                      asNavFor={nav2}
+                      waitForAnimate={false}
+                      fade={true}
+                      draggable={false}
+                      ref={(slider) => (sliderRef1 = slider)}
+                    >
+                      {heroSlider.map((list, idx) => (
+                        <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]" key={idx}>
+                          {list.categories}
+                        </h2>
+                      ))}
+                    </Slider>
+                  </div>
+                  <div className="flex flex-col gap-5 lg:items-center lg:flex-row">
                     <button
                       className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 capitalize duration-400 ease-linear hover:bg-primary bg-info text-white rounded-full cursor-pointer px-6 py-2`}
                     >
@@ -102,14 +143,16 @@ const Hero = () => {
                         <MdKeyboardDoubleArrowRight className="text-xl" />
                       </span>
                     </button>
-                    <button
-                      className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
-                    >
-                      <h4>{"GO TO CATEGORY"}</h4>
-                      <span>
-                        <MdKeyboardDoubleArrowRight className="text-xl" />
-                      </span>
-                    </button>
+                    <Link href={"/categories/dental"}>
+                      <button
+                        className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
+                      >
+                        <h4>{"GO TO CATEGORY"}</h4>
+                        <span>
+                          <MdKeyboardDoubleArrowRight className="text-xl" />
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -120,49 +163,59 @@ const Hero = () => {
                 <HeroBoxBottomMobile className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
               </div>
             </div>
-            <div className="w-full max-w-sm px-6 lg:max-w-md lg:px-0">
-              <div className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 px-7 py-7 lg:px-10 lg:py-10">
-                <h4 className="text-lg font-medium tracking-wide lg:text-xl">
-                  Best Selling
-                </h4>
-                <div className="absolute flex right-14 top-5">
-                  {/* <SamplePrevArrow />
-                    <SampleNextArrow /> */}
-                  <div className="relative px-3.5 py-1 border-l rounded-l-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-3.5 after:top-2.5 after:hover:bg-white"><LiaLongArrowAltLeftSolid className="text-base" /></div>
-                  <div className="px-3.5 py-1 border-r rounded-r-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-[25px] after:top-[10.4px] after:hover:bg-white"><LiaLongArrowAltRightSolid className="text-base" />
-                  </div>
-                </div>
-                <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-[430px] lg:max-h-full lg:h-full hideScroll">
-                  {products.map((item, id) => (
-                    <div className="flex items-center gap-5 hover:scale-110 lg:hover:scale-[1.15] transition-all duration-400 ease-linear group" key={id}>
-                      <div className="relative px-12 py-12 rounded-lg lg:py-16 lg:px-16 bg-info">
-                        <h4 className="absolute top-5 left-3 text-[9px] lg:text-xs border border-white px-3 py-1.5">
-                          IN STOCK
-                        </h4>
-                      </div>
-                      <div className="space-y-2 lg:space-y-3">
-                        <h6 className="text-xs font-medium tracking-wide uppercase">
-                          {item.type}
-                        </h6>
-                        <h4 className="flex items-center gap-2 text-sm font-semibold tracking-wide lg:text-lg">
-                          {item.productName}
-                          <span>
-                            <MdDoubleArrow className="text-2xl text-info" />
-                          </span>
-                        </h4>
-                        <div>
-                          <Link
-                            href={""}
-                            className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max hover:bg-info group-hover:block"
-                          >
-                            Request a quote
-                          </Link>
+            <div className="z-20 w-full h-full max-w-sm px-6 lg:max-w-96 xl:max-w-md lg:px-0 slider-container">
+              {/* <div className="w-full "> */}
+              <Slider
+                asNavFor={nav1}
+                ref={(slider) => (sliderRef2 = slider)}
+                swipeToSlide={true}
+                focusOnSelect={true}
+                waitForAnimate={false}
+                fade={true}
+                {...settings}
+              >
+                {heroSlider.map((list, idx) => (
+                  <div className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 px-7 py-7 lg:px-10 lg:py-10" key={idx}>
+                    <h4 className="w-3/4 text-lg font-medium tracking-wide lg:w-full xl:text-xl ">
+                      {`${list.type} Furnaces`}
+                    </h4>
+                    <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-[430px] lg:max-h-full lg:h-full hideScroll">
+                      {list.products.map((item, id) => (
+                        <div className="flex items-center gap-5 transition-all ease-linear duration-400 group" key={id}>
+                          <div className="relative px-6 py-6 rounded-lg bg-info">
+                            <div className="relative top-6 size-16 xl:size-24">
+                              <Image alt="sample image" fill src={item.img} className="object-contain object-center" />
+                            </div>
+                            <h4 className="absolute top-3 left-3 text-[9px] lg:text-xs border border-white px-3 py-1.5">
+                              IN STOCK
+                            </h4>
+                          </div>
+                          <div className="space-y-2 lg:space-y-3">
+                            <h6 className="text-xs font-medium tracking-wide uppercase">
+                              {item.type}
+                            </h6>
+                            <h4 className="flex items-center gap-2 text-sm font-semibold tracking-wide lg:text-lg">
+                              {item.productName}
+                              <span>
+                                <MdDoubleArrow className="text-2xl text-info" />
+                              </span>
+                            </h4>
+                            <div>
+                              <Link
+                                href={""}
+                                className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max group-hover:bg-info group-hover:block"
+                              >
+                                Request a quote
+                              </Link>
+                            </div>
+                          </div>
                         </div>
-                      </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </div>
+                  </div>
+                ))}
+              </Slider>
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -178,10 +231,10 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className={"size-4  cursor-pointer"}
+      className={"size-6 absolute top-7 lg:top-10 right-20 xl:right-24 px-5 py-3 border-l rounded-l-xl border-y cursor-pointer hover:bg-info backdrop-blur-xl"}
       onClick={onClick}
     >
-      <Image alt="next arrow" fill src={"/next.svg"} className="object-contain object-center" />
+      <Image alt="next arrow" fill src={"/prev arrow.png"} className="object-contain object-center p-2" />
     </div>
   );
 }
@@ -190,20 +243,22 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className={"size-4  cursor-pointer"}
+      className={"size-6 absolute px-5 py-3 border-r rounded-r-xl border-y cursor-pointer hover:bg-info top-7 right-10 xl:right-14 lg:top-10 z-30 backdrop-blur-xl"}
       onClick={onClick}
     >
-      <Image alt="prev arrow" fill src={"/prev.svg"} className="object-contain object-center" />
+      <Image alt="prev arrow" fill src={"/next arrow.png"} className="object-contain object-center p-2" />
     </div>
   );
 }
 
-const products = [
-  { productName: "APM Kanthal", type: "CERAMIC PRODUCTS" },
-  { productName: "Alumina - Boats And Crucibles ", type: "CERAMIC PRODUCTS" },
-  { productName: "Alumina - Boats And Crucibles", type: "CERAMIC PRODUCTS" },
-  { productName: "Graphite Heating Elements", type: "CERAMIC PRODUCTS" },
-];
+
+
+// const products = [
+//   { productName: "APM Kanthal", type: "CERAMIC PRODUCTS" },
+//   { productName: "Alumina - Boats And Crucibles ", type: "CERAMIC PRODUCTS" },
+//   { productName: "Alumina - Boats And Crucibles", type: "CERAMIC PRODUCTS" },
+//   { productName: "Graphite Heating Elements", type: "CERAMIC PRODUCTS" },
+// ];
 
 // <section className="h-[90vh] w-full relative">
 //   {client ? (

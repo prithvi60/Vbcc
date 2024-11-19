@@ -22,7 +22,7 @@ const TechnicalSupport = () => {
                         How You WIN with <span className="text-info">VBCC ?</span>
                     </h2>
                     <div className="flex w-full md:justify-end">
-                        <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"}  />
+                        <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description }) => {
     return (
         <>
             <button
-                className="relative flex items-end justify-start gap-4 p-2 transition-colors bg-white md:justify-end md:p-10 hover:bg-slate-50 group"
+                className={`relative flex items-end justify-start gap-4 p-2 transition-colors bg-white md:justify-end md:p-10 hover:bg-slate-50 group ${isOpen ? "hidden" : "flex"}`}
                 onClick={() => setOpen(id)}
                 style={{
                     backgroundImage: `url('${imgSrc}')`,
@@ -69,7 +69,6 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description }) => {
                 >
                     {title}
                 </span>
-                {/* <span className="relative block text-xl before:py-8 before:px-14 before:absolute before:-top-5 before:left-0 z-10 before:-z-10 before:bg-info font-semibold lg:hidden text-[22px]">{title}</span> */}
             </button>
 
             <AnimatePresence>

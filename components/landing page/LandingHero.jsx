@@ -32,7 +32,7 @@ const LandingHero = () => {
             fill
             className="z-0 object-cover object-center"
           />
-          <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 z-10"></div>
+          <div className="absolute w-full h-full bg-[#293171cb] z-10"></div>
         </div>
         <div className="absolute z-20 w-[80%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 font-Montserrat">
           <div className="flex flex-col items-center w-full h-full gap-10 md:flex-row">

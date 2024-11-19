@@ -6,9 +6,10 @@ import Link from "next/link";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import othersData from "@/libs/others.json";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Modal2 } from "./landing page/Modal";
 const Explore = () => {
   return (
-    <section className="relative z-0 w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat">
+    <section className="relative z-auto w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat">
       <div className="absolute z-10 w-full h-[15vh] sm:h-[25vh] md:h-[45vh] right-0 top-10
        md:w-4/5 md:-top-24">
         <div
@@ -27,29 +28,7 @@ const Explore = () => {
             <h4 className="w-full lg:w-3/5">Explore Products</h4>
             <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-5 left-56 text-info" />
           </div>
-          <button
-            type="submit"
-            className={`block px-3 md:px-6 py-3 group bg-info hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
-          >
-            <div className={`h-6 w-full overflow-hidden`}>
-              <h3
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
-              >
-                Enquire Now
-                <span>
-                  <MdKeyboardDoubleArrowRight className="text-xl text-white" />
-                </span>
-              </h3>
-              <h3
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-white`}
-              >
-                Enquire Now
-                <span>
-                  <MdKeyboardDoubleArrowRight className="text-xl text-white" />
-                </span>
-              </h3>
-            </div>
-          </button>
+          <Modal2 />
         </div>
         <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
           {exploreList.map((list, idx) => (
@@ -92,7 +71,7 @@ const Explore = () => {
               <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-10"></div>
             </div>
           </div>
-          <div className="relative z-30 flex flex-col items-end w-3/4 h-auto gap-6 ml-20 lg:w-4/5">
+          <div className="relative flex flex-col items-end w-3/4 h-auto gap-6 ml-20 lg:w-4/5">
             {othersData.whyChooseUs.map((item, idx) => (
               <div
                 className={`p-6 bg-info space-y-4 rounded-lg w-full h-auto border border-secondary text-white`}
@@ -132,29 +111,7 @@ const Explore = () => {
             for quality, innovation, and personalized service, transforming
             challenges into oppurtunites.
           </p>
-          <button
-            type="submit"
-            className={`block px-3 md:px-6 py-3 group bg-info hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
-          >
-            <div className={`h-6 w-full overflow-hidden`}>
-              <h3
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
-              >
-                Enquire Now
-                <span>
-                  <MdKeyboardDoubleArrowRight className="text-xl text-white" />
-                </span>
-              </h3>
-              <h3
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-white`}
-              >
-                Enquire Now
-                <span>
-                  <MdKeyboardDoubleArrowRight className="text-xl text-white" />
-                </span>
-              </h3>
-            </div>
-          </button>
+          <Modal2 />
           <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-32 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
