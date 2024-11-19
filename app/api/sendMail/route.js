@@ -13,14 +13,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Path to the default PDF file in the public directory
-const defaultPdfPath = path.join(
-  process.cwd(),
-  "public",
-  "Denkiro_Dental_Brochure_Digital.pdf"
-);
-const defaultPdfContent = fs.readFileSync(defaultPdfPath);
-
 export async function POST(req) {
   const { firstName, lastName, userEmail, phone, message } = await req.json();
 
@@ -54,7 +46,7 @@ export async function POST(req) {
             <p>Thanks</p>
             </div> 
             `,
-    bcc: [process.env.EMAIL_ID],
+    // bcc: [process.env.EMAIL_ID],
   };
 
   const userMailOptions = {
@@ -70,14 +62,14 @@ export async function POST(req) {
            207, 3rd Link Road, Nehru Nagar Industrial Estate,<br>
            Kottivakkam, Chennai, Tamil Nadu 600041<br>
            +91- 9600478315<br></p>`,
-    attachments: [
-      // Default PDF attachment
-      {
-        filename: "Denkiro_Dental_Brochure_Digital.pdf",
-        content: defaultPdfContent,
-        contentType: "application/pdf",
-      },
-    ],
+    // attachments: [
+    //   // Default PDF attachment
+    //   {
+    //     filename: "Denkiro_Dental_Brochure_Digital.pdf",
+    //     content: defaultPdfContent,
+    //     contentType: "application/pdf",
+    //   },
+    // ],
     bcc: ["info@vbccinstruments.com"],
   };
 

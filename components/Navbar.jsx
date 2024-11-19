@@ -160,7 +160,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} />}
+      {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} navLinks={navLinks} />}
     </nav>
   );
 };

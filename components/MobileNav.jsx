@@ -7,46 +7,28 @@ import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { useState } from "react";
 
-const MobileNav = ({ isOpen, setIsOpen }) => {
+const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
   const [open, setOpen] = useState(false);
   return (
     <section
       className={`fixed top-0
        ${!open ? "right-0 animate-reveal_In" : "-right-[120%]"} 
-       !z-[9999] bg-primary h-screen w-screen flex flex-col gap-7 padding md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
+       !z-[9999] bg-white/90 backdrop-blur-sm h-screen w-screen flex flex-col gap-7 padding md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
     >
-      <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-[32px]">
-        <Image
-          width={70}
-          height={20}
-          src={"https://ik.imagekit.io/webibee/VBCC/vbcc%20logo%202.svg"}
-          alt="Logo"
-          placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-          className="object-contain object-center "
-        />
-        <div className="flex items-center gap-7">
-          <Link
-            passHref
-            href={"/contact"}
-            className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <div className={`block h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-info`}
-              >
-                Contact Us
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
-              >
-                Contact Us
-              </h4>
-            </div>
-          </Link>
+      <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-5">
+        <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
+          <Image
+            fill
+            src={"/VBCC - Logo.svg"}
+            alt="Logo"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
+            className="object-contain object-center "
+          />
+        </div>
+        <div className="flex items-center p-2 rounded-full bg-primary gap-7">
           <RxCross1
-            className={` h-5 w-5 md:h-7 md:w-7 text-[#EFF3F6] cursor-pointer hover:text-info`}
+            className={` h-5 w-5 md:h-7 md:w-7 text-red-600 cursor-pointer hover:text-info`}
             onClick={() => {
               setOpen(true);
               setTimeout(() => {
@@ -58,7 +40,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
       </div>
       <div className="flex justify-center md:justify-between items-center p-5 md:px-[60px] md:py-[24px]">
         <ul className="w-full space-y-4 md:space-y-6 lg:space-y-10">
-          {othersData.navlink.map((link, idx) => (
+          {navLinks.map((link, idx) => (
             <li
               key={idx}
               className="w-max uppercase font-semibold text-3xl sm:text-[40px]"
@@ -67,10 +49,10 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
               <Link
                 passHref
                 className="flex items-center gap-2 group"
-                href={link.href}
+                href={link.ref}
               >
-                <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-secondary">
-                  {link.title}
+                <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
+                  {link.menu}
                 </span>
                 <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
               </Link>
@@ -86,7 +68,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
           />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 p-5 md:px-[60px] md:py-[32px]">
+      {/* <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 p-5 md:px-[60px] md:py-[32px]">
         <div className="flex items-center gap-5">
           <Link
             passHref
@@ -150,7 +132,7 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
             <FaWhatsapp className="text-white h-7 w-7" />
           </Link>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

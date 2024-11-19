@@ -2,11 +2,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export const ThankYouComponent = () => {
   const path = usePathname()
   const modifiedUrl = path.replace("/thankyou", "");
-  // console.log(modifiedUrl);
+  // console.log(path);
+
+  // /thankyou
+
+  // /denkirodental/dentalfurnace/productline/thankyou
+
+  useEffect(() => {
+    // console.log("Thankyou page loaded");
+    const downloadPDF = () => {
+      const link = document.createElement("a");
+      link.href = "/files/Denkiro - Dental - Brochure - Digital.pdf";
+      link.download = "Denkiro - Dental - Brochure - Digital.pdf";
+      link.click();
+    };
+
+    downloadPDF();
+  }, []);
 
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist text-warning space-y-6">
