@@ -27,9 +27,9 @@ const Hero = () => {
   // }, []);
 
   return (
-      <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
-        <div className="relative w-full h-full overflow-hidden rounded-2xl">
-          {/* <div className="absolute -top-5 md:-top-3 xl:-top-5 2xl:-top-11 2xl:-left-2.5 size-28 left-1 md:size-24 2xl:size-52 xl:size-32">
+    <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
+      <div className="relative w-full h-full overflow-hidden rounded-2xl">
+        {/* <div className="absolute -top-5 md:-top-3 xl:-top-5 2xl:-top-11 2xl:-left-2.5 size-28 left-1 md:size-24 2xl:size-52 xl:size-32">
               <Image
                 alt="VBCC Logo"
                 src="/VBCC - Logo.svg"
@@ -37,138 +37,138 @@ const Hero = () => {
                 className="z-0 object-cover object-center"
               />
             </div> */}
-          <div className="relative w-full h-[110dvh] md:h-[85dvh] lg:h-[110vh] xl:h-[142vh] hero-mask_home">
-            <Image
-              alt="background image"
-              src="/her0bg.png"
-              fill
-              className="z-0 object-cover object-center brightness-[0.30]"
-            />
-            {/* <div className="absolute w-full h-full bg-[#293171aa] bg-opacity-60 z-10"></div> */}
-          </div>
-          <div className="absolute z-20 w-11/12 md:w-[80%] -translate-x-1/2 -translate-y-1/2 top-[55%] md:top-1/2 left-1/2 font-Montserrat ">
-            <div className="flex flex-col items-center w-full h-full gap-16 md:gap-6 lg:justify-between md:flex-row">
-              <div className="relative flex items-center gap-5 md:gap-8 xl:gap-20">
-                <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
-                  <li>
-                    <Link href={""} className="hover:animate-pulse ">
-                      <FaLinkedinIn className="text-base text-white md:text-2xl" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={""} className="hover:animate-pulse ">
-                      <FaFacebookF className="text-base text-white md:text-2xl" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={""} className="hover:animate-pulse ">
-                      <FaInstagram className="text-base text-white md:text-2xl" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={""} className="hover:animate-pulse ">
-                      <FaYoutube className="text-base text-white md:text-2xl" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={""} className="hover:animate-pulse ">
-                      <FaXTwitter className="text-base text-white md:text-2xl" />
-                    </Link>
-                  </li>
-                </ul>
-                <div className="absolute hidden w-full md:block left-2 -top-20 md:-top-36 lg:-top-48 2xl:-top-60">
-                  <HeroBox className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
-                </div>
-                <div className="absolute block w-full md:hidden left-2 -top-24">
-                  <HeroBoxMobile className="h-10 fill-none" />
-                </div>
-                <div className="w-full md:w-4/5">
-                  <div className="w-full space-y-2 md:space-y-4 md:w-4/5 xl:w-4/5">
-                    <p className="w-full text-xs font-medium leading-tight md:text-sm xl:text-base">
-                      Vbcc High temperature Instruments
-                    </p>
-                    <h4 className="text-[16px] font-bold tracking-wider md:text-[22px] xl:text-[38px] leading-tight uppercase">
-                      TAILOR MADE
-                    </h4>
-                    <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]">
-                      Laboratory Furnaces
-                    </h2>
-                    <div className="flex items-center gap-5">
-                      <button
-                        className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 capitalize duration-400 ease-linear hover:bg-primary bg-info text-white rounded-full cursor-pointer px-6 py-2`}
-                      >
-                        <h4>{"ENQUIRE NOW"}</h4>
-                        <span>
-                          <MdKeyboardDoubleArrowRight className="text-xl" />
-                        </span>
-                      </button>
-                      <button
-                        className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
-                      >
-                        <h4>{"GO TO CATEGORY"}</h4>
-                        <span>
-                          <MdKeyboardDoubleArrowRight className="text-xl" />
-                        </span>
-                      </button>
-                    </div>
+        <div className="relative w-full h-[140dvh] md:h-[85dvh] lg:h-[110vh] xl:h-[142vh] hero-mask_home">
+          <Image
+            alt="background image"
+            src="/her0bg.png"
+            fill
+            className="z-0 object-cover object-center brightness-[0.30]"
+          />
+          {/* <div className="absolute w-full h-full bg-[#293171aa] bg-opacity-60 z-10"></div> */}
+        </div>
+        <div className="absolute z-20 w-11/12 md:w-[80%] -translate-x-1/2 -translate-y-1/2 top-[55%] md:top-1/2 left-1/2 font-Montserrat ">
+          <div className="flex flex-col items-center w-full h-full gap-28 md:gap-6 lg:justify-between md:flex-row">
+            <div className="relative flex items-center gap-5 md:gap-8 xl:gap-20">
+              <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
+                <li>
+                  <Link href={""} className="hover:animate-pulse ">
+                    <FaLinkedinIn className="text-base text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={""} className="hover:animate-pulse ">
+                    <FaFacebookF className="text-base text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={""} className="hover:animate-pulse ">
+                    <FaInstagram className="text-base text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={""} className="hover:animate-pulse ">
+                    <FaYoutube className="text-base text-white md:text-2xl" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={""} className="hover:animate-pulse ">
+                    <FaXTwitter className="text-base text-white md:text-2xl" />
+                  </Link>
+                </li>
+              </ul>
+              <div className="absolute hidden w-full md:block left-2 -top-20 md:-top-36 lg:-top-48 2xl:-top-60">
+                <HeroBox className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
+              </div>
+              <div className="absolute block w-full md:hidden left-2 -top-24">
+                <HeroBoxMobile className="h-10 fill-none" />
+              </div>
+              <div className="w-full md:w-4/5">
+                <div className="w-full space-y-2 md:space-y-4 md:w-4/5 xl:w-4/5">
+                  <p className="w-full text-xs font-medium leading-tight md:text-sm xl:text-base">
+                    Vbcc High temperature Instruments
+                  </p>
+                  <h4 className="text-[16px] font-bold tracking-wider md:text-[22px] xl:text-[38px] leading-tight uppercase">
+                    TAILOR MADE
+                  </h4>
+                  <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]">
+                    Laboratory Furnaces
+                  </h2>
+                  <div className="flex items-center gap-5">
+                    <button
+                      className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 capitalize duration-400 ease-linear hover:bg-primary bg-info text-white rounded-full cursor-pointer px-6 py-2`}
+                    >
+                      <h4>{"ENQUIRE NOW"}</h4>
+                      <span>
+                        <MdKeyboardDoubleArrowRight className="text-xl" />
+                      </span>
+                    </button>
+                    <button
+                      className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
+                    >
+                      <h4>{"GO TO CATEGORY"}</h4>
+                      <span>
+                        <MdKeyboardDoubleArrowRight className="text-xl" />
+                      </span>
+                    </button>
                   </div>
-                </div>
-                <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40 lg:-bottom-52 2xl:-bottom-64">
-                  <HeroBoxBottom className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
-                </div>
-                <div className="absolute z-10 block w-full md:hidden left-2 -bottom-12">
-                  <HeroBoxBottomMobile className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
                 </div>
               </div>
-              <div className="w-full max-w-sm px-6 lg:max-w-md lg:px-0">
-                <div className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 px-7 py-7 lg:px-10 lg:py-10">
-                  <h4 className="text-lg font-medium tracking-wide lg:text-xl">
-                    Best Selling
-                  </h4>
-                  <div className="absolute flex right-14 top-5">
-                    {/* <SamplePrevArrow />
+              <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40 lg:-bottom-52 2xl:-bottom-64">
+                <HeroBoxBottom className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
+              </div>
+              <div className="absolute z-10 block w-full md:hidden left-2 -bottom-12">
+                <HeroBoxBottomMobile className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
+              </div>
+            </div>
+            <div className="w-full max-w-sm px-6 lg:max-w-md lg:px-0">
+              <div className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 px-7 py-7 lg:px-10 lg:py-10">
+                <h4 className="text-lg font-medium tracking-wide lg:text-xl">
+                  Best Selling
+                </h4>
+                <div className="absolute flex right-14 top-5">
+                  {/* <SamplePrevArrow />
                     <SampleNextArrow /> */}
-                    <div className="relative px-3.5 py-1 border-l rounded-l-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-3.5 after:top-2.5 after:hover:bg-white"><LiaLongArrowAltLeftSolid className="text-base" /></div>
-                    <div className="px-3.5 py-1 border-r rounded-r-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-[25px] after:top-[10.4px] after:hover:bg-white"><LiaLongArrowAltRightSolid className="text-base" />
-                    </div>
+                  <div className="relative px-3.5 py-1 border-l rounded-l-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-3.5 after:top-2.5 after:hover:bg-white"><LiaLongArrowAltLeftSolid className="text-base" /></div>
+                  <div className="px-3.5 py-1 border-r rounded-r-xl border-y cursor-pointer hover:bg-info after:p-0.5 after:bg-info after:rounded-full after:absolute after:right-[25px] after:top-[10.4px] after:hover:bg-white"><LiaLongArrowAltRightSolid className="text-base" />
                   </div>
-                  <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-96 lg:max-h-full lg:h-full hideScroll">
-                    {products.map((item, id) => (
-                      <div className="flex items-center gap-5 hover:scale-110 lg:hover:scale-[1.15] transition-all duration-400 ease-linear group" key={id}>
-                        <div className="relative px-12 py-12 rounded-lg lg:py-16 lg:px-16 bg-info">
-                          <h4 className="absolute top-5 left-3 text-[9px] lg:text-xs border border-white px-3 py-1.5">
-                            IN STOCK
-                          </h4>
-                        </div>
-                        <div className="space-y-2 lg:space-y-3">
-                          <h6 className="text-xs font-medium tracking-wide uppercase">
-                            {item.type}
-                          </h6>
-                          <h4 className="flex items-center gap-2 text-sm font-semibold tracking-wide lg:text-lg">
-                            {item.productName}
-                            <span>
-                              <MdDoubleArrow className="text-2xl text-info" />
-                            </span>
-                          </h4>
-                          <div>
-                            <Link
-                              href={""}
-                              className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max hover:bg-info group-hover:block"
-                            >
-                              Request a quote
-                            </Link>
-                          </div>
+                </div>
+                <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-[430px] lg:max-h-full lg:h-full hideScroll">
+                  {products.map((item, id) => (
+                    <div className="flex items-center gap-5 hover:scale-110 lg:hover:scale-[1.15] transition-all duration-400 ease-linear group" key={id}>
+                      <div className="relative px-12 py-12 rounded-lg lg:py-16 lg:px-16 bg-info">
+                        <h4 className="absolute top-5 left-3 text-[9px] lg:text-xs border border-white px-3 py-1.5">
+                          IN STOCK
+                        </h4>
+                      </div>
+                      <div className="space-y-2 lg:space-y-3">
+                        <h6 className="text-xs font-medium tracking-wide uppercase">
+                          {item.type}
+                        </h6>
+                        <h4 className="flex items-center gap-2 text-sm font-semibold tracking-wide lg:text-lg">
+                          {item.productName}
+                          <span>
+                            <MdDoubleArrow className="text-2xl text-info" />
+                          </span>
+                        </h4>
+                        <div>
+                          <Link
+                            href={""}
+                            className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max hover:bg-info group-hover:block"
+                          >
+                            Request a quote
+                          </Link>
                         </div>
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Statistics />
-      </section >
+      </div>
+      <Statistics />
+    </section >
   );
 };
 

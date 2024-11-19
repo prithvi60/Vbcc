@@ -30,7 +30,7 @@ const ProductDetailsHero = () => {
     };
     return (
         <section className="relative z-0 w-full h-full overflow-hidden font-Montserrat">
-            <div className="relative w-full h-[130vh] md:h-[130vh] lg:h-[90vh] xl:h-[85vh] hero-mask bg-primary z-10"></div>
+            <div className="relative w-full h-[140vh] md:h-[130vh] lg:h-[90vh] xl:h-[85vh] hero-mask bg-primary z-10"></div>
             <div className="absolute left-0 z-10 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                 <BreadCrumb />
                 <div className="block w-full py-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
@@ -44,7 +44,7 @@ const ProductDetailsHero = () => {
                         demands of various industries, offering reliable performance and
                         cutting-edge technology.{" "}
                     </p>
-                    <div className="flex items-center gap-4 md:gap-8">
+                    <div className="flex flex-col items-center md:flex-row md:gap-8">
                         <Modal
                             styles={"bg-info text-white"}
                             title={"catalog now"}
@@ -59,7 +59,7 @@ const ProductDetailsHero = () => {
                         />
                     </div>
                 </div>
-                <div className="w-full h-full space-y-10 max-w-64 md:max-w-sm lg:max-w-md xl:max-w-2xl">
+                <div className="w-full h-full mx-auto space-y-10 max-w-96 md:max-w-md xl:max-w-2xl">
                     <div className="slider-container">
                         <Slider
                             arrows={false}
@@ -68,7 +68,7 @@ const ProductDetailsHero = () => {
                         >
                             {images.map((list, idx) => (
                                 <div
-                                    className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group"
+                                    className="relative w-full mx-auto h-52 md:h-60 xl:h-80 group"
                                     key={idx}
                                 >
                                     <Image
@@ -91,7 +91,7 @@ const ProductDetailsHero = () => {
                         >
                             {images.map((list, idx) => (
                                 <div
-                                    className={`relative w-full md:w-24 h-16 md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""
+                                    className={`relative !w-full lg:!w-36 h-16 md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""
                                         }`}
                                     key={idx}
                                 >
