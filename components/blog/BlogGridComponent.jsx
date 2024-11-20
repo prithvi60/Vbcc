@@ -3,7 +3,7 @@ import { FaRegClock } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 
-export const BlogGridComponent = ({ list }) => {
+export const BlogGridComponent = ({ post }) => {
   return (
     <div
       className="relative w-full max-w-sm xl:max-w-md border-t-3 border-info md:mt-6 font-Montserrat bg-primary"
@@ -19,19 +19,19 @@ export const BlogGridComponent = ({ list }) => {
       <div className="w-full p-5 space-y-5 md:p-6">
         <div className="relative w-full h-64 overflow-hidden">
           <Image
-            alt="svg"
-            src={list.img}
+            alt={post.imageAlt}
+            src={post.imageUrl}
             fill
             className="object-cover object-center"
           />
         </div>
         <p className="w-full text-sm leading-tight md:text-base">
-          {list.note}
+          {post.blogShortRead}
         </p>
 
         <div className="flex items-center justify-between">
           <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-white" /></span>2 mins Read</h4>
-          <Link href={`/blog/${list.id}`} className="text-xs tracking-wide underline capitalize underline-offset-2 decoration-white">view</Link>
+          <Link href={`/blog/${post.slug.current}`} className="text-xs tracking-wide underline capitalize underline-offset-2 decoration-white">view</Link>
         </div>
       </div>
     </div>

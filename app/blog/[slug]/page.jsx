@@ -1,26 +1,25 @@
 import BlogDetailHero from "@/components/blog/blogDetailPage/BlogDetailHero";
 import { BlogSpecificPage } from "@/components/blog/BlogSpecificPage";
-import { ExploreCards } from "@/components/blog/ExploreCards";
 import DefaultLayout from "@/components/DefaultLayout";
+import { client } from "@/sanity/client";
+import { POST_QUERY } from "@/sanity/Queries";
 
 
-export default function Home({ params }) {
-  const { id } = params
+export default async function Home({ params }) {
+  const { slug } = params
 
-  const filteredBlogData = blogs.filter(blog => blog.id === id)
-  // console.log(filteredBlogData[0].img);
+  const post = await client.fetch(POST_QUERY, { slug });
+  // console.log(post);
 
   return (
     <main>
       <DefaultLayout>
-        <BlogDetailHero data={filteredBlogData[0].img} />
-        <BlogSpecificPage />
-        {/* <ExploreCards /> */}
+        <BlogDetailHero data={post.imageUrl} />
+        <BlogSpecificPage post={post} />
       </DefaultLayout>
     </main>
   );
 }
-
 
 const blogs = [
   {
