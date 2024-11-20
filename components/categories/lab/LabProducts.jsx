@@ -1,6 +1,7 @@
 import React from "react";
 import CategoryHero from "../CategoryHero";
 import CategoryProducts from "../CategoryProducts";
+import { DentalProductsList } from "@/libs/productsData";
 
 const LabProducts = () => {
     return (
@@ -18,7 +19,7 @@ const LabProducts = () => {
                 pdfFile={"/files/Denkiro - Brochure - Digital.pdf"}
                 pdfName={"Denkiro - Brochure - Digital.pdf"}
             />
-            <CategoryProducts categoryName={"Laboratory"} />
+            <CategoryProducts categoryName={"Laboratory"} data={DentalProductsList} />
         </>
     );
 };

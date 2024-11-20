@@ -112,7 +112,7 @@ const Explore = () => {
             challenges into oppurtunites.
           </p>
           <Modal2 />
-          <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-32 left-24 md:left-32 lg:left-20 xl:left-32">
+          <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-44 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
                 src={"/card 1.png"}
@@ -139,7 +139,7 @@ const Explore = () => {
               </div>
             </div>
           </div>
-          <div className="absolute -bottom-32 xl:-bottom-24 right-24 md:right-52 lg:right-16 xl:right-40">
+          <div className="absolute -bottom-48 lg:-bottom-24 right-24 md:right-52 lg:right-16 xl:right-40">
             <div className="relative w-20 h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
                 src={"/card 1.png"}

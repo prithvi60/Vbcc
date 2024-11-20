@@ -43,7 +43,7 @@ const NavBar = () => {
   // console.log(path);
 
   return (
-    <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-6 xl:px-5 md:py-6 xl:py-10">
+    <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-6 xl:px-5 md:py-6 xl:py-10">
       <div
         className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/")
           ? "justify-between lg:justify-start lg:gap-20"
@@ -107,7 +107,7 @@ const NavBar = () => {
                     >
                       <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
                       <ul
-                        className={`absolute flex items-center gap-10 xl:gap-5 top-32 left-[520px] ${path.startsWith("/categories/")
+                        className={`absolute flex items-center gap-10 xl:gap-5 top-32 ${path.startsWith("/categories/")
                           ? "left-40"
                           : "left-[520px]"
                           }`}

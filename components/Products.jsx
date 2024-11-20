@@ -11,7 +11,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   const [ourProducts, setOurProducts] = useState(featureProducts);
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(8);
-  const [activeTab, setActiveTab] = useState("Featured");
+  const [activeTab, setActiveTab] = useState("Best Selling");
   const router = useRouter();
   const settings = {
     dots: false,
@@ -72,7 +72,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   return (
 
     <section className="relative z-10 w-full h-full overflow-hidden text-white pt-72">
-      <div className="w-full h-full overflow-hidden bg-primary">
+      <div className="w-full h-full overflow-hidden bg-primary font-Montserrat">
         <div className="absolute w-full h-[20vh] md:h-[35vh] -left-1 md:w-4/5 top-28">
           <div
             className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask border-3 border-secondary"
@@ -82,13 +82,13 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           >
             <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
           </div>
-          <div className="absolute z-30 flex items-center gap-8 top-8 md:gap-24 left-4 md:left-6 w-max xl:gap-60 md:top-16 lg:top-20 xl:left-24 xl:top-32">
-            <div className="z-30 flex items-center justify-center gap-1 sm:gap-3">
+          <div className="absolute z-30 flex items-center gap-8 top-8 md:gap-12 left-4 md:left-6 w-max xl:gap-16 2xl:gap-36 md:top-16 lg:top-20 xl:left-24 xl:top-32">
+            <div className="z-30 flex items-center justify-center gap-1 ">
               {sortProduct.map((item, idx) => (
                 <div
                   key={idx}
                   onClick={() => handleSortBy(item.value)}
-                  className={`text-xs relative !z-20 md:text-sm lg:text-base xl:text-xl tracking-tight font-Lora min-w-fit p-2 lg:px-10 md:px-5 md:py-2 lg:py-3 group/button block text-center duration-700 delay-75  capitalize cursor-pointer ${activeTab === item.value
+                  className={`text-xs relative !z-20 lg:text-sm xl:text-lg tracking-tight  min-w-fit p-2 lg:px-10 md:px-5 md:py-2 lg:py-3 group/button block text-center duration-700 delay-75 font-medium capitalize cursor-pointer ${activeTab === item.value
                     ? "after:absolute after:-bottom-4 after:left-0 after:w-full after:h-0.5  after:bg-white bg-info text-white"
                     : "no-underline bg-white text-primary"
                     }`}
@@ -120,7 +120,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           ))}
         </div>
         {/* mobile view */}
-        <div className="w-full sm:w-[400px] h-full flex sm:flex-nowrap md:hidden items-center gap-4 overflow-auto hideScroll">
+        <div className="w-full sm:w-[400px] h-full flex sm:flex-nowrap md:hidden items-center gap-4 overflow-auto thumbnail">
           {ourProducts.slice(0, count).map((card, id) => (
             <div className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
               <div className="relative mx-auto transition-all duration-500 ease-linear transform size-56 md:size-80 group-hover:scale-150">
