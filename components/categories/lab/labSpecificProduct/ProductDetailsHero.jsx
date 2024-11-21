@@ -21,7 +21,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
 
-    const [{ Images, productName, desc, keys, spec }] = LabProductsList.filter(
+    const [{ Images, productName, desc, keys, spec, headers, headers2, spec2 }] = LabProductsList.filter(
         (val) => val.productName === decodeURIComponent(filteredURI)
     );
 
@@ -57,7 +57,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                             {productName}
                         </h4>
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
-                            {desc}
+                            {desc || "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology."}
                         </p>
                         <div className="flex flex-col items-center md:flex-row md:gap-8">
                             <button
@@ -146,7 +146,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                     </div>
                 </div>
             </section>
-            <ProductDetails keys={keys} specs={spec} />
+            <ProductDetails keys={keys} specs={spec} headers={headers} page={"lab"} headers2={headers2} specs2={spec2} />
             <MoreProducts data={moreProducts.slice(0, 2)} />
         </>
     );
