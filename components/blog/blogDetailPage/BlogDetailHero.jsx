@@ -14,7 +14,7 @@ import {
     HeroBoxMobile,
 } from "@/svg_components/LandingHeroBox";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-const BlogDetailHero = ({ data }) => {
+const BlogDetailHero = ({ data, postName }) => {
 
     return (
         <section className="relative z-0 w-full h-full mb-10 text-white">
@@ -64,17 +64,11 @@ const BlogDetailHero = ({ data }) => {
                                 <HeroBoxMobile className="h-10 fill-none" />
                             </div>
                             <div className="w-full md:w-4/5">
-                                <div className="w-full space-y-2 md:space-y-4 md:w-4/5 xl:w-4/5">
-                                    {/* <p className="w-full text-xs font-medium leading-tight md:text-sm xl:text-base">
-                                        Vbcc High temperature Instruments
-                                    </p>
-                                    <h4 className="text-[16px] font-bold tracking-wider md:text-[22px] xl:text-[38px] leading-tight uppercase">
-                                        TAILOR MADE
-                                    </h4> */}
+                                <div className="w-full space-y-2 md:space-y-4 ">
                                     <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]">
-                                        Laboratory Furnaces
+                                        {postName}
                                     </h2>
-                                    <div className="flex items-center gap-5">
+                                    {/* <div className="flex items-center gap-5">
                                         <button
                                             className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 capitalize duration-400 ease-linear hover:bg-primary bg-info text-white rounded-full cursor-pointer px-6 py-2`}
                                         >
@@ -91,7 +85,7 @@ const BlogDetailHero = ({ data }) => {
                                                 <MdKeyboardDoubleArrowRight className="text-xl" />
                                             </span>
                                         </button>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40 lg:-bottom-52 2xl:-bottom-64">

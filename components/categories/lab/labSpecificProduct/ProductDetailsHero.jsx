@@ -1,7 +1,7 @@
 "use client";
 import BreadCrumb from "@/app/categories/BreadCrumb";
 import { Modal } from "@/components/landing page/Modal";
-import { DentalProductsList } from "@/libs/productsData";
+import { LabProductsList } from "@/libs/productsData";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
@@ -21,11 +21,11 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
 
-    const [{ Images, productName, desc, keys, spec }] = DentalProductsList.filter(
+    const [{ Images, productName, desc, keys, spec }] = LabProductsList.filter(
         (val) => val.productName === decodeURIComponent(filteredURI)
     );
 
-    const moreProducts = DentalProductsList.filter((val) => val.productName !== decodeURIComponent(filteredURI))
+    const moreProducts = LabProductsList.filter((val) => val.productName !== decodeURIComponent(filteredURI))
     // console.log(moreProducts.slice(0, 2));
 
 

@@ -2,16 +2,16 @@ import { POSTS_QUERY } from "@/sanity/Queries";
 import { BlogGridComponent } from "./BlogGridComponent";
 import { client } from "@/sanity/client";
 
-const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 20 } };
 
 export const BlogCards = async () => {
   const posts = await client.fetch(POSTS_QUERY, {}, options);
-  console.log(posts);
+  // console.log(posts);
 
   return (
     <section>
       <div className="grid w-full grid-cols-1 gap-4 place-content-center place-items-center lg:grid-cols-3 md:grid-cols-2">
-        {posts.map((post,idx) => (
+        {posts.map((post, idx) => (
           <BlogGridComponent key={idx} post={post} />
         ))}
       </div>

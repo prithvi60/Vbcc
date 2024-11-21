@@ -25,9 +25,10 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
         (val) => val.productName === decodeURIComponent(filteredURI)
     );
 
-    const moreProducts = DentalProductsList.filter((val) => val.productName !== decodeURIComponent(filteredURI))
+    const moreProducts = DentalProductsList.filter(
+        (val) => val.productName !== decodeURIComponent(filteredURI)
+    );
     // console.log(moreProducts.slice(0, 2));
-
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -57,17 +58,16 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
                             {productName}
                         </h4>
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
-                            {desc}
+                            {desc !== ""
+                                ? desc
+                                : "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology. "}
                         </p>
                         <div className="flex flex-col items-center md:flex-row md:gap-8">
                             <button
                                 type="submit"
                                 className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max shadow-xl`}
                             >
-                                <a
-                                    href={pdfFile}
-                                    download={pdfName}
-                                >
+                                <a href={pdfFile} download={pdfName}>
                                     <div className={`h-6 w-full overflow-hidden`}>
                                         <h3
                                             className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
@@ -153,4 +153,3 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
 };
 
 export default ProductDetailsHero;
-

@@ -3,15 +3,16 @@ import Link from "next/link";
 import React from "react";
 
 const CategoryProducts = ({ categoryName, data }) => {
+
     return (
         <section className="w-full h-auto space-y-10 overflow-hidden md:space-y-16 bg-primary padding">
-            <h4 className="text-2xl tracking-wide md:text-4xl xl:text-5xl text-info">
+            <h4 className="text-2xl tracking-wide capitalize md:text-4xl xl:text-5xl text-info">
                 Products - {categoryName} Furnaces
             </h4>
-            <div className="flex items-center w-full gap-5 pt-8 pb-20">
+            <div className="flex flex-wrap items-center w-full gap-5 pt-8 pb-20">
                 {data.map((list, idx) => (
-                    <Link href={`/categories/dental/${encodeURIComponent(list.productName)}`}
-                        className="relative w-full space-y-8 group font-Montserrat"
+                    <Link href={`/categories/${categoryName}/${encodeURIComponent(list.productName)}`}
+                        className="relative w-full max-w-sm space-y-8 group font-Montserrat"
                         key={idx}
 
                     >
