@@ -26,9 +26,9 @@ const BreadCrumb = () => {
                 return (
                     <BreadcrumbItem key={idx}>
                         {BCPath !== "/categories" ? (
-                            <Link href={BCPath}>{list}</Link>
+                            <Link href={BCPath}>{decodeURIComponent(list)}</Link>
                         ) : (
-                            <h5>{list}</h5>
+                            <h5>{decodeURIComponent(list)}</h5>
                         )}
                     </BreadcrumbItem>
                 );

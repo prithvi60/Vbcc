@@ -14,7 +14,12 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { firstName, lastName, userEmail, phone, message } = await req.json();
+  const { firstName, lastName, userEmail, phone, message, page } =
+    await req.json();
+
+  const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
+
+  // console.log(capitalized);
 
   // !clientEmail
   if (!userEmail && !process.env.EMAIL_ID) {
@@ -28,7 +33,7 @@ export async function POST(req) {
   const clientMailOptions = {
     from: `"${userEmail}" <${"support@webibee.com"}>`,
     to: "info@vbccinstruments.com",
-    subject: "New Customer Form Submitted",
+    subject: `New Customer Form Submitted - ${capitalized} Page`,
     html: `
             <div className="block space-y-10 font-merriWeather">
             <h4 className="!text-lg !capitalize">Hi,</h4>
@@ -70,7 +75,7 @@ export async function POST(req) {
     //     contentType: "application/pdf",
     //   },
     // ],
-    bcc: ["info@vbccinstruments.com"],
+    bcc: ["sales@vbccinstruments.com"],
   };
 
   try {

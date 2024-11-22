@@ -8,6 +8,7 @@ import { motion, AnimatePresence, LazyMotion } from "framer-motion";
 import { useWindowSize } from "./landing page/UseWindowSize ";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Modal2 } from "./landing page/Modal";
 const ImgSlider = [
   { img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png", title: "Vbcc" },
   { img: "https://ik.imagekit.io/webibee/VBCC/HWD1.png", title: "Strategize" },
@@ -35,7 +36,7 @@ const HowWeDo = () => {
   };
   return (
     <>
-      <section className='relative w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
+      <section className='relative z-0 w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
         <div className='flex flex-col items-center w-full h-full md:flex-row padding'>
           <div className='block w-full space-y-4 py-14 md:py-20 md:space-y-6 md:w-3/5'>
             <h4 className='text-2xl tracking-wide md:text-3xl xl:text-4xl text-info'>The "Tailor Made" Promise </h4>
@@ -48,7 +49,7 @@ const HowWeDo = () => {
               src={"/tailor-1.png"}
               className="z-20 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
             />
-            <div className="absolute top-2 md:top-8 group-hover:bg-info group-hover:scale-80 transition-colors duration-400 ease-in-out z-10 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72"></div>
+            <div className="absolute top-2 md:top-8 group-hover:scale-80 transition-colors duration-400 ease-in-out z-10 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
           </div>
         </div>
         <div className='absolute left-0 w-48 h-28 -top-6 md:h-36 md:w-72'>
@@ -71,25 +72,7 @@ const HowWeDo = () => {
             <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
               How we <span className="text-info">do it? </span>
             </h2>
-            <button
-              type="submit"
-              className={`block px-3 md:px-6 py-3 group bg-info hover:bg-secondary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max absolute md:top-40 right-12 top-20 md:right-4`}
-            >
-              <div className={`h-6 w-full overflow-hidden`}>
-                <h3
-                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
-                >
-                  Know More
-                  <span><MdKeyboardDoubleArrowRight className="text-xl text-white" /></span>
-                </h3>
-                <h3
-                  className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-primary flex items-center gap-2`}
-                >
-                  Know More
-                  <span><MdKeyboardDoubleArrowRight className="text-xl text-primary" /></span>
-                </h3>
-              </div>
-            </button>
+            <Modal2 />
           </div>
         </div>
         <div className="flex h-[380px] md:h-[520px] w-full max-w-7xl shadow overflow-hidden">
@@ -152,7 +135,6 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
           {title}
         </span>
 
-        {/* <span className="relative block text-xl before:py-8 before:px-14 before:absolute before:-top-5 before:left-0 z-10 before:-z-10 before:bg-info font-semibold lg:hidden text-[22px]">{title}</span> */}
       </button>
 
       <AnimatePresence>

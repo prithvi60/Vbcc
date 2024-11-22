@@ -32,34 +32,34 @@ const LandingHero = () => {
             fill
             className="z-0 object-cover object-center"
           />
-          <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 z-10"></div>
+          <div className="absolute w-full h-full bg-[#293171cb] z-10"></div>
         </div>
         <div className="absolute z-20 w-[80%] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 font-Montserrat">
           <div className="flex flex-col items-center w-full h-full gap-10 md:flex-row">
             <div className="relative flex items-center gap-5 md:gap-16 xl:gap-20">
               <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse" target="_blank">
                     <FaLinkedinIn className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
                     <FaFacebookF className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="_blank">
                     <FaInstagram className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
                     <FaYoutube className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="_blank">
                     <FaXTwitter className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>

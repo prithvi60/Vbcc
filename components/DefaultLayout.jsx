@@ -7,7 +7,6 @@ import Development from "./development";
 const DefaultLayout = ({ children }) => {
     return (
         <div>
-            {/* <Banner /> */}
             <Development />
             <NavBar />
             {children}

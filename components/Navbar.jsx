@@ -1,12 +1,10 @@
 "use client";
-import othersData from "@/libs/others.json";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
-import { list } from "postcss";
 import { MdDoubleArrow } from "react-icons/md";
 
 // const productList = [
@@ -40,11 +38,12 @@ import { MdDoubleArrow } from "react-icons/md";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHover, setIsHover] = useState(false);
   const path = usePathname();
   // console.log(path);
 
   return (
-    <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-6 xl:px-5 md:py-6 xl:py-10">
+    <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-6 xl:px-5 md:py-6 xl:py-10">
       <div
         className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/")
           ? "justify-between lg:justify-start lg:gap-20"
@@ -73,29 +72,54 @@ const NavBar = () => {
                     : "text-primary"
                   }`}
               >
-                <Link href={list.ref}>
-                  {list.menu === "BLOGS" && path !== "/" ? (
+                {list.menu === "CATEGORIES" ? (
+                  <Link href={list.ref} onMouseEnter={() => setIsHover(true)}>
+                    <h4>{list.menu}</h4>
+                  </Link>
+                ) : (
+                  <Link href={list.ref}>
+                    <h4>{list.menu}</h4>
+                  </Link>
+                )}
+
+                {/* {list.menu === "BLOGS" && path !== "/" ? (
                     <h4>{`CULTURE OR ${list.menu}`}</h4>
                   ) : (
                     <h4>{list.menu}</h4>
-                  )}{" "}
-                </Link>
+                  )}{" "} */}
               </div>
               {list.subMenu && (
-                <div className="hidden group-hover:block  fixed w-full h-full bg-[#2931719c] bg-opacity-60 top-0 left-0 !z-[999]">
-                  <div className="absolute w-full h-[20vh] md:h-[35vh] left-48 md:w-4/5 top-0 !z-[999]">
+                <div
+                  className={`fixed w-full h-full bg-[#2931719c] bg-opacity-60 top-0 left-0 !z-[999] ${isHover
+                    ? "block transition-all duration-400 ease-linear group"
+                    : "hidden"
+                    }`}
+                >
+                  <div
+                    className={`absolute w-full h-[40vh] xl:h-[55vh] left-48 md:w-4/5 top-0 !z-[999]`}
+                  >
                     <div
+                      onMouseLeave={() => setIsHover(false)}
                       className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask border-3 border-secondary"
                       style={{
                         backgroundImage: "url('/counterBg.png')",
                       }}
                     >
                       <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
-                      <ul className="absolute flex items-center gap-5 top-32 left-[520px]">
+                      <ul
+                        className={`absolute flex items-center gap-10 xl:gap-5 top-32 ${path.startsWith("/categories/")
+                          ? "left-40"
+                          : "left-[520px]"
+                          }`}
+                      >
                         {list.subMenu.map((item, idx) => (
                           <li className="relative" key={idx}>
-                            <Link href={item.ref} className="space-y-2">
-                              <div className="relative overflow-hidden size-20 !z-[1000] rounded-md">
+                            <Link
+                              href={item.ref}
+                              className="flex flex-row h-full gap-4 xl:flex-col"
+                              onClick={() => setIsHover(false)}
+                            >
+                              <div className="relative overflow-hidden size-12 xl:size-20 !z-[1000] rounded-md">
                                 <Image
                                   alt=""
                                   src={item.img}
@@ -104,7 +128,7 @@ const NavBar = () => {
                                 />
                               </div>
                               <div
-                                className={`text-base font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 capitalize relative !z-[1000] text-white`}
+                                className={`text-base font-medium tracking-wide decoration-info capitalize relative !z-[1000] text-white`}
                               >
                                 {item.menu}{" "}
                                 <p className="flex items-center gap-2">
@@ -160,7 +184,9 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} navLinks={navLinks} />}
+      {isOpen && (
+        <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} navLinks={navLinks} />
+      )}
     </nav>
   );
 };

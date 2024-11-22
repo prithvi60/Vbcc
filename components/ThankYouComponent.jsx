@@ -53,7 +53,7 @@ export const ThankYouComponent = () => {
         " Please check your email now "
       </p>
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-5">
-        <Link
+        {/* <Link
           scroll={false}
           href="/"
           className={`group/button block rounded-full px-6 py-3 bg-[#20427D] hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-max tracking-wider`}
@@ -70,7 +70,7 @@ export const ThankYouComponent = () => {
               Explore More
             </h4>
           </div>
-        </Link>
+        </Link> */}
         <Link
           scroll={false}
           href={modifiedUrl === "" ? "/" : modifiedUrl}
