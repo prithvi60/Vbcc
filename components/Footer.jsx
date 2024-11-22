@@ -346,13 +346,6 @@ const Footer = () => {
               >
                 Privacy Policy
               </Link>
-              <Link
-                passHref
-                href={"/termsofservice"}
-                className=" hover:text-secondary hover:text-opacity-70"
-              >
-                Terms of Service
-              </Link>
             </div>
           </div>
           <p className="block w-full text-center xl:hidden">
