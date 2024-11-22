@@ -75,7 +75,7 @@ export async function POST(req) {
     //     contentType: "application/pdf",
     //   },
     // ],
-    bcc: ["info@vbccinstruments.com"],
+    bcc: ["sales@vbccinstruments.com"],
   };
 
   try {

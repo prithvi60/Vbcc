@@ -2,7 +2,7 @@
 import othersData from "@/libs/others.json";
 import Image from "next/image";
 import Link from "next/link";
-import { FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { useState } from "react";
 import { FaInstagram, FaPhone, FaRegEnvelope } from "react-icons/fa";
 import {
@@ -129,27 +129,27 @@ const Footer = () => {
           <h4 className="text-xl font-medium tracking-wider text-center">FOLLOW US</h4>
           <ul className="flex items-center justify-center gap-3 ">
             <li>
-              <Link href={""} className="hover:animate-pulse ">
+              <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse " target="_blank">
                 <FaLinkedin className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={""} className="hover:animate-pulse ">
-                <FaWhatsapp className="text-lg md:text-2xl" />
+              <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
+                <FaFacebookF className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={""} className="hover:animate-pulse ">
+              <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="_blank">
                 <FaXTwitter className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={""} className="hover:animate-pulse ">
+              <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="_blank">
                 <FaInstagram className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={""} className="hover:animate-pulse ">
+              <Link href={"www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
                 <FaYoutube className="text-lg md:text-2xl" />
               </Link>
             </li>
@@ -218,7 +218,7 @@ const Footer = () => {
           <div className="flex items-center justify-center md:items-start md:justify-start gap-2.5 md:gap-5 w-full xl:w-max">
             <FaRegEnvelope className="text-lg text-white md:text-2xl" />
             <ConnectComponent
-              text={"info@vbccinstruments.com"}
+              text={"sales@vbccinstruments.com"}
               copied={Copied}
               handleClick={handlequote}
             />

@@ -40,7 +40,6 @@ const Hero = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
     speed: 2000,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -79,27 +78,27 @@ const Hero = () => {
             <div className="relative flex items-center w-full gap-5 md:w-[55%] lg:w-3/5 md:gap-8 xl:gap-20">
               <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse" target="_blank">
                     <FaLinkedinIn className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
                     <FaFacebookF className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="_blank">
                     <FaInstagram className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
                     <FaYoutube className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={""} className="hover:animate-pulse ">
+                  <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="_blank">
                     <FaXTwitter className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
@@ -402,3 +401,10 @@ function SamplePrevArrow(props) {
 //     </Mylink>
 //   )}
 // </section>
+
+
+// LinkedIn - https://www.linkedin.com/company/vbcc-hti/
+// Facebook - https://www.facebook.com/vbcc.hti/
+// Instagram - https://www.instagram.com/vbcc_hti/
+// YouTube - www.youtube.com/@vbcc_hti
+// X - https://x.com/vbcc_hti 

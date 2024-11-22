@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const BlogGridComponent = ({ post }) => {
   return (
-    <div
-      className="relative w-full max-w-sm xl:max-w-md border-t-3 border-info md:mt-6 font-Montserrat bg-primary"
+    <Link href={`/blog/${post.slug.current}`}
+      className="relative w-full max-w-sm xl:max-w-md border-t-3 border-info md:mt-6 font-Montserrat bg-primary group"
     >
       <div className="absolute top-0 left-0 w-full h-2">
         <Image
@@ -25,16 +25,16 @@ export const BlogGridComponent = ({ post }) => {
             className="object-cover object-center"
           />
         </div>
-        <p className="w-full text-sm leading-tight md:text-base">
+        <p className="w-full text-sm leading-tight md:text-base line-clamp-3">
           {post.blogShortRead}
         </p>
 
         <div className="flex items-center justify-between">
           <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-white" /></span>2 mins Read</h4>
-          <Link href={`/blog/${post.slug.current}`} className="text-xs tracking-wide underline capitalize underline-offset-2 decoration-white">view</Link>
+          <div className="text-xs tracking-wide underline capitalize transition-all ease-linear underline-offset-2 decoration-white group-hover:scale-125 duration-400">view</div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

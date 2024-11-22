@@ -59,7 +59,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
                             {desc || "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology."}
                         </p>
-                        <div className="flex flex-col items-center md:flex-row md:gap-8">
+                        <div className="flex flex-col items-center gap-8 md:flex-row">
                             <button
                                 type="submit"
                                 className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max shadow-xl`}
