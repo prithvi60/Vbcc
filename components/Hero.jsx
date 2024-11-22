@@ -42,7 +42,7 @@ const Hero = () => {
     infinite: true,
     speed: 2000,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
@@ -55,11 +55,12 @@ const Hero = () => {
         <div className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[110vh] xl:h-[142vh] hero-mask_home overflow-hidden">
           <Slider
             arrows={false}
-            asNavFor={nav1}
+            asNavFor={nav2}
             waitForAnimate={false}
             fade={true}
             draggable={false}
-            ref={(slider) => (sliderRef3 = slider)}
+            autoplaySpeed={2000}
+            ref={(slider) => (sliderRef1 = slider)}
           >
             {heroSlider.map((list, idx) => (
               <div key={idx} className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[110vh] xl:h-[142vh]">
@@ -120,11 +121,13 @@ const Hero = () => {
                   <div className="w-full max-w-2xl slider-container">
                     <Slider
                       arrows={false}
-                      asNavFor={nav2}
+                      asNavFor={nav3}
                       waitForAnimate={false}
                       fade={true}
+                      speed={2000}
+                      autoplaySpeed={2000}
                       draggable={false}
-                      ref={(slider) => (sliderRef1 = slider)}
+                      ref={(slider) => (sliderRef2 = slider)}
                     >
                       {heroSlider.map((list, idx) => (
                         <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]" key={idx}>
@@ -166,11 +169,11 @@ const Hero = () => {
               {/* <div className="w-full "> */}
               <Slider
                 asNavFor={nav1}
-                ref={(slider) => (sliderRef2 = slider)}
+                ref={(slider) => (sliderRef3 = slider)}
                 swipeToSlide={true}
                 focusOnSelect={true}
-                waitForAnimate={false}
-                fade={true}
+                // waitForAnimate={false}
+                // fade={true}
                 {...settings}
               >
                 {heroSlider.map((list, idx) => (
