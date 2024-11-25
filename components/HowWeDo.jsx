@@ -9,6 +9,7 @@ import { useWindowSize } from "./landing page/UseWindowSize ";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Modal2 } from "./landing page/Modal";
+import { TSBox } from "@/svg_components/LandingHeroBox";
 const ImgSlider = [
   { img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png", title: "Vbcc" },
   { img: "https://ik.imagekit.io/webibee/VBCC/HWD1.png", title: "Strategize" },
@@ -36,7 +37,7 @@ const HowWeDo = () => {
   };
   return (
     <>
-      <section className='relative z-0 w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
+      <section className='relative z-auto w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
         <div className='flex flex-col items-center w-full h-full md:flex-row padding'>
           <div className='block w-full space-y-4 py-14 md:py-20 md:space-y-6 md:w-3/5'>
             <h4 className='text-2xl tracking-wide md:text-3xl xl:text-4xl text-info'>The "Tailor Made" Promise </h4>
@@ -47,9 +48,9 @@ const HowWeDo = () => {
               alt="image"
               fill
               src={"/tailor-1.png"}
-              className="z-20 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
+              className="z-10 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
             />
-            <div className="absolute top-2 md:top-8 group-hover:scale-80 transition-colors duration-400 ease-in-out z-10 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
+            <div className="absolute top-2 md:top-8 group-hover:scale-80 transition-colors duration-400 ease-in-out z-0 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
           </div>
         </div>
         <div className='absolute left-0 w-48 h-28 -top-6 md:h-36 md:w-72'>
@@ -59,20 +60,25 @@ const HowWeDo = () => {
           <Image src={"/vector2blue.svg"} fill alt='' className='object-contain object-center' />
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 pb-8 overflow-hidden text-white lg:flex-row font-Montserrat md:px-8 bg-primary">
-        <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[480px]">
-          <Image
-            src={"/card 1.png"}
-            fill
-            alt="image"
-            className="object-cover object-center"
-          />
-          <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
-          <div className="absolute block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-20 md:-right-14">
-            <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
-              How we <span className="text-info">do it? </span>
-            </h2>
-            <Modal2 />
+      <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 pt-10 pb-8 text-white lg:gap-40 lg:flex-row font-Montserrat md:px-8 bg-primary">
+        <div className="w-full lg:w-1/4">
+          <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
+            <Image
+              src={"/card 1.png"}
+              fill
+              alt="image"
+              className="object-cover object-center"
+            />
+            <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
+            <div className="absolute z-20 block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-16 md:-right-14">
+              <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
+                How we <span className="text-info">do it? </span>
+              </h2>
+              <Modal2 />
+            </div>
+            <div className="absolute z-10 -top-7 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-14">
+              <TSBox className={"w-[300px] h-[440px] md:w-[320px] md:h-[440px] lg:w-[450px] lg:h-[550px] fill-none"} />
+            </div>
           </div>
         </div>
         <div className="flex h-[380px] md:h-[520px] w-full max-w-7xl shadow overflow-hidden">
@@ -117,7 +123,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
             writingMode: "vertical-rl",
           }}
           href={"/contact"}
-          className={`leading-7 tracking-wider rotate-180 block px-2 py-2 md:py-6 group bg-white shadow-2xl shadow-black bg-opacity-20 transition-colors duration-400 ease-out hover:bg-primary text-center text-base font-urbanist capitalize max-h-48 w-max absolute top-8 right-5 md:top-80 md:left-3 z-10`}
+          className={`leading-7 tracking-wider rotate-180 block px-2 py-2 md:py-6 group bg-white shadow-2xl shadow-black bg-opacity-20 transition-colors duration-400 ease-out hover:bg-primary text-center text-base font-urbanist capitalize max-h-48 w-max absolute top-8 right-5 md:top-80 md:left-3 z-0`}
         >
           <h3
             className={`text-white flex items-center gap-2`}
@@ -130,7 +136,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
           style={{
             writingMode: "vertical-rl",
           }}
-          className="absolute bottom-4 right-7 font-semibold text-left md:text-[26px] xl:text-[32px] leading-7 tracking-wider rotate-180 block text-white before:-left-1 z-10 py-5 md:py-8 before:p-4 before:py-6 md:before:p-11 before:absolute before:top-0 md:before:-left-6 before:-z-10 before:bg-info"
+          className="absolute bottom-4 right-7 font-semibold text-left md:text-[26px] xl:text-[32px] leading-7 tracking-wider rotate-180 block text-white before:-left-1 z-0 py-5 md:py-8 before:p-4 before:py-6 md:before:p-11 before:absolute before:top-0 md:before:-left-6 before:-z-10 before:bg-info"
         >
           {title}
         </span>

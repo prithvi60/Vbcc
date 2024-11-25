@@ -4,10 +4,10 @@ import Image from "next/image"
 import { useMemo } from "react";
 import dynamic from 'next/dynamic'
 import Slider from "react-slick";
+import { TSBox } from "@/svg_components/LandingHeroBox";
 const MarqueeComponent = dynamic(() => import("react-fast-marquee"), { ssr: false })
 
 const Clients = () => {
-  const memoizedLogos = useMemo(() => othersData.clientLogos, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -42,9 +42,9 @@ const Clients = () => {
     ]
   };
   return (
-    <section className='relative w-full h-screen overflow-y-hidden text-white bg-primary font-Montserrat'>
-      <div className='flex flex-col items-center gap-10 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
-        <div className="relative w-[280px] h-[280px] lg:w-[340px] md:h-[480px]">
+    <section className='relative w-full h-full overflow-y-hidden text-white lg:h-screen bg-primary font-Montserrat'>
+      <div className='flex flex-col items-center gap-28 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
+        <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10">
           <Image
             src={"/card 1.png"}
             fill
@@ -52,10 +52,13 @@ const Clients = () => {
             className="object-cover object-center"
           />
           <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#0c1a32d9] to-[#081326b4] "></div>
-          <div className="absolute block w-full space-y-3 top-20 -right-12 md:-right-24">
+          <div className="absolute z-20 block w-full space-y-3 top-20 -right-12 md:-right-24">
             <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] w-full capitalize">
               Our Prestigious <span className="text-info w-max">Clients</span>
             </h2>
+          </div>
+          <div className="absolute z-10 -top-3 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-16">
+            <TSBox className={"w-[280px] h-[400px] md:w-[320px] md:h-[440px] lg:w-[450px] lg:h-[550px] fill-none"} />
           </div>
         </div>
         <div className="block space-y-0 md:space-y-10">

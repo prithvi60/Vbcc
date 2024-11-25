@@ -54,3 +54,21 @@ export const heroSlider = [
         ],
     },
 ];
+
+export const navLinks = [
+    { menu: "ABOUT US", ref: "/about" },
+    {
+        menu: "CATEGORIES",
+        ref: "",
+        subMenu: [
+            { img: "/blog-6.jpeg", menu: "dental", ref: "/categories/dental" },
+            {
+                img: "/blog-3.jpeg",
+                menu: "laboratory",
+                ref: "/categories/laboratory",
+            },
+        ],
+    },
+    { menu: "BLOGS", ref: "/blog" },
+    { menu: "TESTIMONIALS", ref: "/testimonials" },
+];

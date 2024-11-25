@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Loader from "./Loader";
+import { FooterBox, FooterBox2 } from "@/svg_components/LandingHeroBox";
 
 const initialFormData = {
   firstName: "",
@@ -104,13 +105,16 @@ const Footer = () => {
     <footer className="relative flex flex-col w-full h-full text-white md:flex-row border-t-3 border-info font-Montserrat">
       <div className="relative block w-full h-full p-5 space-y-12 md:p-8 md:w-2/5 xl:w-1/5">
         <div className="block">
-          <div className="relative h-20 mx-auto my-4 overflow-hidden w-60">
+          <div className="relative w-64 h-20 mx-auto my-14 md:my-4">
             <Image
               alt="VBCC Logo"
               src="/VBCC - Logo.svg"
               fill
               className="object-cover object-center"
             />
+            <div className="absolute -top-36 -left-10 md:-left-5 md:-top-24 lg:-top-32 lg:-left-9">
+              <FooterBox className={"w-[350px] h-[440px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"} />
+            </div>
           </div>
           <p className="w-4/5 mx-auto text-xs font-medium text-primary">
             Stay connected for the latest updates in cutting edge technology,
@@ -235,7 +239,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="block w-full space-y-3 md:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto">
+        <div className="relative block w-full space-y-3 md:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto">
           <h4 className="text-xl font-medium tracking-wider text-center uppercase md:text-start">
             LET’S WORK TOGETHER
           </h4>
@@ -324,6 +328,9 @@ const Footer = () => {
               </div>
             </button>
           </form>
+          {/* <div className="absolute -top-36 -left-10 md:-left-5 md:-top-24 lg:-top-10 lg:-left-9">
+            <FooterBox2 className={"w-[350px] h-[440px] md:w-[280px] md:h-[380px] lg:w-[510px] lg:h-[610px] fill-none"} />
+          </div> */}
         </div>
         <div className="w-full space-y-3 text-sm md:col-span-3 text-secondary bg-primary font-Montserrat place-content-center">
           <div className="flex items-center justify-center gap-2 md:justify-between">

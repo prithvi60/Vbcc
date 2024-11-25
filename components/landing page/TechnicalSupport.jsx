@@ -4,25 +4,31 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./UseWindowSize ";
 import { Modal } from "./Modal";
+import { TSBox } from "@/svg_components/LandingHeroBox";
 
 const TechnicalSupport = () => {
     const [open, setOpen] = useState(items[0].id);
     return (
         <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 py-8 overflow-hidden text-white md:flex-row font-Montserrat md:py-12 md:px-8 xl:px-14 bg-primary">
-            <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[480px]">
-                <Image
-                    src={"/card 1.png"}
-                    fill
-                    alt="image"
-                    className="object-cover object-center"
-                />
-                <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
-                <div className="absolute block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-20 md:-right-14">
-                    <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full">
-                        How You WIN with <span className="text-info">VBCC ?</span>
-                    </h2>
-                    <div className="flex w-full md:justify-end">
-                        <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
+            <div className="w-full my-10 md:my-0">
+                <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
+                    <Image
+                        src={"/card 1.png"}
+                        fill
+                        alt="image"
+                        className="object-cover object-center"
+                    />
+                    <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
+                    <div className="absolute block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-20 md:-right-14">
+                        <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full">
+                            How You WIN with <span className="text-info">VBCC ?</span>
+                        </h2>
+                        <div className="flex w-full md:justify-end">
+                            <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
+                        </div>
+                        <div className="absolute z-10 -top-20 -left-28 md:-left-24 md:-top-32 lg:-top-20 lg:-left-28">
+                            <TSBox className={"w-[330px] h-[450px] md:w-[360px] md:h-[470px] lg:w-[450px] lg:h-[550px] fill-none"} />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
 import { MdDoubleArrow } from "react-icons/md";
+import { navLinks } from "@/libs/otherPage";
 
 // const productList = [
 //   {
@@ -193,23 +194,7 @@ const NavBar = () => {
 
 export default NavBar;
 
-const navLinks = [
-  { menu: "ABOUT US", ref: "/about" },
-  {
-    menu: "CATEGORIES",
-    ref: "",
-    subMenu: [
-      { img: "/blog-6.jpeg", menu: "dental", ref: "/categories/dental" },
-      {
-        img: "/blog-3.jpeg",
-        menu: "laboratory",
-        ref: "/categories/laboratory",
-      },
-    ],
-  },
-  { menu: "BLOGS", ref: "/blog" },
-  { menu: "TESTIMONIALS", ref: "/testimonials" },
-];
+
 
 {
   /* <nav id="nav">

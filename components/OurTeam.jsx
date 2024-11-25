@@ -3,7 +3,7 @@ import React from 'react'
 
 const OurTeam = () => {
     return (
-        <section className='relative w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
+        <section className='relative z-auto w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
             <div className='block w-full h-full mx-auto space-y-6 max-w-[1530px] padding'>
                 <div className='block py-10 space-y-6 md:space-y-20 md:py-20'>
                     <div className='block w-full space-y-4 md:space-y-6'>
@@ -19,7 +19,7 @@ const OurTeam = () => {
                                     alt="image"
                                     fill
                                     src={"/founder-1.png"}
-                                    className="z-20 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
+                                    className="z-0 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
                             </div>
                             <div>
@@ -33,7 +33,7 @@ const OurTeam = () => {
                                     alt="image"
                                     fill
                                     src={"/founder-2.png"}
-                                    className="z-20 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
+                                    className="z-0 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
                             </div>
                             <div>

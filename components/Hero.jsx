@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        <div className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[110vh] xl:h-[142vh] hero-mask_home overflow-hidden">
+        <div className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[121vh] xl:h-[142vh] hero-mask_home overflow-hidden">
           <Slider
             arrows={false}
             asNavFor={nav2}
@@ -63,7 +63,7 @@ const Hero = () => {
             ref={(slider) => (sliderRef1 = slider)}
           >
             {heroSlider.map((list, idx) => (
-              <div key={idx} className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[110vh] xl:h-[142vh]">
+              <div key={idx} className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[121vh] xl:h-[142vh]">
                 <Image
                   alt="background image"
                   src={list.bgImg || heroSlider[0].bgImg}
