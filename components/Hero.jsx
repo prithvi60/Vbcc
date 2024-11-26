@@ -172,8 +172,8 @@ const Hero = () => {
                 ref={(slider) => (sliderRef3 = slider)}
                 swipeToSlide={true}
                 focusOnSelect={true}
-                // waitForAnimate={false}
-                // fade={true}
+                waitForAnimate={false}
+                fade={true}
                 {...settings}
               >
                 {heroSlider.map((list, idx) => (

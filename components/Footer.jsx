@@ -2,7 +2,7 @@
 import othersData from "@/libs/others.json";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { useState } from "react";
 import { FaInstagram, FaPhone, FaRegEnvelope } from "react-icons/fa";
 import {
@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Loader from "./Loader";
-import { FooterBox, FooterBox2 } from "@/svg_components/LandingHeroBox";
+import { FooterBox, FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
 const initialFormData = {
   firstName: "",
@@ -210,7 +210,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="relative block after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden w-full space-y-3 md:space-y-5 xl:w-max">
-          <h4 className="w-full text-xl font-medium tracking-wider text-center xl:w-max">CONTACT INFO</h4>
+          <h4 className="w-full text-xl font-medium tracking-wider lg:text-center xl:w-max">CONTACT INFO</h4>
           <div className="flex items-center justify-center md:items-start md:justify-start gap-2.5 md:gap-5 w-full xl:w-max">
             <FaPhone className="text-lg text-white md:text-2xl" />
             <ConnectComponent
@@ -239,12 +239,12 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="relative block w-full space-y-3 md:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto">
+        <div className="relative block w-full space-y-3 md:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
           <h4 className="text-xl font-medium tracking-wider text-center uppercase md:text-start">
             LET’S WORK TOGETHER
           </h4>
           <form
-            className="block space-y-4"
+            className="block pt-5 space-y-4"
             onSubmit={handleSubmit}
           >
             <div className="block w-full space-y-1.5">
@@ -328,9 +328,9 @@ const Footer = () => {
               </div>
             </button>
           </form>
-          {/* <div className="absolute -top-36 -left-10 md:-left-5 md:-top-24 lg:-top-10 lg:-left-9">
-            <FooterBox2 className={"w-[350px] h-[440px] md:w-[280px] md:h-[380px] lg:w-[510px] lg:h-[610px] fill-none"} />
-          </div> */}
+          <div className="absolute z-10 hidden md:block md:-top-36 md:-left-8">
+            <FooterBoxModal className={" md:w-[380px] md:h-[480px] fill-none"} />
+          </div>
         </div>
         <div className="w-full space-y-3 text-sm md:col-span-3 text-secondary bg-primary font-Montserrat place-content-center">
           <div className="flex items-center justify-center gap-2 md:justify-between">
