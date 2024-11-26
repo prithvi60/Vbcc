@@ -210,7 +210,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="relative block after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden w-full space-y-3 md:space-y-5 xl:w-max">
-          <h4 className="w-full text-xl font-medium tracking-wider lg:text-center xl:w-max">CONTACT INFO</h4>
+          <h4 className="w-full font-medium tracking-wider text-center md:text-xl lg:text-center xl:w-max">CONTACT INFO</h4>
           <div className="flex items-center justify-center md:items-start md:justify-start gap-2.5 md:gap-5 w-full xl:w-max">
             <FaPhone className="text-lg text-white md:text-2xl" />
             <ConnectComponent
