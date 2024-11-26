@@ -4,6 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const BlogGridComponent = ({ post }) => {
+  const readableTime = post.plainBody.filter(Boolean).join(' ')
+
+  const calculateReadTime = (text) => {
+    const wordsPerMinute = 200;
+    const wordCount = text.split(/\s+/).length;
+    const readingTime = Math.ceil(wordCount / wordsPerMinute);
+    return readingTime;
+  };
+
+  const blogContent = readableTime || "";
+  const readingTime = calculateReadTime(blogContent);
+
   return (
     <Link href={`/blog/${post.slug.current}`}
       className="relative w-full max-w-sm xl:max-w-md border-t-3 border-info md:mt-6 font-Montserrat bg-primary group"
@@ -30,7 +42,7 @@ export const BlogGridComponent = ({ post }) => {
         </p>
 
         <div className="flex items-center justify-between">
-          <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-white" /></span>2 mins Read</h4>
+          <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-white" /></span>{readingTime} min{readingTime > 1 ? "s" : ""} Read</h4>
           <div className="text-xs tracking-wide underline capitalize transition-all ease-linear underline-offset-2 decoration-white group-hover:scale-125 duration-400">view</div>
         </div>
       </div>

@@ -12,10 +12,10 @@ const Newsletter = () => {
             fill
             className="z-0 object-cover object-center"
           />
-          <div className="absolute w-full h-full bg-[#31394ae5] z-10"></div>
+          <div className="absolute w-full h-full bg-[#31394ae5] z-0"></div>
         </div>
         {/* bg-gradient-to-tr from-[#374154B2] via-[#0D2143B2] to-[#0D2143B2] */}
-        <div className="absolute top-0 left-0 z-20 px-5 py-10 md:p-10 2xl:p-12 w-full lg:w-[65%]">
+        <div className="absolute top-0 left-0 z-0 px-5 py-10 md:p-10 2xl:p-12 w-full lg:w-[65%]">
           <div className="space-y-9">
             <h2 className="text-2xl md:text-[32px] xl:text-[40px] 2xl:text-5xl font-Lora">
               Get the Latest <span className="text-info">Updates</span>

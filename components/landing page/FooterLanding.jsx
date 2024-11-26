@@ -1,4 +1,5 @@
 "use client"
+import { FooterBox, FooterBoxMap } from "@/svg_components/LandingHeroBox";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -32,14 +33,17 @@ const FooterLanding = () => {
   };
   return (
     <footer className="flex flex-col w-full h-full mt-8 text-white md:flex-row border-t-3 border-info font-Montserrat">
-      <div className="relative block w-full h-full mb-5 md:w-1/5">
-        <div className="relative w-40 h-12 mx-auto mt-10 overflow-hidden md:mt-14 lg:w-40 2xl:h-20 2xl:w-60">
+      <div className="relative block w-full h-full mb-5 md:w-1/2 xl:w-1/5">
+        <div className="relative w-40 h-12 mx-auto my-24 md:h-20 md:w-64 md:my-14">
           <Image
             alt="VBCC Logo"
             src="/VBCC - Logo.svg"
             fill
             className="object-cover object-center"
           />
+          <div className="absolute -top-36 -left-10 md:-left-5 md:-top-28 lg:-top-32 lg:-left-9">
+            <FooterBox className={"w-[250px] h-[340px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"} />
+          </div>
         </div>
         <div className="absolute top-0 left-0 w-full h-2">
           <Image
@@ -111,8 +115,9 @@ const FooterLanding = () => {
             </p>
           </div>
         </div>
-        <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 md:w-2/5">
+        <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 xl:w-1/4">
           <h4 className="text-xl font-medium tracking-wider uppercase">Our Location</h4>
+          {/* <div className="relative"> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248852.35523221854!2d80.20816985922144!3d12.951488698204182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de4f794ee29%3A0x8fd9b1da364d7215!2sVBCC%20High%20Temperature%20Instruments%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1730722548513!5m2!1sen!2sin"
             width="100%"
@@ -120,8 +125,12 @@ const FooterLanding = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-64 md:w-64"
+            className="w-full h-64 md:w-full"
           ></iframe>
+          {/* <div className="absolute -top-36 -left-10 md:-left-5 md:-top-24 lg:-top-16 lg:-left-9">
+              <FooterBoxMap className={"w-[350px] h-[440px] md:w-[280px] md:h-[380px] lg:w-[280px] lg:h-[360px] fill-none"} />
+            </div>
+          </div> */}
         </div>
       </div>
     </footer>

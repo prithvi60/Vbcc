@@ -6,7 +6,7 @@ const options = { next: { revalidate: 20 } };
 
 export const BlogCards = async () => {
   const posts = await client.fetch(POSTS_QUERY, {}, options);
-  // console.log(posts);
+  // console.log(posts[0].plainBody.filter(Boolean).join(' '));
 
   return (
     <section>

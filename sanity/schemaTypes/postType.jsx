@@ -63,6 +63,9 @@ export const postType = defineType({
                     fields: [{ type: "text", name: "alt", title: "ALT" }],
                 },
             ],
+            options: {
+                hotspot: true
+            }
         }),
     ],
 });

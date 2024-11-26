@@ -10,8 +10,8 @@ const Statistics = () => {
     scrollSpyDelay: 1000,
   });
   return (
-    <section className="w-full px-3 py-6 lg:absolute lg:w-4/5 2xl:w-3/4 -bottom-20 2xl:-bottom-16 xl:px-5 md:py-6 xl:py-10 text-primary">
-      <div className="flex flex-wrap items-center justify-center w-full gap-7 md:gap-10 lg:flex-nowrap lg:justify-between lg:gap-20 2xl:justify-start xl:gap-20">
+    <section className="w-full px-3 py-6 lg:absolute lg:w-4/5 2xl:w-3/4 -bottom-24 2xl:-bottom-16 xl:px-5 md:py-6 xl:py-10 text-primary">
+      <div className="flex flex-wrap items-center justify-center w-full gap-7 md:gap-10 lg:flex-nowrap lg:justify-between lg:gap-20 2xl:justify-start xl:gap-14">
         {othersData.statistics.map((item, idx) => (
           <div
             className="flex justify-between gap-5 text-center max-w-80 font-Lora md:mt-10 md:mb-0 xl:mt-0"
