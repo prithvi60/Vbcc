@@ -15,7 +15,7 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
        ${!open ? "right-0 animate-reveal_In" : "-right-[120%]"} 
        !z-[9999] bg-white/90 backdrop-blur-sm h-screen w-screen flex flex-col gap-7 padding md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
     >
-      <div className="flex justify-between items-center mt-6 md:mt-0 p-5 md:px-[60px] md:py-5">
+      <div className="flex justify-between items-center md:mt-0 p-5 md:px-[60px] md:py-5">
         <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
           <Image
             fill

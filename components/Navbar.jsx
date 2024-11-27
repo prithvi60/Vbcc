@@ -8,34 +8,6 @@ import { usePathname } from "next/navigation";
 import { MdDoubleArrow } from "react-icons/md";
 import { navLinks } from "@/libs/otherPage";
 
-// const productList = [
-//   {
-//     category: "Research Institutions",
-//     lists: [
-//       "Microwave Heating Systems",
-//       "Furnaces",
-//       "Ovens",
-//       "Nano Technology Equipment",
-//       "Special Research Equipment",
-//       "Presses",
-//       "Metallurgical Equipment",
-//     ],
-//   },
-//   {
-//     category: "Industries",
-//     lists: [
-//       "Industrial Furnaces",
-//       "Refractory Industry",
-//       "Tile & Sanitary Ware",
-//     ],
-//   },
-//   {
-//     category: "Accessories",
-//     lists: ["Heating Elements", "Controllers", "Ceramic Products"],
-//   },
-// ];
-
-// const sortBy = ["Featured", "New Products", "Best Selling"];
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +16,7 @@ const NavBar = () => {
   // console.log(path);
 
   return (
-    <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-6 xl:px-5 md:py-6 xl:py-10">
+    <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
         className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/")
           ? "justify-between lg:justify-start lg:gap-20"
@@ -52,7 +24,7 @@ const NavBar = () => {
           }`}
       >
         <Link href={"/"}>
-          <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
+          <div className="relative ml-5 md:ml-0 w-28 h-9 md:w-24 md:h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
             <Image
               alt="VBCC Logo"
               src="/VBCC - Logo.svg"
@@ -108,9 +80,9 @@ const NavBar = () => {
                     >
                       <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
                       <ul
-                        className={`absolute flex items-center gap-10 xl:gap-5 top-32 ${path.startsWith("/categories/")
-                          ? "left-40"
-                          : "left-[520px]"
+                        className={`absolute flex items-center gap-10 xl:gap-5 top-20 xl:top-32 ${path.startsWith("/categories/")
+                          ? "left-56 xl:left-40"
+                          : "lg:left-20 xl:left-80 2xl:left-[520px]"
                           }`}
                       >
                         {list.subMenu.map((item, idx) => (
@@ -179,7 +151,7 @@ const NavBar = () => {
         <div className="block group lg:hidden">
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2.5 bg-primary group-hover:bg-info rounded-full cursor-pointer"
+            className="p-2.5 bg-primary group-hover:bg-info mr-5 rounded-full cursor-pointer"
           >
             <GiHamburgerMenu className="font-semibold h-7 w-7 md:h-8 md:w-8 text-info group-hover:text-secondary" />
           </div>

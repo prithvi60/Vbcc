@@ -1,5 +1,5 @@
 "use client"
-import { FooterBox, FooterBoxMap } from "@/svg_components/LandingHeroBox";
+import { FooterBox, FooterBoxMap, FooterBoxModal } from "@/svg_components/LandingHeroBox";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -54,8 +54,8 @@ const FooterLanding = () => {
           />
         </div>
       </div>
-      <div className="w-full py-5 px-8 md:w-4/5 bg-primary flex flex-col md:flex-row justify-between items-start flex-wrap gap-3.5 md:gap-7 xl:gap-4">
-        <div className="flex items-center justify-between w-full md:w-auto md:block lg:space-y-7 xl:space-y-10">
+      <div className="w-full py-5 px-8 md:w-4/5 bg-primary flex flex-col lg:flex-row lg:justify-between items-center justify-center lg:items-start flex-wrap gap-3.5 md:gap-7 xl:gap-4">
+        <div className="flex items-center justify-between w-full md:w-auto md:block md:space-y-7 xl:space-y-10">
           <h4 className="text-xl font-medium tracking-wider text-center">
             FOLLOW US
           </h4>
@@ -87,9 +87,9 @@ const FooterLanding = () => {
             </li>
           </ul>
         </div>
-        <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 md:w-2/5">
-          <h4 className="text-xl font-medium tracking-wider">CONTACT INFO</h4>
-          <div className="flex gap-2.5 md:gap-5 w-full md:w-max">
+        <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 lg:w-2/5">
+          <h4 className="text-xl font-medium tracking-wider text-center lg:text-left">CONTACT INFO</h4>
+          <div className="flex gap-2.5 md:gap-5 justify-center items-center lg:justify-start w-full lg:w-max">
             <FaPhone className="text-lg text-white md:text-2xl" />
             <ConnectComponent
               text={"+91 9600478315"}
@@ -97,7 +97,7 @@ const FooterLanding = () => {
               handleClick={handleinquire}
             />
           </div>
-          <div className="flex gap-2.5 md:gap-5 w-full md:w-max">
+          <div className="flex gap-2.5 justify-center items-center lg:justify-start md:gap-5 w-full lg:w-max">
             <FaRegEnvelope className="text-lg text-white md:text-2xl" />
             <ConnectComponent
               text={"info@vbccinstruments.com"}
@@ -105,7 +105,7 @@ const FooterLanding = () => {
               handleClick={handlequote}
             />
           </div>
-          <div className="flex  gap-2.5 md:gap-5 w-full xl:w-max">
+          <div className="flex gap-2.5 justify-center items-center lg:justify-start md:gap-5 w-full xl:w-max">
             <FaLocationDot className="text-lg text-white md:text-2xl" />
             <p className="w-full text-sm !leading-6 xl:w-3/5">
               VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD
@@ -115,8 +115,8 @@ const FooterLanding = () => {
             </p>
           </div>
         </div>
-        <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 xl:w-1/4">
-          <h4 className="text-xl font-medium tracking-wider uppercase">Our Location</h4>
+        <div className="block relative w-full space-y-3 md:space-y-5 xl:space-y-8 xl:w-[320px]">
+          <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-left">Our Location</h4>
           {/* <div className="relative"> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248852.35523221854!2d80.20816985922144!3d12.951488698204182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de4f794ee29%3A0x8fd9b1da364d7215!2sVBCC%20High%20Temperature%20Instruments%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1730722548513!5m2!1sen!2sin"
@@ -127,10 +127,9 @@ const FooterLanding = () => {
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-64 md:w-full"
           ></iframe>
-          {/* <div className="absolute -top-36 -left-10 md:-left-5 md:-top-24 lg:-top-16 lg:-left-9">
-              <FooterBoxMap className={"w-[350px] h-[440px] md:w-[280px] md:h-[380px] lg:w-[280px] lg:h-[360px] fill-none"} />
-            </div>
-          </div> */}
+          <div className="absolute z-10 hidden xl:block xl:-top-28 xl:-left-8">
+            <FooterBoxModal className={" xl:w-[380px] xl:h-[380px] fill-none"} />
+          </div>
         </div>
       </div>
     </footer>

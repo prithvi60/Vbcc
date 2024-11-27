@@ -9,6 +9,7 @@ import {
 } from "react-icons/md";
 import Loader from "../Loader";
 import { useRouter } from "next/navigation";
+import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
 export const Modal = ({ title, styles, type, pageType, page }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -333,6 +334,9 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                     </button>
                   )}
                 </form>
+                <div className="absolute z-10 hidden lg:block lg:-top-40 lg:-left-0">
+                  <FooterBoxModal className={" lg:w-[380px] lg:h-[480px] fill-none"} />
+                </div>
               </div>
             </div>
           </motion.div>

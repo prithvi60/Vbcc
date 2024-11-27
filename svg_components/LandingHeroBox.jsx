@@ -223,30 +223,16 @@ export const FooterBox2 = ({ className, ...props }) => {
     );
 };
 
-export const FooterBoxMap = ({ className, ...props }) => {
+export const FooterBoxModal = ({ className, ...props }) => {
     return (
         <svg
-            viewBox="0 0 318 360"
+            viewBox="0 0 308 129"
             xmlns="http://www.w3.org/2000/svg"
             {...props}
             className={className}
         >
-            <path
-                d="M10.8682 311.724V358.572H317V267.456"
-                stroke="#F06F38"
-                strokeWidth="2"
-            />
-            <path d="M1 306.84L1 349H307V267" stroke="#F06F38" strokeWidth="2" />
-            <path
-                d="M307.132 47.8475V1L1.00015 1V92.1162"
-                stroke="#F06F38"
-                strokeWidth="2"
-            />
-            <path
-                d="M317 52.7322V10.5718L11 10.5718V92.5718"
-                stroke="#F06F38"
-                strokeWidth="2"
-            />
+            <path d="M10.3867 60.4545V1H307V116.636" stroke="#F06F38" strokeWidth="2" />
+            <path d="M1 72.4545V13H297.614V128.636" stroke="#F06F38" strokeWidth="2" />
         </svg>
     );
 };

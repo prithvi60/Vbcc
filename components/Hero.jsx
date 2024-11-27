@@ -27,6 +27,7 @@ const Hero = () => {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
   const [nav3, setNav3] = useState(null);
+  const [loading, setLoading] = useState(true);
   let sliderRef1 = useRef(null);
   let sliderRef2 = useRef(null);
   let sliderRef3 = useRef(null);
@@ -45,14 +46,28 @@ const Hero = () => {
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow loading={loading} />,
+    prevArrow: <SamplePrevArrow loading={loading} />,
+  };
+
+  const handleImageLoad = () => {
+    setLoading(false);
   };
 
   return (
     <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        <div className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[121vh] xl:h-[142vh] hero-mask_home overflow-hidden">
+        <div className="relative w-full h-[1150px] md:h-[85vw] slider-container lg:h-[1000px] xl:h-[1200px] hero-mask_home overflow-hidden">
+          {loading && (
+            <div className="absolute w-full h-[1150px] md:h-[85vw] lg:h-[1000px] xl:h-[1200px] overflow-hidden">
+              <Image
+                fill
+                src="/her0bg.png"
+                alt="Loading..."
+                className="object-contain object-center blur-lg brightness-[0.15]"
+              />
+            </div>
+          )}
           <Slider
             arrows={false}
             asNavFor={nav2}
@@ -63,12 +78,16 @@ const Hero = () => {
             ref={(slider) => (sliderRef1 = slider)}
           >
             {heroSlider.map((list, idx) => (
-              <div key={idx} className="relative w-full h-[150vh] md:h-[85vh] slider-container lg:h-[121vh] xl:h-[142vh]">
+              <div
+                key={idx}
+                className="relative w-full h-[1150px] md:h-[85vw] slider-container lg:h-[1000px] xl:h-[1200px]"
+              >
                 <Image
                   alt="background image"
                   src={list.bgImg || heroSlider[0].bgImg}
                   fill
                   className="z-0 object-cover object-center brightness-[0.30]"
+                  onLoad={handleImageLoad}
                 />
               </div>
             ))}
@@ -79,27 +98,47 @@ const Hero = () => {
             <div className="relative flex items-center w-full gap-5 md:w-[55%] lg:w-3/5 md:gap-8 xl:gap-20">
               <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                 <li>
-                  <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse" target="_blank">
+                  <Link
+                    href={"https://www.linkedin.com/company/vbcc-hti/"}
+                    className="hover:animate-pulse"
+                    target="_blank"
+                  >
                     <FaLinkedinIn className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
+                  <Link
+                    href={"https://www.facebook.com/vbcc.hti/"}
+                    className="hover:animate-pulse "
+                    target="_blank"
+                  >
                     <FaFacebookF className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="_blank">
+                  <Link
+                    href={"https://www.instagram.com/vbcc_hti/"}
+                    className="hover:animate-pulse "
+                    target="_blank"
+                  >
                     <FaInstagram className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={"www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
+                  <Link
+                    href={"www.youtube.com/@vbcc_hti"}
+                    className="hover:animate-pulse "
+                    target="_blank"
+                  >
                     <FaYoutube className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="_blank">
+                  <Link
+                    href={"https://x.com/vbcc_hti"}
+                    className="hover:animate-pulse "
+                    target="_blank"
+                  >
                     <FaXTwitter className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
@@ -119,6 +158,13 @@ const Hero = () => {
                     TAILOR MADE
                   </h4>
                   <div className="w-full max-w-2xl slider-container">
+                    {loading && (
+                      <h2
+                        className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem] blur-sm"
+                      >
+                        {heroSlider[0].categories}
+                      </h2>
+                    )}
                     <Slider
                       arrows={false}
                       asNavFor={nav3}
@@ -130,7 +176,10 @@ const Hero = () => {
                       ref={(slider) => (sliderRef2 = slider)}
                     >
                       {heroSlider.map((list, idx) => (
-                        <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]" key={idx}>
+                        <h2
+                          className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]"
+                          key={idx}
+                        >
                           {list.categories}
                         </h2>
                       ))}
@@ -165,28 +214,39 @@ const Hero = () => {
                 <HeroBoxBottomMobile className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
               </div>
             </div>
-            <div className="z-20 w-full h-full max-w-sm px-6 lg:max-w-96 xl:max-w-md lg:px-0 slider-container">
+            <div className="z-20 w-full h-full px-6 md:max-w-sm lg:max-w-96 xl:max-w-md lg:px-0 slider-container">
               {/* <div className="w-full "> */}
               <Slider
                 asNavFor={nav1}
                 ref={(slider) => (sliderRef3 = slider)}
                 swipeToSlide={true}
                 focusOnSelect={true}
-                // waitForAnimate={false}
-                // fade={true}
+                waitForAnimate={false}
+                fade={true}
                 {...settings}
               >
                 {heroSlider.map((list, idx) => (
-                  <div className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 px-7 py-7 lg:px-10 lg:py-10" key={idx}>
+                  <div
+                    className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 p-4 md:px-7 md:py-7 lg:px-10 lg:py-10"
+                    key={idx}
+                  >
                     <h4 className="w-3/4 text-lg font-medium tracking-wide lg:w-full xl:text-xl ">
                       {`${list.type} Furnaces`}
                     </h4>
                     <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-[430px] lg:max-h-full lg:h-full hideScroll">
                       {list.products.map((item, id) => (
-                        <div className="flex items-center gap-5 transition-all ease-linear duration-400 group" key={id}>
+                        <div
+                          className="flex items-center gap-5 transition-all ease-linear duration-400 group"
+                          key={id}
+                        >
                           <div className="relative px-6 py-6 rounded-lg bg-info">
                             <div className="relative top-6 size-16 xl:size-24">
-                              <Image alt="sample image" fill src={item.img} className="object-contain object-center" />
+                              <Image
+                                alt="sample image"
+                                fill
+                                src={item.img}
+                                className="object-contain object-center"
+                              />
                             </div>
                             <h4 className="absolute top-3 left-3 text-[9px] lg:text-xs border border-white px-3 py-1.5">
                               IN STOCK
@@ -223,37 +283,49 @@ const Hero = () => {
         </div>
       </div>
       <Statistics />
-    </section >
+    </section>
   );
 };
 
 export default Hero;
 
 function SampleNextArrow(props) {
-  const { onClick } = props;
+  const { onClick, loading } = props;
   return (
     <div
-      className={"size-6 absolute top-7 lg:top-10 right-20 xl:right-24 px-5 py-3 border-l rounded-l-xl border-y cursor-pointer hover:bg-info backdrop-blur-xl"}
+      className={
+        `${loading && "hidden"} size-6 absolute top-7 lg:top-10 right-20 xl:right-24 px-5 py-3 border-l rounded-l-xl border-y cursor-pointer hover:bg-info backdrop-blur-xl`
+      }
       onClick={onClick}
     >
-      <Image alt="next arrow" fill src={"/prev arrow.png"} className="object-contain object-center p-2" />
+      <Image
+        alt="next arrow"
+        fill
+        src={"/prev arrow.png"}
+        className="object-contain object-center p-2"
+      />
     </div>
   );
 }
 
 function SamplePrevArrow(props) {
-  const { onClick } = props;
+  const { onClick, loading } = props;
   return (
     <div
-      className={"size-6 absolute px-5 py-3 border-r rounded-r-xl border-y cursor-pointer hover:bg-info top-7 right-10 xl:right-14 lg:top-10 z-30 backdrop-blur-xl"}
+      className={
+        `${loading && "hidden"} size-6 absolute px-5 py-3 border-r rounded-r-xl border-y cursor-pointer hover:bg-info top-7 right-10 xl:right-14 lg:top-10 z-30 backdrop-blur-xl`
+      }
       onClick={onClick}
     >
-      <Image alt="prev arrow" fill src={"/next arrow.png"} className="object-contain object-center p-2" />
+      <Image
+        alt="prev arrow"
+        fill
+        src={"/next arrow.png"}
+        className="object-contain object-center p-2"
+      />
     </div>
   );
 }
-
-
 
 // const products = [
 //   { productName: "APM Kanthal", type: "CERAMIC PRODUCTS" },
@@ -405,9 +477,8 @@ function SamplePrevArrow(props) {
 //   )}
 // </section>
 
-
 // LinkedIn - https://www.linkedin.com/company/vbcc-hti/
 // Facebook - https://www.facebook.com/vbcc.hti/
 // Instagram - https://www.instagram.com/vbcc_hti/
 // YouTube - www.youtube.com/@vbcc_hti
-// X - https://x.com/vbcc_hti 
+// X - https://x.com/vbcc_hti
