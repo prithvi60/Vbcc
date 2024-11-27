@@ -18,7 +18,7 @@ const NavBar = () => {
   return (
     <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
-        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/")
+        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
           ? "justify-between lg:justify-start lg:gap-20"
           : "justify-between"
           }`}
@@ -69,7 +69,7 @@ const NavBar = () => {
                     }`}
                 >
                   <div
-                    className={`absolute w-full h-[40vh] xl:h-[55vh] left-48 md:w-4/5 top-0 !z-[999]`}
+                    className={`absolute w-full h-[400px] xl:h-[320px] left-48 xl:left-64 md:w-3/4 2xl:w-[55%] top-3 !z-[999]`}
                   >
                     <div
                       onMouseLeave={() => setIsHover(false)}
@@ -80,8 +80,8 @@ const NavBar = () => {
                     >
                       <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
                       <ul
-                        className={`absolute flex items-center gap-10 xl:gap-5 top-20 xl:top-32 ${path.startsWith("/categories/")
-                          ? "left-56 xl:left-40"
+                        className={`absolute flex items-center gap-10 xl:gap-5 top-20 xl:top-20 ${path.startsWith("/categories/") || path === "/"
+                          ? "left-32 xl:left-20"
                           : "lg:left-20 xl:left-80 2xl:left-[520px]"
                           }`}
                       >
@@ -124,8 +124,7 @@ const NavBar = () => {
         </ul>
         {path === "/" || path.startsWith("/blog/") ? (
           <button
-            className={`hidden font-semibold border border-info  w-fit transition-all rounded-full items-center text-sm md:text-base gap-3 capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info group ${path.startsWith("/categories/") ? "hidden" : "lg:flex"
-              }`}
+            className={`hidden font-semibold border border-info  w-fit transition-all rounded-full items-center text-sm md:text-base gap-3 capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info group`}
           >
             <h4 className="px-2 py-2 md:px-6">
               WE SHIP OUR INSTRUMENTS GLOBALLY

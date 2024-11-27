@@ -72,3 +72,27 @@ export const navLinks = [
     { menu: "BLOGS", ref: "/blog" },
     { menu: "TESTIMONIALS", ref: "/testimonials" },
 ];
+
+
+export const exploreList = [
+    // {
+    //     img: "/explore-1.png",
+    //     icon: "/explore-icon-1.png",
+    //     title: "Industries",
+    //     desc: "Over 100 products for ceramic industry.",
+    // },
+    {
+        img: "/explore-2.png",
+        icon: "/explore-icon-2.png",
+        title: "Dental",
+        desc: "Over 2+ products for Dental Furnace.",
+        ref: "/categories/dental"
+    },
+    {
+        img: "/explore-3.png",
+        icon: "/explore-icon-3.png",
+        title: "Laboratory",
+        desc: "Over 20+ products for Laboratory Furnace.",
+        ref: "/categories/laboratory"
+    },
+];

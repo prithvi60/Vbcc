@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const MoreProducts = ({ data }) => {
+const MoreProducts = ({ data, type }) => {
     return (
         <section className='w-full h-full space-y-10 bg-primary padding font-Montserrat'>
-            <h4 className='text-xl font-medium text-white md:text-2xl'>More Dental Furnaces</h4>
+            <h4 className='text-xl font-medium text-white md:text-2xl'>{`More ${type} Furnaces`}</h4>
             <div className='flex flex-col items-center gap-10 lg:flex-row'>
                 {data.map((list, idx) => (
                     <div className='flex items-center gap-10 justify-between w-full sm:max-w-md xl:max-w-xl h-full p-4 bg-gradient-to-b from-[#6b778cae] to-[#274881af]' key={idx}>

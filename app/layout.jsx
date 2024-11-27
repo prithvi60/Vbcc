@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
       className={`${lora.variable} ${nunito.variable} ${urbanist.variable} ${montserrat.variable}`}
     >
       <head>
+        {/* <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdnjs.cloudflare.com; object-src 'self';" /> */}
         <Partytown debug={true} forward={["dataLayer.push"]} />
         <script
           type="text/partytown"

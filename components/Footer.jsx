@@ -13,6 +13,8 @@ import {
 import { usePathname } from "next/navigation";
 import Loader from "./Loader";
 import { FooterBox, FooterBoxModal } from "@/svg_components/LandingHeroBox";
+import { MdOutlineBusinessCenter } from "react-icons/md";
+import { BiPhoneCall } from "react-icons/bi";
 
 const initialFormData = {
   firstName: "",
@@ -26,6 +28,7 @@ const initialFormData = {
 const Footer = () => {
   const [Copied, setCopied] = useState(false);
   const [Copied2, setCopied2] = useState(false);
+  const [Copied3, setCopied3] = useState(false);
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
   const path = usePathname()
@@ -98,6 +101,13 @@ const Footer = () => {
     setCopied2(true);
     setInterval(() => {
       setCopied2(false);
+    }, 3000);
+  };
+  const handleinquire2 = (text) => {
+    navigator.clipboard.writeText(text);
+    setCopied3(true);
+    setInterval(() => {
+      setCopied3(false);
     }, 3000);
   };
   return (
@@ -177,9 +187,9 @@ const Footer = () => {
           ></iframe>
         </div>
       </div>
-      <div className="grid w-full grid-cols-1 px-5 pt-10 pb-5 md:pb-3 bg-primary md:px-10 md:w-3/5 xl:w-4/5 xl:px-16 md:grid-cols-2 xl:grid-cols-3 gap-7 xl:gap-4">
+      <div className="flex flex-col items-center justify-center w-full grid-cols-1 px-5 pt-10 pb-5 md:justify-start md:items-start lg:grid md:pb-3 bg-primary md:px-10 lg:w-3/5 xl:w-4/5 xl:px-16 lg:grid-cols-2 xl:grid-cols-3 gap-7 xl:gap-4">
         <div className="relative flex flex-col h-auto items-center w-full space-y-5 after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden md:justify-between md:flex-row md:w-max md:block lg:space-y-7">
-          <h4 className="text-xl font-medium tracking-wider">
+          <h4 className="text-xl font-medium tracking-wider text-center lg:text-left">
             QUICK LINKS
           </h4>
           <div className="flex items-start text-sm gap-7 xl:gap-16 ">
@@ -211,23 +221,56 @@ const Footer = () => {
         </div>
         <div className="relative block after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden w-full space-y-3 md:space-y-5 xl:w-max">
           <h4 className="w-full font-medium tracking-wider text-center md:text-xl lg:text-center xl:w-max">CONTACT INFO</h4>
-          <div className="flex items-center justify-center md:items-start md:justify-start gap-2.5 md:gap-5 w-full xl:w-max">
-            <FaPhone className="text-lg text-white md:text-2xl" />
-            <ConnectComponent
-              text={"+91 73388 94199"}
-              copied={Copied2}
-              handleClick={handleinquire}
-            />
+          <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
+            <BiPhoneCall className="text-lg text-white md:text-3xl" />
+            <div className="hidden md:block">
+              <ConnectComponent
+                text={"+91 73388 94199"}
+                copied={Copied2}
+                handleClick={handleinquire}
+              />
+            </div>
+            <a href="tel:+917338894199" className="flex items-center md:hidden">
+              <ConnectComponent
+                text={"+91 73388 94199"}
+                copied={Copied2}
+                handleClick={handleinquire}
+              />
+            </a>
           </div>
-          <div className="flex items-center justify-center md:items-start md:justify-start gap-2.5 md:gap-5 w-full xl:w-max">
+          <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
+            <MdOutlineBusinessCenter className="text-lg text-white md:text-3xl" />
+            <div className="hidden md:block">
+              <ConnectComponent
+                text={"+91 9600478315"}
+                copied={Copied3}
+                handleClick={handleinquire2}
+              />
+            </div>
+            <a href="tel:+919600478315" className="flex items-center md:hidden">
+              <ConnectComponent
+                text={"+91 9600478315"}
+                copied={Copied3}
+                handleClick={handleinquire2}
+              />
+            </a>
+          </div>
+          <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
             <FaRegEnvelope className="text-lg text-white md:text-2xl" />
-            <ConnectComponent
+            {/* <ConnectComponent
               text={"sales@vbccinstruments.com"}
               copied={Copied}
               handleClick={handlequote}
-            />
+            /> */}
+            <a href="mailto:sales@vbccinstruments.com" className="flex items-center">
+              <ConnectComponent
+                text={"sales@vbccinstruments.com"}
+                copied={Copied}
+                handleClick={handlequote}
+              />
+            </a>
           </div>
-          <div className="flex items-center justify-center md:items-start md:justify-start gap-2.5 md:gap-5 w-full xl:w-3/5">
+          <div className="flex items-center justify-center md:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-3/5">
             <FaLocationDot className="text-lg text-white md:text-2xl" />
             <p className="text-sm !leading-6 w-[70%">
               VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD
@@ -239,8 +282,8 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="relative block w-full space-y-3 md:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
-          <h4 className="text-xl font-medium tracking-wider text-center uppercase md:text-start">
+        <div className="relative block w-full space-y-3 lg:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
+          <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-start">
             LET’S WORK TOGETHER
           </h4>
           <form
@@ -268,7 +311,7 @@ const Footer = () => {
                 value={formData.position || ""}
                 onChange={handleChange}
                 id="position"
-                placeholder="Enter your Position at the Company"
+                placeholder="Job title"
                 className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
@@ -281,7 +324,7 @@ const Footer = () => {
                 autoComplete="on"
                 type="email"
                 id="userEmail"
-                placeholder="Enter your email"
+                placeholder="Email"
                 className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
@@ -293,7 +336,7 @@ const Footer = () => {
                 value={formData.phoneNo || ""}
                 onChange={handleChange}
                 id="phoneNo"
-                placeholder="Enter your Phone Number"
+                placeholder="Phone Number"
                 className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
@@ -306,7 +349,7 @@ const Footer = () => {
                 type="text"
                 id="message"
                 rows={"4"}
-                placeholder="Type in your Message"
+                placeholder="Message"
                 className="w-full px-4 py-3 mt-1 font-medium font-Montserrat focus:ring-2 focus:ring-info focus:outline focus:outline-success placeholder:text-sm md:placeholder:text-base placeholder:text-blue-700 placeholder:font-Montserrat text-primary"
               />
             </div>
@@ -318,12 +361,12 @@ const Footer = () => {
                 <h4
                   className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-primary`}
                 >
-                  {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Book Appointment"}
+                  {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Request for Quote"}
                 </h4>
                 <h4
                   className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
                 >
-                  {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Book Appointment"}
+                  {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Request for Quote"}
                 </h4>
               </div>
             </button>
@@ -387,207 +430,3 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
     </div>
   );
 };
-
-{/* <footer className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 font-Montserrat">
-        <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-Montserrat bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
-          <div className="relative h-[40px] w-[70px]">
-            <Image
-              fill
-              src={"https://ik.imagekit.io/webibee/VBCC/vbcc%20logo%202.svg"}
-              alt="Logo"
-            />
-          </div>
-          <div className="space-y-5 text-sm">
-            <h4 className="uppercase">Kottivakkam,Chennai.</h4>
-            <p className="w-full 2xl:w-[90%]">
-              VBCC excels in crafting top-tier industrial and research
-              equipment, known for innovation, quality, and tailored solutions.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col justify-start gap-16 md:justify-between items-start font-Montserrat bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152]">
-          <div className="flex items-start gap-16 text-sm">
-            <div className="flex flex-col items-start gap-3">
-              {othersData.footerLinks1.map((list, id) => (
-                <Link
-                  passHref
-                  key={id}
-                  href={list.href}
-                  className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-                >
-                  {list.title}
-                </Link>
-              ))}
-            </div>
-            <div className="flex flex-col items-start gap-3">
-              {othersData.footerLinks2.map((list, id) => (
-                <Link
-                  key={id}
-                  passHref
-                  href={list.href}
-                  className="rounded-lg text-secondary after:h-0.5 after:w-0 after:bg-info after:block after:transition-all hover:after:h-0.5 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000]"
-                >
-                  {list.title}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="flex items-center gap-3 justify-evenly">
-            <Link
-              passHref
-              aria-label="youtube page"
-              href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
-              className="p-4 border rounded-full border-info hover:bg-info"
-              target="_blank"
-            >
-              <FaYoutube className="text-white h-7 w-7" />
-            </Link>
-            <Link
-              passHref
-              aria-label="linkedin page"
-              href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
-              className="p-4 border rounded-full border-info hover:bg-info"
-              target="_blank"
-            >
-              <FaLinkedin className="text-white h-7 w-7" />
-            </Link>
-            <Link
-              passHref
-              aria-label="Whatsapp page"
-              href={"https://wa.me/7338894199"}
-              className="p-4 border rounded-full border-info hover:bg-info"
-              target="_blank"
-            >
-              <FaWhatsapp className="text-white h-7 w-7" />
-            </Link>
-          </div>
-        </div>
-        <div className="flex  flex-col justify-start gap-16 md:justify-between items-start font-Montserrat bg-primary py-10 px-5 md:py-16 md:px-10 xl:p-16 h-full md:h-[388px] border-r-1 border-y-1 border-[#2D4152] col-span-2 xl:col-auto text-sm">
-          <div className="flex flex-wrap items-start justify-start w-full gap-16 sm:flex-nowrap md:justify-between font-Montserrat">
-            <div className="space-y-5">
-              <div>
-                <h3 className="text-[rgba(245, 245, 245, 0.70)]">Mail us at</h3>
-                <ConnectComponent
-                  text={"info@vbccinstruments.com"}
-                  copied={Copied}
-                  handleClick={handlequote}
-                />
-              </div>
-              <div>
-                <h3 className="text-[rgba(245, 245, 245, 0.70)]">
-                  Connect for inquiries
-                </h3>
-                <ConnectComponent
-                  text={"+91 73388 94199"}
-                  copied={Copied2}
-                  handleClick={handleinquire}
-                />
-              </div>
-            </div>
-            <Btn2
-              Hbgcolor={"bg-info"}
-              textColor={"text-info"}
-              HtextColor={"text-white"}
-              bColor={"border-info"}
-              title={"Location ?"}
-              href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
-            />
-          </div>
-          <div className="flex flex-wrap items-center justify-start w-full gap-16 pt-10 sm:flex-nowrap md:justify-between font-Montserrat">
-            <div className="space-y-3">
-              <h4>Our Groups</h4>
-              <div className="flex items-center gap-4 ml-6">
-                <Link
-                  passHref
-                  href={"https://vbccinstruments.com/"}
-                  className="relative h-[40px] w-[70px]"
-                  target="_blank"
-                >
-                  <Image
-                    fill
-                    sizes="75px"
-                    src={
-                      "https://ik.imagekit.io/webibee/VBCC/vbcc-research.svg"
-                    }
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-                    alt="Logo"
-                    className="-ml-6"
-                  />
-                </Link>
-                <Link
-                  passHref
-                  href={"https://www.hitechceramics.in/"}
-                  className="relative h-[40px] w-[70px]"
-                  target="_blank"
-                >
-                  <Image
-                    fill
-                    sizes="75px"
-                    src={"https://ik.imagekit.io/webibee/VBCC/vbcc-hitech.svg"}
-                    alt="Logo"
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-                    className="-ml-6"
-                  />
-                </Link>
-              </div>
-            </div>
-            <Mylink
-              aria-label="back to navbar"
-              to="nav"
-              href="#nav"
-              name="gotonav"
-              id="gotonav"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              className={`block rounded-full px-[18px] py-5 bg-transparent border border-secondary hover:bg-white text-center text-base duration-700 delay-75 font-Montserrat capitalize w-max group cursor-pointer`}
-            >
-              <div className={`h-6 w-full overflow-hidden`}>
-                <h4
-                  className={`transition translate-y-0 group-hover:-translate-y-20 duration-700`}
-                >
-                  <HiOutlineArrowNarrowUp className="h-7 w-7 text-secondary " />
-                </h4>
-                <h4
-                  className={`translate-y-20 transition group-hover:-translate-y-[30px] duration-700`}
-                >
-                  <HiOutlineArrowNarrowUp className="h-7 w-7 text-warning" />
-                </h4>
-              </div>
-            </Mylink>
-          </div>
-        </div>
-        <div className="text-sm p-5 md:px-16 md:py-5 text-secondary border-y-1 border-[#2D4152] bg-primary col-span-3 font-Montserrat">
-          <div className="flex items-center justify-between gap-2">
-            <p>©VBCC HTI. All Rights Reserved.</p>
-            <p>
-              Made By{" "}
-              <Link
-                href={"https://webibee.com/"}
-                target="_blank"
-                className="underline hover:animate-pulse decoration-white"
-              >
-                Webibee
-              </Link>
-            </p>
-            <div className="items-center hidden gap-3 md:flex">
-              <Link
-                passHref
-                href={"/privacypolicy"}
-                className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                passHref
-                href={"/termsofservice"}
-                className="underline underline-offset-1 hover:text-secondary hover:text-opacity-70"
-              >
-                Terms of Service
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer> */}
