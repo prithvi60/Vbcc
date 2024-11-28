@@ -25,7 +25,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
 
-    const [{ Images, productName, desc, keys, spec, headers, headers2, spec2 }] = LabProductsList.filter(
+    const [{ Images, productName, desc, keys, spec, headers, headers2, spec2, pdf }] = LabProductsList.filter(
         (val) => val.productName === decodeURIComponent(filteredURI)
     );
 
@@ -69,10 +69,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                                 type="submit"
                                 className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max shadow-xl`}
                             >
-                                <a
-                                    href={pdfFile}
-                                    download={pdfName}
-                                >
+                                <a href={pdf} download={`Denkiro - Brochure - Digital- ${productName}`} target="_blank">
                                     <div className={`h-6 w-full overflow-hidden`}>
                                         <h3
                                             className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}

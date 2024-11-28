@@ -19,17 +19,23 @@ const NavBar = () => {
     <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
         className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
-          ? "justify-between lg:justify-start lg:gap-20"
+          ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
           : "justify-between"
           }`}
       >
         <Link href={"/"}>
-          <div className="relative ml-5 md:ml-0 w-28 h-9 md:w-24 md:h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
+          <div
+            className={`ml-5 md:ml-0 absolute top-0 md:top-2 -left-2 md:left-2 ${path.startsWith("/categories/")
+              ? "w-16 h-5 md:w-24 md:h-7"
+              : "w-28 h-9 md:w-24 md:h-7"
+              } lg:h-9 lg:w-28 2xl:h-12 2xl:w-36`}
+          >
             <Image
               alt="VBCC Logo"
               src="/VBCC - Logo.svg"
               fill
               className="z-0 object-cover object-center"
+              priority
             />
           </div>
         </Link>
@@ -82,7 +88,7 @@ const NavBar = () => {
                       <ul
                         className={`absolute flex items-center gap-10 xl:gap-5 top-20 xl:top-20 ${path.startsWith("/categories/") || path === "/"
                           ? "left-32 xl:left-20"
-                          : "lg:left-20 xl:left-80 2xl:left-[520px]"
+                          : "lg:left-20 xl:left-80 2xl:left-[380px]"
                           }`}
                       >
                         {list.subMenu.map((item, idx) => (

@@ -6,7 +6,7 @@ const Page = () => {
     return (
         <main>
             <DefaultLayout>
-                <ProductDetailsHero pdfFile={"/files/Denkiro - Dental - Brochure - Digital.pdf"} pdfName={"Denkiro - Dental - Brochure - Digital.pdf"} />
+                <ProductDetailsHero />
             </DefaultLayout>
         </main>
     )

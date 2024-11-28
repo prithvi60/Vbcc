@@ -1,27 +1,26 @@
-"use client"
+"use client";
 import BreadCrumb from "@/app/categories/BreadCrumb";
 import { Modal } from "@/components/landing page/Modal";
 import Image from "next/image";
 import React, { useState } from "react";
-// import { Document, Page } from "react-pdf";
-// import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-// import { pdfjs } from "react-pdf";
+import FileViewer from "react-file-viewer";
 import { MdRemoveRedEye } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
 
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+const CategoryHero = ({
+    heroBg,
+    title,
+    desc1,
+    desc2,
+    categoryImg,
+    pdfFile,
+}) => {
+    const [isViewerOpen, setIsViewerOpen] = useState(false);
+    const [pdf] = useState(pdfFile);
 
-const CategoryHero = ({ heroBg, title, desc1, desc2, categoryImg, pdfName, pdfFile }) => {
-    const [file, setFile] = useState(null);
-
-    const handleFileChange = (event) => {
-        setFile(event.target.files[0]);
+    const handleButtonClick = () => {
+        setIsViewerOpen(true);
     };
-
-    const handlePdfView = () => {
-        // Trigger PDF viewing logic
-    };
-
-    const onButtonClick = () => { setFile("../../public/files/Denkiro - Brochure - Digital.pdf") }
     return (
         <section className="relative z-auto w-full h-full font-Montserrat">
             <div className="relative w-full h-[75vh] lg:h-[65dvh] hero-mask bg-primary z-auto"></div>
@@ -50,11 +49,15 @@ const CategoryHero = ({ heroBg, title, desc1, desc2, categoryImg, pdfName, pdfFi
                     <p className="text-base md:text-lg font-medium !leading-[32px] text-secondary">
                         {desc2}
                     </p>
-                    <div className="flex items-center gap-4 md:gap-8">
-                        <Modal styles={"bg-info text-white"} title={"Download Catalog"} type={"download"} />
+                    <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:justify-start md:gap-8">
+                        <Modal
+                            styles={"bg-info text-white"}
+                            title={"Download Catalog"}
+                            type={"download"}
+                        />
                         <button
                             type="submit"
-                            // onClick={onButtonClick}
+                            onClick={handleButtonClick}
                             className={`block px-3 md:px-6 py-3 group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
                         >
                             <div className={`h-6 w-full overflow-hidden`}>
@@ -75,28 +78,37 @@ const CategoryHero = ({ heroBg, title, desc1, desc2, categoryImg, pdfName, pdfFi
                                     </span>
                                 </h3>
                             </div>
-
                         </button>
-                        {/* {file && (<Document file={file}> <Page pageNumber={1} /> </Document>)}  */}
-                        {/* <Modal
-                            styles={"bg-white text-primary"}
-                            title={"view online"}
-                            type={"view"}
-                            pageType={"main"}
-                            page={title}
-                        /> */}
-
-                    </div>
-                    {/* <div>
-                        <input type="file" onChange={handleFileChange} />
-                        <button onClick={handlePdfView}>View PDF</button>
-
-                        {file && (
-                            <Document file={file}>
-                                <Page pageNumber={1} />
-                            </Document>
+                        {isViewerOpen && (
+                            <div
+                                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                                onClick={() => setIsViewerOpen(false)}
+                            >
+                                <div
+                                    className="relative w-full max-w-xl p-5 bg-white rounded-lg shadow-lg md:max-w-5xl 2xl:max-w-screen-xl h-4/5 !thumbnail"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    <button
+                                        className="absolute z-10 p-2 text-sm text-white bg-red-500 rounded-full cursor-pointer -top-11 md:-top-14 xl:top-0 right-6 xl:-right-20 hover:bg-red-600 animate-pulse"
+                                        onClick={() => setIsViewerOpen(false)}
+                                    >
+                                        <IoMdClose className="text-lg md:text-2xl" />
+                                    </button>
+                                    <div className="flex items-center justify-center w-full h-full overflow-hidden">
+                                        <div className="w-full h-full">
+                                            <FileViewer
+                                                fileType="pdf"
+                                                filePath={pdf}
+                                                onError={(e) =>
+                                                    console.error("Error displaying file:", e)
+                                                }
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         )}
-                    </div> */}
+                    </div>
                 </div>
                 <div className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
                     <Image
