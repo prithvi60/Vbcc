@@ -122,8 +122,8 @@ const Footer = () => {
               fill
               className="object-cover object-center"
             />
-            <div className="absolute -top-36 -left-10 md:-left-5 md:-top-24 lg:-top-32 lg:-left-9">
-              <FooterBox className={"w-[350px] h-[440px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"} />
+            <div className="absolute -top-44 -left-10 md:-left-5 md:-top-24 lg:-top-44 lg:-left-9">
+              <FooterBoxModal className={"w-[320px] h-[420px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"} />
             </div>
           </div>
           <p className="w-4/5 mx-auto text-xs font-medium text-primary">

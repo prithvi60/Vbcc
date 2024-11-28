@@ -141,34 +141,61 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 
-/* Breakpoints */
-/* @media (max-width: 1530px) {
-  .card-mask {
-    width: 55%;
+.pg-viewer-wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+
+.pg-viewer-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.pg-viewer-wrapper::-webkit-scrollbar-thumb {
+  background-color: #042a50;
+  outline: 1px solid #f5f5f5;
+  border-radius: 5px;
+}
+
+.pdf-canvas {
+  width: 100%;
+}
+
+.pdf-canvas canvas {
+  width: 100% !important;
+  height: auto;
+}
+
+@media (min-width: 390px) {
+  .pdf-canvas canvas {
+    width: 390px !important;
+    height: auto;
   }
 }
 
-@media (max-width: 1440px) {
-  .card-mask {
-    width: 70%;
+@media (min-width: 640px) {
+  .pdf-canvas canvas {
+    width: 490px !important;
+    height: auto;
   }
 }
 
-@media (max-width: 1024px) {
-  .card-mask {
-    width: 80%;
+@media (min-width: 810px) {
+  .pdf-canvas canvas {
+    width: 950px !important;
+    height: auto;
   }
 }
 
-@media (max-width: 810px) {
-  .card-mask {
-    width: 80%;
+@media (min-width: 1536px) {
+  .pdf-canvas canvas {
+    width: 1380px !important;
+    height: auto;
   }
 }
 
-@media (max-width: 390px) {
-  .card-mask {
-    width: 98%;
-    height: 25%;
+/* @media (min-width: 3840px) {
+  .pdf-canvas canvas {
+    width: 3840px !important;
+    height: auto;
   }
 } */

@@ -9,14 +9,15 @@ import { useState } from "react";
 
 const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
   const [open, setOpen] = useState(false);
+
   return (
     <section
       className={`fixed top-0
        ${!open ? "right-0 animate-reveal_In" : "-right-[120%]"} 
-       !z-[9999] bg-white/90 backdrop-blur-sm h-screen w-screen flex flex-col gap-7 padding md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
+       !z-[9999] bg-white/95 backdrop-blur-sm h-screen w-screen flex flex-col gap-7 px-5 py-6 md:py-8 md:px-10 xl:px-16 md:gap-3 font-urbanist font-medium transition-all duration-[2000] overflow-y-scroll hideScroll`}
     >
       <div className="flex justify-between items-center md:mt-0 p-5 md:px-[60px] md:py-5">
-        <div className="relative w-24 h-7 lg:h-9 lg:w-28 2xl:h-12 2xl:w-36">
+        <div className="relative w-28 h-9 md:w-32 md:h-10">
           <Image
             fill
             src={"/VBCC - Logo.svg"}
@@ -28,7 +29,7 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
         </div>
         <div className="flex items-center p-2 rounded-full bg-primary gap-7">
           <RxCross1
-            className={` h-5 w-5 md:h-7 md:w-7 text-red-600 cursor-pointer hover:text-info`}
+            className={` h-7 w-7 text-red-600 cursor-pointer hover:text-info`}
             onClick={() => {
               setOpen(true);
               setTimeout(() => {
@@ -43,19 +44,48 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
           {navLinks.map((link, idx) => (
             <li
               key={idx}
-              className="w-max uppercase font-semibold text-3xl sm:text-[40px]"
-              onClick={() => setIsOpen(!isOpen)}
+              className={`w-max uppercase font-semibold text-3xl sm:text-[40px]`}
+              onClick={
+                link.menu === "CATEGORIES"
+                  ? null
+                  : () => setIsOpen(!isOpen)
+              }
             >
-              <Link
-                passHref
-                className="flex items-center gap-2 group"
-                href={link.ref}
-              >
-                <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
-                  {link.menu}
+              {link.menu === "CATEGORIES" ? (
+                <span className={`flex items-center gap-2 group cursor-pointer`}>
+                  <span className="rounded-lg text-primary">
+                    {link.menu}
+                  </span>
                 </span>
-                <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
-              </Link>
+              ) : (
+                <Link
+                  passHref
+                  className="flex items-center gap-2 group"
+                  href={link.ref}
+                >
+                  <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
+                    {link.menu}
+                  </span>
+                  <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
+                </Link>
+              )}
+              {link.subMenu && (
+                <>
+                  {link.subMenu.map((list, id) => (
+                    <Link
+                      key={id}
+                      passHref
+                      className="flex items-center gap-2 mt-4 group"
+                      href={list.ref}
+                    >
+                      <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary text-lg sm:text-xl">
+                        {list.menu}
+                      </span>
+                      <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
+                    </Link>
+                  ))}
+                </>
+              )}
             </li>
           ))}
         </ul>

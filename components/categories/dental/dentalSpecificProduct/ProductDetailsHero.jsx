@@ -15,7 +15,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 
-const ProductDetailsHero = ({ pdfFile, pdfName }) => {
+const ProductDetailsHero = () => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -24,7 +24,7 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
 
-    const [{ Images, productName, desc, keys, spec }] = DentalProductsList.filter(
+    const [{ Images, productName, desc, keys, spec, pdf }] = DentalProductsList.filter(
         (val) => val.productName === decodeURIComponent(filteredURI)
     );
 
@@ -70,7 +70,7 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
                                 type="submit"
                                 className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max shadow-xl`}
                             >
-                                <a href={pdfFile} download={pdfName}>
+                                <a href={pdf} download={`Denkiro - Dental - Brochure - Digital- ${productName}`} target="_blank">
                                     <div className={`h-6 w-full overflow-hidden`}>
                                         <h3
                                             className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
