@@ -3,6 +3,7 @@ import Image from "next/image";
 import othersData from "@/libs/others.json";
 import { IoMdQuote } from "react-icons/io";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const Testimonials = () => {
   const path = usePathname()
@@ -131,7 +132,7 @@ const Testimonials = () => {
           </div>
           <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-5'>
             {othersData.heroTestimonial.map((item, idx) => (
-              <div
+              <Link href={"/testimonials"}
                 key={idx}
                 className="relative border-t-3 border-info bg-gradient-to-b from-[#102242] via-[#FFFFFF1A] to-[#FFFFFF] w-full md:mt-6"
               >
@@ -165,7 +166,7 @@ const Testimonials = () => {
                     <p className="text-xs tracking-wide">{item.subTitle}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

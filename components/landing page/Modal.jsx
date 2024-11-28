@@ -17,9 +17,9 @@ export const Modal = ({ title, styles, type, pageType, page }) => {
     <div className="grid">
       <button
         onClick={() => setIsOpen(true)}
-        className={`font-semibold w-fit transition-all ${pageType === "main"
-          ? "shadow-xl hover:scale-110"
-          : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
+        className={`font-semibold w-fit transition-all ${pageType === "main" || title === "Download Catalog"
+            ? "shadow-xl hover:scale-110"
+            : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
           } flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-3 md:px-6 py-3"
           }`}
       >
@@ -50,7 +50,12 @@ export const Modal = ({ title, styles, type, pageType, page }) => {
           </>
         )}
       </button>
-      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} type={type} page={page} />
+      <SpringModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        type={type}
+        page={page}
+      />
     </div>
   );
 };
@@ -127,7 +132,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
     lastName: "",
     phoneNo: "",
     userEmail: "",
-    message: ""
+    message: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -152,7 +157,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
       userEmail: formData.userEmail,
       phone: formData.phoneNo,
       message: formData.message,
-      page: page
+      page: page,
     };
 
     // console.log(emailFormData);
@@ -212,27 +217,15 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
               <div className="w-full mt-5 space-y-14 md:w-3/5">
                 <h3 className="mb-2 text-2xl font-bold text-info md:text-3xl">
                   {type === "enquire"
-                    ? "Choose VBCC for Your Dental Furnace Needs"
+                    ? "Let us get back to you"
                     : "Your Brochure Awaits: Just a Quick Form Away!"}
                 </h3>
                 {type !== "enquire" ? (
-                  <ul className="hidden md:block space-y-3 text-sm md:text-base list-disc list-inside max-h-[120px] md:max-h-fit overflow-scroll no-scrollbar">
+                  <ul className="hidden md:block space-y-3 text-sm md:text-base max-h-[120px] md:max-h-fit overflow-scroll no-scrollbar">
                     <li>
-                      Access comprehensive specifications for each furnace
-                      model.
-                    </li>
-                    <li>
-                      Easily compare features to find the perfect fit for your
-                      needs.
-                    </li>
-                    <li>
-                      Discover key performance metrics for optimized operations.
-                    </li>
-                    <li>
-                      Explore available customization options for each product.
-                    </li>
-                    <li>
-                      Enjoy an easy-to-navigate design for quick reference.
+                      Our dedicated sales team will get in touch with you to
+                      discuss how VBCC can elevate your business practice. Get
+                      ready to experience unmatched quality and support
                     </li>
                   </ul>
                 ) : (
@@ -335,7 +328,9 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                   )}
                 </form>
                 <div className="absolute z-10 hidden lg:block lg:-top-40 lg:-left-0">
-                  <FooterBoxModal className={" lg:w-[380px] lg:h-[480px] fill-none"} />
+                  <FooterBoxModal
+                    className={" lg:w-[380px] lg:h-[480px] fill-none"}
+                  />
                 </div>
               </div>
             </div>

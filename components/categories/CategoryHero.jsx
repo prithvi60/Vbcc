@@ -1,11 +1,27 @@
+"use client"
 import BreadCrumb from "@/app/categories/BreadCrumb";
 import { Modal } from "@/components/landing page/Modal";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { MdOutlineFileDownload } from "react-icons/md";
+import React, { useState } from "react";
+// import { Document, Page } from "react-pdf";
+// import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+// import { pdfjs } from "react-pdf";
+import { MdRemoveRedEye } from "react-icons/md";
+
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const CategoryHero = ({ heroBg, title, desc1, desc2, categoryImg, pdfName, pdfFile }) => {
+    const [file, setFile] = useState(null);
+
+    const handleFileChange = (event) => {
+        setFile(event.target.files[0]);
+    };
+
+    const handlePdfView = () => {
+        // Trigger PDF viewing logic
+    };
+
+    const onButtonClick = () => { setFile("../../public/files/Denkiro - Brochure - Digital.pdf") }
     return (
         <section className="relative z-auto w-full h-full font-Montserrat">
             <div className="relative w-full h-[75vh] lg:h-[65dvh] hero-mask bg-primary z-auto"></div>
@@ -35,39 +51,52 @@ const CategoryHero = ({ heroBg, title, desc1, desc2, categoryImg, pdfName, pdfFi
                         {desc2}
                     </p>
                     <div className="flex items-center gap-4 md:gap-8">
+                        <Modal styles={"bg-info text-white"} title={"Download Catalog"} type={"download"} />
                         <button
                             type="submit"
-                            className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
+                            // onClick={onButtonClick}
+                            className={`block px-3 md:px-6 py-3 group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
                         >
-                            <a href={pdfFile} download={pdfName}>
-                                <div className={`h-6 w-full overflow-hidden`}>
-                                    <h3
-                                        className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
-                                    >
-                                        catalog now
-                                        <span>
-                                            <MdOutlineFileDownload className="text-xl text-white" />
-                                        </span>
-                                    </h3>
-                                    <h3
-                                        className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-primary`}
-                                    >
-                                        catalog now
-                                        <span>
-                                            <MdOutlineFileDownload className="text-xl text-primary" />
-                                        </span>
-                                    </h3>
-                                </div>
-                            </a>
+                            <div className={`h-6 w-full overflow-hidden`}>
+                                <h3
+                                    className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-primary flex items-center gap-2`}
+                                >
+                                    view online
+                                    <span>
+                                        <MdRemoveRedEye className="text-xl text-primary" />
+                                    </span>
+                                </h3>
+                                <h3
+                                    className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-white`}
+                                >
+                                    view online
+                                    <span>
+                                        <MdRemoveRedEye className="text-xl text-white" />
+                                    </span>
+                                </h3>
+                            </div>
+
                         </button>
-                        <Modal
+                        {/* {file && (<Document file={file}> <Page pageNumber={1} /> </Document>)}  */}
+                        {/* <Modal
                             styles={"bg-white text-primary"}
                             title={"view online"}
                             type={"view"}
                             pageType={"main"}
                             page={title}
-                        />
+                        /> */}
+
                     </div>
+                    {/* <div>
+                        <input type="file" onChange={handleFileChange} />
+                        <button onClick={handlePdfView}>View PDF</button>
+
+                        {file && (
+                            <Document file={file}>
+                                <Page pageNumber={1} />
+                            </Document>
+                        )}
+                    </div> */}
                 </div>
                 <div className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
                     <Image

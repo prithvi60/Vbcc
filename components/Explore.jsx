@@ -7,6 +7,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import othersData from "@/libs/others.json";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Modal2 } from "./landing page/Modal";
+import { exploreList } from "@/libs/otherPage";
 const Explore = () => {
   return (
     <section className="relative z-auto w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat">
@@ -22,7 +23,7 @@ const Explore = () => {
           <p className="relative z-30 w-full -mt-3 text-xl text-white md:my-14 md:text-2xl xl:text-5xl md:w-3/4">Your Visualization Of Your Product,We Bring To Life.</p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between mb-56 lg:flex-row">
+      <div className="flex flex-col items-center justify-between gap-10 mb-56 lg:flex-row">
         <div className="block p-10 mx-auto space-y-4">
           <div className="relative flex gap-2 items-center lg:block text-3xl text-[#A7ACB8] md:text-5xl group">
             <h4 className="w-full lg:w-3/5">Explore Products</h4>
@@ -32,7 +33,7 @@ const Explore = () => {
         </div>
         <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
           {exploreList.map((list, idx) => (
-            <div className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-10 after:border-2 after:border-info after:w-full after:h-full" key={idx}>
+            <Link href={list.ref} className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-10 after:border-2 after:border-info after:w-full after:h-full" key={idx}>
               <Image
                 src={list.img}
                 fill
@@ -55,7 +56,7 @@ const Explore = () => {
                   {list.desc}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -190,26 +191,7 @@ const Explore = () => {
 
 export default Explore;
 
-const exploreList = [
-  {
-    img: "/explore-1.png",
-    icon: "/explore-icon-1.png",
-    title: "Industries",
-    desc: "Over 100 products for ceramic industry.",
-  },
-  {
-    img: "/explore-2.png",
-    icon: "/explore-icon-2.png",
-    title: "Accessories",
-    desc: "Over 100 products for ceramic industry.",
-  },
-  {
-    img: "/explore-3.png",
-    icon: "/explore-icon-3.png",
-    title: "Research Institutions",
-    desc: "Over 200 products for research Institutions.",
-  },
-];
+
 
 // <section className="flex flex-col items-center self-stretch justify-center gap-10 px-5 py-16 md:py-20 md:px-10 xl:px-20 bg-primary font-Lora">
 //   <div className="space-y-5">

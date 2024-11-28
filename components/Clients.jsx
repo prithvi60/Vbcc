@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import dynamic from 'next/dynamic'
 import Slider from "react-slick";
 import { TSBox } from "@/svg_components/LandingHeroBox";
+import Link from "next/link";
 const MarqueeComponent = dynamic(() => import("react-fast-marquee"), { ssr: false })
 
 const Clients = () => {
@@ -65,18 +66,18 @@ const Clients = () => {
           <div className="w-full h-full mx-auto max-w-64 md:max-w-sm max-h-32 lg:max-w-md xl:max-w-2xl slider-container">
             <Slider {...settings}>
               {othersData.clientLogos.slice(0, 4).map((list, idx) => (
-                <div key={idx} className="relative size-16 md:size-24 lg:size-28 group">
+                <Link href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
                   <Image alt="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
-                </div>
+                </Link>
               ))}
             </Slider>
           </div>
           <div className="w-full h-full mx-auto max-w-64 md:max-w-sm max-h-32 lg:max-w-md xl:max-w-2xl slider-container">
             <Slider {...settings} rtl>
               {othersData.clientLogos.slice(4, 9).map((list, idx) => (
-                <div key={idx} className="relative size-16 md:size-24 lg:size-28 group">
+                <Link href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
                   <Image alt="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
-                </div>
+                </Link>
               ))}
             </Slider>
           </div>

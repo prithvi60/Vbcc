@@ -11,6 +11,9 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import Slider from "react-slick";
 import ProductDetails from "../../ProductDetails";
 import MoreProducts from "../../MoreProducts";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import InnerImageZoom from "react-inner-image-zoom";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 
 const ProductDetailsHero = ({ pdfFile, pdfName }) => {
     const [nav1, setNav1] = useState(null);
@@ -50,7 +53,7 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
     return (
         <>
             <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
-                <div className="relative w-full h-[140vh] md:h-[130vh] lg:h-[90vh] xl:h-[85vh] hero-mask bg-primary z-10"></div>
+                <div className="relative w-full h-[1100px] md:h-[1000px] lg:h-[700px] xl:h-[800px] hero-mask bg-primary z-10"></div>
                 <div className="absolute left-0 z-10 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                     <BreadCrumb />
                     <div className="block w-full py-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
@@ -100,19 +103,26 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
                     <div className="w-full h-full mx-auto space-y-10 max-w-96 md:max-w-md xl:max-w-2xl">
                         <div className="slider-container">
                             <Slider
-                                arrows={false}
                                 asNavFor={nav2}
                                 ref={(slider) => (sliderRef1 = slider)}
+                                nextArrow={<NextArrow />}
+                                prevArrow={<PrevArrow />}
+                                waitForAnimate={false}
+                                fade={true}
                             >
                                 {Images.map((list, idx) => (
                                     <div
                                         className="relative w-full mx-auto h-52 md:h-60 xl:h-80 group"
                                         key={idx}
                                     >
-                                        <Image
-                                            alt="image"
-                                            fill
+                                        <InnerImageZoom
+                                            fadeDuration={300}
+                                            mobileBreakpoint={640}
+                                            fullscreenOnMobile
+                                            hideHint
                                             src={list}
+                                            alt={`image-${idx}`}
+                                            zoomType="hover"
                                             className="z-20 object-contain object-center"
                                         />
                                     </div>
@@ -147,9 +157,37 @@ const ProductDetailsHero = ({ pdfFile, pdfName }) => {
                 </div>
             </section>
             <ProductDetails keys={keys} specs={spec} />
-            <MoreProducts data={moreProducts.slice(0, 2)} />
+            <MoreProducts data={moreProducts.slice(0, 2)} type={"Dental"} />
         </>
     );
 };
 
 export default ProductDetailsHero;
+
+function NextArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className={
+                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer right-0 group"
+            }
+            onClick={onClick}
+        >
+            <FaArrowRight className="text-sm text-white md:text-lg xl:text-xl group-hover:text-info" />
+        </div>
+    );
+}
+
+function PrevArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className={
+                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer ;left-0 group"
+            }
+            onClick={onClick}
+        >
+            <FaArrowLeft className="text-sm text-white md:text-lg xl:text-xl group-hover:text-info" />
+        </div>
+    );
+}

@@ -40,7 +40,7 @@ const HowWeDo = () => {
       <section className='relative z-auto w-full h-full overflow-hidden text-white bg-primary font-Montserrat'>
         <div className='flex flex-col items-center w-full h-full md:flex-row padding'>
           <div className='block w-full space-y-4 py-14 md:py-20 md:space-y-6 md:w-3/5'>
-            <h4 className='text-2xl tracking-wide md:text-3xl xl:text-4xl text-info'>The "Tailor Made" Promise </h4>
+            <h4 className='text-2xl font-bold tracking-wide md:text-3xl xl:text-4xl text-info'>The "Tailor Made" Promise </h4>
             <p className='text-base md:text-lg !leading-[32px] text-secondary'>At VBCC, we understand that each client has unique requirements that may extend beyond our standardized product offerings. Our "Tailor-Made" promise ensures that we customize our designs to meet your specific needs. Whether it involves modifying existing products or creating entirely new solutions, our team of experts works closely with you to understand your challenges and deliver equipment that perfectly aligns with your operational goals. With a focus on flexibility and innovation, we provide bespoke solutions that enhance  efficiency, precision, and performance, ensuring your complete satisfaction and success. </p>
           </div>
           <div className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
