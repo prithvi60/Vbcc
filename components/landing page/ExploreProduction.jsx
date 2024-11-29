@@ -7,7 +7,7 @@ import {
     MdRemoveRedEye,
 } from "react-icons/md";
 import Slider from "react-slick";
-import { Modal } from "./Modal";
+import { Modal, Modal1 } from "./Modal";
 
 const ExploreProduction = () => {
     const settings = {
@@ -49,7 +49,7 @@ const ExploreProduction = () => {
                         technology and a commitment to quality, Denkiro Dental supports
                         dental professionals in achieving the best outcomes.
                     </p>
-                    <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
+                    <Modal1 styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
                 </div>
                 <div className="relative w-full h-[380px] md:w-[280px] md:h-[420px] before:absolute before:border-2 before:border-info before:top-3 before:-left-3 before:md:h-[420px] before:w-full before:z-10 before:h-[380px]">
                     <Image
@@ -94,7 +94,7 @@ const ExploreProduction = () => {
                 </Slider>
             </div>
             <div className="flex items-center justify-center gap-4 md:gap-8">
-                <Modal styles={"bg-info text-white"} title={"download now"} type={"download"} />
+                <Modal1 styles={"bg-info text-white"} title={"download now"} type={"download"} />
                 {/* <Modal styles={"bg-white text-primary"} title={"View Online"} type={"view"} /> */}
             </div>
         </section>

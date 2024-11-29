@@ -1,6 +1,5 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import {
   MdKeyboardDoubleArrowRight,
@@ -8,18 +7,19 @@ import {
   MdRemoveRedEye,
 } from "react-icons/md";
 import Loader from "../Loader";
-import { useRouter } from "next/navigation";
 import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
-export const Modal = ({ title, styles, type, pageType, page }) => {
+
+
+export const Modal1 = ({ title, styles, type, pageType, page }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="grid">
       <button
         onClick={() => setIsOpen(true)}
         className={`font-semibold w-fit transition-all ${pageType === "main" || title === "Download Catalog"
-            ? "shadow-xl hover:scale-110"
-            : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
+          ? "shadow-xl hover:scale-110"
+          : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
           } flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-3 md:px-6 py-3"
           }`}
       >
@@ -340,3 +340,63 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
     </AnimatePresence>
   );
 };
+
+// export const PdfList = ({ pdfFile }) => {
+
+//   const [currentPdf, setCurrentPdf] = useState(null);
+//   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+
+//   const handlePdfChange = () => {
+//     setCurrentPdf(pdfFile);
+//     setIsModalOpen(true); // Open the modal
+//   };
+
+//   const closeModal = () => {
+//     setIsModalOpen(false); // Close the modal
+//   };
+
+//   return (
+//     <div className="grid">
+//       <button
+//         type="submit"
+//         onClick={handlePdfChange}
+//         className={`block px-3 md:px-6 py-3 group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
+//       >
+//         <div className={`h-6 w-full overflow-hidden`}>
+//           <h3
+//             className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-primary flex items-center gap-2`}
+//           >
+//             view online
+//             <span>
+//               <MdRemoveRedEye className="text-xl text-primary" />
+//             </span>
+//           </h3>
+//           <h3
+//             className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-white`}
+//           >
+//             view online
+//             <span>
+//               <MdRemoveRedEye className="text-xl text-white" />
+//             </span>
+//           </h3>
+//         </div>
+//       </button>
+
+//       {/* Modal for PDF Viewer */}
+//       <Modal
+//         ariaHideApp={false}
+//         isOpen={isModalOpen}
+//         onRequestClose={closeModal}
+//         className={"relative overflow-hidden w-full mt-16"}
+//       >
+//         <button
+//           onClick={closeModal}
+//           className="flex justify-center w-full text-lg font-bold text-red-600"
+//         >
+//           Close
+//         </button>
+//         <PdfViewer url={currentPdf} />
+//       </Modal>
+//     </div>
+//   );
+// };

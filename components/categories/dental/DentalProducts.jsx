@@ -16,7 +16,7 @@ const DentalProducts = () => {
                 desc2={
                     "Designed for processes such as ceramic firing, sintering, and glazing, these furnaces ensure consistent results while enhancing workflow efficiency. With advanced technology and a commitment to quality, Denkiro Dental supports dental professionals in achieving the best outcomes in prosthetics and restorative treatments."
                 }
-                pdfFile={"/files/Denkiro - Dental - Brochure - Digital.pdf"}
+                pdfFile={"/files/Denkiro-Dental-Brochure-Digital.pdf"}
                 pdfName={"Denkiro - Dental - Brochure - Digital.pdf"}
             />
             <CategoryProducts categoryName={"dental"} data={DentalProductsList} />

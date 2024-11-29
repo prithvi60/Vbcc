@@ -11,7 +11,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { Modal } from "./Modal";
+import { Modal, Modal1 } from "./Modal";
 import { HeroBox, HeroBoxBottom } from "@/svg_components/LandingHeroBox";
 const LandingHero = () => {
   return (
@@ -109,7 +109,7 @@ const LandingHero = () => {
           </div>
         </div>
 
-        <Modal
+        <Modal1
           styles={
             "absolute top-5 md:top-7 right-1 md:right-5 bg-gradient-to-r from-[#6B778C80] to-[#FFFFFF0D] text-white hover:opacity-80 border border-info uppercase !rounded-full"
           }

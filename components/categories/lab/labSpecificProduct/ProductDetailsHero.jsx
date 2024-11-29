@@ -1,6 +1,6 @@
 "use client";
 import BreadCrumb from "@/app/categories/BreadCrumb";
-import { Modal } from "@/components/landing page/Modal";
+import { Modal, Modal1 } from "@/components/landing page/Modal";
 import { LabProductsList } from "@/libs/productsData";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -62,7 +62,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                             {productName}
                         </h4>
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
-                            {desc || "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology."}
+                            {desc}
                         </p>
                         <div className="flex flex-col items-center gap-8 md:flex-row">
                             <button
@@ -90,10 +90,10 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                                     </div>
                                 </a>
                             </button>
-                            <Modal
+                            <Modal1
                                 styles={"bg-white text-primary"}
                                 title={"Request to buy"}
-                                type={""}
+                                type={"enquire"}
                                 pageType={"main"}
                                 page={""}
                             />
