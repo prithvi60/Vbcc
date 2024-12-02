@@ -50,6 +50,7 @@ const CategoryHero = ({
                             styles={"bg-info text-white"}
                             title={"Download Catalog"}
                             type={"download"}
+                            pageType={"main"}
                         />
                         <PdfViewerComponent pdfFile={pdfFile} />
                     </div>

@@ -1,29 +1,38 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export const ThankYouComponent = () => {
-  const path = usePathname()
+  const path = usePathname();
   const modifiedUrl = path.replace("/thankyou", "");
-  // console.log(path);
-
-  // /thankyou
-
-  // /denkirodental/dentalfurnace/productline/thankyou
-
+  const hasDownloaded = useRef(false);
+  
   useEffect(() => {
+    if (hasDownloaded.current) return;
     // console.log("Thankyou page loaded");
-    const downloadPDF = () => {
-      const link = document.createElement("a");
-      link.href = "/files/Denkiro - Dental - Brochure - Digital.pdf";
-      link.download = "Denkiro - Dental - Brochure - Digital.pdf";
-      link.click();
-    };
+    if (modifiedUrl === "/denkirodental/dentalfurnace/productline") {
+      const downloadPDF = () => {
+        const link = document.createElement("a");
+        link.href = "/files/Denkiro-Dental-Brochure-Digital.pdf";
+        link.download = "Denkiro-Dental-Brochure-Digital.pdf";
+        link.click();
+      };
 
-    downloadPDF();
-  }, []);
+      downloadPDF();
+    } else {
+      const downloadPDF = () => {
+        const link = document.createElement("a");
+        link.href = "/files/Denkiro - Brochure - Digital.pdf";
+        link.download = "Denkiro - Brochure - Digital.pdf";
+        link.click();
+      };
+
+      downloadPDF();
+    }
+    hasDownloaded.current = true;
+  }, [modifiedUrl]);
 
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist text-warning space-y-6">
@@ -53,24 +62,6 @@ export const ThankYouComponent = () => {
         " Please check your email now "
       </p>
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-5">
-        {/* <Link
-          scroll={false}
-          href="/"
-          className={`group/button block rounded-full px-6 py-3 bg-[#20427D] hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-max tracking-wider`}
-        >
-          <div className={`h-6 w-full overflow-hidden`}>
-            <h4
-              className={`transition translate-y-0 group-hover/button:-translate-y-20 duration-700 text-white`}
-            >
-              Explore More
-            </h4>
-            <h4
-              className={`translate-y-20 transition group-hover/button:-translate-y-[25px] duration-700 group-hover/button:text-white`}
-            >
-              Explore More
-            </h4>
-          </div>
-        </Link> */}
         <Link
           scroll={false}
           href={modifiedUrl === "" ? "/" : modifiedUrl}

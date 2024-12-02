@@ -292,7 +292,7 @@ const Footer = () => {
             LET’S WORK TOGETHER
           </h4>
           <form
-            className="block pt-5 space-y-4"
+            className="relative z-10 block pt-5 space-y-4"
             onSubmit={handleSubmit}
           >
             <div className="block w-full space-y-1.5">
@@ -376,8 +376,8 @@ const Footer = () => {
               </div>
             </button>
           </form>
-          <div className="absolute z-10 hidden md:block md:-top-36 md:-left-8">
-            <FooterBoxModal className={" md:w-[380px] md:h-[480px] fill-none"} />
+          <div className="absolute z-0 hidden md:block md:-top-36 md:-left-8 ">
+            <FooterBoxModal className={"md:w-[380px] md:h-[480px] fill-none"} />
           </div>
         </div>
         <div className="w-full space-y-3 text-sm md:col-span-3 text-secondary bg-primary font-Montserrat place-content-center">
