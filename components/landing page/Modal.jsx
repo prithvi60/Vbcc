@@ -9,8 +9,6 @@ import {
 import Loader from "../Loader";
 import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
-
-
 export const Modal1 = ({ title, styles, type, pageType, page }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -55,6 +53,7 @@ export const Modal1 = ({ title, styles, type, pageType, page }) => {
         setIsOpen={setIsOpen}
         type={type}
         page={page}
+        pageType={pageType}
       />
     </div>
   );
@@ -121,12 +120,23 @@ export const Modal2 = ({ pageType }) => {
           </>
         )}
       </button> */}
-      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} type={"enquire"} />
+      <SpringModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        type={"enquire"}
+        pageType={pageType}
+      />
     </div>
   );
 };
 
-const SpringModal = ({ isOpen, setIsOpen, type = "", page = "" }) => {
+const SpringModal = ({
+  isOpen,
+  setIsOpen,
+  type = "",
+  page = "",
+  pageType = "",
+}) => {
   const initialFormData = {
     firstName: "",
     lastName: "",
@@ -160,10 +170,30 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page = "" }) => {
       page: page,
     };
 
-    // console.log(emailFormData);
+    const zohoData = {
+      data: [
+        {
+          First_Name: formData.firstName,
+          Last_Name: formData.lastName,
+          Phone: formData.phoneNo,
+          Email: formData.userEmail,
+        },
+      ],
+    };
 
     try {
-      const response = await fetch("/api/sendMail", {
+      const zohoResponse = await fetch("/api/zoho/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(zohoData),
+      });
+
+      if (!zohoResponse.ok) {
+        const errorData = await zohoResponse.text();
+        throw new Error(`Zoho API Error: ${zohoResponse.status} ${errorData}`);
+      }
+
+      const emailResponse = await fetch("/api/sendMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -171,24 +201,31 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page = "" }) => {
         body: JSON.stringify(emailFormData),
       });
 
-      if (!response.ok) {
-        const errorData = await response.text();
-        throw new Error(`Error: ${response.status} ${errorData}`);
+      if (!emailResponse.ok) {
+        const errorData = await emailResponse.text();
+        throw new Error(
+          `Email API Error: ${emailResponse.status} ${errorData}`
+        );
       }
 
-      const data = await response.json();
+      const zohoDataResult = await zohoResponse.json();
+      const emailDataResult = await emailResponse.json();
+      console.log(zohoDataResult);
 
-      if (data.success) {
+      // Check for success in both responses
+      if (zohoDataResult && emailDataResult.success) {
         setStatus(false);
-        window.location.href =
-          "/denkirodental/dentalfurnace/productline/thankyou";
-        // router.push("/denkirodental/dentalfurnace/productline/thankyou")
-        // router.push("/denkirodental/dentalfurnace/productline/thankyou").then(() => {
-        //   // Force reload to ensure useEffect runs again
-        //   router.reload();
-        // });
         setFormData(initialFormData);
         e.target.reset();
+
+        if (pageType === "main") {
+          window.location.href = "/thankyou";
+        } else {
+          window.location.href =
+            "/denkirodental/dentalfurnace/productline/thankyou";
+        }
+      } else {
+        throw new Error("One or more operations failed.");
       }
     } catch (error) {
       console.error("Error sending emails:", error);
@@ -252,13 +289,13 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page = "" }) => {
 
                 // }}
                 >
-                  <input
+                  {/* <input
                     type="text"
                     name="Form"
-                    value={type.toUpperCase()}
+                    defaultValue={type.toUpperCase() || ""}
                     placeholder="Form Type"
                     className="hidden"
-                  />
+                  /> */}
                   <input
                     type="text"
                     name="firstName"
@@ -307,8 +344,8 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page = "" }) => {
                   <input
                     type="text"
                     name="_gotcha"
-                    tabindex="-1"
-                    autocomplete="off"
+                    tabIndex="-1"
+                    autoComplete="off"
                     className="hidden"
                   />
                   {type === "enquire" ? (

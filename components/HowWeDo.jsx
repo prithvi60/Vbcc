@@ -74,7 +74,7 @@ const HowWeDo = () => {
               <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
                 How we <span className="text-info">do it? </span>
               </h2>
-              <Modal2 />
+              <Modal2 pageType={"main"} />
             </div>
             <div className="absolute z-10 -top-7 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-14">
               <TSBox className={"w-[300px] h-[440px] md:w-[320px] md:h-[440px] lg:w-[450px] lg:h-[550px] fill-none"} />
