@@ -3,7 +3,8 @@ import { IoMdClose } from "react-icons/io";
 import React, { useState } from "react";
 import { MdRemoveRedEye } from "react-icons/md";
 import FileViewer from "react-file-viewer";
-const PdfViewer = ({pdfFile}) => {
+
+const PdfViewer = ({ pdfFile }) => {
     const [isViewerOpen, setIsViewerOpen] = useState(false);
     const [pdf] = useState(pdfFile);
 
