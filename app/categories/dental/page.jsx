@@ -1,4 +1,3 @@
-
 import DentalProducts from "@/components/categories/dental/DentalProducts";
 import DefaultLayout from "@/components/DefaultLayout";
 

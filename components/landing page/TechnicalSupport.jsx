@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./UseWindowSize ";
-import { Modal } from "./Modal";
+import { Modal, Modal1 } from "./Modal";
 import { TSBox } from "@/svg_components/LandingHeroBox";
 
 const TechnicalSupport = () => {
@@ -24,7 +24,7 @@ const TechnicalSupport = () => {
                             How You WIN with <span className="text-info">VBCC ?</span>
                         </h2>
                         <div className="flex w-full md:justify-end">
-                            <Modal styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
+                            <Modal1 styles={"bg-info text-white"} title={"Enquire now"} type={"enquire"} />
                         </div>
                         <div className="absolute z-10 -top-20 -left-28 md:-left-24 md:-top-32 lg:-top-20 lg:-left-28">
                             <TSBox className={"w-[330px] h-[450px] md:w-[360px] md:h-[470px] lg:w-[450px] lg:h-[550px] fill-none"} />

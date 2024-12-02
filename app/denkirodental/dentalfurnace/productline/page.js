@@ -4,8 +4,6 @@ import LandingHero from "@/components/landing page/LandingHero";
 import TechnicalSupport from "@/components/landing page/TechnicalSupport";
 import TestimonialLanding from "@/components/landing page/TestimonialLanding";
 import React from "react";
-import { Modal } from "@/components/landing page/Modal";
-import CompanyStats from "@/components/landing page/CompanyStats";
 
 const Page = () => {
   return (

@@ -13,12 +13,11 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHover, setIsHover] = useState(false);
   const path = usePathname();
-  // console.log(path);
 
   return (
-    <nav className="absolute left-0 !z-50 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
+    <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
-        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
+        className={`relative z-10 flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
           ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
           : "justify-between"
           }`}
@@ -34,7 +33,7 @@ const NavBar = () => {
               alt="VBCC Logo"
               src="/VBCC - Logo.svg"
               fill
-              className="z-0 object-cover object-center"
+              className="object-cover object-center"
               priority
             />
           </div>

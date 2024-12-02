@@ -1,4 +1,3 @@
-
 import LabProducts from "@/components/categories/lab/LabProducts";
 import DefaultLayout from "@/components/DefaultLayout";
 

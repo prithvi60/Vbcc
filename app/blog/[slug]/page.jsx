@@ -6,7 +6,7 @@ import { POST_QUERY } from "@/sanity/Queries";
 
 
 export default async function Home({ params }) {
-  const { slug } = params
+  const slug = await params.slug;
 
   const post = await client.fetch(POST_QUERY, { slug });
 
