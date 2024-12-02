@@ -3,9 +3,8 @@ import BreadCrumb from "@/app/categories/BreadCrumb";
 import { Modal1 } from "@/components/landing page/Modal";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
-// import PdfViewer from "./PdfViewer";
 
-const PdfViewer = dynamic(() => import('./PdfViewer'), {
+const PdfViewerComponent = dynamic(() => import('./PDFViewer.jsx'), {
     ssr: false // Disable server-side rendering for this component
 });
 
@@ -52,7 +51,7 @@ const CategoryHero = ({
                             title={"Download Catalog"}
                             type={"download"}
                         />
-                        <PdfViewer pdfFile={pdfFile} />
+                        <PdfViewerComponent pdfFile={pdfFile} />
                     </div>
                 </div>
                 <div className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">

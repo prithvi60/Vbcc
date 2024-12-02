@@ -1,46 +1,50 @@
-import { NextResponse } from "next/server";
+// import axios from "axios";
 
-export async function POST(req) {
-  const { refresh_token } = await req.json();
+// const ZOHO_API_URL = "https://www.zohoapis.in/crm/v2";
+// const CLIENT_ID = process.env.ZOHO_CLIENT_ID;
+// const CLIENT_SECRET = process.env.ZOHO_CLIENT_SECRET;
+// const REFRESH_TOKEN = process.env.ZOHO_REFRESH_TOKEN;
 
-  const client_id = process.env.ZOHO_CLIENT_ID;
-  const client_secret = process.env.ZOHO_CLIENT_SECRET;
-  const tokenUrl = "https://accounts.zoho.com/oauth/v2/token";
+// let accessToken = null; // Cache access token for reuse
 
-  const body = new URLSearchParams({
-    refresh_token,
-    client_id,
-    client_secret,
-    grant_type: "refresh_token",
-  });
+// // Function to get an access token
+// async function getAccessToken() {
+//   if (accessToken) return accessToken;
 
-  try {
-    const response = await fetch(tokenUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: body.toString(),
-    });
+//   const response = await axios.post('https://accounts.zoho.in/oauth/v2/token', null, {
+//     params: {
+//       grant_type: 'refresh_token',
+//       client_id: CLIENT_ID,
+//       client_secret: CLIENT_SECRET,
+//       refresh_token: REFRESH_TOKEN,
+//     },
+//   });
 
-    const data = await response.json();
+//   accessToken = response.data.access_token;
 
-    if (response.ok) {
-      return NextResponse.json({
-        access_token: data.access_token,
-        expires_in: data.expires_in,
-      });
-    } else {
-      return NextResponse.json(
-        { message: "Error refreshing token", error: data },
-        { status: 400 }
-      );
-    }
-  } catch (error) {
-    console.error("Error refreshing token:", error);
-    return NextResponse.json(
-      { message: "Error refreshing token", error: error.message },
-      { status: 500 }
-    );
-  }
-}
+//   // Optional: Implement token expiration handling or caching mechanism
+//   return accessToken;
+// }
+
+// export async function GET() {
+//   try {
+//     const token = await getAccessToken();
+
+//     const response = await axios.get(`${ZOHO_API_URL}/Leads`, {
+//       headers: {
+//         Authorization: `Zoho-oauthtoken ${token}`,
+//       },
+//     });
+
+//     return new Response(JSON.stringify(response.data), {
+//       status: 200,
+//       headers: { 'Content-Type': 'application/json' },
+//     });
+//   } catch (error) {
+//     console.error('Error fetching leads:', error);
+//     return new Response(JSON.stringify({ error: 'Failed to fetch leads' }), {
+//       status: 500,
+//       headers: { 'Content-Type': 'application/json' },
+//     });
+//   }
+// }

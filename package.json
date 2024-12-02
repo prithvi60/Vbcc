@@ -22,6 +22,7 @@
     "@portabletext/react": "^3.1.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.64.2",
+    "axios": "^1.7.8",
     "critters": "^0.0.20",
     "framer-motion": "^10.17.12",
     "fslightbox-react": "^1.7.6",

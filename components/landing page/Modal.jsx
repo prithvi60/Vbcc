@@ -126,7 +126,7 @@ export const Modal2 = ({ pageType }) => {
   );
 };
 
-const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
+const SpringModal = ({ isOpen, setIsOpen, type = "", page = "" }) => {
   const initialFormData = {
     firstName: "",
     lastName: "",
@@ -242,7 +242,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                   // action="https://public.herotofu.com/v1/8e9daf90-9b5c-11ef-a13f-b56169d4ce0e"
                   // method="post"
                   // accept-charset="UTF-8"
-                  className="space-y-2 text-primary md:space-y-4 py-7 md:p-7"
+                  className="relative z-10 space-y-2 text-primary md:space-y-4 py-7 md:p-7"
                 // onSubmit={() => {
                 //   // console.log("submitted");
                 //   type !== "enquire" && handleDownload();
@@ -327,7 +327,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                     </button>
                   )}
                 </form>
-                <div className="absolute z-10 hidden lg:block lg:-top-40 lg:-left-0">
+                <div className="absolute z-0 hidden lg:block lg:-top-40 lg:-left-0">
                   <FooterBoxModal
                     className={" lg:w-[380px] lg:h-[480px] fill-none"}
                   />

@@ -4,9 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 export const metadata = {
   title: "VBCC | THE TAILOR MADE",
   description: "VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD's Dental Furnace",
-  icons: {
-    icon: "/favicon.ico",
-  },
   metadataBase: new URL(
     "https://vbccinstruments.com/denkirodental/dentalfurnace/productline"
   ),
@@ -27,9 +24,5 @@ export const metadata = {
 };
 
 export default function LandingLayout({ children }) {
-  return (
-    <>
-      <main>{children}</main>
-    </>
-  );
+  return <main> {children}</main>;
 }
