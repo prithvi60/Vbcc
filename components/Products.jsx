@@ -64,9 +64,9 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
   const handleSortBy = (value) => {
     setActiveTab(value);
     const sortedBy = productsData.filter(
-      (val) => val.sortBy.includes(value)
+      (val) => val.category === value
     );
-    setOurProducts(sortedBy);
+    setOurProducts(sortedBy[0].lists);
   };
 
   return (
@@ -82,8 +82,8 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           >
             <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-0"></div>
           </div>
-          <div className="absolute z-0 flex items-center gap-8 top-8 md:gap-14 left-4 md:left-6 w-max xl:gap-16 2xl:gap-36 md:top-16 lg:top-28 xl:left-24 xl:top-32">
-            <div className="z-0 flex items-center justify-center gap-1 ">
+          <div className="absolute z-0 flex items-center gap-8 top-8 md:gap-52 left-4 md:left-6 w-max xl:gap-80 2xl:gap-[380px] md:top-16 lg:top-28 xl:left-24 xl:top-32">
+            <div className="z-0 flex items-center justify-center gap-8 ">
               {sortProduct.map((item, idx) => (
                 <div
                   key={idx}
@@ -101,9 +101,9 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           </div>
         </div>
 
-        <div className="relative flex-wrap items-center justify-center hidden w-full h-full gap-4 pb-20 mx-auto overflow-hidden pt-44 slider-container max-w-7xl md:flex">
-          {ourProducts.slice(0, count).map((card, id) => (
-            <div className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
+        <div className="relative flex-wrap items-center justify-center hidden w-full h-full gap-4 pt-56 pb-20 mx-auto overflow-hidden slider-container md:gap-10 xl:gap-20 md:flex">
+          {ourProducts.map((card, id) => (
+            <Link href={`${card.href}${encodeURIComponent(card.productName)}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
               <div className="relative mx-auto transition-all duration-500 ease-linear transform size-56 md:size-80 group-hover:scale-150">
                 <Image
                   alt="image"
@@ -116,26 +116,26 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
               <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
                 {card.productName}
               </h4>
-            </div>
+            </Link>
           ))}
         </div>
         {/* mobile view */}
-        <div className="w-full sm:w-[400px] h-full flex sm:flex-nowrap md:hidden items-center gap-4 overflow-auto thumbnail">
-          {ourProducts.slice(0, count).map((card, id) => (
-            <div className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
-              <div className="relative mx-auto transition-all duration-500 ease-linear transform size-56 md:size-80 group-hover:scale-150">
+        <div className="w-full sm:w-[400px] h-full flex py-10 sm:flex-nowrap md:hidden items-center gap-4 overflow-auto thumbnail">
+          {ourProducts.map((card, id) => (
+            <Link href={`${card.href}${encodeURIComponent(card.productName)}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
+              <div className="relative mx-auto transition-all duration-500 ease-linear transform size-36 group-hover:scale-125">
                 <Image
                   alt="image"
                   fill
                   src={card.img}
                   className="z-20 object-contain object-center"
                 />
-                <div className="absolute top-16 z-10 left-5 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-40 md:size-60 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-info"></div>
+                <div className="absolute top-2 z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] bg-opacity-80 size-36 transition-all duration-500 ease-linear group-hover:scale-[0.80] group-hover:bg-info"></div>
               </div>
               <h4 className="font-semibold text-center mx-auto text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-full sm:w-3/4">
                 {card.productName}
               </h4>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

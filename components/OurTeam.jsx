@@ -18,7 +18,7 @@ const OurTeam = () => {
                                 <Image
                                     alt="image"
                                     fill
-                                    src={"/founder-1.png"}
+                                    src={"https://ik.imagekit.io/webibee/VBCC/homepage/founder-1.png?updatedAt=1733225206180"}
                                     className="z-0 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
                             </div>
@@ -32,7 +32,7 @@ const OurTeam = () => {
                                 <Image
                                     alt="image"
                                     fill
-                                    src={"/founder-2.png"}
+                                    src={"https://ik.imagekit.io/webibee/VBCC/homepage/founder-2.png?updatedAt=1733225205697"}
                                     className="z-0 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
                             </div>

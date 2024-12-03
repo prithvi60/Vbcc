@@ -53,8 +53,8 @@ const ProductDetailsHero = () => {
     return (
         <>
             <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
-                <div className="relative w-full h-[1100px] md:h-[1000px] lg:h-[700px] xl:h-[800px] hero-mask bg-primary z-10"></div>
-                <div className="absolute left-0 z-10 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
+                <div className="relative w-full h-[1100px] md:h-[1000px] lg:h-[700px] xl:h-[800px] hero-mask bg-primary z-auto"></div>
+                <div className="absolute left-0 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                     <BreadCrumb />
                     <div className="block w-full py-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
                         <h4 className="text-xl md:text-2xl font-medium !leading-[32px] text-primary">
@@ -120,6 +120,7 @@ const ProductDetailsHero = () => {
                                             mobileBreakpoint={640}
                                             fullscreenOnMobile
                                             hideHint
+                                            zoomScale={1}
                                             src={list}
                                             alt={`image-${idx}`}
                                             zoomType="hover"

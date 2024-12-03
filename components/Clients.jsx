@@ -1,12 +1,10 @@
 "use client"
 import othersData from "@/libs/others.json"
 import Image from "next/image"
-import { useMemo } from "react";
-import dynamic from 'next/dynamic'
 import Slider from "react-slick";
 import { TSBox } from "@/svg_components/LandingHeroBox";
 import Link from "next/link";
-const MarqueeComponent = dynamic(() => import("react-fast-marquee"), { ssr: false })
+import { clientLogos } from "@/libs/otherPage";
 
 const Clients = () => {
   const settings = {
@@ -47,7 +45,7 @@ const Clients = () => {
       <div className='flex flex-col items-center gap-28 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
         <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10">
           <Image
-            src={"/card 1.png"}
+            src={"https://ik.imagekit.io/webibee/VBCC/homepage/client-bg.png?updatedAt=1733224807699"}
             fill
             alt="image"
             className="object-cover object-center"
@@ -65,7 +63,7 @@ const Clients = () => {
         <div className="block space-y-0 md:space-y-10">
           <div className="w-full h-full mx-auto max-w-64 md:max-w-sm max-h-32 lg:max-w-md xl:max-w-2xl slider-container">
             <Slider {...settings}>
-              {othersData.clientLogos.slice(0, 4).map((list, idx) => (
+              {clientLogos.slice(0, 4).map((list, idx) => (
                 <Link href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
                   <Image alt="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
                 </Link>
@@ -74,7 +72,7 @@ const Clients = () => {
           </div>
           <div className="w-full h-full mx-auto max-w-64 md:max-w-sm max-h-32 lg:max-w-md xl:max-w-2xl slider-container">
             <Slider {...settings} rtl>
-              {othersData.clientLogos.slice(4, 9).map((list, idx) => (
+              {clientLogos.slice(4, 9).map((list, idx) => (
                 <Link href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
                   <Image alt="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
                 </Link>

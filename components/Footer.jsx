@@ -16,6 +16,7 @@ import { FooterBox, FooterBoxModal } from "@/svg_components/LandingHeroBox";
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import { BiPhoneCall } from "react-icons/bi";
 import { getAccessToken } from "@/libs/Functions";
+import { footerLinks1, footerLinks2 } from "@/libs/otherPage";
 
 const initialFormData = {
   firstName: "",
@@ -183,6 +184,7 @@ const Footer = () => {
           </h4>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248852.35523221854!2d80.20816985922144!3d12.951488698204182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de4f794ee29%3A0x8fd9b1da364d7215!2sVBCC%20High%20Temperature%20Instruments%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1730722548513!5m2!1sen!2sin"
+            title="our office location"
             width="100%"
             height="100%"
             allowFullScreen=""
@@ -199,7 +201,7 @@ const Footer = () => {
           </h4>
           <div className="flex items-start text-sm gap-7 xl:gap-16 ">
             <div className="flex flex-col items-start gap-3">
-              {othersData.footerLinks1.map((list, id) => (
+              {footerLinks1.map((list, id) => (
                 <Link
                   passHref
                   key={id}
@@ -211,7 +213,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="flex flex-col items-start gap-3">
-              {othersData.footerLinks2.map((list, id) => (
+              {footerLinks2.map((list, id) => (
                 <Link
                   key={id}
                   passHref
@@ -226,7 +228,7 @@ const Footer = () => {
         </div>
         <div className="relative block after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden w-full space-y-3 md:space-y-5 xl:w-max">
           <h4 className="w-full font-medium tracking-wider text-center md:text-xl lg:text-center xl:w-max">CONTACT INFO</h4>
-          <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
+          {/* <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
             <BiPhoneCall className="text-lg text-white md:text-3xl" />
             <div className="hidden md:block">
               <ConnectComponent
@@ -242,9 +244,9 @@ const Footer = () => {
                 handleClick={handleinquire}
               />
             </a>
-          </div>
+          </div> */}
           <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
-            <MdOutlineBusinessCenter className="text-lg text-white md:text-3xl" />
+            <BiPhoneCall className="text-lg text-white md:text-3xl" />
             <div className="hidden md:block">
               <ConnectComponent
                 text={"+91 9600478315"}
@@ -427,7 +429,7 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
   return (
     <div>
       <button
-        className="text-sm tracking-wide cursor-pointer text-info"
+        className="text-sm tracking-wide cursor-pointer md:text-base text-info"
         onClick={() => handleClick(text)}
       >
         {text}

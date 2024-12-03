@@ -1,19 +1,27 @@
-"use client"
-import { FooterBox, FooterBoxMap, FooterBoxModal } from "@/svg_components/LandingHeroBox";
+"use client";
+import {
+  FooterBox,
+  FooterBoxMap,
+  FooterBoxModal,
+} from "@/svg_components/LandingHeroBox";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaRegEnvelope, FaYoutube } from "react-icons/fa";
 import {
-  FaLinkedin,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhone,
+  FaRegEnvelope,
+  FaYoutube,
+} from "react-icons/fa";
+import {
   FaLocationDot,
-  FaSquareWhatsapp,
   FaXTwitter,
 } from "react-icons/fa6";
 
 const FooterLanding = () => {
-
   const [Copied, setCopied] = useState(false);
   const [Copied2, setCopied2] = useState(false);
 
@@ -42,7 +50,11 @@ const FooterLanding = () => {
             className="object-cover object-center"
           />
           <div className="absolute -top-36 -left-10 md:-left-5 md:-top-28 lg:-top-32 lg:-left-9">
-            <FooterBox className={"w-[250px] h-[340px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"} />
+            <FooterBox
+              className={
+                "w-[250px] h-[340px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"
+              }
+            />
           </div>
         </div>
         <div className="absolute top-0 left-0 w-full h-2">
@@ -61,34 +73,56 @@ const FooterLanding = () => {
           </h4>
           <ul className="flex items-center justify-center gap-3">
             <li>
-              <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse " target="blank">
+              <Link
+                aria-label="linkedIn profile"
+                href={"https://www.linkedin.com/company/vbcc-hti/"}
+                target="blank"
+              >
                 <FaLinkedinIn className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="blank">
+              <Link
+                aria-label="Facebook profile"
+                href={"https://www.facebook.com/vbcc.hti/"}
+                target="blank"
+              >
                 <FaFacebookF className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="blank">
+              <Link
+                aria-label="Instagram profile"
+                href={"https://www.instagram.com/vbcc_hti/"}
+                target="blank"
+              >
                 <FaInstagram className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="blank">
+              <Link
+                aria-label="Youtube Videos"
+                href={"https://www.youtube.com/@vbcc_hti"}
+                target="blank"
+              >
                 <FaYoutube className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="blank">
+              <Link
+                aria-label="X profile"
+                href={"https://x.com/vbcc_hti"}
+                target="blank"
+              >
                 <FaXTwitter className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
           </ul>
         </div>
         <div className="block w-full space-y-3 md:space-y-5 xl:space-y-8 lg:w-2/5">
-          <h4 className="text-xl font-medium tracking-wider text-center lg:text-left">CONTACT INFO</h4>
+          <h4 className="text-xl font-medium tracking-wider text-center lg:text-left">
+            CONTACT INFO
+          </h4>
           <div className="flex gap-2.5 md:gap-5 justify-center items-center lg:justify-start w-full lg:w-max">
             <FaPhone className="text-lg text-white md:text-2xl" />
             <ConnectComponent
@@ -116,10 +150,13 @@ const FooterLanding = () => {
           </div>
         </div>
         <div className="block relative w-full space-y-3 md:space-y-5 xl:space-y-8 xl:w-[320px]">
-          <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-left">Our Location</h4>
+          <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-left">
+            Our Location
+          </h4>
           {/* <div className="relative"> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248852.35523221854!2d80.20816985922144!3d12.951488698204182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de4f794ee29%3A0x8fd9b1da364d7215!2sVBCC%20High%20Temperature%20Instruments%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1730722548513!5m2!1sen!2sin"
+            title="our office location"
             width="100%"
             height="100%"
             allowFullScreen=""
@@ -128,7 +165,9 @@ const FooterLanding = () => {
             className="w-full h-64 md:w-full"
           ></iframe>
           <div className="absolute z-10 hidden xl:block xl:-top-28 xl:-left-8">
-            <FooterBoxModal className={" xl:w-[380px] xl:h-[380px] fill-none"} />
+            <FooterBoxModal
+              className={" xl:w-[380px] xl:h-[380px] fill-none"}
+            />
           </div>
         </div>
       </div>
@@ -142,7 +181,7 @@ export const ConnectComponent = ({ text, copied, handleClick }) => {
   return (
     <div>
       <button
-        className="text-sm tracking-wide cursor-pointer text-info"
+        className="text-sm tracking-wide cursor-pointer md:text-base text-info"
         onClick={() => handleClick(text)}
       >
         {text}

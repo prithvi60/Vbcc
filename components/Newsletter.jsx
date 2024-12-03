@@ -8,7 +8,7 @@ const Newsletter = () => {
         <div className="relative w-full h-96 md:h-72 lg:h-96">
           <Image
             alt="background image"
-            src="/newsletter-bg.png"
+            src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-bg.png?updatedAt=1733226035657"
             fill
             className="z-0 object-cover object-center"
           />
@@ -81,7 +81,7 @@ const Newsletter = () => {
         <div className="absolute z-20 hidden w-full lg:block h-52 md:max-w-96 top-16 right-8 xl:right-20 xl:h-60">
           <Image
             alt="background image"
-            src="/newsletter-1.png"
+            src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-1.png?updatedAt=1733226033627"
             fill
             className="z-0 object-cover object-center"
           />

@@ -3,17 +3,18 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useWindowSize } from "./UseWindowSize ";
-import { Modal, Modal1 } from "./Modal";
+import { Modal1 } from "./Modal";
 import { TSBox } from "@/svg_components/LandingHeroBox";
+import { landingItems } from "@/libs/otherPage";
 
 const TechnicalSupport = () => {
-    const [open, setOpen] = useState(items[0].id);
+    const [open, setOpen] = useState(landingItems[0].id);
     return (
         <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 py-8 overflow-hidden text-white md:flex-row font-Montserrat md:py-12 md:px-8 xl:px-14 bg-primary">
             <div className="w-full my-10 md:my-0">
                 <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
                     <Image
-                        src={"/card 1.png"}
+                        src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
                         fill
                         alt="image"
                         className="object-cover object-center"
@@ -33,7 +34,7 @@ const TechnicalSupport = () => {
                 </div>
             </div>
             <div className="flex h-[380px] md:h-[520px] w-full max-w-4xl shadow overflow-hidden">
-                {items.map((item) => {
+                {landingItems.map((item) => {
                     return (
                         <Panel
                             key={item.id}
@@ -133,29 +134,3 @@ const descriptionVariants = {
     closed: { opacity: 0, y: "100%" },
 };
 
-const items = [
-    {
-        id: 1,
-        title: "Expert Technical Support & Services",
-        imgSrc:
-            '/card 1.png',
-        description:
-            "We provide pan-India technical support and services. Our technicians are available six days a week to help you with any issues, ensuring minimal downtime and maximum productivity. ",
-    },
-    {
-        id: 2,
-        title: "Seamless Installation & Training",
-        imgSrc:
-            '/card 3.jpg',
-        description:
-            "Our experienced professionals will do a hassle-free installation and guide you through our product features and functionalities. We also provide timely replacements of any spare parts.",
-    },
-    {
-        id: 3,
-        title: "Tailor Made Promise",
-        imgSrc:
-            '/card 4.jpg',
-        description:
-            "We understand that each client has unique requirements that may extend beyond our standardize product offerings. Our “Tailor-Made” promise ensures that we customize our designs to meet your specific needs.",
-    }
-];

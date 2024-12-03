@@ -92,37 +92,37 @@ export default TestimonialLanding;
 
 const TestimonialList = [
     {
-        icon: "/icon 1.svg",
+        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
         para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
         title: "Anna University",
         subtle: "Department of Ceramic technology",
     },
     {
-        icon: "/icon 2.svg",
+        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
         para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
         title: "VIT University",
         subtle: "Centre of Nano technology research",
     },
     {
-        icon: "/icon 3.svg",
+        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
         title: "ISRO",
         subtle: "Department of Space",
     },
     {
-        icon: "/icon 1.svg",
+        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
         para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
         title: "Anna University",
         subtle: "Department of Ceramic technology",
     },
     {
-        icon: "/icon 2.svg",
+        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
         para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
         title: "VIT University",
         subtle: "Centre of Nano technology research",
     },
     {
-        icon: "/icon 3.svg",
+        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
         title: "ISRO",
         subtle: "Department of Space",

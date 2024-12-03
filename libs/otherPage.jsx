@@ -1,55 +1,57 @@
 export const heroSlider = [
     {
-        bgImg: "/her0bg.png",
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/homepage/dental%20-hero.png?updatedAt=1733211692943",
         categories: "Dental Furnaces",
         type: "Dental",
         products: [
             {
-                img: "/sample 1.png",
-                productName: "APM Kanthal",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
+                productName: "Vacuum Sintering Furnace",
+                type: "Dental PRODUCTS",
             },
             {
-                img: "/sample 2.png",
-                productName: "Alumina - Boats And Crucibles",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
+                productName: "Vacuum Pressing Furnace",
+                type: "Dental PRODUCTS",
             },
             {
-                img: "/sample 3.png",
-                productName: "Graphite Heating Elements",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341",
+                productName: "Zirconia Sintering Furnace",
+                type: "Dental PRODUCTS",
             },
             {
-                img: "/sample 4.png",
-                productName: "Alumina - Boats And Crucibles",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
+                productName: "Burnout Furnace",
+                type: "Dental PRODUCTS",
             },
         ],
     },
     {
-        bgImg: "/dental-herobg.png",
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/homepage/lab%20-hero.png?updatedAt=1733211692180",
         categories: "Laboratory Furnaces",
         type: "Laboratory",
         products: [
             {
-                img: "/sample 1.png",
-                productName: "Graphite Heating Elements",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
+                productName: "Box/Muffle Furnace",
+                type: "Laboratory PRODUCTS",
             },
             {
-                img: "/sample 2.png",
-                productName: "Alumina - Boats And Crucibles",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/isometric.png?updatedAt=1732097674080",
+                productName: "Rotary Tubular Furnace",
+                type: "Laboratory PRODUCTS",
             },
             {
-                img: "/sample 3.png",
-                productName: "Alumina - Boats And Crucibles",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/isometric.png?updatedAt=1732097720641",
+                productName: "Roller Hearth Furnace",
+                type: "Laboratory PRODUCTS",
             },
             {
-                img: "/sample 4.png",
-                productName: "APM Kanthal",
-                type: "CERAMIC PRODUCTS",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/isometric.png?updatedAt=1732095997475",
+                productName: "Microwave Furnace",
+                type: "Laboratory PRODUCTS",
             },
         ],
     },
@@ -61,9 +63,9 @@ export const navLinks = [
         menu: "CATEGORIES",
         ref: "",
         subMenu: [
-            { img: "/blog-6.jpeg", menu: "dental", ref: "/categories/dental" },
+            { img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-herobg.png?updatedAt=1733228239747", menu: "dental", ref: "/categories/dental" },
             {
-                img: "/blog-3.jpeg",
+                img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
                 menu: "laboratory",
                 ref: "/categories/laboratory",
             },
@@ -73,26 +75,194 @@ export const navLinks = [
     { menu: "TESTIMONIALS", ref: "/testimonials" },
 ];
 
-
 export const exploreList = [
-    // {
-    //     img: "/explore-1.png",
-    //     icon: "/explore-icon-1.png",
-    //     title: "Industries",
-    //     desc: "Over 100 products for ceramic industry.",
-    // },
     {
-        img: "/explore-2.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-explore.png?updatedAt=1733211695302",
         icon: "/explore-icon-2.png",
         title: "Dental",
         desc: "Over 2+ products for Dental Furnace.",
-        ref: "/categories/dental"
+        ref: "/categories/dental",
     },
     {
-        img: "/explore-3.png",
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-3.png?updatedAt=1733225202920",
         icon: "/explore-icon-3.png",
         title: "Laboratory",
         desc: "Over 20+ products for Laboratory Furnace.",
-        ref: "/categories/laboratory"
+        ref: "/categories/laboratory",
     },
+];
+
+export const items = [
+    {
+        id: 1,
+        title: "Working Strategy",
+        imgSrc:
+            "https://ik.imagekit.io/webibee/VBCC/homepage/hwd-1.png?updatedAt=1733211647806",
+        description:
+            "Our goal is to align  your business objectives and user needs to create a mutually  beneficial solution that maximize the impact and return from the product  we build for you, By working together.",
+        ref: "",
+    },
+    {
+        id: 2,
+        title: "Design",
+        imgSrc:
+            "https://ik.imagekit.io/webibee/VBCC/homepage/hwd-2.png?updatedAt=1733211647534",
+        description:
+            "Our experienced professionals will do a hassle-free installation and guide you through our product features and functionalities. We also provide timely replacements of any spare parts.",
+        ref: "",
+    },
+    {
+        id: 3,
+        title: "Engineering",
+        imgSrc:
+            "https://ik.imagekit.io/webibee/VBCC/homepage/hwd-3.png?updatedAt=1733211647168",
+        description:
+            "We understand that each client has unique requirements that may extend beyond our standardize product offerings. Our “Tailor-Made” promise ensures that we customize our designs to meet your specific needs.",
+        ref: "",
+    },
+];
+
+export const sortProducts = [
+    { value: "Best Selling" },
+    { value: "Dental Furnaces" },
+];
+
+export const categoriesProducts = [
+    {
+        category: "Best Selling",
+        lists: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
+                productName: "Box/Muffle Furnace",
+                href: "/categories/laboratory/"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
+                href: "/categories/laboratory/",
+                productName: "Chemical Vapour Deposition",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
+                productName: "Vacuum Sintering Furnace",
+                href: "/categories/dental/",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
+                productName: "Vacuum Pressing Furnace",
+                href: "/categories/dental/",
+            },
+        ],
+    },
+    {
+        category: "Dental Furnaces",
+        lists: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
+                productName: "Vacuum Sintering Furnace",
+                href: "/categories/dental/",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
+                productName: "Vacuum Pressing Furnace",
+                href: "/categories/dental/",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341",
+                productName: "Zirconia Sintering Furnace",
+                href: "/categories/dental/",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
+                productName: "Burnout Furnace",
+                href: "/categories/dental/",
+            },
+        ],
+    },
+];
+
+
+export const footerLinks1 = [
+    {
+        href: "/testimonials",
+        title: "Testimonials"
+    },
+    {
+        href: "/about",
+        title: "About Us"
+    },
+    {
+        href: "/blog",
+        title: "Blog"
+    }
+]
+
+export const footerLinks2 = [
+    {
+        href: "/categories/dental",
+        title: "Dental"
+    },
+    {
+        href: "/categories/laboratory",
+        title: "Laboratory"
+    }
+]
+
+
+export const clientLogos = [
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/bhel.svg?updatedAt=1731397608150",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/IITM%20Hyd%202.svg?updatedAt=1731397608270",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831",
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"
+]
+
+
+export const whyChooseUs = [
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/Vectortool.svg",
+        desc: "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience."
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/square.svg",
+        desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way."
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/Vectorresearch.svg",
+        desc: "We offer cutting-edge Research & Development services, dedicated to innovation and problem-solving, pushing the boundaries of possibility."
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/VectorBox.svg",
+        desc: "We specialize in thorough installation and training services, ensuring your staff gains proficiency in equipment operation and management, empowering them with essential knowledge and skills."
+    }
+]
+
+
+export const landingItems = [
+    {
+        id: 1,
+        title: "Expert Technical Support & Services",
+        imgSrc:
+            'https://ik.imagekit.io/webibee/VBCC/homepage/technical-1.jpeg?updatedAt=1733227548480',
+        description:
+            "We provide pan-India technical support and services. Our technicians are available six days a week to help you with any issues, ensuring minimal downtime and maximum productivity. ",
+    },
+    {
+        id: 2,
+        title: "Seamless Installation & Training",
+        imgSrc:
+            'https://ik.imagekit.io/webibee/VBCC/homepage/technical-2.jpeg?updatedAt=1733227546119',
+        description:
+            "Our experienced professionals will do a hassle-free installation and guide you through our product features and functionalities. We also provide timely replacements of any spare parts.",
+    },
+    {
+        id: 3,
+        title: "Tailor Made Promise",
+        imgSrc:
+            'https://ik.imagekit.io/webibee/VBCC/homepage/technical-3.jpeg?updatedAt=1733227548206',
+        description:
+            "We understand that each client has unique requirements that may extend beyond our standardize product offerings. Our “Tailor-Made” promise ensures that we customize our designs to meet your specific needs.",
+    }
 ];

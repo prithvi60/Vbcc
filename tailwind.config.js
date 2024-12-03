@@ -64,12 +64,12 @@ module.exports = {
         light: {
           colors: {
             foreground: "#FFFFFF",
-            primary: "#042A50",
+            primary: "#1c447e",
             secondary: "#F5F5F5",
             success: "#122149",
             warning: "#0D1924",
             danger: "#1D252D",
-            info: "#F06F38",
+            info: "#ee7136",
             info1: "#F1F1F1",
           },
         },
