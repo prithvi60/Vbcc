@@ -10,6 +10,7 @@ import Image from "next/image";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Modal2 } from "./landing page/Modal";
 import { TSBox } from "@/svg_components/LandingHeroBox";
+import { items } from "@/libs/otherPage";
 const ImgSlider = [
   { img: "https://ik.imagekit.io/webibee/VBCC/VBCC.png", title: "Vbcc" },
   { img: "https://ik.imagekit.io/webibee/VBCC/HWD1.png", title: "Strategize" },
@@ -47,7 +48,7 @@ const HowWeDo = () => {
             <Image
               alt="image"
               fill
-              src={"/tailor-1.png"}
+              src={"https://ik.imagekit.io/webibee/VBCC/homepage/tailor-1.png?updatedAt=1733225442253"}
               className="z-10 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
             />
             <div className="absolute top-2 md:top-8 group-hover:scale-80 transition-colors duration-400 ease-in-out z-0 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
@@ -64,7 +65,7 @@ const HowWeDo = () => {
         <div className="w-full lg:w-1/4">
           <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
             <Image
-              src={"/card 1.png"}
+              src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
               fill
               alt="image"
               className="object-cover object-center"
@@ -219,129 +220,4 @@ const descriptionVariants = {
   closed: { opacity: 0, y: "100%" },
 };
 
-const items = [
-  {
-    id: 1,
-    title: "Working Strategy",
-    imgSrc:
-      '/card 1.png',
-    description:
-      "Our goal is to align  your business objectives and user needs to create a mutually  beneficial solution that maximize the impact and return from the product  we build for you, By working together.",
-    ref: ""
-  },
-  {
-    id: 2,
-    title: "Design",
-    imgSrc:
-      '/card 3.jpg',
-    description:
-      "Our experienced professionals will do a hassle-free installation and guide you through our product features and functionalities. We also provide timely replacements of any spare parts.",
-    ref: ""
-  },
-  {
-    id: 3,
-    title: "Engineering",
-    imgSrc:
-      '/card 4.jpg',
-    description:
-      "We understand that each client has unique requirements that may extend beyond our standardize product offerings. Our “Tailor-Made” promise ensures that we customize our designs to meet your specific needs.",
-    ref: ""
-  }
-];
 
-
-
-{/* <section className="px-6 py-16 md:px-5 lg:px-10 lg:py-20 xl:px-16 xl:py-20 md:bg-secondary xl:bg-transparent">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
-          <div className="sticky w-full h-full top-4 lg:top-20 lg:w-1/2 xl:w-2/5">
-            <div className="relative flex flex-col gap-4 px-4 py-6 rounded-lg lg:rounded-none bg-primary lg:flex-row lg:items-center">
-              <ProgressBar slide={slide} />
-              <AnimatePresence initial={false}>
-                <LazyMotion features={loadFeatures}>
-                  <div className="relative w-full h-full overflow-hidden">
-                    <div className="h-[182px] lg:h-[400px] w-full overflow-hidden">
-                      <m.img
-                        // fill
-                        loading="lazy"
-                        variants={slideVariants}
-                        initial="entry"
-                        animate="visible"
-                        transition={{ duration: 1 }}
-                        exit="exit"
-                        // custom={direction}
-                        key={slide}
-                        src={ImgSlider[slide].img}
-                        alt="Logo"
-                        className="object-cover object-center w-full h-full"
-                      />
-                    </div>
-                    <h3 className="text-[32px] absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2 font-Lora">
-                      {ImgSlider[slide].title}
-                    </h3>
-                  </div>
-                </LazyMotion>
-              </AnimatePresence>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 xl:w-3/5 space-y-0.5">
-            <div className="py-[70px] px-5 lg:py-48  bg-primary lg:bg-transparent text-secondary lg:text-warning  rounded-lg lg:rounded-none sticky top-80 lg:static">
-              <p className="font-Lora text-[40px] tracking-tighter">
-                How we do it?
-              </p>
-            </div>
-            {othersData.howWeDoIt.map((item, idx) => (
-              <InView
-                as="div"
-                threshold={1}
-                rootMargin={"50px"}
-                // initialInView={true}
-                onChange={(inView, entry) => {
-                  // console.log("Inview:", inView, item.title, entry);
-                  if (item.title === "Working Strategy" && slide === 1) {
-                    setSlide(0);
-                  }
-                  setSlide((prev) => {
-                    return entry.isIntersecting &&
-                      item.title === "Working Strategy"
-                      ? 1
-                      : entry.isIntersecting && item.title === "Design"
-                        ? 2
-                        : entry.isIntersecting && item.title === "Engineering"
-                          ? 3
-                          : prev;
-                  });
-                }}
-                // py-[70px] px-5 lg:py-32
-                className={`py-[70px] px-5 font-urbanist bg-primary lg:bg-secondary xl:bg-white text-secondary lg:text-warning  rounded-lg lg:rounded-none space-y-8 sticky top-80 lg:static ${item.title === "Engineering"
-                  ? "lg: pb-[50px] xl:pb-[120px]"
-                  : ""
-                  }`}
-                key={idx}
-              >
-                <h4 className="font-Lora text-[32px] tracking-tighter">
-                  {item.title}
-                </h4>
-                <p className="lg:text-danger">{item.desc}</p>
-                <Link
-                  passHref
-                  href={"/contact"}
-                  className={`hidden lg:block px-6 py-4 rounded-full border group border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max`}
-                >
-                  <div className={`h-6 w-full overflow-hidden`}>
-                    <h4
-                      className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-warning`}
-                    >
-                      {item.btn}
-                    </h4>
-                    <h4
-                      className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
-                    >
-                      {item.btn}
-                    </h4>
-                  </div>
-                </Link>
-              </InView>
-            ))}
-          </div>
-        </div>
-      </section> */}

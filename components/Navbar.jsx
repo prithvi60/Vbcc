@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
-        className={`relative z-10 flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
+        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
           ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
           : "justify-between"
           }`}

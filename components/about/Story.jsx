@@ -10,7 +10,7 @@ export const Story = () => {
           <p className="w-full text-sm font-medium text-justify text-primary md:text-base font-Montserrat md:w-4/5">With over two decades of expertise, VBCC High Temperature Instruments Pvt. Ltd., previously known as VB Ceramic Consultants, is India’s leading manufacturer of furnace, analytical instruments, laboratory equipment, and material processing equipment. Established in 2002, our unwavering commitment to excellence has earned the trust of diverse clientele, including prestigious universities, research organizations, and thriving industries. At VBCC, our dedicated team delivers comprehensive solutions across the industry spectrum, offering superior products and essential technical expertise through tailored turnkey solutions. With over 22 years of experience, we have installed more than 15,000 products and serve over 500 esteemed clients.</p>
         </div>
         <div className="relative md:sticky md:top-10 w-[320px] mx-auto md:w-[460px] overflow-hidden h-[370px]">
-          <Image fill src={"/ceo's.png"} alt="ceo's image" className="object-contain object-center md:object-top" />
+          <Image fill src={"https://ik.imagekit.io/webibee/VBCC/homepage/ceo's.png?updatedAt=1733225204199"} alt="ceo's image" className="object-contain object-center md:object-top" />
         </div>
       </div>
     </section>

@@ -7,8 +7,8 @@ const DentalProducts = () => {
     return (
         <>
             <CategoryHero
-                categoryImg={"/category-1.png"}
-                heroBg={"/dental-herobg.png"}
+                categoryImg={"https://ik.imagekit.io/webibee/VBCC/homepage/category-1.png?updatedAt=1733228209724"}
+                heroBg={"https://ik.imagekit.io/webibee/VBCC/homepage/dental-herobg.png?updatedAt=1733228239747"}
                 title={"Dental Furnaces"}
                 desc1={
                     "Denkiro Dental is a specialized sub-brand under VBCC, focused on providing high-precision dental furnaces for the dental industry. Tailored to meet the exacting standards of dental laboratories, Denkiro Dental furnaces offer exceptional temperature control, reliability, and ease of use."

@@ -12,7 +12,7 @@ const BreadCrumb = () => {
 
     return (
         <Breadcrumbs
-            className="absolute left-5 top-5 md:top-10 md:left-10 !z-20 !backdrop-blur-md"
+            className="absolute left-5 top-5 md:top-10 md:left-10 !backdrop-blur-md"
             itemClasses={{
                 item: [` font-semibold text-sm md:text-base uppercase ${isIdPresent ? "text-[#6B6B6B] data-[current=true]:!text-primary" : "text-white data-[current=true]:!text-info"}`],
                 separator: [`font-semibold text-lg ${isIdPresent ? "text-[#6B6B6B]" : "text-white"}`],
