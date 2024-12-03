@@ -8,6 +8,7 @@ import {
 } from "react-icons/md";
 import Slider from "react-slick";
 import { Modal, Modal1 } from "./Modal";
+import { productLists } from "@/libs/productsData";
 
 const ExploreProduction = () => {
     const settings = {
@@ -20,8 +21,6 @@ const ExploreProduction = () => {
         autoplaySpeed: 2000,
         speed: 1000,
         arrows: false,
-        // nextArrow: <NextArrow />,
-        // prevArrow: <PrevArrow />,
         responsive: [
             {
                 breakpoint: 640,
@@ -32,7 +31,7 @@ const ExploreProduction = () => {
         ],
     };
     return (
-        <section className="relative w-full h-full px-6 pb-8 mb-40 space-y-5 text-4xl text-white md:space-y-10 font-Montserrat bg-primary md:px-12 xl:px-14 pt-36 md:pt-48 md:pb-8">
+        <section name="products" id="products" className="relative w-full h-full px-6 pb-8 mb-40 space-y-5 text-4xl text-white md:space-y-10 font-Montserrat bg-primary md:px-12 xl:px-14 pt-36 md:pt-48 md:pb-8">
             <div className="flex flex-col items-center justify-between gap-10 md:gap-0 md:flex-row">
                 <div className="w-full space-y-3 md:w-3/4 md:space-y-8">
                     <h2 className="text-[28px] font-bold tracking-wider !leading-10 md:text-[36px] lg:text-[44px] xl:text-[52px] w-full md:w-3/5">
@@ -53,7 +52,7 @@ const ExploreProduction = () => {
                 </div>
                 <div className="relative w-full h-[380px] md:w-[280px] md:h-[420px] before:absolute before:border-2 before:border-info before:top-3 before:-left-3 before:md:h-[420px] before:w-full before:z-10 before:h-[380px]">
                     <Image
-                        src={"/explore 1.jpg"}
+                        src={"https://ik.imagekit.io/webibee/VBCC/homepage/explore%201.jpg?updatedAt=1733225201844"}
                         fill
                         alt="image"
                         className="object-cover object-center "
@@ -103,12 +102,7 @@ const ExploreProduction = () => {
 
 export default ExploreProduction;
 
-const productLists = [
-    { img: "/sample 1.png", title: "Vacuum Sintering Furnace", temp: "1200 C", energy: "1.5 KW" },
-    { img: "/sample 2.png", title: "Burnout Furnace", temp: "1200 C", energy: "1.5 KW" },
-    { img: "/sample 3.png", title: "Zirconia Sintering Furnace", temp: "1600 C", energy: "2 KW" },
-    { img: "/sample 4.png", title: "Vacuum Pressing Furnace", temp: "1200 C", energy: "2 KW" },
-];
+
 
 const ProductsComponent = () => {
     return (

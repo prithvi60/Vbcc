@@ -310,7 +310,7 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/left.png?updatedAt=1732097862821",
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/right.png?updatedAt=1732097864352",
         ],
-        productName: "Box Furnace/ Muffle Furnace",
+        productName: "Box/Muffle Furnace",
         desc: "VBCC’s meticulously designed box furnace, or muffle furnace, delivers a great compact solution for labs with limited space. The microprocessor temperature control provides excellent stability and uniformity, while the thermal mass assures fast heating times with low power consumption.",
         keys: [
             {
@@ -3857,4 +3857,12 @@ export const LabProductsList = [
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-humidity.pdf?updatedAt=1732785790412"
     },
+];
+
+
+export const productLists = [
+    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034", title: "Vacuum Sintering Furnace", temp: "1200 C", energy: "1.5 KW" },
+    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194", title: "Burnout Furnace", temp: "1200 C", energy: "1.5 KW" },
+    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341", title: "Zirconia Sintering Furnace", temp: "1600 C", energy: "2 KW" },
+    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804", title: "Vacuum Pressing Furnace", temp: "1200 C", energy: "2 KW" },
 ];

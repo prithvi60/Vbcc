@@ -1,13 +1,8 @@
-import { Ceramics } from "@/svg_components/Ceramics";
-import { CeramicsProduct } from "@/svg_components/CeramicsProduct";
-import { Research } from "@/svg_components/Research";
 import Image from "next/image";
 import Link from "next/link";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import othersData from "@/libs/others.json";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Modal2 } from "./landing page/Modal";
-import { exploreList } from "@/libs/otherPage";
+import { exploreList, whyChooseUs } from "@/libs/otherPage";
 const Explore = () => {
   return (
     <section className="relative z-auto w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat">
@@ -41,7 +36,7 @@ const Explore = () => {
                 className="object-cover object-center  brightness-[0.30]"
               />
               <div className="absolute block w-full space-y-4 text-white bottom-14 left-5">
-                <div className="relative z-20 size-14 md:size-20">
+                <div className="relative z-20 size-12 md:size-16">
                   <Image
                     src={list.icon}
                     fill
@@ -52,9 +47,9 @@ const Explore = () => {
                 <h2 className="text-base font-bold tracking-wider !leading-tight md:text-[18px] xl:text-[22px] w-4/5 capitalize">
                   {list.title}
                 </h2>
-                <p className="w-4/5 text-xs md:text-sm">
+                {/* <p className="w-4/5 text-xs md:text-sm">
                   {list.desc}
-                </p>
+                </p> */}
               </div>
             </Link>
           ))}
@@ -73,7 +68,7 @@ const Explore = () => {
             </div>
           </div>
           <div className="relative flex flex-col items-end w-3/4 h-auto gap-6 ml-20 lg:w-4/5">
-            {othersData.whyChooseUs.map((item, idx) => (
+            {whyChooseUs.map((item, idx) => (
               <div
                 className={`p-6 bg-info space-y-4 rounded-lg w-full h-auto border border-secondary text-white`}
                 key={idx}
@@ -124,7 +119,7 @@ const Explore = () => {
               <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#afadadef] via-[#848080df] to-[#a9a9a9de] rounded-full bg-opacity-20"></div>
               <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-6 size-14 xl:size-20">
                 <Image
-                  src={"/iso.svg"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/iso.svg?updatedAt=1733225279050"}
                   fill
                   alt="image"
                   className="object-contain object-center"
@@ -132,7 +127,7 @@ const Explore = () => {
               </div>
               <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-6 size-14 xl:size-20">
                 <Image
-                  src={"/ce-logo.svg"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/ce-logo.svg?updatedAt=1733225200816"}
                   fill
                   alt="image"
                   className="object-contain object-center"
@@ -143,23 +138,23 @@ const Explore = () => {
           <div className="absolute -bottom-48 lg:-bottom-24 right-24 md:right-52 lg:right-16 xl:right-40">
             <div className="relative w-20 h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
-                src={"/card 1.png"}
+                src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
                 fill
                 alt="image"
                 className="object-cover object-center rounded-full"
               />
               <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#afadadef] via-[#848080df] to-[#a9a9a9de] rounded-full bg-opacity-20"></div>
-              <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-6 size-14 xl:size-20">
+              <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-4 size-16 xl:size-24">
                 <Image
-                  src={"/iso.svg"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/msme-logo.png?updatedAt=1733211576206"}
                   fill
                   alt="image"
                   className="object-contain object-center"
                 />
               </div>
-              <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-6 size-14 xl:size-20">
+              <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-4 size-16 xl:size-24">
                 <Image
-                  src={"/ce-logo.svg"}
+                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/MIN-Logo.png?updatedAt=1733226404913"}
                   fill
                   alt="image"
                   className="object-contain object-center"
@@ -190,127 +185,3 @@ const Explore = () => {
 };
 
 export default Explore;
-
-
-
-// <section className="flex flex-col items-center self-stretch justify-center gap-10 px-5 py-16 md:py-20 md:px-10 xl:px-20 bg-primary font-Lora">
-//   <div className="space-y-5">
-//     <h3 className="text-xl text-center text-white md:text-4xl">
-//       Your Visualization of your Product, We bring to life.
-//     </h3>
-//     <div className="mx-auto w-max">
-//       <Link
-//         passHref
-//         href="/products"
-//         className="text-2xl rounded-lg after:h-1 after:w-full after:bg-info after:block after:transition-all hover:after:h-1 md:after:w-0 md:hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-white group mx-auto"
-//       >
-//         <h4 className="flex items-center justify-center gap-4 text-xl md:text-4xl">
-//           Explore Products
-//           <RiArrowRightUpLine className="w-10 h-10 mt-2 text-info md:text-secondary md:group-hover:text-info" />
-//         </h4>
-//       </Link>
-//     </div>
-//   </div>
-//   <div className="flex flex-col items-center justify-center w-full h-full gap-4 md:grid md:grid-cols-2 xl:grid xl:grid-cols-3">
-//     {/* Industries */}
-//     <div className="relative z-10 w-full text-center border border-white md:text-left group">
-//       <div className="relative h-[220px] md:h-[240px] w-full">
-//         <Image
-//           fill
-//           src={
-//             "https://ik.imagekit.io/webibee/VBCC/productcard_1.png?updatedAt=1708075720439"
-//           }
-//           alt="product"
-//           className="absolute hidden object-cover object-center brightness-50 group-hover:block"
-//           placeholder="blur"
-//         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-//           sizes={"100vw"}
-//         />
-//       </div>
-//       {/* <div className="absolute top-0 left-0 h-[220px] md:h-[240px] w-full z-0 backdrop-sepia-0 bg-black/60"></div> */}
-//       <div
-//         className="py-8 px-5 md:py-6 md:px-10 absolute top-0 left-0 h-[220px] md:h-[240px] w-full bg-secondary z-10 group-hover:bg-transparent group-hover:transition-all group-hover:duration-[2500]
-//        space-y-5 md:space-y-6"
-//       >
-//         <div className="flex items-end justify-center w-full h-auto md:justify-start">
-//           <Ceramics
-//             className={"fill-black group-hover:fill-white h-20 w-20 z-50"}
-//           />
-//         </div>
-//         <div className="space-y-4">
-//           <h5 className="text-2xl text-black font-Lora group-hover:text-white">
-//             Industries
-//           </h5>
-//           <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight truncate">
-//             Over 100 products for Ceramic Industry.
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//     <div className="relative z-10 w-full text-center border border-white md:text-left group">
-//       <div className="relative h-[220px] md:h-[240px] w-full ">
-//         <Image
-//           fill
-//           src={
-//             "https://ik.imagekit.io/webibee/VBCC/productcard_2.png?updatedAt=1708075720436"
-//           }
-//           alt="product"
-//           className="absolute hidden object-cover object-center brightness-50 group-hover:block"
-//           placeholder="blur"
-//           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-//           sizes={"100vw"}
-//         />
-//       </div>
-//       <div
-//         className="py-8 px-5 md:py-6 md:px-10 absolute top-0 left-0 h-[220px] md:h-[240px] w-full bg-secondary z-10 group-hover:bg-transparent group-hover:transition-all group-hover:duration-[2500]
-//        space-y-5 md:space-y-6"
-//       >
-//         <div className="flex items-end justify-center w-full h-auto md:justify-start">
-//           <Research
-//             className={"fill-black group-hover:fill-white h-20 w-20 z-50"}
-//           />
-//         </div>
-//         <div className="space-y-4">
-//           <h5 className="text-2xl text-black font-Lora group-hover:text-white">
-//             Research Institutions
-//           </h5>
-//           <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight truncate">
-//             Over 200 products for Research Institutions.
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//     <div className="relative z-10 w-full text-center border border-white md:text-left group md:col-span-2 xl:col-auto">
-//       <div className="relative h-[220px] md:h-[240px] w-full ">
-//         <Image
-//           fill
-//           src={
-//             "https://ik.imagekit.io/webibee/VBCC/productcard_3.png?updatedAt=1708075720191"
-//           }
-//           alt="product"
-//           className="absolute hidden object-cover object-center brightness-50 group-hover:block"
-//           placeholder="blur"
-//         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-//         />
-//       </div>
-//       <div
-//         className="py-8 px-5 md:py-6 md:px-10 absolute top-0 left-0 h-[220px] md:h-[240px] w-full bg-secondary z-10 group-hover:bg-transparent group-hover:transition-all group-hover:duration-[2500]
-//        space-y-5 md:space-y-6"
-//       >
-//         <div className="flex items-end justify-center w-full h-auto md:justify-start">
-//           <CeramicsProduct
-//             className={"fill-black group-hover:fill-white h-20 w-20 z-50"}
-//           />
-//         </div>
-//         <div className="space-y-4">
-//           <h5 className="text-2xl text-black font-Lora group-hover:text-white">
-//             Accessories
-//           </h5>
-//           <p className="text-[#404040] group-hover:text-[#BFBFBF] group-hover:text-opacity-90 font-urbanist tracking-tight truncate">
-//             Accessories for Industrial Equipment
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </section>
