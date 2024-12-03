@@ -15,6 +15,7 @@ import Loader from "./Loader";
 import { FooterBox, FooterBoxModal } from "@/svg_components/LandingHeroBox";
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import { BiPhoneCall } from "react-icons/bi";
+import { getAccessToken } from "@/libs/Functions";
 
 const initialFormData = {
   firstName: "",
@@ -25,6 +26,7 @@ const initialFormData = {
   message: "",
 };
 
+
 const Footer = () => {
   const [Copied, setCopied] = useState(false);
   const [Copied2, setCopied2] = useState(false);
@@ -32,6 +34,9 @@ const Footer = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
   const path = usePathname()
+  const code = ""
+
+  // const getData = getAccessToken()
 
 
   const URI = path.split("/").filter(x => x)
@@ -112,7 +117,7 @@ const Footer = () => {
   };
   return (
 
-    <footer className="relative flex flex-col w-full h-full text-white md:flex-row border-t-3 border-info font-Montserrat">
+    <footer className="relative z-auto flex flex-col w-full h-full text-white md:flex-row border-t-3 border-info font-Montserrat">
       <div className="relative block w-full h-full p-5 space-y-12 md:p-8 md:w-2/5 xl:w-1/5">
         <div className="block">
           <div className="relative w-64 h-20 mx-auto my-14 md:my-4">
@@ -282,12 +287,12 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="relative block w-full space-y-3 lg:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
+        <div className="relative z-auto block w-full space-y-3 lg:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
           <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-start">
             LET’S WORK TOGETHER
           </h4>
           <form
-            className="block pt-5 space-y-4"
+            className="relative z-10 block pt-5 space-y-4"
             onSubmit={handleSubmit}
           >
             <div className="block w-full space-y-1.5">
@@ -371,8 +376,8 @@ const Footer = () => {
               </div>
             </button>
           </form>
-          <div className="absolute z-10 hidden md:block md:-top-36 md:-left-8">
-            <FooterBoxModal className={" md:w-[380px] md:h-[480px] fill-none"} />
+          <div className="absolute z-0 hidden md:block md:-top-36 md:-left-8 ">
+            <FooterBoxModal className={"md:w-[380px] md:h-[480px] fill-none"} />
           </div>
         </div>
         <div className="w-full space-y-3 text-sm md:col-span-3 text-secondary bg-primary font-Montserrat place-content-center">
@@ -416,6 +421,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 export const ConnectComponent = ({ text, copied, handleClick }) => {
   return (

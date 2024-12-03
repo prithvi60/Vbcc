@@ -1,6 +1,6 @@
 "use client";
 import BreadCrumb from "@/app/categories/BreadCrumb";
-import { Modal } from "@/components/landing page/Modal";
+import { Modal, Modal1 } from "@/components/landing page/Modal";
 import { DentalProductsList } from "@/libs/productsData";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -91,10 +91,10 @@ const ProductDetailsHero = () => {
                                     </div>
                                 </a>
                             </button>
-                            <Modal
+                            <Modal1
                                 styles={"bg-white text-primary"}
                                 title={"Request to buy"}
-                                type={""}
+                                type={"enquire"}
                                 pageType={"main"}
                                 page={""}
                             />

@@ -1,6 +1,5 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import {
   MdKeyboardDoubleArrowRight,
@@ -8,18 +7,17 @@ import {
   MdRemoveRedEye,
 } from "react-icons/md";
 import Loader from "../Loader";
-import { useRouter } from "next/navigation";
 import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
-export const Modal = ({ title, styles, type, pageType, page }) => {
+export const Modal1 = ({ title, styles, type, pageType, page }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="grid">
       <button
         onClick={() => setIsOpen(true)}
         className={`font-semibold w-fit transition-all ${pageType === "main" || title === "Download Catalog"
-            ? "shadow-xl hover:scale-110"
-            : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
+          ? "shadow-xl hover:scale-110"
+          : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"
           } flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-3 md:px-6 py-3"
           }`}
       >
@@ -55,6 +53,7 @@ export const Modal = ({ title, styles, type, pageType, page }) => {
         setIsOpen={setIsOpen}
         type={type}
         page={page}
+        pageType={pageType}
       />
     </div>
   );
@@ -121,12 +120,23 @@ export const Modal2 = ({ pageType }) => {
           </>
         )}
       </button> */}
-      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} type={"enquire"} />
+      <SpringModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        type={"enquire"}
+        pageType={pageType}
+      />
     </div>
   );
 };
 
-const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
+const SpringModal = ({
+  isOpen,
+  setIsOpen,
+  type = "",
+  page = "",
+  pageType = "",
+}) => {
   const initialFormData = {
     firstName: "",
     lastName: "",
@@ -160,10 +170,30 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
       page: page,
     };
 
-    // console.log(emailFormData);
+    const zohoData = {
+      data: [
+        {
+          First_Name: formData.firstName,
+          Last_Name: formData.lastName,
+          Phone: formData.phoneNo,
+          Email: formData.userEmail,
+        },
+      ],
+    };
 
     try {
-      const response = await fetch("/api/sendMail", {
+      const zohoResponse = await fetch("/api/zoho/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(zohoData),
+      });
+
+      if (!zohoResponse.ok) {
+        const errorData = await zohoResponse.text();
+        throw new Error(`Zoho API Error: ${zohoResponse.status} ${errorData}`);
+      }
+
+      const emailResponse = await fetch("/api/sendMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -171,24 +201,31 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
         body: JSON.stringify(emailFormData),
       });
 
-      if (!response.ok) {
-        const errorData = await response.text();
-        throw new Error(`Error: ${response.status} ${errorData}`);
+      if (!emailResponse.ok) {
+        const errorData = await emailResponse.text();
+        throw new Error(
+          `Email API Error: ${emailResponse.status} ${errorData}`
+        );
       }
 
-      const data = await response.json();
+      const zohoDataResult = await zohoResponse.json();
+      const emailDataResult = await emailResponse.json();
+      console.log(zohoDataResult);
 
-      if (data.success) {
+      // Check for success in both responses
+      if (zohoDataResult && emailDataResult.success) {
         setStatus(false);
-        window.location.href =
-          "/denkirodental/dentalfurnace/productline/thankyou";
-        // router.push("/denkirodental/dentalfurnace/productline/thankyou")
-        // router.push("/denkirodental/dentalfurnace/productline/thankyou").then(() => {
-        //   // Force reload to ensure useEffect runs again
-        //   router.reload();
-        // });
         setFormData(initialFormData);
         e.target.reset();
+
+        if (pageType === "main") {
+          window.location.href = "/thankyou";
+        } else {
+          window.location.href =
+            "/denkirodental/dentalfurnace/productline/thankyou";
+        }
+      } else {
+        throw new Error("One or more operations failed.");
       }
     } catch (error) {
       console.error("Error sending emails:", error);
@@ -242,7 +279,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                   // action="https://public.herotofu.com/v1/8e9daf90-9b5c-11ef-a13f-b56169d4ce0e"
                   // method="post"
                   // accept-charset="UTF-8"
-                  className="space-y-2 text-primary md:space-y-4 py-7 md:p-7"
+                  className="relative z-10 space-y-2 text-primary md:space-y-4 py-7 md:p-7"
                 // onSubmit={() => {
                 //   // console.log("submitted");
                 //   type !== "enquire" && handleDownload();
@@ -252,13 +289,13 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
 
                 // }}
                 >
-                  <input
+                  {/* <input
                     type="text"
                     name="Form"
-                    value={type.toUpperCase()}
+                    defaultValue={type.toUpperCase() || ""}
                     placeholder="Form Type"
                     className="hidden"
-                  />
+                  /> */}
                   <input
                     type="text"
                     name="firstName"
@@ -307,8 +344,8 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                   <input
                     type="text"
                     name="_gotcha"
-                    tabindex="-1"
-                    autocomplete="off"
+                    tabIndex="-1"
+                    autoComplete="off"
                     className="hidden"
                   />
                   {type === "enquire" ? (
@@ -327,7 +364,7 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
                     </button>
                   )}
                 </form>
-                <div className="absolute z-10 hidden lg:block lg:-top-40 lg:-left-0">
+                <div className="absolute z-0 hidden lg:block lg:-top-40 lg:-left-0">
                   <FooterBoxModal
                     className={" lg:w-[380px] lg:h-[480px] fill-none"}
                   />
@@ -340,3 +377,63 @@ const SpringModal = ({ isOpen, setIsOpen, type = "", page }) => {
     </AnimatePresence>
   );
 };
+
+// export const PdfList = ({ pdfFile }) => {
+
+//   const [currentPdf, setCurrentPdf] = useState(null);
+//   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+
+//   const handlePdfChange = () => {
+//     setCurrentPdf(pdfFile);
+//     setIsModalOpen(true); // Open the modal
+//   };
+
+//   const closeModal = () => {
+//     setIsModalOpen(false); // Close the modal
+//   };
+
+//   return (
+//     <div className="grid">
+//       <button
+//         type="submit"
+//         onClick={handlePdfChange}
+//         className={`block px-3 md:px-6 py-3 group bg-white hover:bg-info text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max`}
+//       >
+//         <div className={`h-6 w-full overflow-hidden`}>
+//           <h3
+//             className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-primary flex items-center gap-2`}
+//           >
+//             view online
+//             <span>
+//               <MdRemoveRedEye className="text-xl text-primary" />
+//             </span>
+//           </h3>
+//           <h3
+//             className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 flex items-center gap-2 text-white`}
+//           >
+//             view online
+//             <span>
+//               <MdRemoveRedEye className="text-xl text-white" />
+//             </span>
+//           </h3>
+//         </div>
+//       </button>
+
+//       {/* Modal for PDF Viewer */}
+//       <Modal
+//         ariaHideApp={false}
+//         isOpen={isModalOpen}
+//         onRequestClose={closeModal}
+//         className={"relative overflow-hidden w-full mt-16"}
+//       >
+//         <button
+//           onClick={closeModal}
+//           className="flex justify-center w-full text-lg font-bold text-red-600"
+//         >
+//           Close
+//         </button>
+//         <PdfViewer url={currentPdf} />
+//       </Modal>
+//     </div>
+//   );
+// };

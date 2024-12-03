@@ -37,6 +37,20 @@ export const metadata = {
   verification: {
     google: "G-7T9F0FKPQM",
   },
+  metadataBase: new URL("https://vbccinstruments.com"),
+  openGraph: {
+    title: "VBCC | THE TAILOR MADE",
+    description: "VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD",
+    url: "https://vbccinstruments.com",
+    images: [
+      {
+        url: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
+        width: 1200,
+        height: 630,
+        alt: "VBCC High Temperature Instruments",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -46,7 +60,7 @@ export default function RootLayout({ children }) {
       className={`${lora.variable} ${nunito.variable} ${urbanist.variable} ${montserrat.variable}`}
     >
       <head>
-        {/* <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdnjs.cloudflare.com; object-src 'self';" /> */}
+        <link rel="icon" href="/favicon.ico" />
         <Partytown debug={true} forward={["dataLayer.push"]} />
         <script
           type="text/partytown"

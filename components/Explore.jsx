@@ -29,7 +29,7 @@ const Explore = () => {
             <h4 className="w-full lg:w-3/5">Explore Products</h4>
             <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-5 left-56 text-info" />
           </div>
-          <Modal2 />
+          <Modal2 pageType={"main"} />
         </div>
         <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
           {exploreList.map((list, idx) => (
@@ -112,7 +112,7 @@ const Explore = () => {
             for quality, innovation, and personalized service, transforming
             challenges into oppurtunites.
           </p>
-          <Modal2 />
+          <Modal2 pageType={"main"} />
           <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-44 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
