@@ -32,15 +32,15 @@ const montserrat = Montserrat({
 });
 // ADD verifcation code and measurement id when account are created
 export const metadata = {
-  title: "VBCC | THE TAILOR MADE",
-  description: "VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD",
+  title: "VBCC High temperature Instruments",
+  description: "VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings.",
   verification: {
     google: "G-7T9F0FKPQM",
   },
   metadataBase: new URL("https://vbccinstruments.com"),
   openGraph: {
-    title: "VBCC | THE TAILOR MADE",
-    description: "VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD",
+    title: "VBCC High temperature Instruments",
+    description: "VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings.",
     url: "https://vbccinstruments.com",
     images: [
       {

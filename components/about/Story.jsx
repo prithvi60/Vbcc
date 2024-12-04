@@ -2,23 +2,59 @@ import Image from "next/image";
 
 export const Story = () => {
   return (
-    <section>
-      <div className="relative flex flex-col-reverse items-start gap-5 mt-20 md:flex-row mb-28 xl:mb-60 md:mt-28 xl:mt-32 padding">
-        <div className="block w-full space-y-4 md:space-y-5 lg:space-y-8 md:w-4/5">
-          <h4 className="text-2xl font-semibold font-Nunito text-primary tracking-wider md:text-[32px] xl:text-[44px] w-max">Innovation</h4>
-          <h2 className="text-5xl font-semibold font-Nunito text-info tracking-wider md:text-[64px] xl:text-[80px] w-max">Excellence</h2>
-          <p className="w-full text-sm font-medium text-justify text-primary md:text-base font-Montserrat md:w-4/5">With over two decades of expertise, VBCC High Temperature Instruments Pvt. Ltd., previously known as VB Ceramic Consultants, is India’s leading manufacturer of furnace, analytical instruments, laboratory equipment, and material processing equipment. Established in 2002, our unwavering commitment to excellence has earned the trust of diverse clientele, including prestigious universities, research organizations, and thriving industries. At VBCC, our dedicated team delivers comprehensive solutions across the industry spectrum, offering superior products and essential technical expertise through tailored turnkey solutions. With over 22 years of experience, we have installed more than 15,000 products and serve over 500 esteemed clients.</p>
+    <>
+      <section className="relative z-0 w-full h-full mb-10 text-white">
+        <div className="relative w-full h-[50vh] md:h-[60vh] xl:h-[85dvh] hero-mask">
+          <Image
+            alt="background image"
+            src={"https://ik.imagekit.io/webibee/VBCC/homepage/about%20us%20bg.png?updatedAt=1733319584084"}
+            fill
+            className="z-0 object-cover object-center brightness-[0.80]"
+          />
         </div>
-        <div className="relative md:sticky md:top-10 w-[320px] mx-auto md:w-[460px] overflow-hidden h-[370px]">
-          <Image fill src={"https://ik.imagekit.io/webibee/VBCC/homepage/ceo's.png?updatedAt=1733225204199"} alt="ceo's image" className="object-contain object-center md:object-top" />
+      </section>
+      <section>
+        <div className="relative flex flex-col-reverse items-start gap-5 md:flex-row mb-28 padding">
+          <div className="block w-full space-y-4 md:w-4/5">
+            <h4 className="text-2xl font-semibold font-Nunito text-primary tracking-wider md:text-[32px] xl:text-[44px] w-max">
+              Innovation
+            </h4>
+            <h2 className="text-5xl font-semibold font-Nunito text-info tracking-wider md:text-[64px] xl:text-[80px] w-max">
+              Excellence
+            </h2>
+            <p className="w-full text-base font-medium text-justify text-primary md:text-lg font-Montserrat md:w-4/5">
+              With over two decades of expertise, VBCC High Temperature
+              Instruments Pvt. Ltd., previously known as VB Ceramic Consultants,
+              is India’s leading manufacturer of furnace, analytical
+              instruments, laboratory equipment, and material processing
+              equipment. Established in 2002, our unwavering commitment to
+              excellence has earned the trust of diverse clientele, including
+              prestigious universities, research organizations, and thriving
+              industries. At VBCC, our dedicated team delivers comprehensive
+              solutions across the industry spectrum, offering superior products
+              and essential technical expertise through tailored turnkey
+              solutions. With over 22 years of experience, we have installed
+              more than 15,000 products and serve over 500 esteemed clients.
+            </p>
+          </div>
+          <div className="relative md:sticky md:top-10 w-[320px] mx-auto md:w-[460px] overflow-hidden h-[370px]">
+            <Image
+              fill
+              src={
+                "https://ik.imagekit.io/webibee/VBCC/homepage/ceo's.png?updatedAt=1733225204199"
+              }
+              alt="ceo's image"
+              className="object-contain object-center md:object-top"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-
-{/* <section
+{
+  /* <section
 className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist relative"
 id="story"
 >
@@ -66,4 +102,5 @@ id="story"
     ))}
   </div>
 </div>
-</section> */}
+</section> */
+}

@@ -16,9 +16,9 @@ export default function Home() {
     <main>
       <DefaultLayout>
         <Story />
+        <OurTeam />
         <Vison />
         <Timeline />
-        <OurTeam />
       </DefaultLayout>
     </main>
   );

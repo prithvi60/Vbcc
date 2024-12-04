@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact Us",
-  description: "Get in touch with us for any expert assistance and inquiries. Our team will promptly assist you.",
+  title: "FAQ",
+  description: "Visit our FAQ section for insights on our products, services, and customer support.",
 };
 
 export default function RootLayout({ children }) {

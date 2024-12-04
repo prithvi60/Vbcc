@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "VBCC Blog/Article",
-  description: "Vbbc Blog/Article Pages",
+  title: "Blog",
+  description: "Get the latest news, insights, and innovations of VBCC High Temperature Instruments. Stay updated with expert articles and tips on high-temperature equipment and techniques.",
 };
 
 export default function RootLayout({ children }) {
