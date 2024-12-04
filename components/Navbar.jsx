@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
-        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/"
+        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/" || path === "/about" || path.startsWith("/blog/")
           ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
           : "justify-between"
           }`}
@@ -27,13 +27,13 @@ const NavBar = () => {
             className={`ml-5 md:ml-0 absolute top-0 md:top-2 -left-2 md:left-2 ${path.startsWith("/categories/")
               ? "w-16 h-5 md:w-24 md:h-7"
               : "w-28 h-9 md:w-24 md:h-7"
-              } lg:h-9 lg:w-28 2xl:h-12 2xl:w-36`}
+              } lg:h-9 lg:w-28 2xl:h-12 2xl:w-36 ${path === "/about" && "bg-white !w-32 !-left-7 md:!left-2 !h-14 md:!w-28 md:!h-11 xl:!w-36 xl:!h-14 rounded-md "}`}
           >
             <Image
               alt="VBCC Logo"
               src="/VBCC - Logo.svg"
               fill
-              className="object-cover object-center"
+              className={`object-cover object-center ${path === "/about" && "p-3 md:p-1.5"}`}
               priority
             />
           </div>
@@ -42,10 +42,10 @@ const NavBar = () => {
           {navLinks.map((list, id) => (
             <li key={id} className="relative py-4 group">
               <div
-                className={`relative text-base font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white "
+                className={`relative text-base font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white"
                   } group-hover:!z-[1000] ${path === "/" ||
                     path.startsWith("/blog/") ||
-                    path.startsWith("/categories/")
+                    path.startsWith("/categories/") || path === "/about"
                     ? "text-white"
                     : "text-primary"
                   }`}
@@ -127,7 +127,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        {path === "/" || path.startsWith("/blog/") ? (
+        {path === "/" || path.startsWith("/blog/") || path === "/about" ? (
           <button
             className={`hidden font-semibold border border-info  w-fit transition-all rounded-full items-center text-sm md:text-base gap-3 capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info group`}
           >

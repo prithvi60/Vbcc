@@ -5,17 +5,25 @@ import { Modal2 } from "./landing page/Modal";
 import { exploreList, whyChooseUs } from "@/libs/otherPage";
 const Explore = () => {
   return (
-    <section className="relative z-auto w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat">
-      <div className="absolute z-10 w-full h-[15vh] sm:h-[25vh] md:h-[45vh] right-0 top-10
-       md:w-4/5 md:-top-24">
+    <section
+      name="explore"
+      id="explore"
+      className="relative z-auto w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat"
+    >
+      <div
+        className="absolute z-10 w-full h-[15vh] sm:h-[25vh] md:h-[45vh] right-0 top-10
+       md:w-4/5 md:-top-24"
+      >
         <div
           className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover card-mask_2 border-3 border-secondary"
           style={{
-            backgroundImage: "url('/counterBg.png')"
+            backgroundImage: "url('/counterBg.png')",
           }}
         >
           <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
-          <p className="relative z-30 w-full -mt-3 text-xl text-white md:my-14 md:text-2xl xl:text-5xl md:w-3/4">Your Visualization Of Your Product,We Bring To Life.</p>
+          <p className="relative z-30 w-full -mt-3 text-xl text-white md:my-14 md:text-2xl xl:text-5xl md:w-3/4">
+            Your Visualization Of Your Product,We Bring To Life.
+          </p>
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-10 mb-56 lg:flex-row">
@@ -28,7 +36,11 @@ const Explore = () => {
         </div>
         <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
           {exploreList.map((list, idx) => (
-            <Link href={list.ref} className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-10 after:border-2 after:border-info after:w-full after:h-full" key={idx}>
+            <Link
+              href={list.ref}
+              className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-10 after:border-2 after:border-info after:w-full after:h-full"
+              key={idx}
+            >
               <Image
                 src={list.img}
                 fill
@@ -119,7 +131,9 @@ const Explore = () => {
               <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#afadadef] via-[#848080df] to-[#a9a9a9de] rounded-full bg-opacity-20"></div>
               <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-6 size-14 xl:size-20">
                 <Image
-                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/iso.svg?updatedAt=1733225279050"}
+                  src={
+                    "https://ik.imagekit.io/webibee/VBCC/homepage/iso.svg?updatedAt=1733225279050"
+                  }
                   fill
                   alt="image"
                   className="object-contain object-center"
@@ -127,7 +141,9 @@ const Explore = () => {
               </div>
               <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-6 size-14 xl:size-20">
                 <Image
-                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/ce-logo.svg?updatedAt=1733225200816"}
+                  src={
+                    "https://ik.imagekit.io/webibee/VBCC/homepage/ce-logo.svg?updatedAt=1733225200816"
+                  }
                   fill
                   alt="image"
                   className="object-contain object-center"
@@ -138,7 +154,9 @@ const Explore = () => {
           <div className="absolute -bottom-48 lg:-bottom-24 right-24 md:right-52 lg:right-16 xl:right-40">
             <div className="relative w-20 h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
-                src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
+                src={
+                  "https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"
+                }
                 fill
                 alt="image"
                 className="object-cover object-center rounded-full"
@@ -146,7 +164,9 @@ const Explore = () => {
               <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#afadadef] via-[#848080df] to-[#a9a9a9de] rounded-full bg-opacity-20"></div>
               <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-4 size-16 xl:size-24">
                 <Image
-                  src={"https://ik.imagekit.io/webibee/VBCC/msme-logo.png?updatedAt=1733211576206"}
+                  src={
+                    "https://ik.imagekit.io/webibee/VBCC/msme-logo.png?updatedAt=1733211576206"
+                  }
                   fill
                   alt="image"
                   className="object-contain object-center"
@@ -154,7 +174,9 @@ const Explore = () => {
               </div>
               <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-4 size-16 xl:size-24">
                 <Image
-                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/MIN-Logo.png?updatedAt=1733226404913"}
+                  src={
+                    "https://ik.imagekit.io/webibee/VBCC/homepage/MIN-Logo.png?updatedAt=1733226404913"
+                  }
                   fill
                   alt="image"
                   className="object-contain object-center"

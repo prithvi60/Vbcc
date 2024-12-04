@@ -7,13 +7,13 @@ const FAQAccordionComponent = dynamic(() => import("./FAQAccordion"));
 
 const FAQContent = () => {
   return (
-    <section className="h-full w-full px-5 py-[60px] md:px-10 lg:px-[60px] bg-primary ">
-      <div className="w-full lg:w-3/5 h-auto mx-auto space-y-8">
+    <section className="h-full w-full px-5 py-[60px] md:px-10 lg:px-[60px] bg-primary mt-24 lg:mt-28">
+      <div className="w-full h-auto mx-auto space-y-8 lg:w-3/5">
         <div className="w-full h-full space-y-6">
-          <h2 className="font-Lora text-2xl md:text-4xl xl:text-6xl w-full">
+          <h2 className="w-full text-2xl font-Lora md:text-4xl xl:text-6xl">
             FAQs
           </h2>
-          <p className="font-urbanist text-sm lg:text-base">
+          <p className="text-sm font-urbanist lg:text-base">
             If you cannot find what you’re looking for, feel free to{" "}
             <span className="underline underline-offset-1">
               {" "}

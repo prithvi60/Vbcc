@@ -8,7 +8,9 @@ export const DentalProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Sintering.png?updatedAt=1732078652287",
         ],
         productName: "Vacuum Sintering Furnace",
-        desc: "Our vacuum sintering furnaces are manufactured with advanced design for the process of compacting and forming a solid mass of material using heat without melting it to the point of liquefaction. It’s very efficient and suitable for producing ceramics, powder metallurgy, refractories, ultra-high temperature materials.",
+        metaTitle: "Vacuum Sintering Furnace | Dental Furnace",
+        metaDesc: "We are offering premium vacuum sintering furnaces for dental use. You can now enhance your dental restorative procedures with our cutting-edge technology.",
+        desc: "Our vacuum sintering furnaces are manufactured with advanced design for the process of compacting and forming a solid mass of material using heat without melting it to the point of liquefaction. It’s very efficient and suitable for dental restorative procedures.",
         keys: [
             {
                 label: "Optional Vacuum Integration",
@@ -85,7 +87,9 @@ export const DentalProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Pressing.png?updatedAt=1732078652121",
         ],
         productName: "Vacuum Pressing Furnace",
-        desc: "Vacuum press furnaces are ideally for material processing by combining the principles of vacuum, heat, and pressure. Our vacuum press furnace offers a significant advantage over traditional furnaces by including uniform heating, reduced contamination, enhanced metallurgical properties, rapid cooling, and computer-controlled processes.",
+        metaTitle: "Vacuum Pressing Furnace up to 1200 °C",
+        metaDesc: "VBCC High Temperature Instruments manufactures advanced vacuum pressing furnaces tailored for dental professionals. Elevate your treatments with our innovative and dependable equipment.",
+        desc: "Vacuum press furnaces are ideal for dental labs by combining the principles of vacuum, heat, and pressure. Our vacuum press furnace offers a significant advantage over traditional furnaces by including uniform heating, reduced contamination, enhanced metallurgical properties, rapid cooling, and computer-controlled processes.",
         keys: [
             {
                 label: "Optional Vacuum Integration",
@@ -162,6 +166,8 @@ export const DentalProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Zirconia.png?updatedAt=1732078652570",
         ],
         productName: "Zirconia Sintering Furnace",
+        metaTitle: "Zirconia Sintering Furnace | Dental Furnace",
+        metaDesc: "Discover high-quality zirconia sintering furnaces at VBCC High Temperature Instruments. Enhance your dental practice with advanced technology for superior results and efficiency.",
         desc: "VBCC’s Zirconia Sintering Furnace is perfect for sintering and crystallising zirconia for dental restorations, such as crowns, bridges, and caps. It strengthens and improves the structural integrity of material.",
         keys: [
             {
@@ -234,6 +240,8 @@ export const DentalProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Burnout.png?updatedAt=1732078651660",
         ],
         productName: "Burnout Furnace",
+        metaTitle: "Dental Burnout Furnace",
+        metaDesc: "Redefine your dental treatments with our Dental Burnout Furnace, offering reliability and precision. Perfect for achieving high-quality results in dental restorations.",
         desc: "Our burnout furnaces are crafted especially for dental laboratories for burnout of muffles and also for speed investments. It is made with a state-of-the-art design with double-walled stainless-steel sheets and imported insulation material.",
         keys: [
             {
@@ -311,6 +319,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/right.png?updatedAt=1732097864352",
         ],
         productName: "Box/Muffle Furnace",
+        metaTitle: "Box Furnace / Muffle Furnace",
+        metaDesc: "VBCC’s high-performance box and muffle furnaces are capable of reaching temperatures up to 1700°C, suitable for diverse applications in laboratories.",
         desc: "VBCC’s meticulously designed box furnace, or muffle furnace, delivers a great compact solution for labs with limited space. The microprocessor temperature control provides excellent stability and uniformity, while the thermal mass assures fast heating times with low power consumption.",
         keys: [
             {
@@ -608,6 +618,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/right.png?updatedAt=1732097661427",
         ],
         productName: "Box Type Vacuum Furnace",
+        metaTitle: "Vacuum Furnace | Laboratory Furnace | VBCC",
+        metaDesc: "Check out our innovative box-type vacuum furnaces, engineered for efficiency and reliability. Perfect for various applications in heat treatment and metallurgy.",
         desc: "These versatile box-type vacuum furnace provides controlled high-temperature processing in a vacuum environment, essential for applications like brazing, sintering, and heat treatment. Our furnace also ensures the purity of the thermal processing environment.",
         keys: [
             {
@@ -820,6 +832,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/right.png?updatedAt=1732097836883",
         ],
         productName: "Raising Hearth Furnace",
+        metaTitle: "Raising Hearth Furnace up to 1800°C",
+        metaDesc: "Want a more efficient heating solution? Check out our Raising Hearth Furnace, equipped with a versatile bottom-loading design that ensures superior efficiency and adaptability.",
         desc: "VBCC’s Raising Hearth Furnace is super convenient for sample handling and is effectively used for a variety of applications, including sintering, annealing, advanced material synthesis, firing and sintering advanced ceramics, and high-temperature glass melting.",
         keys: [
             {
@@ -1117,6 +1131,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/right.png?updatedAt=1732097815806",
         ],
         productName: "Thermal Cycling Furnace",
+        metaTitle: "Thermal Cycling Furnace - 1600°C",
+        metaDesc: "Experience unmatched quality and reliability in thermal treatments with our thermal cycling furnace, operating at 1600°C.",
         desc: "Our thermal cycling furnaces stand for excellent workmanship, attractive design, and the highest level of reliability. It is manufactured specifically for thermal cycling to test the life of thermal barriers and the oxidation resistance of coatings by repeatedly heating and cooling them to extreme temperatures.",
         keys: [
             {
@@ -1229,6 +1245,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/right.png?updatedAt=1732097773615",
         ],
         productName: "Tubular Furnace",
+        metaTitle: "Tubular Furnace | Laboratory Furnace | VBCC",
+        metaDesc: "Our sophisticated tubular furnace is capable of reaching 1800°C and is created for a wide range of high-temperature applications.",
         desc: "With our team of experts, we engineered a perfect tubular furnace consisting of a cylindrical heating chamber with a central heating element to test the materials in a more controlled and uniform manner. These furnaces are used for a wide variety of thermal processes, including inorganic and organic purification; accelerated ageing; annealing; coating; drying; and much more.",
         keys: [
             {
@@ -1515,6 +1533,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png?updatedAt=1732097766948",
         ],
         productName: "Tiltable Tubular Furnace (Variant Under Tubular Furnace)",
+        metaTitle: "Tiltable Tubular Furnace up to 1700°C",
+        metaDesc: "Transform your sample processing with our Tiltable Tubular Furnace, offering customisable inclination angles for improved control and efficiency in your experiments.",
         desc: "Unlike our conventional tubular furnaces, this advanced design with a tiltable mechanism offers superior heat distribution and seamless material handling.  The tiltable tubular furnace can accommodate granules, powders, and other particulate materials, making it a versatile tool for numerous laboratory heat treatment processes such as sintering, calcination, and carbon activation.",
         keys: [
             {
@@ -1801,6 +1821,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/right.png?updatedAt=1732097657174",
         ],
         productName: "Rotary Tubular Furnace",
+        metaTitle: "Rotary Tubular Furnace - 1200°C",
+        metaDesc: "Achieve consistent results with our rotary tubular furnace at 1200°C. Designed for durability and efficiency. Enquire about our models now! ",
         desc: "VBCC’s rotary tubular furnace ensures that materials inside the furnace are constantly moving, which enhances thermal transfer and prevents agglomeration or uneven heating, making it ideal for processes that demand high temperature uniformity and efficiency.",
         keys: [
             {
@@ -1928,6 +1950,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/right.png?updatedAt=1732097756383",
         ],
         productName: "Two or Three zone Furnace",
+        metaTitle: "Two/Three Zone Furnace",
+        metaDesc: "VBCC High Temperature Instruments designed advanced two- and three-zone furnaces with precise temperature control and diverse heating profiles for laboratory use.",
         desc: "Our two- and three-zone tubular furnaces are equipped with different heating zones, respectively, that are independently controlled to create temperature gradients within the heating chamber. This furnace is utilised for a variety of applications, including material synthesis, heat treatment, and ample testing.",
         keys: [
             {
@@ -2396,6 +2420,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/right.png?updatedAt=1732097139678",
         ],
         productName: "Chemical Vapour Deposition",
+        metaTitle: "Chemical Vapour Deposition | CVD Furnace",
+        metaDesc: "Our chemical vapour deposition furnace allows you to achieve the ideal coating and shields the mechanical components from oxidation and corrosion.",
         desc: "With VBCC’s chemical vapour deposition furnace, the intended results of creating thin layers or deposits on substrates using chemical vapour transport are achieved precisely. It protects the mechanical parts from corrosion or oxidation.",
         keys: [
             {
@@ -2503,6 +2529,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/right.png?updatedAt=1732097127627",
         ],
         productName: "Horizontal cum Vertical Furnace",
+        metaTitle: "Horizontal cum Vertical furnace - 1200°C",
+        metaDesc: "VBCC’s horizontal cum vertical furnace is designed to be used in both positions for laboratory and industrial high-temperature applications.",
         desc: "VBCC’s horizontal cum vertical furnace can be used in both horizontal and vertical positions for laboratory high-temperature applications. Our furnace's compact design and ability to be tilted at different angles make it suitable for integration into existing process systems.",
         keys: [
             {
@@ -2672,6 +2700,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/right.png?updatedAt=1732097721655",
         ],
         productName: "Roller Hearth Furnace",
+        metaTitle: "Roller Hearth Furnace - 1400°C",
+        metaDesc: "With our top-tier roller hearth furnaces, experience precision heating solutions manufactured to meet your research needs effectively.",
         desc: "Here is yet another exceptional product from VBCC, the roller hearth furnace, which meets international standards and specifications. The accuracy of the equipment to the set value is unbelievable. Its design feature is world-class, making it ideal for high-quality research and developmental work.",
         keys: [
             {
@@ -2804,6 +2834,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097362323",
         ],
         productName: "Aluminum Stir Casting",
+        metaTitle: "Aluminium Stir Casting",
+        metaDesc: "Our aluminium stir casting furnaces are built to comply with industry standards and provide reliable solutions for your casting needs.",
         desc: "Our aluminium stir casting furnaces are durably constructed with innovative features for effectively manufacturing aluminium metal matrix composites (AMCs) or metal alloys by mixing reinforcing materials into molten aluminium.",
         keys: [
             {
@@ -2918,6 +2950,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/5.png?updatedAt=1732097210192",
         ],
         productName: "Magnesium Stir Casting",
+        metaTitle: "Magnesium Stir Casting",
+        metaDesc: "Magnesium stir casting furnace designed with an automatic flushing system for optimal melt discharge through a pneumatic mechanism. ",
         desc: "We manufactured a magnesium stir casting furnace with a state-of-the-art solution for the production of high-quality magnesium alloy components. Our advanced casting process stirs molten magnesium under controlled conditions to enhance the homogeneity and qualities of the finished castings.",
         keys: [
             {
@@ -3016,6 +3050,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/3.png?updatedAt=1732096912658",
         ],
         productName: "Bio Mass Pyrolysis",
+        metaTitle: "Biomass Pyrolsis Furnace | VBCC",
+        metaDesc: "Our innovative biomass pyrolysis unit efficiently transforms biomass into bio-oil, biochar, and syngas through controlled pyrolysis at elevated temperatures, ensuring no combustion.",
         desc: "VBCC’s biomass pyrolysis unit allows for controlled pyrolysis of biomass at high temperatures without fully burning it, producing valuable products such as bio-oil, biochar, and syngas in the absence of oxygen",
         keys: [
             {
@@ -3148,7 +3184,9 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/right.png?updatedAt=1732095996566",
         ],
         productName: "Microwave Furnace (Essential)",
-        desc: "Microwave Furnace Essential is our classic furnace model that combines free-radiating heating elements with a microwave field. These furnaces are utilised in laboratory applications and production plants for various processes like high-temperature synthesis, sintering, ashing, melting, and heat treatment of solid materials in an air atmosphere.",
+        metaTitle: "Microwave Furnace (Essential) - 1600°C",
+        metaDesc: "Experience rapid heating with VBCC’s Microwave Furnace (Essential). Utilising cutting-edge microwave technology, we provide efficient solutions for all your heating needs.",
+        desc: "Microwave Furnace (Essential) is our classic furnace model. These furnaces use electromagnetic radiation for rapid heating, unlike other furnaces, and are utilised in laboratory applications and production plants for various processes like high-temperature synthesis, sintering, ashing, and melting.",
         keys: [
             {
                 label: "High-Temperature Capability",
@@ -3256,7 +3294,9 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/6.png?updatedAt=1732095845888",
         ],
         productName: "Microwave Furnace (Deluxe)",
-        desc: "Microwave Furnace Deluxe is a premium laboratory furnace of VBCC that uses microwaves and heating elements to perform thermal research and other applications. Our furnace’s key functionality is extreme temperature capability, advanced temperature control, robust construction and convenient sample loading.",
+        metaTitle: "Microwave Furnace (Deluxe) - 1600°C",
+        metaDesc: "Microwave furnaces (deluxe) feature built-in insulation, robust construction, and can accommodate temperatures up to 1600°C. Owing to the use of microwaves, they are suitable for high-temperature synthesis, sintering, ashing, melting, and heat treatment of solid materials in an air atmosphere.",
+        desc: "Microwave Furnace (Deluxe) is a premium laboratory furnace of VBCC. With their microwave heating and built-in insulation, they are ideal for performing thermal research and other applications. Our furnace’s key functionality is extreme temperature capability, advanced temperature control, robust construction, and convenient sample loading.",
         keys: [
             {
                 label: "Extreme Temperature Capability",
@@ -3379,6 +3419,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/1.png?updatedAt=1732096249865",
         ],
         productName: "Microwave Furnace (Hybrid)",
+        metaTitle: "Microwave Furnace (Hybrid) - 1700°C",
+        metaDesc: "VBCC’s microwave furnace (Hybrid) can accommodate temperatures up to 1700°C. This microwave furnace (hybrid) combines free-radiating heating elements with a microwave field for rapid and uniform heating.",
         desc: "Our microwave furnace stands for pioneering solutions by seamlessly merging conventional resistance heating and microwave heating technologies to offer unmatched versatility in thermal processing. With the precise control over the heating process, our furnace is effectively utilized for research and development purposes.",
         keys: [
             {
@@ -3516,6 +3558,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/right.png?updatedAt=1732095825024",
         ],
         productName: "Hot air oven",
+        metaTitle: "Hot Air Oven | VBCC",
+        metaDesc: "Equipped with an in-house thyristor for excellent power control, our hot air ovens are ideal for sterilising, drying, and heat-treating the product.",
         desc: "Our hot air oven provides a versatile solution for heating up the products at a uniform temperature. These hot air oven is operated to sterilise, dry, and heat-treat the product in a particular period of time under specific conditions like humidity, pressure, and other environmental factors.",
         keys: [
             {
@@ -3628,6 +3672,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/right.png?updatedAt=1732095797150",
         ],
         productName: "Vacuum Oven",
+        metaTitle: "Vacuum Oven | VBCC",
+        metaDesc: "Our high-tech vacuum ovens feature intuitive design and superior functionality for all your drying and curing needs.",
         desc: "VBCC’s vacuum ovens are precisely designed to expedite the drying of substances that are hygroscopic and heat sensitive by employing vacuum and heat. With our utmost craftsmanship, the oven reduces pressure around a substance effortlessly, which in turn lowers the boiling point of the solvent and allows for faster evaporation at lower temperatures.",
         keys: [
             {
@@ -3735,6 +3781,8 @@ export const LabProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/right.png?updatedAt=1732095747149",
         ],
         productName: "Humidity Oven",
+        metaTitle: "Humidity Oven | VBCC",
+        metaDesc: "Engineered for precision, our humidity oven is convenient for high humidity testing in materials science. Its robust construction and user-friendly interface make it essential for research applications.",
         desc: "The humidity oven is thoroughly designed, featuring a combination of a laboratory oven and a humidity system that can perform tests that require high humidity levels. Our oven’s robust construction and intuitive interface make it a crucial tool for various applications in materials science and research.",
         keys: [
             {

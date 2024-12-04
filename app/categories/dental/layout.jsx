@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "VBCC Dental",
-  description: "Vbbc Dental Page",
+  title: "VBCC’s India-first high-end dental furnace for restorative treatments ",
+  description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
 };
 
 export default function RootLayout({ children }) {

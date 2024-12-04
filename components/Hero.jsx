@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 import { heroSlider } from "@/libs/otherPage";
 import { HeroComponent } from "./homePageComponents/HeroComponents";
+import { Link as LinkScroll } from "react-scroll";
 
 const Hero = () => {
   const [nav1, setNav1] = useState(null);
@@ -132,15 +133,23 @@ const Hero = () => {
                     </Slider>
                   </div>
                   <div className="flex flex-col gap-5 lg:items-center lg:flex-row">
-                    {/* <button
+                    <LinkScroll
+                      to="explore"
+                      spy={true}
+                      smooth={true}
+                      offset={-110}
+                      duration={500}
                       className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 capitalize duration-400 ease-linear hover:bg-primary bg-info text-white rounded-full cursor-pointer px-6 py-2`}
                     >
                       <h4>{"ENQUIRE NOW"}</h4>
                       <span>
                         <MdKeyboardDoubleArrowRight className="text-xl" />
                       </span>
-                    </button> */}
-                    <Link aria-label="category link" href={"/categories/dental"}>
+                    </LinkScroll>
+                    <Link
+                      aria-label="category link"
+                      href={"/categories/dental"}
+                    >
                       <button
                         className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
                       >
@@ -213,13 +222,11 @@ const Hero = () => {
                                 <MdDoubleArrow className="text-2xl text-info" />
                               </span>
                             </h5>
-                            <div>
-                              <button
-                                className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max group-hover:bg-info group-hover:block"
-                              >
+                            {/* <div>
+                              <button className="hidden w-full px-5 py-2 text-xs bg-transparent border border-white rounded-full xl:w-max group-hover:bg-info group-hover:block">
                                 Request a quote
                               </button>
-                            </div>
+                            </div> */}
                           </div>
                         </Link>
                       ))}

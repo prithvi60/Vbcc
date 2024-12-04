@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "VBCC About",
-  description: "Vbbc About Us Pages",
+  title: "About Us",
+  description: "Explore VBCC High Temperature Instruments, where precision meets innovation. We provide top-notch, comprehensive solutions tailored to meet the various laboratories and industries' needs.",
 };
 
 export default function RootLayout({ children }) {

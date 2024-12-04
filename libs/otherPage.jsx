@@ -78,14 +78,14 @@ export const navLinks = [
 export const exploreList = [
     {
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-explore.png?updatedAt=1733211695302",
-        icon: "/explore-icon-2.png",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-2.png?updatedAt=1733225200760",
         title: "Dental",
         desc: "Over 2+ products for Dental Furnace.",
         ref: "/categories/dental",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-3.png?updatedAt=1733225202920",
-        icon: "/explore-icon-3.png",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-3.png?updatedAt=1733225201590",
         title: "Laboratory",
         desc: "Over 20+ products for Laboratory Furnace.",
         ref: "/categories/laboratory",
@@ -193,6 +193,10 @@ export const footerLinks1 = [
     {
         href: "/blog",
         title: "Blog"
+    },
+    {
+        href: "/faq",
+        title: "FAQ"
     }
 ]
 
@@ -204,6 +208,10 @@ export const footerLinks2 = [
     {
         href: "/categories/laboratory",
         title: "Laboratory"
+    },
+    {
+        href: "/contact",
+        title: "Contact Us"
     }
 ]
 
