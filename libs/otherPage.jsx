@@ -276,53 +276,53 @@ export const landingItems = [
 ];
 
 
-export const heroTestimonial= [
+export const heroTestimonial = [
     {
-      header: "I came across VB Ceramics Products a couple of years ago and there was no doubt that it was a match made in heaven. I use almost every feature in VB Ceramics Products. It has saved me and my team a lot of time. In fact, I recommended VB Ceramics Products to many of my vendors and customers and they thank me today for it. So, go ahead, try VB Ceramics Products, I am sure you will not find anything like it out there.",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-      title: "Centre for Nanotechnology Research, VIT University.",
-      subTitle: "on the Custom Made Hot Press"
+        header: "VBCC’s meticulously designed box furnace, or muffle furnace, delivers a great compact solution for labs with limited space. The microprocessor temperature control provides excellent stability and uniformity, while the thermal mass assures fast heating times with low power consumption.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+        title: "Centre for Nanotechnology Research, VIT University.",
+        subTitle: "on the Custom Made Hot Press"
     },
     {
-      header: "No Company in India, except VB Ceramic Consultants, took this challenging task to succession.",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
-      title: "Vikram Sarabhai Space Centre",
-      subTitle: "on building Microwave Hybrid Furnace"
+        header: "No Company in India, except VB Ceramic Consultants, took this challenging task to succession.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+        title: "Vikram Sarabhai Space Centre",
+        subTitle: "on building Microwave Hybrid Furnace"
     },
     {
-      header: "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-      title: "Department of Ceramic Technology, Anna University.",
-      subTitle: "on multiple Units working effectively"
+        header: "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+        title: "Department of Ceramic Technology, Anna University.",
+        subTitle: "on multiple Units working effectively"
     },
     {
-      header: "Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
-      title: "CSIR-CECRI",
-      subTitle: "on Custom made Supercritical Reactors"
+        header: "Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
+        title: "CSIR-CECRI",
+        subTitle: "on Custom made Supercritical Reactors"
     },
     {
-      header: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it. ",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-      title: "Centre for Nanotechnology Research, VIT University.",
-      subTitle: "on the Custom Made Hot Press"
+        header: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it. ",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+        title: "Centre for Nanotechnology Research, VIT University.",
+        subTitle: "on the Custom Made Hot Press"
     },
     {
-      header: "Brigade Plus transforms sales management and customer journeys with VB Ceramics CRM",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
-      title: "Vikram Sarabhai Space Centre",
-      subTitle: "on building Microwave Hybrid Furnace"
+        header: "Brigade Plus transforms sales management and customer journeys with VB Ceramic CRM",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+        title: "Vikram Sarabhai Space Centre",
+        subTitle: "on building Microwave Hybrid Furnace"
     },
     {
-      header: "I came across VB Ceramics Products a couple of years ago and there was no doubt that it was a match made in heaven. I use almost every feature in VB Ceramics Products. It has saved me and my team a lot of time. In fact, I recommended VB Ceramics Products to many of my vendors and customers and they thank me today for it. So, go ahead, try VB Ceramics Products, I am sure you will not find anything like it out there.",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-      title: "Department of Ceramic Technology, Anna University.",
-      subTitle: "on multiple Units working effectively"
+        header: "These versatile box-type vacuum furnace provides controlled high-temperature processing in a vacuum environment, essential for applications like brazing, sintering, and heat treatment. Our furnace also ensures the purity of the thermal processing environment.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+        title: "Department of Ceramic Technology, Anna University.",
+        subTitle: "on multiple Units working effectively"
     },
     {
-      header: "Brigade Plus transforms sales management and customer journeys with VB Ceramics CRM",
-      logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
-      title: "CSIR-CECRI",
-      subTitle: "on Custom made Supercritical Reactors"
+        header: "Brigade Plus transforms sales management and customer journeys with VB Ceramic CRM",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
+        title: "CSIR-CECRI",
+        subTitle: "on Custom made Supercritical Reactors"
     }
-  ]
+]
