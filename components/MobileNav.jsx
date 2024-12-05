@@ -1,14 +1,14 @@
 "use client";
-import othersData from "@/libs/others.json";
 import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
-import { FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { useState } from "react";
 
 const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
   const [open, setOpen] = useState(false);
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
 
   return (
     <section
@@ -45,23 +45,27 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
             <li
               key={idx}
               className={`w-max uppercase font-semibold text-3xl sm:text-[40px]`}
-              onClick={
-                link.menu === "CATEGORIES"
-                  ? null
-                  : () => setIsOpen(!isOpen)
-              }
             >
               {link.menu === "CATEGORIES" ? (
-                <span className={`flex items-center gap-2 group cursor-pointer`}>
-                  <span className="rounded-lg text-primary">
-                    {link.menu}
+                // Dropdown Toggle
+                <div
+                  className={`flex items-center gap-2 group cursor-pointer`}
+                  onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+                >
+                  <span className="rounded-lg text-primary">{link.menu}</span>
+                  <span
+                    className={`${isCategoriesOpen ? "rotate-180" : "rotate-0"
+                      } transition-transform duration-300`}
+                  >
+                    <RiArrowDownSLine className="text-4xl text-primary" />
                   </span>
-                </span>
+                </div>
               ) : (
                 <Link
                   passHref
                   className="flex items-center gap-2 group"
                   href={link.ref}
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
                     {link.menu}
@@ -69,23 +73,32 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
                   <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
                 </Link>
               )}
-              {link.subMenu && (
-                <>
-                  {link.subMenu.map((list, id) => (
-                    <Link
-                      key={id}
-                      passHref
-                      className="flex items-center gap-2 mt-4 group"
-                      href={list.ref}
-                    >
-                      <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary text-lg sm:text-xl">
-                        {list.menu}
-                      </span>
-                      <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
-                    </Link>
-                  ))}
-                </>
-              )}
+
+              {/* Submenu - Dropdown */}
+              <div
+                className={`transition-max-height transform duration-700 ease-in-out overflow-hidden ${isCategoriesOpen ? "max-h-screen" : "max-h-0"
+                  }`}
+              >
+                {link.menu === "CATEGORIES" && isCategoriesOpen && link.subMenu && (
+                  <ul className="mt-4 space-y-2">
+                    {link.subMenu.map((subItem, id) => (
+                      <li key={id} className="text-lg sm:text-xl">
+                        <Link
+                          passHref
+                          href={subItem.ref}
+                          className="flex items-center gap-2 group"
+                          onClick={() => setIsOpen(!isOpen)}
+                        >
+                          <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
+                            {subItem.menu}
+                          </span>
+                          <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </li>
           ))}
         </ul>
@@ -98,71 +111,6 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
           />
         </div>
       </div>
-      {/* <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 p-5 md:px-[60px] md:py-[32px]">
-        <div className="flex items-center gap-5">
-          <Link
-            passHref
-            href={"https://maps.app.goo.gl/U8LEV8Fyq6sDujZz5"}
-            className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <div className={`block h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-info`}
-              >
-                Location ?
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
-              >
-                Location ?
-              </h4>
-            </div>
-          </Link>
-          <Link
-            passHref
-            href={"/faq"}
-            className={`block rounded-full px-4 py-2 border border-info bg-transparent hover:bg-info group text-center text-base duration-700 delay-75 font-urbanist capitalize`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <div className={`block h-6 w-full overflow-hidden`}>
-              <h4
-                className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-info`}
-              >
-                FAQs
-              </h4>
-              <h4
-                className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
-              >
-                FAQs
-              </h4>
-            </div>
-          </Link>
-        </div>
-        <div className="flex items-center gap-3 mx-2 mt-5 md:justify-evenly md:mt-0 md:mx-0">
-          <Link
-            passHref
-            href={"https://www.youtube.com/@drviswabaskaranvbceramics4394"}
-            className="p-4 border rounded-full border-info hover:bg-info"
-          >
-            <FaYoutube className="text-white h-7 w-7" />
-          </Link>
-          <Link
-            passHref
-            href={"https://in.linkedin.com/company/vb-ceramic-consultants"}
-            className="p-4 border rounded-full border-info hover:bg-info"
-          >
-            <FaLinkedin className="text-white h-7 w-7" />
-          </Link>
-          <Link
-            passHref
-            href={"https://wa.me/7338894199"}
-            className="p-4 border rounded-full border-info hover:bg-info"
-          >
-            <FaWhatsapp className="text-white h-7 w-7" />
-          </Link>
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import { MdDoubleArrow } from "react-icons/md";
 import { navLinks } from "@/libs/otherPage";
 
-
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHover, setIsHover] = useState(false);
@@ -17,23 +16,28 @@ const NavBar = () => {
   return (
     <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
       <div
-        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") || path === "/" || path === "/about" || path.startsWith("/blog/")
+        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") ||
+          path === "/" ||
+          path === "/about" ||
+          path.startsWith("/blog/") ||
+          path === "/testimonials" ||
+          path === "/blog"
           ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
           : "justify-between"
           }`}
       >
         <Link href={"/"}>
           <div
-            className={`ml-5 md:ml-0 absolute top-0 md:top-2 -left-2 md:left-2 ${path.startsWith("/categories/")
-              ? "w-16 h-5 md:w-24 md:h-7"
-              : "w-28 h-9 md:w-24 md:h-7"
-              } lg:h-9 lg:w-28 2xl:h-12 2xl:w-36 ${path === "/about" && "bg-white !w-32 !-left-7 md:!left-2 !h-14 md:!w-28 md:!h-11 xl:!w-36 xl:!h-14 rounded-md "}`}
+            className={`ml-5 md:ml-0 absolute top-0 md:top-2  ${path === "/categories/dental" || path === "/categories/laboratory"
+              ? "w-36 bg-white rounded-md h-16 md:w-24 md:h-7 -left-8 md:left-2 "
+              : "w-36 h-12 md:w-24 md:h-7 -left-2 md:left-2"
+              } lg:h-9 lg:w-28 2xl:h-12 2xl:w-36 ${(path === "/about" || path === "/categories/dental/" || path === "/categories/laboratory/") && "bg-white !w-36 !-left-9 md:!left-2 !h-16 md:!w-28 md:!h-11 xl:!w-36 xl:!h-14 rounded-md "}`}
           >
             <Image
               alt="VBCC Logo"
               src="/VBCC - Logo.svg"
               fill
-              className={`object-cover object-center ${path === "/about" && "p-3 md:p-1.5"}`}
+              className={`object-cover object-center ${(path === "/about" || path === "/categories/dental" || path === "/categories/laboratory") && "p-3 md:p-1.5"}`}
               priority
             />
           </div>
@@ -45,7 +49,8 @@ const NavBar = () => {
                 className={`relative text-base font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white"
                   } group-hover:!z-[1000] ${path === "/" ||
                     path.startsWith("/blog/") ||
-                    path.startsWith("/categories/") || path === "/about"
+                    path.startsWith("/categories/") ||
+                    path === "/about"
                     ? "text-white"
                     : "text-primary"
                   }`}
@@ -127,7 +132,11 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        {path === "/" || path.startsWith("/blog/") || path === "/about" ? (
+        {path === "/" ||
+          path.startsWith("/blog/") ||
+          path === "/about" ||
+          path === "/testimonials" ||
+          path === "/blog" ? (
           <button
             className={`hidden font-semibold border border-info  w-fit transition-all rounded-full items-center text-sm md:text-base gap-3 capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info group`}
           >
@@ -169,8 +178,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
 
 {
   /* <nav id="nav">

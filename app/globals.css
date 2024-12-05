@@ -91,6 +91,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-mask-repeat: no-repeat;
 }
 
+@media (min-width: 1330px) {
+  .hero-mask {
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+}
+
 .hero-mask_home {
   mask-image: url("/mask-image.png");
   -webkit-mask-image: url("/mask-image.png");

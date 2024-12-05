@@ -82,8 +82,8 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           >
             <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-0"></div>
           </div>
-          <div className="absolute z-0 flex items-center gap-8 top-8 md:gap-52 left-4 md:left-6 w-max xl:gap-80 2xl:gap-[380px] md:top-16 lg:top-28 xl:left-24 xl:top-32">
-            <div className="z-0 flex items-center justify-center gap-8 ">
+          <div className="absolute z-0 flex items-center gap-8 top-8 md:gap-14 left-4 md:left-6 w-max xl:gap-16 2xl:gap-36 md:top-16 lg:top-28 xl:left-24 xl:top-32">
+            <div className="z-0 flex items-center justify-center gap-1 ">
               {sortProduct.map((item, idx) => (
                 <div
                   key={idx}
