@@ -175,8 +175,12 @@ const SpringModal = ({
         {
           First_Name: formData.firstName,
           Last_Name: formData.lastName,
-          Phone: formData.phoneNo,
+          Mobile: formData.phoneNo,
           Email: formData.userEmail,
+          Description: formData.message,
+          Customer_Type: "New",
+          Lead_Status: "New Lead",
+          Lead_Source: "Website"
         },
       ],
     };
