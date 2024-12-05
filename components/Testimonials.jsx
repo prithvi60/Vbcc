@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import othersData from "@/libs/others.json";
 import { IoMdQuote } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { heroTestimonial } from "@/libs/otherPage";
 
 const Testimonials = () => {
   const path = usePathname()
@@ -170,7 +170,7 @@ const Testimonials = () => {
             ))}
           </div> */}
           <div className="w-full h-full max-w-xs gap-5 mx-auto space-y-8 md:max-w-4xl columns-1 md:columns-2 lg:columns-3">
-            {othersData.heroTestimonial.map((list, idx) => (
+            {heroTestimonial.map((list, idx) => (
               <div key={idx} className="w-full h-full max-w-xs space-y-4 shadow-xl break-inside-avoid">
                 <div className="relative w-full h-48 overflow-hidden bg-primary">
                   <Image fill src={list.logo} alt="image" className="object-contain object-center" />
