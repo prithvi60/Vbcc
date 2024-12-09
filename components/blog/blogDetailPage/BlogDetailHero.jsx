@@ -19,7 +19,7 @@ const BlogDetailHero = ({ data, postName }) => {
     return (
         <section className="relative z-0 w-full h-full mb-10 text-white">
             <div className="relative w-full h-full overflow-hidden rounded-2xl">
-                <div className="relative w-full h-[85dvh] lg:h-[100vh] hero-mask">
+                <div className="relative w-full h-[65dvh] lg:h-[100vh] hero-mask">
                     <Image
                         alt="background image"
                         src={data}

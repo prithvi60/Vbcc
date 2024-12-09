@@ -1,4 +1,3 @@
-import productsData from "@/libs/products.json"
 import Products from "./Products"
 import { categoriesProducts, sortProducts } from "@/libs/otherPage";
 const ProductLayout = () => {

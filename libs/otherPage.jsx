@@ -125,6 +125,7 @@ export const items = [
 export const sortProducts = [
     { value: "Best Selling" },
     { value: "Dental Furnaces" },
+    { value: "Laboratory Furnaces" },
 ];
 
 export const categoriesProducts = [
@@ -175,6 +176,31 @@ export const categoriesProducts = [
                 img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
                 productName: "Burnout Furnace",
                 href: "/categories/dental/",
+            },
+        ],
+    },
+    {
+        category: "Laboratory Furnaces",
+        lists: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
+                productName: "Box/Muffle Furnace",
+                href: "/categories/laboratory/"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
+                href: "/categories/laboratory/",
+                productName: "Chemical Vapour Deposition",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/isometric.png?updatedAt=1732095827733",
+                productName: "Hot air oven",
+                href: "/categories/laboratory/",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/isometric.png?updatedAt=1732095797441",
+                productName: "Vacuum Oven",
+                href: "/categories/laboratory/",
             },
         ],
     },
