@@ -44,10 +44,10 @@ const Timeline = () => {
     return (
         <section className='relative w-full overflow-hidden bg-primary text-primary font-Montserrat padding'>
             <div className='block w-full mt-20 space-y-4 md:space-y-6'>
-                <h4 className="relative text-2xl font-semibold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info">Our Timeline</h4>
-                <div className="overflow-x-scroll shadow-xl lg:overflow-x-hidden lg:hover:overflow-x-scroll rounded-tl-xl thumbnail" ref={scrollContainerRef}>
+                <h4 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info">Our Timeline</h4>
+                <div className="overflow-x-scroll shadow-xl lg:overflow-x-scroll rounded-tl-xl thumbnail" ref={scrollContainerRef}>
                     <div ref={targetRef} className="flex h-[40vh] md:h-[85vh]">
-                        <img src={"/timeline.png"} alt="legacy-image" loading="lazy" className=" h-[280px] md:h-[650px] max-w-[350%] object-cover md:object-contain md:max-w-[450%]" />
+                        <img src={"https://ik.imagekit.io/webibee/VBCC/homepage/timeline.svg?updatedAt=1733741949312"} alt="legacy-image" loading="lazy" className=" h-[280px] md:h-[650px] max-w-[350%] object-cover md:object-contain md:max-w-[450%]" />
                     </div>
                 </div>
             </div>

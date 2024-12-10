@@ -124,7 +124,7 @@ const Footer = () => {
           <div className="relative w-64 h-20 mx-auto my-14 md:my-4">
             <Image
               alt="VBCC Logo"
-              src="/VBCC - Logo.svg"
+              src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
               fill
               className="object-cover object-center"
             />

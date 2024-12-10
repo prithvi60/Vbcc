@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        <div className="relative w-full h-[1150px] md:h-[85vw] slider-container lg:h-[1000px] xl:h-[1200px] hero-mask_home overflow-hidden">
+        <div className="relative w-full h-[1150px] md:h-[85vw] slider-container lg:h-[1000px] xl:h-[1200px] hero-mask_home -rotate-[0.1deg] -mt-[3px] overflow-hidden">
           {loading && (
             <div className="absolute w-full h-[1150px] md:h-[85vw] lg:h-[1000px] xl:h-[1200px] overflow-hidden">
               <Image
@@ -90,7 +90,7 @@ const Hero = () => {
         </div>
         <div className="absolute z-20 w-11/12 md:w-[95%] -translate-x-1/2 -translate-y-1/2 top-[55%] md:top-1/2 left-1/2 font-Montserrat ">
           <div className="flex flex-col items-center w-full h-full gap-28 md:gap-0 lg:gap-6 lg:justify-between md:flex-row">
-            <div className="relative flex items-center w-full gap-5 md:w-[55%] lg:w-3/5 md:gap-8 xl:gap-20">
+            <div className="relative flex items-center w-full gap-5 md:w-[55%] ml-9 md:ml-0 lg:w-3/5 md:gap-8 xl:gap-20">
               <HeroComponent />
               <div className="absolute hidden w-full md:block left-2 -top-20 md:-top-36 lg:-top-48 2xl:-top-60">
                 <HeroBox className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
@@ -106,7 +106,7 @@ const Hero = () => {
                   <h2 className="text-[16px] font-bold tracking-wider md:text-[22px] xl:text-[38px] leading-tight uppercase">
                     TAILOR MADE
                   </h2>
-                  <div className="w-full max-w-2xl slider-container">
+                  <div className="w-full max-w-xl slider-container">
                     {loading && (
                       <h3 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem] blur-sm">
                         {heroSlider[0].categories}
@@ -124,7 +124,7 @@ const Hero = () => {
                     >
                       {heroSlider.map((list, idx) => (
                         <h3
-                          className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]"
+                          className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight -ml-[10px] xl:leading-[4rem]"
                           key={idx}
                         >
                           {list.categories}
@@ -132,7 +132,7 @@ const Hero = () => {
                       ))}
                     </Slider>
                   </div>
-                  <div className="flex flex-col gap-5 lg:items-center lg:flex-row">
+                  <div className="flex flex-col gap-5 w-max md:w-full lg:items-center lg:flex-row">
                     <LinkScroll
                       to="explore"
                       spy={true}

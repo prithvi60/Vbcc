@@ -14,43 +14,56 @@ const NavBar = () => {
   const path = usePathname();
 
   return (
-    <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-10">
+    <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-7 font-Montserrat">
       <div
         className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") ||
           path === "/" ||
           path === "/about" ||
           path.startsWith("/blog/") ||
           path === "/testimonials" ||
-          path === "/blog"
+          path === "/blog" ||
+          path === "/categories"
           ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
           : "justify-between"
           }`}
       >
-        <Link href={"/"}>
-          <div
-            className={`ml-5 md:ml-0 absolute top-0 md:top-2  ${path === "/categories/dental" || path === "/categories/laboratory"
+        {/* className={`ml-5 md:ml-0 absolute top-0 md:top-2  ${path === "/categories/dental" || path === "/categories/laboratory"
               ? "w-36 bg-white rounded-md h-16 md:w-24 md:h-7 -left-8 md:left-2 "
               : "w-36 h-12 md:w-24 md:h-7 -left-2 md:left-2"
-              } lg:h-9 lg:w-28 2xl:h-12 2xl:w-36 ${(path === "/about" || path === "/categories/dental/" || path === "/categories/laboratory/") && "bg-white !w-36 !-left-9 md:!left-2 !h-16 md:!w-28 md:!h-11 xl:!w-36 xl:!h-14 rounded-md "}`}
+              } lg:h-9 lg:w-32 2xl:h-16 2xl:w-36 ${(path === "/about" || path === "/categories/dental/" || path === "/categories/laboratory/") && "bg-white !w-36 !-left-9 md:!left-2 !h-16 md:!w-28 md:!h-11 xl:!w-36 xl:!h-14 rounded-md "}`} */}
+        <Link href={"/"}>
+          <div
+            className={`relative  w-32 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44 lg:-ml-3`}
           >
-            <Image
-              alt="VBCC Logo"
-              src="/VBCC - Logo.svg"
-              fill
-              className={`object-cover object-center ${(path === "/about" || path === "/categories/dental" || path === "/categories/laboratory") && "p-3 md:p-1.5"}`}
-              priority
-            />
+            {path === "/" || path === "/blog" || path === "/testimonials" ? (
+              <Image
+                alt="VBCC Logo"
+                src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
+                fill
+                className={`object-cover object-center`}
+                priority
+              />
+            ) : (
+              <Image
+                alt="VBCC Logo"
+                src="/VBCC logo.svg"
+                fill
+                className={`object-cover object-center`}
+                priority
+              />
+            )}
           </div>
         </Link>
         <ul className="items-center hidden gap-6 lg:flex">
           {navLinks.map((list, id) => (
             <li key={id} className="relative py-4 group">
               <div
-                className={`relative text-base font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white"
+                className={`relative text-base lg:text-lg font-semibold font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white"
                   } group-hover:!z-[1000] ${path === "/" ||
                     path.startsWith("/blog/") ||
                     path.startsWith("/categories/") ||
-                    path === "/about"
+                    path === "/about" ||
+                    path === "/categories"
                     ? "text-white"
                     : "text-primary"
                   }`}
@@ -83,7 +96,7 @@ const NavBar = () => {
                   >
                     <div
                       onMouseLeave={() => setIsHover(false)}
-                      className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask border-3 border-secondary"
+                      className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask"
                       style={{
                         backgroundImage: "url('/counterBg.png')",
                       }}
@@ -113,9 +126,9 @@ const NavBar = () => {
                               <div
                                 className={`text-base font-medium tracking-wide decoration-info capitalize relative !z-[1000] text-white`}
                               >
-                                {item.menu}{" "}
+                                {item.menu}
                                 <p className="flex items-center gap-2">
-                                  Furnaces{" "}
+                                  Furnaces
                                   <span>
                                     <MdDoubleArrow className="text-2xl text-info" />
                                   </span>
@@ -136,7 +149,8 @@ const NavBar = () => {
           path.startsWith("/blog/") ||
           path === "/about" ||
           path === "/testimonials" ||
-          path === "/blog" ? (
+          path === "/blog" ||
+          path === "/categories" ? (
           <button
             className={`hidden font-semibold border border-info  w-fit transition-all rounded-full items-center text-sm md:text-base gap-3 capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info group`}
           >
@@ -178,75 +192,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-{
-  /* <nav id="nav">
-  <div className="font-urbanist font-medium py-6 px-5 md:px-10 md:py-4 xl:px-[60px] lg:py-3.5 border-b border-[#B6BABD] static max-w-full flex justify-between items-center">
-    {/* <Link passHref href="/" className="relative w-20 h-5 cursor-pointer">
-      <Image
-        fill
-        src={"https://ik.imagekit.io/webibee/VBCC/logo.svg"}
-        placeholder="blur"
-        blurDataURL="https://ik.imagekit.io/webibee/VBCC/logo.svg?tr=bl-100"
-        alt="Logo"
-        className="absolute object-contain object-center"
-      />
-    </Link> 
-    <Link
-      passHref
-      href="/"
-      className="relative w-20 h-8 cursor-pointer md:h-9"
-    >
-      <Image
-        loading="lazy"
-        fill
-        src={"https://ik.imagekit.io/webibee/VBCC/vbccsvglogo.svg"}
-        // placeholder="blur"
-        // blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-        alt="Logo"
-        className="absolute object-contain object-center"
-      />
-    </Link>
-    <div className="hidden gap-10 uppercase lg:flex text-warning">
-      <div className="group">
-        <div className="relative">
-          <Link
-            passHref
-            href={"/products"}
-            className="h-full text-warning py-[26px]"
-            onMouseEnter={() => setOpen(false)}
-          >
-            Products
-          </Link>
-          <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[23px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
-        </div>
-        <ToolTipContent isOpen={open} setIsOpen={setOpen} />
-      </div>
-      {othersData.navlinks.map((link, idx) => (
-        <div key={idx} className="relative group">
-          <Link passHref href={link.href} className="h-full text-warning">
-            {link.title}
-          </Link>
-          <hr className="hidden group-hover:block  group-hover:absolute group-hover:-bottom-[23px] group-hover:left-0 group-hover:h-[7px] group-hover:w-full bg-info group-hover:transition-all group-hover:duration-1000 group-hover:delay-150" />
-        </div>
-      ))}
-    </div>
-    <div className="flex items-center gap-4">
-      <div className="hidden md:flex">
-        <Btn
-          Hbgcolor={"bg-primary"}
-          textColor={"text-warning"}
-          HtextColor={"text-white"}
-          bColor={"border-warning"}
-          title={"contact us"}
-          href={"/contact"}
-        />
-      </div>
-      <div onClick={() => setIsOpen(!isOpen)}>
-        <RxHamburgerMenu className="cursor-pointer h-7 w-7 md:h-8 md:w-8 text-warning hover:text-info" />
-      </div>
-    </div>
-  </div>
-  {isOpen && <MobileNav setIsOpen={setIsOpen} isOpen={isOpen} />}
-</nav> */
-}

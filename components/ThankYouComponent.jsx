@@ -8,7 +8,7 @@ export const ThankYouComponent = () => {
   const path = usePathname();
   const modifiedUrl = path.replace("/thankyou", "");
   const hasDownloaded = useRef(false);
-  
+
   useEffect(() => {
     if (hasDownloaded.current) return;
     // console.log("Thankyou page loaded");
@@ -38,7 +38,7 @@ export const ThankYouComponent = () => {
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist text-warning space-y-6">
       <div className="relative w-20 h-20 mx-auto md:h-44 md:w-56 text-warning">
         <Image
-          src={"/VBCC - Logo.svg"}
+          src={"https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"}
           fill
           alt="thumbs up"
           className="object-contain -mt-2"

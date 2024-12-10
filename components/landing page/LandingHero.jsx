@@ -17,15 +17,15 @@ const LandingHero = () => {
   return (
     <section className="relative w-full h-full text-white mb-7">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        <div className="absolute top-8 2xl:top-10 2xl:left-6 left-4 h-9 w-28 2xl:h-12 2xl:w-36">
+        <div className="absolute top-6 left-4 h-9 w-28 2xl:h-16 2xl:w-40">
           <Image
             alt="VBCC Logo"
-            src="/VBCC - Logo.svg"
+            src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
             fill
             className="z-0 object-cover object-center"
           />
         </div>
-        <div className="relative w-full h-[120dvh] md:h-[110dvh] hero-mask">
+        <div className="relative w-full h-[120dvh] md:h-[110dvh] hero-mask -rotate-[0.1deg] -mt-[3px]">
           <Image
             alt="background image"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/herobg.jpg?updatedAt=1733226899567"
@@ -124,7 +124,7 @@ const LandingHero = () => {
 
         <Modal1
           styles={
-            "absolute top-5 md:top-7 right-1 md:right-5 bg-gradient-to-r from-[#6B778C80] to-[#FFFFFF0D] text-white hover:opacity-80 border border-info uppercase !rounded-full"
+            "absolute top-5 md:top-7 right-1 md:right-5 bg-gradient-to-r from-[#6B778C80] to-[#FFFFFF0D] text-white hover:opacity-80 border border-info uppercase !rounded-full font-Montserrat"
           }
           title={"DOWNLOAD BROCHURE"}
           type={"download"}

@@ -1,19 +1,18 @@
 import BlogHero from "@/components/blog/BlogHero";
 import { BlogSection } from "@/components/blog/BlogSection";
 import DefaultLayout from "@/components/DefaultLayout";
+import { client } from "@/sanity/lib/client";
+import { POSTS_QUERY } from "@/sanity/Queries";
 
-const obj = {
-  title: "Blog/Article",
-  desc: "Discover VBCC's range of Industrial and Research equipment. Our innovative, high-quality products are customizable to meet your specific needs, enhancing manufacturing and research capabilities.",
-  ImgSrc: "https://ik.imagekit.io/webibee/VBCC/blog-2.png"
-}
+export const revalidate = 10;
 
-export default function Home() {
+export default async function Home() {
+  const posts = await client.fetch(POSTS_QUERY);
   return (
     <main>
       <DefaultLayout>
         <BlogHero />
-        <BlogSection />
+        <BlogSection posts={posts} />
       </DefaultLayout>
     </main>
   );

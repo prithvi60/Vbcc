@@ -45,7 +45,7 @@ const FooterLanding = () => {
         <div className="relative w-40 h-12 mx-auto my-24 md:h-20 md:w-64 md:my-14">
           <Image
             alt="VBCC Logo"
-            src="/VBCC - Logo.svg"
+            src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
             fill
             className="object-cover object-center"
           />

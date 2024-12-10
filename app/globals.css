@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .thumbnail::-webkit-scrollbar-thumb {
-  background-color: #122149;
+  background-color: #ee7136;
   outline: 1px solid #f5f5f5;
   border-radius: 5px;
 }
@@ -108,8 +108,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .card-mask {
-  mask-image: url("/cardmask.png");
-  -webkit-mask-image: url("/cardmask.png");
+  mask-image: url("/mask-1.png");
+  -webkit-mask-image: url("/mask-1.png");
   mask-size: cover;
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;
@@ -118,8 +118,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-mask_2 {
-  mask-image: url("/cardmask.png");
-  -webkit-mask-image: url("/cardmask.png");
+  mask-image: url("/mask-1.png");
+  -webkit-mask-image: url("/mask-1.png");
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
@@ -128,8 +128,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .rtl_card-mask {
-  mask-image: url("/rtl-mask.png");
-  -webkit-mask-image: url("/rtl-mask.png");
+  mask-image: url("/mask-2.svg");
+  -webkit-mask-image: url("/mask-2.svg");
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
@@ -206,3 +206,23 @@ body::-webkit-scrollbar-thumb {
     height: auto;
   }
 } */
+
+.inner-image-zoom__close {
+  z-index: 10000; /* Ensure it's above other elements */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
+}

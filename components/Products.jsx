@@ -71,11 +71,11 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
 
   return (
 
-    <section className="relative z-auto w-full h-full overflow-hidden text-white pt-72">
+    <section className="relative z-auto w-full h-full overflow-hidden text-white pt-60 md:pt-72">
       <div className="w-full h-full overflow-hidden bg-primary font-Montserrat">
         <div className="absolute w-full h-[20vh] md:h-[35vh] -left-1 md:w-4/5 top-28">
           <div
-            className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask border-3 border-secondary"
+            className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask"
             style={{
               backgroundImage: "url('/counterBg.png')"
             }}
@@ -120,7 +120,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           ))}
         </div>
         {/* mobile view */}
-        <div className="w-full sm:w-[400px] h-full flex py-10 sm:flex-nowrap md:hidden items-center gap-4 overflow-auto thumbnail">
+        <div className="flex items-center w-full h-full gap-4 px-3.5 py-10 overflow-auto sm:flex-nowrap md:hidden thumbnail">
           {ourProducts.map((card, id) => (
             <Link href={`${card.href}${encodeURIComponent(card.productName)}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
               <div className="relative mx-auto transition-all duration-500 ease-linear transform size-36 group-hover:scale-125">

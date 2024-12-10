@@ -7,7 +7,7 @@ export const Vison = () => {
     <section className="relative mb-10 lg:mb-20 padding">
       <div className="relative block w-full space-y-10 font-Montserrat">
         <div className="relative w-full h-full space-y-5">
-          <h2 className="relative text-2xl font-semibold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-primary md:text-4xl xl:text-5xl text-info">Mission</h2>
+          <h2 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-primary md:text-4xl xl:text-5xl text-info">Mission</h2>
           <div className="flex flex-col-reverse items-center w-full gap-5 md:gap-0 md:flex-row">
             <div className="flex flex-col items-end w-full md:w-3/5">
               {mission.map((item, idx) => (
@@ -33,7 +33,7 @@ export const Vison = () => {
           </div>
         </div>
         <div className="relative w-full h-full space-y-5">
-          <h2 className="relative text-2xl font-semibold tracking-wide after:absolute after:h-0.5 md:float-end w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-primary md:text-4xl xl:text-5xl text-info">Vision</h2>
+          <h2 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 md:float-end w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-primary md:text-4xl xl:text-5xl text-info">Vision</h2>
           <div className="flex flex-col-reverse items-center w-full gap-5 pt-5 md:gap-0 md:flex-row-reverse">
             <div className="flex flex-col items-end w-full md:w-3/5">
               {vision.map((item, idx) => (

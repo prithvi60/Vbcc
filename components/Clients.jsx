@@ -41,7 +41,7 @@ const Clients = () => {
     ]
   };
   return (
-    <section className='relative w-full h-full overflow-y-hidden text-white lg:h-screen bg-primary font-Montserrat'>
+    <section className='relative w-full h-full overflow-y-hidden text-white py-40 bg-primary !font-Montserrat'>
       <div className='flex flex-col items-center gap-28 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
         <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10">
           <Image
@@ -51,9 +51,9 @@ const Clients = () => {
             className="object-cover object-center"
           />
           <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#0c1a32d9] to-[#081326b4] "></div>
-          <div className="absolute z-20 block w-full space-y-3 top-20 -right-12 md:-right-24">
-            <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] w-full capitalize">
-              Our Prestigious <span className="text-info w-max">Clients</span>
+          <div className="absolute z-20 block w-full space-y-3 top-20 -right-12 md:-right-40">
+            <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] xl:text-[42px] capitalize">
+              Our Prestigious <span className="text-info">Clients</span>
             </h2>
           </div>
           <div className="absolute z-10 -top-3 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-16">

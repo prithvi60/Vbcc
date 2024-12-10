@@ -1,5 +1,5 @@
 "use client";
-import BreadCrumb from "@/app/categories/BreadCrumb";
+import BreadCrumb from "@/components/categories/BreadCrumb";
 import { Modal, Modal1 } from "@/components/landing page/Modal";
 import { DentalProductsList } from "@/libs/productsData";
 import Image from "next/image";
@@ -14,19 +14,24 @@ import MoreProducts from "../../MoreProducts";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
+import { IoCloseSharp } from "react-icons/io5";
+// import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+// const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 const ProductDetailsHero = () => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isIOS, setIsIOS] = useState(false);
     const path = usePathname()
         .split("/")
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
 
-    const [{ Images, productName, desc, keys, spec, pdf }] = DentalProductsList.filter(
-        (val) => val.productName === decodeURIComponent(filteredURI)
-    );
+    const [{ Images, productName, desc, keys, spec, pdf }] =
+        DentalProductsList.filter(
+            (val) => val.productName === decodeURIComponent(filteredURI)
+        );
 
     const moreProducts = DentalProductsList.filter(
         (val) => val.productName !== decodeURIComponent(filteredURI)
@@ -39,6 +44,11 @@ const ProductDetailsHero = () => {
     useEffect(() => {
         setNav1(sliderRef1);
         setNav2(sliderRef2);
+    }, []);
+    useEffect(() => {
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+            setIsIOS(true);
+        }
     }, []);
 
     const settings = {
@@ -53,24 +63,26 @@ const ProductDetailsHero = () => {
     return (
         <>
             <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
-                <div className="relative w-full h-[1100px] md:h-[1000px] lg:h-[800px] hero-mask bg-primary z-auto"></div>
+                <div className="relative w-full h-[1100px] md:h-[1000px] lg:h-[800px] bg-primary z-auto"></div>
                 <div className="absolute left-0 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                     <BreadCrumb />
                     <div className="block w-full py-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
-                        <h4 className="text-xl md:text-2xl font-medium !leading-[32px] text-primary">
+                        <h4 className="text-xl md:text-3xl xl:text-4xl font-bold tracking-wide !leading-[32px] text-primary">
                             {productName}
                         </h4>
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
-                            {desc !== ""
-                                ? desc
-                                : "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology. "}
+                            {desc}
                         </p>
                         <div className="flex flex-col items-center gap-8 md:flex-row">
                             <button
                                 type="submit"
                                 className={`block px-3 md:px-6 py-3 group bg-info hover:bg-white text-center text-base duration-700 delay-75 font-urbanist mx-auto md:mx-0 capitalize w-max shadow-xl`}
                             >
-                                <a href={pdf} download={`Denkiro - Dental - Brochure - Digital- ${productName}`} target="_blank">
+                                <a
+                                    href={pdf}
+                                    download={`Denkiro - Dental - Brochure - Digital- ${productName}`}
+                                    target="_blank"
+                                >
                                     <div className={`h-6 w-full overflow-hidden`}>
                                         <h3
                                             className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-white flex items-center gap-2`}
@@ -118,13 +130,14 @@ const ProductDetailsHero = () => {
                                         <InnerImageZoom
                                             fadeDuration={300}
                                             mobileBreakpoint={640}
-                                            fullscreenOnMobile
                                             hideHint
-                                            zoomScale={1}
                                             src={list}
+                                            zoomScale={1}
                                             alt={`image-${idx}`}
+                                            // fullscreenOnMobile={isIOS}
                                             zoomType="hover"
-                                            className="z-20 object-contain object-center"
+                                            hideCloseButton={false}
+                                            className="z-20 !flex !items-center !justify-center object-contain object-center !w-full"
                                         />
                                     </div>
                                 ))}
