@@ -8,13 +8,13 @@ const OurTeam = () => {
             <div className="block w-full h-full space-y-6 padding">
                 <div className="block py-10 space-y-6 md:space-y-20 md:py-20">
                     <div className="block w-full space-y-4 md:space-y-6">
-                        <h4 className="relative text-2xl font-semibold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info">
+                        <h4 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info">
                             Our Team
                         </h4>
                         <p className="pt-5 text-base font-bold md:text-lg text-secondary">
                             Welcome to VBCC High Temperature Instruments!
                         </p>
-                        <p className="text-base md:text-lg !leading-[32px] text-secondary w-full md:w-3/5">
+                        <p className="text-base md:text-lg !leading-[32px] text-secondary w-full">
                             Our leadership, CEO Naveen and Our leadership, CEO Naveen and Dr.
                             V. Viswabaskaran, brings over 32 years of combined expertise in
                             the field, expertly blending experience with cutting-edge
@@ -29,14 +29,14 @@ const OurTeam = () => {
                     </div>
                     <div className="pt-5 space-y-10">
                         <div className="flex items-center justify-center w-full gap-10 lg:w-1/2 lg:justify-start group">
-                            <div className="relative size-28 lg:size-40">
+                            <div className="relative w-36 h-28 lg:size-44">
                                 <Image
                                     alt="image"
                                     fill
                                     src={
-                                        "https://ik.imagekit.io/webibee/VBCC/homepage/founder-1.png?updatedAt=1733225206180"
+                                        "https://ik.imagekit.io/webibee/VBCC/homepage/CEO.jpg?updatedAt=1733748402844"
                                     }
-                                    className="z-0 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
+                                    className="z-0 object-contain transition ease-linear transform border-t-8 rounded-full border-info group-hover:scale-125 duration-400"
                                 />
                             </div>
                             <div className="relative w-3/4 space-y-2">
@@ -45,26 +45,26 @@ const OurTeam = () => {
                                     <p className="text-base italic font-bold md:text-lg">
                                         Every day is an opportunity to be 1% better than yesterday.
                                     </p>
-                                    <BiSolidQuoteRight className="absolute bottom-0 right-0 text-base md:right-16 md:text-lg text-info" />
+                                    <BiSolidQuoteRight className="absolute bottom-0 right-0 text-base md:right-4 md:text-lg text-info" />
                                 </div>
                                 <h4 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
-                                    NAVEEN VISWABASKARAN{" "}
+                                    NAVEEN VISWABASKARAN
                                 </h4>
                                 <p className="text-base font-medium capitalize md:text-lg xl:text-xl">
-                                    CEO & Managing Director{" "}
+                                    CEO & Managing Director
                                 </p>
                             </div>
                         </div>
                         <div className="flex items-center justify-center lg:justify-end">
                             <div className="flex items-center justify-end gap-5 lg:w-3/4 group">
-                                <div className="relative w-3/5 space-y-2 lg:w-2/5">
+                                <div className="relative w-1/2 space-y-2 lg:w-2/5">
                                     <div className="relative">
                                         <BiSolidQuoteLeft className="absolute top-0 text-base -left-6 md:text-lg text-info" />
                                         <p className="text-base italic font-bold md:text-lg">
                                             Technology is never static.With an agile approach,We
                                             continuously progress and add value with each iteration.
                                         </p>
-                                        <BiSolidQuoteRight className="absolute bottom-0 right-0 text-base md:right-16 md:text-lg text-info" />
+                                        <BiSolidQuoteRight className="absolute right-0 4ext-base -bottom-0 md:right-4 md:text-lg text-info" />
                                     </div>
                                     <h4 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
                                         DR.V.VISWABASKARAN
@@ -73,14 +73,14 @@ const OurTeam = () => {
                                         CTO & Director
                                     </p>
                                 </div>
-                                <div className="relative size-28 lg:size-40">
+                                <div className="relative size-28 lg:size-44">
                                     <Image
                                         alt="image"
                                         fill
                                         src={
-                                            "https://ik.imagekit.io/webibee/VBCC/homepage/founder-2.png?updatedAt=1733225205697"
+                                            "https://ik.imagekit.io/webibee/VBCC/homepage/CTO.jpg?updatedAt=1733748401643"
                                         }
-                                        className="z-0 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
+                                        className="z-0 object-contain transition ease-linear transform border-t-8 rounded-full border-info group-hover:scale-125 duration-400"
                                     />
                                 </div>
                             </div>

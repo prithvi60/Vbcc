@@ -6,7 +6,7 @@ const CompanyStats = () => {
     return (
         <div className="absolute right-0 z-20 md:w-4/5 md:-bottom-28 lg:-bottom-40 xl:-bottom-48 2xl:-bottom-56 left-1 md:left-auto">
             <div
-                className="relative z-10 px-6 py-8 bg-center bg-no-repeat bg-cover h-44 md:h-52 lg:h-64 xl:h-72 2xl:h-[380px] card-mask border-3 border-secondary"
+                className="relative z-10 px-6 py-8 bg-center bg-no-repeat bg-cover h-44 md:h-52 lg:h-64 xl:h-72 2xl:h-[380px] card-mask"
                 style={{
                     backgroundImage: "url('/counterBg.png')"
                 }}

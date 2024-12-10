@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Newsletter = () => {
   return (
-    <section className="text-white padding">
+    <section className="text-white padding font-Montserrat">
       <div className="relative border-2 before:absolute before:h-2 before:bg-info before:w-full before:-top-2.5 before:left-0 md:rounded-none border-info flex flex-col md:flex-row">
         <div className="relative w-full h-96 md:h-72 lg:h-96">
           <Image
@@ -17,11 +17,11 @@ const Newsletter = () => {
         {/* bg-gradient-to-tr from-[#374154B2] via-[#0D2143B2] to-[#0D2143B2] */}
         <div className="absolute top-0 left-0 z-0 px-5 py-10 md:p-10 2xl:p-12 w-full lg:w-[65%]">
           <div className="space-y-9">
-            <h2 className="text-2xl md:text-[32px] xl:text-[40px] 2xl:text-5xl font-Lora">
+            <h2 className="text-2xl md:text-[32px] xl:text-[40px] 2xl:text-5xl font-semibold">
               Get the Latest <span className="text-info">Updates</span>
               <div className="h-0.5 mt-3 w-72 bg-info"></div>
             </h2>
-            <p className="w-full text-sm md:text-xl 2xl:text-2xl font-urbanist">
+            <p className="w-full text-sm md:text-xl 2xl:text-2xl">
               Stay connected for the latest updates in cutting edge technology,
               launches of products, and valuable content revisions.
             </p>
@@ -38,12 +38,12 @@ const Newsletter = () => {
                 name="Email"
                 type="email"
                 placeholder="Subscribe our Newsletter"
-                className="bg-[#D9D9D933] rounded-full py-3 px-3  placeholder:text-secondary !border-none !outline-none placeholder:font-Nunito w-full md:max-w-96 text-primary text-base md:text-lg"
+                className="bg-[#D9D9D933] rounded-full py-3 px-3  placeholder:text-secondary !border-none !outline-none w-full md:max-w-96 text-primary text-base md:text-lg"
 
               />
               <button
                 type="submit"
-                className={`hidden sm:block rounded-full px-4 py-3 group bg-[#D9D9D933] hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full md:w-max`}
+                className={`hidden sm:block rounded-full px-4 py-3 group bg-[#D9D9D933] hover:bg-info text-center text-base duration-700 delay-75 capitalize w-full md:w-max`}
               >
                 <div className={`h-6 w-full overflow-hidden`}>
                   <h3
@@ -61,7 +61,7 @@ const Newsletter = () => {
             </div>
             <button
               type="submit"
-              className={`block sm:hidden rounded-full px-4 py-2 group bg-secondary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-full`}
+              className={`block sm:hidden rounded-full px-4 py-2 group bg-secondary hover:bg-info text-center text-base duration-700 delay-75 capitalize w-full`}
             >
               <div className={`h-6 w-full overflow-hidden`}>
                 <h3

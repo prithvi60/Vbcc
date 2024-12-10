@@ -8,29 +8,29 @@ const Explore = () => {
     <section
       name="explore"
       id="explore"
-      className="relative z-auto w-full h-full pt-40 bg-white pb-60 text-primary font-Montserrat"
+      className="relative z-auto w-full h-full pt-40 overflow-hidden bg-white pb-60 text-primary font-Montserrat md:overflow-visible"
     >
       <div
-        className="absolute z-10 w-full h-[15vh] sm:h-[25vh] md:h-[45vh] right-0 top-10
-       md:w-4/5 md:-top-24"
+        className="absolute z-10 w-full h-[260px] md:h-[420px] 2xl:h-[450px] 2xxl:h-[490px] right-0 top-10
+       md:w-4/5 2xxl:w-3/5 md:-top-24 2xl:-top-36"
       >
         <div
-          className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover card-mask_2 border-3 border-secondary"
+          className="relative w-full h-full px-6 py-8 bg-top bg-no-repeat bg-cover card-mask_2"
           style={{
-            backgroundImage: "url('/counterBg.png')",
+            backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/Your%20Visualization.jpg?updatedAt=1733748825298')",
           }}
         >
-          <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
-          <p className="relative z-30 w-full -mt-3 text-xl text-white md:my-14 md:text-2xl xl:text-5xl md:w-3/4">
+          <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-20"></div>
+          <p className="relative z-30 w-full text-xl font-semibold text-white 2xl:mt-32 md:mt-10 xl:mt-20 md:text-2xl xl:text-5xl md:w-3/4">
             Your Visualization Of Your Product,We Bring To Life.
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between gap-10 mb-56 lg:flex-row">
+      <div className="flex flex-col items-center justify-between gap-10 mb-10 2xxl:mt-20 md:mb-56 lg:flex-row">
         <div className="block p-10 mx-auto space-y-4">
-          <div className="relative flex gap-2 items-center lg:block text-3xl text-[#A7ACB8] md:text-5xl group">
-            <h4 className="w-full lg:w-3/5">Explore Products</h4>
-            <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-5 left-56 text-info" />
+          <div className="relative flex gap-2 items-center lg:block text-3xl text-[#A7ACB8] md:text-5xl xl:text-6xl group">
+            <h4 className="w-full font-bold tracking-wider lg:w-3/5">Explore Products</h4>
+            <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-10 left-80 text-info" />
           </div>
           <Modal2 pageType={"main"} />
         </div>
@@ -56,7 +56,7 @@ const Explore = () => {
                     className="object-cover object-center"
                   />
                 </div>
-                <h2 className="text-base font-bold tracking-wider !leading-tight md:text-[18px] xl:text-[22px] w-4/5 capitalize">
+                <h2 className="text-base font-bold tracking-wider !leading-tight md:text-[18px] xl:text-[22px] w-3/5 capitalize">
                   {list.title}
                 </h2>
                 {/* <p className="w-4/5 text-xs md:text-sm">
@@ -66,42 +66,58 @@ const Explore = () => {
             </Link>
           ))}
         </div>
+        <h2 className="text-[28px] mt-6 justify-center items-center font-bold tracking-wider !leading-tight flex md:hidden w-full capitalize gap-1">
+          Why <span className="font-bold text-info">Choose Us?</span>
+        </h2>
       </div>
-      <div className="relative flex flex-col w-[96%] sm:w-full h-full gap-20 lg:gap-0 lg:flex-row lg:justify-between">
+      <div className="relative flex flex-col w-[96%] sm:w-full h-full gap-10 lg:gap-0 lg:flex-row lg:justify-between">
         <div className="relative w-full h-full lg:w-3/5">
-          <div className="z-0 h-full md:h-[100vh] absolute -bottom-3 md:-bottom-24 lg:-bottom-10 xl:-bottom-24 left-2 w-full">
+          <div className="z-0 h-full md:h-[850px] absolute -bottom-3 md:-bottom-24 lg:-bottom-10 xl:-bottom-24 left-6 w-full">
             <div
-              className="relative z-0 w-full h-full px-6 py-8 bg-right-bottom bg-no-repeat bg-cover explore_card-mask border-3 border-secondary"
+              className="relative w-full h-full px-6 py-8 bg-right-bottom bg-no-repeat bg-cover explore_card-mask border-3 border-secondary"
               style={{
-                backgroundImage: "url('/explore-image-bg.png')",
+                backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/explore.png?updatedAt=1733749245245')",
               }}
             >
               <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-10"></div>
             </div>
           </div>
+
           <div className="relative flex flex-col items-end w-3/4 h-auto gap-6 ml-20 lg:w-4/5">
-            {whyChooseUs.map((item, idx) => (
+            {/* <div className="z-0 h-full md:h-[100vh] absolute -bottom-3 md:-bottom-24 lg:-bottom-10 xl:-bottom-24 -left-16 w-full">
               <div
-                className={`p-6 bg-info space-y-4 rounded-lg w-full h-auto border border-secondary text-white`}
-                key={idx}
+                className="relative w-full h-full px-6 py-8 bg-right-bottom bg-no-repeat bg-cover explore_card-mask border-3 border-secondary"
+                style={{
+                  backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/explore.png?updatedAt=1733749245245')",
+                }}
               >
-                <div className="relative w-8 h-8 md:h-10 md:w-10">
-                  <Image
-                    fill
-                    src={item.img}
-                    placeholder="blur"
-                    blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
-                    alt="Logo"
-                    className="absolute object-contain object-center"
-                  />
-                </div>
-                <p className="text-xs md:text-sm">{item.desc}</p>
+                <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-10"></div>
               </div>
-            ))}
+            </div> */}
+            <>
+              {whyChooseUs.map((item, idx) => (
+                <div
+                  className={`p-6 bg-info space-y-4 rounded-lg w-full h-auto border border-secondary text-white z-20`}
+                  key={idx}
+                >
+                  <div className="relative w-8 h-8 md:h-10 md:w-10">
+                    <Image
+                      fill
+                      src={item.img}
+                      placeholder="blur"
+                      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
+                      alt="Logo"
+                      className="absolute object-contain object-center"
+                    />
+                  </div>
+                  <p className="text-xs md:text-sm">{item.desc}</p>
+                </div>
+              ))}
+            </>
           </div>
         </div>
         <div className="relative block w-full px-10 space-y-4 md:py-10 xl:py-12 md:space-y-8 lg:w-2/5 text-primary">
-          <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize flex gap-1">
+          <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] hidden md:flex w-full capitalize gap-1">
             Why <span className="text-info">Choose Us?</span>
           </h2>
           <p className="text-sm md:text-base">
@@ -123,7 +139,7 @@ const Explore = () => {
           <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-44 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
-                src={"/card 1.png"}
+                src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
                 fill
                 alt="image"
                 className="object-cover object-center rounded-full"
@@ -194,7 +210,7 @@ const Explore = () => {
           className="object-contain object-center"
         />
       </div>
-      <div className="absolute right-0 z-0 w-48 h-28 -bottom-6 md:h-28 md:w-72">
+      <div className="absolute right-0 z-0 w-48 h-28 -bottom-10 md:-bottom-6 md:h-28 md:w-72">
         <Image
           src={"/vector1.svg"}
           fill

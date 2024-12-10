@@ -61,14 +61,14 @@ export const navLinks = [
     { menu: "ABOUT US", ref: "/about" },
     {
         menu: "CATEGORIES",
-        ref: "",
+        ref: "/categories",
         subMenu: [
-            { img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-herobg.png?updatedAt=1733228239747", menu: "dental", ref: "/categories/dental" },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
                 menu: "laboratory",
                 ref: "/categories/laboratory",
             },
+            { img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906", menu: "dental", ref: "/categories/dental" },
         ],
     },
     { menu: "BLOGS", ref: "/blog" },
@@ -79,14 +79,14 @@ export const exploreList = [
     {
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-explore.png?updatedAt=1733211695302",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-2.png?updatedAt=1733225200760",
-        title: "Dental",
+        title: "Dental Furnace",
         desc: "Over 2+ products for Dental Furnace.",
         ref: "/categories/dental",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-3.png?updatedAt=1733225202920",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-3.png?updatedAt=1733225201590",
-        title: "Laboratory",
+        title: "Laboratory Furnace",
         desc: "Over 20+ products for Laboratory Furnace.",
         ref: "/categories/laboratory",
     },
@@ -106,7 +106,7 @@ export const items = [
         id: 2,
         title: "Design",
         imgSrc:
-            "https://ik.imagekit.io/webibee/VBCC/homepage/hwd-2.png?updatedAt=1733211647534",
+            "https://ik.imagekit.io/webibee/VBCC/homepage/Design.jpg?updatedAt=1733748825074",
         description:
             "Our experienced professionals will do a hassle-free installation and guide you through our product features and functionalities. We also provide timely replacements of any spare parts.",
         ref: "",
@@ -115,7 +115,7 @@ export const items = [
         id: 3,
         title: "Engineering",
         imgSrc:
-            "https://ik.imagekit.io/webibee/VBCC/homepage/hwd-3.png?updatedAt=1733211647168",
+            "https://ik.imagekit.io/webibee/VBCC/homepage/Engineering.jpg?updatedAt=1733748825195",
         description:
             "We understand that each client has unique requirements that may extend beyond our standardize product offerings. Our “Tailor-Made” promise ensures that we customize our designs to meet your specific needs.",
         ref: "",
@@ -350,5 +350,23 @@ export const heroTestimonial = [
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
         title: "CSIR-CECRI",
         subTitle: "on Custom made Supercritical Reactors"
+    }
+]
+
+export const statistics = [
+    {
+        title: "Satisfied Clientele",
+        count: "500",
+        firm: "ISRO, IITM, VIT, CERI, CGCRI"
+    },
+    {
+        title: "Instruments Installed",
+        count: "15000",
+        firm: "Dilatometer, MOR, RUL, CVD"
+    },
+    {
+        title: "Years of Expertise",
+        count: "22    ",
+        firm: "Instruments, Furnaces & Ceramics"
     }
 ]

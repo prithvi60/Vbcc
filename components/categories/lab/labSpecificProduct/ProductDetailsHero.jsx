@@ -1,5 +1,5 @@
 "use client";
-import BreadCrumb from "@/app/categories/BreadCrumb";
+import BreadCrumb from "@/components/categories/BreadCrumb";
 import { Modal, Modal1 } from "@/components/landing page/Modal";
 import { LabProductsList } from "@/libs/productsData";
 import Image from "next/image";
@@ -54,11 +54,11 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
     return (
         <>
             <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
-                <div className="relative w-full h-[1200px] md:h-[1000px] lg:h-[700px] xl:h-[800px] hero-mask bg-primary z-auto"></div>
+                <div className="relative w-full h-[1200px] md:h-[1000px] lg:h-[700px] xl:h-[800px] bg-primary z-auto"></div>
                 <div className="absolute left-0 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                     <BreadCrumb />
                     <div className="block w-full py-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
-                        <h4 className="text-xl md:text-2xl font-medium !leading-[32px] text-primary">
+                        <h4 className="text-xl md:text-3xl xl:text-4xl font-bold tracking-wide !leading-[32px] text-primary">
                             {productName}
                         </h4>
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
@@ -117,11 +117,11 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                                         <InnerImageZoom
                                             fadeDuration={300}
                                             mobileBreakpoint={640}
-                                            // fullscreenOnMobile
                                             hideHint
                                             src={list}
                                             alt={`image-${idx}`}
                                             zoomType="hover"
+                                            zoomScale={1}
                                             width={320}
                                             height={450}
                                             className="z-20 !flex !items-center !justify-center object-contain object-center !w-full"
@@ -184,7 +184,7 @@ function PrevArrow(props) {
     return (
         <div
             className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer ;left-0 group"
+                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer left-0 group"
             }
             onClick={onClick}
         >

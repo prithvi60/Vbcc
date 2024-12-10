@@ -12,13 +12,13 @@ const Testimonials = () => {
       <div className='block w-full space-y-6 padding'>
         <div className={`block space-y-6 md:space-y-16 ${path === "/testimonials" ? "pb-10 md:pb-20" : "py-10 md:py-20"}`}>
           <div className='block w-full space-y-4 md:space-y-6'>
-            <h4 className='text-2xl tracking-wide md:text-4xl xl:text-5xl text-info'>Our Testimonials</h4>
+            <h4 className='text-2xl font-semibold tracking-wide md:text-4xl xl:text-5xl text-info'>Our Testimonials</h4>
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-max flex justify-center items-center bg-[#E5EFFF] p-6 md:p-12 ">
                 <div className="relative overflow-hidden w-64 h-20 md:w-60 md:h-20 lg:h-28 lg:w-[350px]">
                   <Image
                     alt="VBCC Logo"
-                    src="/VBCC - Logo.svg"
+                    src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
                     fill
                     className="object-cover object-center"
                   />
