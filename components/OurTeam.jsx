@@ -15,26 +15,25 @@ const OurTeam = () => {
                             Welcome to VBCC High Temperature Instruments!
                         </p>
                         <p className="text-base md:text-lg !leading-[32px] text-secondary w-full">
-                            Our leadership, CEO Naveen and Our leadership, CEO Naveen and Dr.
-                            V. Viswabaskaran, brings over 32 years of combined expertise in
-                            the field, expertly blending experience with cutting-edge
-                            innovation. Our skilled team, including specialists in Ceramic,
-                            Mechanical, and Electrical Engineering, creatively tackles
-                            challenges, ensuring excellence in high-temperature equipment. We
-                            are committed to innovation, strong client relationships, and
-                            customer satisfaction. Join us as we advance the technology of
-                            high-temperature instruments and innovate to make a significant
-                            impact.
+                            Our leadership, CEO Naveen and Dr. V. Viswabaskaran, brings over
+                            32 years of combined expertise in the field, expertly blending
+                            experience with cutting-edge innovation. Our skilled team,
+                            including specialists in Ceramic, Mechanical, and Electrical
+                            Engineering, creatively tackles challenges, ensuring excellence in
+                            high-temperature equipment. We are committed to innovation, strong
+                            client relationships, and customer satisfaction. Join us as we
+                            advance the technology of high-temperature instruments and
+                            innovate to make a significant impact.
                         </p>
                     </div>
                     <div className="pt-5 space-y-10">
                         <div className="flex items-center justify-center w-full gap-10 lg:w-1/2 lg:justify-start group">
-                            <div className="relative w-36 h-28 lg:size-44">
+                            <div className="relative h-24 w-28 md:size-36">
                                 <Image
                                     alt="image"
                                     fill
                                     src={
-                                        "https://ik.imagekit.io/webibee/VBCC/homepage/CEO.jpg?updatedAt=1733748402844"
+                                        "/CEO-modified.png"
                                     }
                                     className="z-0 object-contain transition ease-linear transform border-t-8 rounded-full border-info group-hover:scale-125 duration-400"
                                 />
@@ -45,7 +44,7 @@ const OurTeam = () => {
                                     <p className="text-base italic font-bold md:text-lg">
                                         Every day is an opportunity to be 1% better than yesterday.
                                     </p>
-                                    <BiSolidQuoteRight className="absolute bottom-0 right-0 text-base md:right-4 md:text-lg text-info" />
+                                    <BiSolidQuoteRight className="absolute right-0 text-base -bottom-4 md:bottom-0 md:right-4 md:text-lg text-info" />
                                 </div>
                                 <h4 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
                                     NAVEEN VISWABASKARAN
@@ -73,7 +72,7 @@ const OurTeam = () => {
                                         CTO & Director
                                     </p>
                                 </div>
-                                <div className="relative size-28 lg:size-44">
+                                <div className="relative w-24 h-24 md:size-36">
                                     <Image
                                         alt="image"
                                         fill

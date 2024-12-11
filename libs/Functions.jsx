@@ -11,8 +11,8 @@ export async function getAccessToken(code) {
         const data = await response.json();
 
         if (response.ok) {
-            console.log("Access Token:", data.access_token);
-            console.log("Refresh Token:", data.refresh_token);
+            console.log("Access Token:");
+            console.log("Refresh Token:");
             // You can now use the access token in further API requests
         } else {
             console.error("Error:", data.message);
@@ -35,7 +35,7 @@ export async function refreshAccessToken(refresh_token) {
         const data = await response.json();
 
         if (response.ok) {
-            console.log("Refreshed Access Token:", data.access_token);
+            console.log("Refreshed Access Token:");
         } else {
             console.error("Error:", data.message);
         }

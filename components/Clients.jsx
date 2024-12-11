@@ -41,9 +41,9 @@ const Clients = () => {
     ]
   };
   return (
-    <section className='relative w-full h-full overflow-y-hidden text-white py-40 bg-primary !font-Montserrat'>
+    <section className='relative z-auto w-full h-full overflow-y-hidden text-white py-40 bg-primary !font-Montserrat'>
       <div className='flex flex-col items-center gap-28 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
-        <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10">
+        <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-auto">
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/homepage/client-bg.png?updatedAt=1733224807699"}
             fill
@@ -51,12 +51,12 @@ const Clients = () => {
             className="object-cover object-center"
           />
           <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#0c1a32d9] to-[#081326b4] "></div>
-          <div className="absolute z-20 block w-full space-y-3 top-20 -right-12 md:-right-40">
+          <div className="absolute z-auto block w-full space-y-3 top-20 -right-12 md:-right-40">
             <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] xl:text-[42px] capitalize">
               Our Prestigious <span className="text-info">Clients</span>
             </h2>
           </div>
-          <div className="absolute z-10 -top-3 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-16">
+          <div className="absolute z-auto -top-3 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-16">
             <TSBox className={"w-[280px] h-[400px] md:w-[320px] md:h-[440px] lg:w-[450px] lg:h-[550px] fill-none"} />
           </div>
         </div>
@@ -81,10 +81,10 @@ const Clients = () => {
           </div>
         </div>
       </div>
-      <div className='absolute left-0 z-0 w-48 h-28 -top-6 md:h-36 md:w-72'>
+      <div className='absolute left-0 z-auto w-48 h-28 -top-6 md:h-36 md:w-72'>
         <Image src={"/vector1blue.svg"} fill alt='' className='object-contain object-center' />
       </div>
-      <div className='absolute right-0 z-0 w-48 h-28 -bottom-6 md:h-36 md:w-72'>
+      <div className='absolute right-0 z-auto w-48 h-28 -bottom-6 md:h-36 md:w-72'>
         <Image src={"/vector2blue.svg"} fill alt='' className='object-contain object-center' />
       </div>
     </section>
@@ -97,7 +97,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className={"absolute z-10 top-4 md:top-5 lg:top-10 -right-12 md:-right-14 size-10 xl:size-12 cursor-pointer"}
+      className={"absolute z-auto top-4 md:top-5 lg:top-10 -right-12 md:-right-14 size-10 xl:size-12 cursor-pointer"}
       onClick={onClick}
     >
       <Image alt="next arrow" fill src={"/next.svg"} className="object-contain object-center" />
@@ -109,7 +109,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className={"absolute z-10 top-4 md:top-5 lg:top-10 -left-12 md:-left-14 size-10 xl:size-12 cursor-pointer"}
+      className={"absolute z-auto top-4 md:top-5 lg:top-10 -left-12 md:-left-14 size-10 xl:size-12 cursor-pointer"}
       onClick={onClick}
     >
       <Image alt="prev arrow" fill src={"/prev.svg"} className="object-contain object-center" />

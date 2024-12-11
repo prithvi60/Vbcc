@@ -11,7 +11,13 @@ export default async function Home({ params }) {
 
   const post = await client.fetch(
     POST_QUERY,
-    { slug }
+    { slug },
+    {
+      cache: "no-cache",
+      next: {
+        tags: ["post", "author", "category"],
+      },
+    }
   );
 
   return (

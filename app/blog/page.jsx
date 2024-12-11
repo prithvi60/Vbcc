@@ -7,7 +7,16 @@ import { POSTS_QUERY } from "@/sanity/Queries";
 export const revalidate = 10;
 
 export default async function Home() {
-  const posts = await client.fetch(POSTS_QUERY);
+  const posts = await client.fetch(
+    POSTS_QUERY,
+    {},
+    {
+      cache: "no-cache",
+      next: {
+        tags: ["post", "author", "category"],
+      },
+    }
+  );
   return (
     <main>
       <DefaultLayout>

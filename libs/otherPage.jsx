@@ -35,7 +35,7 @@ export const heroSlider = [
         products: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
-                productName: "Box/Muffle Furnace",
+                productName: "Box or Muffle Furnace",
                 type: "Laboratory PRODUCTS",
             },
             {
@@ -71,22 +71,22 @@ export const navLinks = [
             { img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906", menu: "dental", ref: "/categories/dental" },
         ],
     },
-    { menu: "BLOGS", ref: "/blog" },
     { menu: "TESTIMONIALS", ref: "/testimonials" },
+    { menu: "Contact Us", ref: "/contact" },
 ];
 
 export const exploreList = [
     {
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-explore.png?updatedAt=1733211695302",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-2.png?updatedAt=1733225200760",
-        title: "Dental Furnace",
+        title: "Dental Furnaces",
         desc: "Over 2+ products for Dental Furnace.",
         ref: "/categories/dental",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-3.png?updatedAt=1733225202920",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-3.png?updatedAt=1733225201590",
-        title: "Laboratory Furnace",
+        title: "Laboratory Furnaces",
         desc: "Over 20+ products for Laboratory Furnace.",
         ref: "/categories/laboratory",
     },
@@ -134,7 +134,7 @@ export const categoriesProducts = [
         lists: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
-                productName: "Box/Muffle Furnace",
+                productName: "Box or Muffle Furnace",
                 href: "/categories/laboratory/"
             },
             {
@@ -184,7 +184,7 @@ export const categoriesProducts = [
         lists: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
-                productName: "Box/Muffle Furnace",
+                productName: "Box or Muffle Furnace",
                 href: "/categories/laboratory/"
             },
             {
@@ -227,6 +227,10 @@ export const footerLinks1 = [
 ]
 
 export const footerLinks2 = [
+    {
+        href: "/categories",
+        title: "Categories"
+    },
     {
         href: "/categories/dental",
         title: "Dental"

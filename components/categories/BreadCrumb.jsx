@@ -25,7 +25,7 @@ const BreadCrumb = () => {
                 BCPath += `/${list}`;
                 return (
                     <BreadcrumbItem key={`${idx}-${list}`}>
-                        <Link href={BCPath}><h5>{decodeURIComponent(list)}</h5></Link>
+                        <Link href={BCPath}><h5>{list.replace(/_/g, " ")}</h5></Link>
                         {/* {BCPath !== "/categories" ? (
                             <Link href={BCPath}><h5>{decodeURIComponent(list)}</h5></Link>
                         ) : (

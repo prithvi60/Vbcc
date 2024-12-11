@@ -63,7 +63,7 @@ const LandingHero = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"www.youtube.com/@vbcc_hti"} target="_blank">
+                  <Link href={"https://www.youtube.com/@vbcc_hti"} target="_blank">
                     <FaYoutube className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
@@ -128,6 +128,7 @@ const LandingHero = () => {
           }
           title={"DOWNLOAD BROCHURE"}
           type={"download"}
+          page={"landing"}
         />
       </div>
       <CompanyStats />

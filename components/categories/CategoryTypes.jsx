@@ -26,7 +26,7 @@ const CategoryTypes = () => {
                                 />
                             </div>
                             <h4 className="font-semibold absolute backdrop-blur-sm bottom-5 left-5 text-center text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-max capitalize text-info group-hover:bg-info transition-all duration-500 ease-linear flex items-center gap-2 transform group-hover:text-white p-2.5">
-                                {list.menu} furnace
+                                {list.menu} Furnaces
                                 <span>
                                     <MdKeyboardDoubleArrowRight className="text-xl text-info group-hover:text-white" />
                                 </span>

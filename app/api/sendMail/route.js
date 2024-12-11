@@ -1,8 +1,5 @@
 import nodemailer from "nodemailer";
-import path from "path";
-import fs from "fs";
 import { NextResponse } from "next/server";
-
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
@@ -14,7 +11,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { firstName, lastName, userEmail, phone, message, page } =
+  const { firstName, lastName, userEmail, jobTitle, phone, message, page } =
     await req.json();
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
@@ -43,6 +40,7 @@ export async function POST(req) {
             <span className="!capitalize !font-bold">Name:</span> 
             ${firstName} ${lastName}
             <p>Email: ${userEmail}</p>
+            ${jobTitle ? `<p>Job Title: ${jobTitle}</p>` : ""}
             <p>Phone Number: ${phone}</p>
             <p>Message: ${message}</p>
             </p>

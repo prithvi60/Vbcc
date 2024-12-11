@@ -39,7 +39,7 @@ export const HeroComponent = () => {
       </li>
       <li>
         <Link
-          href={"www.youtube.com/@vbcc_hti"}
+          href={"https://www.youtube.com/@vbcc_hti"}
           target="_blank"
           aria-label="Youtube Videos"
         >

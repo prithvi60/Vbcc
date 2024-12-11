@@ -11,7 +11,7 @@ const CategoryProducts = ({ categoryName, data }) => {
             </h4>
             <div className="flex flex-wrap items-center justify-center w-full gap-5 pt-8 pb-20 lg:justify-start">
                 {data.map((list, idx) => (
-                    <Link href={`/categories/${categoryName}/${encodeURIComponent(list.productName)}`}
+                    <Link href={`/categories/${categoryName}/${list.productName.replace(/\s/g, "_")}`}
                         className="relative w-full max-w-sm space-y-8 group font-Montserrat"
                         key={idx}
 

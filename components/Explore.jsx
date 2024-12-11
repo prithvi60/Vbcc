@@ -8,10 +8,10 @@ const Explore = () => {
     <section
       name="explore"
       id="explore"
-      className="relative z-auto w-full h-full pt-40 overflow-hidden bg-white pb-60 text-primary font-Montserrat md:overflow-visible"
+      className="relative w-full h-full pt-40 overflow-hidden bg-white pb-60 text-primary font-Montserrat md:overflow-visible"
     >
       <div
-        className="absolute z-10 w-full h-[260px] md:h-[420px] 2xl:h-[450px] 2xxl:h-[490px] right-0 top-10
+        className="absolute z-auto w-full h-[260px] md:h-[420px] 2xl:h-[450px] 2xxl:h-[490px] right-0 top-10
        md:w-4/5 2xxl:w-3/5 md:-top-24 2xl:-top-36"
       >
         <div
@@ -20,25 +20,25 @@ const Explore = () => {
             backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/Your%20Visualization.jpg?updatedAt=1733748825298')",
           }}
         >
-          <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-20"></div>
-          <p className="relative z-30 w-full text-xl font-semibold text-white 2xl:mt-32 md:mt-10 xl:mt-20 md:text-2xl xl:text-5xl md:w-3/4">
+          <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-10"></div>
+          <p className="relative z-20 w-full text-xl font-semibold text-white 2xl:mt-32 md:mt-10 xl:mt-20 md:text-2xl xl:text-5xl md:w-3/4">
             Your Visualization Of Your Product,We Bring To Life.
           </p>
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-10 mb-10 2xxl:mt-20 md:mb-56 lg:flex-row">
         <div className="block p-10 mx-auto space-y-4">
-          <div className="relative flex gap-2 items-center lg:block text-3xl text-[#A7ACB8] md:text-5xl xl:text-6xl group">
+          <Link href={"/categories"} className="relative flex gap-2 items-center lg:block text-3xl text-[#A7ACB8] md:text-5xl xl:text-6xl group">
             <h4 className="w-full font-bold tracking-wider lg:w-3/5">Explore Products</h4>
             <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-10 left-80 text-info" />
-          </div>
-          <Modal2 pageType={"main"} />
+          </Link>
+          <Modal2 pageType={"main"} page={"Home"} />
         </div>
         <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
           {exploreList.map((list, idx) => (
             <Link
               href={list.ref}
-              className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-10 after:border-2 after:border-info after:w-full after:h-full"
+              className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-auto after:border-2 after:border-info after:w-full after:h-full"
               key={idx}
             >
               <Image
@@ -48,7 +48,7 @@ const Explore = () => {
                 className="object-cover object-center  brightness-[0.30]"
               />
               <div className="absolute block w-full space-y-4 text-white bottom-14 left-5">
-                <div className="relative z-20 size-12 md:size-16">
+                <div className="relative z-auto size-12 md:size-16">
                   <Image
                     src={list.icon}
                     fill
@@ -97,7 +97,7 @@ const Explore = () => {
             <>
               {whyChooseUs.map((item, idx) => (
                 <div
-                  className={`p-6 bg-info space-y-4 rounded-lg w-full h-auto border border-secondary text-white z-20`}
+                  className={`p-6 bg-info space-y-4 rounded-lg w-full h-auto border border-secondary text-white z-auto`}
                   key={idx}
                 >
                   <div className="relative w-8 h-8 md:h-10 md:w-10">
@@ -135,7 +135,7 @@ const Explore = () => {
             for quality, innovation, and personalized service, transforming
             challenges into oppurtunites.
           </p>
-          <Modal2 pageType={"main"} />
+          <Modal2 pageType={"main"} page={"home"} />
           <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-44 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image

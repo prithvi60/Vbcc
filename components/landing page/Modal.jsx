@@ -59,7 +59,7 @@ export const Modal1 = ({ title, styles, type, pageType, page }) => {
   );
 };
 
-export const Modal2 = ({ pageType }) => {
+export const Modal2 = ({ pageType, page }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="grid">
@@ -125,6 +125,7 @@ export const Modal2 = ({ pageType }) => {
         setIsOpen={setIsOpen}
         type={"enquire"}
         pageType={pageType}
+        page={page}
       />
     </div>
   );
@@ -306,7 +307,7 @@ const SpringModal = ({
                     value={formData.firstName || ""}
                     onChange={handleChange}
                     required
-                    placeholder="First User Name"
+                    placeholder="First Name"
                     className="w-full p-2 md:px-4 md:py-3 text-primary bg-white border outline-none border-stroke placeholder:text-[#275CB6] placeholder:font-medium placeholder:text-sm focus:border-secondary focus-visible:shadow-none text-sm md:text-base"
                   />
                   <input
@@ -315,7 +316,7 @@ const SpringModal = ({
                     value={formData.lastName || ""}
                     onChange={handleChange}
                     required
-                    placeholder="Last User Name"
+                    placeholder="Last Name"
                     className="w-full p-2 md:px-4 md:py-3 text-primary bg-white border outline-none border-stroke placeholder:text-[#275CB6] placeholder:font-medium placeholder:text-sm focus:border-secondary focus-visible:shadow-none text-sm md:text-base"
                   />
                   <input

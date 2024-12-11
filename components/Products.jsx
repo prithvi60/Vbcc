@@ -103,7 +103,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
 
         <div className="relative flex-wrap items-center justify-center hidden w-full h-full gap-4 pt-56 pb-20 mx-auto overflow-hidden slider-container md:gap-10 xl:gap-20 md:flex">
           {ourProducts.map((card, id) => (
-            <Link href={`${card.href}${encodeURIComponent(card.productName)}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
+            <Link href={`${card.href}${card.productName.replace(/\s/g, "_")}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
               <div className="relative mx-auto transition-all duration-500 ease-linear transform size-56 md:size-80 group-hover:scale-150">
                 <Image
                   alt="image"
@@ -122,7 +122,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
         {/* mobile view */}
         <div className="flex items-center w-full h-full gap-4 px-3.5 py-10 overflow-auto sm:flex-nowrap md:hidden thumbnail">
           {ourProducts.map((card, id) => (
-            <Link href={`${card.href}${encodeURIComponent(card.productName)}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
+            <Link href={`${card.href}${card.productName.replace(/\s/g, "_")}`} className="relative w-full h-auto max-w-xs space-y-8 group" key={id}>
               <div className="relative mx-auto transition-all duration-500 ease-linear transform size-36 group-hover:scale-125">
                 <Image
                   alt="image"
