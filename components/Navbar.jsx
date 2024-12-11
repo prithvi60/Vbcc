@@ -7,6 +7,7 @@ import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
 import { MdDoubleArrow } from "react-icons/md";
 import { navLinks } from "@/libs/otherPage";
+import ModalForSearch from "./ModalForSearch";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,16 +17,7 @@ const NavBar = () => {
   return (
     <nav className="absolute left-0 z-10 w-full px-3 py-6 text-white top-1.5 md:-top-2 xl:px-5 md:py-6 xl:py-7 font-Montserrat">
       <div
-        className={`relative flex items-center w-full rounded-2xl ${path.startsWith("/categories/") ||
-          path === "/" ||
-          path === "/about" ||
-          path.startsWith("/blog/") ||
-          path === "/testimonials" ||
-          path === "/blog" ||
-          path === "/categories"
-          ? "justify-between lg:justify-start lg:gap-52 2xxl:gap-72"
-          : "justify-between"
-          }`}
+        className={`relative flex items-center w-full rounded-2xl justify-between lg:justify-start lg:gap-20`}
       >
         {/* className={`ml-5 md:ml-0 absolute top-0 md:top-2  ${path === "/categories/dental" || path === "/categories/laboratory"
               ? "w-36 bg-white rounded-md h-16 md:w-24 md:h-7 -left-8 md:left-2 "
@@ -35,7 +27,7 @@ const NavBar = () => {
           <div
             className={`relative  w-32 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44 lg:-ml-3`}
           >
-            {path === "/" || path === "/blog" || path === "/testimonials" ? (
+            {path === "/" || path === "/blog" || path === "/testimonials" || path === "/contact" || path === "/about" || path === "/faq" ? (
               <Image
                 alt="VBCC Logo"
                 src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
@@ -58,11 +50,10 @@ const NavBar = () => {
           {navLinks.map((list, id) => (
             <li key={id} className="relative py-4 group">
               <div
-                className={`relative text-base lg:text-lg font-semibold font-medium tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white"
+                className={`relative text-base lg:text-lg font-semibold uppercase tracking-wide decoration-info hover:underline hover:underline-offset-8 z-20 ${list.menu === "CATEGORIES" && "group-hover:text-white"
                   } group-hover:!z-[1000] ${path === "/" ||
                     path.startsWith("/blog/") ||
                     path.startsWith("/categories/") ||
-                    path === "/about" ||
                     path === "/categories"
                     ? "text-white"
                     : "text-primary"
@@ -145,7 +136,8 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        {path === "/" ||
+        {/* <ModalForSearch /> */}
+        {/* {path === "/" ||
           path.startsWith("/blog/") ||
           path === "/about" ||
           path === "/testimonials" ||
@@ -158,7 +150,6 @@ const NavBar = () => {
               WE SHIP OUR INSTRUMENTS GLOBALLY
             </h4>
             <span className="p-4 border rounded-full border-info group-hover:border group-hover:border-primary group-hover:bg-primary">
-              {/* <MdOutlineFileDownload className="text-lg md:text-xl" /> */}
             </span>
           </button>
         ) : (
@@ -170,10 +161,9 @@ const NavBar = () => {
               WE SHIP OUR INSTRUMENTS GLOBALLY
             </h4>
             <span className="p-4 border rounded-full border-info group-hover:border group-hover:border-primary group-hover:bg-primary">
-              {/* <MdOutlineFileDownload className="text-lg md:text-xl" /> */}
             </span>
           </button>
-        )}
+        )} */}
 
         <div className="block group lg:hidden">
           <div

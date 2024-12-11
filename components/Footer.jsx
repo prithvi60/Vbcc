@@ -128,8 +128,8 @@ const Footer = () => {
               fill
               className="object-cover object-center"
             />
-            <div className="absolute -top-44 -left-10 md:-left-5 md:-top-24 lg:-top-44 lg:-left-9">
-              <FooterBoxModal className={"w-[320px] h-[420px] md:w-[280px] md:h-[380px] lg:w-[310px] lg:h-[410px] fill-none"} />
+            <div className="absolute -left-10 md:-left-5 -top-16 lg:-left-9">
+              <FooterBoxModal className={"w-[320px]  md:w-[280px] lg:w-[310px] h-[200px] fill-none"} />
             </div>
           </div>
           <p className="w-4/5 mx-auto text-xs font-medium text-primary">
@@ -169,7 +169,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href={"www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
+              <Link href={"https://www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
                 <FaYoutube className="text-lg md:text-2xl" />
               </Link>
             </li>
@@ -289,7 +289,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="relative z-auto block w-full space-y-3 lg:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
+        <div className="relative z-0 block w-full space-y-3 lg:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
           <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-start">
             LET’S WORK TOGETHER
           </h4>

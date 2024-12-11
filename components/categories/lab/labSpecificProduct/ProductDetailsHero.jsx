@@ -26,11 +26,10 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
     const filteredURI = path[path.length - 1];
 
     const [{ Images, productName, desc, keys, spec, headers, headers2, spec2, pdf }] = LabProductsList.filter(
-        (val) => val.productName === decodeURIComponent(filteredURI)
+        (val) => val.productName === filteredURI.replace(/_/g, " ")
     );
 
-    const moreProducts = LabProductsList.filter((val) => val.productName !== decodeURIComponent(filteredURI))
-    // console.log(moreProducts.slice(0, 2));
+    const moreProducts = LabProductsList.filter((val) => val.productName !== filteredURI.replace(/_/g, " "))
 
 
     let sliderRef1 = useRef(null);
@@ -95,7 +94,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                                 title={"Request to buy"}
                                 type={"enquire"}
                                 pageType={"main"}
-                                page={""}
+                                page={productName}
                             />
                         </div>
                     </div>
@@ -158,7 +157,7 @@ const LabProductDetailsHero = ({ pdfFile, pdfName }) => {
                 </div>
             </section>
             <ProductDetails keys={keys} specs={spec} headers={headers} page={"lab"} headers2={headers2} specs2={spec2} />
-            <MoreProducts data={moreProducts.slice(0, 2)} type={"Laboratory"} />
+            <MoreProducts data={moreProducts.slice(0, 2)} type={"laboratory"} />
         </>
     );
 };

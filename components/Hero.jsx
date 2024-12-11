@@ -193,8 +193,8 @@ const Hero = () => {
                           aria-label="category products"
                           href={
                             list.type === "Dental"
-                              ? `/categories/dental/${encodeURIComponent(item.productName)}`
-                              : `/categories/laboratory/${encodeURIComponent(item.productName)}`
+                              ? `/categories/dental/${item.productName.replace(/\s/g, "_")}`
+                              : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
                           }
                           className="flex items-center gap-5 transition-all ease-linear duration-400 group"
                           key={id}

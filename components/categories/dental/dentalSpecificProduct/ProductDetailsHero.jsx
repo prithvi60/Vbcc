@@ -30,11 +30,11 @@ const ProductDetailsHero = () => {
 
     const [{ Images, productName, desc, keys, spec, pdf }] =
         DentalProductsList.filter(
-            (val) => val.productName === decodeURIComponent(filteredURI)
+            (val) => val.productName === filteredURI.replace(/_/g, " ")
         );
 
     const moreProducts = DentalProductsList.filter(
-        (val) => val.productName !== decodeURIComponent(filteredURI)
+        (val) => val.productName !== filteredURI.replace(/_/g, " ")
     );
     // console.log(moreProducts.slice(0, 2));
 
@@ -108,7 +108,7 @@ const ProductDetailsHero = () => {
                                 title={"Request to buy"}
                                 type={"enquire"}
                                 pageType={"main"}
-                                page={""}
+                                page={productName}
                             />
                         </div>
                     </div>
@@ -171,7 +171,7 @@ const ProductDetailsHero = () => {
                 </div>
             </section>
             <ProductDetails keys={keys} specs={spec} />
-            <MoreProducts data={moreProducts.slice(0, 2)} type={"Dental"} />
+            <MoreProducts data={moreProducts.slice(0, 2)} type={"dental"} />
         </>
     );
 };

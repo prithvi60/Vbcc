@@ -44,7 +44,7 @@ const HowWeDo = () => {
             <h4 className='text-3xl font-bold tracking-wide md:text-4xl xl:text-5xl text-info'>The "Tailor Made" Promise </h4>
             <p className='text-base md:text-lg !leading-[32px] text-secondary'>At VBCC, we understand that each client has unique requirements that may extend beyond our standardized product offerings. Our "Tailor-Made" promise ensures that we customize our designs to meet your specific needs. Whether it involves modifying existing products or creating entirely new solutions, our team of experts works closely with you to understand your challenges and deliver equipment that perfectly aligns with your operational goals. With a focus on flexibility and innovation, we provide bespoke solutions that enhance  efficiency, precision, and performance, ensuring your complete satisfaction and success. </p>
           </div>
-          <div className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
+          <div className="relative z-0 mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
             <Image
               alt="image"
               fill
@@ -62,7 +62,7 @@ const HowWeDo = () => {
         </div>
       </section>
       <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 pt-10 pb-8 text-white lg:gap-40 lg:flex-row font-Montserrat md:px-8 bg-primary">
-        <div className="w-full lg:w-1/4">
+        <div className="relative z-0 w-full lg:w-1/4">
           <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
             <Image
               src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
@@ -75,7 +75,7 @@ const HowWeDo = () => {
               <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
                 How we <span className="text-info">do it? </span>
               </h2>
-              <Modal2 pageType={"main"} />
+              <Modal2 pageType={"main"} page={"Home"} />
             </div>
             <div className="absolute z-10 -top-7 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-14">
               <TSBox className={"w-[300px] h-[440px] md:w-[320px] md:h-[440px] lg:w-[450px] lg:h-[550px] fill-none"} />

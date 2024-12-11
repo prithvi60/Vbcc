@@ -4,13 +4,13 @@ export const Story = () => {
   return (
     <>
       <section className="relative z-0 w-full h-full mb-10 text-white font-Montserrat">
-        <div className="relative w-full h-[50vh] md:h-[60vh] xl:h-[85dvh] ">
+        <div className="relative w-full h-[35vh] md:h-[50vh] xl:h-[65dvh] mt-24">
           {/* hero-mask */}
           <Image
             alt="background image"
             src={"https://ik.imagekit.io/webibee/VBCC/About%20Us%20-%20Hero%20Image.jpg?updatedAt=1733745359135"}
             fill
-            className="z-0 object-cover object-center brightness-[0.50]"
+            className="z-0 object-cover object-top brightness-[0.50]"
           />
         </div>
       </section>
@@ -38,7 +38,7 @@ export const Story = () => {
               more than 15,000 products and serve over 500 esteemed clients.
             </p>
           </div>
-          <div className="relative md:sticky md:top-10 w-[300px] mx-auto md:w-[490px] overflow-hidden h-[330px] md:h-[590px]">
+          <div className="relative md:sticky md:top-10 w-[300px] mx-auto md:w-[450px] overflow-hidden h-[330px] md:h-[400px] xl:w-[450px] xl:h-[480px]">
             <Image
               fill
               src={

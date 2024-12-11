@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const Newsletter = () => {
   return (
-    <section className="text-white padding font-Montserrat">
+    <section className="relative z-auto text-white padding font-Montserrat">
       <div className="relative border-2 before:absolute before:h-2 before:bg-info before:w-full before:-top-2.5 before:left-0 md:rounded-none border-info flex flex-col md:flex-row">
         <div className="relative w-full h-96 md:h-72 lg:h-96">
           <Image
@@ -38,7 +37,7 @@ const Newsletter = () => {
                 name="Email"
                 type="email"
                 placeholder="Subscribe our Newsletter"
-                className="bg-[#D9D9D933] rounded-full py-3 px-3  placeholder:text-secondary !border-none !outline-none w-full md:max-w-96 text-primary text-base md:text-lg"
+                className="bg-[#D9D9D933] rounded-full py-3 px-3  placeholder:text-secondary !border-none !outline-none w-full md:max-w-96 text-white text-base md:text-lg"
 
               />
               <button
@@ -78,14 +77,14 @@ const Newsletter = () => {
             </button>
           </form>
         </div>
-        <div className="absolute z-20 hidden w-full lg:block h-52 md:max-w-96 top-16 right-8 xl:right-20 xl:h-60">
+        <div className="absolute z-auto hidden w-full lg:block h-52 md:max-w-96 top-16 right-8 xl:right-20 xl:h-60">
           <Image
             alt="background image"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-1.png?updatedAt=1733226033627"
             fill
             className="z-0 object-cover object-center"
           />
-          <div className="absolute left-0 z-20 w-full h-3 -top-[68px] xl:-top-[64px]">
+          <div className="absolute left-0 z-auto w-full h-3 -top-[68px] xl:-top-[64px]">
             <Image
               alt="svg"
               src={"/svg 1.svg"}
