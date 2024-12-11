@@ -17,7 +17,7 @@ import {
 const BlogDetailHero = ({ data, postName }) => {
 
     return (
-        <section className="relative z-0 w-full h-full mb-10 text-white">
+        <section className="relative z-0 w-full h-full text-white">
             <div className="relative w-full h-full overflow-hidden">
                 <div className="relative w-full h-[75vh] md:h-[100vh]">
                     <Image
@@ -57,10 +57,10 @@ const BlogDetailHero = ({ data, postName }) => {
                                     </Link>
                                 </li>
                             </ul>
-                            <div className="absolute hidden w-full md:block left-2 -top-20 md:-top-36 lg:-top-48 2xl:-top-60">
-                                <HeroBox className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
+                            <div className="absolute hidden w-full md:block left-2 -top-20 md:-top-36 ">
+                                <HeroBox className="h-10 md:h-40 fill-none" />
                             </div>
-                            <div className="absolute block w-full md:hidden left-2 -top-24">
+                            <div className="absolute block w-full md:hidden left-2 -top-20">
                                 <HeroBoxMobile className="h-10 fill-none" />
                             </div>
                             <div className="w-full md:w-4/5">
@@ -88,8 +88,8 @@ const BlogDetailHero = ({ data, postName }) => {
                                     </div> */}
                                 </div>
                             </div>
-                            <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40 lg:-bottom-52 2xl:-bottom-64">
-                                <HeroBoxBottom className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />
+                            <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40">
+                                <HeroBoxBottom className="h-10 md:h-40 fill-none" />
                             </div>
                             <div className="absolute z-10 block w-full md:hidden left-2 -bottom-12">
                                 <HeroBoxBottomMobile className="h-10 md:h-40 lg:h-52 2xl:h-64 fill-none" />

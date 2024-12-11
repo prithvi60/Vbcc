@@ -17,13 +17,11 @@ export const postType = defineType({
             title: "Slug",
             validation: (Rule) => Rule.required(),
             options: {
-                source: 'title',
+                source: "title",
                 maxLength: 50,
-                slugify: (input) => input
-                    .toLowerCase()
-                    .replace(/\s+/g, '-')
-            }
-        },),
+                slugify: (input) => input.toLowerCase().replace(/\s+/g, "-"),
+            },
+        }),
         defineField({
             name: "blogShortRead",
             type: "text",
@@ -46,11 +44,25 @@ export const postType = defineType({
                     name: "alt",
                     title: "ALT",
                     validation: (Rule) => Rule.required(),
-                }
+                },
+                {
+                    type: "number",
+                    name: "width",
+                    title: "Width",
+                    description: "Width of the image in pixels",
+                    validation: (Rule) => Rule.min(1).integer(),
+                },
+                {
+                    type: "number",
+                    name: "height",
+                    title: "Height",
+                    description: "Height of the image in pixels",
+                    validation: (Rule) => Rule.min(1).integer(),
+                },
             ],
             options: {
-                hotspot: true
-            }
+                hotspot: true,
+            },
         }),
         defineField({
             name: "body",
@@ -60,12 +72,26 @@ export const postType = defineType({
                 { type: "block" },
                 {
                     type: "image",
-                    fields: [{ type: "text", name: "alt", title: "ALT" }],
+                    fields: [
+                        { type: "text", name: "alt", title: "ALT" },
+                        {
+                            type: "number",
+                            name: "width",
+                            title: "Width",
+                            validation: (Rule) => Rule.min(1).integer(),
+                        },
+                        {
+                            type: "number",
+                            name: "height",
+                            title: "Height",
+                            validation: (Rule) => Rule.min(1).integer(),
+                        },
+                    ],
+                    options: {
+                        hotspot: true,
+                    },
                 },
             ],
-            options: {
-                hotspot: true
-            }
         }),
     ],
 });
