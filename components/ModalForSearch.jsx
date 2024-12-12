@@ -111,7 +111,7 @@ const SpringModal = ({
                 ? `/categories/dental/${item.productName.replace(/\s/g, "_")}` // Dental product link
                 : item.slug === "lab"
                     ? `/categories/laboratory/${item.productName.replace(/\s/g, "_")}` // Lab product link
-                    : `/blog/${item.slug}`; // Blog post link
+                    : `/blog/${item.slug.current}`; // Blog post link
         router.push(path); // Navigate to the appropriate route
         setIsOpen(false);
     };
