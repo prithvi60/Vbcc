@@ -72,7 +72,7 @@ const ModalForSearch = () => {
         setResults(allResults);
         setIsVisible(!!allResults.length);
     };
-    console.log(results);
+    // console.log(results);
 
     return (
         <div className="grid md:-mt-2">
