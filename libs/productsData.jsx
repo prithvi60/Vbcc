@@ -76,7 +76,8 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "1.5 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685",
+        slug: "dental"
     },
     {
         mainImg:
@@ -155,7 +156,8 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "1.5 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685",
+        slug: "dental"
     },
     {
         mainImg:
@@ -229,7 +231,8 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "2 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-ZS.pdf?updatedAt=1732785767582"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-ZS.pdf?updatedAt=1732785767582",
+        slug: "dental"
     },
     {
         mainImg:
@@ -304,7 +307,8 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "2 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-BURNOUT.pdf?updatedAt=1732785767964"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-BURNOUT.pdf?updatedAt=1732785767964",
+        slug: "dental"
     },
 ];
 
@@ -606,7 +610,8 @@ export const LabProductsList = [
             "Phase",
             "Weight",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-BoxFurnace.pdf?updatedAt=1732786729732"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-BoxFurnace.pdf?updatedAt=1732786729732",
+        slug: "lab"
     },
     {
         mainImg:
@@ -820,7 +825,8 @@ export const LabProductsList = [
             "Phase",
             "Weight"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-box-type.pdf?updatedAt=1732786831810"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-box-type.pdf?updatedAt=1732786831810",
+        slug: "lab"
     },
     {
         mainImg:
@@ -1119,7 +1125,8 @@ export const LabProductsList = [
             "Phase",
             "Weight"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-raising.pdf?updatedAt=1732785792674"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-raising.pdf?updatedAt=1732785792674",
+        slug: "lab"
     },
     {
         mainImg:
@@ -1233,7 +1240,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-thermal-cycling.pdf?updatedAt=1732785797395"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-thermal-cycling.pdf?updatedAt=1732785797395",
+        slug: "lab"
     },
     {
         mainImg:
@@ -1521,7 +1529,8 @@ export const LabProductsList = [
             "Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tubular.pdf?updatedAt=1732785797417"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tubular.pdf?updatedAt=1732785797417",
+        slug: "lab"
     },
     {
         mainImg:
@@ -1809,7 +1818,8 @@ export const LabProductsList = [
             "Phase",
             "Weight"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tiltable.pdf?updatedAt=1732785797090"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tiltable.pdf?updatedAt=1732785797090",
+        slug: "lab"
     },
     {
         mainImg:
@@ -1938,7 +1948,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-rotary.pdf?updatedAt=1732785796005"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-rotary.pdf?updatedAt=1732785796005",
+        slug: "lab"
     },
     {
         mainImg:
@@ -2408,7 +2419,8 @@ export const LabProductsList = [
             "Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-2-3-zone.pdf?updatedAt=1732785790633"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-2-3-zone.pdf?updatedAt=1732785790633",
+        slug: "lab"
     },
     {
         mainImg:
@@ -2517,7 +2529,8 @@ export const LabProductsList = [
             "Economy Configuration",
             "Premium Configuration"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-chemical.pdf?updatedAt=1732785789403"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-chemical.pdf?updatedAt=1732785789403",
+        slug: "lab"
     },
     {
         mainImg:
@@ -2688,7 +2701,8 @@ export const LabProductsList = [
             "Phase",
             "Weight"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-horizontal.pdf?updatedAt=1732785790101"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-horizontal.pdf?updatedAt=1732785790101",
+        slug: "lab"
     },
     {
         mainImg:
@@ -2822,7 +2836,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-roller.pdf?updatedAt=1732785796156"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-roller.pdf?updatedAt=1732785796156",
+        slug: "lab"
     },
     {
         mainImg:
@@ -2936,7 +2951,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-aluminium.pdf?updatedAt=1732785788858"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-aluminium.pdf?updatedAt=1732785788858",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3037,7 +3053,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-magnesium.pdf?updatedAt=1732785789185"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-magnesium.pdf?updatedAt=1732785789185",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3172,7 +3189,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-bio-mass.pdf?updatedAt=1732785789229"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-bio-mass.pdf?updatedAt=1732785789229",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3281,7 +3299,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-essential.pdf?updatedAt=1732785790605"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-essential.pdf?updatedAt=1732785790605",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3406,7 +3425,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-delux.pdf?updatedAt=1732785790673"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-delux.pdf?updatedAt=1732785790673",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3546,7 +3566,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-hybrid.pdf?updatedAt=1732785797711"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-hybrid.pdf?updatedAt=1732785797711",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3660,7 +3681,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-hot-air.pdf?updatedAt=1732785789627"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-hot-air.pdf?updatedAt=1732785789627",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3769,7 +3791,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-vaccum.pdf?updatedAt=1732785797589"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-vaccum.pdf?updatedAt=1732785797589",
+        slug: "lab"
     },
     {
         mainImg:
@@ -3903,7 +3926,8 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)"
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-humidity.pdf?updatedAt=1732785790412"
+        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-humidity.pdf?updatedAt=1732785790412",
+        slug: "lab"
     },
 ];
 
