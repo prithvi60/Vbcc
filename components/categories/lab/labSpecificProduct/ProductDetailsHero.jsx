@@ -183,7 +183,7 @@ function PrevArrow(props) {
     return (
         <div
             className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer left-0 group"
+                "p-1.5 md:p-2 xl:p-3 z-10 rounded-full bg-primary absolute top-1/2 cursor-pointer left-0 group"
             }
             onClick={onClick}
         >

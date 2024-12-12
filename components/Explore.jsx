@@ -11,7 +11,7 @@ const Explore = () => {
       className="relative w-full h-full pt-40 overflow-hidden bg-white pb-60 text-primary font-Montserrat md:overflow-visible"
     >
       <div
-        className="absolute z-auto w-full h-[260px] md:h-[420px] 2xl:h-[450px] 2xxl:h-[490px] right-0 top-10
+        className="absolute z-auto w-full h-[115px] sm:h-[260px] md:h-[420px] 2xl:h-[450px] 2xxl:h-[490px] right-0 top-10
        md:w-4/5 2xxl:w-3/5 md:-top-24 2xl:-top-36"
       >
         <div
@@ -22,17 +22,19 @@ const Explore = () => {
         >
           <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-10"></div>
           <p className="relative z-20 w-full text-xl font-semibold text-white 2xl:mt-32 md:mt-10 xl:mt-20 md:text-2xl xl:text-5xl md:w-3/4">
-            Your Visualization Of Your Product,We Bring To Life.
+            Your Product Vision, Crafted into Reality by Us
           </p>
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-10 mb-10 2xxl:mt-20 md:mb-56 lg:flex-row">
         <div className="block p-10 mx-auto space-y-4">
-          <Link href={"/categories"} className="relative flex gap-2 items-center lg:block text-3xl text-[#A7ACB8] md:text-5xl xl:text-6xl group">
-            <h4 className="w-full font-bold tracking-wider lg:w-3/5">Explore Products</h4>
+          <Link href={"/categories"} className="relative w-full lg:w-2/5 flex justify-center md:justify-start gap-2 items-center lg:block text-3xl text-[#A7ACB8] hover:text-info transition-colors duration-400 ease-in-out md:text-5xl xl:text-6xl group">
+            <h4 className="w-3/5 font-bold tracking-wider">Explore Products</h4>
             <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-10 left-80 text-info" />
           </Link>
-          <Modal2 pageType={"main"} page={"Home"} />
+          <div className="w-full md:w-max">
+            <Modal2 pageType={"main"} page={"Home"} />
+          </div>
         </div>
         <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
           {exploreList.map((list, idx) => (

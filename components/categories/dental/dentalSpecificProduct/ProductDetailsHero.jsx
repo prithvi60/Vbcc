@@ -124,7 +124,7 @@ const ProductDetailsHero = () => {
                             >
                                 {Images.map((list, idx) => (
                                     <div
-                                        className="relative w-full mx-auto h-52 md:h-60 xl:h-80 group"
+                                        className="w-full mx-auto h-52 md:h-60 xl:h-80 group"
                                         key={idx}
                                     >
                                         <InnerImageZoom
@@ -137,7 +137,7 @@ const ProductDetailsHero = () => {
                                             // fullscreenOnMobile={isIOS}
                                             zoomType="hover"
                                             hideCloseButton={false}
-                                            className="z-20 !flex !items-center !justify-center object-contain object-center !w-full"
+                                            className="!flex !items-center !justify-center object-contain object-center !w-full"
                                         />
                                     </div>
                                 ))}
@@ -153,7 +153,7 @@ const ProductDetailsHero = () => {
                             >
                                 {Images.map((list, idx) => (
                                     <div
-                                        className={`relative !w-full lg:!w-36 h-16 md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""
+                                        className={`relative !w-full lg:!w-36 h-16 cursor-pointer md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""
                                             }`}
                                         key={idx}
                                     >
@@ -183,7 +183,7 @@ function NextArrow(props) {
     return (
         <div
             className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer right-0 group"
+                "p-1.5 md:p-2 xl:p-3 z-10 rounded-full bg-primary absolute top-1/2 cursor-pointer right-0 group"
             }
             onClick={onClick}
         >
@@ -197,7 +197,7 @@ function PrevArrow(props) {
     return (
         <div
             className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer ;left-0 group"
+                "p-1.5 md:p-2 z-10 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer left-0 group"
             }
             onClick={onClick}
         >

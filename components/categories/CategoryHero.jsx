@@ -21,7 +21,7 @@ const CategoryHero = ({
         <section className="relative z-auto w-full h-full font-Montserrat">
             {/* <div className="relative w-full h-[75dvh] lg:h-[75vh] bg-primary z-auto"></div> */}
             <div className="block w-full h-full bg-primary">
-                <div className="relative w-full pt-24 pb-14">
+                <div className="relative z-0 w-full pt-24 pb-14">
                     <div className="relative w-full h-[40vh] md:h-[55vh] overflow-hidden">
                         <Image
                             fill
@@ -56,7 +56,7 @@ const CategoryHero = ({
                         <PdfViewerComponent pdfFile={pdfFile} />
                     </div>
                 </div>
-                <div className="relative mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
+                <div className="relative z-0 mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
                     <Image
                         alt="image"
                         fill

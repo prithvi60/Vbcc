@@ -71,7 +71,7 @@ const HowWeDo = () => {
               className="object-cover object-center"
             />
             <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
-            <div className="absolute z-20 block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-16 md:-right-32 xl:-right-44">
+            <div className="absolute z-20 block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-3 md:-right-20 ">
               <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
                 How we <span className="text-info">do it? </span>
               </h2>

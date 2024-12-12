@@ -44,10 +44,15 @@ export const heroSlider = [
                 type: "Laboratory PRODUCTS",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/isometric.png?updatedAt=1732097720641",
-                productName: "Roller Hearth Furnace",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
+                productName: "Chemical Vapour Deposition",
                 type: "Laboratory PRODUCTS",
             },
+            // {
+            //     img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/isometric.png?updatedAt=1732097720641",
+            //     productName: "Roller Hearth Furnace",
+            //     type: "Laboratory PRODUCTS",
+            // },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/isometric.png?updatedAt=1732095997475",
                 productName: "Microwave Furnace",
