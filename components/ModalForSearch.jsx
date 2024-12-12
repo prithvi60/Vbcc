@@ -6,9 +6,10 @@ import Fuse from "fuse.js";
 import { POSTS_QUERY } from "@/sanity/Queries";
 import { client } from "@/sanity/lib/client";
 import { DentalProductsList, LabProductsList } from "@/libs/productsData";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const ModalForSearch = () => {
+    const path = usePathname()
     const [isOpen, setIsOpen] = useState(false);
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
@@ -78,7 +79,7 @@ const ModalForSearch = () => {
         <div className="grid md:-mt-2">
             <button
                 onClick={() => setIsOpen(true)}
-                className="p-2 bg-white rounded-lg text-primary"
+                className={`p-2 rounded-lg shadow-lg text-primary ${path === "/about" || path === "/testimonials" || path === "/blog" || path === "/contact" ? "bg-primary" : "bg-white"}`}
             >
                 <IoSearch className="text-xl md:text-2xl text-info" />
             </button>

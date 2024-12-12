@@ -148,7 +148,7 @@ const Hero = () => {
                     </LinkScroll>
                     <Link
                       aria-label="category link"
-                      href={"/categories/dental"}
+                      href={"/categories"}
                     >
                       <button
                         className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
