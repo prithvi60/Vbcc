@@ -26,6 +26,7 @@
     "critters": "^0.0.20",
     "framer-motion": "^10.17.12",
     "fslightbox-react": "^1.7.6",
+    "fuse.js": "^7.0.0",
     "next": "14.0.3",
     "next-sanity": "^9.8.16",
     "nodemailer": "^6.9.16",
