@@ -99,8 +99,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-mask_home {
-  mask-image: url("/mask-image.png");
-  -webkit-mask-image: url("/mask-image.png");
+  mask-image: url("/mask-image.svg");
+  -webkit-mask-image: url("/mask-image.svg");
   mask-size: cover;
   -webkit-mask-size: cover;
   mask-repeat: no-repeat;

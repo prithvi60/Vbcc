@@ -15,9 +15,9 @@ const Explore = () => {
        md:w-4/5 2xxl:w-3/5 md:-top-24 2xl:-top-36"
       >
         <div
-          className="relative w-full h-full px-6 py-8 bg-top bg-no-repeat bg-cover card-mask_2"
+          className="relative w-full h-full px-6 py-8 bg-bottom bg-no-repeat bg-cover card-mask_2"
           style={{
-            backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/Your%20Visualization.jpg?updatedAt=1733748825298')",
+            backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257')",
           }}
         >
           <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-10"></div>
@@ -47,7 +47,7 @@ const Explore = () => {
                 src={list.img}
                 fill
                 alt="image"
-                className="object-cover object-center  brightness-[0.30]"
+                className="object-cover object-center brightness-[0.45]"
               />
               <div className="absolute block w-full space-y-4 text-white bottom-14 left-5">
                 <div className="relative z-auto size-12 md:size-16">

@@ -19,7 +19,7 @@ const Statistics = () => {
           >
             <h2 className="w-full text-lg font-semibold 2xl:text-xl md:w-3/5">{item.title}</h2>
             <div className="w-full">
-              <div className="text-[26px] font-bold text-center">
+              <div className="text-[26px] font-bold text-center text-info">
                 <CountUp
                   end={item.count}
                   duration={2}
