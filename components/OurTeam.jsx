@@ -28,14 +28,14 @@ const OurTeam = () => {
                     </div>
                     <div className="pt-5 space-y-10">
                         <div className="flex items-center justify-center w-full gap-10 lg:w-1/2 lg:justify-start group">
-                            <div className="relative h-24 w-28 md:size-36">
+                            <div className="relative size-40">
                                 <Image
                                     alt="image"
                                     fill
                                     src={
-                                        "/CEO-modified.png"
+                                        "https://ik.imagekit.io/webibee/VBCC/homepage/CEO%20-%20Ellipse.png?updatedAt=1734095330733"
                                     }
-                                    className="z-0 object-contain transition ease-linear transform border-t-8 rounded-full border-info group-hover:scale-125 duration-400"
+                                    className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
                             </div>
                             <div className="relative w-3/4 space-y-2">
@@ -72,14 +72,14 @@ const OurTeam = () => {
                                         CTO & Director
                                     </p>
                                 </div>
-                                <div className="relative w-24 h-24 md:size-36">
+                                <div className="relative size-32 md:size-44">
                                     <Image
                                         alt="image"
                                         fill
                                         src={
-                                            "https://ik.imagekit.io/webibee/VBCC/homepage/CTO.jpg?updatedAt=1733748401643"
+                                            "https://ik.imagekit.io/webibee/VBCC/homepage/CTO%20-%20Ellipse.png?updatedAt=1734095330811"
                                         }
-                                        className="z-0 object-contain transition ease-linear transform border-t-8 rounded-full border-info group-hover:scale-125 duration-400"
+                                        className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                     />
                                 </div>
                             </div>
