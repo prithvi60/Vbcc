@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import BreadCrumb from "@/components/categories/BreadCrumb.jsx";
 import { Modal1 } from "@/components/landing page/Modal";
 import Image from "next/image";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const PdfViewerComponent = dynamic(() => import('./PDFViewer.jsx'), {
-    ssr: false // Disable server-side rendering for this component
+const PdfViewerComponent = dynamic(() => import("./PDFViewer.jsx"), {
+    ssr: false, // Disable server-side rendering for this component
 });
 
 const CategoryHero = ({
@@ -16,7 +16,6 @@ const CategoryHero = ({
     categoryImg,
     pdfFile,
 }) => {
-
     return (
         <section className="relative z-auto w-full h-full font-Montserrat">
             {/* <div className="relative w-full h-[75dvh] lg:h-[75vh] bg-primary z-auto"></div> */}
@@ -45,7 +44,9 @@ const CategoryHero = ({
                     <p className="text-base md:text-lg font-medium !leading-[32px] text-secondary">
                         {desc2}
                     </p>
-                    <div className={` ${title === "Categories" ? "hidden" : "flex"} flex-col items-center justify-center gap-4 md:flex-row md:justify-start md:gap-8`}>
+                    <div
+                        className={` ${title === "Categories" ? "hidden" : "flex"} flex-col items-center justify-center gap-4 md:flex-row md:justify-start md:gap-8`}
+                    >
                         <Modal1
                             styles={"bg-info text-white"}
                             title={"Download Catalog"}
@@ -65,6 +66,18 @@ const CategoryHero = ({
                     />
                     <div className="absolute top-2 md:top-8 group-hover:bg-info group-hover:scale-80 transition-colors duration-400 ease-in-out z-10 left-2 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
                 </div>
+                {/* <div className="mx-auto">
+                    <iframe
+                        src="https://my.spline.design/worldplanet-420b614a8021891a406c7375f5c1c0a8/"
+                        // frameBorder="0"
+                        title="Categories Product"
+                        loading="lazy"
+                        width="100%"
+                        height="100%"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="h-[430px] w-[450px]"
+                    ></iframe>
+                </div> */}
             </div>
         </section>
     );
