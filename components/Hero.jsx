@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <section className="relative z-0 w-full h-full mb-10 text-white lg:mb-24">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        <div className="relative w-full h-[1150px] md:h-[85vw] slider-container lg:h-[1000px] xl:h-[1200px] hero-mask_home -rotate-[0.1deg] -mt-[3px] overflow-hidden">
+        <div className="relative w-full h-[1150px] md:h-[850px] slider-container lg:h-[1000px] xl:h-[1200px] hero-mask_home -rotate-[0.1deg] -mt-[3px] overflow-hidden">
           {loading && (
             <div className="absolute w-full h-[1150px] md:h-[85vw] lg:h-[1000px] xl:h-[1200px] overflow-hidden">
               <Image

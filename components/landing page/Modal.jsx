@@ -215,7 +215,6 @@ const SpringModal = ({
 
       const zohoDataResult = await zohoResponse.json();
       const emailDataResult = await emailResponse.json();
-      console.log(zohoDataResult);
 
       // Check for success in both responses
       if (zohoDataResult && emailDataResult.success) {

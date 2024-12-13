@@ -53,95 +53,20 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
               key={idx}
               className={`w-max uppercase font-semibold text-3xl sm:text-[40px]`}
             >
-              {link.menu === "CATEGORIES" ? (
-                // Dropdown Toggle
-                <Link
-                  passHref
-                  href={link.ref}
-                  className={`flex items-center gap-2 group cursor-pointer`}
-                  onClick={handleClick}
-                >
-                  <span className="rounded-lg text-primary">{link.menu}</span>
-                  <span
-                  // className={`${
-                  //   isCategoriesOpen ? "rotate-180" : "rotate-0"
-                  // } transition-transform duration-300`}
-                  >
-                    <RiArrowDownSLine className="text-4xl text-info" />
-                  </span>
-                </Link>
-              ) : (
-                <Link
-                  passHref
-                  className="flex items-center gap-2 group"
-                  href={link.ref}
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
-                    {link.menu}
-                  </span>
-                  <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
-                </Link>
-              )}
-
-              {link.subMenu && (
-                <ul className="mt-4 space-y-2">
-                  {link.subMenu.map((subItem, id) => (
-                    <li key={id} className="text-lg sm:text-xl">
-                      <Link
-                        passHref
-                        href={subItem.ref}
-                        className="flex items-center gap-2 group"
-                        onClick={() => setIsOpen(!isOpen)}
-                      >
-                        <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
-                          {subItem.menu}
-                        </span>
-                        <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              {/* Submenu - Dropdown */}
-              {/* <div
-                className={`transition-max-height transform duration-700 ease-in-out overflow-hidden ${isCategoriesOpen ? "max-h-screen" : "max-h-0"
-                  }`}
+              <Link
+                passHref
+                className="flex items-center gap-2 group"
+                href={link.ref}
+                onClick={() => setIsOpen(!isOpen)}
               >
-                {link.menu === "CATEGORIES" &&
-                  isCategoriesOpen &&
-                  link.subMenu && (
-                    <ul className="mt-4 space-y-2">
-                      {link.subMenu.map((subItem, id) => (
-                        <li key={id} className="text-lg sm:text-xl">
-                          <Link
-                            passHref
-                            href={subItem.ref}
-                            className="flex items-center gap-2 group"
-                            onClick={() => setIsOpen(!isOpen)}
-                          >
-                            <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
-                              {subItem.menu}
-                            </span>
-                            <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-              </div> */}
+                <span className="rounded-lg after:h-1 after:bg-info after:block after:transition-all hover:after:h-1 after:w-0 hover:after:w-full hover:after:bg-info hover:after:block hover:after:ease-linear hover:after:duration-[3000] text-primary">
+                  {link.menu}
+                </span>
+                <RiArrowRightUpLine className="hidden w-8 h-8 group-hover:block group-hover:text-info" />
+              </Link>
             </li>
           ))}
         </ul>
-        {/* <div className="hidden md:flex relative w-full h-[425px]">
-          <Image
-            fill
-            src={"https://ik.imagekit.io/webibee/VBCC/mobile-nav.png"}
-            alt="Logo"
-            className="absolute object-cover object-center"
-          />
-        </div> */}
       </div>
     </section>
   );

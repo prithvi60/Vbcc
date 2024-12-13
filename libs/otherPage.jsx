@@ -82,14 +82,14 @@ export const navLinks = [
 
 export const exploreList = [
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/homepage/dental-explore.png?updatedAt=1733211695302",
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Explore%20Prodcut%20Sec%20-%20Dental%20Furnace.jpg?updatedAt=1734069940322",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-2.png?updatedAt=1733225200760",
         title: "Dental Furnaces",
         desc: "Over 2+ products for Dental Furnace.",
         ref: "/categories/dental",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-3.png?updatedAt=1733225202920",
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Explore%20Products%20-%20Laboratory%20Furnaces.jpg?updatedAt=1734069940230",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/explore-icon-3.png?updatedAt=1733225201590",
         title: "Laboratory Furnaces",
         desc: "Over 20+ products for Laboratory Furnace.",
@@ -102,7 +102,7 @@ export const items = [
         id: 1,
         title: "Working Strategy",
         imgSrc:
-            "https://ik.imagekit.io/webibee/VBCC/homepage/hwd-1.png?updatedAt=1733211647806",
+            "https://ik.imagekit.io/webibee/VBCC/homepage/Working%20Strategy%20Slider.jpg?updatedAt=1734069941892",
         description:
             "Our goal is to align  your business objectives and user needs to create a mutually  beneficial solution that maximize the impact and return from the product  we build for you, By working together.",
         ref: "",
