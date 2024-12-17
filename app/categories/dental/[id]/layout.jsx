@@ -2,8 +2,7 @@ import { DentalProductsList } from "@/libs/productsData";
 
 export async function generateMetadata({ params }) {
   const { id } = params;
-  const decodedId = decodeURIComponent(id)
-  // console.log(decodedId);
+  const decodedId = id.replace(/_/g, " ")
 
   // Fetch the product based on the slug
   const product = DentalProductsList.find((item) => item.productName === decodedId);

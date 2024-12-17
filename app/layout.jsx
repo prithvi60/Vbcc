@@ -39,7 +39,7 @@ export const metadata = {
   },
   metadataBase: new URL("https://vbccinstruments.com"),
   openGraph: {
-    title: "VBCC High temperature Instruments",
+    title: "VBCC High Temperature Instruments",
     description: "VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings.",
     url: "https://vbccinstruments.com",
     images: [
