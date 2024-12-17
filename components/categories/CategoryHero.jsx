@@ -3,6 +3,7 @@ import BreadCrumb from "@/components/categories/BreadCrumb.jsx";
 import { Modal1 } from "@/components/landing page/Modal";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import Spline from "@splinetool/react-spline";
 
 const PdfViewerComponent = dynamic(() => import("./PDFViewer.jsx"), {
     ssr: false, // Disable server-side rendering for this component
@@ -66,9 +67,10 @@ const CategoryHero = ({
                     />
                     <div className="absolute top-2 md:top-8 group-hover:bg-info group-hover:scale-80 transition-colors duration-400 ease-in-out z-10 left-2 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
                 </div>
+                {/* <Spline /> */}
                 {/* <div className="mx-auto">
                     <iframe
-                        src="https://my.spline.design/worldplanet-420b614a8021891a406c7375f5c1c0a8/"
+                        src='https://my.spline.design/example-76f14259e2cfd73277c819591975e703/'
                         // frameBorder="0"
                         title="Categories Product"
                         loading="lazy"

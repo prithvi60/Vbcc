@@ -324,7 +324,7 @@ export const LabProductsList = [
         ],
         productName: "Box or Muffle Furnace",
         metaTitle: "Box Furnace / Muffle Furnace",
-        metaDesc: "VBCC’s high-performance box and muffle furnaces are capable of reaching temperatures up to 1700°C, suitable for diverse applications in laboratories.",
+        metaDesc: "VBCC’s high-performance box and muffle furnaces are capable of reaching temperatures up to 1800°C, suitable for diverse applications in laboratories.",
         desc: "VBCC’s meticulously designed box furnace, or muffle furnace, delivers a great compact solution for labs with limited space. The microprocessor temperature control provides excellent stability and uniformity, while the thermal mass assures fast heating times with low power consumption.",
         keys: [
             {
