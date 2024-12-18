@@ -149,9 +149,6 @@ const SpringModal = ({
                                         <IoSearch className="text-xl md:text-2xl opacity-60 text-info" />
                                     </div>
                                 </div>
-                                {/* <button className="p-2.5 md:px-8 md:py-3.5 text-base font-semibold tracking-wider bg-info rounded-md text-white">
-                                    Search
-                                </button> */}
                             </div>
                             {(results.length === 0 && query !== "") ? (
                                 <div

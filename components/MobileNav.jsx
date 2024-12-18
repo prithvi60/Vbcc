@@ -2,18 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
-import { RiArrowDownSLine } from "react-icons/ri";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { useState } from "react";
 
 const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
   const [open, setOpen] = useState(false);
-  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsCategoriesOpen(!isCategoriesOpen);
-    setIsOpen(!isOpen);
-  };
 
   return (
     <section

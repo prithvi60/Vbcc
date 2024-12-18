@@ -5,11 +5,9 @@ import DefaultLayout from "@/components/DefaultLayout";
 export default function Home() {
 
   return (
-    <main>
-      <DefaultLayout>
-        <CategoryPage />
-        <CategoryTypes />
-      </DefaultLayout>
-    </main>
+    <DefaultLayout>
+      <CategoryPage />
+      <CategoryTypes />
+    </DefaultLayout>
   );
 }

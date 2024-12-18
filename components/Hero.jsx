@@ -204,6 +204,7 @@ const Hero = () => {
                               <Image
                                 alt="sample image"
                                 fill
+                                priority
                                 src={item.img}
                                 className="object-contain object-center"
                               />
@@ -255,6 +256,7 @@ function SampleNextArrow(props) {
       <Image
         alt="next arrow"
         fill
+        priority
         src={"/prev arrow.png"}
         className="object-contain object-center p-2"
       />
@@ -272,6 +274,7 @@ function SamplePrevArrow(props) {
       <Image
         alt="prev arrow"
         fill
+        priority
         src={"/next arrow.png"}
         className="object-contain object-center p-2"
       />
