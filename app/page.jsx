@@ -11,7 +11,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "VBCC High temperature Instruments",
+    name: "VBCC High Temperature Instruments",
     image:
       "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628",
     description:
@@ -19,8 +19,39 @@ export default function Home() {
     email: "info@vbccinstruments.com",
     url: "https://vbccinstruments.com/",
   };
+  const jsonLdLocal = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "VBCC HTI",
+    image:
+      "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628",
+    url: "https://vbccinstruments.com/categories",
+    telephone: "+91 9600478315",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress:
+        "207, 3rd Link Road, Nehru Nagar Industrial Estate, Kottivakam",
+      addressLocality: "Chennai, Tamil Nadu",
+      postalCode: "600041",
+      addressCountry: "IN",
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  };
+
   return (
-    <main>
+    <>
       <Head>
         <title>VBCC High Temperature Instruments</title>
         <meta
@@ -31,17 +62,21 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
+        />
       </Head>
-      <DefaultLayout>
-        <Hero />
-        <Clients />
-        <Explore />
-        <HowWeDo />
-        <ProductLayout />
-        {/* <Testimonials />
-        <OurTeam /> */}
-        <Newsletter />
-      </DefaultLayout>
-    </main>
+      <main>
+        <DefaultLayout>
+          <Hero />
+          <Clients />
+          <Explore />
+          <HowWeDo />
+          <ProductLayout />
+          <Newsletter />
+        </DefaultLayout>
+      </main>
+    </>
   );
 }

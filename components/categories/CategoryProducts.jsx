@@ -9,12 +9,11 @@ const CategoryProducts = ({ categoryName, data }) => {
             <h4 className="relative text-2xl font-semibold tracking-wide capitalize text-info after:absolute after:h-1 w-max after:w-2/5 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl">
                 Products - {categoryName} Furnaces
             </h4>
-            <div className="flex flex-wrap items-center justify-center w-full gap-5 pt-8 pb-20 lg:justify-start">
+            <div className="grid w-full gap-5 pt-8 pb-20 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3">
                 {data.map((list, idx) => (
                     <Link href={`/categories/${categoryName}/${list.productName.replace(/\s/g, "_").replace(/\(/g, '(').replace(/\)/g, ')')}`}
                         className="relative w-full max-w-sm space-y-8 group font-Montserrat"
                         key={idx}
-
                     >
                         <div className="relative mx-auto transition-all duration-500 ease-linear transform w-36 h-36 group-hover:scale-150 xl:w-72 xl:h-44">
                             <Image
@@ -37,33 +36,3 @@ const CategoryProducts = ({ categoryName, data }) => {
 
 export default CategoryProducts;
 
-const productLists = [
-    {
-        img: "/sample 1.png",
-        title: "Vacuum Sintering Furnace",
-        temp: "1200 C",
-        energy: "1.5 KW",
-        id: 1,
-    },
-    {
-        img: "/sample 2.png",
-        title: "Burnout Furnace",
-        temp: "1200 C",
-        energy: "1.5 KW",
-        id: 2,
-    },
-    {
-        img: "/sample 3.png",
-        title: "Zirconia Sintering Furnace",
-        temp: "1600 C",
-        energy: "2 KW",
-        id: 3,
-    },
-    {
-        img: "/sample 4.png",
-        title: "Vacuum Pressing Furnace",
-        temp: "1200 C",
-        energy: "2 KW",
-        id: 4,
-    },
-];

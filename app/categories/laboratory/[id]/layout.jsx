@@ -4,7 +4,7 @@ import { LabProductsList } from "@/libs/productsData";
 export async function generateMetadata({ params }) {
   const { id } = params;
   const decodedId = id.replace(/_/g, " ")
-  console.log(decodedId);
+  // console.log(decodedId);
 
   // Fetch the product based on the slug
   const product = LabProductsList.find((item) => item.productName === decodedId);

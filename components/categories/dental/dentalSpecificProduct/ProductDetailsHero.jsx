@@ -14,15 +14,11 @@ import MoreProducts from "../../MoreProducts";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
-import { IoCloseSharp } from "react-icons/io5";
-// import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
-// const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 const ProductDetailsHero = () => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
-    const [isIOS, setIsIOS] = useState(false);
     const path = usePathname()
         .split("/")
         .filter((x) => x);
@@ -44,11 +40,6 @@ const ProductDetailsHero = () => {
     useEffect(() => {
         setNav1(sliderRef1);
         setNav2(sliderRef2);
-    }, []);
-    useEffect(() => {
-        if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-            setIsIOS(true);
-        }
     }, []);
 
     const settings = {

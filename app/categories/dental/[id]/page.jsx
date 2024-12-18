@@ -4,11 +4,9 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <main>
-            <DefaultLayout>
-                <ProductDetailsHero />
-            </DefaultLayout>
-        </main>
+        <DefaultLayout>
+            <ProductDetailsHero />
+        </DefaultLayout>
     )
 }
 

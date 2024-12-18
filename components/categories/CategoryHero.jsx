@@ -3,7 +3,6 @@ import BreadCrumb from "@/components/categories/BreadCrumb.jsx";
 import { Modal1 } from "@/components/landing page/Modal";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import Spline from "@splinetool/react-spline";
 
 const PdfViewerComponent = dynamic(() => import("./PDFViewer.jsx"), {
     ssr: false, // Disable server-side rendering for this component
@@ -26,6 +25,7 @@ const CategoryHero = ({
                         <Image
                             fill
                             src={heroBg}
+                            priority
                             alt="hero bg"
                             className="object-cover object-center"
                         />
