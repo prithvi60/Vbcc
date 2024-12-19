@@ -130,55 +130,18 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-5'>
-            {othersData.heroTestimonial.map((item, idx) => (
-              <Link href={"/testimonials"}
-                key={idx}
-                className="relative border-t-3 border-info bg-gradient-to-b from-[#102242] via-[#FFFFFF1A] to-[#FFFFFF] w-full md:mt-6"
-              >
-                <div className="absolute top-0 left-0 w-full h-2">
-                  <Image
-                    alt="svg"
-                    src={"/svg 1.svg"}
-                    fill
-                    className="object-contain object-center"
-                  />
-                </div>
-                <div className="w-full p-5 md:p-6">
-                  <div className="flex items-center justify-center w-full h-56">
-                    <IoMdQuote className="text-8xl md:text-9xl text-info" />
-                  </div>
-                  <p className="w-full text-sm leading-tight md:text-base">
-                    {item.header}
-                  </p>
-                </div>
-                <div className="flex gap-5 p-5 text-white lg:h-full lg:max-h-48 xl:max-h-40 md:p-6 bg-primary">
-                  <div className="relative w-20 h-20">
-                    <Image
-                      alt="svg"
-                      src={item.logo}
-                      fill
-                      className="object-contain object-center"
-                    />
-                  </div>
-                  <div className="block space-y-2 md:space-y-3">
-                    <h4 className="text-lg md:text-xl">{item.title}</h4>
-                    <p className="text-xs tracking-wide">{item.subTitle}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div> */}
-          <div className="w-full h-full max-w-xs gap-5 mx-auto space-y-8 md:max-w-4xl columns-1 md:columns-2 lg:columns-3">
+          <div className="w-full h-full max-w-xs gap-5 mx-auto space-y-8 md:max-w-5xl columns-1 md:columns-2 lg:columns-3 group">
             {heroTestimonial.map((list, idx) => (
-              <div key={idx} className="w-full h-full max-w-xs space-y-4 shadow-xl break-inside-avoid">
+              <div key={idx} className="w-full h-full max-w-xs space-y-4 overflow-hidden transition-all duration-500 ease-in-out transform rounded-sm shadow-xl select-none break-inside-avoid md:hover:scale-110">
                 <div className="relative w-full h-48 overflow-hidden bg-primary">
                   <Image fill src={list.logo} alt="image" className="object-contain object-center" />
                 </div>
                 <div className="p-5 space-y-4 md:space-y-8 md:p-10">
                   <p className="text-sm md:text-base text-primary">{list.header}</p>
                   <div className="space-y-1.5">
-                    <h4 className="font-semibold capitalize text-primary/80 text-[13px] md:text-[15px]">{list.title}</h4>
+                    <h4 className="font-semibold capitalize text-primary/80 text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{
+                      __html: list.title
+                    }} />
                     <p className="text-xs capitalize">{list.subTitle}</p>
                   </div>
                   {/* <div>

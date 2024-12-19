@@ -3,7 +3,6 @@ import OurTeam from "@/components/OurTeam";
 import { Story } from "@/components/about/Story";
 import Timeline from "@/components/about/Timeline";
 import { Vison } from "@/components/about/Vison";
-import Head from "next/head";
 
 export default function Home() {
 
@@ -35,21 +34,17 @@ export default function Home() {
   };
 
   return (
-    <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
-      <div>
-        <DefaultLayout>
-          <Story />
-          <OurTeam />
-          <Vison />
-          <Timeline />
-        </DefaultLayout>
-      </div>
-    </>
+    <div>
+      <DefaultLayout>
+        <Story />
+        <OurTeam />
+        <Vison />
+        <Timeline />
+      </DefaultLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+    </div>
   );
 }

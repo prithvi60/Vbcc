@@ -313,52 +313,52 @@ export const landingItems = [
 
 export const heroTestimonial = [
     {
-        header: "VBCC’s meticulously designed box furnace, or muffle furnace, delivers a great compact solution for labs with limited space. The microprocessor temperature control provides excellent stability and uniformity, while the thermal mass assures fast heating times with low power consumption.",
-        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-        title: "Centre for Nanotechnology Research, VIT University.",
-        subTitle: "on the Custom Made Hot Press"
+        header: "We are happy to say that the Multideck Pot Mill supplied is still working, and we’re using it on a daily basis for laboratory-level mixing and homogenisation of ceramic slurries. We are thankful to you for providing a machine like this.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+        title: `Dr. H. Sreemoolanadhan <br/> Head, Glass & Electronic Materials Division <br/> Vikram Sarabhai Space Centre (VSSC)`,
+        subTitle: "ISRO"
     },
     {
         header: "No Company in India, except VB Ceramic Consultants, took this challenging task to succession.",
-        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
-        title: "Vikram Sarabhai Space Centre",
-        subTitle: "on building Microwave Hybrid Furnace"
-    },
-    {
-        header: "Units operate satisfactorily, VB Ceramic Consultants service enabled our research project's success.Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
-        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-        title: "Department of Ceramic Technology, Anna University.",
-        subTitle: "on multiple Units working effectively"
-    },
-    {
-        header: "Extremely pleased with supercritical reactors and post-sale service from VB Ceramic Consultants team.",
-        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
-        title: "CSIR-CECRI",
-        subTitle: "on Custom made Supercritical Reactors"
-    },
-    {
-        header: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it. ",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-        title: "Centre for Nanotechnology Research, VIT University.",
-        subTitle: "on the Custom Made Hot Press"
+        title: "Dr. A. Nirmala Grace <br/> Professor & Director <br/> Centre of Nanotechnology Research",
+        subTitle: "VIT University"
     },
     {
-        header: "Brigade Plus transforms sales management and customer journeys with VB Ceramic CRM",
-        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
-        title: "Vikram Sarabhai Space Centre",
-        subTitle: "on building Microwave Hybrid Furnace"
+        header: "VBCC had designed innovatively and developed a sit casting furnace with a bottom pouring arrangement. The furnace is working satisfactorily. These are great advantages towards maintenance and the cost of the equipment with less floor area.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/Velammal.png?updatedAt=1734592438460",
+        title: "Dr. P. Jawahar <br/> Associate Professor and Head <br/> Department of Production Engineering ",
+        subTitle: "Velammal Engineering College"
     },
     {
-        header: "These versatile box-type vacuum furnace provides controlled high-temperature processing in a vacuum environment, essential for applications like brazing, sintering, and heat treatment. Our furnace also ensures the purity of the thermal processing environment.",
-        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-        title: "Department of Ceramic Technology, Anna University.",
-        subTitle: "on multiple Units working effectively"
-    },
-    {
-        header: "Brigade Plus transforms sales management and customer journeys with VB Ceramic CRM",
+        header: "The performance of computerised Dilatometer 1000 °C (PREMIUM) supplied by VBCC, Chennai (India) for the temperature range RT – 1000 degree centigrade has been found consistently excellent",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
-        title: "CSIR-CECRI",
-        subTitle: "on Custom made Supercritical Reactors"
+        title: "Dr L K Sharma <br/> Scientist in Charge",
+        subTitle: "CSIR - Central Glass & Ceramic Research Institute (CSIR–CGCRI)"
+    },
+    {
+        header: "I am happy to say that VBCC has developed the units indigenously at an affordable cost that is comparatively less than imported ones. Now these units are working satisfactorily, and the service rendered by them has deserved great appreciation, which enabled us to complete our research work. These instruments, the planetary ball mill and dilatometer, are very useful for our Ph.D. scholars, MTech, and BTech students for their project work.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+        title: "Dr. P. Manohar Ph.D., F.I.I.Cer <br/> Professor & Head  <br/> Department of Ceramic Technology",
+        subTitle: "Anna University"
+    },
+    {
+        header: "The performance of muffle furnace and vacuum oven manufactured by VBCC Chennai is excellent. I am extremely happy with the after safe service rendered by the manufacturer. They are on time in attending and providing solutions to the problems. ",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
+        title: "Dr. N. Lakshminarasimhan, Ph.D., <br/> Scientist <br/> Functional Materials Division",
+        subTitle: "CSIR - Central Electrochemical Research Institute"
+    },
+    {
+        header: "VBCC has supplied Pressure Composition Isotherm (PCI) apparatus to our research laboratory. The instrument is used for studying hydrogen absorption and desorption of metallic and non-metallic materials with varying temperature and pressure.",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/NIT.png?updatedAt=1734592438606",
+        title: "Dr. S. Kumaran <br/> Associate Professor <br/> Dept. of Metallurgical and Materials Engg.",
+        subTitle: "NIT Tiruchirappalli"
+    },
+    {
+        header: "We have continuously interacted with the VBCC team during the process of microwave furnace development and successfully verified the feasibility of the unit. Consequently, the unit has been installed in our laboratory and we have successfully sintered barium titanite ferroelectrics repeatedly. The properties have been compared and found satisfactory. ",
+        logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544",
+        title: "Prof. V.R.K Murthy <br/> Microwave Laboratory",
+        subTitle: "IIT Madras"
     }
 ]
 
