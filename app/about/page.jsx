@@ -34,17 +34,17 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <DefaultLayout>
         <Story />
         <OurTeam />
         <Vison />
         <Timeline />
       </DefaultLayout>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-    </div>
+    </section>
   );
 }

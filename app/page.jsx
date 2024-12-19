@@ -51,14 +51,6 @@ export default function Home() {
 
   return (
     <main>
-      <DefaultLayout>
-        <Hero />
-        <Clients />
-        <Explore />
-        <HowWeDo />
-        <ProductLayout />
-        <Newsletter />
-      </DefaultLayout>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -67,6 +59,14 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
       />
+      <DefaultLayout>
+        <Hero />
+        <Clients />
+        <Explore />
+        <HowWeDo />
+        <ProductLayout />
+        <Newsletter />
+      </DefaultLayout>
     </main>
   );
 }
