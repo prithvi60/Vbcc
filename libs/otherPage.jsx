@@ -319,7 +319,7 @@ export const heroTestimonial = [
         subTitle: "ISRO"
     },
     {
-        header: "No Company in India, except VB Ceramic Consultants, took this challenging task to succession.",
+        header: "The effort they have put into designing the equipment and further customising it in accordance with our needs is directly appreciable. I am delighted to say the equipment supplied is indigenous, efficient, and affordable in comparison with the imported items. Overall, the vacuum hot press is supplied to cater to our requirements and is highly efficient, and we are very happy about the purchase. ",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
         title: "Dr. A. Nirmala Grace <br/> Professor & Director <br/> Centre of Nanotechnology Research",
         subTitle: "VIT University"
