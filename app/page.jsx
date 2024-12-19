@@ -5,7 +5,6 @@ import HowWeDo from "@/components/HowWeDo";
 import Newsletter from "@/components/Newsletter";
 import ProductLayout from "@/components/ProductLayout";
 import DefaultLayout from "@/components/DefaultLayout";
-import Head from "next/head";
 
 export default function Home() {
   const jsonLd = {
@@ -51,32 +50,23 @@ export default function Home() {
   };
 
   return (
-    <>
-      <Head>
-        <title>VBCC High Temperature Instruments</title>
-        <meta
-          name="description"
-          content="VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings."
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
-        />
-      </Head>
-      <main>
-        <DefaultLayout>
-          <Hero />
-          <Clients />
-          <Explore />
-          <HowWeDo />
-          <ProductLayout />
-          <Newsletter />
-        </DefaultLayout>
-      </main>
-    </>
+    <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
+      />
+      <DefaultLayout>
+        <Hero />
+        <Clients />
+        <Explore />
+        <HowWeDo />
+        <ProductLayout />
+        <Newsletter />
+      </DefaultLayout>
+    </main>
   );
 }
