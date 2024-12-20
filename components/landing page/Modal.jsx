@@ -131,7 +131,7 @@ export const Modal2 = ({ pageType, page }) => {
   );
 };
 
-const SpringModal = ({
+export const SpringModal = ({
   isOpen,
   setIsOpen,
   type = "",

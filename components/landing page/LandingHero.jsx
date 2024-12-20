@@ -1,23 +1,23 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import React, { useState } from "react";
+import {
+  MdKeyboardDoubleArrowRight,
+  MdOutlineFileDownload,
+} from "react-icons/md";
 import CompanyStats from "./CompanyStats";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { Modal1 } from "./Modal";
+import { Modal1, SpringModal } from "./Modal";
 import { HeroBox, HeroBoxBottom } from "@/svg_components/LandingHeroBox";
 const LandingHero = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="relative w-full h-full text-white mb-7">
-      <div className="relative w-full h-full overflow-hidden rounded-2xl">
-        <div className="absolute top-6 left-4 h-9 w-28 2xl:h-16 2xl:w-40">
+      <div className="relative z-0 w-full h-full overflow-hidden rounded-2xl">
+        <div className="absolute w-32 -left-2 xl:left-0 top-4 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44">
           <Image
             alt="VBCC Logo"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
@@ -63,7 +63,10 @@ const LandingHero = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://www.youtube.com/@vbcc_hti"} target="_blank">
+                  <Link
+                    href={"https://www.youtube.com/@vbcc_hti"}
+                    target="_blank"
+                  >
                     <FaYoutube className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
@@ -110,7 +113,9 @@ const LandingHero = () => {
                 <Image
                   alt="image"
                   fill
-                  src={"https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034"}
+                  src={
+                    "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034"
+                  }
                   className="z-20 object-contain object-center transition-all duration-500 ease-linear group-hover:scale-125"
                 />
                 <div className="absolute top-2 md:top-4 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info transition-all duration-500 group-hover:scale-90 ease-linear z-10 left-1 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56]  size-44 md:size-52 xl:size-64"></div>
@@ -121,16 +126,18 @@ const LandingHero = () => {
             </div>
           </div>
         </div>
-
-        <Modal1
-          styles={
-            "absolute top-5 md:top-7 right-1 md:right-5 bg-gradient-to-r from-[#6B778C80] to-[#FFFFFF0D] text-white hover:opacity-80 border border-info uppercase !rounded-full font-Montserrat"
-          }
-          title={"DOWNLOAD BROCHURE"}
-          type={"download"}
-          page={"landing"}
-        />
+        <button
+          onClick={() => setIsOpen(true)}
+          className={`font-semibold w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]
+                 flex items-center text-sm md:text-base gap-3 p-0 absolute top-5 md:top-7 right-1 md:right-5 bg-gradient-to-r from-[#6B778C80] to-[#FFFFFF0D] text-white hover:opacity-80 border border-info uppercase rounded-full font-Montserrat`}
+        >
+          <h4 className="px-2 py-2 md:px-6">DOWNLOAD BROCHURE</h4>
+          <span className="p-2 border rounded-full border-info">
+            <MdOutlineFileDownload className="text-lg md:text-xl" />
+          </span>
+        </button>
       </div>
+      {isOpen && <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />}
       <CompanyStats />
     </section>
   );
