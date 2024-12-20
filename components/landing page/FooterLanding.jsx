@@ -149,7 +149,7 @@ const FooterLanding = () => {
             </p>
           </div>
         </div>
-        <div className="block relative w-full space-y-3 md:space-y-5 xl:space-y-8 xl:w-[320px]">
+        <div className="block relative z-0 w-full space-y-3 md:space-y-5 xl:space-y-8 xl:w-[320px]">
           <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-left">
             Our Location
           </h4>
@@ -164,7 +164,7 @@ const FooterLanding = () => {
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-64 md:w-full"
           ></iframe>
-          <div className="absolute z-10 hidden xl:block xl:-top-28 xl:-left-8">
+          <div className="absolute hidden -z-10 xl:block xl:-top-28 xl:-left-8">
             <FooterBoxModal
               className={" xl:w-[380px] xl:h-[380px] fill-none"}
             />

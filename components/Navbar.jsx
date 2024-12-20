@@ -22,7 +22,7 @@ const NavBar = () => {
         <div className="relative flex items-center justify-between w-full lg:justify-start lg:gap-20">
           <Link href={"/"}>
             <div
-              className={`relative  w-32 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44 lg:-ml-3`}
+              className={`relative w-32 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44 lg:-ml-3`}
             >
               {path === "/" || path === "/blog" || path === "/testimonials" || path === "/contact" || path === "/about" || path === "/faq" ? (
                 <Image

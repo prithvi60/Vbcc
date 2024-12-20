@@ -1,4 +1,5 @@
 "use client";
+import { heroTestimonial } from "@/libs/otherPage";
 import Image from "next/image";
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -19,7 +20,7 @@ const TestimonialLanding = () => {
         prevArrow: <PrevArrow />,
         responsive: [
             {
-                breakpoint: 1023,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                 },
@@ -45,7 +46,7 @@ const TestimonialLanding = () => {
             </h3>
             <div className="w-full h-full slider-container">
                 <Slider {...settings}>
-                    {TestimonialList.map((list, idx) => (
+                    {heroTestimonial.map((list, idx) => (
                         <div
                             key={idx}
                             className="relative border-t-3 border-info bg-gradient-to-b from-[#102242] via-[#FFFFFF1A] to-[#FFFFFF] h-full w-full sm:w-80"
@@ -63,21 +64,23 @@ const TestimonialLanding = () => {
                                     <IoMdQuote className="text-8xl md:text-9xl text-info" />
                                 </div>
                                 <p className="w-full text-sm leading-tight md:text-base">
-                                    {list.para}
+                                    {list.header}
                                 </p>
                             </div>
                             <div className="flex items-center gap-5 p-5 text-white md:p-6 bg-primary p-">
-                                <div className="relative w-20 h-20">
+                                <div className="relative h-20 min-w-14 md:min-w-20">
                                     <Image
                                         alt="svg"
-                                        src={list.icon}
+                                        src={list.logo}
                                         fill
                                         className="object-contain object-center"
                                     />
                                 </div>
                                 <div className="block space-y-2 md:space-y-3">
-                                    <h4 className="text-lg md:text-xl">{list.title}</h4>
-                                    <p className="text-xs tracking-wide">{list.subtle}</p>
+                                    <h4 className="text-lg md:text-xl" dangerouslySetInnerHTML={{
+                                        __html: list.title
+                                    }} />
+                                    <p className="text-xs tracking-wide">{list.subTitle}</p>
                                 </div>
                             </div>
                         </div>
@@ -90,44 +93,44 @@ const TestimonialLanding = () => {
 
 export default TestimonialLanding;
 
-const TestimonialList = [
-    {
-        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-        para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
-        title: "Anna University",
-        subtle: "Department of Ceramic technology",
-    },
-    {
-        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-        para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
-        title: "VIT University",
-        subtle: "Centre of Nano technology research",
-    },
-    {
-        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
-        para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
-        title: "ISRO",
-        subtle: "Department of Space",
-    },
-    {
-        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-        para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
-        title: "Anna University",
-        subtle: "Department of Ceramic technology",
-    },
-    {
-        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-        para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
-        title: "VIT University",
-        subtle: "Centre of Nano technology research",
-    },
-    {
-        icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
-        para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
-        title: "ISRO",
-        subtle: "Department of Space",
-    },
-];
+// const TestimonialList = [
+//     {
+//         icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+//         para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
+//         title: "Anna University",
+//         subtle: "Department of Ceramic technology",
+//     },
+//     {
+//         icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+//         para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
+//         title: "VIT University",
+//         subtle: "Centre of Nano technology research",
+//     },
+//     {
+//         icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+//         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
+//         title: "ISRO",
+//         subtle: "Department of Space",
+//     },
+//     {
+//         icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
+//         para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
+//         title: "Anna University",
+//         subtle: "Department of Ceramic technology",
+//     },
+//     {
+//         icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
+//         para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
+//         title: "VIT University",
+//         subtle: "Centre of Nano technology research",
+//     },
+//     {
+//         icon: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
+//         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
+//         title: "ISRO",
+//         subtle: "Department of Space",
+//     },
+// ];
 
 
 function NextArrow(props) {
