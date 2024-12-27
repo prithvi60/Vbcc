@@ -4,6 +4,7 @@ export const DentalProductsList = [
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
         Images: [
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Sintering.png?updatedAt=1732078648278",
+            // "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Sintering%20(1).png?updatedAt=1735302472879",
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Sintering.png?updatedAt=1732078649015",
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Sintering.png?updatedAt=1732078652287",
         ],

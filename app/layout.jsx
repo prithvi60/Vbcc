@@ -5,6 +5,7 @@ import { Lora, Montserrat, Urbanist, Tinos } from "next/font/google";
 import { Partytown } from "@builder.io/partytown/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Script from "next/script";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -61,6 +62,21 @@ export default function RootLayout({ children }) {
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <Script
+          id="zoho-salesiq"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$zoho = window.$zoho || {};
+              $zoho.salesiq = $zoho.salesiq || {ready:function(){}}
+            `
+          }}
+        />
+        <Script
+          id="zsiqscript"
+          strategy="lazyOnload"
+          src="https://salesiq.zohopublic.in/widget?wc=siqa8fbaf972c0475b84c311fab99e8d540305aff2088302c2d92994751b9599b8b2e14cd30253658ddbd8b618216ff88306aef043fabdb322129c1598c6d969184"
+        />
         <Partytown debug={true} forward={["dataLayer.push"]} />
         <script
           type="text/partytown"
