@@ -127,10 +127,10 @@ const ProductDetailsHero = () => {
                                             fadeDuration={300}
                                             mobileBreakpoint={640}
                                             hideHint
-                                            src={list}
-                                            zoomSrc={list}
+                                            src={list.img}
+                                            zoomSrc={list.img}
                                             zoomScale={1}
-                                            alt={`image-${idx}`}
+                                            alt={`${list.alt}`}
                                             // fullscreenOnMobile={isIOS}
                                             zoomType="hover"
                                             hideCloseButton={false}
@@ -155,9 +155,9 @@ const ProductDetailsHero = () => {
                                         key={idx}
                                     >
                                         <Image
-                                            alt="image"
+                                            alt={list.alt}
                                             fill
-                                            src={list}
+                                            src={list.img}
                                             className="z-20 object-cover object-center"
                                         />
                                     </div>

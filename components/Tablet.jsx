@@ -25,25 +25,10 @@ const Tablet = ({ headers, data }) => {
                 <thead className="sticky z-10 -top-1 text-primary bg-info">
                     <tr>
                         {renderHeaders()}
-                        {/* {specs.thead.map((list, idx) => (
-                            <th className="px-4 py-2 text-sm font-semibold text-center border border-primary" key={idx}>{list}</th>
-                        ))} */}
                     </tr>
                 </thead>
                 <tbody>
                     {renderRows()}
-                    {/* {specs.tbody.map((item, index) => (
-                        <tr key={index}>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.model}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.maxTemp}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.innerDimensions}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.volume}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.outerDimensions}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.maxPower}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.phase}</td>
-                            <td className="px-4 py-2 text-sm text-center bg-white border border-primary text-primary">{item.weight}</td>
-                        </tr>
-                    ))} */}
                 </tbody>
             </table>
         </div>

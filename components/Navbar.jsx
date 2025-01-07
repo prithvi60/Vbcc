@@ -116,7 +116,7 @@ const NavBar = () => {
                                 >
                                   {item.menu}
                                   <p className="flex items-center gap-2">
-                                    Furnaces
+                                    {item.menu2}
                                     <span>
                                       <MdDoubleArrow className="text-2xl text-info" />
                                     </span>

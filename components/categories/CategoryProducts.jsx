@@ -3,15 +3,15 @@ import Link from "next/link";
 import React from "react";
 
 const CategoryProducts = ({ categoryName, data }) => {
-
     return (
         <section className="w-full h-auto space-y-10 overflow-hidden md:space-y-16 bg-primary padding">
             <h4 className="relative text-2xl font-semibold tracking-wide capitalize text-info after:absolute after:h-1 w-max after:w-2/5 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl">
-                Products - {categoryName} Furnaces
+                {`Products - ${categoryName} ${categoryName !== "Material Processing Equipment" ? "Furnaces" : ""}`}
             </h4>
             <div className="grid w-full gap-5 pt-8 pb-20 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3">
                 {data.map((list, idx) => (
-                    <Link href={`/categories/${categoryName}/${list.productName.replace(/\s/g, "_").replace(/\(/g, '(').replace(/\)/g, ')')}`}
+                    <Link
+                        href={`${categoryName === "Material Processing Equipment" || categoryName === "funsai" || categoryName === "seikei" || categoryName === "oshidashi" ? `/categories/material_processing_equipment/${categoryName}/${list.productName.replace(/\s/g, "_").replace(/\(/g, "(").replace(/\)/g, ")")}` : `/categories/${categoryName}/${list.productName.replace(/\s/g, "_").replace(/\(/g, "(").replace(/\)/g, ")")}`}`}
                         className="relative w-full max-w-sm space-y-8 group font-Montserrat"
                         key={idx}
                     >
@@ -35,4 +35,3 @@ const CategoryProducts = ({ categoryName, data }) => {
 };
 
 export default CategoryProducts;
-
