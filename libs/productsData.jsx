@@ -3,13 +3,23 @@ export const DentalProductsList = [
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Sintering.png?updatedAt=1732078648278",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Sintering.png?updatedAt=1732078649015",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Sintering.png?updatedAt=1732078652287",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Sintering.png?updatedAt=1732078648278",
+                alt: "Innovative vacuum sintering furnace for heat-based material compacting, perfect for efficient dental restoration processes",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Sintering.png?updatedAt=1732078649015",
+                alt: "VBCC Vacuum Sintering Furnace displayed, highlighting its innovative features for efficient dental material processing",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Sintering.png?updatedAt=1732078652287",
+                alt: "Close-up view of VBCC's Dental Vacuum Sintering Furnace, showcasing its advanced design and functionality in dental applications",
+            },
         ],
         productName: "Vacuum Sintering Furnace",
         metaTitle: "Vacuum Sintering Furnace | Dental Furnace",
-        metaDesc: "We are offering premium vacuum sintering furnaces for dental use. You can now enhance your dental restorative procedures with our cutting-edge technology.",
+        metaDesc:
+            "We are offering premium vacuum sintering furnaces for dental use. You can now enhance your dental restorative procedures with our cutting-edge technology.",
         desc: "Our vacuum sintering furnaces are manufactured with advanced design for the process of compacting and forming a solid mass of material using heat without melting it to the point of liquefaction. It’s very efficient and suitable for dental restorative procedures.",
         keys: [
             {
@@ -77,19 +87,29 @@ export const DentalProductsList = [
             { label: "Display", value: "7 Inch" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685",
-        slug: "dental"
+        slug: "dental",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Pressing.png?updatedAt=1732078648555",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Pressing.png?updatedAt=1732078649273",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Pressing.png?updatedAt=1732078652121",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Pressing.png?updatedAt=1732078648555",
+                alt: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Pressing.png?updatedAt=1732078652121",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Pressing.png?updatedAt=1732078649273",
+                alt: "Image of a vacuum press furnace showcasing its sleek modern features and advanced technology for high-temperature processing",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Pressing.png?updatedAt=1732078652121",
+                alt: "An image of a vacuum pressing furnace, an integral part of dental restoration treatments, where ceramic materials are processed.",
+            },
         ],
         productName: "Vacuum Pressing Furnace",
         metaTitle: "Vacuum Pressing Furnace up to 1200 °C",
-        metaDesc: "VBCC High Temperature Instruments manufactures advanced vacuum pressing furnaces tailored for dental professionals. Elevate your treatments with our innovative and dependable equipment.",
+        metaDesc:
+            "VBCC High Temperature Instruments manufactures advanced vacuum pressing furnaces tailored for dental professionals. Elevate your treatments with our innovative and dependable equipment.",
         desc: "Vacuum press furnaces are ideal for dental labs by combining the principles of vacuum, heat, and pressure. Our vacuum press furnace offers a significant advantage over traditional furnaces by including uniform heating, reduced contamination, enhanced metallurgical properties, rapid cooling, and computer-controlled processes.",
         keys: [
             {
@@ -157,19 +177,29 @@ export const DentalProductsList = [
             { label: "Display", value: "7 Inch" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685",
-        slug: "dental"
+        slug: "dental",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Zirconia.png?updatedAt=1732078649081",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Zirconia.png?updatedAt=1732078650656",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Zirconia.png?updatedAt=1732078652570",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Zirconia.png?updatedAt=1732078649081",
+                alt: "The VBCC Zirconia Sintering Furnace efficiently sinters zirconia, improving strength for dental applications like crowns and bridges.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Zirconia.png?updatedAt=1732078650656",
+                alt: "An image of a Zirconia Sintering Furnace, which sinters zirconia—a highly durable material used for crowns, bridges, and implant abutments",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Zirconia.png?updatedAt=1732078652570",
+                alt: "Visual representation of a dental zirconia sintering furnace, showcasing its advanced design and functionality for high-temperature applications.",
+            },
         ],
         productName: "Zirconia Sintering Furnace",
         metaTitle: "Zirconia Sintering Furnace | Dental Furnace",
-        metaDesc: "Discover high-quality zirconia sintering furnaces at VBCC High Temperature Instruments. Enhance your dental practice with advanced technology for superior results and efficiency.",
+        metaDesc:
+            "Discover high-quality zirconia sintering furnaces at VBCC High Temperature Instruments. Enhance your dental practice with advanced technology for superior results and efficiency.",
         desc: "VBCC’s Zirconia Sintering Furnace is perfect for sintering and crystallising zirconia for dental restorations, such as crowns, bridges, and caps. It strengthens and improves the structural integrity of material.",
         keys: [
             {
@@ -232,19 +262,29 @@ export const DentalProductsList = [
             { label: "Display", value: "7 Inch" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-ZS.pdf?updatedAt=1732785767582",
-        slug: "dental"
+        slug: "dental",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Burnout.png?updatedAt=1732078647305",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Burnout.png?updatedAt=1732078649652",
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Burnout.png?updatedAt=1732078651660",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Burnout.png?updatedAt=1732078647305",
+                alt: "State-of-the-art burnout furnace for dental labs, utilizing double-walled stainless steel and high-quality insulation for optimal performance",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Burnout.png?updatedAt=1732078649652",
+                alt: "A burnout furnace designed for dental restoration, featuring double-walled stainless steel and advanced insulation for efficient muffle burnout",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Burnout.png?updatedAt=1732078651660",
+                alt: "VBCC's innovative dental burnout furnace, engineered for reliable and effective burnout in dental procedures",
+            },
         ],
         productName: "Burnout Furnace",
         metaTitle: "Dental Burnout Furnace",
-        metaDesc: "Redefine your dental treatments with our Dental Burnout Furnace, offering reliability and precision. Perfect for achieving high-quality results in dental restorations.",
+        metaDesc:
+            "Redefine your dental treatments with our Dental Burnout Furnace, offering reliability and precision. Perfect for achieving high-quality results in dental restorations.",
         desc: "Our burnout furnaces are crafted especially for dental laboratories for burnout of muffles and also for speed investments. It is made with a state-of-the-art design with double-walled stainless-steel sheets and imported insulation material.",
         keys: [
             {
@@ -308,7 +348,7 @@ export const DentalProductsList = [
             { label: "Display", value: "7 Inch" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-BURNOUT.pdf?updatedAt=1732785767964",
-        slug: "dental"
+        slug: "dental",
     },
 ];
 
@@ -317,14 +357,23 @@ export const LabProductsList = [
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/front.png?updatedAt=1732097861553",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/back.png?updatedAt=1732097864262",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/left.png?updatedAt=1732097862821",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/right.png?updatedAt=1732097864352",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/front.png?updatedAt=1732097861553",
+                alt: "The VBCC muffle furnace offers a space-saving design with precise temperature control and quick heating for laboratory use",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/left.png?updatedAt=1732097862821",
+                alt: "VBCC's box furnace is a compact solution for labs, ensuring stable temperatures and efficient heating with low energy use",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/right.png?updatedAt=1732097864352",
+                alt: "A high-performance laboratory box furnace, featuring a sturdy exterior and precise temperature controls.",
+            },
         ],
         productName: "Box or Muffle Furnace",
         metaTitle: "Box Furnace / Muffle Furnace",
-        metaDesc: "VBCC’s high-performance box and muffle furnaces are capable of reaching temperatures up to 1800°C, suitable for diverse applications in laboratories.",
+        metaDesc:
+            "VBCC’s high-performance box and muffle furnaces are capable of reaching temperatures up to 1800°C, suitable for diverse applications in laboratories.",
         desc: "VBCC’s meticulously designed box furnace, or muffle furnace, delivers a great compact solution for labs with limited space. The microprocessor temperature control provides excellent stability and uniformity, while the thermal mass assures fast heating times with low power consumption.",
         keys: [
             {
@@ -611,20 +660,29 @@ export const LabProductsList = [
             "Weight",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-BoxFurnace.pdf?updatedAt=1732786729732",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/isometric.png?updatedAt=1732097644736",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/front.png?updatedAt=1732097663951",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/back.png?updatedAt=1732097665936",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/left.png?updatedAt=1732097666796",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/right.png?updatedAt=1732097661427",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/front.png?updatedAt=1732097663951",
+                alt: ": High-temperature box-type vacuum furnace, essential for brazing and sintering, providing a controlled and pure thermal processing environment",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/left.png?updatedAt=1732097666796",
+                alt: "Box type vacuum furnace with double-wall MS body, customizable dimensions, designed for efficient thermal processing tasks",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/right.png?updatedAt=1732097661427",
+                alt: "Stainless steel door box vacuum furnace with insulation and chain mechanism, designed for efficient thermal processing and reduced heat loss",
+            },
         ],
         productName: "Box Type Vacuum Furnace",
         metaTitle: "Vacuum Furnace | Laboratory Furnace | VBCC",
-        metaDesc: "Check out our innovative box-type vacuum furnaces, engineered for efficiency and reliability. Perfect for various applications in heat treatment and metallurgy.",
+        metaDesc:
+            "Check out our innovative box-type vacuum furnaces, engineered for efficiency and reliability. Perfect for various applications in heat treatment and metallurgy.",
         desc: "These versatile box-type vacuum furnace provides controlled high-temperature processing in a vacuum environment, essential for applications like brazing, sintering, and heat treatment. Our furnace also ensures the purity of the thermal processing environment.",
         keys: [
             {
@@ -685,135 +743,135 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "BVF 3/10",
+                Model: "BVF 3/10",
                 "Max Temperature": "1000 C",
                 "Inner Dimensions (mm)": "150*150*150",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "50"
+                Phase: "2 phase",
+                Weight: "50",
             },
             {
-                "Model": "BVF 5/10",
+                Model: "BVF 5/10",
                 "Max Temperature": "1000 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "5.625 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "50"
+                Phase: "2 phase",
+                Weight: "50",
             },
             {
-                "Model": "BVF 3/12",
+                Model: "BVF 3/12",
                 "Max Temperature": "1200 C",
                 "Inner Dimensions (mm)": "150*150*150",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "50"
+                Phase: "2 phase",
+                Weight: "50",
             },
             {
-                "Model": "BVF 5/12",
+                Model: "BVF 5/12",
                 "Max Temperature": "1200 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "5.625 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "50"
+                Phase: "2 phase",
+                Weight: "50",
             },
             {
-                "Model": "GF 1/16",
+                Model: "GF 1/16",
                 "Max Temperature": "1600 C",
                 "Inner Dimensions (mm)": "100*100*100",
                 "Volume (in liters)": "1 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF 3/16",
+                Model: "GF 3/16",
                 "Max Temperature": "1600 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF 5/16",
+                Model: "GF 5/16",
                 "Max Temperature": "1600 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "5.625 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF 1/18",
+                Model: "GF 1/18",
                 "Max Temperature": "1800 C",
                 "Inner Dimensions (mm)": "100*100*100",
                 "Volume (in liters)": "1 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF 3/18",
+                Model: "GF 3/18",
                 "Max Temperature": "1800 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF 5/18",
+                Model: "GF 5/18",
                 "Max Temperature": "1800 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "5.625 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF- 1/20",
+                Model: "GF- 1/20",
                 "Max Temperature": "2000 C",
                 "Inner Dimensions (mm)": "100*100*100",
                 "Volume (in liters)": "1 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF- 3/20",
+                Model: "GF- 3/20",
                 "Max Temperature": "2000 C",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
+                Phase: "3 phase",
+                Weight: "200",
             },
             {
-                "Model": "GF- 5/20",
+                Model: "GF- 5/20",
                 "Max Temperature": "2000 C",
                 "Inner Dimensions (mm)": "100*100*100",
                 "Volume (in liters)": "5.625 L",
                 "Outer Dimension (mm)": "800*800*1500",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "200"
-            }
+                Phase: "3 phase",
+                Weight: "200",
+            },
         ],
         headers: [
             "Model",
@@ -823,23 +881,32 @@ export const LabProductsList = [
             "Outer Dimension (mm)",
             "Max Power",
             "Phase",
-            "Weight"
+            "Weight",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-box-type.pdf?updatedAt=1732786831810",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/isometric.png?updatedAt=1732097835580",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/front.png?updatedAt=1732097836874",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/back.png?updatedAt=1732097835342",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/left.png?updatedAt=1732097836954",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/right.png?updatedAt=1732097836883",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/front.png?updatedAt=1732097836874",
+                alt: "VBCC’s Raising Hearth Furnace is designed for efficient sample handling in sintering, annealing, and high-temperature material processes",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/left.png?updatedAt=1732097836954",
+                alt: "A user-friendly raising hearth furnace with a bottom-loading design, optimizing the efficiency of sample loading and unloading",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/right.png?updatedAt=1732097836883",
+                alt: "An image of a Raising Hearth furnace made of high-quality mild steel, designed for durability and longevity in high-temperature operations",
+            },
         ],
         productName: "Raising Hearth Furnace",
         metaTitle: "Raising Hearth Furnace up to 1800°C",
-        metaDesc: "Want a more efficient heating solution? Check out our Raising Hearth Furnace, equipped with a versatile bottom-loading design that ensures superior efficiency and adaptability.",
+        metaDesc:
+            "Want a more efficient heating solution? Check out our Raising Hearth Furnace, equipped with a versatile bottom-loading design that ensures superior efficiency and adaptability.",
         desc: "VBCC’s Raising Hearth Furnace is super convenient for sample handling and is effectively used for a variety of applications, including sintering, annealing, advanced material synthesis, firing and sintering advanced ceramics, and high-temperature glass melting.",
         keys: [
             {
@@ -915,205 +982,205 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "RHF 3/12",
+                Model: "RHF 3/12",
                 "Inner Dimensions (mm)": "150*150*150",
                 "Max Temperature": "1200 C",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": "75"
+                Phase: "1 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 5/12",
+                Model: "RHF 5/12",
                 "Inner Dimensions (mm)": "150*150*200",
                 "Max Temperature": "1200 C",
                 "Volume (in liters)": "4.5 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": "75"
+                Phase: "1 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 8/12",
+                Model: "RHF 8/12",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Max Temperature": "1200 C",
                 "Volume (in liters)": "8 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "3 phase",
-                "Weight": "75"
+                Phase: "3 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 12/12",
+                Model: "RHF 12/12",
                 "Inner Dimensions (mm)": "200*200*300",
                 "Max Temperature": "1200 C",
                 "Volume (in liters)": "12 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "6 Kw",
-                "Phase": "3 phase",
-                "Weight": "105"
+                Phase: "3 phase",
+                Weight: "105",
             },
             {
-                "Model": "RHF 27/12",
+                Model: "RHF 27/12",
                 "Inner Dimensions (mm)": "300*300*300",
                 "Max Temperature": "1200 C",
                 "Volume (in liters)": "27 L",
                 "Outer Dimension (mm)": "700*700*1400",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "135"
+                Phase: "3 phase",
+                Weight: "135",
             },
             {
-                "Model": "RHF 3/14",
+                Model: "RHF 3/14",
                 "Inner Dimensions (mm)": "150*150*150",
                 "Max Temperature": "1400 C",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": "75"
+                Phase: "1 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 5/14",
+                Model: "RHF 5/14",
                 "Inner Dimensions (mm)": "150*150*200",
                 "Max Temperature": "1400 C",
                 "Volume (in liters)": "4.5 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": "75"
+                Phase: "1 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 8/14",
+                Model: "RHF 8/14",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Max Temperature": "1400 C",
                 "Volume (in liters)": "8 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "3 phase",
-                "Weight": "75"
+                Phase: "3 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 12/14",
+                Model: "RHF 12/14",
                 "Inner Dimensions (mm)": "200*200*300",
                 "Max Temperature": "1400 C",
                 "Volume (in liters)": "12 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "6 Kw",
-                "Phase": "3 phase",
-                "Weight": "105"
+                Phase: "3 phase",
+                Weight: "105",
             },
             {
-                "Model": "RHF 27/14",
+                Model: "RHF 27/14",
                 "Inner Dimensions (mm)": "300*300*300",
                 "Max Temperature": "1400 C",
                 "Volume (in liters)": "27 L",
                 "Outer Dimension (mm)": "700*700*1400",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "135"
+                Phase: "3 phase",
+                Weight: "135",
             },
             {
-                "Model": "RHF 3/16",
+                Model: "RHF 3/16",
                 "Inner Dimensions (mm)": "150*150*150",
                 "Max Temperature": "1600 C",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "75"
+                Phase: "2 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 5/16",
+                Model: "RHF 5/16",
                 "Inner Dimensions (mm)": "150*150*200",
                 "Max Temperature": "1600 C",
                 "Volume (in liters)": "4.5 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "75"
+                Phase: "2 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 8/16",
+                Model: "RHF 8/16",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Max Temperature": "1600 C",
                 "Volume (in liters)": "8 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "3 phase",
-                "Weight": "75"
+                Phase: "3 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 12/16",
+                Model: "RHF 12/16",
                 "Inner Dimensions (mm)": "200*200*300",
                 "Max Temperature": "1600 C",
                 "Volume (in liters)": "12 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "6 Kw",
-                "Phase": "3 phase",
-                "Weight": "105"
+                Phase: "3 phase",
+                Weight: "105",
             },
             {
-                "Model": "RHF 27/16",
+                Model: "RHF 27/16",
                 "Inner Dimensions (mm)": "300*300*300",
                 "Max Temperature": "1600 C",
                 "Volume (in liters)": "27 L",
                 "Outer Dimension (mm)": "700*700*1400",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "135"
+                Phase: "3 phase",
+                Weight: "135",
             },
             {
-                "Model": "RHF 3/17",
+                Model: "RHF 3/17",
                 "Inner Dimensions (mm)": "150*150*150",
                 "Max Temperature": "1700 C",
                 "Volume (in liters)": "3.375 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "75"
+                Phase: "2 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 5/17",
+                Model: "RHF 5/17",
                 "Inner Dimensions (mm)": "150*150*200",
                 "Max Temperature": "1700 C",
                 "Volume (in liters)": "4.5 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": "75"
+                Phase: "2 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 8/17",
+                Model: "RHF 8/17",
                 "Inner Dimensions (mm)": "150*150*250",
                 "Max Temperature": "1700 C",
                 "Volume (in liters)": "8 L",
                 "Outer Dimension (mm)": "550*550*1400",
                 "Max Power": "4 Kw",
-                "Phase": "3 phase",
-                "Weight": "75"
+                Phase: "3 phase",
+                Weight: "75",
             },
             {
-                "Model": "RHF 12/17",
+                Model: "RHF 12/17",
                 "Inner Dimensions (mm)": "200*200*300",
                 "Max Temperature": "1700 C",
                 "Volume (in liters)": "12 L",
                 "Outer Dimension (mm)": "600*600*1400",
                 "Max Power": "6 Kw",
-                "Phase": "3 phase",
-                "Weight": "105"
+                Phase: "3 phase",
+                Weight: "105",
             },
             {
-                "Model": "RHF 27/17",
+                Model: "RHF 27/17",
                 "Inner Dimensions (mm)": "300*300*300",
                 "Max Temperature": "1700 C",
                 "Volume (in liters)": "27 L",
                 "Outer Dimension (mm)": "700*700*1400",
                 "Max Power": "8 Kw",
-                "Phase": "3 phase",
-                "Weight": "135"
-            }
+                Phase: "3 phase",
+                Weight: "135",
+            },
         ],
         headers: [
             "Model",
@@ -1123,23 +1190,32 @@ export const LabProductsList = [
             "Outer Dimension (mm)",
             "Max Power",
             "Phase",
-            "Weight"
+            "Weight",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-raising.pdf?updatedAt=1732785792674",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/isometric.png?updatedAt=1732097814826",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/front.png?updatedAt=1732097812934",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/back.png?updatedAt=1732097814266",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/left.png?updatedAt=1732097816142",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/right.png?updatedAt=1732097815806",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/front.png?updatedAt=1732097812934",
+                alt: "High-quality thermal cycling furnace designed for reliable testing of thermal barriers and coatings through extreme temperature cycles",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/left.png?updatedAt=1732097816142",
+                alt: "Visual of a thermal cycle furnace capable of reaching 1600°C, ideal for precise thermal cycling and advanced material processing",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/right.png?updatedAt=1732097815806",
+                alt: "Image of a thermal cycling furnace with alumina bricks and fiber insulation, ensuring uniform temperatures and minimal heat loss",
+            },
         ],
         productName: "Thermal Cycling Furnace",
         metaTitle: "Thermal Cycling Furnace - 1600°C",
-        metaDesc: "Experience unmatched quality and reliability in thermal treatments with our thermal cycling furnace, operating at 1600°C.",
+        metaDesc:
+            "Experience unmatched quality and reliability in thermal treatments with our thermal cycling furnace, operating at 1600°C.",
         desc: "Our thermal cycling furnaces stand for excellent workmanship, attractive design, and the highest level of reliability. It is manufactured specifically for thermal cycling to test the life of thermal barriers and the oxidation resistance of coatings by repeatedly heating and cooling them to extreme temperatures.",
         keys: [
             {
@@ -1220,15 +1296,15 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "TCF 6/16",
+                Model: "TCF 6/16",
                 "Max Temperature": "1600 C",
                 "Inner Dimensions (mm)": "200*200*150",
                 "Volume (in liters)": "6 L",
                 "Outer Dimensions (mm)": "600*600*600",
                 "Max Power": "4 KW",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": "100"
-            }
+                "Weight (in kilos)": "100",
+            },
         ],
         headers: [
             "Model",
@@ -1238,23 +1314,32 @@ export const LabProductsList = [
             "Outer Dimensions (mm)",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-thermal-cycling.pdf?updatedAt=1732785797395",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/isometric.png?updatedAt=1732097797151",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/front.png?updatedAt=1732097794281",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/back.png?updatedAt=1732097796014",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/left.png?updatedAt=1732097796040",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/right.png?updatedAt=1732097773615",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/front.png?updatedAt=1732097794281",
+                alt: "Expertly engineered tubular furnace with a cylindrical chamber and central heating element for precise material testing",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/left.png?updatedAt=1732097796040",
+                alt: "A specialized tubular furnace designed for durability, capable of withstanding temperatures up to 1800°C for a variety of high-temperature processes",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/right.png?updatedAt=1732097773615",
+                alt: "A VBCC laboratory tubular furnace, essential for conducting high-temperature experiments and material analysis in research setting",
+            },
         ],
         productName: "Tubular Furnace",
         metaTitle: "Tubular Furnace | Laboratory Furnace | VBCC",
-        metaDesc: "Our sophisticated tubular furnace is capable of reaching 1800°C and is created for a wide range of high-temperature applications.",
+        metaDesc:
+            "Our sophisticated tubular furnace is capable of reaching 1800°C and is created for a wide range of high-temperature applications.",
         desc: "With our team of experts, we engineered a perfect tubular furnace consisting of a cylindrical heating chamber with a central heating element to test the materials in a more controlled and uniform manner. These furnaces are used for a wide variety of thermal processes, including inorganic and organic purification; accelerated ageing; annealing; coating; drying; and much more.",
         keys: [
             {
@@ -1320,203 +1405,203 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "TF 55/200/12",
+                Model: "TF 55/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Quartz",
+                Tube: "Quartz",
                 "ID OD L (mm)": "55*60*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight (in kilos)": "50"
+                Phase: "1 phase",
+                "Weight (in kilos)": "50",
             },
             {
-                "Model": "TF 65/200/12",
+                Model: "TF 65/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Quartz",
+                Tube: "Quartz",
                 "ID OD L (mm)": "65*70*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 KW",
-                "Phase": "1 phase",
-                "Weight (in kilos)": "50"
+                Phase: "1 phase",
+                "Weight (in kilos)": "50",
             },
             {
-                "Model": "TF 75/200/12",
+                Model: "TF 75/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Quartz",
+                Tube: "Quartz",
                 "ID OD L (mm)": "75*80*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight (in kilos)": "50"
+                Phase: "1 phase",
+                "Weight (in kilos)": "50",
             },
             {
-                "Model": "TF 50/200/12",
+                Model: "TF 50/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Alumina",
+                Tube: "Alumina",
                 "ID OD L (mm)": "50*60*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight (in kilos)": "60"
+                Phase: "1 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 60/200/12",
+                Model: "TF 60/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Alumina",
+                Tube: "Alumina",
                 "ID OD L (mm)": "50*60*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight (in kilos)": "60"
+                Phase: "1 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 70/200/12",
+                Model: "TF 70/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Alumina",
+                Tube: "Alumina",
                 "ID OD L (mm)": "70*80*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight (in kilos)": "60"
+                Phase: "1 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 50/200/14",
+                Model: "TF 50/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "50*60*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "60"
+                Phase: "2 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 60/200/14",
+                Model: "TF 60/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "60*70*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "60"
+                Phase: "2 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 70/200/14",
+                Model: "TF 70/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "70*80*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "60"
+                Phase: "2 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 80/200/14",
+                Model: "TF 80/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "80*90*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "60"
+                Phase: "2 phase",
+                "Weight (in kilos)": "60",
             },
             {
-                "Model": "TF 50/200/16",
+                Model: "TF 50/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "50*60*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 60/200/16",
+                Model: "TF 60/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "60*70*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 KW",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 70/200/16",
+                Model: "TF 70/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "70*80*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 80/200/16",
+                Model: "TF 80/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "80*90*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 50/200/17",
+                Model: "TF 50/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "50*60*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 60/200/17",
+                Model: "TF 60/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "60*70*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 70/200/17",
+                Model: "TF 70/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "70*80*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
             },
             {
-                "Model": "TF 80/200/17",
+                Model: "TF 80/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L (mm)": "80*90*1000",
                 "Hot Zone length (mm)": "200",
                 "Outer Dimension (mm)": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": "100"
-            }
+                Phase: "2 phase",
+                "Weight (in kilos)": "100",
+            },
         ],
         headers: [
             "Model",
@@ -1527,23 +1612,32 @@ export const LabProductsList = [
             "Outer Dimension (mm)",
             "Max Power",
             "Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tubular.pdf?updatedAt=1732785797417",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png?updatedAt=1732097766948",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/front.png?updatedAt=1732097765691",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/back.png?updatedAt=1732097765875",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/left.png?updatedAt=1732097766113",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png?updatedAt=1732097766948",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/front.png?updatedAt=1732097765691",
+                alt: "An innovative tiltable tubular furnace designed for optimal heat distribution of granules, powders, and particulate materials in laboratories",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/left.png?updatedAt=1732097766113",
+                alt: "A tiltable tubular furnace featuring a mechanism for precise control of the chamber's inclination angle for flexible sample processing",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png?updatedAt=1732097766948",
+                alt: "Tiltable tubular furnace designed for efficient space utilization in laboratory and industrial environments",
+            },
         ],
         productName: "Tiltable Tubular Furnace (Variant Under Tubular Furnace)",
         metaTitle: "Tiltable Tubular Furnace up to 1700°C",
-        metaDesc: "Transform your sample processing with our Tiltable Tubular Furnace, offering customisable inclination angles for improved control and efficiency in your experiments.",
+        metaDesc:
+            "Transform your sample processing with our Tiltable Tubular Furnace, offering customisable inclination angles for improved control and efficiency in your experiments.",
         desc: "Unlike our conventional tubular furnaces, this advanced design with a tiltable mechanism offers superior heat distribution and seamless material handling.  The tiltable tubular furnace can accommodate granules, powders, and other particulate materials, making it a versatile tool for numerous laboratory heat treatment processes such as sintering, calcination, and carbon activation.",
         keys: [
             {
@@ -1609,203 +1703,203 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "TF 55/200/12",
+                Model: "TF 55/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Quartz",
+                Tube: "Quartz",
                 "ID OD L": "55*60*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": 50
+                Phase: "1 phase",
+                Weight: 50,
             },
             {
-                "Model": "TF 65/200/12",
+                Model: "TF 65/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Quartz",
+                Tube: "Quartz",
                 "ID OD L": "65*70*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 KW",
-                "Phase": "1 phase",
-                "Weight": 50
+                Phase: "1 phase",
+                Weight: 50,
             },
             {
-                "Model": "TF 75/200/12",
+                Model: "TF 75/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Quartz",
+                Tube: "Quartz",
                 "ID OD L": "75*80*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": 50
+                Phase: "1 phase",
+                Weight: 50,
             },
             {
-                "Model": "TF 50/200/12",
+                Model: "TF 50/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Alumina",
+                Tube: "Alumina",
                 "ID OD L": "50*60*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": 60
+                Phase: "1 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 60/200/12",
+                Model: "TF 60/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Alumina",
+                Tube: "Alumina",
                 "ID OD L": "50*60*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": 60
+                Phase: "1 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 70/200/12",
+                Model: "TF 70/200/12",
                 "Max Temperature": "1200 C",
-                "Tube": "Alumina",
+                Tube: "Alumina",
                 "ID OD L": "70*80*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "1 phase",
-                "Weight": 60
+                Phase: "1 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 50/200/14",
+                Model: "TF 50/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "50*60*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": 60
+                Phase: "2 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 60/200/14",
+                Model: "TF 60/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "60*70*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": 60
+                Phase: "2 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 70/200/14",
+                Model: "TF 70/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "70*80*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": 60
+                Phase: "2 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 80/200/14",
+                Model: "TF 80/200/14",
                 "Max Temperature": "1400 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "80*90*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
-                "Phase": "2 phase",
-                "Weight": 60
+                Phase: "2 phase",
+                Weight: 60,
             },
             {
-                "Model": "TF 50/200/16",
+                Model: "TF 50/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "50*60*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 60/200/16",
+                Model: "TF 60/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "60*70*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 70/200/16",
+                Model: "TF 70/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "70*80*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 80/200/16",
+                Model: "TF 80/200/16",
                 "Max Temperature": "1600 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "80*90*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 50/200/17",
+                Model: "TF 50/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "50*60*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 60/200/17",
+                Model: "TF 60/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "60*70*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 70/200/17",
+                Model: "TF 70/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "70*80*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
+                Phase: "2 phase",
+                Weight: 100,
             },
             {
-                "Model": "TF 80/200/17",
+                Model: "TF 80/200/17",
                 "Max Temperature": "1700 C",
-                "Tube": "Recrystalline Alumina",
+                Tube: "Recrystalline Alumina",
                 "ID OD L": "80*90*1000",
                 "Hot Zone length (mm)": 200,
                 "Outer Dimension": "650 x 650 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight": 100
-            }
+                Phase: "2 phase",
+                Weight: 100,
+            },
         ],
         headers: [
             "Model",
@@ -1816,23 +1910,32 @@ export const LabProductsList = [
             "Outer Dimension",
             "Max Power",
             "Phase",
-            "Weight"
+            "Weight",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tiltable.pdf?updatedAt=1732785797090",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/isometric.png?updatedAt=1732097674080",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/front.png?updatedAt=1732097673107",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/back.png?updatedAt=1732097658266",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/left.png?updatedAt=1732097674389",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/right.png?updatedAt=1732097657174",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/front.png?updatedAt=1732097673107",
+                alt: "VBCC's rotary tubular furnace facilitates continuous material movement, enhancing thermal transfer and ensuring uniform heating efficiency",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/left.png?updatedAt=1732097674389",
+                alt: "Rotary tubular furnace designed for temperatures from 1200°C to 1800°C, ensuring flexibility and reliability in industrial use.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/right.png?updatedAt=1732097657174",
+                alt: "A rotary tubular furnace featuring strategically positioned heating elements for optimal temperature uniformity and consistent outcomes",
+            },
         ],
         productName: "Rotary Tubular Furnace",
         metaTitle: "Rotary Tubular Furnace - 1200°C",
-        metaDesc: "Achieve consistent results with our rotary tubular furnace at 1200°C. Designed for durability and efficiency. Enquire about our models now! ",
+        metaDesc:
+            "Achieve consistent results with our rotary tubular furnace at 1200°C. Designed for durability and efficiency. Enquire about our models now! ",
         desc: "VBCC’s rotary tubular furnace ensures that materials inside the furnace are constantly moving, which enhances thermal transfer and prevents agglomeration or uneven heating, making it ideal for processes that demand high temperature uniformity and efficiency.",
         keys: [
             {
@@ -1908,35 +2011,35 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "RTF 4/70/12",
+                Model: "RTF 4/70/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "70 ID X 80 OD x 1000",
                 "Volume (in liters)": "4L",
                 "Outer Dimensions": "600*600*2000",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "RTF 8/100/12",
+                Model: "RTF 8/100/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "100 ID X 110 OD x 1000",
                 "Volume (in liters)": "8L",
                 "Outer Dimensions": "700*700*3000",
                 "Max Power": "12 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 150
+                "Weight (in kilos)": 150,
             },
             {
-                "Model": "RTF 172/270/12",
+                Model: "RTF 172/270/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "270 ID X 280 OD x 3000",
                 "Volume (in liters)": "172L",
                 "Outer Dimensions": "700*700*3000",
                 "Max Power": "24 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 250
-            }
+                "Weight (in kilos)": 250,
+            },
         ],
         headers: [
             "Model",
@@ -1946,23 +2049,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-rotary.pdf?updatedAt=1732785796005",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/isometric.png?updatedAt=1732097756187",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/front.png?updatedAt=1732097753625",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/back.png?updatedAt=1732097750975",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/left.png?updatedAt=1732097757479",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/right.png?updatedAt=1732097756383",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/front.png?updatedAt=1732097753625",
+                alt: "Two- and three-zone tubular furnaces designed for temperature gradients, used in material synthesis and heat treatment processes",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/left.png?updatedAt=1732097757479",
+                alt: "Two- and three-zone tubular furnaces with 99.9% alumina tubes, enduring temperatures up to 1800°C for exceptional durability",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/right.png?updatedAt=1732097756383",
+                alt: "Compact two- and three-zone tubular furnaces designed for efficient lab space use while allowing for substantial sample volume",
+            },
         ],
         productName: "Two or Three zone Furnace",
         metaTitle: "Two/Three Zone Furnace",
-        metaDesc: "VBCC High Temperature Instruments designed advanced two- and three-zone furnaces with precise temperature control and diverse heating profiles for laboratory use.",
+        metaDesc:
+            "VBCC High Temperature Instruments designed advanced two- and three-zone furnaces with precise temperature control and diverse heating profiles for laboratory use.",
         desc: "Our two- and three-zone tubular furnaces are equipped with different heating zones, respectively, that are independently controlled to create temperature gradients within the heating chamber. This furnace is utilised for a variety of applications, including material synthesis, heat treatment, and ample testing.",
         keys: [
             {
@@ -2037,185 +2149,185 @@ export const LabProductsList = [
         ],
         spec: [
             {
-                "Model": "2ZTF 55/200/12",
+                Model: "2ZTF 55/200/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "Quartz 55*60*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 50
+                Phase: "2 phase",
+                "Weight (in kilos)": 50,
             },
             {
-                "Model": "2ZTF 65/200/12",
+                Model: "2ZTF 65/200/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "Quartz 65*70*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 50
+                Phase: "2 phase",
+                "Weight (in kilos)": 50,
             },
             {
-                "Model": "2ZTF 75/200/12",
+                Model: "2ZTF 75/200/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "Quartz 75*80*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 50
+                Phase: "2 phase",
+                "Weight (in kilos)": 50,
             },
             {
-                "Model": "2ZTF 50/200/12",
+                Model: "2ZTF 50/200/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "Alumina 50*60*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 60/200/12",
+                Model: "2ZTF 60/200/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "Alumina 50*60*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 70/200/12",
+                Model: "2ZTF 70/200/12",
                 "Max Temperature": "1200 C",
                 "Tube Dimensions (mm)": "Alumina 70*80*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 50/400/14",
+                Model: "2ZTF 50/400/14",
                 "Max Temperature": "1400 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 50*60*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 60/400/14",
+                Model: "2ZTF 60/400/14",
                 "Max Temperature": "1400 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 60*70*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 70/400/14",
+                Model: "2ZTF 70/400/14",
                 "Max Temperature": "1400 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 70*80*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 80/400/14",
+                Model: "2ZTF 80/400/14",
                 "Max Temperature": "1400 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 80*90*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 60
+                Phase: "2 phase",
+                "Weight (in kilos)": 60,
             },
             {
-                "Model": "2ZTF 50/400/16",
+                Model: "2ZTF 50/400/16",
                 "Max Temperature": "1600 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 50*60*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 60/400/16",
+                Model: "2ZTF 60/400/16",
                 "Max Temperature": "1600 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 60*70*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 70/400/16",
+                Model: "2ZTF 70/400/16",
                 "Max Temperature": "1600 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 70*80*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 80/400/16",
+                Model: "2ZTF 80/400/16",
                 "Max Temperature": "1600 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 80*90*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 50/400/17",
+                Model: "2ZTF 50/400/17",
                 "Max Temperature": "1700 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 50*60*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 60/400/17",
+                Model: "2ZTF 60/400/17",
                 "Max Temperature": "1700 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 60*70*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 70/400/17",
+                Model: "2ZTF 70/400/17",
                 "Max Temperature": "1700 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 70*80*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
             },
             {
-                "Model": "2ZTF 80/400/17",
+                Model: "2ZTF 80/400/17",
                 "Max Temperature": "1700 C",
                 "Tube Dimensions (mm)": "Recrystalline Alumina 80*90*1000",
                 "Hot Zone Length (mm)": 200,
                 "Outer Dimensions": "650 x 550 x 1000",
                 "Max Power": "6 Kw",
-                "Phase": "2 phase",
-                "Weight (in kilos)": 100
-            }
+                Phase: "2 phase",
+                "Weight (in kilos)": 100,
+            },
         ],
         headers: [
             "Model",
@@ -2225,7 +2337,7 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         spec2: [
             {
@@ -2236,7 +2348,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "2 phase",
-                "Weight (in kilos)": 50
+                "Weight (in kilos)": 50,
             },
             {
                 Model: "3ZTF 65/600/12",
@@ -2246,7 +2358,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "2 phase",
-                "Weight (in kilos)": 50
+                "Weight (in kilos)": 50,
             },
             {
                 Model: "3ZTF 75/600/12",
@@ -2256,7 +2368,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "2 phase",
-                "Weight (in kilos)": 50
+                "Weight (in kilos)": 50,
             },
             {
                 Model: "3ZTF 50/600/12",
@@ -2266,7 +2378,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "2 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 60/600/12",
@@ -2276,7 +2388,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "2 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 70/600/12",
@@ -2286,7 +2398,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "2 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 50/600/14",
@@ -2296,7 +2408,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 60/600/14",
@@ -2306,7 +2418,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 70/600/14",
@@ -2316,7 +2428,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 80/600/14",
@@ -2326,7 +2438,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 60
+                "Weight (in kilos)": 60,
             },
             {
                 Model: "3ZTF 50/600/16",
@@ -2336,7 +2448,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 60/600/16",
@@ -2346,7 +2458,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 70/600/16",
@@ -2356,7 +2468,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 80/600/16",
@@ -2366,7 +2478,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "6 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 50/600/17",
@@ -2376,7 +2488,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "8 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 60/600/17",
@@ -2386,7 +2498,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "8 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 70/600/17",
@@ -2396,7 +2508,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "8 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "3ZTF 80/600/17",
@@ -2406,8 +2518,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "750 x 550 x 1000",
                 "Max Power": "8 Kw",
                 Phase: "3 phase",
-                "Weight (in kilos)": 100
-            }
+                "Weight (in kilos)": 100,
+            },
         ],
         headers2: [
             "Model",
@@ -2417,23 +2529,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-2-3-zone.pdf?updatedAt=1732785790633",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/front.png?updatedAt=1732097137357",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/back.png?updatedAt=1732097138963",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/left.png?updatedAt=1732097140082",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/right.png?updatedAt=1732097139678",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/front.png?updatedAt=1732097137357",
+                alt: "VBCC's chemical vapour deposition furnace enables precise thin layer deposition, protecting mechanical parts from corrosion and oxidation",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/left.png?updatedAt=1732097140082",
+                alt: "VBCC's chemical vapor deposition furnace operates at temperatures of up to 1700°C, making it ideal for high-temperature applications requiring precision",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/right.png?updatedAt=1732097139678",
+                alt: "Chemical vapor deposition furnace designed with durable materials to endure thermal stresses in extreme operating conditions",
+            },
         ],
         productName: "Chemical Vapour Deposition",
         metaTitle: "Chemical Vapour Deposition | CVD Furnace",
-        metaDesc: "Our chemical vapour deposition furnace allows you to achieve the ideal coating and shields the mechanical components from oxidation and corrosion.",
+        metaDesc:
+            "Our chemical vapour deposition furnace allows you to achieve the ideal coating and shields the mechanical components from oxidation and corrosion.",
         desc: "With VBCC’s chemical vapour deposition furnace, the intended results of creating thin layers or deposits on substrates using chemical vapour transport are achieved precisely. It protects the mechanical parts from corrosion or oxidation.",
         keys: [
             {
@@ -2501,49 +2622,66 @@ export const LabProductsList = [
             {
                 Model: "CVD/1200",
                 Temperature: "1200°C",
-                "Economy Configuration": "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
-                "Premium Configuration": "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump"
+                "Economy Configuration":
+                    "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
+                "Premium Configuration":
+                    "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump",
             },
             {
                 Model: "CVD/1400",
                 Temperature: "1400°C",
-                "Economy Configuration": "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
-                "Premium Configuration": "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump"
+                "Economy Configuration":
+                    "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
+                "Premium Configuration":
+                    "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump",
             },
             {
                 Model: "CVD/1600",
                 Temperature: "1600°C",
-                "Economy Configuration": "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
-                "Premium Configuration": "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump"
+                "Economy Configuration":
+                    "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
+                "Premium Configuration":
+                    "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump",
             },
             {
                 Model: "CVD/1700",
                 Temperature: "1700°C",
-                "Economy Configuration": "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
-                "Premium Configuration": "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump"
-            }
+                "Economy Configuration":
+                    "Tubular Furnace + 2 Rotometer + Rotary Vacuum Pump",
+                "Premium Configuration":
+                    "Tubular Furnace + 3 Mass Flow Controllers + Rotary Vacuum Pump + Diffusion Pump",
+            },
         ],
         headers: [
             "Model",
             "Temperature",
             "Economy Configuration",
-            "Premium Configuration"
+            "Premium Configuration",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-chemical.pdf?updatedAt=1732785789403",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/isometric.png?updatedAt=1732097125293",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/front.png?updatedAt=1732097126146",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/back.png?updatedAt=1732097125313",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/left.png?updatedAt=1732097125477",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/right.png?updatedAt=1732097127627",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/front.png?updatedAt=1732097126146",
+                alt: "VBCC's versatile furnace operates in horizontal and vertical positions, ideal for high-temperature lab applications with a compact design",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/left.png?updatedAt=1732097125477",
+                alt: "Versatile furnace with horizontal and vertical configurations, reaching temperatures of 1800°C, suitable for high-heat processes",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/right.png?updatedAt=1732097127627",
+                alt: "Horizontal Cum vertical furnace, featuring a shell size adjustable to meet customer needs",
+            },
         ],
         productName: "Horizontal cum Vertical Furnace",
         metaTitle: "Horizontal cum Vertical furnace - 1200°C",
-        metaDesc: "VBCC’s horizontal cum vertical furnace is designed to be used in both positions for laboratory and industrial high-temperature applications.",
+        metaDesc:
+            "VBCC’s horizontal cum vertical furnace is designed to be used in both positions for laboratory and industrial high-temperature applications.",
         desc: "VBCC’s horizontal cum vertical furnace can be used in both horizontal and vertical positions for laboratory high-temperature applications. Our furnace's compact design and ability to be tilted at different angles make it suitable for integration into existing process systems.",
         keys: [
             {
@@ -2632,7 +2770,7 @@ export const LabProductsList = [
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
                 Phase: "1 phase",
-                Weight: 50
+                Weight: 50,
             },
             {
                 Model: "HTF 65/200/12",
@@ -2643,7 +2781,7 @@ export const LabProductsList = [
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
                 Phase: "1 phase",
-                Weight: 50
+                Weight: 50,
             },
             {
                 Model: "HTF 75/200/12",
@@ -2654,7 +2792,7 @@ export const LabProductsList = [
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
                 Phase: "1 phase",
-                Weight: 50
+                Weight: 50,
             },
             {
                 Model: "HTF 50/200/12",
@@ -2665,7 +2803,7 @@ export const LabProductsList = [
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
                 Phase: "1 phase",
-                Weight: 60
+                Weight: 60,
             },
             {
                 Model: "HTF 60/200/12",
@@ -2676,7 +2814,7 @@ export const LabProductsList = [
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
                 Phase: "1 phase",
-                Weight: 60
+                Weight: 60,
             },
             {
                 Model: "HTF 70/200/12",
@@ -2687,8 +2825,8 @@ export const LabProductsList = [
                 "Outer Dimension": "550 x 550 x 1000",
                 "Max Power": "4 Kw",
                 Phase: "1 phase",
-                Weight: 60
-            }
+                Weight: 60,
+            },
         ],
         headers: [
             "Model",
@@ -2699,23 +2837,32 @@ export const LabProductsList = [
             "Outer Dimension",
             "Max Power",
             "Phase",
-            "Weight"
+            "Weight",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-horizontal.pdf?updatedAt=1732785790101",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/isometric.png?updatedAt=1732097720641",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/front.png?updatedAt=1732097717795",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/back.png?updatedAt=1732097720728",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/left.png?updatedAt=1732097721840",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/right.png?updatedAt=1732097721655",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/front.png?updatedAt=1732097717795",
+                alt: "Roller hearth furnace by VBCC, designed for precision and international standards, ideal for high-quality research and development",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/left.png?updatedAt=1732097721840",
+                alt: "Roller hearth furnace with a maximum temperature of 1200°C, suitable for a range of high-temperature testing needs ",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/right.png?updatedAt=1732097721655",
+                alt: "Specialized roller hearth furnace engineered for testing body, glaze, stains, and frits, suitable for tile manufacturing industries",
+            },
         ],
         productName: "Roller Hearth Furnace",
         metaTitle: "Roller Hearth Furnace - 1400°C",
-        metaDesc: "With our top-tier roller hearth furnaces, experience precision heating solutions manufactured to meet your research needs effectively.",
+        metaDesc:
+            "With our top-tier roller hearth furnaces, experience precision heating solutions manufactured to meet your research needs effectively.",
         desc: "Here is yet another exceptional product from VBCC, the roller hearth furnace, which meets international standards and specifications. The accuracy of the equipment to the set value is unbelievable. Its design feature is world-class, making it ideal for high-quality research and developmental work.",
         keys: [
             {
@@ -2783,7 +2930,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*2000MM",
                 "Max Power": "4 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 75
+                "Weight (in kilos)": 75,
             },
             {
                 Model: "ROF 4/14",
@@ -2793,7 +2940,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*4000",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "ROF 8/14",
@@ -2803,7 +2950,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*700*8000",
                 "Max Power": "8 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 200
+                "Weight (in kilos)": 200,
             },
             {
                 Model: "ROF 10/14",
@@ -2813,7 +2960,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*700*10000",
                 "Max Power": "15 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 300
+                "Weight (in kilos)": 300,
             },
             {
                 Model: "ROF 25/14",
@@ -2823,8 +2970,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1000*1000*25000",
                 "Max Power": "36 KW",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 520
-            }
+                "Weight (in kilos)": 520,
+            },
         ],
         headers: [
             "Model",
@@ -2834,23 +2981,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-roller.pdf?updatedAt=1732785796156",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097362092",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/front.png?updatedAt=1732097362174",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/back.png?updatedAt=1732097362097",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097362092",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097362323",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/front.png?updatedAt=1732097362174",
+                alt: "Robust aluminium stir casting furnace featuring advanced technology for producing aluminium metal matrix composites and alloys",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097362092",
+                alt: "Aluminium stir casting furnace with ceramic fibre insulation and Kanthal heating elements, reaching 1100°C and maintaining a working temperature of 800°C",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097362323",
+                alt: "Aluminium stir casting furnace, equipped with high-alumina rollers, offering high durability and resistance to high temperatures",
+            },
         ],
         productName: "Aluminum Stir Casting",
         metaTitle: "Aluminium Stir Casting",
-        metaDesc: "Our aluminium stir casting furnaces are built to comply with industry standards and provide reliable solutions for your casting needs.",
+        metaDesc:
+            "Our aluminium stir casting furnaces are built to comply with industry standards and provide reliable solutions for your casting needs.",
         desc: "Our aluminium stir casting furnaces are durably constructed with innovative features for effectively manufacturing aluminium metal matrix composites (AMCs) or metal alloys by mixing reinforcing materials into molten aluminium.",
         keys: [
             {
@@ -2918,7 +3074,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "500*500*1400MM",
                 "Max Power": "4 Kw",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": 80
+                "Weight (in kilos)": 80,
             },
             {
                 Model: "AL STR 5/10",
@@ -2928,7 +3084,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*1400",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 75
+                "Weight (in kilos)": 75,
             },
             {
                 Model: "AL STR 25/10",
@@ -2938,8 +3094,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1000*1000*1400",
                 "Max Power": "24 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
-            }
+                "Weight (in kilos)": 100,
+            },
         ],
         headers: [
             "Model",
@@ -2949,25 +3105,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-aluminium.pdf?updatedAt=1732785788858",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097228059",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/front.png?updatedAt=1732097227732",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/back.png?updatedAt=1732097227141",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097228059",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097227970",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/6.png?updatedAt=1732097210093",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/5.png?updatedAt=1732097210192",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/front.png?updatedAt=1732097227732",
+                alt: "State-of-the-art magnesium stir casting furnace for high-quality alloy production, enhancing homogeneity in finished castings",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097228059",
+                alt: "Advanced magnesium stir casting furnace featuring Kanthal heating elements, delivering consistent heating up to 1100°C for metallurgical use",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097227970",
+                alt: "Magnesium stir casting furnace with crucible and automatic melt flushing system for efficient melt discharge via pneumatic mechanism",
+            },
         ],
         productName: "Magnesium Stir Casting",
         metaTitle: "Magnesium Stir Casting",
-        metaDesc: "Magnesium stir casting furnace designed with an automatic flushing system for optimal melt discharge through a pneumatic mechanism. ",
+        metaDesc:
+            "Magnesium stir casting furnace designed with an automatic flushing system for optimal melt discharge through a pneumatic mechanism. ",
         desc: "We manufactured a magnesium stir casting furnace with a state-of-the-art solution for the production of high-quality magnesium alloy components. Our advanced casting process stirs molten magnesium under controlled conditions to enhance the homogeneity and qualities of the finished castings.",
         keys: [
             {
@@ -3020,7 +3183,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "500*500*700MM",
                 "Max Power": "4 Kw",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": 80
+                "Weight (in kilos)": 80,
             },
             {
                 Model: "MG STR 5/10",
@@ -3030,7 +3193,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*1400",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "MG STR 25/10",
@@ -3040,8 +3203,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1000*1000*1400",
                 "Max Power": "24 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 140
-            }
+                "Weight (in kilos)": 140,
+            },
         ],
         headers: [
             "Model",
@@ -3051,24 +3214,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-magnesium.pdf?updatedAt=1732785789185",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png?updatedAt=1732096897336",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/front.png?updatedAt=1732096911582",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/back.png?updatedAt=1732096898547",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png?updatedAt=1732096897336",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/right.png?updatedAt=1732096912882",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/3.png?updatedAt=1732096912658",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/front.png?updatedAt=1732096911582",
+                alt: "VBCC's biomass pyrolysis unit converts biomass into bio-oil, biochar, and syngas through controlled high-temperature pyrolysis",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png?updatedAt=1732096897336",
+                alt: "A biomass pyrolysis unit utilizes APM Kanthal heating elements, achieving uniform heating up to 1200°C for reliable operation",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/right.png?updatedAt=1732096912882",
+                alt: "A biomass pyrolysis unit facilitating the conversion of organic waste into biochar and bio-oil via high-temperature thermal processes",
+            },
         ],
         productName: "Bio Mass Pyrolysis",
         metaTitle: "Biomass Pyrolsis Furnace | VBCC",
-        metaDesc: "Our innovative biomass pyrolysis unit efficiently transforms biomass into bio-oil, biochar, and syngas through controlled pyrolysis at elevated temperatures, ensuring no combustion.",
+        metaDesc:
+            "Our innovative biomass pyrolysis unit efficiently transforms biomass into bio-oil, biochar, and syngas through controlled pyrolysis at elevated temperatures, ensuring no combustion.",
         desc: "VBCC’s biomass pyrolysis unit allows for controlled pyrolysis of biomass at high temperatures without fully burning it, producing valuable products such as bio-oil, biochar, and syngas in the absence of oxygen",
         keys: [
             {
@@ -3146,7 +3317,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*800MM",
                 "Max Power": "6 KW",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 50
+                "Weight (in kilos)": 50,
             },
             {
                 Model: "BMP 10/10",
@@ -3156,7 +3327,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*800",
                 "Max Power": "10 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 75
+                "Weight (in kilos)": 75,
             },
             {
                 Model: "BMP 20/10",
@@ -3166,7 +3337,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "800*800*1000",
                 "Max Power": "18 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "BMP 50/10",
@@ -3176,8 +3347,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1000*1000*1500",
                 "Max Power": "36 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 200
-            }
+                "Weight (in kilos)": 200,
+            },
         ],
         headers: [
             "Model",
@@ -3187,23 +3358,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-bio-mass.pdf?updatedAt=1732785789229",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/isometric.png?updatedAt=1732095997475",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/front.png?updatedAt=1732095997411",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/back.png?updatedAt=1732095997951",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/left.png?updatedAt=1732095996329",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/right.png?updatedAt=1732095996566",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/front.png?updatedAt=1732095997411",
+                alt: "Microwave Furnace (Essential) utilizes electromagnetic radiation for efficient heating in laboratory and production applications",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/left.png?updatedAt=1732095996329",
+                alt: "Microwave Furnace (Essential) reaches 1600°C, suitable for advanced material research applications",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/right.png?updatedAt=1732095996566",
+                alt: "VBCC's Microwave Furnace (Essential) utilizes advanced microwave technology for efficient heating and processing applications",
+            },
         ],
         productName: "Microwave Furnace (Essential)",
         metaTitle: "Microwave Furnace (Essential) - 1600°C",
-        metaDesc: "Experience rapid heating with VBCC’s Microwave Furnace (Essential). Utilising cutting-edge microwave technology, we provide efficient solutions for all your heating needs.",
+        metaDesc:
+            "Experience rapid heating with VBCC’s Microwave Furnace (Essential). Utilising cutting-edge microwave technology, we provide efficient solutions for all your heating needs.",
         desc: "Microwave Furnace (Essential) is our classic furnace model. These furnaces use electromagnetic radiation for rapid heating, unlike other furnaces, and are utilised in laboratory applications and production plants for various processes like high-temperature synthesis, sintering, ashing, and melting.",
         keys: [
             {
@@ -3286,8 +3466,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*1400MM",
                 "Max Power": "4 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
-            }
+                "Weight (in kilos)": 100,
+            },
         ],
         headers: [
             "Model",
@@ -3297,24 +3477,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-essential.pdf?updatedAt=1732785790605",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/isometric.png?updatedAt=1732095844311",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/front.png?updatedAt=1732095844862",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/back.png?updatedAt=1732095842446",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/left.png?updatedAt=1732095845273",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/right.png?updatedAt=1732095844646",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/6.png?updatedAt=1732095845888",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/front.png?updatedAt=1732095844862",
+                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/right.png?updatedAt=1732095844646",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/left.png?updatedAt=1732095845273",
+                alt: "Microwave Furnaces (Deluxe) designed for high-temperature applications, with built-in insulation and capable of reaching 1600°C",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/right.png?updatedAt=1732095844646",
+                alt: "Advanced microwave furnace (Deluxe), employing electromagnetic waves for optimal heat treatment",
+            },
         ],
         productName: "Microwave Furnace (Deluxe)",
         metaTitle: "Microwave Furnace (Deluxe) - 1600°C",
-        metaDesc: "Microwave furnaces (deluxe) feature built-in insulation, robust construction, and can accommodate temperatures up to 1600°C. Owing to the use of microwaves, they are suitable for high-temperature synthesis, sintering, ashing, melting, and heat treatment of solid materials in an air atmosphere.",
+        metaDesc:
+            "Microwave furnaces (deluxe) feature built-in insulation, robust construction, and can accommodate temperatures up to 1600°C. Owing to the use of microwaves, they are suitable for high-temperature synthesis, sintering, ashing, melting, and heat treatment of solid materials in an air atmosphere.",
         desc: "Microwave Furnace (Deluxe) is a premium laboratory furnace of VBCC. With their microwave heating and built-in insulation, they are ideal for performing thermal research and other applications. Our furnace’s key functionality is extreme temperature capability, advanced temperature control, robust construction, and convenient sample loading.",
         keys: [
             {
@@ -3392,7 +3580,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*800*1400MM",
                 "Max Power": "2 KW",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": 75
+                "Weight (in kilos)": 75,
             },
             {
                 Model: "MFP 1/16",
@@ -3402,7 +3590,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*800*1400MM",
                 "Max Power": "4 Kw",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "MFP 2/16",
@@ -3412,8 +3600,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*800*1400MM",
                 "Max Power": "4 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
-            }
+                "Weight (in kilos)": 100,
+            },
         ],
         headers: [
             "Model",
@@ -3423,24 +3611,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-delux.pdf?updatedAt=1732785790673",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png?updatedAt=1732096257316",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/front.png?updatedAt=1732096249053",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/back.png?updatedAt=1732096256985",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png?updatedAt=1732096257316",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/right.png?updatedAt=1732096247856",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/1.png?updatedAt=1732096249865",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/front.png?updatedAt=1732096249053",
+                alt: "A Microwave Furnace (Hybrid) combining resistance and microwave heating for versatile thermal processing in research and development",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png?updatedAt=1732096257316",
+                alt: "VBCC's Microwave Furnace (Hybrid) achieves 1700°C, integrating microwave technology with free-radiating elements for rapid heating ",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/right.png?updatedAt=1732096247856",
+                alt: "VBCC's Microwave Furnace (Hybrid) combines the power of microwave and resistive heating, providing precise and uniform temperature control for your applications",
+            },
         ],
         productName: "Microwave Furnace (Hybrid)",
         metaTitle: "Microwave Furnace (Hybrid) - 1700°C",
-        metaDesc: "VBCC’s microwave furnace (Hybrid) can accommodate temperatures up to 1700°C. This microwave furnace (hybrid) combines free-radiating heating elements with a microwave field for rapid and uniform heating.",
+        metaDesc:
+            "VBCC’s microwave furnace (Hybrid) can accommodate temperatures up to 1700°C. This microwave furnace (hybrid) combines free-radiating heating elements with a microwave field for rapid and uniform heating.",
         desc: "Our microwave furnace stands for pioneering solutions by seamlessly merging conventional resistance heating and microwave heating technologies to offer unmatched versatility in thermal processing. With the precise control over the heating process, our furnace is effectively utilized for research and development purposes.",
         keys: [
             {
@@ -3523,7 +3719,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*1350*800MM",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "MFH 8/17",
@@ -3533,7 +3729,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "1000*1400*1000MM",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 200
+                "Weight (in kilos)": 200,
             },
             {
                 Model: "MFH 27/17",
@@ -3543,7 +3739,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "1001*1400*1000MM",
                 "Max Power": "15 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 250
+                "Weight (in kilos)": 250,
             },
             {
                 Model: "MFH 125/17",
@@ -3553,8 +3749,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1500*1400*1500MM",
                 "Max Power": "36 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 400
-            }
+                "Weight (in kilos)": 400,
+            },
         ],
         headers: [
             "Model",
@@ -3564,23 +3760,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-hybrid.pdf?updatedAt=1732785797711",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/isometric.png?updatedAt=1732095827733",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/front.png?updatedAt=1732095814878",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/back.png?updatedAt=1732095820491",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/left.png?updatedAt=1732095827919",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/right.png?updatedAt=1732095825024",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/front.png?updatedAt=1732095814878",
+                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/right.png?updatedAt=1732095825024",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/left.png?updatedAt=1732095827919",
+                alt: "Image of a hot air oven, designed to reach 250°C, with an operational range from room temperature to 200°C",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/right.png?updatedAt=1732095825024",
+                alt: "Hot air oven featuring an in-house thyristor for superior power control and efficient heating performance",
+            },
         ],
         productName: "Hot air oven",
         metaTitle: "Hot Air Oven | VBCC",
-        metaDesc: "Equipped with an in-house thyristor for excellent power control, our hot air ovens are ideal for sterilising, drying, and heat-treating the product.",
+        metaDesc:
+            "Equipped with an in-house thyristor for excellent power control, our hot air ovens are ideal for sterilising, drying, and heat-treating the product.",
         desc: "Our hot air oven provides a versatile solution for heating up the products at a uniform temperature. These hot air oven is operated to sterilise, dry, and heat-treat the product in a particular period of time under specific conditions like humidity, pressure, and other environmental factors.",
         keys: [
             {
@@ -3648,7 +3853,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "700*700*700",
                 "Max Power": "2 Kw",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": 40
+                "Weight (in kilos)": 40,
             },
             {
                 Model: "HAO 420/250",
@@ -3658,7 +3863,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "1100*1100*1100",
                 "Max Power": "8 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "HAO 1000/250",
@@ -3668,8 +3873,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1400*1400*1400",
                 "Max Power": "20 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 140
-            }
+                "Weight (in kilos)": 140,
+            },
         ],
         headers: [
             "Model",
@@ -3679,23 +3884,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-hot-air.pdf?updatedAt=1732785789627",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/isometric.png?updatedAt=1732095797441",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/front.png?updatedAt=1732095794127",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/back.png?updatedAt=1732095793763",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/left.png?updatedAt=1732095797625",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/right.png?updatedAt=1732095797150",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/front.png?updatedAt=1732095794127",
+                alt: "VBCC vacuum ovens are engineered to dry heat-sensitive, hygroscopic materials quickly by reducing pressure and lowering solvent boiling points",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/left.png?updatedAt=1732095797625",
+                alt: "High-quality stainless-steel vacuum ovens with double-wall structure and powder-coated MS panel for durability and aesthetics",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/right.png?updatedAt=1732095797150",
+                alt: "Vacuum ovens with a user-friendly design, ideal for all drying and curing applications",
+            },
         ],
         productName: "Vacuum Oven",
         metaTitle: "Vacuum Oven | VBCC",
-        metaDesc: "Our high-tech vacuum ovens feature intuitive design and superior functionality for all your drying and curing needs.",
+        metaDesc:
+            "Our high-tech vacuum ovens feature intuitive design and superior functionality for all your drying and curing needs.",
         desc: "VBCC’s vacuum ovens are precisely designed to expedite the drying of substances that are hygroscopic and heat sensitive by employing vacuum and heat. With our utmost craftsmanship, the oven reduces pressure around a substance effortlessly, which in turn lowers the boiling point of the solvent and allows for faster evaporation at lower temperatures.",
         keys: [
             {
@@ -3758,7 +3972,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "500*500*600",
                 "Max Power": "2.5 Kw",
                 "Electrical Phase": "1 Phase",
-                "Weight (in kilos)": 80
+                "Weight (in kilos)": 80,
             },
             {
                 Model: "VAO 91/250",
@@ -3768,7 +3982,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "600*600*750",
                 "Max Power": "6 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 125
+                "Weight (in kilos)": 125,
             },
             {
                 Model: "VAO 216/250",
@@ -3778,8 +3992,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "900*900*1000",
                 "Max Power": "15 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 160
-            }
+                "Weight (in kilos)": 160,
+            },
         ],
         headers: [
             "Model",
@@ -3789,23 +4003,32 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-vaccum.pdf?updatedAt=1732785797589",
-        slug: "lab"
+        slug: "lab",
     },
     {
         mainImg:
             "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/isometric.png?updatedAt=1732095746004",
         Images: [
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/front.png?updatedAt=1732095743764",
-            // "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/back.png?updatedAt=1732095747090",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/left.png?updatedAt=1732095744512",
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/right.png?updatedAt=1732095747149",
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/front.png?updatedAt=1732095743764",
+                alt: "A specialized humidity oven that integrates a laboratory oven with a humidity system, ideal for high-humidity research applications",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/left.png?updatedAt=1732095744512",
+                alt: "Humidity oven designed for precision testing in materials science, combining robust construction with user-friendly features",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/right.png?updatedAt=1732095747149",
+                alt: "Humidity oven with an over-temperature controller to ensure safety and prevent overheating during operation",
+            },
         ],
         productName: "Humidity Oven",
         metaTitle: "Humidity Oven | VBCC",
-        metaDesc: "Engineered for precision, our humidity oven is convenient for high humidity testing in materials science. Its robust construction and user-friendly interface make it essential for research applications.",
+        metaDesc:
+            "Engineered for precision, our humidity oven is convenient for high humidity testing in materials science. Its robust construction and user-friendly interface make it essential for research applications.",
         desc: "The humidity oven is thoroughly designed, featuring a combination of a laboratory oven and a humidity system that can perform tests that require high humidity levels. Our oven’s robust construction and intuitive interface make it a crucial tool for various applications in materials science and research.",
         keys: [
             {
@@ -3893,7 +4116,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "800*900*1000",
                 "Max Power": "8 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 75
+                "Weight (in kilos)": 75,
             },
             {
                 Model: "HUO 420/10",
@@ -3903,7 +4126,7 @@ export const LabProductsList = [
                 "Outer Dimensions": "1000*1000*1500",
                 "Max Power": "16 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 100
+                "Weight (in kilos)": 100,
             },
             {
                 Model: "HUO 1000/10",
@@ -3913,8 +4136,8 @@ export const LabProductsList = [
                 "Outer Dimensions": "1500*1500*2000",
                 "Max Power": "36 Kw",
                 "Electrical Phase": "3 Phase",
-                "Weight (in kilos)": 200
-            }
+                "Weight (in kilos)": 200,
+            },
         ],
         headers: [
             "Model",
@@ -3924,17 +4147,1485 @@ export const LabProductsList = [
             "Outer Dimensions",
             "Max Power",
             "Electrical Phase",
-            "Weight (in kilos)"
+            "Weight (in kilos)",
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-humidity.pdf?updatedAt=1732785790412",
-        slug: "lab"
+        slug: "lab",
     },
 ];
 
+export const FunsaiProductsList = [
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/front.png?updatedAt=1736156980114",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/right.png?updatedAt=1736156982433",
+                alt: "",
+            },
+        ],
+        productName: "Multi Deck Roller Jar Mill",
+        metaTitle: "Multi Deck Roller Jar Mill",
+        metaDesc:
+            "VBCC's Multi-Deck Roller Jar Mill offers cutting-edge mixing and grinding solutions for solid filler powders, perfect for diverse applications in materials science.",
+        desc: "VBCC's Multi-Deck Roller Jar Mill is a state-of-the-art solution for effective mixing and grinding of solid filler powders, ensuring uniform ceramic precursor slurries. Designed for versatility, this equipment supports both wet and dry grinding, making it suitable for diverse applications in ceramics, chemical processing, and materials science. ",
+        keys: [
+            {
+                label: " Reliable Construction",
+                value:
+                    " Made from M.S. body with a powder-coated finish for durability and long-lasting use.",
+            },
+            {
+                label: "Multi-Tier Arrangement",
+                value:
+                    " Supports simultaneous operation of multiple jars to maximize efficiency.",
+            },
+            {
+                label: "Adjustable Rollers",
+                value:
+                    " Accommodates jar sizes ranging from 2” to 10” in diameter. Made with high-quality neoprene or polyurethane coating for superior resistance to wear and chemicals.",
+            },
+            {
+                label: "Continuous Operation",
+                value:
+                    "Designed for 200 hours of unmanned, continuous operation with smooth, reliable performance.",
+            },
+            {
+                label: "No Cross Contamination",
+                value: "Designed to ensure no contamination between sample batches.",
+            },
+            {
+                label: " Powerful Drive System",
+                value:
+                    "Features a sealed ball-bearing roller chain drive, allowing speeds from 30 to 300 rpm with variable frequency drive (VFD)",
+            },
+            {
+                label: "Optional Customization - Tiers",
+                value:
+                    "Choose from Single, Two, or Three-tier configurations to suit your production needs.",
+            },
+            {
+                label: "Optional Customization - Soundproofing",
+                value:
+                    "Available option to reduce noise levels during operation for a quieter workspace.",
+            },
+            {
+                label: "Optional Customization - Roller Coating",
+                value:
+                    "Select from Neoprene or Polyurethane coatings for the rollers, ensuring durability and chemical resistance.",
+            },
+            {
+                label: "Optional Customization - Jar Options",
+                value:
+                    " Available jars include Alumina, Stainless Steel (SS), Zirconia, Tungsten Carbide, Plastic, and Porcelain in sizes from 100ml to 100L.",
+            },
+            {
+                label: "Optional Customization - Grinding Balls",
+                value:
+                    "Choose from Stainless Steel (SS), Zirconia, Polymer, Tungsten Carbide, or Alumina grinding media for optimal performance.",
+            },
+        ],
+        spec: [
+            {
+                label: "Construction",
+                value:
+                    " M.S. body with powder-coated finish for durability and protection",
+            },
+            {
+                label: "Arrangement",
+                value: "Multi-Tier system for simultaneous operation",
+            },
+            {
+                label: "Roller Coating Options",
+                value:
+                    "Neoprene or Polyurethane-coated rollers for superior resistance to chemicals and wear",
+            },
+            { label: "Motor Capacity", value: "1.0 HP, 415V AC, 50 Hz" },
+            { label: "Speed Control", value: " Variable speed (30–300 RPM) via VFD" },
+            {
+                label: "Jars",
+                value:
+                    "Up to 4 porcelain jars, with options for Alumina, SS, Zirconia, Tungsten Carbide, and Plastic",
+            },
+            {
+                label: " Grinding Media",
+                value:
+                    " Options for SS, Zirconia, Polymer, Tungsten Carbide, and Alumina grinding balls",
+            },
+            {
+                label: "Timer and Programmable",
+                value:
+                    "Programmable forward/reverse operation with timing options from 1 minute to 200 hours",
+            },
+            {
+                label: "Automation",
+                value:
+                    "PLC control with HMI interface and touch screen for easy programming and operation monitoring",
+            },
+            {
+                label: "Dimensions",
+                value: "Approx. 1500 (L) x 500 (W) x 1000 (H) mm",
+            },
+            { label: " Power Supply", value: "415V AC, 50Hz" },
+            {
+                label: "Control System",
+                value: "PLC, HMI, VFD for precise control over operation parameters",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-1.pdf?updatedAt=1736232655735",
+        slug: "funsai",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/front.png?updatedAt=1736156976661",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/right.png?updatedAt=1736156979483",
+                alt: "",
+            },
+        ],
+        productName: "Planetary Ball Mill (Mono Mill)",
+        metaTitle: "Planetary Ball Mill (Mono Mill) ",
+        metaDesc:
+            "Our planetary ball mill offers superior grinding and mixing capabilities, utilising synchronised motion for optimal particle size reduction in various environments.",
+        desc: "Our Planetary Ball Mill (Mono Mill) is a high-performance grinding device designed for effective particle size reduction and material mixing in both laboratory and industrial environments. It utilizes planetary motion, where the grinding jars rotate on a central disk while simultaneously spinning in the opposite direction. This synchronized movement generates intense centrifugal forces, ensuring precise grinding and thorough homogenization of materials.",
+        keys: [
+            {
+                label: "Planetary Motion for Optimal Collision Rate",
+                value:
+                    "The unique planetary rotation generates a high collision frequency, ensuring intensive grinding and mixing. Ideal for applications that require ultra-fine grinding, capable of reducing particle sizes down to the nano scale.",
+            },
+            {
+                label: "Versatile Grinding Options",
+                value:
+                    "Offers a selection of jars and variable ball diameters for customizable grinding setups. Planetary motion ensures uniform particle size distribution for optimal blending.",
+            },
+            {
+                label: "Robust Construction",
+                value:
+                    "Built with high-quality materials for both jars and balls, ensuring durability and consistent performance. Self-lubricated belt drive system provides smooth, maintenance-free operation.",
+            },
+            {
+                label: "Advanced Control System",
+                value:
+                    "Microprocessor-controlled digital RPM for precise speed adjustments. Programmable timer for setting specific grinding duration.",
+            },
+            {
+                label: "Safety and User-Friendly Operation",
+                value:
+                    "Equipped with input and output fuses to enhance operational safety. Low-noise functionality for a quieter, more comfortable workspace.",
+            },
+            {
+                label: "Extended Operational Capability",
+                value: "Supports continuous operation for up to 10 hours.",
+            },
+        ],
+        spec: [
+            {
+                label: "Grinding Jar Material Options",
+                value: "Tungsten Carbide (TC), Stainless Steel (SS)",
+            },
+            {
+                label: "Jar Volume Options",
+                value: "SS-250 SS-500 SS-750 SS-1000 TC-250 TC- 500",
+            },
+            {
+                label: "Grinding Media Material Options",
+                value: "Tungsten Carbide (TC), Stainless Steel (SS)",
+            },
+            {
+                label: "Grinding Media Ball Sizes",
+                value: "Variable diameters to suit application requirements",
+            },
+            { label: "Total Number of Balls", value: "20-100" },
+            { label: "Maximum Speed", value: "Up to 600 RPM (Variable)" },
+            { label: "Drive Mechanism", value: "Self-lubricated belt drive" },
+            { label: "Continuous Operation", value: "Up to 10 hours" },
+            {
+                label: "Grinding Method",
+                value: "Planetary rotation for uniform grinding",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-2.pdf?updatedAt=1736232655680",
+        slug: "funsai",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/isometric-left.png?updatedAt=1736156950863",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/front.png?updatedAt=1736156946062",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/isometric-left.png?updatedAt=1736156950863",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/right.png?updatedAt=1736156950409",
+                alt: "",
+            },
+        ],
+        productName: "Planetary Ball Mill (Table Top)",
+        metaTitle: "Planetary Ball Mill (Table Top) with 4 Jars",
+        metaDesc:
+            "Our Planetary Ball Mill (Table Top) offers high-energy grinding with four jars. Its compact design is perfect for research and industrial applications.",
+        desc: "The Planetary Ball Mill (Table Top) features four grinding jars on a precisely engineered rotating turntable, creating high-energy collisions during planetary motion to finely grind materials. Suitable for both dry and wet grinding, it handles various materials efficiently. Its compact, low-noise design makes it ideal for sample preparation in research, academic, and industrial laboratories.",
+        keys: [
+            {
+                label: "Flexible Milling Modes",
+                value:
+                    "Supports both dry and wet milling for diverse applications. Operates with 2 or 4 jars simultaneously for efficiency.",
+            },
+            {
+                label: "Wide Material Compatibility",
+                value:
+                    "Handles a range of materials: soft, hard, brittle, fibrous, cellulose, glass, soil, ore, chemicals, and more.",
+            },
+            {
+                label: "Precise Controls and Long Operation",
+                value:
+                    "Adjustable rotational speed (70–670 rpm). Maximum continuous operation time: 72 hours.",
+            },
+            {
+                label: "Versatile Grinding Options",
+                value:
+                    "Offers a selection of jars and variable ball diameters for customizable grinding setups. Planetary motion ensures uniform particle size distribution for optimal blending.",
+            },
+            {
+                label: "Advanced Control System",
+                value:
+                    "Microprocessor-controlled digital RPM for precise speed adjustments. Programmable timer for setting specific grinding duration.",
+            },
+            {
+                label: "Safety and User-Friendly Operation",
+                value:
+                    "Equipped with input and output fuses to enhance operational safety. Low-noise functionality for a quieter, more comfortable workspace.",
+            },
+        ],
+        spec: [
+            { label: "Maximum Jar Volume", value: "500 ml per jar" },
+            { label: "Milling Modes", value: "Dry and Wet" },
+            { label: "Work Modes", value: "2 or 4 jars working together" },
+            { label: "Rotational Speed", value: "70-670 rpm, Adjustable" },
+            { label: "Revolution-to-Rotation Ratio", value: "1:2" },
+            {
+                label: "Input Granularity",
+                value: "<10 mm (soft materials), <3 mm (hard materials)",
+            },
+            { label: "Output Granularity", value: "Minimum 0.1 µm" },
+            { label: "Material Capacity", value: "Material + balls <2/3 jar volume" },
+            { label: "Machine Weight", value: "80 kg (without jars)" },
+            { label: "Machine Size (L x W x H)", value: "750 x 470 x 590 mm" },
+            { label: "Voltage", value: "220V, 50Hz/110V, 60Hz" },
+            {
+                label: "Grinding Jars",
+                value: "Stainless Steel, Zirconia, Alumina, Tungsten Carbide",
+            },
+            {
+                label: "Grinding Mediums",
+                value:
+                    "Stainless Steel Balls, Zirconia Balls, Alumina Balls, PU Balls, Tungsten Balls",
+            },
+            { label: "Continuous Operation", value: "Up to 72 hours" },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-3.pdf?updatedAt=1736232655683",
+        slug: "funsai",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png?updatedAt=1736156973933",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/front.png?updatedAt=1736156968888",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png?updatedAt=1736156973933",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/right.png?updatedAt=1736156976793",
+                alt: "",
+            },
+        ],
+        productName: "Single Roller Jar Mill",
+        metaTitle: "Single Roller Jar Mill",
+        metaDesc:
+            "Enhance your material processing with VBCC's Single Roller Jar Mill. Designed for efficient mixing and milling, it delivers superior grinding performance.",
+        desc: "VBCC's Single Roller Jar Mill is a grinding device designed for mixing, milling, and homogenizing materials within a jar. It features a single roller that rotates over the jar, generating friction and agitation to efficiently grind the materials inside.",
+        keys: [
+            {
+                label: "Robust Construction",
+                value:
+                    "M.S Body with Powder Coating: Durable and resistant to wear and corrosion. One-Tier Design: Accommodates jars of different sizes for versatile applications.",
+            },
+            {
+                label: "Precision Roller Design",
+                value:
+                    "Rubber-Coated Rollers: Highly resistant to mechanical wear and chemical attack. Sealed Ball Bearing Pillow Blocks: Ensures smooth and consistent rolling operation.",
+            },
+            {
+                label: "Smooth and Versatile Operation",
+                value:
+                    "Suitable for wet or dry grinding processes. Supports continuous operation for enhanced efficiency.",
+            },
+            {
+                label: "Advanced Control System",
+                value:
+                    "Equipped with VFD speed control for adjustable operation up to 300 RPM. Features automatic timers for precise control over grinding durations.",
+            },
+            {
+                label: "Compact and User-Friendly",
+                value:
+                    "Space-saving dimensions: 400 × 300 × 500 mm. Includes essential safety features like emergency stop buttons.",
+            },
+        ],
+        spec: [
+            { label: "Construction", value: "M.S with powder coating" },
+            { label: "Arrangement", value: "One-tier for different jar sizes" },
+            {
+                label: "Roller Coating Options",
+                value: "Rubber-coated, wear-resistant",
+            },
+            { label: "Roller Mounting", value: "Sealed ball bearing pillow blocks" },
+            { label: "Dimensions", value: "Approx. 400 x 300 x 500 mm" },
+            { label: "Power Supply", value: "230 V, AC, 50 Hz" },
+            { label: "Motor Capacity", value: "0.5 HP" },
+            { label: "Drive", value: "Belt drive" },
+            { label: "Speed", value: "Adjustable up to 300 RPM" },
+            { label: "Operation", value: "Wet or Dry" },
+            { label: "Jars", value: "Customer scope" },
+            { label: "Controls", value: "Automatic for precise timing" },
+            { label: "Indicators", value: "On/off switch, emergency button" },
+            { label: "Speed Control", value: "Via VFD" },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-4.pdf?updatedAt=1736232655686",
+        slug: "funsai",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png?updatedAt=1736156957914",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/front.png?updatedAt=1736156956491",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png?updatedAt=1736156957914",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/right.png?updatedAt=1736156964706",
+                alt: "",
+            },
+        ],
+        productName: "Table Top Jar Mill",
+        metaTitle: "Table Top Jar Mill - VBCC",
+        metaDesc:
+            "Explore our Table Top Jar Mill, designed for labs. This compact tool efficiently mills and mixes materials in jars, reducing particle size with ease.",
+        desc: "We engineered the Table Top Jar Mill as a compact, efficient grinding tool commonly used in laboratory environments for milling, mixing, and homogenizing materials within jars. It features a horizontal platform where multiple jars are positioned, rotating either separately or together. This movement generates friction and grinding forces, effectively reducing the particle size of the materials inside.",
+        keys: [
+            {
+                label: "Ultra-Compact Design",
+                value:
+                    "Space-efficient tabletop model, perfect for laboratories with limited space. Designed for convenience without compromising on functionality.",
+            },
+            {
+                label: "Robust and Reliable Construction",
+                value:
+                    "Built with a durable M.S body with powder coating for resistance to wear and corrosion. One-tier design accommodates jars of varying sizes for flexible applications.",
+            },
+            {
+                label: "Precision Roller System",
+                value:
+                    "Rubber-coated rollers: Provide excellent grip and are resistant to wear and chemical attack. Mounted on sealed ball bearing pillow blocks for smooth, consistent operation.",
+            },
+            {
+                label: "Flexible and Efficient Operation",
+                value:
+                    "Handles both wet and dry grinding processes. Operates continuously at speeds of up to 300 RPM, ensuring efficient grinding.",
+            },
+            {
+                label: "Energy-Efficient Motor",
+                value:
+                    "Equipped with a 0.25 HP motor, providing the right balance of power and energy efficiency.",
+            },
+            {
+                label: "Intuitive Controls for Ease of Use",
+                value:
+                    "Automatic timer for precise grinding duration control. Features an on/off switch, emergency button, and VFD-based speed control for user-friendly operation.",
+            },
+        ],
+        spec: [
+            { label: "Construction", value: "M.S with powder coating" },
+            { label: "Arrangement", value: "One-tier for different jar sizes" },
+            {
+                label: "Roller Coating Options",
+                value: "Rubber-coated, wear-resistant",
+            },
+            { label: "Roller Mounting", value: "Sealed ball bearing pillow blocks" },
+            { label: "Power Supply", value: "230 V, AC, 50 Hz" },
+            { label: "Motor Capacity", value: "0.25 HP" },
+            { label: "Drive", value: "Belt drive" },
+            { label: "Speed", value: "Adjustable up to 300 RPM" },
+            { label: "Operation", value: "Wet or Dry" },
+            { label: "Jars", value: "Customer scope" },
+            { label: "Timer", value: "Automatic for precise timing" },
+            { label: "Indicators", value: "On/off switch, emergency button" },
+            { label: "Speed Control", value: "Via VFD" },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-5.pdf?updatedAt=1736232655627",
+        slug: "funsai",
+    },
+];
+
+export const SeikiProductsList = [
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/isometric.png?updatedAt=1736156885023",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/front.png?updatedAt=1736156865702",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/left.png?updatedAt=1736156894664",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/right.png?updatedAt=1736156894897",
+                alt: "",
+            },
+        ],
+        productName: "Compression Moulding Press",
+        metaTitle: "Compression Moulding Press 100 Ton",
+        metaDesc:
+            "VBCC designs and manufactures durable Hydraulic Compression Moulding Presses with advanced technology, high-quality materials, and precision, tailored to clients' technical needs.",
+        desc: "VBCC is a trusted name in designing and producing advanced Hydraulic Compression Moulding Presses. Built with cutting-edge technology and high-quality materials, these presses are known for their durability, low maintenance, and exceptional precision. They are widely used in engineering applications and can be tailored to meet the unique technical needs of our clients.",
+        keys: [
+            {
+                label: "Robust Fabrication",
+                value:
+                    "Sturdy construction with IS 2062/IS:226-grade steel for durability and minimal deflection under load.",
+            },
+            {
+                label: "Advanced Control",
+                value:
+                    "PLC-based control system with programmable cycles, stroke, and pressure settings.",
+            },
+            {
+                label: "Optimized Hydraulics",
+                value:
+                    "Efficient power pack with cartridge valve manifold technology for trouble-free performance.",
+            },
+            {
+                label: "Safety Assured",
+                value:
+                    "IP54-rated electrical panel, emergency stops, and safety interlocks for operator protection.",
+            },
+            {
+                label: "Additional Models Available",
+                value:
+                    "10, 30, 50, 200 and 500-ton capacity presses are also available, designed to meet your specific moulding requirements.",
+            },
+        ],
+        spec: [
+            { label: "Capacity", value: "100 tonnes" },
+            { label: "Daylight", value: "250 mm" },
+            { label: "Main Ram Stroke", value: "250 mm" },
+            { label: "Platen Size (L x W)", value: "400 x 400 mm" },
+            { label: "Max Working Pressure", value: "200 Kg/cm²" },
+            { label: "Platen Heating", value: "Electric" },
+            { label: "Platen Temperature", value: "Up to 400°C" },
+            { label: "Heating Capacity (Each)", value: "6 kW" },
+            {
+                label: "Speeds (Approx.)",
+                value: "Approach: 70 mm/sec, Pressing: 1.4 mm/sec, Return: 90 mm/sec",
+            },
+            { label: "Electric Motor", value: "5 HP, 415V, 3-phase" },
+            { label: "Oil Tank Capacity", value: "325 liters" },
+            { label: "Control System", value: "PLC with touch-screen HMI" },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-1.pdf?updatedAt=1736232679563",
+        slug: "seiki",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png?updatedAt=1736156797548",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/front.png?updatedAt=1736156790736",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/left.png?updatedAt=1736156803311",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/right.png?updatedAt=1736156798672",
+                alt: "",
+            },
+        ],
+        productName: "Vacuum Hot Press",
+        metaTitle: "Vacuum Hot Press Up to 2000℃",
+        metaDesc:
+            "We specialize in advanced vacuum hot presses, perfect for achieving high-density materials in a vacuum. Suitable for simple and intricate designs alike.",
+        desc: "VBCC manufactures advanced vacuum hot presses designed for hot pressing materials in a controlled vacuum environment. This method is ideal for materials that struggle to achieve high density due to low diffusion rates or require a pore-free structure for superior mechanical, thermal, or optical performance. While particularly suited for simple shapes such as plates, blocks, and cylinders, it can also accommodate more intricate designs with specialized die configurations.",
+        keys: [
+            {
+                label: "Robust Construction",
+                value: "Heavy-duty metal frame with sky-blue emulsion finish.",
+            },
+            {
+                label: "Versatile Capacity",
+                value: "Offered in 10, 20, and 50-ton variants to suit diverse needs.",
+            },
+            {
+                label: "Advanced Automation",
+                value: "Fully automatic operation with PLC and VFD control.",
+            },
+            {
+                label: "User-Friendly Interface",
+                value: "5.7” Delta HMI for seamless programming and operation.",
+            },
+            {
+                label: "Precision Pressing",
+                value: "Uni-axial compaction with programmable load control.",
+            },
+            {
+                label: "Customizable Design",
+                value: "Adjustable die and loading height for user convenience.",
+            },
+            {
+                label: "Safety Features",
+                value: "Emergency switches and limit switches ensure secure operation.",
+            },
+            {
+                label: "Reliable Hydraulic System",
+                value: "Siemens motor and hydraulic pumps for consistent performance.",
+            },
+        ],
+        headers: [
+            "Model",
+            "Max Temperature",
+            "Inner Dimensions (mm)",
+            "Volume (Liters)",
+            "Outer Dimension (mm)",
+            "Max Power",
+            "Phase",
+            "Weight",
+            "Vacuum Level mbar (Max)",
+            "Press Capacity"
+        ],
+        spec: [
+            {
+                Model: "VHP 1/16",
+                "Max Temperature": "1600 °C",
+                "Inner Dimensions (mm)": "100*100*100",
+                "Volume (Liters)": "1L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 3/16",
+                "Max Temperature": "1600 °C",
+                "Inner Dimensions (mm)": "150*150*250",
+                "Volume (Liters)": "3.375 L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 5/16",
+                "Max Temperature": "1600 °C",
+                "Inner Dimensions (mm)": "150*150*250",
+                "Volume (Liters)": "5.625 L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 1/18",
+                "Max Temperature": "1800 °C",
+                "Inner Dimensions (mm)": "100*100*100",
+                "Volume (Liters)": "1L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 3/18",
+                "Max Temperature": "1800 °C",
+                "Inner Dimensions (mm)": "150*150*250",
+                "Volume (Liters)": "3.375 L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 5/18",
+                "Max Temperature": "1800 °C",
+                "Inner Dimensions (mm)": "150*150*250",
+                "Volume (Liters)": "5.625 L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 1/20",
+                "Max Temperature": "2000 °C",
+                "Inner Dimensions (mm)": "100*100*100",
+                "Volume (Liters)": "1L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 3/20",
+                "Max Temperature": "2000 °C",
+                "Inner Dimensions (mm)": "150*150*250",
+                "Volume (Liters)": "3.375 L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+            {
+                Model: "VHP 5/20",
+                "Max Temperature": "2000 °C",
+                "Inner Dimensions (mm)": "150*150*250",
+                "Volume (Liters)": "5.625 L",
+                "Outer Dimension (mm)": "800*800*1500",
+                "Max Power": "8 kW",
+                Phase: "3 phase",
+                Weight: "200",
+                "Vacuum Level mbar (Max)": "10⁻⁴",
+                "Press Capacity": "10, 20, 50, 100 & 200 Ton",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-2.pdf?updatedAt=1736232679466",
+        slug: "funsai",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/isometric.png?updatedAt=1736156803226",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/front.png?updatedAt=1736156797715",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/left.png?updatedAt=1736156730822",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/right.png?updatedAt=1736156799700",
+                alt: "",
+            },
+        ],
+        productName: "Vacuum Press or Laminating Press",
+        metaTitle: "Vacuum Press / Laminating Press",
+        metaDesc:
+            "Experience the precision of our vacuum press, designed to prevent air pockets and enhance bonding quality. Essential for electronics, aerospace, and automotive sectors.",
+        desc: "Our Vacuum Press is meticulously designed to eliminate air trapped between two materials rather than merely compressing it. By creating an air-tight seal, it ensures a robust and uniform bond between the materials under high pressure. This technology is particularly advantageous for applications requiring precise adhesion, as it prevents voids or air pockets that could affect the final product's quality. Our Vacuum Press is ideal for industries such as electronics, aerospace, and automotive, where dependable and durable bonding is essential.",
+        keys: [
+            {
+                label: "Robust Fabrication",
+                value:
+                    "Sturdy construction with IS 2062/IS:226-grade steel for durability and minimal deflection under load.",
+            },
+            {
+                label: "Precision Heating",
+                value:
+                    "Electric-heated platens with PID temperature controllers for exact heat distribution up to 400°C.",
+            },
+            {
+                label: "Advanced Control",
+                value:
+                    "PLC-based control system with programmable cycles, stroke, and pressure settings.",
+            },
+            {
+                label: "Optimized Hydraulics",
+                value:
+                    "Efficient power pack with cartridge valve manifold technology for trouble-free performance.",
+            },
+            {
+                label: "Safety Assured:",
+                value:
+                    "IP54-rated electrical panel, emergency stops, and safety interlocks for operator protection.",
+            },
+        ],
+        spec: [
+            { label: "Capacity", value: "100 tonnes" },
+            { label: "Daylight", value: "250 mm" },
+            { label: "Main Ram Stroke", value: "250 mm" },
+            { label: "Platen Size (L x W)", value: "400 x 400 mm" },
+            { label: "Max Working Pressure", value: "200 Kg/cm²" },
+            { label: "Platen Heating", value: "Electric" },
+            { label: "Platen Temperature", value: "Up to 400°C" },
+            { label: "Heating Capacity (Each)", value: "6 kW" },
+            {
+                label: "Speeds (Approx.)",
+                value: "Approach: 70 mm/sec, Pressing: 1.4 mm/sec, Return: 90 mm/sec",
+            },
+            { label: "Electric Motor", value: "5 HP, 415V, 3-phase" },
+            { label: "Oil Tank Capacity", value: "325 liters" },
+            { label: "Control System", value: "PLC with touch-screen HMI" },
+            { label: "Vacuum Level", value: "Upto 10 mbar" },
+            { label: "Press Capacity", value: "10, 20, 50, 100 and 200 Ton" },
+            {
+                label: "Additional Models Available:",
+                value:
+                    " 30, 50, and 200-ton capacity presses are also available, designed to meet your specific moulding requirements.",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-3.pdf?updatedAt=1736232680093",
+        slug: "funsai",
+    },
+    {
+        mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png?updatedAt=1736226196043",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/front.png?updatedAt=1736226194742",
+                alt: "",
+                title: "20 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/left.png?updatedAt=1736226194774",
+                alt: "",
+                title: "20 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/right.png?updatedAt=1736226196704",
+                alt: "",
+                title: "20 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/front.png?updatedAt=1736226197267",
+                alt: "",
+                title: "50 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/left.png?updatedAt=1736226199834",
+                alt: "",
+                title: "50 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/right.png?updatedAt=1736226199431",
+                alt: "",
+                title: "50 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/front.png?updatedAt=1736226198996",
+                alt: "",
+                title: "100 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/left.png?updatedAt=1736226218501",
+                alt: "",
+                title: "100 Ton Automatic Hydraulic Press",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/right.png?updatedAt=1736226220274",
+                alt: "",
+                title: "100 Ton Automatic Hydraulic Press",
+            },
+        ],
+        productName: "Automatic Hydraulic Press",
+        metaTitle: "100 Ton Automatic Hydraulic Press - VBCC",
+        metaDesc:
+            "Our Automatic Hydraulic Press offers reliable performance with precise electric motor control for efficient quality component production in various industries.",
+        desc: "VBCC's Automatic Hydraulic Press uses an electric motor to power the hydraulic pump and electric switches to control the relief valve. This system ensures precise control, high accuracy, and repeatability, reducing manual intervention and enhancing efficiency. Widely used in industries like automotive, aerospace, and manufacturing, it offers reliable performance for producing high-quality components.",
+        keys: [
+            {
+                label: "Robust Construction",
+                value: "Heavy-duty metal frame with sky-blue emulsion finish.",
+            },
+            {
+                label: "Versatile Capacity",
+                value: "Offered in 10, 20, and 50-ton variants to suit diverse needs.",
+            },
+            {
+                label: "Advanced Automation",
+                value: "Fully automatic operation with PLC and VFD control.",
+            },
+            {
+                label: "User-Friendly Interface",
+                value: "5.7” Delta HMI for seamless programming and operation.",
+            },
+            {
+                label: "Precision Pressing",
+                value: "Uni-axial compaction with programmable load control.",
+            },
+            {
+                label: "Customizable Design",
+                value: "Adjustable die and loading height for user convenience.",
+            },
+            {
+                label: "Safety Features",
+                value: "Emergency switches and limit switches ensure secure operation.",
+            },
+            {
+                label: "Reliable Hydraulic System",
+                value: "Siemens motor and hydraulic pumps for consistent performance.",
+            },
+            {
+                label: "Additional Options",
+                value:
+                    "10 - Ton Variant, 20 - Ton Variant, 50 - Ton Variant, 100 - Ton Variant",
+            },
+        ],
+        spec: [
+            { label: "Press Frame", value: "Four-pillar type" },
+            { label: "Cylinder Capacity", value: "50 tons" },
+            { label: "Piston Stroke", value: "200 mm" },
+            { label: "Platen Size", value: "200 mm dia" },
+            { label: "Operation", value: "Fully automatic with manual option" },
+            { label: "Control System", value: 'PLC with 5.7" HMI' },
+            { label: "Power Pack", value: "Electrically operated" },
+            { label: "Safety", value: "Emergency switch, limit switches" },
+            { label: "Power Supply", value: "3 Phase, 50Hz, AC, 230V" },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-4.pdf?updatedAt=1736232679822",
+        slug: "funsai",
+    },
+    {
+        mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/isometric.png?updatedAt=1736226036048",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/front.png?updatedAt=1736226037186",
+                alt: "",
+                title: "10 - Ton Manual Hydraulic Press"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/left.png?updatedAt=1736226036511",
+                alt: "",
+                title: "10 - Ton Manual Hydraulic Press"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/right.png?updatedAt=1736226036607",
+                alt: "",
+                title: "10 - Ton Manual Hydraulic Press"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/front.png?updatedAt=1736226032804",
+                alt: "",
+                title: "20 - Ton Manual Hydraulic Press"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/left.png?updatedAt=1736226035060",
+                alt: "",
+                title: "20 - Ton Manual Hydraulic Press"
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/right.png?updatedAt=1736226036038",
+                alt: "",
+                title: "20 - Ton Manual Hydraulic Press"
+            },
+        ],
+        productName: "Manual Hydraulic Press",
+        metaTitle: "20 Ton Manual Hydraulic Press",
+        metaDesc:
+            "Offering powerful compression with a hand lever, our manual hydraulic press system is ideal for shaping and processing a variety of materials, including metals and plastics.",
+        desc: "Our manual hydraulic press utilizes a hand lever to generate hydraulic pressure, allowing for the compression or crushing of materials. A hand valve is employed to release the pressure and unload the material. These presses are highly versatile, ideal for shaping, deforming, and processing a wide range of materials, including metals, rubber, wood, and plastics.",
+        keys: [
+            {
+                label: "Robust Construction",
+                value: "Heavy-duty metal frame with sky-blue emulsion finish.",
+            },
+            {
+                label: "Versatile Capacity",
+                value:
+                    "Offered in 10, 20, and 20-Semi Automatic ton variants to suit diverse needs.",
+            },
+            {
+                label: "Precision Pressing",
+                value: "Uni-axial compaction with programmable load control.",
+            },
+            {
+                label: "Customizable Design",
+                value: "Adjustable die and loading height for user convenience.",
+            },
+            {
+                label: "Safety Features",
+                value: "Emergency switches and limit switches ensure secure operation.",
+            },
+            {
+                label: "Reliable Hydraulic System",
+                value: "Siemens motor and hydraulic pumps for consistent performance.",
+            },
+            {
+                label: "Additional Options",
+                value:
+                    "10 - Ton Variant, 20 - Ton Variant,20 - Semi Automatic Ton Variant",
+            },
+        ],
+        spec: [
+            { label: "Press Capacity", value: "10 tons" },
+            { label: "Cylinder Capacity", value: "10 tons (Hydraulic power unit)" },
+            { label: "Usage", value: "Powder pressing" },
+            { label: "Piston Stroke", value: "50 mm (Max)" },
+            { label: "Upper Ram", value: "Stationary" },
+            { label: "Loading Type", value: "Vertical up" },
+            { label: "Day Light", value: "120 mm (distance between punch and die)" },
+            { label: "Platen Size", value: "100 mm dia" },
+            { label: "Press Frame", value: "2-pillar type" },
+            { label: "Pressure Gauge", value: "Digital pressure gauge" },
+            { label: "Max Pressure", value: "300 bars (30 MPa)" },
+            { label: "Model", value: "Table-top" },
+            { label: "Pellet Die", value: "Optional (available at extra cost)" },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-5.pdf?updatedAt=1736232679886",
+        slug: "funsai",
+    },
+    {
+        mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/front.png?updatedAt=1736156797989",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/left.png?updatedAt=1736156810163",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/right.png?updatedAt=1736156860886",
+                alt: "",
+            },
+        ],
+        productName: "Mini Hot Press",
+        metaTitle: "Mini Hot Press",
+        metaDesc:
+            "The Mini Hot Press is designed for precision in shaping and bonding materials. Perfect for small-scale production and research in limited spaces.",
+        desc: "We have carefully designed the Mini Hot Press, a compact piece of material processing equipment that applies heat and pressure to various materials, including plastics, metals, and composites. It is well-suited for small-scale production, prototyping, or research applications. The press uses controlled heat and pressure to shape, mould, or bond materials with high precision and quality. Its compact design makes it ideal for environments with limited space, providing an efficient solution for small-volume manufacturing and material testing.",
+        keys: [
+            {
+                label: "Compact and Efficient",
+                value:
+                    "Table-top model with a 2-pillar frame for easy handling and minimal space requirements.",
+            },
+            {
+                label: "Dual Functionality",
+                value:
+                    "Combines mechanical pressing with heating for versatile applications.",
+            },
+            {
+                label: "Advanced Temperature Control",
+                value: "PID microprocessor ensures precise temperature regulation.",
+            },
+            {
+                label: "Safety Features",
+                value: "Equipped with fuses, MCB protection, and clear indicators.",
+            },
+            {
+                label: "Customizable Pressing Capacity",
+                value: "Available in 10, 20 Ton Variant.",
+            },
+            {
+                label: "Robust Heating System",
+                value: "Strip heaters deliver uniform heating up to 800°C.",
+            },
+        ],
+        spec: [
+            { label: "Press Capacity", value: "10 Ton (Optional: 20T available)" },
+            { label: "Press Frame", value: "2-pillar type, table-top model" },
+            { label: "Max Pressure", value: "300 bars (30 MPa)" },
+            { label: "Piston Stroke", value: "50 mm" },
+            { label: "Platen Size", value: "100 mm diameter" },
+            { label: "Daylight Gap", value: "120 mm" },
+            { label: "Heating Elements", value: "Strip heaters" },
+            { label: "Working Temperature", value: "Up to 800°C" },
+            { label: "Power Requirement", value: "1 kW, 230V AC" },
+            { label: "Temperature Control", value: "PID-based, ±1°C accuracy" },
+            { label: "Thermocouple Type", value: "K type" },
+            {
+                label: "Safety Mechanisms",
+                value: "Input/output fuses, MCB protection",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-6.pdf?updatedAt=1736232679691",
+        slug: "funsai",
+    },
+];
+
+export const OshidashiProductsList = [
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/isometric.png?updatedAt=1736156918682",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/front.png?updatedAt=1736156877588",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/left.png?updatedAt=1736156919959",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/right.png?updatedAt=1736156928330",
+                alt: "",
+            },
+        ],
+        productName: "Manual Extruder",
+        metaTitle: "Manual Extruder - VBCC",
+        metaDesc:
+            "Precisely engineered for craftsmen and small businesses. It offers versatile welding capabilities and ensures high-quality results in tight spaces.",
+        desc: "Our manual extruder is a specialised piece of equipment designed for processing plastics into finished products by passing them through a die. It is ideal for craftsmen and small businesses seeking customised production solutions. A key advantage of our manual extruder is its ability to weld a wide variety of materials, perform welding in tight spaces, and consistently produce high-quality welds.",
+        keys: [
+            {
+                label: "Compact & Portable",
+                value: "Ideal for small-scale production and R& D applications.",
+            },
+            {
+                label: "Customizable Nozzle Size",
+                value:
+                    "Standard nozzle size up to 25 mm, with custom sizes available as per customer requirement.",
+            },
+            {
+                label: "Durable Construction",
+                value:
+                    "Die, barrel, and piston made of high-quality stainless steel for superior strength and performance.",
+            },
+            {
+                label: "Stable & Long-Lasting",
+                value:
+                    "Mild steel support structure with powder coating for corrosion resistance.",
+            },
+            {
+                label: "User-Friendly",
+                value:
+                    "Simple manual operation for easy control and minimal maintenance.",
+            },
+            {
+                label: "Versatile Application",
+                value:
+                    "Suitable for a variety of extrusion processes including plastics, polymers, and other materials.",
+            },
+        ],
+        spec: [
+            { label: "Equipment Name", value: "Table Top Hand Extruder" },
+            { label: "Nozzle Size", value: "Up to 25 mm (customizable)" },
+            {
+                label: "Construction Material",
+                value: "Die, Barrel & Piston: Stainless Steel",
+            },
+            { label: "Support Structure", value: "Mild Steel with Powder Coating" },
+            { label: "Operation Mode", value: "Manual/Hand Operated" },
+            { label: "Size", value: "Compact tabletop design" },
+            { label: "Weight", value: " Lightweight, easy to transport" },
+            {
+                label: "Power Supply",
+                value: "Manual operation (no electrical requirement)",
+            },
+            {
+                label: "Customization Options",
+                value: "Custom nozzle sizes, extrusion speed adjustments",
+            },
+            {
+                label: "Maintenance",
+                value: "Low maintenance, easy-to-clean components",
+            },
+            {
+                label: "Safety Features",
+                value: "Ergonomic design with overload protection",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-1.pdf?updatedAt=1736232701942",
+        slug: "oshidashi",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/isometric.png?updatedAt=1736156939203",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/front.png?updatedAt=1736156945414",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/left.png?updatedAt=1736156944793",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/right.png?updatedAt=1736156948410",
+                alt: "",
+            },
+        ],
+        productName: "Automatic Extruder",
+        metaTitle: "Automatic Extruder | Piston Type Extruder (PTE)",
+        metaDesc:
+            "Advanced design of automatic extruders, which use motorised systems to efficiently melt and shape plastic, ensuring precision and consistency in production.",
+        desc: "Unlike manual extruders, automatic extruders are motorized, minimizing the need for manual effort. They utilize a rotating screw within a heated barrel to melt and shape plastic into various forms. This advanced design ensures precise control over key processing parameters, offering enhanced efficiency and consistency.",
+        keys: [
+            {
+                label: "Versatile Material Handling",
+                value:
+                    "Designed to process a wide range of materials such as meta materials, ceramic materials, and metal powders with adequate plasticity to pass through the die.",
+            },
+            {
+                label: "Piston Type Extruder",
+                value:
+                    "The piston-driven design ensures smooth and efficient material extrusion.",
+            },
+            {
+                label: "Fixed Machine Frame",
+                value:
+                    "Mounted in a robust mild steel (MS) frame, ensuring stability during operation.",
+            },
+            {
+                label: "Precise Extrusion Height",
+                value:
+                    "The extrusion height is set to 200mm from the base level for optimal material flow.",
+            },
+            {
+                label: "Single Screw Piston Movement",
+                value:
+                    "The machine uses a single screw model that is connected to the piston for efficient material movement through the die orifice.",
+            },
+            {
+                label: "Mechanized Drive",
+                value: "Powered by a 0.5HP motor, ensuring efficient performance.",
+            },
+            {
+                label: "Variable Speed Control",
+                value:
+                    "The extruder features a variable speed drive (VFD) for precise control over extrusion speed.",
+            },
+            {
+                label: "Polished Stainless Steel Barrel",
+                value:
+                    "The barrel is made from  high-quality, well-polished stainless steel for durability and smooth operation.",
+            },
+            {
+                label: "Customizable Die Size",
+                value:
+                    "A single die, customized to the customer’s requirements, is supplied with the extruder. Standard die  dimensions include an inner diameter of 5.5 mm and an outer  diameter of 11.5 mm.",
+            },
+            {
+                label: "Available Options - Single Screw Model",
+                value:
+                    "Ideal for simpler extrusion processes, offering good control over material flow.",
+            },
+            {
+                label: "Available Options - Twin Screw Model",
+                value:
+                    "Provides enhanced mixing and better handling of more complex materials for superior quality and consistency.",
+            },
+            {
+                label: "Available Options - Piston Type Model",
+                value:
+                    "Suitable for applications requiring precise material pushing and high pressure for more demanding material types.",
+            },
+        ],
+        spec: [
+            {
+                label: "Type",
+                value:
+                    "Extrusion Machine for Meta Materials, Ceramic Materials and Metal Powders",
+            },
+            {
+                label: "Model",
+                value: "Piston Type Extruder",
+            },
+            {
+                label: "Frame",
+                value: "Fixed in a robust Mild Steel (MS) frame",
+            },
+            {
+                label: "Extrusion Height",
+                value: "200 mm from the base level",
+            },
+            {
+                label: "Working Principle",
+                value:
+                    "Material with suitable plasticity is loaded through the barrel, and the piston pushes it through the die orifice",
+            },
+            {
+                label: "Piston Movement",
+                value: "Single screw model connected to the piston",
+            },
+            {
+                label: "Drive",
+                value: "Mechanized drive with a 0.5 HP motor",
+            },
+            {
+                label: "Speed",
+                value: "Variable speed with VFD control",
+            },
+            {
+                label: "Barrel",
+                value: "Made from well-polished Stainless Steel",
+            },
+            {
+                label: "Die Size",
+                value:
+                    "Custom die supplied (Inner Diameter: 5.5 mm, Outer Diameter: 11.5 mm)",
+            },
+            {
+                label: "Power Supply",
+                value: "0.5 HP motor",
+            },
+            {
+                label: "Customization Options",
+                value:
+                    "Die sizes and extrusion parameters customizable based on customer needs",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-2.pdf?updatedAt=1736232701835",
+        slug: "oshidashi",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/isometric.png?updatedAt=1736156890586",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/front.png?updatedAt=1736156879130",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/left.png?updatedAt=1736156894903",
+                alt: "",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/right.png?updatedAt=1736156893522",
+                alt: "",
+            },
+        ],
+        productName: "Vacuum Extruder",
+        metaTitle: "Vacuum Extrusion Press",
+        metaDesc:
+            "VBCC's vacuum extruder improves material quality by removing volatiles, moisture, air, solvents, and VOCs, ensuring consistent, high-quality output.",
+        desc: "VBCC's vacuum extruder is engineered to improve material quality by removing volatiles during extrusion. The built-in vacuum system reduces vent pressure, eliminating moisture, air, solvents, and reactants. It also handles volatile organic compounds (VOCs) at high temperatures, ensuring consistent, high-quality output.",
+        keys: [
+            {
+                label: "Versatile Material Handling",
+                value:
+                    "Designed to process a wide range of materials such as meta materials, ceramic materials, and metal powders with sufficient plasticity to pass through the die.",
+            },
+            {
+                label: "Piston Type Extruder",
+                value:
+                    "The piston-driven design ensures smooth and efficient material extrusion, ideal for precise and high-pressure applications.",
+            },
+            {
+                label: "Advanced Vacuum System",
+                value:
+                    "The extruder features a robust vacuum system with a minimum vacuum level of 10 ¹ Torr (rough vacuum) to enhance material quality by reducing air pockets and improving material density during extrusion.",
+            },
+            {
+                label: "Vacuum Pump",
+                value:
+                    "Dual-stage rotary vacuum pump with oil trap to ensure consistent vacuum levels and prevent contamination.",
+            },
+            {
+                label: "Vacuum Indication",
+                value:
+                    "The system includes an analog dial gauge for easy monitoring of vacuum levels during operation.",
+            },
+            {
+                label: "Vacuum Timer",
+                value:
+                    "A special timer is provided to control the vacuum system, ensuring precise timing and operation.",
+            },
+            {
+                label: "Fixed Machine Frame",
+                value:
+                    "Mounted in a durable mild steel (MS) frame for stability during operation.",
+            },
+            {
+                label: "Precise Extrusion Height",
+                value:
+                    "The extrusion height is set to 200 mm from the base level for optimal material flow.",
+            },
+            {
+                label: "Single Screw Piston Movement",
+                value:
+                    "The machine uses a single screw model connected to the piston for efficient material movement through the die orifice.",
+            },
+            {
+                label: "Mechanized Drive",
+                value: "Powered by a 0.5 HP motor, ensuring efficient performance.",
+            },
+            {
+                label: "Variable Speed Control",
+                value:
+                    "The extruder features a variable speed drive (VFD) for precise control over extrusion speed.",
+            },
+            {
+                label: "Polished Stainless Steel Barrel",
+                value:
+                    "The barrel is made from high-quality, well-polished stainless steel for durability and smooth operation.",
+            },
+            {
+                label: "Customizable Die Size",
+                value:
+                    "A single die, customized to the customer’s requirements, is supplied with the extruder. Standard die dimensions include an inner diameter of 5.5 mm and outer diameter of 11.5 mm.",
+            },
+            {
+                label: "Improved Material Quality",
+                value:
+                    "The vacuum environment significantly improves the extrusion quality by reducing air entrapment, enhancing the material's density and overall consistency.",
+            },
+            {
+                label: "Available Options - Single Screw Model",
+                value:
+                    "Ideal for simpler extrusion processes, offering good control over material flow.",
+            },
+            {
+                label: "Available Options - Twin Screw Model",
+                value:
+                    "Provides enhanced mixing and better handling of more complex materials for superior quality and consistency.",
+            },
+            {
+                label: "Available Options - Piston Type Model",
+                value:
+                    "Suitable for applications requiring precise material pushing and high pressure for more demanding material types.",
+            },
+            {
+                label: "Available Options - Vacuum System Option",
+                value:
+                    "Rough vacuum created by a dual-stage rotary vacuum pump (minimum 10¹ Torr) with an oil trap, vacuum indication via an analog dial gauge, and a vacuum timer for precise operation control.",
+            },
+        ],
+        spec: [
+            {
+                label: "Type",
+                value:
+                    "Vacuum Extrusion Machine for Meta Materials, Ceramic Materials, and Metal Powders",
+            },
+            {
+                label: "Model",
+                value: "Piston Type Extruder with Vacuum System",
+            },
+            {
+                label: "Frame",
+                value: "Fixed in a robust Mild Steel (MS) frame",
+            },
+            {
+                label: "Extrusion Height",
+                value: "200 mm from the base level",
+            },
+            {
+                label: "Working Principle",
+                value:
+                    "Material with suitable plasticity is loaded through the barrel, and the piston pushes it through the die orifice",
+            },
+            {
+                label: "Piston Movement",
+                value: "Single screw model connected to the piston",
+            },
+            {
+                label: "Vacuum System",
+                value: "Minimum vacuum level of 10-¹ Torr (rough vacuum)",
+            },
+            {
+                label: "Vacuum Pump",
+                value: "Dual-stage rotary vacuum pump with oil trap",
+            },
+            {
+                label: "Vacuum Indication",
+                value: "Analog dial gauge for vacuum level monitoring",
+            },
+            {
+                label: "Vacuum Timer",
+                value: "Special timer provided for vacuum system control",
+            },
+            {
+                label: "Drive",
+                value: "Mechanized drive with a 0.5 HP motor",
+            },
+            {
+                label: "Speed",
+                value: "Variable speed with VFD control",
+            },
+            {
+                label: "Barrel",
+                value: "Made from well-polished Stainless Steel",
+            },
+            {
+                label: "Die Size",
+                value:
+                    "Custom die supplied (Inner Diameter: 5.5 mm, Outer Diameter: 11.5 mm)",
+            },
+            {
+                label: "Power Supply",
+                value: "0.5 HP motor",
+            },
+            {
+                label: "Customization Options",
+                value:
+                    "Die sizes and extrusion parameters customizable based on customer needs",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-3.pdf?updatedAt=1736232702257",
+        slug: "oshidashi",
+    },
+];
 
 export const productLists = [
-    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034", title: "Vacuum Sintering Furnace", temp: "1200 C", energy: "1.5 KW" },
-    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194", title: "Burnout Furnace", temp: "1200 C", energy: "1.5 KW" },
-    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341", title: "Zirconia Sintering Furnace", temp: "1600 C", energy: "2 KW" },
-    { img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804", title: "Vacuum Pressing Furnace", temp: "1200 C", energy: "2 KW" },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
+        title: "Vacuum Sintering Furnace",
+        temp: "1200 C",
+        energy: "1.5 KW",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
+        title: "Burnout Furnace",
+        temp: "1200 C",
+        energy: "1.5 KW",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341",
+        title: "Zirconia Sintering Furnace",
+        temp: "1600 C",
+        energy: "2 KW",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
+        title: "Vacuum Pressing Furnace",
+        temp: "1200 C",
+        energy: "2 KW",
+    },
 ];

@@ -3,11 +3,11 @@ import React from "react";
 import { useState } from "react";
 import Tablet from "../Tablet";
 
-const ProductDetails = ({ keys, specs, headers, page, headers2, specs2 }) => {
+const ProductDetails = ({ keys, specs, headers, page, headers2, specs2, path }) => {
   const [activeTab, setActiveTab] = useState("Key Functions");
   return (
     <section className="w-full h-full space-y-20 padding font-Montserrat bg-primary">
-      <div className="flex items-center gap-8">
+      <div className="flex flex-col items-center gap-6 sm:gap-8 sm:flex-row">
         <button
           onClick={() => setActiveTab("Key Functions")}
           className={`relative font-medium tracking-wide uppercase text-xl  ${activeTab === "Key Functions" &&
@@ -39,12 +39,13 @@ const ProductDetails = ({ keys, specs, headers, page, headers2, specs2 }) => {
       )}
       {activeTab === "Specifications" && (
         <>
-          {page === "lab" ? (
+          {page === "lab" || path === "Vacuum_Hot_Press" ? (
             <>
               <Tablet headers={headers} data={specs} />
-              {headers2 && specs2 && (<Tablet headers={headers2} data={specs2} />)}
+              {headers2 && specs2 && (
+                <Tablet headers={headers2} data={specs2} />
+              )}
             </>
-            // headers2 && specs2
           ) : (
             <div className="overflow-x-auto thumbnail">
               <table className="w-full border border-collapse border-gray-300">
@@ -82,4 +83,3 @@ const ProductDetails = ({ keys, specs, headers, page, headers2, specs2 }) => {
 };
 
 export default ProductDetails;
-

@@ -117,8 +117,8 @@ const LabProductDetailsHero = () => {
                                             fadeDuration={300}
                                             mobileBreakpoint={640}
                                             hideHint
-                                            src={list}
-                                            alt={`image-${idx}`}
+                                            src={list.img}
+                                            alt={list.alt}
                                             zoomType="hover"
                                             zoomScale={1}
                                             width={320}
@@ -144,9 +144,9 @@ const LabProductDetailsHero = () => {
                                         key={idx}
                                     >
                                         <Image
-                                            alt="image"
+                                            alt={list.alt}
                                             fill
-                                            src={list}
+                                            src={list.img}
                                             className="z-20 object-cover object-center"
                                         />
                                     </div>

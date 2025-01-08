@@ -71,9 +71,21 @@ export const navLinks = [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
                 menu: "laboratory",
+                menu2: "Furnaces",
                 ref: "/categories/laboratory",
             },
-            { img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906", menu: "dental", ref: "/categories/dental" },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906",
+                menu: "dental",
+                menu2: "Furnaces",
+                ref: "/categories/dental",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+                menu: "material processing",
+                menu2: "equipment",
+                ref: "/categories/material_processing_equipment",
+            },
         ],
     },
     { menu: "TESTIMONIALS", ref: "/testimonials" },
@@ -133,6 +145,42 @@ export const sortProducts = [
     { value: "Laboratory Furnaces" },
 ];
 
+export const data = [
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906",
+        menu: "dental Furnaces",
+        ref: "/categories/dental",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
+        menu: "laboratory Furnaces",
+        ref: "/categories/laboratory",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+        menu: "material processing equipment",
+        ref: "/categories/material_processing_equipment",
+    },
+];
+
+export const MPEData = [
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906",
+        menu: "Funsai",
+        ref: "/categories/material_processing_equipment/funsai",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
+        menu: "Seikei",
+        ref: "/categories/material_processing_equipment/seikei",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+        menu: "Oshidashi",
+        ref: "/categories/material_processing_equipment/oshidashi",
+    },
+];
+
 export const categoriesProducts = [
     {
         category: "Best Selling",
@@ -140,7 +188,7 @@ export const categoriesProducts = [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
                 productName: "Box or Muffle Furnace",
-                href: "/categories/laboratory/"
+                href: "/categories/laboratory/",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
@@ -190,7 +238,7 @@ export const categoriesProducts = [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
                 productName: "Box or Muffle Furnace",
-                href: "/categories/laboratory/"
+                href: "/categories/laboratory/",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
@@ -211,45 +259,43 @@ export const categoriesProducts = [
     },
 ];
 
-
 export const footerLinks1 = [
     {
         href: "/testimonials",
-        title: "Testimonials"
+        title: "Testimonials",
     },
     {
         href: "/about",
-        title: "About Us"
+        title: "About Us",
     },
     {
         href: "/blog",
-        title: "Blog"
+        title: "Blog",
     },
     {
         href: "/faq",
-        title: "FAQ"
-    }
-]
+        title: "FAQ",
+    },
+];
 
 export const footerLinks2 = [
     {
         href: "/categories",
-        title: "Categories"
+        title: "Categories",
     },
     {
         href: "/categories/dental",
-        title: "Dental"
+        title: "Dental",
     },
     {
         href: "/categories/laboratory",
-        title: "Laboratory"
+        title: "Laboratory",
     },
     {
         href: "/contact",
-        title: "Contact Us"
-    }
-]
-
+        title: "Contact Us",
+    },
+];
 
 export const clientLogos = [
     "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
@@ -259,36 +305,34 @@ export const clientLogos = [
     "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
     "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
     "https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831",
-    "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"
-]
-
+    "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
+];
 
 export const whyChooseUs = [
     {
         img: "https://ik.imagekit.io/webibee/VBCC/Vectortool.svg",
-        desc: "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience."
+        desc: "Technical support available six days a week, providing comprehensive assistance to address your needs and ensure a smooth experience.",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/square.svg",
-        desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way."
+        desc: "Our team Tailors your Equipment to meet your exact specifications, offering personalized customization to suit your unique needs and preferences. Your equipment, your way.",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/Vectorresearch.svg",
-        desc: "We offer cutting-edge Research & Development services, dedicated to innovation and problem-solving, pushing the boundaries of possibility."
+        desc: "We offer cutting-edge Research & Development services, dedicated to innovation and problem-solving, pushing the boundaries of possibility.",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/VectorBox.svg",
-        desc: "We specialize in thorough installation and training services, ensuring your staff gains proficiency in equipment operation and management, empowering them with essential knowledge and skills."
-    }
-]
-
+        desc: "We specialize in thorough installation and training services, ensuring your staff gains proficiency in equipment operation and management, empowering them with essential knowledge and skills.",
+    },
+];
 
 export const landingItems = [
     {
         id: 1,
         title: "Expert Technical Support & Services",
         imgSrc:
-            'https://ik.imagekit.io/webibee/VBCC/homepage/technical-1.jpeg?updatedAt=1733227548480',
+            "https://ik.imagekit.io/webibee/VBCC/homepage/technical-1.jpeg?updatedAt=1733227548480",
         description:
             "We provide pan-India technical support and services. Our technicians are available six days a week to help you with any issues, ensuring minimal downtime and maximum productivity. ",
     },
@@ -296,7 +340,7 @@ export const landingItems = [
         id: 2,
         title: "Seamless Installation & Training",
         imgSrc:
-            'https://ik.imagekit.io/webibee/VBCC/homepage/technical-2.jpeg?updatedAt=1733227546119',
+            "https://ik.imagekit.io/webibee/VBCC/homepage/technical-2.jpeg?updatedAt=1733227546119",
         description:
             "Our experienced professionals will do a hassle-free installation and guide you through our product features and functionalities. We also provide timely replacements of any spare parts.",
     },
@@ -304,78 +348,90 @@ export const landingItems = [
         id: 3,
         title: "Tailor Made Promise",
         imgSrc:
-            'https://ik.imagekit.io/webibee/VBCC/homepage/technical-3.jpeg?updatedAt=1733227548206',
+            "https://ik.imagekit.io/webibee/VBCC/homepage/technical-3.jpeg?updatedAt=1733227548206",
         description:
             "We understand that each client has unique requirements that may extend beyond our standardize product offerings. Our “Tailor-Made” promise ensures that we customize our designs to meet your specific needs.",
-    }
+    },
 ];
-
 
 export const heroTestimonial = [
     {
-        header: "We are happy to say that the Multideck Pot Mill supplied is still working, and we’re using it on a daily basis for laboratory-level mixing and homogenisation of ceramic slurries. We are thankful to you for providing a machine like this.",
+        header:
+            "We are happy to say that the Multideck Pot Mill supplied is still working, and we’re using it on a daily basis for laboratory-level mixing and homogenisation of ceramic slurries. We are thankful to you for providing a machine like this.",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695",
         title: `Dr. H. Sreemoolanadhan <br/> Head, Glass & Electronic Materials Division <br/> Vikram Sarabhai Space Centre (VSSC)`,
-        subTitle: "ISRO"
+        subTitle: "ISRO",
     },
     {
-        header: "The effort they have put into designing the equipment and further customising it in accordance with our needs is directly appreciable. I am delighted to say the equipment supplied is indigenous, efficient, and affordable in comparison with the imported items. Overall, the vacuum hot press is supplied to cater to our requirements and is highly efficient, and we are very happy about the purchase. ",
+        header:
+            "The effort they have put into designing the equipment and further customising it in accordance with our needs is directly appreciable. I am delighted to say the equipment supplied is indigenous, efficient, and affordable in comparison with the imported items. Overall, the vacuum hot press is supplied to cater to our requirements and is highly efficient, and we are very happy about the purchase. ",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736",
-        title: "Dr. A. Nirmala Grace <br/> Professor & Director <br/> Centre of Nanotechnology Research",
-        subTitle: "VIT University"
+        title:
+            "Dr. A. Nirmala Grace <br/> Professor & Director <br/> Centre of Nanotechnology Research",
+        subTitle: "VIT University",
     },
     {
-        header: "VBCC had designed innovatively and developed a sit casting furnace with a bottom pouring arrangement. The furnace is working satisfactorily. These are great advantages towards maintenance and the cost of the equipment with less floor area.",
+        header:
+            "VBCC had designed innovatively and developed a sit casting furnace with a bottom pouring arrangement. The furnace is working satisfactorily. These are great advantages towards maintenance and the cost of the equipment with less floor area.",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/Velammal.png?updatedAt=1734592438460",
-        title: "Dr. P. Jawahar <br/> Associate Professor and Head <br/> Department of Production Engineering ",
-        subTitle: "Velammal Engineering College"
+        title:
+            "Dr. P. Jawahar <br/> Associate Professor and Head <br/> Department of Production Engineering ",
+        subTitle: "Velammal Engineering College",
     },
     {
-        header: "The performance of computerised Dilatometer 1000 °C (PREMIUM) supplied by VBCC, Chennai (India) for the temperature range RT – 1000 degree centigrade has been found consistently excellent",
+        header:
+            "The performance of computerised Dilatometer 1000 °C (PREMIUM) supplied by VBCC, Chennai (India) for the temperature range RT – 1000 degree centigrade has been found consistently excellent",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
         title: "Dr L K Sharma <br/> Scientist in Charge",
-        subTitle: "CSIR - Central Glass & Ceramic Research Institute (CSIR–CGCRI)"
+        subTitle: "CSIR - Central Glass & Ceramic Research Institute (CSIR–CGCRI)",
     },
     {
-        header: "I am happy to say that VBCC has developed the units indigenously at an affordable cost that is comparatively less than imported ones. Now these units are working satisfactorily, and the service rendered by them has deserved great appreciation, which enabled us to complete our research work. These instruments, the planetary ball mill and dilatometer, are very useful for our Ph.D. scholars, MTech, and BTech students for their project work.",
+        header:
+            "I am happy to say that VBCC has developed the units indigenously at an affordable cost that is comparatively less than imported ones. Now these units are working satisfactorily, and the service rendered by them has deserved great appreciation, which enabled us to complete our research work. These instruments, the planetary ball mill and dilatometer, are very useful for our Ph.D. scholars, MTech, and BTech students for their project work.",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533",
-        title: "Dr. P. Manohar Ph.D., F.I.I.Cer <br/> Professor & Head  <br/> Department of Ceramic Technology",
-        subTitle: "Anna University"
+        title:
+            "Dr. P. Manohar Ph.D., F.I.I.Cer <br/> Professor & Head  <br/> Department of Ceramic Technology",
+        subTitle: "Anna University",
     },
     {
-        header: "The performance of muffle furnace and vacuum oven manufactured by VBCC Chennai is excellent. I am extremely happy with the after safe service rendered by the manufacturer. They are on time in attending and providing solutions to the problems. ",
+        header:
+            "The performance of muffle furnace and vacuum oven manufactured by VBCC Chennai is excellent. I am extremely happy with the after safe service rendered by the manufacturer. They are on time in attending and providing solutions to the problems. ",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575",
-        title: "Dr. N. Lakshminarasimhan, Ph.D., <br/> Scientist <br/> Functional Materials Division",
-        subTitle: "CSIR - Central Electrochemical Research Institute"
+        title:
+            "Dr. N. Lakshminarasimhan, Ph.D., <br/> Scientist <br/> Functional Materials Division",
+        subTitle: "CSIR - Central Electrochemical Research Institute",
     },
     {
-        header: "VBCC has supplied Pressure Composition Isotherm (PCI) apparatus to our research laboratory. The instrument is used for studying hydrogen absorption and desorption of metallic and non-metallic materials with varying temperature and pressure.",
+        header:
+            "VBCC has supplied Pressure Composition Isotherm (PCI) apparatus to our research laboratory. The instrument is used for studying hydrogen absorption and desorption of metallic and non-metallic materials with varying temperature and pressure.",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/NIT.png?updatedAt=1734592438606",
-        title: "Dr. S. Kumaran <br/> Associate Professor <br/> Dept. of Metallurgical and Materials Engg.",
-        subTitle: "NIT Tiruchirappalli"
+        title:
+            "Dr. S. Kumaran <br/> Associate Professor <br/> Dept. of Metallurgical and Materials Engg.",
+        subTitle: "NIT Tiruchirappalli",
     },
     {
-        header: "We have continuously interacted with the VBCC team during the process of microwave furnace development and successfully verified the feasibility of the unit. Consequently, the unit has been installed in our laboratory and we have successfully sintered barium titanite ferroelectrics repeatedly. The properties have been compared and found satisfactory. ",
+        header:
+            "We have continuously interacted with the VBCC team during the process of microwave furnace development and successfully verified the feasibility of the unit. Consequently, the unit has been installed in our laboratory and we have successfully sintered barium titanite ferroelectrics repeatedly. The properties have been compared and found satisfactory. ",
         logo: "https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544",
         title: "Prof. V.R.K Murthy <br/> Microwave Laboratory",
-        subTitle: "IIT Madras"
-    }
-]
+        subTitle: "IIT Madras",
+    },
+];
 
 export const statistics = [
     {
         title: "Satisfied Clientele",
         count: "500",
-        firm: "ISRO, IITM, VIT, CERI, CGCRI"
+        firm: "ISRO, IITM, VIT, CERI, CGCRI",
     },
     {
         title: "Instruments Installed",
         count: "15000",
-        firm: "Dilatometer, MOR, RUL, CVD"
+        firm: "Dilatometer, MOR, RUL, CVD",
     },
     {
         title: "Years of Expertise",
         count: "22    ",
-        firm: "Instruments, Furnaces & Ceramics"
-    }
-]
+        firm: "Instruments, Furnaces & Ceramics",
+    },
+];

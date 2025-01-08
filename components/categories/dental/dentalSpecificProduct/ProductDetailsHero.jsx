@@ -19,6 +19,7 @@ const ProductDetailsHero = () => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
+    // const [height, setHeight] = useState();
     const path = usePathname()
         .split("/")
         .filter((x) => x);
@@ -41,6 +42,8 @@ const ProductDetailsHero = () => {
         setNav1(sliderRef1);
         setNav2(sliderRef2);
     }, []);
+
+
 
     const settings = {
         dots: false,
@@ -115,20 +118,23 @@ const ProductDetailsHero = () => {
                             >
                                 {Images.map((list, idx) => (
                                     <div
-                                        className="w-full mx-auto h-52 md:h-60 xl:h-80 group"
+
+                                        className="w-full mx-auto h-52 md:h-60 xl:h-80 group "
                                         key={idx}
                                     >
                                         <InnerImageZoom
+
                                             fadeDuration={300}
                                             mobileBreakpoint={640}
                                             hideHint
-                                            src={list}
+                                            src={list.img}
+                                            zoomSrc={list.img}
                                             zoomScale={1}
-                                            alt={`image-${idx}`}
+                                            alt={`${list.alt}`}
                                             // fullscreenOnMobile={isIOS}
                                             zoomType="hover"
                                             hideCloseButton={false}
-                                            className="!flex !items-center !justify-center object-contain object-center !w-full"
+                                            className="flex !items-center !justify-center object-contain"
                                         />
                                     </div>
                                 ))}
@@ -149,9 +155,9 @@ const ProductDetailsHero = () => {
                                         key={idx}
                                     >
                                         <Image
-                                            alt="image"
+                                            alt={list.alt}
                                             fill
-                                            src={list}
+                                            src={list.img}
                                             className="z-20 object-cover object-center"
                                         />
                                     </div>
@@ -168,6 +174,34 @@ const ProductDetailsHero = () => {
 };
 
 export default ProductDetailsHero;
+
+// const InnerZoomComponent = ({ imageSrc }) => {
+
+//     const zoomScale = 1.5;
+//     useEffect(() => {
+//         const img = new Image();
+//         img.src = imageSrc;
+
+//         img.onload = () => {
+//             setHeight(img.naturalHeight * zoomScale);
+//         }
+//     }, [imageSrc]);
+//     return (
+//         <InnerImageZoom
+//             fadeDuration={300}
+//             mobileBreakpoint={640}
+//             hideHint
+//             src={imageSrc}
+//             zoomSrc={imageSrc}
+//             zoomScale={0.5}
+//             alt={`image-${idx}`}
+//             // fullscreenOnMobile={isIOS}
+//             zoomType="hover"
+//             hideCloseButton={false}
+//             className="object-cover object-center"
+//         />
+//     );
+// }
 
 function NextArrow(props) {
     const { onClick } = props;

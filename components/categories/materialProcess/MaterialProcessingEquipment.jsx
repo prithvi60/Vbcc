@@ -1,0 +1,24 @@
+import React from "react";
+import CategoryHero from "../CategoryHero";
+
+const MaterialProcessingEquipment = () => {
+    return (
+        <>
+            <CategoryHero
+                categoryImg={"https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267"}
+                heroBg={"https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328"}
+                title={"Material Processing Equipment"}
+                desc1={
+                    "Funsai, Seikei, and Oshidashi are specialized sub-brand under VBCC’s material processing equipment, designed for high-precision applications. Funsai focuses on grinding, which reduces particle size and refines materials, ensuring better material uniformity and consistency. Seikei utilizes pressing, applying controlled pressure to compact and shape materials, ensuring consistent quality and strength. Oshidashi employs advanced extrusion technology to create uniform profiles, delivering reliable outputs for complex designs. These processes enhance production efficiency, improve material quality, and are essential in sectors such as ceramics, automotive, and electronics. "
+                }
+                desc2={
+                    ""
+                }
+                pdfFile={"/files/Material Processing-Brochure.pdf"}
+                pdfName={"Material Processing-Brochure Digital.pdf"}
+            />
+        </>
+    );
+};
+
+export default MaterialProcessingEquipment;

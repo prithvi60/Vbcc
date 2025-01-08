@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
-const CategoryTypes = () => {
+const CategoryTypes = ({ lists }) => {
     return (
         <section>
             <section className="w-full h-auto space-y-10 overflow-hidden md:space-y-16 bg-primary padding">
@@ -11,7 +11,7 @@ const CategoryTypes = () => {
                     Explore Our Diverse Range of Product Categories
                 </h4>
                 <div className="flex flex-wrap items-center justify-center w-full gap-5 px-2.5 pt-8 pb-20 lg:justify-start">
-                    {data.map((list, idx) => (
+                    {lists.map((list, idx) => (
                         <Link
                             href={list.ref}
                             className="relative w-full max-w-sm space-y-8 group font-Montserrat"
@@ -25,12 +25,12 @@ const CategoryTypes = () => {
                                     className="z-0 object-cover object-center transition-all duration-500 ease-linear transform brightness-75 group-hover:brightness-100 group-hover:scale-125"
                                 />
                             </div>
-                            <h4 className="font-semibold absolute backdrop-blur-sm bottom-5 left-5 text-center text-[14px] md:text-[16px] xl:text-[24px] leading-7 tracking-wider w-max capitalize text-info group-hover:bg-info transition-all duration-500 ease-linear flex items-center gap-2 transform group-hover:text-white p-2.5">
-                                {list.menu} Furnaces
+                            <div className="font-semibold absolute backdrop-blur-sm bottom-5 left-2 text-center text-[14px] md:text-[16px] xl:text-[22px] leading-7 tracking-wider capitalize text-info group-hover:bg-info max-w-sm transition-all duration-300 ease-linear flex items-center gap-2 transform group-hover:text-white p-2.5 xl:mr-2.5">
+                                <h4 className="w-full text-start xl:w-3/4">{list.menu}</h4>
                                 <span>
                                     <MdKeyboardDoubleArrowRight className="text-xl text-info group-hover:text-white" />
                                 </span>
-                            </h4>
+                            </div>
                         </Link>
                     ))}
                 </div>
@@ -40,16 +40,3 @@ const CategoryTypes = () => {
 };
 
 export default CategoryTypes;
-
-const data = [
-    {
-        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906",
-        menu: "dental",
-        ref: "/categories/dental",
-    },
-    {
-        img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
-        menu: "laboratory",
-        ref: "/categories/laboratory",
-    },
-];
