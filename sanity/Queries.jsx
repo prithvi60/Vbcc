@@ -16,6 +16,7 @@ export const POSTS_QUERY = groq`
 export const POST_QUERY = groq`
 *[_type == "post" && slug.current == $slug][0] {
   title,
+  blogShortRead,
   "imageUrl": image.asset->url,
   "imageAlt": image.alt,
   body[]{
