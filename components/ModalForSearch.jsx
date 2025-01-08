@@ -5,11 +5,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import Fuse from "fuse.js";
 import { POSTS_QUERY } from "@/sanity/Queries";
 import { client } from "@/sanity/lib/client";
-import { DentalProductsList, LabProductsList } from "@/libs/productsData";
+import {
+    DentalProductsList,
+    FunsaiProductsList,
+    LabProductsList,
+    OshidashiProductsList,
+    SeikiProductsList,
+} from "@/libs/productsData";
 import { usePathname, useRouter } from "next/navigation";
 
 const ModalForSearch = () => {
-    const path = usePathname()
+    const path = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
@@ -46,6 +52,28 @@ const ModalForSearch = () => {
             findAllMatches: true,
         });
 
+        const funsaiFuse = new Fuse(FunsaiProductsList, {
+            keys: ["productName", "desc"],
+            threshold: 0.2, // Adjust for sensitivity
+            includeScore: true,
+            useExtendedSearch: true,
+            findAllMatches: true,
+        });
+        const seikeiFuse = new Fuse(SeikiProductsList, {
+            keys: ["productName", "desc"],
+            threshold: 0.2, // Adjust for sensitivity
+            includeScore: true,
+            useExtendedSearch: true,
+            findAllMatches: true,
+        });
+        const oshidashiFuse = new Fuse(OshidashiProductsList, {
+            keys: ["productName", "desc"],
+            threshold: 0.2, // Adjust for sensitivity
+            includeScore: true,
+            useExtendedSearch: true,
+            findAllMatches: true,
+        });
+
         const blogFuse = new Fuse(blogPosts, {
             keys: ["title", "blogShortRead"],
             threshold: 0.2,
@@ -61,6 +89,15 @@ const ModalForSearch = () => {
         const labProductResults = term
             ? labFuse.search(term).map((result) => result.item)
             : [];
+        const funsaiProductResults = term
+            ? funsaiFuse.search(term).map((result) => result.item)
+            : [];
+        const seikeiProductResults = term
+            ? seikeiFuse.search(term).map((result) => result.item)
+            : [];
+        const oshidashiProductResults = term
+            ? oshidashiFuse.search(term).map((result) => result.item)
+            : [];
         const blogResults = term
             ? blogFuse.search(term).map((result) => result.item)
             : [];
@@ -68,6 +105,9 @@ const ModalForSearch = () => {
         const allResults = [
             ...dentalProductResults,
             ...labProductResults,
+            ...funsaiProductResults,
+            ...seikeiProductResults,
+            ...oshidashiProductResults,
             ...blogResults,
         ];
         setResults(allResults);
@@ -112,7 +152,13 @@ const SpringModal = ({
                 ? `/categories/dental/${item.productName.replace(/\s/g, "_")}` // Dental product link
                 : item.slug === "lab"
                     ? `/categories/laboratory/${item.productName.replace(/\s/g, "_")}` // Lab product link
-                    : `/blog/${item.slug.current}`; // Blog post link
+                    : item.slug === "funsai"
+                        ? `/categories/material_processing_equipment/funsai/${item.productName.replace(/\s/g, "_")}`
+                        : item.slug === "seikei"
+                            ? `/categories/material_processing_equipment/seikei/${item.productName.replace(/\s/g, "_")}`
+                            : item.slug === "oshidashi"
+                                ? `/categories/material_processing_equipment/oshidashi/${item.productName.replace(/\s/g, "_")}`
+                                : `/blog/${item.slug.current}`; // Blog post link
         router.push(path); // Navigate to the appropriate route
         setIsOpen(false);
     };
@@ -150,7 +196,7 @@ const SpringModal = ({
                                     </div>
                                 </div>
                             </div>
-                            {(results.length === 0 && query !== "") ? (
+                            {results.length === 0 && query !== "" ? (
                                 <div
                                     className={`w-full mt-8 transition-all duration-300 ease-in-out searchScroll max-h-10 origin-top`}
                                 >

@@ -81,7 +81,7 @@ export const navLinks = [
                 ref: "/categories/dental",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
                 menu: "material processing",
                 menu2: "equipment",
                 ref: "/categories/material_processing_equipment",
@@ -165,17 +165,17 @@ export const data = [
 
 export const MPEData = [
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906",
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Funsai.jpg?updatedAt=1736318070849",
         menu: "Funsai",
         ref: "/categories/material_processing_equipment/funsai",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-herobg.png?updatedAt=1733228575257",
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Seikei.jpg?updatedAt=1736318068498",
         menu: "Seikei",
         ref: "/categories/material_processing_equipment/seikei",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Oshidashi.jpg?updatedAt=1736318068416",
         menu: "Oshidashi",
         ref: "/categories/material_processing_equipment/oshidashi",
     },

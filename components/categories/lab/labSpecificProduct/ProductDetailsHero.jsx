@@ -98,8 +98,8 @@ const LabProductDetailsHero = () => {
                             />
                         </div>
                     </div>
-                    <div className="w-full h-full mx-auto space-y-10 max-w-96 md:max-w-md xl:max-w-2xl">
-                        <div className="slider-container">
+                    <div className="z-auto w-full h-full mx-auto space-y-10 max-w-96 md:max-w-md xl:max-w-2xl">
+                        <div className="relative z-0 slider-container">
                             <Slider
                                 asNavFor={nav2}
                                 ref={(slider) => (sliderRef1 = slider)}
