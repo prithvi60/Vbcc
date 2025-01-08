@@ -106,8 +106,8 @@ const MPEDetails = ({ data, type }) => {
                             />
                         </div>
                     </div>
-                    <div className="w-full h-full mx-auto space-y-6 max-w-96 md:max-w-md">
-                        <div className="slider-container">
+                    <div className="z-auto w-full h-full mx-auto space-y-6 max-w-96 md:max-w-md">
+                        <div className="relative z-0 slider-container">
                             <Slider
                                 asNavFor={nav2}
                                 ref={(slider) => (sliderRef1 = slider)}

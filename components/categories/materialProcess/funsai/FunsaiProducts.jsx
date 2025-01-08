@@ -8,7 +8,7 @@ const FunsaiProducts = () => {
         <>
             <CategoryHero
                 categoryImg={"https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576"}
-                heroBg={"https://ik.imagekit.io/webibee/VBCC/homepage/Dental%20Category.jpg?updatedAt=1733815065906"}
+                heroBg={"https://ik.imagekit.io/webibee/VBCC/products/MPE/Funsai.jpg?updatedAt=1736318070849"}
                 title={"Funsai"}
                 desc1={
                     "Funsai is our specialized sub-brand, derived from the Japanese word for 'grinding,' representing excellence in material processing equipment. The product line under this brand includes multi-deck roller jar mills, planetary ball mills (mono mill and table-top), single roller jar mills, and tap-top mills."
