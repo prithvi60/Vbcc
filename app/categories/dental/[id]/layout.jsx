@@ -11,13 +11,21 @@ export async function generateMetadata({ params }) {
     return {
       title: product.metaTitle,
       description: product.metaDesc,
+      openGraph: {
+        title: product.metaTitle,
+        description: product.metaDesc,
+      },
     };
   }
 
   // Default metadata if product not found
   return {
-    title: "VBCC’s India-first high-end dental furnace for restorative treatments ",
+    title: "VBCC’s India-first high-end dental furnace for restorative treatments",
     description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
+    openGraph: {
+      title: "VBCC’s India-first high-end dental furnace for restorative treatments",
+      description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
+    },
   };
 }
 

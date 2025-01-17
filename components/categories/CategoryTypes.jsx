@@ -26,7 +26,7 @@ const CategoryTypes = ({ lists }) => {
                                 />
                             </div>
                             <div className="font-semibold absolute backdrop-blur-sm bottom-5 left-2 text-center text-[14px] md:text-[16px] xl:text-[22px] leading-7 tracking-wider capitalize text-info group-hover:bg-info max-w-sm transition-all duration-300 ease-linear flex items-center gap-2 transform group-hover:text-white p-2.5 xl:mr-2.5">
-                                <h4 className="w-full text-start xl:w-3/4">{list.menu}</h4>
+                                <h4 className={`text-start ${list.menu === "Ball Mills" ? "w-full" : "w-full xl:w-3/4"}`}>{list.menu}</h4>
                                 <span>
                                     <MdKeyboardDoubleArrowRight className="text-xl text-info group-hover:text-white" />
                                 </span>

@@ -4281,7 +4281,7 @@ export const FunsaiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-1.pdf?updatedAt=1736232655735",
-        slug: "funsai",
+        slug: "Ball_Mills",
     },
     {
         mainImg:
@@ -4363,7 +4363,7 @@ export const FunsaiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-2.pdf?updatedAt=1736232655680",
-        slug: "funsai",
+        slug: "Ball_Mills",
     },
     {
         mainImg:
@@ -4446,7 +4446,7 @@ export const FunsaiProductsList = [
             { label: "Continuous Operation", value: "Up to 72 hours" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-3.pdf?updatedAt=1736232655683",
-        slug: "funsai",
+        slug: "Ball_Mills",
     },
     {
         mainImg:
@@ -4517,7 +4517,7 @@ export const FunsaiProductsList = [
             { label: "Speed Control", value: "Via VFD" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-4.pdf?updatedAt=1736232655686",
-        slug: "funsai",
+        slug: "Ball_Mills",
     },
     {
         mainImg:
@@ -4592,7 +4592,7 @@ export const FunsaiProductsList = [
             { label: "Speed Control", value: "Via VFD" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-5.pdf?updatedAt=1736232655627",
-        slug: "funsai",
+        slug: "Ball_Mills",
     },
 ];
 
@@ -4664,7 +4664,7 @@ export const SeikiProductsList = [
             { label: "Control System", value: "PLC with touch-screen HMI" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-1.pdf?updatedAt=1736232679563",
-        slug: "seikei",
+        slug: "Presses",
     },
     {
         mainImg:
@@ -4845,7 +4845,7 @@ export const SeikiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-2.pdf?updatedAt=1736232679466",
-        slug: "seikei",
+        slug: "Presses",
     },
     {
         mainImg:
@@ -4921,7 +4921,7 @@ export const SeikiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-3.pdf?updatedAt=1736232680093",
-        slug: "seikei",
+        slug: "Presses",
     },
     {
         mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png?updatedAt=1736226196043",
@@ -5028,7 +5028,7 @@ export const SeikiProductsList = [
             { label: "Power Supply", value: "3 Phase, 50Hz, AC, 230V" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-4.pdf?updatedAt=1736232679822",
-        slug: "seikei",
+        slug: "Presses",
     },
     {
         mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/isometric.png?updatedAt=1736226036048",
@@ -5117,7 +5117,7 @@ export const SeikiProductsList = [
             { label: "Pellet Die", value: "Optional (available at extra cost)" },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-5.pdf?updatedAt=1736232679886",
-        slug: "seikei",
+        slug: "Presses",
     },
     {
         mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
@@ -5186,7 +5186,7 @@ export const SeikiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-6.pdf?updatedAt=1736232679691",
-        slug: "seikei",
+        slug: "Presses",
     },
 ];
 
@@ -5273,7 +5273,7 @@ export const OshidashiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-1.pdf?updatedAt=1736232701942",
-        slug: "oshidashi",
+        slug: "Extruders",
     },
     {
         mainImg:
@@ -5413,7 +5413,7 @@ export const OshidashiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-2.pdf?updatedAt=1736232701835",
-        slug: "oshidashi",
+        slug: "Extruders",
     },
     {
         mainImg:
@@ -5599,7 +5599,7 @@ export const OshidashiProductsList = [
             },
         ],
         pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-3.pdf?updatedAt=1736232702257",
-        slug: "oshidashi",
+        slug: "Extruders",
     },
 ];
 

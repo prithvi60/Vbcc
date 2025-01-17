@@ -9,7 +9,7 @@ const FunsaiProducts = () => {
             <CategoryHero
                 categoryImg={"https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576"}
                 heroBg={"https://ik.imagekit.io/webibee/VBCC/products/MPE/Funsai.jpg?updatedAt=1736318070849"}
-                title={"Funsai"}
+                title={"Ball Mills"}
                 desc1={
                     "Funsai is our specialized sub-brand, derived from the Japanese word for 'grinding,' representing excellence in material processing equipment. The product line under this brand includes multi-deck roller jar mills, planetary ball mills (mono mill and table-top), single roller jar mills, and tap-top mills."
                 }
@@ -19,7 +19,7 @@ const FunsaiProducts = () => {
                 pdfFile={"https://ik.imagekit.io/webibee/VBCC/products/MPE/Material%20Processing-Brochure-funsai.pdf?updatedAt=1736165989821"}
                 pdfName={"Material Processing-Brochure-funsai.pdf"}
             />
-            <CategoryProducts categoryName={"funsai"} data={FunsaiProductsList} />
+            <CategoryProducts categoryName={"Ball Mills"} data={FunsaiProductsList} />
         </>
     );
 };

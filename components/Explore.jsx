@@ -86,16 +86,6 @@ const Explore = () => {
           </div>
 
           <div className="relative flex flex-col items-end w-3/4 h-auto gap-6 ml-20 lg:w-4/5">
-            {/* <div className="z-0 h-full md:h-[100vh] absolute -bottom-3 md:-bottom-24 lg:-bottom-10 xl:-bottom-24 -left-16 w-full">
-              <div
-                className="relative w-full h-full px-6 py-8 bg-right-bottom bg-no-repeat bg-cover explore_card-mask border-3 border-secondary"
-                style={{
-                  backgroundImage: "url('https://ik.imagekit.io/webibee/VBCC/homepage/explore.png?updatedAt=1733749245245')",
-                }}
-              >
-                <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-10"></div>
-              </div>
-            </div> */}
             <>
               {whyChooseUs.map((item, idx) => (
                 <div

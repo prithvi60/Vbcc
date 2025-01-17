@@ -146,10 +146,7 @@ const Hero = () => {
                         <MdKeyboardDoubleArrowRight className="text-xl" />
                       </span>
                     </LinkScroll>
-                    <Link
-                      aria-label="category link"
-                      href={"/categories"}
-                    >
+                    <Link aria-label="category link" href={"/categories"}>
                       <button
                         className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
                       >
@@ -184,17 +181,23 @@ const Hero = () => {
                     className="rounded-lg w-full h-full bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] backdrop-blur-xl space-y-4 md:space-y-7 p-4 md:px-7 md:py-7 lg:px-10 lg:py-10"
                     key={idx}
                   >
-                    <h5 className="w-3/4 text-lg font-medium tracking-wide lg:w-full xl:text-xl ">
-                      {`${list.type} Furnaces`}
+                    <h5 className="w-3/4 text-lg font-medium tracking-wide lg:w-3/4 xl:text-xl ">
+                      {`${list.categories}`}
                     </h5>
                     <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-[430px] lg:max-h-full lg:h-full hideScroll">
                       {list.products.map((item, id) => (
                         <Link
                           aria-label="category products"
                           href={
-                            list.type === "Dental"
+                            item.type === "Dental PRODUCTS"
                               ? `/categories/dental/${item.productName.replace(/\s/g, "_")}`
-                              : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
+                              : item.type === "BALL MILLS PRODUCTS"
+                                ? `/categories/material_processing_equipment/Ball_Mills/${item.productName.replace(/\s/g, "_")}`
+                                : item.type === "PRESSES PRODUCTS"
+                                  ? `/categories/material_processing_equipment/Presses/${item.productName.replace(/\s/g, "_")}`
+                                  : item.type === "EXTRUDERS PRODUCTS"
+                                    ? `/categories/material_processing_equipment/Extruders/${item.productName.replace(/\s/g, "_")}`
+                                    : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
                           }
                           className="flex items-center gap-5 transition-all ease-linear duration-400 group"
                           key={id}

@@ -60,6 +60,34 @@ export const heroSlider = [
             },
         ],
     },
+    {
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+        categories: "Material Processing Equipment",
+        type: "MPE",
+        products: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
+                productName: "Planetary Ball Mill (Mono Mill)",
+                type: "BALL MILLS PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png?updatedAt=1736156797548",
+                productName: "Vacuum Hot Press",
+                type: "PRESSES PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
+                productName: "Mini Hot Press",
+                type: "PRESSES PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/isometric.png?updatedAt=1736156939203",
+                productName: "Automatic Extruder",
+                type: "EXTRUDERS PRODUCTS",
+            },
+        ],
+    },
 ];
 
 export const navLinks = [
@@ -106,6 +134,13 @@ export const exploreList = [
         title: "Laboratory Furnaces",
         desc: "Over 20+ products for Laboratory Furnace.",
         ref: "/categories/laboratory",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/MPE%20Icon.svg?updatedAt=1736832381813",
+        title: "Material Processing Equipment",
+        desc: "Over 20+ products for Material Processing Equipment",
+        ref: "/categories/material_processing_equipment ",
     },
 ];
 
@@ -166,18 +201,18 @@ export const data = [
 export const MPEData = [
     {
         img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Funsai.jpg?updatedAt=1736318070849",
-        menu: "Funsai",
-        ref: "/categories/material_processing_equipment/funsai",
+        menu: "Ball Mills",
+        ref: "/categories/material_processing_equipment/Ball_Mills",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Seikei.jpg?updatedAt=1736318068498",
-        menu: "Seikei",
-        ref: "/categories/material_processing_equipment/seikei",
+        menu: "Presses",
+        ref: "/categories/material_processing_equipment/Presses",
     },
     {
         img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Oshidashi.jpg?updatedAt=1736318068416",
-        menu: "Oshidashi",
-        ref: "/categories/material_processing_equipment/oshidashi",
+        menu: "Extruders",
+        ref: "/categories/material_processing_equipment/Extruders",
     },
 ];
 
