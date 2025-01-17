@@ -1,16 +1,20 @@
-import { OshidashiProductsList } from "@/libs/productsData";
+import { FunsaiProductsList } from "@/libs/productsData";
 
 export async function generateMetadata({ params }) {
   const { id } = params;
   const decodedId = id.replace(/_/g, " ")
 
   // Fetch the product based on the slug
-  const product = OshidashiProductsList.find((item) => item.productName === decodedId);
+  const product = FunsaiProductsList.find((item) => item.productName === decodedId);
 
   if (product) {
     return {
       title: product.metaTitle,
       description: product.metaDesc,
+      openGraph: {
+        title: product.metaTitle,
+        description: product.metaDesc,
+      },
     };
   }
 
@@ -18,6 +22,10 @@ export async function generateMetadata({ params }) {
   return {
     title: "VBCC’s India-first high-end dental furnace for restorative treatments ",
     description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
+    openGraph: {
+      title: "",
+      description: "",
+    },
   };
 }
 

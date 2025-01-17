@@ -40,7 +40,6 @@ export const BlogGridComponent = ({ post }) => {
         <p className="w-full text-sm leading-tight md:text-base line-clamp-3">
           {post.blogShortRead}
         </p>
-
         <div className="flex items-center justify-between">
           <h4 className="flex items-center gap-2 text-sm capitalize"><span><FaRegClock className="text-base text-white font-Montserrat" /></span>{readingTime} min{readingTime > 1 ? "s" : ""} Read</h4>
           <div className="text-xs tracking-wide underline capitalize transition-all ease-linear underline-offset-2 decoration-white group-hover:scale-125 duration-400">view</div>

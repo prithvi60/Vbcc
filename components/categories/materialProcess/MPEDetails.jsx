@@ -43,7 +43,9 @@ const MPEDetails = ({ data, type }) => {
         setNav2(sliderRef2);
     }, []);
 
+    const title = Images[activeIndex].title
 
+    console.log(title);
 
     const settings = {
         dots: false,
@@ -108,6 +110,9 @@ const MPEDetails = ({ data, type }) => {
                     </div>
                     <div className="z-auto w-full h-full mx-auto space-y-6 max-w-96 md:max-w-md">
                         <div className="relative z-0 slider-container">
+                            {title && (
+                                <h5 className="absolute z-20 p-1 text-sm font-medium tracking-wider backdrop-blur-lg left-14 lg:left-20 -bottom-32 lg:-bottom-48 text-primary">{title}</h5>
+                            )}
                             <Slider
                                 asNavFor={nav2}
                                 ref={(slider) => (sliderRef1 = slider)}
@@ -122,9 +127,9 @@ const MPEDetails = ({ data, type }) => {
                                         className="relative w-full mx-auto h-52 md:h-60 group"
                                         key={idx}
                                     >
-                                        {list.title && (
+                                        {/* {list.title && (
                                             <h5 className="absolute z-20 p-1 text-sm font-medium tracking-wider bg-white rounded-sm backdrop-blur-lg left-14 lg:left-20 -bottom-32 lg:-bottom-48 text-primary">{list.title}</h5>
-                                        )}
+                                        )} */}
                                         <InnerImageZoom
                                             fadeDuration={300}
                                             mobileBreakpoint={640}

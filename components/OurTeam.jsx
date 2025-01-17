@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BiSolidQuoteLeft, BiSolidQuoteRight } from "react-icons/bi";
 
@@ -28,7 +29,7 @@ const OurTeam = () => {
                     </div>
                     <div className="pt-5 space-y-10">
                         <div className="flex items-center justify-center w-full gap-10 lg:w-1/2 lg:justify-start group">
-                            <div className="relative size-40">
+                            <Link target="_blank" href={"https://www.linkedin.com/company/vbcc-hti"} className="relative size-40">
                                 <Image
                                     alt="image"
                                     fill
@@ -37,7 +38,7 @@ const OurTeam = () => {
                                     }
                                     className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
-                            </div>
+                            </Link>
                             <div className="relative w-3/4 space-y-2">
                                 <div className="relative">
                                     <BiSolidQuoteLeft className="absolute top-0 text-base -left-6 md:text-lg text-info" />
