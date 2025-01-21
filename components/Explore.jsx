@@ -1,9 +1,38 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { Modal2 } from "./landing page/Modal";
 import { exploreList, whyChooseUs } from "@/libs/otherPage";
+import Slider from "react-slick";
 const Explore = () => {
+  const settings = {
+    dots: false,
+    arrow: false,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <section
       name="explore"
@@ -26,7 +55,7 @@ const Explore = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between gap-10 mb-10 2xxl:mt-20 md:mb-56 lg:flex-row">
+      <div className="flex flex-col items-center justify-between gap-10 mb-10 overflow-hidden 2xxl:mt-20 md:mb-56 lg:flex-row">
         <div className="block p-10 mx-auto space-y-4">
           <Link href={"/categories"} className="relative w-full lg:w-2/5 flex justify-center md:justify-start gap-2 items-center lg:block text-3xl text-[#A7ACB8] hover:text-info transition-colors duration-400 ease-in-out md:text-5xl xl:text-6xl group">
             <h4 className="w-3/5 font-bold tracking-wider">Explore Products</h4>
@@ -36,37 +65,39 @@ const Explore = () => {
             <Modal2 pageType={"main"} page={"Home"} />
           </div>
         </div>
-        <div className="flex flex-col gap-8 px-5 md:flex-row md:px-7 xl:px-16 xl:gap-12">
-          {exploreList.map((list, idx) => (
-            <Link
-              href={list.ref}
-              className="relative h-[320px] w-[300px] md:w-[230px] lg:w-[200px] xl:w-[260px] md:h-[480px] after:absolute after:top-2 after:-left-2 z-auto after:border-2 after:border-info after:w-full after:h-full"
-              key={idx}
-            >
-              <Image
-                src={list.img}
-                fill
-                alt="image"
-                className="object-cover object-center brightness-[0.45]"
-              />
-              <div className="absolute block w-full space-y-4 text-white bottom-14 left-5">
-                <div className="relative z-auto size-12 md:size-16">
-                  <Image
-                    src={list.icon}
-                    fill
-                    alt="image"
-                    className="object-cover object-center"
-                  />
-                </div>
-                <h2 className="text-base font-bold tracking-wider !leading-tight md:text-[18px] xl:text-[22px] w-3/5 capitalize">
-                  {list.title}
-                </h2>
-                {/* <p className="w-4/5 text-xs md:text-sm">
+        <div className="w-full px-8 max-w-full sm:max-w-[40rem] lg:max-w-3xl slider-container">
+          <Slider {...settings} className="explore-slider">
+            {exploreList.map((list, idx) => (
+              <Link
+                href={list.ref}
+                className="relative !h-[380px] !w-full md:!w-[320px] lg:!w-[280px] xl:!w-[260px] md:!h-[480px] after:absolute after:top-2 after:-left-2 z-auto after:border-2 after:border-info after:w-full after:h-full"
+                key={idx}
+              >
+                <Image
+                  src={list.img}
+                  fill
+                  alt="image"
+                  className="object-cover object-center brightness-[0.45]"
+                />
+                <div className="absolute block w-full space-y-4 text-white bottom-14 left-5">
+                  <div className="relative z-auto size-12 md:size-16">
+                    <Image
+                      src={list.icon}
+                      fill
+                      alt="image"
+                      className="object-cover object-center"
+                    />
+                  </div>
+                  <h2 className="text-base font-bold tracking-wider !leading-tight md:text-[18px] xl:text-[22px] w-3/5 capitalize">
+                    {list.title}
+                  </h2>
+                  {/* <p className="w-4/5 text-xs md:text-sm">
                   {list.desc}
                 </p> */}
-              </div>
-            </Link>
-          ))}
+                </div>
+              </Link>
+            ))}
+          </Slider>
         </div>
         <h2 className="text-[28px] mt-6 justify-center items-center font-bold tracking-wider !leading-tight flex md:hidden w-full capitalize gap-1">
           Why <span className="font-bold text-info">Choose Us?</span>

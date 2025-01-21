@@ -6,7 +6,7 @@ const CategoryProducts = ({ categoryName, data }) => {
     return (
         <section className="w-full h-auto space-y-10 overflow-hidden md:space-y-16 bg-primary padding">
             <h4 className="relative text-2xl font-semibold tracking-wide capitalize text-info after:absolute after:h-1 w-max after:w-2/5 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl">
-                {`Products - ${categoryName} ${categoryName === "dental" || categoryName === "laboratory" ? "Furnaces" : ""}`}
+                {`Products - ${categoryName === "lab_equipment" ? "lab equipment" : categoryName} ${categoryName === "dental" || categoryName === "laboratory" ? "Furnaces" : ""}`}
             </h4>
             <div className="grid w-full gap-5 pt-8 pb-20 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3">
                 {data.map((list, idx) => (

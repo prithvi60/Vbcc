@@ -1,6 +1,7 @@
 import {
   DentalProductsList,
   FunsaiProductsList,
+  LabEquiptProductsList,
   LabProductsList,
   OshidashiProductsList,
   SeikiProductsList,
@@ -26,17 +27,27 @@ export async function GET() {
     { url: "/categories/dental", changefreq: "weekly", priority: 0.9 },
     { url: "/categories/laboratory", changefreq: "weekly", priority: 0.9 },
     {
-      url: "/material_processing_equipment",
+      url: "/categories/material_processing_equipment",
       changefreq: "weekly",
       priority: 0.9,
     },
     {
-      url: "/material_processing_equipment/seikei",
+      url: "/categories/material_processing_equipment/Ball_Mills",
       changefreq: "weekly",
       priority: 0.9,
     },
     {
-      url: "/material_processing_equipment/oshidashi",
+      url: "/categories/material_processing_equipment/Extruders",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/categories/material_processing_equipment/Presses",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/categories/lab_equipment",
       changefreq: "weekly",
       priority: 0.9,
     },
@@ -77,6 +88,7 @@ export async function GET() {
     // Add product links with proper base paths
     addProductLinks(DentalProductsList, "/categories/dental");
     addProductLinks(LabProductsList, "/categories/laboratory");
+    addProductLinks(LabEquiptProductsList, "/categories/lab_equipment");
     addProductLinks(
       FunsaiProductsList,
       "/categories/material_processing_equipment/Ball_Mills"

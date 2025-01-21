@@ -191,13 +191,15 @@ const Hero = () => {
                           href={
                             item.type === "Dental PRODUCTS"
                               ? `/categories/dental/${item.productName.replace(/\s/g, "_")}`
-                              : item.type === "BALL MILLS PRODUCTS"
-                                ? `/categories/material_processing_equipment/Ball_Mills/${item.productName.replace(/\s/g, "_")}`
-                                : item.type === "PRESSES PRODUCTS"
-                                  ? `/categories/material_processing_equipment/Presses/${item.productName.replace(/\s/g, "_")}`
-                                  : item.type === "EXTRUDERS PRODUCTS"
-                                    ? `/categories/material_processing_equipment/Extruders/${item.productName.replace(/\s/g, "_")}`
-                                    : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
+                              : item.type === "LAB PRODUCTS"
+                                ? `/categories/lab_equipment/${item.productName.replace(/\s/g, "_")}`
+                                : item.type === "BALL MILLS PRODUCTS"
+                                  ? `/categories/material_processing_equipment/Ball_Mills/${item.productName.replace(/\s/g, "_")}`
+                                  : item.type === "PRESSES PRODUCTS"
+                                    ? `/categories/material_processing_equipment/Presses/${item.productName.replace(/\s/g, "_")}`
+                                    : item.type === "EXTRUDERS PRODUCTS"
+                                      ? `/categories/material_processing_equipment/Extruders/${item.productName.replace(/\s/g, "_")}`
+                                      : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
                           }
                           className="flex items-center gap-5 transition-all ease-linear duration-400 group"
                           key={id}

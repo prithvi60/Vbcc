@@ -62,18 +62,51 @@ export const heroSlider = [
     },
     {
         bgImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
-        categories: "Material Processing Equipment",
-        type: "MPE",
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/Funsai.jpg?updatedAt=1736318070849",
+        categories: "Ball Mills",
+        type: "Ball_Mills",
         products: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576",
+                productName: "Multi Deck Roller Jar Mill",
+                type: "BALL MILLS PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/isometric-left.png?updatedAt=1736156950863",
                 productName: "Planetary Ball Mill (Mono Mill)",
                 type: "BALL MILLS PRODUCTS",
             },
             {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
+                productName: "Planetary Ball Mill (Table Top)",
+                type: "BALL MILLS PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png?updatedAt=1736156973933",
+                productName: "Single Roller Jar Mill",
+                type: "BALL MILLS PRODUCTS",
+            },
+        ],
+    },
+    {
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/Seikei.jpg?updatedAt=1736318068498",
+        categories: "Presses",
+        type: "Presses",
+        products: [
+            {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png?updatedAt=1736156797548",
                 productName: "Vacuum Hot Press",
+                type: "PRESSES PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/isometric.png?updatedAt=1736156885023",
+                productName: "Compression Moulding Press",
+                type: "PRESSES PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png?updatedAt=1736226196043",
+                productName: "Automatic Hydraulic Press",
                 type: "PRESSES PRODUCTS",
             },
             {
@@ -81,11 +114,59 @@ export const heroSlider = [
                 productName: "Mini Hot Press",
                 type: "PRESSES PRODUCTS",
             },
+        ],
+    },
+    {
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/Oshidashi.jpg?updatedAt=1736318068416",
+        categories: "Extruders",
+        type: "Extruders",
+        products: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/isometric.png?updatedAt=1736156918682",
+                productName: "Manual Extruder",
+                type: "EXTRUDERS PRODUCTS",
+            },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/isometric.png?updatedAt=1736156939203",
                 productName: "Automatic Extruder",
                 type: "EXTRUDERS PRODUCTS",
             },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/isometric.png?updatedAt=1736156890586",
+                productName: "Vacuum Extruder",
+                type: "EXTRUDERS PRODUCTS",
+            }
+
+        ],
+    },
+    {
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+        categories: "Lab Equipment",
+        type: "lab_equipment",
+        products: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Isometric.png?updatedAt=1737378240755",
+                productName: "Spray Pyrolysis",
+                type: "LAB PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Isometric.png?updatedAt=1737378263643",
+                productName: "Spin Coating System (SC-Base)",
+                type: "LAB PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Isometric.png?updatedAt=1737378314151",
+                productName: "Dip Coating",
+                type: "LAB PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Isometric.png?updatedAt=1737378337947",
+                productName: "Glove Box (Basic)",
+                type: "LAB PRODUCTS",
+            }
+
         ],
     },
 ];
@@ -114,6 +195,12 @@ export const navLinks = [
                 menu2: "equipment",
                 ref: "/categories/material_processing_equipment",
             },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+                menu: "lab",
+                menu2: "equipment",
+                ref: "/categories/lab_equipment",
+            },
         ],
     },
     { menu: "TESTIMONIALS", ref: "/testimonials" },
@@ -136,11 +223,32 @@ export const exploreList = [
         ref: "/categories/laboratory",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
-        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/MPE%20Icon.svg?updatedAt=1736832381813",
-        title: "Material Processing Equipment",
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Funsai.jpg?updatedAt=1736318070849",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/particle.svg?updatedAt=1737464660588",
+        title: "Ball Mills",
         desc: "Over 20+ products for Material Processing Equipment",
-        ref: "/categories/material_processing_equipment ",
+        ref: "/categories/material_processing_equipment/Ball_Mills",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Seikei.jpg?updatedAt=1736318068498",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/presses.svg?updatedAt=1737464659938",
+        title: "Presses",
+        desc: "Over 20+ products for Material Processing Equipment",
+        ref: "/categories/material_processing_equipment/Presses",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/Oshidashi.jpg?updatedAt=1736318068416",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/extrude.svg?updatedAt=1737464659969",
+        title: "Extruders",
+        desc: "Over 20+ products for Material Processing Equipment",
+        ref: "/categories/material_processing_equipment/Extruders",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-equipment.svg?updatedAt=1737464660580",
+        title: "Lab Equipment",
+        desc: "Over 20+ products for Material Processing Equipment",
+        ref: "/categories/lab_equipment",
     },
 ];
 
@@ -195,6 +303,11 @@ export const data = [
         img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
         menu: "material processing equipment",
         ref: "/categories/material_processing_equipment",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+        menu: "lab equipment",
+        ref: "/categories/lab_equipment",
     },
 ];
 
@@ -311,6 +424,10 @@ export const footerLinks1 = [
         href: "/faq",
         title: "FAQ",
     },
+    {
+        href: "/contact",
+        title: "Contact Us",
+    },
 ];
 
 export const footerLinks2 = [
@@ -327,9 +444,14 @@ export const footerLinks2 = [
         title: "Laboratory",
     },
     {
-        href: "/contact",
-        title: "Contact Us",
+        href: "/categories/material_processing_equipment",
+        title: "Material Processing Equipment",
     },
+    {
+        href: "/categories/lab_equipment",
+        title: "Lab Equipment",
+    },
+
 ];
 
 export const clientLogos = [
