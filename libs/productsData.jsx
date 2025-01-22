@@ -4154,6 +4154,702 @@ export const LabProductsList = [
     },
 ];
 
+export const LabEquiptProductsList = [
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Isometric.png?updatedAt=1737378240755",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Front.png?updatedAt=1737378240759",
+                alt: "Our Spray Pyrolysis equipment offers precise control for thin film and nanoparticle production, ideal for optoelectronics and energy storage, with a space-saving design",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Left.png?updatedAt=1737378239771",
+                alt: "Spray Pyrolysis Equipment – featuring a compact design and efficient heating, ideal for creating high-quality thin films and coatings in materials science",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Right.png?updatedAt=1737378239581",
+                alt: "Advanced Spray Pyrolysis system for thin films and nanoparticles, featuring efficient heating and precise material control",
+            },
+        ],
+        productName: "Spray Pyrolysis",
+        metaTitle: "Spray Pyrolysis Equipment - VBCC",
+        metaDesc:
+            "VBCC offers state-of-the-art spray pyrolysis equipment, ideal for producing thin films and nanoparticles with precise control, making it perfect for semiconductor and material science applications",
+        desc: "Our Spray Pyrolysis equipment is designed to produce thin films, coatings, and nanoparticles by spraying a precursor solution onto a heated substrate for pyrolytic decomposition. Featuring a space-saving double-deck design and an efficient APM-grade Kanthal heating element (max 400°C), it ensures precise control over material composition, thickness, and structure. It is ideal for applications in optoelectronics, energy storage, and materials science research",
+        keys: [
+            {
+                label: "Robust Constructior",
+                value:
+                    "High-quality M.S. body and angle structure with powder coat finish.",
+            },
+            {
+                label: "Double Deck Designer",
+                value:
+                    "Optimized space with top for equipment and bottom for a shelf model.",
+            },
+            {
+                label: "Advanced Viewing",
+                value:
+                    "Acrylic door allows for operation monitoring without compromising insulation.",
+            },
+            {
+                label: "Efficient Heating System",
+                value:
+                    "APM grade Kanthal heating elements with a maximum working temperature of 400°C.",
+            },
+            {
+                label: "Precise Spraying",
+                value:
+                    "Peristaltic pump with adjustable spray rates from 1 ml to 65 ml/min.",
+            },
+            {
+                label: "Customizable Drive System",
+                value:
+                    "Stepper motor controller with three directional movements (manual and automatic).",
+            },
+            {
+                label: "Accurate Control System",
+                value:
+                    "PID temperature program-mer with K-type thermocouple and non-contact sensors",
+            },
+            {
+                label: "Integrated Safety Features",
+                value:
+                    "Pressure relief valve, safety valves, and automatic pressure switch included.",
+            },
+            {
+                label: "User-Friendly Interfac",
+                value:
+                    "PLC-based automation with HMI  screen for easy operation.",
+            },
+            {
+                label: "Complete Setup",
+                value:
+                    "Includes a laptop and software for enhanced functionality.",
+            },
+        ],
+        specs: [
+            { label: "Shell Size", value: "700 x 700 x 900 mm" },
+            { label: "Shell Construction", value: "M.S. Body & Angle structure, powder coated" },
+            { label: "Door Construction", value: "Acrylic door (top), Metal door with glass (bottom)" },
+            { label: "Suction Fan", value: "0.25 HP" },
+            { label: "Heating Power", value: "2 kW, Single phase/AC" },
+            { label: "Max Working Temp.", value: "400°C (surface temperature of hot plate)" },
+            { label: "Work Area", value: "200 x 200 mm" },
+            { label: "Pump Type", value: "Peristaltic pump, 24V PMDC motor" },
+            { label: "Pressure", value: "Up to 2 Kg/Sq.Cm" },
+            { label: "Spray Rate", value: "1 ml to 65 ml/min" },
+            { label: "Tubing Size", value: "1 mm or 3 mm ID" },
+            { label: "Nozzle", value: "Glass Gun (1 mm dia)" },
+            { label: "Drive System", value: "Stepper motor, 3 directional movements" },
+            { label: "Temperature Control", value: "TAIE PID programmer, ±1°C accuracy" },
+            { label: "Air Compressor", value: "0.25 HP, Adjustable working pressure 1.5 bar" },
+            { label: "Air Tank Capacity", value: "10 liters" },
+            { label: "Air Delivery", value: "25 CFM" },
+            { label: "Accessories", value: "Laptop and Software included" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Lab%20Equipments-Brochure-Digital-1.pdf?updatedAt=1737378242377",
+        slug: "labEquip",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Isometric.png?updatedAt=1737378263643",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Front.png?updatedAt=1737378262548",
+                alt: "VBCC's Spin Coater offers meticulous thin-film application with adjustable speeds up to 6,000 RPM, perfect for photolithography, solar cells, and advanced material science",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Left.png?updatedAt=1737378262801",
+                alt: "An image of VBCC's Spin Coater, which uses centrifugal force to evenly coat surfaces with liquid materials and offers adjustable speeds for precise application",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Right.png?updatedAt=1737378263140",
+                alt: "Visual representation of a Spin Coating System, designed for applying thin, uniform films on flat surfaces in research applications",
+            },
+        ],
+        productName: "Spin Coating System (SC-Base)",
+        metaTitle: "Spin Coaters|Spin Coating System ",
+        metaDesc:
+            "Explore our spin coater system, engineered for precise and even liquid application. With speeds from 100 to 6,000 RPM, it provides flexible solutions for various needs",
+        desc: "VBCC's Spin Coater is meticulously designed to efficiently and evenly apply thin layers of liquid material onto flat surfaces through the spin coating process, utilizing centrifugal force to ensure precise control over film thickness, uniformity, and smoothness. With adjustable speeds ranging from 100 to 6,000 RPM, it is ideal for versatile applications such as thin-film coatings, photoresists for photolithography, solar cells, organic LEDs (OLEDs), and sensors, making it an essential tool for semiconductor manufacturing, optoelectronics, and material science.",
+        keys: [
+            {
+                label: "Robust Construction",
+                value: "M.S. body with angle structure, designed for durability and stability.",
+            },
+            {
+                label: "High Speed Range",
+                value: "Adjustable speeds from 100 to 6,000 RPM for versatile applications.",
+            },
+            {
+                label: "Precision Accuracy",
+                value: "Speed accuracy within ±1% across the entire range ensures reliable results.",
+            },
+            {
+                label: "User-Friendly Interface",
+                value: "LCD console with programmable options for RPM, acceleration, deceleration, and dwell time.",
+            },
+            {
+                label: "Advanced Control Options",
+                value: "Touch screen HMI for intuitive operation.",
+            },
+            {
+                label: "Teflon Coated Bowl",
+                value: "Ensures easy cleaning and prevents contamination.",
+            },
+            {
+                label: "Compact Design",
+                value: "200 mm (8 inch) diameter bowl size suitable for various substrates.",
+            },
+            {
+                label: "Corrosion-Resistant Sample Holder",
+                value: "Provides reliable support for samples during processing.",
+            },
+            {
+                label: "Efficient Control System",
+                value: "Operated via a variable frequency drive for smooth performance.",
+            },
+            {
+                label: "Efficient Vacuum System",
+                value: "Rotary vacuum pump maintaining a vacuum level of 760 mm mercury.",
+            },
+        ],
+        spec: [
+            { label: "Shell Construction", value: "M.S. Body & Angle structure, powder coated" },
+            { label: "Speed Range", value: "Adjustable 100 - 6,000 RPM" },
+            { label: "Speed Accuracy", value: "Less than ±1% error across full range" },
+            { label: "Display", value: "LCD console (programmable)" },
+            { label: "Control Options", value: "Keypad (Touch Screen HMI)" },
+            { label: "Working Chamber (Bowl)", value: "Teflon coated bowl and cover" },
+            { label: "Bowl Size", value: "200 mm (8 inch) diameter" },
+            { label: "Substrate Holder", value: "Circular holder, 25 mm diameter" },
+            { label: "Sample Holding Chuck", value: "Corrosion-resistant metal" },
+            { label: "Control System", value: "Variable frequency drive" },
+            { label: "Control Switches", value: "Mains on, Drive on, Vacuum pump on" },
+            { label: "Motor", value: "0.5 HP, 3 phase" },
+            { label: "Drive", value: "Belt drive" },
+            { label: "Vacuum Level", value: "760 mm mercury" },
+            { label: "Vacuum Pump", value: "Rotary vacuum pump" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Lab%20Equipments-Brochure-Digital-2.pdf?updatedAt=1737378265901",
+        slug: "labEquip",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Isometric.png?updatedAt=1737378286610",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Front.png?updatedAt=1737378287439",
+                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Right.png?updatedAt=1737378287172",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Left.png?updatedAt=1737378286418",
+                alt: "High-quality spin coating system for creating thin, uniform films on planar substrates in advanced fabrication processes",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Right.png?updatedAt=1737378287172",
+                alt: "VBCC's spin coater displayed, highlighting its innovative features and modern design for efficient coating processes",
+            },
+        ],
+        productName: "Spin Coating System (SC-Xtreme)",
+        metaTitle: "Spin Coating Unit - VBCC",
+        metaDesc:
+            "Our premium spin coating systems ensure precise thin film application for solar cells, OLEDs, sensors, etc. with adjustable speeds ranging from 100 to 10,000 RPM",
+        desc: "With precisely controlled spin coating process parameters, our premium spin coating system delivers unmatched performance, featuring adjustable speeds ranging from 100 to 10,000 RPM. Engineered for efficiency, it streamlines the spin coating of functional oxide layers on glass or single-crystal substrates using sol-gel precursors, enabling the production of uniform thin films with nanoscale precision—ideal for high-value applications in advanced materials and nanotechnology industries.",
+        keys: [
+            {
+                label: "Superior Construction",
+                value: "Robust M.S. body and angle structure, finished with durable powder coating.",
+            },
+            {
+                label: "Extended Speed Range",
+                value: "Adjustable speeds from 100 to 10,000 RPM, accommodating diverse application needs.",
+            },
+            {
+                label: "Precision Performance",
+                value: "Speed accuracy within ±1% across the full range ensures consistent results.",
+            },
+            {
+                label: "Advanced User Interface",
+                value: "LCD console with programmable settings for RPM, acceleration, deceleration, and dwell time.",
+            },
+            {
+                label: "Intuitive Control Options",
+                value: "Touch screen HMI for easy navigation and operation.",
+            },
+            {
+                label: "Teflon Coated Working Chamber",
+                value: "Facilitates easy cleaning and prevents contamination during processes.",
+            },
+            {
+                label: "Versatile Bowl Size",
+                value: "200 mm (8 inch) diameter bowl designed for various substrates.",
+            },
+            {
+                label: "Durable Sample Holder",
+                value: "Circular holder with a 25 mm diameter made from corrosion-resistant materials.",
+            },
+            {
+                label: "Efficient Drive System",
+                value: "Operated via a variable frequency drive for smooth and efficient performance.",
+            },
+            {
+                label: "Reliable Vacuum System",
+                value: "Rotary vacuum pump achieving a vacuum level of 760 mm mercury for optimal conditions.",
+            },
+        ],
+        spec: [
+            { label: "Shell Construction", value: "M.S. Body & Angle structure, powder coated" },
+            { label: "Speed Range", value: "Adjustable 100 - 10,000 RPM" },
+            { label: "Speed Accuracy", value: "Less than ±1% error across full range" },
+            { label: "Display", value: "LCD console (programmable)" },
+            { label: "Control Options", value: "Keypad (Touch Screen HMI)" },
+            { label: "Working Chamber (Bowl)", value: "Teflon coated bowl and cover" },
+            { label: "Bowl Size", value: "200 mm (8 inch) diameter" },
+            { label: "Substrate Holder", value: "Circular holder, 25 mm diameter" },
+            { label: "Sample Holding Chuck", value: "Corrosion-resistant metal" },
+            { label: "Control System", value: "Variable frequency drive" },
+            { label: "Control Switches", value: "Mains on, Drive on, Vacuum pump on" },
+            { label: "Motor", value: "0.5 HP, 3 phase" },
+            { label: "Drive", value: "Belt drive" },
+            { label: "Vacuum Level", value: "760 mm mercury" },
+            { label: "Vacuum Pump", value: "Rotary vacuum pump" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Lab%20Equipments-Brochure-Digital-3.pdf?updatedAt=1737378292633",
+        slug: "labEquip",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Isometric.png?updatedAt=1737378314151",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Front.png?updatedAt=1737378314626",
+                alt: "Precision-engineered dip coating units by VBCC ensure smooth, even coatings for the electronics, automotive, and optics industries, effectively enhancing surface properties",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Left.png?updatedAt=1737378314660",
+                alt: "A dip coating unit designed to apply protective coatings by immersing substrates in a tank, providing corrosion resistance and insulation",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Right.png?updatedAt=1737378314888",
+                alt: "A detailed view of VBCC's dip coating unit, showcasing advanced technology for efficient and precise coating applications",
+            },
+        ],
+        productName: "Dip Coating",
+        metaTitle: "Dip Coating Equipment Manufacturer in India",
+        metaDesc:
+            "VBCC’s precision-engineered dip coating equipment features an angled MS body, sturdy stiffeners, and a high-quality powder coat for exceptional durability and accuracy",
+        desc: "VBCC's dip coating units are precision-engineered for efficient application of uniform coatings or films on substrates by immersing them into liquid solutions like paint or polymers. Designed for versatility, they ensure smooth, even coatings and are ideal for industries such as electronics, automotive, optics, and material science. These units deliver high performance for creating protective layers, enhancing surface properties, and applying functional finishes like corrosion resistance and insulation.",
+        keys: [
+            {
+                label: "Robust Construction",
+                value: "M.S. body with angle structure, featuring proper stiffeners and a high-quality powder coat finish for durability."
+            },
+            {
+                label: "Precision Actuation",
+                value: "Stepper motor provides accurate and repeatable movement for reliable coating results."
+            },
+            {
+                label: "Lead Screw Drive Mechanism",
+                value: "Ensures smooth and controlled movement during the dipping process."
+            },
+            {
+                label: "Programmable Speed Control",
+                value: "Offers flexibility to adjust drawing speeds for various applications."
+            },
+            {
+                label: "Intuitive Control Interface",
+                value: "Touch screen HMI allows for easy operation and monitoring."
+            },
+            {
+                label: "Versatile Stroke Length",
+                value: "Maximum stroke length of 150 mm accommodates a wide range of substrates."
+            },
+            {
+                label: "Adjustable Drawing Speeds",
+                value: "Minimum speed of 0.1 mm/sec to a maximum of 60 mm/sec for precise control."
+            },
+            {
+                label: "Standard Power Input",
+                value: "Operates on 230V AC, 50Hz, suitable for most laboratory environments."
+            },
+            {
+                label: "User-Friendly Interface",
+                value: "Window-based software designed for easy navigation and control."
+            },
+            {
+                label: "Real-Time Monitoring",
+                value: "Displays current dipper position and completed dip cycles for enhanced process oversight."
+            },
+            {
+                label: "Customizable Operations",
+                value: "Dipping speed,Lifting speed,Waiting interval (bottom),Drying interval (top),Number of dipping sequences"
+            }
+        ],
+        spec: [
+            { label: "Instrument Name", value: "Premium Dip Coating System" },
+            { label: "Shell Construction", value: "M.S. Body & Angle structure, powder coated" },
+            { label: "Actuator", value: "Stepper Motor" },
+            { label: "Drive Mechanism", value: "Lead Screw" },
+            { label: "Speed Control", value: "Programmable" },
+            { label: "Control Options", value: "Touch Screen HMI" },
+            { label: "Power Input", value: "230V, 50Hz" },
+            { label: "Stroke Length Max", value: "150 mm" },
+            { label: "Drawing Speed Min", value: "0.1 mm/sec" },
+            { label: "Drawing Speed Max", value: "60 mm/sec" },
+            { label: "Supply Voltage", value: "230V AC" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Lab%20Equipments-Brochure-Digital-4.pdf?updatedAt=1737378317745",
+        slug: "labEquip",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Isometric.png?updatedAt=1737378337947",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Front.png?updatedAt=1737378337864",
+                alt: "Specialized glove boxes ensure user safety and contamination protection while handling sensitive materials in controlled environments",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Left.png?updatedAt=1737378337953",
+                alt: "High-performance glove boxes for safe handling of hazardous materials, featuring integrated gloves and inert gas environments",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Right.png?updatedAt=1737378338130",
+                alt: "VBCC's glove box, featuring sealed compartments for secure manipulation of hazardous or delicate substances",
+            },
+        ],
+        productName: "Glove Box (Basic)",
+        metaTitle: "Laboratory Glove Box",
+        metaDesc:
+            "Our glove boxes provide a secure environment for air-sensitive materials. The safety glass is crafted from durable polycarbonate, ensuring easy handling and processing with maximum visibility",
+        desc: "We specialize in manufacturing high-performance glove boxes that create a controlled environment for safely handling sensitive or hazardous materials, ensuring protection from contamination and safeguarding user safety. Equipped with integrated gloves, these systems enable users to manipulate objects inside without direct contact. Often filled with inert gases, our glove boxes prevent reactions with air or moisture, making them ideal for managing reactive substances, conducting precise experiments, and working with hazardous materials in industries such as pharmaceuticals, aerospace, and material science.",
+        keys: [
+            {
+                label: "Modular Design",
+                value: "Flexible and customizable to meet various needs."
+            },
+            {
+                label: "Compact Size",
+                value: "External dimensions of 750 x 600 x 550 mm; internal dimensions of 740 x 590 x 550 mm."
+            },
+            {
+                label: "Safety Glass",
+                value: "300 x 400 mm polycarbonate front glass for visibility and protection."
+            },
+            {
+                label: "Durable Construction",
+                value: "Stainless steel shell with powder coating for corrosion resistance."
+            },
+            {
+                label: "Scratch-Resistant Interior",
+                value: "Brushed, anti-corrosive finish for easy cleaning."
+            },
+            {
+                label: "Adjustable Shelving",
+                value: "Three height-adjustable SS 304 shelves."
+            },
+            {
+                label: "Glove Ports",
+                value: "Two ports for easy material handling with 6” neoprene or butyl gloves."
+            },
+            {
+                label: "Chemical-Resistant Window",
+                value: "Inclined panel for enhanced visibility."
+            },
+            {
+                label: "Fluorescent Lighting",
+                value: "Bright interior lighting for clear visibility."
+            },
+            {
+                label: "Custom Gas Options",
+                value: "Working gas specifications based on customer needs."
+            },
+            {
+                label: "Rotary Vacuum Pump",
+                value: "Effective evacuation, achieving a rough vacuum of 760 Hg."
+            },
+            {
+                label: "Vacuum Gauge",
+                value: "Analogue compound gauge for monitoring levels."
+            },
+            {
+                label: "Antechamber",
+                value: "Cylindrical design (200 mm D x 300 mm L) for material transfer."
+            },
+            {
+                label: "Feed Through",
+                value: "Three KF 40 flanges for additional access."
+            },
+            {
+                label: "Solenoid Valves",
+                value: "Two for gas inlet and outlet control."
+            },
+            {
+                label: "Foot Switch",
+                value: "For easy pressure adjustments."
+            },
+            {
+                label: "PLC Control",
+                value: "Integrated system for seamless operation."
+            }
+        ],
+        spec: [
+            { label: "Design", value: "Modular design" },
+            { label: "Outside Dimensions", value: "750 x 600 x 550 mm" },
+            { label: "Inside Dimensions", value: "740 x 590 x 550 mm" },
+            { label: "Front Glass", value: "Safety polycarbonate (300 x 400 mm)" },
+            { label: "Shell Construction", value: "Stainless steel with powder coating" },
+            { label: "Interior Finish", value: "Brushed, anti-corrosive" },
+            { label: "Shelves", value: "3 adjustable SS 304 shelves" },
+            { label: "Glove Ports", value: "2 numbers" },
+            { label: "Vacuum Pump", value: "Rotary vacuum pump" },
+            { label: "Vacuum Level", value: "Rough vacuum 760 Hg" },
+            { label: "PLC", value: "PLC controlled operating system" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Lab%20Equipments-Brochure-Digital-5.pdf?updatedAt=1737378342839",
+        slug: "labEquip",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Isometric.png?updatedAt=1737378364111",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Front.png?updatedAt=1737378363709",
+                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Right.png?updatedAt=1737378363133",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Left.png?updatedAt=1737378363509",
+                alt: "Engineered glove box (1200 x 900 x 800 mm) for optimal workspace, ideal for processing air-sensitive materials with enhanced visibility",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Right.png?updatedAt=1737378363133",
+                alt: "VBCC's premium glove box, engineered for superior protection and efficiency in handling sensitive materials",
+            },
+        ],
+        productName: "Glove Box (Premium)",
+        metaTitle: "Premium Laboratory Glove Box",
+        metaDesc:
+            "VBCC's Premium Glove Box offers a controlled environment for sensitive materials. Perfect for chemistry, pharmaceuticals, and electronics, it protects against oxygen and moisture while allowing safe manipulation",
+        desc: "Our premium glove box is engineered with spacious dimensions of 1200 x 900 x 800 mm, offering optimal workspace. Tailored for the precise handling and manipulation of materials within a controlled atmosphere, it simplifies the handling, processing, and storage of air-sensitive samples. The glove box incorporates high-durability polycarbonate safety glass for superior visibility, complemented by a cylindrical antechamber and an analogy vacuum gauge, enhancing operational efficiency and functionality.",
+        keys: [
+            {
+                label: "Modular Design",
+                value: "Flexible configuration to suit various laboratory needs."
+            },
+            {
+                label: "Spacious Dimensions",
+                value: "Main box size of 1200 x 900 x 800 mm for ample workspace."
+            },
+            {
+                label: "Safety Glass Front",
+                value: "Made from durable safety polycarbonate for enhanced visibility."
+            },
+            {
+                label: "Durable Shell Construction",
+                value: "Stainless steel body with a powder-coated finish for superior corrosion resistance."
+            },
+            {
+                label: "Scratch-Resistant Interior",
+                value: "Brushed, anti-corrosive coating ensures easy maintenance and longevity."
+            },
+            {
+                label: "Height-Adjustable Shelves",
+                value: "Three stainless steel (SS 304) shelves for versatile storage options."
+            },
+            {
+                label: "Glove Ports",
+                value: "Two glove ports with 6” neoprene or butyl gloves for secure handling of materials."
+            },
+            {
+                label: "Chemical-Resistant Window",
+                value: "Inclined design for improved visibility and durability against chemicals."
+            },
+            {
+                label: "Efficient Lighting",
+                value: "Fluorescent lighting system for optimal illumination."
+            },
+            {
+                label: "Customizable Gas Options",
+                value: "Working gas specifications tailored to customer requirements."
+            },
+            {
+                label: "Robust Vacuum System",
+                value: "Equipped with a rotary vacuum pump, achieving a rough vacuum of 760 Hg."
+            },
+            {
+                label: "Advanced Control System",
+                value: "PLC-controlled operating system for seamless operation, complemented by foot switch control."
+            },
+            {
+                label: "Cylindrical Antechambers",
+                value: "Two antechambers (300 D x 400 L mm and 150 D x 250 L mm) for effective material transfer."
+            },
+            {
+                label: "Analogue Vacuum Gauge",
+                value: "Compound gauge for precise monitoring of vacuum levels."
+            },
+            {
+                label: "Feed Through Options",
+                value: "Three KF 40 flanges for additional access."
+            },
+            {
+                label: "User-Friendly Operation",
+                value: "Touch screen interface for convenient access to the glove box."
+            },
+            {
+                label: "Versatile Control",
+                value: "PLC manual and automatic control capabilities."
+            },
+            {
+                label: "Power Supply",
+                value: "220V/50Hz for reliable operation."
+            },
+            {
+                label: "Working Gases",
+                value: "Supports nitrogen, argon, and helium."
+            },
+            {
+                label: "Airtight Functionality",
+                value: "Capable of dewatering and deoxygenating materials."
+            },
+            {
+                label: "High-Quality Materials",
+                value: "Container made from SUS304 stainless steel and DN40 pipeline."
+            },
+            {
+                label: "Impressive Circulation Capacity",
+                value: "90 m³/h for efficient gas flow."
+            },
+            {
+                label: "Effective Purification",
+                value: "Copper catalyst (6 kg) and molecular sieve (6 kg) for optimal removal of contaminants."
+            },
+            {
+                label: "Moisture and Oxygen Index",
+                value: "Maintains levels below 10 ppm."
+            },
+            {
+                label: "Valves",
+                value: "Main valve (DN40KF) and electric angle valve for precise control."
+            }
+        ],
+        spec: [
+            { label: "Design", value: "Modular design" },
+            { label: "Main Box Size", value: "1200 x 900 x 600 mm" },
+            { label: "Front Glass", value: "Safety polycarbonate" },
+            { label: "Shell Construction", value: "Stainless steel with powder coating" },
+            { label: "Interior Finish", value: "Brushed, anti-corrosive" },
+            { label: "Shelves", value: "3 adjustable SS 304 shelves" },
+            { label: "Glove Ports", value: "2 numbers" },
+            { label: "Gloves", value: "6\" neoprene or butyl gloves" },
+            { label: "Lighting", value: "Fluorescent lighting system" },
+            { label: "Vacuum Pump", value: "Rotary vacuum pump" },
+            { label: "Vacuum Level", value: "Rough vacuum 760 Hg" },
+            { label: "PLC", value: "PLC controlled operating system" },
+            { label: "Humidity Sensor", value: "Imported humidity sensor" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Lab%20Equipments-Brochure-Digital-6.pdf?updatedAt=1737378367333",
+        slug: "labEquip",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Isometric.png?updatedAt=1737378388602",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Front.png?updatedAt=1737378388643",
+                alt: "The Electro spinner operates at 300°C, producing consistent ultra-fine fibres for diverse applications like tissue engineering and filtration.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Left.png?updatedAt=1737378388597",
+                alt: "VBCC's Electro spinner unit, a cutting-edge device for electrospinning, emphasizing its role in modern material fabrication",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Right.png?updatedAt=1737378388115",
+                alt: "Electro spinner unit featuring innovative technology for effective material spinning in industrial settings",
+            },
+        ],
+        productName: "Electro Spinner",
+        metaTitle: "Electrospinning Unit for Ceramic Nanofibers",
+        metaDesc:
+            "Learn about our cutting-edge electrospinning unit, which transforms polymeric solutions into advanced ceramic nanofibers, ideal for a wide range of industrial applications",
+        desc: "The Electro spinner, capable of operating at ambient temperatures up to 300°C, is designed to produce uniform, ultra-fine fibres and Nano-materials. It features an electroforming chamber that ensures consistent fibre formation under controlled electrical fields, maintaining optimal humidity and temperature. Ideal for industries such as medical devices, filtration, and tissue engineering, the Electro spinner offers exceptional precision, quality, and versatility.",
+        keys: [
+            {
+                label: "Equipment Name",
+                value: "Fibre Forming Chamber for ceramic fibre preparation."
+            },
+            {
+                label: "Drying Chamber",
+                value: "0.8 m diameter, 300 mm height with a glass window for monitoring."
+            },
+            {
+                label: "Construction",
+                value: "Heat-resistant SS 316 with air circulation for uniform drying."
+            },
+            {
+                label: "Dimensions",
+                value: "External size of 1.0 m diameter x 800 mm height."
+            },
+            {
+                label: "Temperature Range",
+                value: "Ambient to 300° C."
+            },
+            {
+                label: "Nozzle Sizes",
+                value: "Includes 0.2 mm and 0.3 mm nozzles."
+            },
+            {
+                label: "Liquid Inlet",
+                value: "Digitalized liquid feed system for precise control."
+            },
+            {
+                label: "Nozzle Capacity",
+                value: "50 ml cup with orifices for consistent delivery."
+            },
+            {
+                label: "Heating",
+                value: "Kanthal heating element with fiber insulation."
+            },
+            {
+                label: "Motor",
+                value: "0.5 HP for efficient operation."
+            },
+            {
+                label: "Spindle Speed",
+                value: "2000-12000 RPM at the nozzle."
+            },
+            {
+                label: "Air Blower",
+                value: "Integrated heater and air blower for optimal drying."
+            },
+            {
+                label: "View Port",
+                value: "Accessible view port on the top."
+            }
+        ],
+        spec: [
+            { label: "Equipment Name", value: "Fibre Forming Chamber" },
+            { label: "Drying Chamber Size", value: "0.8 m diameter, 300 mm height" },
+            { label: "Construction Material", value: "Heat-resistant SS 316" },
+            { label: "External Dimensions", value: "1.0 m diameter x 800 mm height" },
+            { label: "Temperature Range", value: "RT to 300° C" },
+            { label: "Nozzle Sizes", value: "0.2 mm and 0.3 mm" },
+            { label: "Liquid Feed System", value: "Digitalized for precision" },
+            { label: "Nozzle Capacity", value: "50 ml cup with orifices" },
+            { label: "Heating Element", value: "Kanthal with fiber insulation" },
+            { label: "Motor Power", value: "0.5 HP" },
+            { label: "Spindle Speed", value: "2000-12000 RPM" },
+            { label: "Air Blower", value: "Integrated heater and air blower" },
+            { label: "View Port", value: "Top-side accessible" }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Lab%20Equipments%20-%20Brochure%20-%20Digital-7.pdf?updatedAt=1737378396341",
+        slug: "labEquip",
+    },
+];
+
 export const FunsaiProductsList = [
     {
         mainImg:
@@ -4161,15 +4857,48 @@ export const FunsaiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/front.png?updatedAt=1736156980114",
-                alt: "",
+                alt: "The Multi-Deck Roller Jar Mill by VBCC offers advanced mixing and grinding of solid fillers for consistent ceramic slurries",
+                title: "Multi Deck Roller Jar Mill (polyuruthene)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576",
-                alt: "",
+                alt: "Image of VBCC's Multi-Deck Two-Tier Jar Mill featuring durable polyurethane rollers for efficient material processing",
+                title: "Multi Deck Roller Jar Mill (polyuruthene)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/right.png?updatedAt=1736156982433",
-                alt: "",
+                alt: "Multi-deck jar mill with polyurethane rollers, ideal for the effective mixing and grinding of solid powders",
+                title: "Multi Deck Roller Jar Mill (polyuruthene)",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/front.png?updatedAt=1737349780274",
+                alt: "Close-up of VBCC's Multideck Three Tier Jar Mill, highlighting the Neoprene roller used for optimal performance",
+                title: "multideck jar mill three tier (neoprene)",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/isometric%20or%20left.png?updatedAt=1737349781161",
+                alt: "Multi-deck three-tier jar mill designed for effective grinding and mixing of materials in laboratory and industrial use",
+                title: "multideck jar mill three tier (neoprene)",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/right.png?updatedAt=1737349781984",
+                alt: "Multi-Deck Jar Mill with neoprene rollers, designed for durability and to minimize contamination, ensuring reliable performance in both research and production processes",
+                title: "multideck jar mill three tier (neoprene)",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/front.png?updatedAt=1737349829564",
+                alt: "Visual of VBCC's soundproof Multideck Two Tier Jar Mill, engineered to lower noise levels for a quieter operational space",
+                title: "multideck jar mill two tier (sound proof)",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/isometric%20or%20left.png?updatedAt=1737349829762",
+                alt: "Product image of a soundproof Multi-Deck Two-Tier Jar Mill, showcasing its sleek design and efficient milling capabilities",
+                title: "multideck jar mill two tier (sound proof)",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/right.png?updatedAt=1737349831173",
+                alt: "Soundproof Multi-Deck Two-Tier Jar Mill designed for effective grinding and blending of materials while reducing noise levels",
+                title: "multideck jar mill two tier (sound proof)",
             },
         ],
         productName: "Multi Deck Roller Jar Mill",
@@ -4289,15 +5018,15 @@ export const FunsaiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/front.png?updatedAt=1736156976661",
-                alt: "",
+                alt: "Planetary ball mill designed for efficient grinding and mixing, utilizing synchronized motion for precise material homogenization",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
-                alt: "",
+                alt: "VBCC's Planetary Ball Mill (Mono Mill) delivers high-performance milling for efficient sample preparation in research applications",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/right.png?updatedAt=1736156979483",
-                alt: "",
+                alt: "Planetary Ball Mill (Mono Mill) displayed, highlighting its innovative features for optimal grinding performance",
             },
         ],
         productName: "Planetary Ball Mill (Mono Mill)",
@@ -4371,15 +5100,15 @@ export const FunsaiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/front.png?updatedAt=1736156946062",
-                alt: "",
+                alt: "A Planetary Ball Mill with four grinding jars on a rotating turntable, designed for efficient dry and wet material grinding",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/isometric-left.png?updatedAt=1736156950863",
-                alt: "",
+                alt: "Image of VBCC's Table Top Planetary Ball Mill, showcasing its compact design and advanced milling technology",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/right.png?updatedAt=1736156950409",
-                alt: "",
+                alt: "High-energy table top Planetary Ball Mill with four jars, perfect for particle size reduction and material synthesis in labs.",
             },
         ],
         productName: "Planetary Ball Mill (Table Top)",
@@ -4454,15 +5183,15 @@ export const FunsaiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/front.png?updatedAt=1736156968888",
-                alt: "",
+                alt: "VBCC's Single Roller Jar Mill features a rotating roller that mixes and homogenizes materials efficiently in a jar",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png?updatedAt=1736156973933",
-                alt: "",
+                alt: "Image of the Single Roller Jar Mill, highlighting the rotating roller that generates friction for effective material grinding",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/right.png?updatedAt=1736156976793",
-                alt: "",
+                alt: "Laboratory and industrial Single Roller Jar Mill used for reducing particle size and achieving consistent material blends",
             },
         ],
         productName: "Single Roller Jar Mill",
@@ -4525,15 +5254,15 @@ export const FunsaiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/front.png?updatedAt=1736156956491",
-                alt: "",
+                alt: "Table Top Jar Mill, a compact tool for milling and homogenizing materials in labs, featuring multiple jars on a horizontal platform",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png?updatedAt=1736156957914",
-                alt: "",
+                alt: "Image of VBCC's Table Top Jar Mill with multiple jars on a horizontal platform, rotating to grind materials effectively",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/right.png?updatedAt=1736156964706",
-                alt: "",
+                alt: "Compact Table Top Jar Mill designed for efficient grinding and mixing in laboratories, suitable for various material applications",
             },
         ],
         productName: "Table Top Jar Mill",
@@ -4603,15 +5332,15 @@ export const SeikiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/front.png?updatedAt=1736156865702",
-                alt: "",
+                alt: "An advanced Hydraulic Compression Moulding Press by VBCC, known for durability, precision, and tailored engineering solutions",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/left.png?updatedAt=1736156894664",
-                alt: "",
+                alt: "Image depicting state-of-the-art hydraulic compression moulding press designed for high-performance manufacturing applications",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/right.png?updatedAt=1736156894897",
-                alt: "",
+                alt: "Image of a Hydraulic Compression Moulding Press that shapes materials under high pressure and heat to produce precision components for various industries",
             },
         ],
         productName: "Compression Moulding Press",
@@ -4672,15 +5401,15 @@ export const SeikiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/front.png?updatedAt=1736156790736",
-                alt: "",
+                alt: "VBCC manufactures vacuum hot presses for controlled hot pressing, ideal for achieving high density in various material shapes",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/left.png?updatedAt=1736156803311",
-                alt: "",
+                alt: "Vacuum hot press product showcased, highlighting its advanced technology and sleek design",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/right.png?updatedAt=1736156798672",
-                alt: "",
+                alt: "Its Vacuum Hot Presses are designed to bond materials under high pressure and heat in a vacuum, producing high-quality components for various industries",
             },
         ],
         productName: "Vacuum Hot Press",
@@ -4732,7 +5461,7 @@ export const SeikiProductsList = [
             "Phase",
             "Weight",
             "Vacuum Level mbar (Max)",
-            "Press Capacity"
+            "Press Capacity",
         ],
         spec: [
             {
@@ -4853,15 +5582,15 @@ export const SeikiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/front.png?updatedAt=1736156797715",
-                alt: "",
+                alt: "Designed for precision, our Vacuum Press forms an air-tight seal, preventing voids for durable bonding in critical applications",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/left.png?updatedAt=1736156730822",
-                alt: "",
+                alt: "VBCC's Vacuum Press: An advanced device for effective vacuum sealing, enhancing productivity in manufacturing processes",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/right.png?updatedAt=1736156799700",
-                alt: "",
+                alt: "Visual of a vacuum press used for bonding and laminating materials under vacuum, ensuring high-quality, defect-free results",
             },
         ],
         productName: "Vacuum Press or Laminating Press",
@@ -4924,51 +5653,52 @@ export const SeikiProductsList = [
         slug: "Presses",
     },
     {
-        mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png?updatedAt=1736226196043",
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png?updatedAt=1736226196043",
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/front.png?updatedAt=1736226194742",
-                alt: "",
+                alt: "VBCC's Automatic Hydraulic Press features an electric motor and hydraulic pump for precise control and high efficiency in manufacturing",
                 title: "20 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/left.png?updatedAt=1736226194774",
-                alt: "",
+                alt: "Image of VBCC's 20 Ton Automatic Hydraulic Press showcasing its robust design and advanced hydraulic technology",
                 title: "20 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/right.png?updatedAt=1736226196704",
-                alt: "",
+                alt: "A 20 Ton Automatic Hydraulic Press designed for stamping, moulding, and compacting materials in various industrial applications",
                 title: "20 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/front.png?updatedAt=1736226197267",
-                alt: "",
+                alt: "VBCC's Automatic Hydraulic Press employs an electric motor and hydraulic system for reliable, precise manufacturing in various industries",
                 title: "50 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/left.png?updatedAt=1736226199834",
-                alt: "",
+                alt: "VBCC's 50 Ton Automatic Hydraulic Press displayed, highlighting its powerful capabilities and industrial-grade construction",
                 title: "50 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/right.png?updatedAt=1736226199431",
-                alt: "",
+                alt: "A 50 Ton Automatic Hydraulic Press ideal for moulding, compacting, and forming materials with high precision and automation",
                 title: "50 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/front.png?updatedAt=1736226198996",
-                alt: "",
+                alt: "A 100 Ton Automatic Hydraulic Press designed for high-pressure applications in automotive, aerospace, and manufacturing industries",
                 title: "100 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/left.png?updatedAt=1736226218501",
-                alt: "",
+                alt: "A 100-ton automatic hydraulic press, featuring a sturdy build and automated controls for enhanced productivity in manufacturing",
                 title: "100 Ton Automatic Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/right.png?updatedAt=1736226220274",
-                alt: "",
+                alt: "Visual representation of VBCC's 100 Ton Automatic Hydraulic Press, emphasizing its efficiency and heavy-duty performance",
                 title: "100 Ton Automatic Hydraulic Press",
             },
         ],
@@ -5031,37 +5761,38 @@ export const SeikiProductsList = [
         slug: "Presses",
     },
     {
-        mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/isometric.png?updatedAt=1736226036048",
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/isometric.png?updatedAt=1736226036048",
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/front.png?updatedAt=1736226037186",
-                alt: "",
-                title: "10 - Ton Manual Hydraulic Press"
+                alt: "Manual hydraulic press with hand lever for pressure generation, featuring a valve for material unloading and versatile applications",
+                title: "10 - Ton Manual Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/left.png?updatedAt=1736226036511",
-                alt: "",
-                title: "10 - Ton Manual Hydraulic Press"
+                alt: "VBCC's manual hydraulic press, featuring a sturdy frame and user-friendly controls for effective hydraulic operations",
+                title: "10 - Ton Manual Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/right.png?updatedAt=1736226036607",
-                alt: "",
-                title: "10 - Ton Manual Hydraulic Press"
+                alt: "A sturdy 10-ton manual hydraulic press, featuring a compact design suitable for various industrial pressing tasks",
+                title: "10 - Ton Manual Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/front.png?updatedAt=1736226032804",
-                alt: "",
-                title: "20 - Ton Manual Hydraulic Press"
+                alt: "Product image of a 20 Ton Manual Hydraulic Press, highlighting its sturdy construction and hydraulic mechanism",
+                title: "20 - Ton Manual Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/left.png?updatedAt=1736226035060",
-                alt: "",
-                title: "20 - Ton Manual Hydraulic Press"
+                alt: "Manual hydraulic press with 20-ton capacity, ideal for shaping, pressing, and forming materials in various industrial applications",
+                title: "20 - Ton Manual Hydraulic Press",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/right.png?updatedAt=1736226036038",
-                alt: "",
-                title: "20 - Ton Manual Hydraulic Press"
+                alt: "A 20-ton manual hydraulic press, highlighting its powerful hydraulic system and user-friendly manual operation for efficient pressing",
+                title: "20 - Ton Manual Hydraulic Press",
             },
         ],
         productName: "Manual Hydraulic Press",
@@ -5120,19 +5851,20 @@ export const SeikiProductsList = [
         slug: "Presses",
     },
     {
-        mainImg: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/front.png?updatedAt=1736156797989",
-                alt: "",
+                alt: "Mini Hot Press designed for small-scale production, applying controlled heat and pressure to shape and bond materials efficiently",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/left.png?updatedAt=1736156810163",
-                alt: "",
+                alt: "Image of VBCC's Mini Hot Press, emphasizing its innovative design and functionality for various pressing applications",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/right.png?updatedAt=1736156860886",
-                alt: "",
+                alt: "Mini Hot Press image, showcasing a versatile tool for heat and pressure applications in small-scale manufacturing and research",
             },
         ],
         productName: "Mini Hot Press",
@@ -5197,15 +5929,15 @@ export const OshidashiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/front.png?updatedAt=1736156877588",
-                alt: "",
+                alt: "Specialized manual extruder designed for plastic processing, perfect for small businesses, ensuring quality welds in confined areas",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/left.png?updatedAt=1736156919959",
-                alt: "",
+                alt: "VBCC's manual extruder displayed, showcasing its design and features for efficient material processing",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/right.png?updatedAt=1736156928330",
-                alt: "",
+                alt: "Image of a manual extruder for processing plastics, ceramics, and food by forcing materials through a mould, ensuring precise control",
             },
         ],
         productName: "Manual Extruder",
@@ -5281,15 +6013,15 @@ export const OshidashiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/front.png?updatedAt=1736156945414",
-                alt: "",
+                alt: "An Automatic extruder feature a motorized screw in a heated barrel, ensuring efficient plastic shaping with precise processing control",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/left.png?updatedAt=1736156944793",
-                alt: "",
+                alt: "Visual representation of VBCC's automatic extruder, emphasizing its innovative design and functionality in material extrusion",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/right.png?updatedAt=1736156948410",
-                alt: "",
+                alt: "High-efficiency automatic extruders are used for shaping materials in various industries, enabling precise control and high-volume production",
             },
         ],
         productName: "Automatic Extruder",
@@ -5421,15 +6153,15 @@ export const OshidashiProductsList = [
         Images: [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/front.png?updatedAt=1736156879130",
-                alt: "",
+                alt: "Image of VBCC's vacuum extruder, enhancing material quality by eliminating moisture and VOCs during extrusion to ensure consistent, high-quality results",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/left.png?updatedAt=1736156894903",
-                alt: "",
+                alt: "A vacuum extruder displayed, emphasizing its role in shaping materials through extrusion technology",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/right.png?updatedAt=1736156893522",
-                alt: "",
+                alt: "A vacuum extruder enhancing material quality by eliminating moisture and VOCs, utilized in ceramics, food, and plastics sectors.",
             },
         ],
         productName: "Vacuum Extruder",

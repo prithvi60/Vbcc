@@ -1,6 +1,7 @@
 import {
   DentalProductsList,
   FunsaiProductsList,
+  LabEquiptProductsList,
   LabProductsList,
   OshidashiProductsList,
   SeikiProductsList,
@@ -26,17 +27,27 @@ export async function GET() {
     { url: "/categories/dental", changefreq: "weekly", priority: 0.9 },
     { url: "/categories/laboratory", changefreq: "weekly", priority: 0.9 },
     {
-      url: "/material_processing_equipment",
+      url: "/categories/material_processing_equipment",
       changefreq: "weekly",
       priority: 0.9,
     },
     {
-      url: "/material_processing_equipment/seikei",
+      url: "/categories/material_processing_equipment/Ball_Mills",
       changefreq: "weekly",
       priority: 0.9,
     },
     {
-      url: "/material_processing_equipment/oshidashi",
+      url: "/categories/material_processing_equipment/Extruders",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/categories/material_processing_equipment/Presses",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/categories/lab_equipment",
       changefreq: "weekly",
       priority: 0.9,
     },
@@ -52,17 +63,23 @@ export async function GET() {
         url: `/blog/${post.url}`,
         changefreq: "weekly",
         priority: 0.9,
+        lastmod: new Date().toISOString(),
       });
     });
 
     // Dynamic Product Pages - Added error handling and URL encoding
     const addProductLinks = (products, basePath) => {
+      if (!Array.isArray(products)) return;
       products.forEach((product) => {
         if (product.productName) {
+          const encodedName = encodeURIComponent(
+            product.productName.replace(/\s+/g, "_")
+          ).trim();
           links.push({
-            url: `${basePath}/${encodeURIComponent(product.productName.replace(/\s/g, "_"))}`,
+            url: `${basePath}/${encodedName}`,
             changefreq: "weekly",
             priority: 0.9,
+            lastmod: new Date().toISOString(),
           });
         }
       });
@@ -71,22 +88,34 @@ export async function GET() {
     // Add product links with proper base paths
     addProductLinks(DentalProductsList, "/categories/dental");
     addProductLinks(LabProductsList, "/categories/laboratory");
+    addProductLinks(LabEquiptProductsList, "/categories/lab_equipment");
     addProductLinks(
       FunsaiProductsList,
-      "/categories/material_processing_equipment/funsai"
+      "/categories/material_processing_equipment/Ball_Mills"
     );
     addProductLinks(
       SeikiProductsList,
-      "/categories/material_processing_equipment/seikei"
+      "/categories/material_processing_equipment/Presses"
     );
     addProductLinks(
       OshidashiProductsList,
-      "/categories/material_processing_equipment/oshidashi"
+      "/categories/material_processing_equipment/Extruders"
     );
+
+    const hostname = "https://vbccinstruments.com";
+    if (!hostname) {
+      throw new Error("Hostname is required");
+    }
 
     // Generate sitemap with proper error handling
     const stream = new SitemapStream({
-      hostname: "https://vbccinstruments.com",
+      hostname: hostname,
+      xmlns: {
+        news: false,
+        xhtml: true,
+        image: false,
+        video: false,
+      },
     });
 
     const xmlString = await streamToPromise(
@@ -97,16 +126,22 @@ export async function GET() {
     return new Response(xmlString, {
       headers: {
         "Content-Type": "application/xml",
-        "Cache-Control": "public, max-age=3600", // Cache for 1 hour
+        "Cache-Control":
+          "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
+        "X-Content-Type-Options": "nosniff",
       },
     });
   } catch (error) {
     console.error("Error generating sitemap:", error);
-    return new Response("Error generating sitemap", {
-      status: 500,
-      headers: {
-        "Content-Type": "text/plain",
-      },
-    });
+    return new Response(
+      `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`,
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "application/xml",
+          "Cache-Control": "no-cache",
+        },
+      }
+    );
   }
 }

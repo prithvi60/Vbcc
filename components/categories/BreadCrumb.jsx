@@ -10,7 +10,7 @@ const BreadCrumb = () => {
 
     let isIdPresent = false;
 
-    if (pathParts.includes("dental") || pathParts.includes("laboratory")) {
+    if (pathParts.includes("dental") || pathParts.includes("laboratory") || pathParts.includes("lab_equipment")) {
         isIdPresent = pathParts.length > 2;
     } else if (pathParts.includes("material_processing_equipment")) {
         isIdPresent = pathParts.length > 3;

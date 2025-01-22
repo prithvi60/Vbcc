@@ -183,6 +183,12 @@ body::-webkit-scrollbar-thumb {
     width: 390px !important;
     height: auto;
   }
+  .explore-slider {
+    width: 100% !important;
+  }
+  .explore-slider .slick-list {
+    padding-bottom: 5rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -190,12 +196,30 @@ body::-webkit-scrollbar-thumb {
     width: 490px !important;
     height: auto;
   }
+  .explore-slider {
+    width: 100% !important;
+  }
+  .explore-slider .slick-list {
+    padding-bottom: 5rem;
+  }
 }
 
 @media (min-width: 810px) {
   .pdf-canvas canvas {
     width: 840px !important;
     height: auto;
+  }
+  .explore-slider {
+    width: 450px !important;
+  }
+  .explore-slider .slick-list {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .explore-slider {
+    width: 720px !important;
   }
 }
 

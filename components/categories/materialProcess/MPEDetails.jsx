@@ -45,8 +45,6 @@ const MPEDetails = ({ data, type }) => {
 
     const title = Images[activeIndex].title
 
-    console.log(title);
-
     const settings = {
         dots: false,
         arrows: false,
@@ -111,7 +109,7 @@ const MPEDetails = ({ data, type }) => {
                     <div className="z-auto w-full h-full mx-auto space-y-6 max-w-96 md:max-w-md">
                         <div className="relative z-0 slider-container">
                             {title && (
-                                <h5 className="absolute z-20 p-1 text-sm font-medium tracking-wider backdrop-blur-lg left-14 lg:left-20 -bottom-32 lg:-bottom-48 text-primary">{title}</h5>
+                                <h5 className="absolute z-20 w-full p-1 text-sm font-medium tracking-wider left-5 backdrop-blur-lg sm:left-10 lg:left-20 -bottom-48 lg:-bottom-48 text-primary">{title}</h5>
                             )}
                             <Slider
                                 asNavFor={nav2}
