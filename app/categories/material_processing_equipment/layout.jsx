@@ -1,13 +1,15 @@
+import { decode } from 'html-entities';
+
 export const metadata = {
-  title:
-    "VBCC | Material Processing Equipment Categories",
-  description:
-    "Explore VBCC's Funsai, Seikei, and Oshidashi sub-brands, delivering advanced grinding, pressing, and extrusion technologies for superior material processing.",
+  title: "VBCC | Material Processing Equipment Categories",
+  description: decode(
+    "Explore VBCC's Funsai, Seikei, and Oshidashi sub-brands, delivering advanced grinding, pressing, and extrusion technologies for superior material processing."
+  ),
   openGraph: {
-    title:
-      "VBCC | Material Processing Equipment Categories",
-    description:
-      "Explore VBCC's Funsai, Seikei, and Oshidashi sub-brands, delivering advanced grinding, pressing, and extrusion technologies for superior material processing.",
+    title: "VBCC | Material Processing Equipment Categories",
+    description: decode(
+      "Explore VBCC's Funsai, Seikei, and Oshidashi sub-brands, delivering advanced grinding, pressing, and extrusion technologies for superior material processing."
+    ),
   },
 };
 

@@ -1,11 +1,13 @@
+import { decode } from "html-entities";
+
 export const metadata = {
   title: "Material processing presses",
-  description: "VBCC’s advanced pressing technologies are meticulously engineered for material processing, delivering consistent results while enhancing performance and reliability across diverse industries.",
+  description: decode("VBCC's advanced pressing technologies are meticulously engineered for material processing, delivering consistent results while enhancing performance and reliability across diverse industries."),
   openGraph: {
     title:
       "Material processing presses",
     description:
-      "VBCC’s advanced pressing technologies are meticulously engineered for material processing, delivering consistent results while enhancing performance and reliability across diverse industries.",
+      decode("VBCC's advanced pressing technologies are meticulously engineered for material processing, delivering consistent results while enhancing performance and reliability across diverse industries."),
   },
 };
 

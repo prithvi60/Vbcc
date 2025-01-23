@@ -142,7 +142,7 @@ export const heroSlider = [
     },
     {
         bgImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+            "https://ik.imagekit.io/webibee/VBCC/homepage/Lab%20Equipment%20Category%20Image.jpg?updatedAt=1737615854520",
         categories: "Lab Equipment",
         type: "lab_equipment",
         products: [
@@ -196,7 +196,7 @@ export const navLinks = [
                 ref: "/categories/material_processing_equipment",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+                img: "https://ik.imagekit.io/webibee/VBCC/homepage/Lab%20Equipment%20Category%20Image.jpg?updatedAt=1737615854520",
                 menu: "lab",
                 menu2: "equipment",
                 ref: "/categories/lab_equipment",
@@ -244,7 +244,7 @@ export const exploreList = [
         ref: "/categories/material_processing_equipment/Extruders",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/MPR%20Bg%20Image.jpg?updatedAt=1736318071799",
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Lab%20Equipment%20Category%20Image.jpg?updatedAt=1737615854520",
         icon: "https://ik.imagekit.io/webibee/VBCC/homepage/lab-equipment.svg?updatedAt=1737464660580",
         title: "Lab Equipment",
         desc: "Over 20+ products for Material Processing Equipment",
@@ -305,7 +305,7 @@ export const data = [
         ref: "/categories/material_processing_equipment",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/material-process-bg.jpg?updatedAt=1736147278328",
+        img: "https://ik.imagekit.io/webibee/VBCC/homepage/Lab%20Equipment%20Category%20Image.jpg?updatedAt=1737615854520",
         menu: "lab equipment",
         ref: "/categories/lab_equipment",
     },

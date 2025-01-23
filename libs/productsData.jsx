@@ -5346,7 +5346,7 @@ export const SeikiProductsList = [
         productName: "Compression Moulding Press",
         metaTitle: "Compression Moulding Press 100 Ton",
         metaDesc:
-            "VBCC designs and manufactures durable Hydraulic Compression Moulding Presses with advanced technology, high-quality materials, and precision, tailored to clients' technical needs.",
+            "VBCC designs and manufactures durable Hydraulic Compression Moulding Presses with advanced technology, high-quality materials, and precision, tailored to clients technical needs.",
         desc: "VBCC is a trusted name in designing and producing advanced Hydraulic Compression Moulding Presses. Built with cutting-edge technology and high-quality materials, these presses are known for their durability, low maintenance, and exceptional precision. They are widely used in engineering applications and can be tailored to meet the unique technical needs of our clients.",
         keys: [
             {
