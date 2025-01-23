@@ -1,4 +1,5 @@
 import { LabEquiptProductsList } from "@/libs/productsData";
+import { decode } from "html-entities";
 
 export async function generateMetadata({ params }) {
   const { id } = params;
@@ -9,11 +10,11 @@ export async function generateMetadata({ params }) {
 
   if (product) {
     return {
-      title: product.metaTitle,
-      description: product.metaDesc,
+      title: decode(product.metaTitle),
+      description: decode(product.metaDesc),
       openGraph: {
-        title: product.metaTitle,
-        description: product.metaDesc,
+        title: decode(product.metaTitle),
+        description: decode(product.metaDesc),
       },
     };
   }

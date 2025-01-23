@@ -1,4 +1,5 @@
 import { LabProductsList } from "@/libs/productsData";
+import { decode } from "html-entities";
 
 
 export async function generateMetadata({ params }) {
@@ -11,21 +12,21 @@ export async function generateMetadata({ params }) {
 
   if (product) {
     return {
-      title: product.metaTitle,
-      description: product.metaDesc,
+      title: decode(product.metaTitle),
+      description: decode(product.metaDesc),
       openGraph: {
-        title: product.metaTitle,
-        description: product.metaDesc,
+        title: decode(product.metaTitle),
+        description: decode(product.metaDesc),
       },
     };
   }
 
   // Default metadata if product not found
   return {
-    title: "Discover VBCC’s high-quality laboratory furnaces",
+    title: decode("Discover VBCC's high-quality laboratory furnaces"),
     description: "Explore our extensive range of furnaces with temperatures up to 1800°C designed for applications ranging from research labs to industrial-scale operations for metallurgy, ceramics, and refractory.",
     openGraph: {
-      title: "Discover VBCC's high-quality laboratory furnaces",
+      title: decode("Discover VBCC's high-quality laboratory furnaces"),
       description: "Explore our extensive range of furnaces with temperatures up to 1800°C designed for applications ranging from research labs to industrial-scale operations for metallurgy, ceramics, and refractory.",
     },
   };

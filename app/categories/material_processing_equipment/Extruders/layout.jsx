@@ -1,11 +1,13 @@
+import { decode } from "html-entities";
+
 export const metadata = {
-  title: "VBCC’s Material Extrusion Solutions",
-  description: "Discover Oshidashi, VBCC's sub-brand specializing in advanced extrusion technology. Explore our range of manual, automatic, and vacuum extruders for precise material processing.",
+  title: decode("VBCC's Material Extrusion Solutions"),
+  description: decode("Discover Oshidashi, VBCC's sub-brand specializing in advanced extrusion technology. Explore our range of manual, automatic, and vacuum extruders for precise material processing."),
   openGraph: {
     title:
-      "VBCC’s Material Extrusion Solutions",
+      decode("VBCC's Material Extrusion Solutions"),
     description:
-      "Discover Oshidashi, VBCC's sub-brand specializing in advanced extrusion technology. Explore our range of manual, automatic, and vacuum extruders for precise material processing.",
+      decode("Discover Oshidashi, VBCC's sub-brand specializing in advanced extrusion technology. Explore our range of manual, automatic, and vacuum extruders for precise material processing."),
   },
 };
 
