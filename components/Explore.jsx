@@ -50,7 +50,7 @@ const Explore = () => {
           }}
         >
           <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-10"></div>
-          <p className="relative z-20 w-full text-xl font-semibold text-white 2xl:mt-32 md:mt-10 xl:mt-20 md:text-2xl xl:text-5xl md:w-3/4">
+          <p className="relative z-20 w-full -mt-3 text-xl font-semibold text-white 2xl:mt-32 md:mt-10 xl:mt-20 md:text-2xl xl:text-5xl md:w-3/4">
             Your Product Vision, Crafted into Reality by Us
           </p>
         </div>

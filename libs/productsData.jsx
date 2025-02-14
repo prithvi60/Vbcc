@@ -4873,32 +4873,32 @@ export const FunsaiProductsList = [
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/front.png?updatedAt=1737349780274",
                 alt: "Close-up of VBCC's Multideck Three Tier Jar Mill, highlighting the Neoprene roller used for optimal performance",
-                title: "multideck jar mill three tier (neoprene)",
+                title: "Multi Deck Jar Mill Three Tier (Neoprene)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/isometric%20or%20left.png?updatedAt=1737349781161",
                 alt: "Multi-deck three-tier jar mill designed for effective grinding and mixing of materials in laboratory and industrial use",
-                title: "multideck jar mill three tier (neoprene)",
+                title: "Multi Deck Jar Mill Three Tier (Neoprene)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/right.png?updatedAt=1737349781984",
                 alt: "Multi-Deck Jar Mill with neoprene rollers, designed for durability and to minimize contamination, ensuring reliable performance in both research and production processes",
-                title: "multideck jar mill three tier (neoprene)",
+                title: "Multi Deck Jar Mill Three Tier (Neoprene)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/front.png?updatedAt=1737349829564",
                 alt: "Visual of VBCC's soundproof Multideck Two Tier Jar Mill, engineered to lower noise levels for a quieter operational space",
-                title: "multideck jar mill two tier (sound proof)",
+                title: "Multi Deck Jar Mill Two Tier (Sound Proof)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/isometric%20or%20left.png?updatedAt=1737349829762",
                 alt: "Product image of a soundproof Multi-Deck Two-Tier Jar Mill, showcasing its sleek design and efficient milling capabilities",
-                title: "multideck jar mill two tier (sound proof)",
+                title: "Multi Deck Jar Mill Two Tier (Sound Proof)",
             },
             {
                 img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/right.png?updatedAt=1737349831173",
                 alt: "Soundproof Multi-Deck Two-Tier Jar Mill designed for effective grinding and blending of materials while reducing noise levels",
-                title: "multideck jar mill two tier (sound proof)",
+                title: "Multi Deck Jar Mill Two Tier (Sound Proof)",
             },
         ],
         productName: "Multi Deck Roller Jar Mill",

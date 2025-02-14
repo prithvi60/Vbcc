@@ -73,7 +73,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
 
     <section className="relative z-auto w-full h-full overflow-hidden text-white pt-60 md:pt-72">
       <div className="w-full h-full overflow-hidden bg-primary font-Montserrat">
-        <div className="absolute w-full h-[20vh] md:h-[35vh] -left-1 md:w-4/5 top-28">
+        <div className="absolute z-auto w-full h-[215px] sm:h-[360px] md:h-[420px] 2xl:h-[450px] 2xxl:h-[490px] -left-1 sm:w-4/5 2xxl:w-3/5 top-28">
           <div
             className="relative w-full h-full px-6 py-8 bg-center bg-no-repeat bg-cover rtl_card-mask"
             style={{
@@ -82,13 +82,13 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           >
             <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-0"></div>
           </div>
-          <div className="absolute z-0 flex items-center gap-8 top-8 md:gap-14 left-4 md:left-6 w-max xl:gap-16 2xl:gap-36 md:top-16 lg:top-28 xl:left-24 xl:top-32">
+          <div className="absolute z-0 flex items-center gap-8 sm:top-16 top-8 md:gap-14 left-4 md:left-6 w-max xl:gap-16 2xl:gap-36 md:top-16 lg:top-28 xl:left-24 xl:top-32">
             <div className="z-0 flex items-center justify-center gap-1 ">
               {sortProduct.map((item, idx) => (
                 <div
                   key={idx}
                   onClick={() => handleSortBy(item.value)}
-                  className={`text-xs relative z-10 lg:text-sm xl:text-lg tracking-tight  min-w-fit p-2 lg:px-10 md:px-5 md:py-2 lg:py-3 group/button block text-center duration-700 delay-75 font-medium capitalize cursor-pointer ${activeTab === item.value
+                  className={`text-xs relative z-10 lg:text-sm xl:text-lg tracking-tight min-w-fit p-1.5 lg:px-10 md:px-5 md:py-2 lg:py-3 group/button block text-center duration-700 delay-75 font-medium capitalize cursor-pointer ${activeTab === item.value
                     ? "after:absolute after:-bottom-4 after:left-0 after:w-full after:h-0.5  after:bg-white bg-info text-white"
                     : "no-underline bg-white text-primary"
                     }`}
@@ -97,7 +97,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
                 </div>
               ))}
             </div>
-            <h4 className="relative top-0 right-0 hidden md:block md:text-2xl xl:text-3xl">Categories</h4>
+            <h4 className="relative top-0 right-0 hidden lg:-right-16 md:block md:text-2xl xl:text-3xl">Categories</h4>
           </div>
         </div>
 

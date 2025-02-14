@@ -148,6 +148,7 @@ export const SpringModal = ({
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
