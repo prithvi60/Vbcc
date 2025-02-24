@@ -2,12 +2,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const ThankYouComponent = () => {
+  const [previousRoute, setPreviousRoute] = useState('');
   const path = usePathname();
   const modifiedUrl = path.replace("/thankyou", "");
   const hasDownloaded = useRef(false);
+
+  useEffect(() => {
+    setPreviousRoute(document.referrer);
+  }, []);
+
+  console.log(previousRoute);
+
 
   useEffect(() => {
     if (hasDownloaded.current) return;
