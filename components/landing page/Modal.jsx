@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   MdKeyboardDoubleArrowRight,
   MdOutlineFileDownload,
@@ -9,7 +9,7 @@ import {
 import Loader from "../Loader";
 import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
-export const Modal1 = ({ title, styles, type, pageType, page }) => {
+export const Modal1 = ({ title, styles, type, pageType, page, query }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="grid">
@@ -54,13 +54,20 @@ export const Modal1 = ({ title, styles, type, pageType, page }) => {
         type={type}
         page={page}
         pageType={pageType}
+        query={query}
       />
     </div>
   );
 };
 
-export const Modal2 = ({ pageType, page }) => {
+export const Modal2 = ({ pageType, page, query }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const downloadKey = "pdfDownloaded";
+    localStorage.removeItem(downloadKey);
+  }, []);
+
   return (
     <div className="grid">
       <button
@@ -87,45 +94,13 @@ export const Modal2 = ({ pageType, page }) => {
           </h3>
         </div>
       </button>
-      {/* <button
-        onClick={() => setIsOpen(true)
-        }
-        className={`font-semibold w-fit transition-all ${pageType === "main" ? "shadow-xl hover:scale-110" : "shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] rounded-lg"} flex items-center text-sm md:text-base gap-3 capitalize ${styles} ${title === "DOWNLOAD BROCHURE" ? "p-0" : "px-6 py-2"
-          }`}
-      >
-        {title === "DOWNLOAD BROCHURE" ? (
-          <h4 className="px-2 py-2 md:px-6">{title}</h4>
-        ) : (
-          <h4>{title}</h4>
-        )}
-        {title === "DOWNLOAD BROCHURE" ? (
-          <span className="p-2 border rounded-full border-info">
-            <MdOutlineFileDownload className="text-lg md:text-xl" />
-          </span>
-        ) : (
-          <>
-            {type === "download" ? (
-              <span>
-                <MdOutlineFileDownload className="text-xl" />
-              </span>
-            ) : type === "view" ? (
-              <span>
-                <MdRemoveRedEye className="text-xl" />
-              </span>
-            ) : (
-              <span>
-                <MdKeyboardDoubleArrowRight className="text-xl" />
-              </span>
-            )}
-          </>
-        )}
-      </button> */}
       <SpringModal
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         type={"enquire"}
         pageType={pageType}
         page={page}
+        query={query}
       />
     </div>
   );
@@ -137,6 +112,7 @@ export const SpringModal = ({
   type = "",
   page = "",
   pageType = "",
+  query,
 }) => {
   const initialFormData = {
     firstName: "",
@@ -148,7 +124,6 @@ export const SpringModal = ({
 
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -161,7 +136,6 @@ export const SpringModal = ({
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus(true);
-    // console.log(formData);
 
     const emailFormData = {
       firstName: formData.firstName,
@@ -182,12 +156,13 @@ export const SpringModal = ({
           Description: formData.message,
           Customer_Type: "New",
           Lead_Status: "New Lead",
-          Lead_Source: "Website"
+          Lead_Source: "Website",
         },
       ],
     };
 
     try {
+
       const zohoResponse = await fetch("/api/zoho/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -224,7 +199,7 @@ export const SpringModal = ({
         e.target.reset();
 
         if (pageType === "main") {
-          window.location.href = "/thankyou";
+          window.location.href = `/thankyou?category=${query}`
         } else {
           window.location.href =
             "/denkirodental/dentalfurnace/productline/thankyou";
@@ -382,4 +357,3 @@ export const SpringModal = ({
     </AnimatePresence>
   );
 };
-

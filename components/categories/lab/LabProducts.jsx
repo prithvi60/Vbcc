@@ -16,8 +16,9 @@ const LabProducts = () => {
                 desc2={
                     "With a focus on energy efficiency, superior temperature control, and customizable features, Denkiro furnaces are ideal for applications ranging from research labs to industrial-scale operations. By combining advanced materials with smart design, Denkiro ensures optimal results, helping customers achieve their goals in metallurgy, ceramics, and beyond"
                 }
-                pdfFile={"/files/Denkiro - Brochure - Digital.pdf"}
+                pdfFile={"/files/Denkiro-Brochure-Digital.pdf"}
                 pdfName={"Denkiro - Brochure - Digital.pdf"}
+                query="laboratory"
             />
             <CategoryProducts categoryName={"laboratory"} data={LabProductsList} />
         </>

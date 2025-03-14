@@ -15,6 +15,7 @@ const CategoryHero = ({
     desc2,
     categoryImg,
     pdfFile,
+    query
 }) => {
     return (
         <section className="relative z-auto w-full h-full font-Montserrat">
@@ -54,6 +55,7 @@ const CategoryHero = ({
                             type={"download"}
                             pageType={"main"}
                             page={title}
+                            query={query}
                         />
                         <PdfViewerComponent pdfFile={pdfFile} />
                     </div>

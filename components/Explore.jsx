@@ -62,7 +62,7 @@ const Explore = () => {
             <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-10 left-80 text-info" />
           </Link>
           <div className="w-full md:w-max">
-            <Modal2 pageType={"main"} page={"Home"} />
+            <Modal2 pageType={"main"} page={"Home"} query="laboratory" />
           </div>
         </div>
         <div className="w-full px-8 max-w-full sm:max-w-[40rem] lg:max-w-3xl slider-container">
@@ -158,7 +158,7 @@ const Explore = () => {
             for quality, innovation, and personalized service, transforming
             challenges into oppurtunites.
           </p>
-          <Modal2 pageType={"main"} page={"home"} />
+          <Modal2 pageType={"main"} page={"home"} query="laboratory" />
           <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-44 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image

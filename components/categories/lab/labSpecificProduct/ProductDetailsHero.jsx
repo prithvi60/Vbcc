@@ -95,6 +95,7 @@ const LabProductDetailsHero = () => {
                                 type={"enquire"}
                                 pageType={"main"}
                                 page={productName}
+                                query="laboratory"
                             />
                         </div>
                     </div>

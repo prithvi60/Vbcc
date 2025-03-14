@@ -54,7 +54,7 @@ const HowWeDo = () => {
             <div className="absolute top-2 md:top-8 group-hover:scale-80 transition-colors duration-400 ease-in-out z-0 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
           </div>
         </div>
-        <div className='absolute left-0 w-48 h-28 -top-6 md:h-36 md:w-72'>
+        <div className='absolute left-0 w-0 h-28 -top-6 md:h-36 md:w-72'>
           <Image src={"/vector1blue.svg"} fill alt='' className='object-contain object-center' />
         </div>
         <div className='absolute right-0 w-48 h-28 -bottom-6 md:h-36 md:w-72'>
@@ -62,7 +62,7 @@ const HowWeDo = () => {
         </div>
       </section>
       <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 pt-10 pb-8 text-white lg:gap-40 lg:flex-row font-Montserrat md:px-8 bg-primary">
-        <div className="relative z-0 w-full lg:w-1/4">
+        <div className="relative w-full lg:w-1/4">
           <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
             <Image
               src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
@@ -71,11 +71,11 @@ const HowWeDo = () => {
               className="object-cover object-center"
             />
             <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
-            <div className="absolute z-20 block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-3 md:-right-20 ">
+            <div className="absolute z-50 block w-full space-y-3 top-10 md:top-20 lg:top-10 -right-3 md:-right-20 ">
               <h2 className="text-[28px] font-bold tracking-wider !leading-tight md:text-[36px] lg:text-[44px] xl:text-[52px] w-full capitalize">
                 How we <span className="text-info">do it? </span>
               </h2>
-              <Modal2 pageType={"main"} page={"Home"} />
+              <Modal2 pageType={"main"} page={"Home"} query="laboratory" />
             </div>
             <div className="absolute z-10 -top-7 -left-5 md:-left-5 md:-top-8 lg:-top-8 lg:-left-14">
               <TSBox className={"w-[300px] h-[440px] md:w-[320px] md:h-[440px] lg:w-[450px] lg:h-[550px] fill-none"} />
@@ -111,7 +111,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
   return (
     <>
       <button
-        className={`relative  items-end justify-start gap-4 p-10 transition-colors bg-white md:justify-end md:p-20 hover:bg-slate-50 group ${isOpen ? "hidden" : "flex"}`}
+        className={`relative z-auto items-end justify-start gap-4 p-10 transition-colors bg-white md:justify-end md:p-20 hover:bg-slate-50 group ${isOpen ? "hidden" : "flex"}`}
         onClick={() => setOpen(id)}
         style={{
           backgroundImage: `url('${imgSrc}')`,
@@ -124,7 +124,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
             writingMode: "vertical-rl",
           }}
           href={"/contact"}
-          className={`leading-7 tracking-wider rotate-180 block px-2 py-2 md:py-6 group bg-white shadow-2xl shadow-black bg-opacity-20 transition-colors duration-400 ease-out hover:bg-primary text-center text-base font-urbanist capitalize max-h-48 w-max absolute top-8 right-5 md:top-80 md:left-3 z-0`}
+          className={`leading-7 tracking-wider rotate-180 block px-2 py-2 md:py-6 group bg-white shadow-2xl shadow-black bg-opacity-20 transition-colors duration-400 ease-out hover:bg-primary text-center text-base font-urbanist capitalize max-h-48 w-max absolute top-8 right-5 md:top-80 md:left-3`}
         >
           <h3
             className={`text-white flex items-center gap-2`}

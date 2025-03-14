@@ -17,7 +17,9 @@ const FunsaiProducts = () => {
                     "These innovative tools are engineered to handle the complex requirements of material grinding and particle size reduction across various industries. By efficiently breaking down and refining raw materials, they help achieve precise particle sizes and enhance material uniformity and consistency. Whether used for laboratory-scale testing or industrial-scale production, Funsai products ensure high-quality processing with reliable performance, making them an integral part of advanced material refinement workflows."
                 }
                 pdfFile={"https://ik.imagekit.io/webibee/VBCC/products/MPE/Material%20Processing-Brochure-funsai.pdf?updatedAt=1736165989821"}
+                // pdfFiles={"/files/Material-Processing-Brochure.pdf"}
                 pdfName={"Material Processing-Brochure-funsai.pdf"}
+                query="ballMills"
             />
             <CategoryProducts categoryName={"Ball Mills"} data={FunsaiProductsList} />
         </>

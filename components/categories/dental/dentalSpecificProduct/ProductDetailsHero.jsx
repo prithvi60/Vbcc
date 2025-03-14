@@ -103,6 +103,7 @@ const ProductDetailsHero = () => {
                                 type={"enquire"}
                                 pageType={"main"}
                                 page={productName}
+                                query="dental"
                             />
                         </div>
                     </div>

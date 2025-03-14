@@ -139,7 +139,7 @@ const Products = ({ sortProduct, productsData, featureProducts }) => {
           ))}
         </div>
       </div>
-      <div className="absolute left-0 w-48 h-28 -top-6 md:h-36 md:w-72">
+      <div className="absolute left-0 w-48 -z-10 h-28 -top-6 md:h-36 md:w-72">
         <Image src={"/vector1blue.svg"} fill alt="" className="object-contain object-center" />
       </div>
     </section>
