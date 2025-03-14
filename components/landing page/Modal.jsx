@@ -162,7 +162,6 @@ export const SpringModal = ({
     };
 
     try {
-
       const zohoResponse = await fetch("/api/zoho/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -199,7 +198,7 @@ export const SpringModal = ({
         e.target.reset();
 
         if (pageType === "main") {
-          window.location.href = `/thankyou?category=${query}`
+          window.location.href = `/thankyou?category=${query}`;
         } else {
           window.location.href =
             "/denkirodental/dentalfurnace/productline/thankyou";
@@ -246,11 +245,19 @@ export const SpringModal = ({
                     </li>
                   </ul>
                 ) : (
-                  <div className="hidden text-sm md:text-base md:block">
-                    Our dedicated sales team will get in touch with you to
-                    discuss how VBCC can elevate your dental practice. Get ready
-                    to experience unmatched quality and support!
-                  </div>
+                  <>
+                    {query !== "dental" ? (
+                      <p className="hidden text-sm md:text-base md:block">
+                        Our dedicated sales team will reach out to you to discuss how VBCC can elevate your business. Get ready to experience unparalleled quality and support!
+                      </p>
+                    ) : (
+                      <p className="hidden text-sm md:text-base md:block">
+                        Our dedicated sales team will get in touch with you to
+                        discuss how VBCC can elevate your dental practice. Get
+                        ready to experience unmatched quality and support!
+                      </p>
+                    )}
+                  </>
                 )}
               </div>
               <div className="relative w-full space-y-2 md:w-2/5 ">
