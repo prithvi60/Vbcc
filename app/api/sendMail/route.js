@@ -56,15 +56,15 @@ export async function POST(req) {
     from: `VBCC "${process.env.EMAIL_ID}" <${"support@webibee.com"}>`,
     to: userEmail,
     subject: "Acknowledgment: We received your Submission",
-    html: `<p>Dear ${firstName} ${lastName} Customer,</p>
-             <p>Greetings from VBCC Dental Furnaces!</p>
-             <p>We appreciate your interest in our VBCC Dental Furnaces products and acknowledge receipt of your submission.</p>
+    html: `<p>Dear ${firstName} ${lastName},</p>
+             <p>Greetings from VBCC HTI!</p>
+             <p>We appreciate your interest in our products and confirm receipt of your submission. Our team will be in touch with you soon.</p>
                    <p>Thanks & Regards,<br>
                     <br>
            VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD<br>
            207, 3rd Link Road, Nehru Nagar Industrial Estate,<br>
            Kottivakkam, Chennai, Tamil Nadu 600041<br>
-           +91- 9600478315<br></p>`,
+           +91-9600478315<br></p>`,
     // attachments: [
     //   // Default PDF attachment
     //   {
