@@ -7,10 +7,16 @@ import FileViewer from "react-file-viewer";
 const PdfViewer = ({ pdfFile }) => {
     const [isViewerOpen, setIsViewerOpen] = useState(false);
     const [pdf] = useState(pdfFile);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleButtonClick = () => {
+        setIsLoading(true);
         setIsViewerOpen(true);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1500);
     };
+
     return (
         <>
             <button
@@ -54,11 +60,24 @@ const PdfViewer = ({ pdfFile }) => {
                         </button>
                         <div className="flex items-center justify-center w-full h-full overflow-hidden">
                             <div className="w-full h-full">
-                                <FileViewer
-                                    fileType="pdf"
-                                    filePath={pdf}
-                                    onError={(e) => console.error("Error displaying file:", e)}
-                                />
+                                {isLoading ? (
+                                    <div className="flex items-center justify-center w-full h-full">
+                                        <div className="text-center">
+                                            <div className="w-16 h-16 mx-auto mb-4 border-4 border-blue-500 rounded-full border-t-transparent animate-spin"></div>
+                                            <p className="font-semibold tracking-widest text-gray-600 animate-pulse font-urbanist">Loading PDF...</p>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <FileViewer
+                                        fileType="pdf"
+                                        filePath={pdf}
+                                        onError={(e) => {
+                                            console.error("Error displaying file:", e);
+                                            setIsLoading(false);
+                                        }}
+                                        onLoad={() => setIsLoading(false)}
+                                    />
+                                )}
                             </div>
                         </div>
                     </div>

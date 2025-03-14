@@ -16,8 +16,9 @@ const LabEquipProducts = () => {
                 desc2={
                     ""
                 }
-                pdfFile={"/files/Lab Equipments - Brochure - Digital.pdf"}
+                pdfFile={"/files/Lab-Equipments-Brochure-Digital.pdf"}
                 pdfName={"Lab Equipments - Brochure - Digital.pdf"}
+                query="lab"
             />
             <CategoryProducts categoryName={"lab_equipment"} data={LabEquiptProductsList} />
         </>

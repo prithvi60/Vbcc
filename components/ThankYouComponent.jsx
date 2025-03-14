@@ -1,52 +1,101 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 export const ThankYouComponent = () => {
-  const [previousRoute, setPreviousRoute] = useState('');
+  const [previousRoute, setPreviousRoute] = useState("");
+  const [pdf, setPdf] = useState({
+    file: "",
+    fileName: "",
+  });
+  const [hasDownloaded, setHasDownloaded] = useState(false);
   const path = usePathname();
+  const category = useSearchParams().get("category");
   const modifiedUrl = path.replace("/thankyou", "");
-  const hasDownloaded = useRef(false);
+  const downloadKey = "pdfDownloaded";
+
+  useEffect(() => {
+    const downloaded = typeof window !== 'undefined' ? localStorage.getItem(downloadKey) : null;
+    setHasDownloaded(downloaded === "true");
+  }, []);
 
   useEffect(() => {
     setPreviousRoute(document.referrer);
   }, []);
 
-  console.log(previousRoute);
-
+  useEffect(() => {
+    // Set PDF based on category
+    if (category === "dental") {
+      setPdf({
+        file: "/files/Denkiro-Dental-Brochure-Digital.pdf",
+        fileName: "Denkiro-Dental-Brochure-Digital.pdf",
+      });
+    } else if (category === "laboratory") {
+      setPdf({
+        file: "/files/Denkiro-Brochure-Digital.pdf",
+        fileName: "Denkiro-Brochure-Digital.pdf",
+      });
+    } else if (category === "lab") {
+      setPdf({
+        file: "/files/Lab-Equipments-Brochure-Digital.pdf",
+        fileName: "Lab-Equipments-Brochure-Digital.pdf",
+      });
+    } else if (
+      category === "MPE" ||
+      category === "ballMills" ||
+      category === "presses" ||
+      category === "extruders"
+    ) {
+      setPdf({
+        file: "/files/Material-Processing-Brochure.pdf",
+        fileName: "Material-Processing-Brochure.pdf",
+      });
+    } else {
+      setPdf({
+        file: "/files/Denkiro-Brochure-Digital.pdf",
+        fileName: "Denkiro-Brochure-Digital.pdf",
+      });
+    }
+  }, [category]);
 
   useEffect(() => {
-    if (hasDownloaded.current) return;
-    // console.log("Thankyou page loaded");
+    if (hasDownloaded || !pdf.file) return; // Skip if already downloaded or pdf.file is empty
+
+    const downloadPDF = () => {
+      const link = document.createElement("a");
+      link.href = pdf.file;
+      link.download = pdf.fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link); // Clean up
+      localStorage.setItem(downloadKey, "true");
+    };
+
+    // Special case for dental furnace product line
     if (modifiedUrl === "/denkirodental/dentalfurnace/productline") {
-      const downloadPDF = () => {
+      if (!hasDownloaded) {
         const link = document.createElement("a");
         link.href = "/files/Denkiro-Dental-Brochure-Digital.pdf";
         link.download = "Denkiro-Dental-Brochure-Digital.pdf";
+        document.body.appendChild(link);
         link.click();
-      };
-
-      downloadPDF();
+        document.body.removeChild(link);
+        localStorage.setItem(downloadKey, "true");
+      }
     } else {
-      const downloadPDF = () => {
-        const link = document.createElement("a");
-        link.href = "/files/Denkiro - Brochure - Digital.pdf";
-        link.download = "Denkiro - Brochure - Digital.pdf";
-        link.click();
-      };
-
       downloadPDF();
     }
-    hasDownloaded.current = true;
-  }, [modifiedUrl]);
 
+  }, [pdf, modifiedUrl]);
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist text-warning space-y-6">
       <div className="relative w-20 h-20 mx-auto md:h-44 md:w-56 text-warning">
         <Image
-          src={"https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"}
+          src={
+            "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
+          }
           fill
           alt="thumbs up"
           className="object-contain -mt-2"

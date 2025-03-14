@@ -17,7 +17,9 @@ const OshidashiProducts = () => {
                     ""
                 }
                 pdfFile={"https://ik.imagekit.io/webibee/VBCC/products/MPE/Material%20Processing-Brochure-oshidashi.pdf?updatedAt=1736165987502"}
+                // pdfFiles={"/files/Material-Processing-Brochure.pdf"}
                 pdfName={"Material Processing-Brochure-oshidashi.pdf"}
+                query="extruders"
             />
             <CategoryProducts categoryName={"Extruders"} data={OshidashiProductsList} />
         </>

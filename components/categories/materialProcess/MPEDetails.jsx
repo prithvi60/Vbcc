@@ -14,7 +14,7 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import ProductDetails from "../ProductDetails";
 import MoreProducts from "../MoreProducts";
 
-const MPEDetails = ({ data, type }) => {
+const MPEDetails = ({ data, type, query }) => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -103,6 +103,7 @@ const MPEDetails = ({ data, type }) => {
                                 type={"enquire"}
                                 pageType={"main"}
                                 page={productName}
+                                query={query}
                             />
                         </div>
                     </div>

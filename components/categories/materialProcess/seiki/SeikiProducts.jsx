@@ -17,7 +17,9 @@ const SeikiProducts = () => {
                     ""
                 }
                 pdfFile={"https://ik.imagekit.io/webibee/VBCC/products/MPE/Material%20Processing-Brochure-seiki.pdf?updatedAt=1736165990390"}
+                // pdfFiles={"/files/Material-Processing-Brochure.pdf"}
                 pdfName={"Material Processing-Brochure-seiki.pdf"}
+                query={"presses"}
             />
             <CategoryProducts categoryName={"Presses"} data={SeikiProductsList} />
         </>

@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "../Loader";
 
 export const ContactForm = () => {
@@ -22,6 +22,11 @@ export const ContactForm = () => {
       [name]: value,
     }));
   };
+
+  useEffect(() => {
+    const downloadKey = "pdfDownloaded";
+    localStorage.removeItem(downloadKey);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

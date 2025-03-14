@@ -14,8 +14,9 @@ const MaterialProcessingEquipment = () => {
                 desc2={
                     ""
                 }
-                pdfFile={"/files/Material Processing-Brochure.pdf"}
+                pdfFile={"/files/Material-Processing-Brochure.pdf"}
                 pdfName={"Material Processing-Brochure Digital.pdf"}
+                query={"MPE"}
             />
         </>
     );

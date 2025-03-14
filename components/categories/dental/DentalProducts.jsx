@@ -18,6 +18,7 @@ const DentalProducts = () => {
                 }
                 pdfFile={"/files/Denkiro-Dental-Brochure-Digital.pdf"}
                 pdfName={"Denkiro - Dental - Brochure - Digital.pdf"}
+                query="dental"
             />
             <CategoryProducts categoryName={"dental"} data={DentalProductsList} />
         </>

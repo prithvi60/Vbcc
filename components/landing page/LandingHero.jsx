@@ -137,7 +137,7 @@ const LandingHero = () => {
           </span>
         </button>
       </div>
-      {isOpen && <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />}
+      {isOpen && <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} query="laboratory" pageType="main"  />}
       <CompanyStats />
     </section>
   );
