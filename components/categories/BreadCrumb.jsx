@@ -32,13 +32,13 @@ const BreadCrumb = () => {
             }}
         >
             <BreadcrumbItem>
-                <Link href={"/"}>Home</Link>
+                <Link title="home page link" href={"/"}>Home</Link>
             </BreadcrumbItem>
             {pathNames.map((list, idx) => {
                 BCPath += `/${list}`;
                 return (
                     <BreadcrumbItem key={`${idx}-${list}`}>
-                        <Link href={BCPath}>
+                        <Link title="back link" href={BCPath}>
                             <h5>{list.replace(/_/g, " ")}</h5>
                         </Link>
                     </BreadcrumbItem>

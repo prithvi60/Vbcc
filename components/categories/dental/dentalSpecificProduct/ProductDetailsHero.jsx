@@ -132,6 +132,7 @@ const ProductDetailsHero = () => {
                                             zoomSrc={list.img}
                                             zoomScale={1}
                                             alt={`${list.alt}`}
+                                            title={`${list.alt}`}
                                             // fullscreenOnMobile={isIOS}
                                             zoomType="hover"
                                             hideCloseButton={false}
@@ -157,6 +158,7 @@ const ProductDetailsHero = () => {
                                     >
                                         <Image
                                             alt={list.alt}
+                                            title={list.alt}
                                             fill
                                             src={list.img}
                                             className="z-20 object-cover object-center"

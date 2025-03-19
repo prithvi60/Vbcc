@@ -17,6 +17,7 @@ const TechnicalSupport = () => {
                         src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
                         fill
                         alt="image"
+                        title="image"
                         className="object-cover object-center"
                     />
                     <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>

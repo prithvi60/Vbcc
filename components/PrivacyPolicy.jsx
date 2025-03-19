@@ -90,7 +90,7 @@ export const PrivacyPolicy = () => {
                 Website refers to VBCC High Temperature Instruments, accessible
                 from{" "}
                 <span>
-                  <Link
+                  <Link title="policy"
                     className="font-semibold"
                     href={"https://vbccinstruments.com/"}
                   >

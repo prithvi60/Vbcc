@@ -17,6 +17,7 @@ const customComponents = {
       <img
         src={value?.imageUrl} // Use the resolved `imageUrl` from GROQ
         alt={value?.alt || "Image"}
+        title={value?.alt || "Image"}
         className="w-full h-full max-w-md max-h-full mx-auto mt-20 mb-20 md:mt-20 md:mb-10"
       />
     ),

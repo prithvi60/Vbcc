@@ -55,11 +55,12 @@ const ExploreProduction = () => {
                         src={"https://ik.imagekit.io/webibee/VBCC/homepage/explore%201.jpg?updatedAt=1733225201844"}
                         fill
                         alt="image"
+                        title="image"
                         className="object-cover object-center "
                     />
                     <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-0"></div>
                     <div className="absolute block space-y-3 bottom-16 left-8">
-                        <Image alt="icon" src={"/dental-icon.svg"} height={50} width={50} />
+                        <Image alt="icon" title="icon" src={"/dental-icon.svg"} height={50} width={50} />
                         <h5 className="text-lg tracking-wider uppercase lg:text-xl">
                             DENTAL
                         </h5>
@@ -79,6 +80,7 @@ const ExploreProduction = () => {
                             <div className="relative mx-auto transition-all duration-500 ease-linear transform size-28 group-hover:scale-150">
                                 <Image
                                     alt="image"
+                                    title="image"
                                     fill
                                     src={list.img}
                                     className="z-20 object-contain object-center"
@@ -112,6 +114,7 @@ const ProductsComponent = () => {
                     <div className="relative mx-auto transition-all duration-500 ease-linear transform w-36 h-36 group-hover:scale-150 xl:w-52 xl:h-52">
                         <Image
                             alt="image"
+                            title="image"
                             fill
                             src={list.img}
                             className="z-20 object-contain object-center"

@@ -71,6 +71,7 @@ const Newsletter = () => {
         <div className="relative w-full h-[480px]">
           <Image
             alt="background image"
+            title="background image"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-bg.png?updatedAt=1733226035657"
             fill
             className="z-0 object-cover object-center"
@@ -143,6 +144,7 @@ const Newsletter = () => {
         <div className="absolute z-auto hidden w-full lg:block h-52 lg:max-w-96 top-16 right-8 xl:right-20 lg:h-80">
           <Image
             alt="background image"
+            title="background image"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-1.png?updatedAt=1733226033627"
             fill
             className="z-0 object-cover object-center"
@@ -150,6 +152,7 @@ const Newsletter = () => {
           <div className="absolute left-0 z-auto w-full h-3 -top-[68px] xl:-top-[64px]">
             <Image
               alt="svg"
+              title="svg"
               src={"/svg 1.svg"}
               fill
               className="object-contain object-center"

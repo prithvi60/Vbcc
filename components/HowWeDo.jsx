@@ -46,7 +46,8 @@ const HowWeDo = () => {
           </div>
           <div className="relative z-0 mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
             <Image
-              alt="image"
+              alt="product image"
+              title="product image"
               fill
               src={"https://ik.imagekit.io/webibee/VBCC/homepage/tailor-1.png?updatedAt=1733225442253"}
               className="z-10 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
@@ -55,10 +56,10 @@ const HowWeDo = () => {
           </div>
         </div>
         <div className='absolute left-0 w-0 h-28 -top-6 md:h-36 md:w-72'>
-          <Image src={"/vector1blue.svg"} fill alt='' className='object-contain object-center' />
+          <Image src={"/vector1blue.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
         </div>
         <div className='absolute right-0 w-48 h-28 -bottom-6 md:h-36 md:w-72'>
-          <Image src={"/vector2blue.svg"} fill alt='' className='object-contain object-center' />
+          <Image src={"/vector2blue.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
         </div>
       </section>
       <section className="flex flex-col items-center justify-center w-full h-full gap-16 px-6 pt-10 pb-8 text-white lg:gap-40 lg:flex-row font-Montserrat md:px-8 bg-primary">
@@ -68,6 +69,7 @@ const HowWeDo = () => {
               src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
               fill
               alt="image"
+              title="image"
               className="object-cover object-center"
             />
             <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-70"></div>
@@ -120,6 +122,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
         }}
       >
         <Link
+          title="contact"
           style={{
             writingMode: "vertical-rl",
           }}
@@ -169,6 +172,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, href }) => {
             >
               <p>{description}</p>
               <Link
+                title="button"
                 href={href}
                 className={`block p-2  md:px-6 md:py-3 group bg-info shadow-2xl shadow-black bg-opacity-30 hover:bg-primary text-center text-sm md:text-base duration-700 delay-75 font-urbanist capitalize w-max`}
               >

@@ -120,6 +120,7 @@ const LabProductDetailsHero = () => {
                                             hideHint
                                             src={list.img}
                                             alt={list.alt}
+                                            title={list.alt}
                                             zoomType="hover"
                                             zoomScale={1}
                                             width={320}
@@ -146,6 +147,7 @@ const LabProductDetailsHero = () => {
                                     >
                                         <Image
                                             alt={list.alt}
+                                            title={list.alt}
                                             fill
                                             src={list.img}
                                             className="z-20 object-cover object-center"

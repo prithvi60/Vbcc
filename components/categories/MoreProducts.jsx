@@ -15,6 +15,7 @@ const MoreProducts = ({ data, type }) => {
                         <div className="relative size-44 xl:h-44 xl:w-72">
                             <Image
                                 alt={list.productName}
+                                title={list.productName}
                                 fill
                                 src={list.mainImg}
                                 className="object-contain object-center"
@@ -25,7 +26,7 @@ const MoreProducts = ({ data, type }) => {
                                 {list.productName}
                             </h4>
                             <button>
-                                <Link
+                                <Link title="products link"
                                     href={`${type === "lab_equipment" ? `/categories/${type}/${list.productName.replace(/\s/g, "_")}` : `/categories/material_processing_equipment/${type}/${list.productName.replace(/\s/g, "_")}`} `}
                                     className="w-full px-4 py-3 text-sm capitalize md:px-8 md:text-base md:w-max bg-info"
                                 >

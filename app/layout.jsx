@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
       className={`${lora.variable} ${nunito.variable} ${urbanist.variable} ${montserrat.variable}`}
     >
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" title="favicon" />
         <Script
           id="zoho-salesiq"
           strategy="afterInteractive"
@@ -152,7 +152,8 @@ const LinkedInTracking = () => {
           height="1"
           width="1"
           style={{ display: "none" }}
-          alt=""
+          alt="linked icon"
+          title="linked icon"
           src="https://px.ads.linkedin.com/collect/?pid=6697532&fmt=gif"
         />
       </noscript>

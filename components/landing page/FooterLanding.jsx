@@ -45,6 +45,7 @@ const FooterLanding = () => {
         <div className="relative w-40 h-12 mx-auto my-24 md:h-20 md:w-64 md:my-14">
           <Image
             alt="VBCC Logo"
+            title="VBCC Logo"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
             fill
             className="object-cover object-center"
@@ -60,6 +61,7 @@ const FooterLanding = () => {
         <div className="absolute top-0 left-0 w-full h-2">
           <Image
             alt="svg"
+            title="svg"
             src={"/svg 1.svg"}
             fill
             className="object-contain object-center"
@@ -73,7 +75,7 @@ const FooterLanding = () => {
           </h4>
           <ul className="flex items-center justify-center gap-3">
             <li>
-              <Link
+              <Link title="linkedin link"
                 aria-label="linkedIn profile"
                 href={"https://www.linkedin.com/company/vbcc-hti/"}
                 target="blank"
@@ -82,7 +84,7 @@ const FooterLanding = () => {
               </Link>
             </li>
             <li>
-              <Link
+              <Link title="facebook link"
                 aria-label="Facebook profile"
                 href={"https://www.facebook.com/vbcc.hti/"}
                 target="blank"
@@ -90,8 +92,8 @@ const FooterLanding = () => {
                 <FaFacebookF className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
-            <li>
-              <Link
+            <li> 
+              <Link title="instagram link"
                 aria-label="Instagram profile"
                 href={"https://www.instagram.com/vbcc_hti/"}
                 target="blank"
@@ -100,7 +102,7 @@ const FooterLanding = () => {
               </Link>
             </li>
             <li>
-              <Link
+              <Link title="youtube link"
                 aria-label="Youtube Videos"
                 href={"https://www.youtube.com/@vbcc_hti"}
                 target="blank"
@@ -109,7 +111,7 @@ const FooterLanding = () => {
               </Link>
             </li>
             <li>
-              <Link
+              <Link title="x link"
                 aria-label="X profile"
                 href={"https://x.com/vbcc_hti"}
                 target="blank"

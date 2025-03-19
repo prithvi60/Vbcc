@@ -29,9 +29,10 @@ const OurTeam = () => {
                     </div>
                     <div className="pt-5 space-y-10">
                         <div className="flex items-center justify-center w-full gap-10 lg:w-1/2 lg:justify-start group">
-                            <Link target="_blank" href={"https://www.linkedin.com/company/vbcc-hti"} className="relative size-40">
+                            <Link title="logo button" target="_blank" href={"https://www.linkedin.com/company/vbcc-hti"} className="relative size-40">
                                 <Image
                                     alt="image"
+                                    title="image"
                                     fill
                                     src={
                                         "https://ik.imagekit.io/webibee/VBCC/homepage/CEO%20-%20Ellipse.png?updatedAt=1734095330733"
@@ -76,6 +77,7 @@ const OurTeam = () => {
                                 <div className="relative size-32 md:size-44">
                                     <Image
                                         alt="image"
+                                        title="image"
                                         fill
                                         src={
                                             "https://ik.imagekit.io/webibee/VBCC/homepage/CTO%20-%20Ellipse.png?updatedAt=1734095330811"
@@ -92,7 +94,8 @@ const OurTeam = () => {
                 <Image
                     src={"/vector1blue.svg"}
                     fill
-                    alt=""
+                    alt="icon"
+                    title="icon"
                     className="object-contain object-center"
                 />
             </div>
@@ -100,7 +103,8 @@ const OurTeam = () => {
                 <Image
                     src={"/vector2blue.svg"}
                     fill
-                    alt=""
+                    alt="icon"
+                    title="icon"
                     className="object-contain object-center"
                 />
             </div>

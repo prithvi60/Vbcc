@@ -11,6 +11,7 @@ import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 
 export const Modal1 = ({ title, styles, type, pageType, page, query }) => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="grid">
       <button
@@ -62,11 +63,6 @@ export const Modal1 = ({ title, styles, type, pageType, page, query }) => {
 
 export const Modal2 = ({ pageType, page, query }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const downloadKey = "pdfDownloaded";
-    localStorage.removeItem(downloadKey);
-  }, []);
 
   return (
     <div className="grid">
@@ -125,6 +121,11 @@ export const SpringModal = ({
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
 
+  useEffect(() => {
+    const downloadKey = "pdfDownloaded";
+    localStorage.removeItem(downloadKey);
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -145,6 +146,7 @@ export const SpringModal = ({
       message: formData.message,
       page: page,
     };
+
 
     const zohoData = {
       data: [

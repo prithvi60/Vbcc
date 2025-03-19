@@ -124,6 +124,7 @@ const Footer = () => {
           <div className="relative w-64 h-20 mx-auto my-14 md:my-4">
             <Image
               alt="VBCC Logo"
+              title="VBCC Logo"
               src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
               fill
               className="object-cover object-center"
@@ -139,6 +140,7 @@ const Footer = () => {
           <div className="absolute top-0 left-0 w-full h-2">
             <Image
               alt="svg"
+              title="svg"
               src={"/svg 1.svg"}
               fill
               className="object-contain object-center"
@@ -149,27 +151,27 @@ const Footer = () => {
           <h4 className="text-xl font-medium tracking-wider text-center">FOLLOW US</h4>
           <ul className="flex items-center justify-center gap-3 ">
             <li>
-              <Link href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse " target="_blank">
+              <Link title="linkedIn" href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse " target="_blank">
                 <FaLinkedin className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
+              <Link title="facebook" href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
                 <FaFacebookF className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="_blank">
+              <Link title="x" href={"https://x.com/vbcc_hti"} className="hover:animate-pulse " target="_blank">
                 <FaXTwitter className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="_blank">
+              <Link title="instagram" href={"https://www.instagram.com/vbcc_hti/"} className="hover:animate-pulse " target="_blank">
                 <FaInstagram className="text-lg md:text-2xl" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
+              <Link title="youtube" href={"https://www.youtube.com/@vbcc_hti"} className="hover:animate-pulse " target="_blank">
                 <FaYoutube className="text-lg md:text-2xl" />
               </Link>
             </li>
@@ -203,6 +205,7 @@ const Footer = () => {
             <div className="flex flex-col items-start gap-3">
               {footerLinks1.map((list, id) => (
                 <Link
+                  title="footer links"
                   passHref
                   key={id}
                   href={list.href}
@@ -215,6 +218,7 @@ const Footer = () => {
             <div className="flex flex-col items-start gap-3">
               {footerLinks2.map((list, id) => (
                 <Link
+                  title="footer links"
                   key={id}
                   passHref
                   href={list.href}
@@ -388,6 +392,7 @@ const Footer = () => {
             <p className="hidden text-center w-max xl:block">
               Made By
               <Link
+                title="website link"
                 href={"https://webibee.com/"}
                 target="_blank"
                 className="ml-1 hover:animate-pulse decoration-white"
@@ -397,6 +402,7 @@ const Footer = () => {
             </p>
             <div className="items-center hidden gap-3 md:flex">
               <Link
+                title="policy"
                 passHref
                 href={"/privacypolicy"}
                 className=" hover:text-secondary hover:text-opacity-70"
@@ -408,6 +414,7 @@ const Footer = () => {
           <p className="block w-full text-center xl:hidden">
             Made By
             <Link
+              title="website link"
               href={"https://webibee.com/"}
               target="_blank"
               className="ml-1 hover:animate-pulse decoration-white"

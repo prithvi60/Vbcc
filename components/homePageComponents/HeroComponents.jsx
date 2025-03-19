@@ -11,7 +11,7 @@ export const HeroComponent = () => {
   return (
     <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
       <li>
-        <Link
+        <Link title="linkedin link"
           href={"https://www.linkedin.com/company/vbcc-hti/"}
           target="_blank"
           aria-label="linkedIn profile"
@@ -20,7 +20,7 @@ export const HeroComponent = () => {
         </Link>
       </li>
       <li>
-        <Link
+        <Link title="facebook link"
           href={"https://www.facebook.com/vbcc.hti/"}
           target="_blank"
           aria-label="Facebook profile"
@@ -29,7 +29,7 @@ export const HeroComponent = () => {
         </Link>
       </li>
       <li>
-        <Link
+        <Link title="instagram link"
           href={"https://www.instagram.com/vbcc_hti/"}
           target="_blank"
           aria-label="Instagram profile"
@@ -38,7 +38,7 @@ export const HeroComponent = () => {
         </Link>
       </li>
       <li>
-        <Link
+        <Link title="youtube link"
           href={"https://www.youtube.com/@vbcc_hti"}
           target="_blank"
           aria-label="Youtube Videos"
@@ -47,7 +47,7 @@ export const HeroComponent = () => {
         </Link>
       </li>
       <li>
-        <Link
+        <Link title="x link"
           href={"https://x.com/vbcc_hti"}
           target="_blank"
           aria-label="X profile"

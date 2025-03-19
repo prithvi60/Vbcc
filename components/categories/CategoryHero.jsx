@@ -28,6 +28,7 @@ const CategoryHero = ({
                             src={heroBg}
                             priority
                             alt="hero bg"
+                            title="hero bg"
                             className="object-cover object-center"
                         />
                         <div className="absolute top-0 left-0 z-0 w-full h-[90vh] bg-gradient-to-b from-[#00000033] via-[#F06F3845] to-[#00000033]"></div>
@@ -63,6 +64,7 @@ const CategoryHero = ({
                 <div className="relative z-0 mx-auto w-52 h-52 md:w-60 md:h-60 xl:h-80 xl:w-80 group">
                     <Image
                         alt="image"
+                        title="image"
                         fill
                         src={categoryImg}
                         className="z-20 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"

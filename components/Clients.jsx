@@ -47,7 +47,8 @@ const Clients = () => {
           <Image
             src={"https://ik.imagekit.io/webibee/VBCC/homepage/client-bg.png?updatedAt=1733224807699"}
             fill
-            alt="image"
+            alt="client image"
+            title="client image"
             className="object-cover object-center"
           />
           <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#0c1a32d9] to-[#081326b4] "></div>
@@ -64,8 +65,8 @@ const Clients = () => {
           <div className="w-full h-full mx-auto max-w-64 md:max-w-sm max-h-32 lg:max-w-md xl:max-w-2xl slider-container">
             <Slider {...settings}>
               {clientLogos.slice(0, 4).map((list, idx) => (
-                <Link href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
-                  <Image alt="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
+                <Link title="testimonial" href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
+                  <Image alt="logo" title="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
                 </Link>
               ))}
             </Slider>
@@ -73,8 +74,8 @@ const Clients = () => {
           <div className="w-full h-full mx-auto max-w-64 md:max-w-sm max-h-32 lg:max-w-md xl:max-w-2xl slider-container">
             <Slider {...settings} rtl>
               {clientLogos.slice(4, 9).map((list, idx) => (
-                <Link href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
-                  <Image alt="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
+                <Link title="testimonial" href={"/testimonials"} key={idx} className="relative size-16 md:size-24 lg:size-28 group">
+                  <Image alt="logo" title="logo" src={list} fill className="object-contain object-center transition-all ease-linear transform group-hover:scale-110 duration-400" />
                 </Link>
               ))}
             </Slider>
@@ -82,10 +83,10 @@ const Clients = () => {
         </div>
       </div>
       <div className='absolute left-0 z-auto w-48 h-28 -top-6 md:h-36 md:w-72'>
-        <Image src={"/vector1blue.svg"} fill alt='' className='object-contain object-center' />
+        <Image src={"/vector1blue.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
       </div>
       <div className='absolute right-0 z-auto w-48 h-28 -bottom-6 md:h-36 md:w-72'>
-        <Image src={"/vector2blue.svg"} fill alt='' className='object-contain object-center' />
+        <Image src={"/vector2blue.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
       </div>
     </section>
   )
@@ -100,7 +101,7 @@ function SampleNextArrow(props) {
       className={"absolute z-auto top-4 md:top-5 lg:top-10 -right-12 md:-right-14 size-10 xl:size-12 cursor-pointer"}
       onClick={onClick}
     >
-      <Image alt="next arrow" fill src={"/next.svg"} className="object-contain object-center" />
+      <Image alt="next arrow" title="next arrow" fill src={"/next.svg"} className="object-contain object-center" />
     </div>
   );
 }
@@ -112,7 +113,7 @@ function SamplePrevArrow(props) {
       className={"absolute z-auto top-4 md:top-5 lg:top-10 -left-12 md:-left-14 size-10 xl:size-12 cursor-pointer"}
       onClick={onClick}
     >
-      <Image alt="prev arrow" fill src={"/prev.svg"} className="object-contain object-center" />
+      <Image alt="prev arrow" title="prev arrow" fill src={"/prev.svg"} className="object-contain object-center" />
     </div>
   );
 }
