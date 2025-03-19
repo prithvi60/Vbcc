@@ -18,6 +18,7 @@ const Testimonials = () => {
                 <div className="relative overflow-hidden w-64 h-20 md:w-60 md:h-20 lg:h-28 lg:w-[350px]">
                   <Image
                     alt="VBCC Logo"
+                    title="VBCC Logo"
                     src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
                     fill
                     className="object-cover object-center"
@@ -30,6 +31,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`Anna University Logo`}
+                      title={`Anna University Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533"}
                       fill
                       className="object-cover object-center p-5"
@@ -40,6 +42,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`BHEL Logo`}
+                      title={`BHEL Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/bhel.svg?updatedAt=1731397608150"}
                       fill
                       className="object-cover object-center p-5"
@@ -50,6 +53,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`IIT Madras Logo`}
+                      title={`IIT Madras Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544"}
                       fill
                       className="object-cover object-center p-5"
@@ -60,6 +64,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`IIT Hyderabad Logo`}
+                      title={`IIT Hyderabad Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/IITM%20Hyd%202.svg?updatedAt=1731397608270"}
                       fill
                       className="object-cover object-center p-5"
@@ -70,6 +75,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`ISRO Logo`}
+                      title={`ISRO Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695"}
                       fill
                       className="object-cover object-center p-5"
@@ -80,6 +86,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`VIT Logo`}
+                      title={`VIT Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736"}
                       fill
                       className="object-cover object-center p-5"
@@ -90,6 +97,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`CSIR Logo`}
+                      title={`CSIR Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"}
                       fill
                       className="object-cover object-center p-5"
@@ -100,6 +108,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`DRDO Logo`}
+                      title={`DRDO Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831"}
                       fill
                       className="object-cover object-center p-5"
@@ -110,6 +119,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`CSIR Logo`}
+                      title={`CSIR Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"}
                       fill
                       className="object-cover object-center p-5"
@@ -120,6 +130,7 @@ const Testimonials = () => {
                   <div className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}>
                     <Image
                       alt={`DRDO Logo`}
+                      title={`DRDO Logo`}
                       src={"https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831"}
                       fill
                       className="object-cover object-center p-5"
@@ -134,7 +145,7 @@ const Testimonials = () => {
             {heroTestimonial.map((list, idx) => (
               <div key={idx} className="w-full h-full max-w-xs space-y-4 overflow-hidden transition-all duration-500 ease-in-out transform rounded-sm shadow-xl select-none break-inside-avoid md:hover:scale-110">
                 <div className="relative w-full h-48 overflow-hidden bg-primary">
-                  <Image fill src={list.logo} alt="image" className="object-contain object-center" />
+                  <Image fill src={list.logo} alt="image" title="image" className="object-contain object-center" />
                 </div>
                 <div className="p-5 space-y-4 md:space-y-8 md:p-10">
                   <p className="text-sm md:text-base text-primary">{list.header}</p>
@@ -154,11 +165,11 @@ const Testimonials = () => {
         </div>
       </div>
       {path !== "/testimonials" && (<div className='absolute left-0 w-48 h-20 -top-6 md:h-28 md:w-72'>
-        <Image src={"/vector2.svg"} fill alt='' className='object-contain object-center' />
+        <Image src={"/vector2.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
       </div>)}
 
       <div className='absolute right-0 w-48 h-28 -bottom-6 md:h-28 md:w-72'>
-        <Image src={"/vector1.svg"} fill alt='' className='object-contain object-center' />
+        <Image src={"/vector1.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
       </div>
     </section>
   );

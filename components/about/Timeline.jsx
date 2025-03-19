@@ -47,12 +47,12 @@ const Timeline = () => {
                 <h4 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info mb-6 md:mb-0">Our Timeline</h4>
                 <div className="overflow-x-scroll shadow-xl lg:overflow-x-scroll rounded-tl-xl thumbnail" ref={scrollContainerRef}>
                     <div ref={targetRef} className="w-full h-[330px] md:h-[690px] p-3">
-                        <img src={"https://ik.imagekit.io/webibee/VBCC/homepage/timeline.svg?updatedAt=1733741949312"} alt="legacy-image" loading="lazy" className=" h-[280px] md:h-[650px] max-w-[520%] object-cover md:object-contain md:max-w-[450%]" />
+                        <img src={"https://ik.imagekit.io/webibee/VBCC/homepage/timeline.svg?updatedAt=1733741949312"} alt="legacy-image" title="legacy-image" loading="lazy" className=" h-[280px] md:h-[650px] max-w-[520%] object-cover md:object-contain md:max-w-[450%]" />
                     </div>
                 </div>
             </div>
             <div className='absolute left-0 z-0 w-48 h-28 -top-6 md:h-36 md:w-72'>
-                <Image src={"/vector1blue.svg"} fill alt='' className='object-contain object-center' />
+                <Image src={"/vector1blue.svg"} fill alt='icon' title="icon" className='object-contain object-center' />
             </div>
         </section>
     )

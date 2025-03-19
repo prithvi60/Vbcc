@@ -15,6 +15,14 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: decode(product.metaTitle),
         description: decode(product.metaDesc),
+        images: [
+          {
+            url: product.mainImg,
+            width: 800,
+            height: 600,
+            alt: decode(product.productName),
+          },
+        ],
       },
     };
   }

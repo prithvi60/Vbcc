@@ -8,6 +8,7 @@ export async function generateMetadata({ params }) {
   // Fetch the product based on the slug
   const product = DentalProductsList.find((item) => item.productName === decodedId);
 
+
   if (product) {
     return {
       title: decode(product.metaTitle),
@@ -15,6 +16,14 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: decode(product.metaTitle),
         description: decode(product.metaDesc),
+        images: [
+          {
+            url: product.mainImg,
+            width: 800,
+            height: 600,
+            alt: decode(product.productName),
+          },
+        ],
       },
     };
   }

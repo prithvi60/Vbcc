@@ -20,13 +20,14 @@ const NavBar = () => {
         className={`relative flex items-center w-full gap-4 justify-between`}
       >
         <div className="relative flex items-center justify-between w-full lg:justify-start lg:gap-20">
-          <Link href={"/"}>
+          <Link title="button" href={"/"}>
             <div
               className={`relative w-32 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44 lg:-ml-3`}
             >
               {path === "/" || path === "/blog" || path === "/testimonials" || path === "/contact" || path === "/about" || path === "/faq" ? (
                 <Image
                   alt="VBCC Logo"
+                  title="VBCC Logo"
                   src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
                   fill
                   className={`object-cover object-center`}
@@ -35,6 +36,7 @@ const NavBar = () => {
               ) : (
                 <Image
                   alt="VBCC Logo"
+                  title="VBCC Logo"
                   src="/VBCC logo.svg"
                   fill
                   className={`object-cover object-center`}
@@ -57,11 +59,11 @@ const NavBar = () => {
                     }`}
                 >
                   {list.menu === "CATEGORIES" ? (
-                    <Link href={list.ref} onMouseEnter={() => setIsHover(true)}>
+                    <Link title="menu" href={list.ref} onMouseEnter={() => setIsHover(true)}>
                       <h4>{list.menu}</h4>
                     </Link>
                   ) : (
-                    <Link href={list.ref}>
+                    <Link title="menu" href={list.ref}>
                       <h4>{list.menu}</h4>
                     </Link>
                   )}
@@ -98,14 +100,15 @@ const NavBar = () => {
                         >
                           {list.subMenu.map((item, idx) => (
                             <li className="relative" key={idx}>
-                              <Link
+                              <Link title="menu"
                                 href={item.ref}
                                 className="flex flex-row h-full gap-4 xl:flex-col"
                                 onClick={() => setIsHover(false)}
                               >
                                 <div className="relative overflow-hidden size-12 xl:size-20 !z-[1000] rounded-md">
                                   <Image
-                                    alt=""
+                                    alt={item.menu}
+                                    title={item.menu}
                                     src={item.img}
                                     fill
                                     className="object-cover object-center"

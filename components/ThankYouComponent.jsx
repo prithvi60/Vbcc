@@ -98,6 +98,7 @@ export const ThankYouComponent = () => {
           }
           fill
           alt="thumbs up"
+          title="thumbs up"
           className="object-contain -mt-2"
         />
       </div>
@@ -107,6 +108,7 @@ export const ThankYouComponent = () => {
             src={"/thumbs-up.gif"}
             fill
             alt="thumbs up"
+            title="thumbs up"
             className="object-contain -mt-2"
           />
         </div>
@@ -119,7 +121,7 @@ export const ThankYouComponent = () => {
         " Please check your email now "
       </p>
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-center md:gap-5">
-        <Link
+        <Link title="thank you button"
           scroll={false}
           href={modifiedUrl === "" ? "/" : modifiedUrl}
           className={`group/button block rounded-full px-6 py-3 bg-[#20427D] hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-max tracking-wider`}

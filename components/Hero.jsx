@@ -59,6 +59,7 @@ const Hero = () => {
                 fill
                 src="https://ik.imagekit.io/webibee/VBCC/homepage/dental%20-hero.png?updatedAt=1733211692943"
                 alt="Loading..."
+                title="loading"
                 className="object-contain object-center blur-lg brightness-[0.15]"
               />
             </div>
@@ -79,6 +80,7 @@ const Hero = () => {
               >
                 <Image
                   alt="background image"
+                  title="background image"
                   src={list.bgImg || heroSlider[0].bgImg}
                   fill
                   className="z-0 object-cover object-center brightness-[0.30]"
@@ -134,6 +136,7 @@ const Hero = () => {
                   </div>
                   <div className="flex flex-col gap-5 w-max md:w-full lg:items-center lg:flex-row">
                     <LinkScroll
+                      title="links"
                       to="explore"
                       spy={true}
                       smooth={true}
@@ -146,7 +149,7 @@ const Hero = () => {
                         <MdKeyboardDoubleArrowRight className="text-xl" />
                       </span>
                     </LinkScroll>
-                    <Link aria-label="category link" href={"/categories"}>
+                    <Link title="categories" aria-label="category link" href={"/categories"}>
                       <button
                         className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
                       >
@@ -187,6 +190,7 @@ const Hero = () => {
                     <div className="w-full h-full space-y-8 overflow-scroll lg:overflow-auto max-h-[430px] lg:max-h-full lg:h-full hideScroll">
                       {list.products.map((item, id) => (
                         <Link
+                          title="categories"
                           aria-label="category products"
                           href={
                             item.type === "Dental PRODUCTS"
@@ -208,6 +212,7 @@ const Hero = () => {
                             <div className="relative top-6 size-16 xl:size-24">
                               <Image
                                 alt="sample image"
+                                title="sample image"
                                 fill
                                 priority
                                 src={item.img}
@@ -260,6 +265,7 @@ function SampleNextArrow(props) {
     >
       <Image
         alt="next arrow"
+        title="next arrow"
         fill
         priority
         src={"/prev arrow.png"}
@@ -278,6 +284,7 @@ function SamplePrevArrow(props) {
     >
       <Image
         alt="prev arrow"
+        title="prev arrow"
         fill
         priority
         src={"/next arrow.png"}

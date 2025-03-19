@@ -17,12 +17,13 @@ export const BlogGridComponent = ({ post }) => {
   const readingTime = calculateReadTime(blogContent);
 
   return (
-    <Link href={`/blog/${post.slug.current}`}
+    <Link title="blog link" href={`/blog/${post.slug.current}`}
       className="relative w-full max-w-sm xl:max-w-md border-t-3 border-info md:mt-6 font-Montserrat bg-primary group"
     >
       <div className="absolute top-0 left-0 w-full h-2">
         <Image
           alt="svg"
+          title="svg"
           src={"/svg 1.svg"}
           fill
           className="object-contain object-center"
@@ -32,6 +33,7 @@ export const BlogGridComponent = ({ post }) => {
         <div className="relative w-full h-64 overflow-hidden">
           <Image
             alt={post.imageAlt}
+            title={post.imageAlt}
             src={post.imageUrl}
             fill
             className="object-cover object-center"

@@ -57,7 +57,7 @@ const Explore = () => {
       </div>
       <div className="flex flex-col items-center justify-between gap-10 mb-10 overflow-hidden 2xxl:mt-20 md:mb-56 lg:flex-row">
         <div className="block p-10 mx-auto space-y-4">
-          <Link href={"/categories"} className="relative w-full lg:w-2/5 flex justify-center md:justify-start gap-2 items-center lg:block text-3xl text-[#A7ACB8] hover:text-info transition-colors duration-400 ease-in-out md:text-5xl xl:text-6xl group">
+          <Link title="categories" href={"/categories"} className="relative w-full lg:w-2/5 flex justify-center md:justify-start gap-2 items-center lg:block text-3xl text-[#A7ACB8] hover:text-info transition-colors duration-400 ease-in-out md:text-5xl xl:text-6xl group">
             <h4 className="w-3/5 font-bold tracking-wider">Explore Products</h4>
             <RiArrowRightUpLine className="mt-2 lg:mt-0 lg:absolute top-10 left-80 text-info" />
           </Link>
@@ -69,6 +69,7 @@ const Explore = () => {
           <Slider {...settings} className="explore-slider">
             {exploreList.map((list, idx) => (
               <Link
+                title="explore"
                 href={list.ref}
                 className="relative !h-[380px] !w-full md:!w-[320px] lg:!w-[280px] xl:!w-[260px] md:!h-[480px] after:absolute after:top-2 after:-left-2 z-auto after:border-2 after:border-info after:w-full after:h-full"
                 key={idx}
@@ -76,7 +77,8 @@ const Explore = () => {
                 <Image
                   src={list.img}
                   fill
-                  alt="image"
+                  alt="product image"
+                  title="product image"
                   className="object-cover object-center brightness-[0.45]"
                 />
                 <div className="absolute block w-full space-y-4 text-white bottom-14 left-5">
@@ -84,7 +86,8 @@ const Explore = () => {
                     <Image
                       src={list.icon}
                       fill
-                      alt="image"
+                      alt="product image"
+                      title="product image"
                       className="object-cover object-center"
                     />
                   </div>
@@ -130,6 +133,7 @@ const Explore = () => {
                       placeholder="blur"
                       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
                       alt="Logo"
+                      title="product Logo"
                       className="absolute object-contain object-center"
                     />
                   </div>
@@ -164,7 +168,8 @@ const Explore = () => {
               <Image
                 src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
                 fill
-                alt="image"
+                alt="product image"
+                title="product image"
                 className="object-cover object-center rounded-full"
               />
               <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#afadadef] via-[#848080df] to-[#a9a9a9de] rounded-full bg-opacity-20"></div>
@@ -174,7 +179,8 @@ const Explore = () => {
                     "https://ik.imagekit.io/webibee/VBCC/homepage/iso.svg?updatedAt=1733225279050"
                   }
                   fill
-                  alt="image"
+                  alt="product image"
+                  title="product image"
                   className="object-contain object-center"
                 />
               </div>
@@ -184,7 +190,8 @@ const Explore = () => {
                     "https://ik.imagekit.io/webibee/VBCC/homepage/ce-logo.svg?updatedAt=1733225200816"
                   }
                   fill
-                  alt="image"
+                  alt="product image"
+                  title="product image"
                   className="object-contain object-center"
                 />
               </div>
@@ -197,7 +204,8 @@ const Explore = () => {
                   "https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"
                 }
                 fill
-                alt="image"
+                alt="product image"
+                title="product image"
                 className="object-cover object-center rounded-full"
               />
               <div className="absolute top-0 left-0 z-0 w-full h-full bg-gradient-to-b from-[#afadadef] via-[#848080df] to-[#a9a9a9de] rounded-full bg-opacity-20"></div>
@@ -207,7 +215,8 @@ const Explore = () => {
                     "https://ik.imagekit.io/webibee/VBCC/msme-logo.png?updatedAt=1733211576206"
                   }
                   fill
-                  alt="image"
+                  alt="product image"
+                  title="product image"
                   className="object-contain object-center"
                 />
               </div>
@@ -217,7 +226,8 @@ const Explore = () => {
                     "https://ik.imagekit.io/webibee/VBCC/homepage/MIN-Logo.png?updatedAt=1733226404913"
                   }
                   fill
-                  alt="image"
+                  alt="product image"
+                  title="product image"
                   className="object-contain object-center"
                 />
               </div>
@@ -229,7 +239,8 @@ const Explore = () => {
         <Image
           src={"/vector2.svg"}
           fill
-          alt=""
+          alt="icon"
+          title="icon"
           className="object-contain object-center"
         />
       </div>
@@ -237,7 +248,8 @@ const Explore = () => {
         <Image
           src={"/vector1.svg"}
           fill
-          alt=""
+          alt="icon"
+          title="icon"
           className="object-contain object-center"
         />
       </div>

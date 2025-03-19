@@ -25,7 +25,8 @@ export const Vison = () => {
                 <Image
                   src={"https://ik.imagekit.io/webibee/VBCC/homepage/mission.png?updatedAt=1733319577832"}
                   fill
-                  alt=""
+                  alt="mission"
+                  title="mission"
                   className="object-contain object-center"
                 />
               </div>
@@ -51,7 +52,8 @@ export const Vison = () => {
                 <Image
                   src={"https://ik.imagekit.io/webibee/VBCC/homepage/vision.png?updatedAt=1733319577960"}
                   fill
-                  alt=""
+                  alt="vision"
+                  title="vision"
                   className="object-contain object-center"
                 />
               </div>
@@ -63,7 +65,8 @@ export const Vison = () => {
         <Image
           src={"/vector1.svg"}
           fill
-          alt=""
+          alt="icon"
+          title="icon"
           className="object-contain object-center"
         />
       </div>

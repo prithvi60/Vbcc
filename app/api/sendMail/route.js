@@ -13,6 +13,8 @@ const transporter = nodemailer.createTransport({
 export async function POST(req) {
   const { firstName, lastName, userEmail, jobTitle, phone, message, page } =
     await req.json();
+  const imageUrl =
+    "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC_email_logo.png";
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
 
@@ -30,6 +32,7 @@ export async function POST(req) {
   const clientMailOptions = {
     from: `"${userEmail}" <${"support@webibee.com"}>`,
     to: "sales@vbccinstruments.com",
+    // to: `${process.env.EMAIL_ID}`,
     subject: `New Customer Form Submitted - ${capitalized} Page`,
     html: `
             <div className="block space-y-10 font-merriWeather">
@@ -46,7 +49,17 @@ export async function POST(req) {
             </p>
             <br/>
             <br/>
-            <p>Thanks</p>
+            <div>Thanks & Regards,<br>
+                    <br>
+              <div style="margin-bottom: 10px;">
+                <img src=${imageUrl} alt="VBCC Logo" style="width: 90px; height: auto;">
+              </div>
+           <p>VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD<br>
+           207, 3rd Link Road, Nehru Nagar Industrial Estate,<br>
+           Kottivakkam, Chennai, Tamil Nadu 600041<br>
+           +91- 9600478315<br>
+           </p>
+           </div>
             </div> 
             `,
     // bcc: [process.env.EMAIL_ID],
@@ -57,14 +70,19 @@ export async function POST(req) {
     to: userEmail,
     subject: "Acknowledgment: We received your Submission",
     html: `<p>Dear ${firstName} ${lastName},</p>
-             <p>Greetings from VBCC HTI!</p>
-             <p>We appreciate your interest in our products and confirm receipt of your submission. Our team will be in touch with you soon.</p>
-                   <p>Thanks & Regards,<br>
+             <p>Greetings from VBCC High Temperature Instruments!</p>
+             <p>We appreciate your interest in our products and acknowledge the receipt of your submission.</p>
+              <div>Thanks & Regards,<br>
                     <br>
-           VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD<br>
+              <div style="margin-bottom: 10px;">
+                <img src=${imageUrl} alt="VBCC Logo" style="width: 90px; height: auto;">
+              </div>
+           <p>VBCC HIGH TEMPERATURE INSTRUMENTS PRIVATE LTD<br>
            207, 3rd Link Road, Nehru Nagar Industrial Estate,<br>
            Kottivakkam, Chennai, Tamil Nadu 600041<br>
-           +91-9600478315<br></p>`,
+           +91- 9600478315<br>
+           </p>
+           </div>`,
     // attachments: [
     //   // Default PDF attachment
     //   {

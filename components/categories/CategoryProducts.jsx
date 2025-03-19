@@ -10,7 +10,7 @@ const CategoryProducts = ({ categoryName, data }) => {
             </h4>
             <div className="grid w-full gap-5 pt-8 pb-20 place-content-center place-items-center sm:grid-cols-2 lg:grid-cols-3">
                 {data.map((list, idx) => (
-                    <Link
+                    <Link title="products link"
                         href={`${list.slug === "Ball_Mills" || list.slug === "Presses" || list.slug === "Extruders" ? `/categories/material_processing_equipment/${list.slug}/${list.productName.replace(/\s/g, "_").replace(/\(/g, "(").replace(/\)/g, ")")}` : `/categories/${categoryName}/${list.productName.replace(/\s/g, "_").replace(/\(/g, "(").replace(/\)/g, ")")}`}`}
                         className="relative w-full max-w-sm space-y-8 group font-Montserrat"
                         key={idx}
@@ -18,6 +18,7 @@ const CategoryProducts = ({ categoryName, data }) => {
                         <div className="relative mx-auto transition-all duration-500 ease-linear transform w-36 h-36 group-hover:scale-150 xl:w-72 xl:h-44">
                             <Image
                                 alt="image"
+                                title="image"
                                 fill
                                 src={list.mainImg}
                                 className="z-0 object-contain object-center"

@@ -4,16 +4,17 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <section className="px-5 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-20 font-urbanist text-warning space-y-6 mx-auto h-full w-full text-center">
-      {/* <div className='relative h-56 w-56 -mt-5'> */}
+      {/* <div className='relative w-56 h-56 -mt-5'> */}
       <Image
         src={"/404.png"}
         height={225}
         width={225}
         alt="404 page not found"
+        title="404 page not found"
         className="object-contain mx-auto"
       />
       {/* </div> */}
-      <h2 className="font-Lora text-3xl md:text-5xl capitalize">
+      <h2 className="text-3xl capitalize font-Lora md:text-5xl">
         Looking for something <span className="animate-pulse">?</span>
       </h2>
       <p className="text-base md:text-lg">
@@ -28,8 +29,9 @@ export default function NotFound() {
         If you typed the page address in the address bar, make sure that
         it&apos;s spelled correctly.
       </p>
-      <div className="w-full flex justify-center items-center">
+      <div className="flex items-center justify-center w-full">
         <Link
+        title="back button"
           scroll={false}
           href={"/"}
           className={`group/button block rounded-full px-6 py-3 bg-primary hover:bg-info text-center text-base duration-700 delay-75 font-urbanist capitalize w-max tracking-wider`}

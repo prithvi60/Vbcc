@@ -54,6 +54,7 @@ const TestimonialLanding = () => {
                             <div className="absolute top-0 left-0 w-full h-2">
                                 <Image
                                     alt="svg"
+                                    title="svg"
                                     src={"/svg 1.svg"}
                                     fill
                                     className="object-contain object-center"
@@ -71,6 +72,7 @@ const TestimonialLanding = () => {
                                 <div className="relative h-20 min-w-14 md:min-w-20">
                                     <Image
                                         alt="svg"
+                                        title="svg"
                                         src={list.logo}
                                         fill
                                         className="object-contain object-center"

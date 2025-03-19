@@ -8,6 +8,7 @@ export const Story = () => {
           {/* hero-mask */}
           <Image
             alt="background image"
+            title="background image"
             src={"https://ik.imagekit.io/webibee/VBCC/About%20Us%20-%20Hero%20Image.jpg?updatedAt=1733745359135"}
             fill
             className="z-0 object-cover object-top brightness-[0.50]"
@@ -45,6 +46,7 @@ export const Story = () => {
                 "https://ik.imagekit.io/webibee/VBCC/homepage/About%20Us%20-%20Innovation%20Excellence.png?updatedAt=1733748558056"
               }
               alt="bg image"
+              title="bg image"
               className="object-cover object-center md:object-top"
             />
           </div>

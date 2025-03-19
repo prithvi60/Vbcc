@@ -20,6 +20,7 @@ const LandingHero = () => {
         <div className="absolute w-32 -left-2 xl:left-0 top-4 h-14 md:h-16 md:w-40 2xl:h-20 2xl:w-44">
           <Image
             alt="VBCC Logo"
+            title="VBCC Logo"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
             fill
             className="z-0 object-cover object-center"
@@ -28,6 +29,7 @@ const LandingHero = () => {
         <div className="relative w-full h-[120dvh] md:h-[110dvh] hero-mask -rotate-[0.1deg] -mt-[3px]">
           <Image
             alt="background image"
+            title="background image"
             src="https://ik.imagekit.io/webibee/VBCC/homepage/herobg.jpg?updatedAt=1733226899567"
             fill
             className="z-0 object-cover object-center"
@@ -39,7 +41,7 @@ const LandingHero = () => {
             <div className="relative flex items-center gap-5 md:gap-16 xl:gap-20">
               <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                 <li>
-                  <Link
+                  <Link title="linkedin link"
                     href={"https://www.linkedin.com/company/vbcc-hti/"}
                     target="_blank"
                   >
@@ -47,7 +49,7 @@ const LandingHero = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <Link title="facebook link"
                     href={"https://www.facebook.com/vbcc.hti/"}
                     target="_blank"
                   >
@@ -55,7 +57,7 @@ const LandingHero = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <Link title="instagram link"
                     href={"https://www.instagram.com/vbcc_hti/"}
                     target="_blank"
                   >
@@ -63,7 +65,7 @@ const LandingHero = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  <Link title="youtube link"
                     href={"https://www.youtube.com/@vbcc_hti"}
                     target="_blank"
                   >
@@ -71,7 +73,7 @@ const LandingHero = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://x.com/vbcc_hti"} target="_blank">
+                  <Link title="X link" href={"https://x.com/vbcc_hti"} target="_blank">
                     <FaXTwitter className="text-base text-white md:text-2xl" />
                   </Link>
                 </li>
@@ -89,6 +91,7 @@ const LandingHero = () => {
                     INDIA’S PREMIUM DENTAL FURNACES
                   </h2>
                   <LinkScroll
+                    title="products link"
                     to="products"
                     spy={true}
                     smooth={true}
@@ -112,6 +115,7 @@ const LandingHero = () => {
               <div className="relative w-48 h-48 mx-auto md:w-56 md:h-56 xl:h-72 xl:w-72 group">
                 <Image
                   alt="image"
+                  title="image"
                   fill
                   src={
                     "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034"
@@ -137,7 +141,7 @@ const LandingHero = () => {
           </span>
         </button>
       </div>
-      {isOpen && <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} query="laboratory" pageType="main"  />}
+      {isOpen && <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} query="laboratory" pageType="main" />}
       <CompanyStats />
     </section>
   );

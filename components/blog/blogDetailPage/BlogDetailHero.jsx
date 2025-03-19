@@ -22,6 +22,7 @@ const BlogDetailHero = ({ data, postName }) => {
                 <div className="relative w-full h-[75vh] md:h-[100vh]">
                     <Image
                         alt="background image"
+                        title="background image"
                         src={data}
                         fill
                         className="z-0 object-cover object-center brightness-[0.30]"
@@ -32,27 +33,27 @@ const BlogDetailHero = ({ data, postName }) => {
                         <div className="relative flex items-center gap-5 md:gap-8 xl:gap-20">
                             <ul className="flex flex-col items-center justify-center gap-3 -mt-10 md:-mt-0">
                                 <li>
-                                    <Link href={""} className="hover:animate-pulse ">
+                                    <Link title="linkedin link" href={""} className="hover:animate-pulse ">
                                         <FaLinkedinIn className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href={""} className="hover:animate-pulse ">
+                                    <Link title="facebook link" href={""} className="hover:animate-pulse ">
                                         <FaFacebookF className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href={""} className="hover:animate-pulse ">
+                                    <Link title="instagram link" href={""} className="hover:animate-pulse ">
                                         <FaInstagram className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href={""} className="hover:animate-pulse ">
+                                    <Link title="youtube link" href={""} className="hover:animate-pulse ">
                                         <FaYoutube className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href={""} className="hover:animate-pulse ">
+                                    <Link title="x link" href={""} className="hover:animate-pulse ">
                                         <FaXTwitter className="text-base text-white md:text-2xl" />
                                     </Link>
                                 </li>

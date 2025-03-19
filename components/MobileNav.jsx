@@ -22,6 +22,7 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
               "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
             }
             alt="Logo"
+            title="logo"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
             className="object-cover object-center"
@@ -47,6 +48,7 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
               className={`w-max uppercase font-semibold text-3xl sm:text-[40px]`}
             >
               <Link
+                title="button"
                 passHref
                 className="flex items-center gap-2 group"
                 href={link.ref}

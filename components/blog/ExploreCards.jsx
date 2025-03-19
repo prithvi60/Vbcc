@@ -22,11 +22,11 @@ export const ExploreCards = () => {
           <h4 className="text-2xl md:text-[40px] font-Lora tracking-tight">
             Explore Articles
           </h4>
-          <div className="block md:hidden bg-transparent px-6 py-5 text-base underline underline-offset-4 cursor-pointer decoration-warning">
+          <div className="block px-6 py-5 text-base underline bg-transparent cursor-pointer md:hidden underline-offset-4 decoration-warning">
             View All
           </div>
-            <Link  passHref 
-                  href={"/blog"}
+          <Link title="blog link" passHref
+            href={"/blog"}
             className={`hidden md:block rounded-full px-4 py-3 border border-warning bg-transparent hover:bg-primary text-center text-base duration-700 delay-75 font-urbanist capitalize w-max group`}
           >
             <div className={`h-6 w-full overflow-hidden`}>
@@ -43,7 +43,7 @@ export const ExploreCards = () => {
             </div>
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {blogData.explore.slice(0, count).map((list, idx) => (
             <BlogGridComponent key={idx} list={list} />
           ))}

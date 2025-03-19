@@ -12,7 +12,7 @@ const CategoryTypes = ({ lists }) => {
                 </h4>
                 <div className="flex flex-wrap items-center justify-center w-full gap-5 px-2.5 pt-8 pb-20 lg:justify-start">
                     {lists.map((list, idx) => (
-                        <Link
+                        <Link title="products link"
                             href={list.ref}
                             className="relative w-full max-w-sm space-y-8 group font-Montserrat"
                             key={idx}
@@ -20,6 +20,7 @@ const CategoryTypes = ({ lists }) => {
                             <div className="relative w-full h-56 overflow-hidden xl:h-72">
                                 <Image
                                     alt={`${list.menu} image`}
+                                    title={`${list.menu} image`}
                                     fill
                                     src={list.img}
                                     className="z-0 object-cover object-center transition-all duration-500 ease-linear transform brightness-75 group-hover:brightness-100 group-hover:scale-125"

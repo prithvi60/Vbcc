@@ -17,7 +17,7 @@ const FAQContent = () => {
             If you cannot find what you’re looking for, feel free to{" "}
             <span className="underline underline-offset-1">
               {" "}
-              <Link passHref href={"/contact"}>
+              <Link title="contact link" passHref href={"/contact"}>
                 contact us.
               </Link>
             </span>
@@ -27,6 +27,7 @@ const FAQContent = () => {
               fill
               src={ImgSrc}
               alt={"Faq Image"}
+              title={"Faq Image"}
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkY9gwEQACMwFRuhgGaQAAAABJRU5ErkJggg=="
               sizes="(min-width: 1040px) calc(60vw - 72px), (min-width: 820px) calc(100vw - 80px), calc(100vw - 40px)"
