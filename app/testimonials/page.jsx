@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <DefaultLayout>
-        <TestimonialHero />
+        {/* <TestimonialHero /> */}
         <TestimonialSections />
       </DefaultLayout>
     </main>

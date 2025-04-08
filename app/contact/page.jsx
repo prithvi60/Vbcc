@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <DefaultLayout>
         <ContactForm />
-        <Work />
+        {/* <Work /> */}
       </DefaultLayout>
     </main>
   );

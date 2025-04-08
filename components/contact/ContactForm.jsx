@@ -105,12 +105,12 @@ export const ContactForm = () => {
     }
   };
   return (
-    <section className="mt-20 space-y-10 text-warning font-Montserrat">
+    <section className="mt-20 space-y-10 text-warning font-Montserrat ">
       <div className="w-full h-full space-y-6 px-5 md:px-10 pt-10 md:pt-[60px] lg:px-[60px] lg:pt-20">
         <h2 className="text-5xl font-bold text-info tracking-wider md:text-[64px] xl:text-[80px] w-max">Contact Us</h2>
       </div>
       <div
-        className="relative w-full flex flex-col lg:flex-row justify-between text-white rounded-lg h-full lg:h-[85vh]"
+        className="relative w-full flex flex-col pb-10 md:pb-[60px] lg:pb-20 lg:flex-row justify-between text-white rounded-lg h-full lg:h-[85vh]"
       >
         <div className="relative flex items-center w-full h-full lg:w-2/5 lg:block">
           <div className="w-3/5 md:w-3/5 h-60 md:h-96 lg:w-full lg:h-[85vh] relative">

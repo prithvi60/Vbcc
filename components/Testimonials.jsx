@@ -1,34 +1,33 @@
 "use client";
 import Image from "next/image";
-import { IoMdClose, IoMdQuote } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { heroTestimonial, ourTestimonials } from "@/libs/otherPage";
+import { ourTestimonials } from "@/libs/otherPage";
 import {
-  FaPauseCircle,
   FaPlayCircle,
   FaQuoteLeft,
   FaQuoteRight,
 } from "react-icons/fa";
-import { useRef, useState } from "react";
-// import FileViewer from "react-file-viewer";
+import { useState } from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
-import dynamic from 'next/dynamic';
-const FileViewer = dynamic(
-  () => import('react-file-viewer'),
-  { ssr: false }
-);
+import dynamic from "next/dynamic";
+import { SpringModal2 } from "./landing page/Modal";
+import AccordionTestimonial from "./testimonial/Accordion";
+const FileViewer = dynamic(() => import("react-file-viewer"), { ssr: false });
 
 const Testimonials = () => {
   const path = usePathname();
-  const [playing, setPlaying] = useState({});
-  const videoRef = useRef(null);
-  const [products, setProducts] = useState("");
-  const [category, setCategory] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [products, setProducts] = useState(null);
+  const [category, setCategory] = useState(null);
   const [data, setData] = useState(ourTestimonials);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const [pdf, setPdf] = useState("");
+  const [pdf, setPdf] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isVideoOpen, setIsVideoOpen] = useState({
+    idx: 0,
+    video: "",
+  });
 
   const handleButtonClick = (val) => {
     setIsLoading(true);
@@ -43,52 +42,67 @@ const Testimonials = () => {
     ...new Set(ourTestimonials.map((item) => item.product)),
   ];
 
-  const uniqueCategories = [
-    ...new Set(ourTestimonials.map((item) => item.category)),
-  ];
+  const filteredProducts = ourTestimonials.reduce((acc, testimonial) => {
+    if (!acc[testimonial.category]) {
+      acc[testimonial.category] = [];
+    }
+    acc[testimonial.category].push(testimonial);
+    return acc;
+  }, {});
 
-  const filterData = (cat, prod) => {
-    let filteredData = ourTestimonials;
+  const filteredTestimonials = Object.entries(filteredProducts).map(([category, products]) => ({
+    category,
+    products: [...new Set(products.map(product => product.product))]
+  }));
+
+
+  // Filter function
+  const filterData = (cat = null, prod = null) => {
+    let result = ourTestimonials;
 
     if (cat && prod) {
       // Filter by both category and product
-      filteredData = ourTestimonials.filter(
-        (item) => item.category === cat && item.product === prod
+      result = ourTestimonials.filter(
+        item => item.category === cat && item.product === prod
       );
     } else if (cat) {
       // Filter by category only
-      filteredData = ourTestimonials.filter((item) => item.category === cat);
+      result = ourTestimonials.filter(item => item.category === cat);
     } else if (prod) {
       // Filter by product only
-      filteredData = ourTestimonials.filter((item) => item.product === prod);
+      result = ourTestimonials.filter(item => item.product === prod);
     }
 
-    setData(filteredData);
+    setData(result);
   };
 
   const handleCategory = (value) => {
     if (category === value) {
-      setCategory("");
-      filterData("", products);
+      setCategory(null);
+      setProducts(null);
+      filterData();
     } else {
       setCategory(value);
-      filterData(value, products);
+      setProducts(null);
+      filterData(value);
     }
   };
 
-  const handleProducts = (value) => {
-    if (products === value) {
-      setProducts("");
-      filterData(category, "");
+  const handleProducts = (value1, value2) => {
+    if (products === value2) {
+      setCategory(category);
+      setProducts(null);
+      filterData();
     } else {
-      setProducts(value);
-      filterData(category, value);
+      setCategory(value1);
+      setProducts(value2);
+      filterData(value1, value2);
     }
   };
 
   return (
-    <section className="relative w-full h-full bg-white text-primary font-Montserrat">
-      <div className="relative block w-full padding">
+    <section className="relative w-full h-full mt-20 bg-white text-primary font-Montserrat padding">
+      <div className="relative block w-full">
         <div
           className={`block space-y-12 md:space-y-16 ${path === "/testimonials" ? "pb-10 md:pb-20" : "py-10 md:py-20"}`}
         >
@@ -96,195 +110,8 @@ const Testimonials = () => {
             <h4 className="text-2xl font-semibold tracking-wide md:text-4xl xl:text-5xl text-info">
               Our Testimonials
             </h4>
-            <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-max flex justify-center items-center bg-[#E5EFFF] p-6 md:p-12 ">
-                <div className="relative overflow-hidden w-64 h-20 md:w-60 md:h-20 lg:h-28 lg:w-[350px]">
-                  <Image
-                    alt="VBCC Logo"
-                    title="VBCC Logo"
-                    src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
-              </div>
-              <div className="grid w-full grid-cols-2 md:grid-cols-4">
-                {/* {othersData.clientLogos2.map((item, idx) => ( */}
-                <div
-                  className={`w-full h-full place-content-center bg-[#E5EFFF] md:bg-primary`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`Anna University Logo`}
-                      title={`Anna University Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/AU.svg?updatedAt=1731397607533"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full place-content-center bg-primary md:bg-[#E5EFFF]`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`BHEL Logo`}
-                      title={`BHEL Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/bhel.svg?updatedAt=1731397608150"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full place-content-center bg-primary`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`IIT Madras Logo`}
-                      title={`IIT Madras Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/IIT-Madras.svg?updatedAt=1731397607544"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full place-content-center bg-[#E5EFFF]`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`IIT Hyderabad Logo`}
-                      title={`IIT Hyderabad Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/IITM%20Hyd%202.svg?updatedAt=1731397608270"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full place-content-center bg-[#E5EFFF]`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`ISRO Logo`}
-                      title={`ISRO Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/ISRO.svg?updatedAt=1731397607695"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full place-content-center bg-primary`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`VIT Logo`}
-                      title={`VIT Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/vit.svg?updatedAt=1731397607736"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full block md:hidden place-content-center bg-primary`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`CSIR Logo`}
-                      title={`CSIR Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full hidden md:block place-content-center bg-primary md:bg-[#E5EFFF]`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`DRDO Logo`}
-                      title={`DRDO Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full hidden md:block place-content-center bg-[#E5EFFF] md:bg-primary`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`CSIR Logo`}
-                      title={`CSIR Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/csir.svg?updatedAt=1731397607575"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`w-full h-full block md:hidden place-content-center bg-[#E5EFFF]`}
-                >
-                  <div
-                    className={`relative overflow-hidden size-28 lg:size-32 xl:size-40 mx-auto`}
-                  >
-                    <Image
-                      alt={`DRDO Logo`}
-                      title={`DRDO Logo`}
-                      src={
-                        "https://ik.imagekit.io/webibee/VBCC/client-logo/DRDO.svg?updatedAt=1731397607831"
-                      }
-                      fill
-                      className="object-cover object-center p-5"
-                    />
-                  </div>
-                </div>
-                {/* ))} */}
-              </div>
-            </div>
           </div>
-          <div className="flex gap-3 md:hidden">
+          <div className="hidden">
             <div className="flex overflow-hidden flex-col max-w-xs pb-5 mx-auto space-y-6 text-center rounded-[2rem] bg-primary w-1/2">
               <h4 className="flex items-center justify-center w-full gap-2 px-3 py-4 mx-auto text-sm font-semibold tracking-wide text-center text-white capitalize duration-700 delay-75 rounded-full shadow-md sm:text-base text-bold font-Montserrat md:px-6 bg-info">
                 categories
@@ -293,14 +120,14 @@ const Testimonials = () => {
                 </span>
               </h4>
               <div className="overflow-y-scroll max-h-[200px] thumbnail2">
-                {uniqueCategories.map((item, idx) => (
+                {filteredTestimonials.map((item, idx) => (
                   <button
                     key={idx}
                     onClick={() => handleCategory(item)}
                     type="submit"
-                    className={`block p-2 text-center duration-700 text-sm sm:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 capitalize w-full ${category === item ? "bg-secondary text-black shadow-lg" : "bg-primary text-white"}`}
+                    className={`block p-2 text-center duration-700 text-sm sm:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 capitalize w-full ${category === item.category ? "bg-secondary text-black shadow-lg" : "bg-primary text-white"}`}
                   >
-                    {item}
+                    {item.category}
                   </button>
                 ))}
               </div>
@@ -327,41 +154,13 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="!relative flex flex-col w-full h-full gap-8 md:flex-row items-start">
-            <div className="hidden md:block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 min-h-screen relative">
+            <div className="block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 h-full md:min-h-screen relative">
               <div className="w-full h-full md:!sticky md:top-16">
-                <div className="space-y-8 text-center">
-                  <h4 className="text-lg tracking-wide capitalize md:text-3xl text-info text-bold font-Montserrat">
+                <div className="pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
+                  <h4 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
                     categories
                   </h4>
-                  <div className="p-2 space-y-3">
-                    {uniqueCategories.map((item, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => handleCategory(item)}
-                        type="submit"
-                        className={`block px-3 md:px-6 py-4 group text-center duration-700 text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 shadow-md capitalize w-full rounded-full ${category === item ? "bg-secondary text-black" : "bg-primary hover:bg-info text-white"}`}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-8 text-center">
-                  <h4 className="text-lg tracking-wide capitalize md:text-3xl text-info text-bold font-Montserrat">
-                    products
-                  </h4>
-                  <div className="p-2 space-y-3 overflow-y-scroll max-h-[410px] thumbnail">
-                    {uniqueProducts.map((item, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => handleProducts(item)}
-                        type="submit"
-                        className={`block px-3 md:px-6 py-4 group text-center text-base duration-700 shadow-md font-urbanist font-semibold delay-75 mx-auto md:mx-0 capitalize w-full rounded-full ${products === item ? "bg-secondary text-black" : "bg-primary hover:bg-info text-white"}`}
-                      >
-                        {item}
-                      </button>
-                    ))}
-                  </div>
+                  <AccordionTestimonial data={filteredTestimonials} categoryList={category} productList={products} handleCategory={handleCategory} handleProducts={handleProducts} />
                 </div>
               </div>
             </div>
@@ -382,38 +181,20 @@ const Testimonials = () => {
                           <FaPlayCircle className="absolute text-3xl text-gray-300 cursor-pointer bottom-5 right-5" />
                         </div>
                       ) : (
-                        <>
-                          <video
-                            ref={videoRef}
-                            src={list.clientVideo}
-                            className="object-cover object-center w-full h-full rounded-[2rem]"
-                            onPlay={() =>
-                              setPlaying((prev) => ({ ...prev, [idx]: true }))
-                            }
-                            onPause={() =>
-                              setPlaying((prev) => ({ ...prev, [idx]: false }))
-                            }
-                          ></video>
-                          {!playing[idx] ? (
+                        <div className="relative w-full h-full bg-white rounded-[2rem]">
+                          <button type="submit">
                             <FaPlayCircle
                               className="absolute text-3xl cursor-pointer bottom-5 text-info right-5"
                               onClick={() => {
-                                const video =
-                                  document.getElementsByTagName("video")[idx];
-                                video.play();
+                                setIsVideoOpen({
+                                  idx,
+                                  video: list.clientVideo,
+                                });
+                                setIsOpen(true);
                               }}
                             />
-                          ) : (
-                            <FaPauseCircle
-                              className="absolute text-3xl cursor-pointer bottom-5 text-info right-5"
-                              onClick={() => {
-                                const video =
-                                  document.getElementsByTagName("video")[idx];
-                                video.pause();
-                              }}
-                            />
-                          )}
-                        </>
+                          </button>
+                        </div>
                       )}
                     </div>
                     <div className="p-6 space-y-5 md:px-10 md:py-6 bg-primary">
@@ -496,6 +277,13 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
+        )}
+        {isOpen && (
+          <SpringModal2
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            video={isVideoOpen.video}
+          />
         )}
       </div>
       {path !== "/testimonials" && (

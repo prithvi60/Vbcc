@@ -33,7 +33,7 @@ const montserrat = Montserrat({
 });
 // ADD verifcation code and measurement id when account are created
 export const metadata = {
-  title: "VBCC High temperature Instruments",
+  title: "VBCC High Temperature Instruments",
   description: "VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings.",
   verification: {
     google: "G-7T9F0FKPQM",

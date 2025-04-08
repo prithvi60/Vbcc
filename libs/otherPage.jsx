@@ -712,8 +712,17 @@ export const ourTestimonials = [
         pdf: "/TestimonialsPDF/CSIR-Planetary-Ball-Mill.pdf",
     },
     {
-        product: "Planetary Ball Mill and Dilatometer",
-        category: "Material Processing Equipment and Analytical Instruments",
+        product: "Planetary Ball Mill",
+        category: "Material Processing Equipment",
+        clientLogo: "https://ik.imagekit.io/webibee/VBCC/Testimonials/Logos/Anna%20university.jpg?updatedAt=1743078164389",
+        clientVideo: "",
+        aboutClient: `Dr. P. Manohar <br/>Professor & Head <br/>Department of Ceramic Technology <br/>Anna University`,
+        review: "I am happy to say that VBCC has developed the units indigenously at an affordable cost that is comparatively less than imported ones. Now these units are working satisfactorily, and the service rendered by them has deserved great appreciation, which enabled us to complete our research work. These instruments, the planetary ball mill and dilatometer, are very useful for our Ph.D. scholars, MTech, and BTech students for their project work.",
+        pdf: "/TestimonialsPDF/Anna-University-Planetary-Ball-Mill-Dilatometer.pdf",
+    },
+    {
+        product: "Dilatometer",
+        category: "Analytical Instruments",
         clientLogo: "https://ik.imagekit.io/webibee/VBCC/Testimonials/Logos/Anna%20university.jpg?updatedAt=1743078164389",
         clientVideo: "",
         aboutClient: `Dr. P. Manohar <br/>Professor & Head <br/>Department of Ceramic Technology <br/>Anna University`,
@@ -800,5 +809,15 @@ export const ourTestimonials = [
         aboutClient: `K-Tech Ceramics <br/>Ceramic Manufacturer <br/>Virudhachalam, Tamil Nadu`,
         review: "The performance of the Top Hat Kiln purchased from VB Ceramics Consultants for sintering ceramic fuses and other ceramics has been satisfactory, and the after-sales support has been equally good.",
         pdf: "/TestimonialsPDF/K-Tech-Ceramics-Top-Hat-Kiln.pdf",
+    },
+    {
+        product: "Hydraulic Press",
+        category: "Material Processing Equipment",
+        clientLogo: "https://ik.imagekit.io/webibee/VBCC/Testimonials/Logos/IIT%20madras.jpg?updatedAt=1743078164105",
+        clientVideo: "",
+        aboutClient: `Dr Prashant Rawat <br/>Assistant Professor <br/>Department of Aerospace Engineering
+<br/>Indian Institute of Technology Madras`,
+        review: "I would like to extend our sincere appreciation for the 10 Ton Motorized Hydraulic Press provided by VBCC High Temperature Instruments Pvt Ltd. Its robust design and smooth operation have greatly facilitated our work, benefiting several scholars in their studies and experiments. We deeply appreciate the effort and expertise your team has put into designing and delivering such high-quality equipment.",
+        pdf: "/TestimonialsPDF/IIT-Madras-Hydraulic-Press.pdf",
     },
 ]
