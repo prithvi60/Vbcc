@@ -8,6 +8,8 @@ import {
 } from "react-icons/md";
 import Loader from "../Loader";
 import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
+import { FaPlayCircle } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
 export const Modal1 = ({ title, styles, type, pageType, page, query }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -147,7 +149,6 @@ export const SpringModal = ({
       page: page,
     };
 
-
     const zohoData = {
       data: [
         {
@@ -250,7 +251,9 @@ export const SpringModal = ({
                   <>
                     {query !== "dental" ? (
                       <p className="hidden text-sm md:text-base md:block">
-                        Our dedicated sales team will reach out to you to discuss how VBCC can elevate your business. Get ready to experience unparalleled quality and support!
+                        Our dedicated sales team will reach out to you to
+                        discuss how VBCC can elevate your business. Get ready to
+                        experience unparalleled quality and support!
                       </p>
                     ) : (
                       <p className="hidden text-sm md:text-base md:block">
@@ -359,6 +362,47 @@ export const SpringModal = ({
                   />
                 </div>
               </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+};
+
+export const SpringModal2 = ({ isOpen, setIsOpen, video }) => {
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 !z-[9999] grid w-full h-full p-8 cursor-pointer bg-blue-900/50 backdrop-blur place-items-center font-Montserrat"
+        >
+          <motion.div
+            initial={{ scale: 0, rotate: "12.5deg" }}
+            animate={{ scale: 1, rotate: "0deg" }}
+            exit={{ scale: 0, rotate: "0deg" }}
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full max-w-xl text-white md:bg-white rounded-lg shadow-xl cursor-default md:max-w-5xl max-h-[520px] md:max-h-fit "
+          >
+            <div className="relative z-10 flex flex-col items-center justify-center p-6 md:flex-row md:items-start bg-primary">
+              <video
+                id="video"
+                src={video}
+                autoPlay
+                controls
+                controlsList="nodownload"
+                className="object-cover object-center w-full h-full rounded-[2rem]"
+              ></video>
+              <button
+                className="absolute z-10 p-2 text-sm text-white bg-red-500 rounded-full cursor-pointer -top-11 md:-top-10 xl:top-0 right-2 xl:-right-14 hover:bg-red-600 animate-pulse"
+                onClick={() => setIsOpen(false)}
+              >
+                <IoMdClose className="text-lg md:text-2xl" />
+              </button>
             </div>
           </motion.div>
         </motion.div>
