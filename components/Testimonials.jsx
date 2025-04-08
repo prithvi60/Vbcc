@@ -8,8 +8,7 @@ import {
   FaQuoteLeft,
   FaQuoteRight,
 } from "react-icons/fa";
-import { useState } from "react";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { SpringModal2 } from "./landing page/Modal";
 import AccordionTestimonial from "./testimonial/Accordion";
@@ -28,6 +27,39 @@ const Testimonials = () => {
     idx: 0,
     video: "",
   });
+  const [isMobile, setIsMobile] = useState(false);
+  const [cardContainerHeight, setCardContainerHeight] = useState(0);
+  const cardContainerRef = useRef(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth >= 768);
+    };
+
+    const updateHeight = () => {
+      if (cardContainerRef.current) {
+        setCardContainerHeight(cardContainerRef.current.offsetHeight);
+      }
+    };
+
+    // Initial setup
+    checkMobile();
+    updateHeight();
+
+    // Event listeners
+    window.addEventListener('resize', () => {
+      checkMobile();
+      updateHeight();
+    });
+
+    return () => {
+      window.removeEventListener('resize', () => {
+        checkMobile();
+        updateHeight();
+      });
+    };
+  }, [data]);
+
 
   const handleButtonClick = (val) => {
     setIsLoading(true);
@@ -38,9 +70,6 @@ const Testimonials = () => {
     }, 1500);
   };
 
-  const uniqueProducts = [
-    ...new Set(ourTestimonials.map((item) => item.product)),
-  ];
 
   const filteredProducts = ourTestimonials.reduce((acc, testimonial) => {
     if (!acc[testimonial.category]) {
@@ -111,57 +140,15 @@ const Testimonials = () => {
               Our Testimonials
             </h4>
           </div>
-          <div className="hidden">
-            <div className="flex overflow-hidden flex-col max-w-xs pb-5 mx-auto space-y-6 text-center rounded-[2rem] bg-primary w-1/2">
-              <h4 className="flex items-center justify-center w-full gap-2 px-3 py-4 mx-auto text-sm font-semibold tracking-wide text-center text-white capitalize duration-700 delay-75 rounded-full shadow-md sm:text-base text-bold font-Montserrat md:px-6 bg-info">
-                categories
-                <span>
-                  <IoMdArrowDropdown className="text-sm text-white" />
-                </span>
-              </h4>
-              <div className="overflow-y-scroll max-h-[200px] thumbnail2">
-                {filteredTestimonials.map((item, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleCategory(item)}
-                    type="submit"
-                    className={`block p-2 text-center duration-700 text-sm sm:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 capitalize w-full ${category === item.category ? "bg-secondary text-black shadow-lg" : "bg-primary text-white"}`}
-                  >
-                    {item.category}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div className="flex overflow-hidden flex-col max-w-xs pb-5 mx-auto space-y-6 text-center rounded-[2rem] h-fit bg-primary w-1/2">
-              <h4 className="flex items-center justify-center w-full gap-2 px-3 py-4 mx-auto text-sm font-semibold tracking-wide text-center text-white capitalize duration-700 delay-75 rounded-full shadow-md sm:text-base text-bold font-Montserrat md:px-6 bg-info">
-                products
-                <span>
-                  <IoMdArrowDropdown className="text-sm text-white" />
-                </span>
-              </h4>
-              <div className="overflow-y-scroll max-h-[200px] thumbnail2">
-                {uniqueProducts.map((item, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleProducts(item)}
-                    type="submit"
-                    className={`block p-2 text-center duration-700 text-sm sm:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 capitalize w-full ${products === item ? "bg-secondary text-black shadow-lg" : "bg-primary text-white"}`}
-                  >
-                    {item}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
           <div className="!relative flex flex-col w-full h-full gap-8 md:flex-row items-start">
-            <div className="block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 h-full md:min-h-screen relative">
-              <div className="w-full h-full md:!sticky md:top-16">
-                <div className="pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
-                  <h4 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
-                    categories
-                  </h4>
-                  <AccordionTestimonial data={filteredTestimonials} categoryList={category} productList={products} handleCategory={handleCategory} handleProducts={handleProducts} />
-                </div>
+            <div className={`block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 relative`} style={{
+              height: isMobile && cardContainerHeight ? `${cardContainerHeight}px` : 'auto'
+            }}>
+              <div className="w-full md:!sticky md:top-16 pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
+                <h4 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
+                  categories
+                </h4>
+                <AccordionTestimonial data={filteredTestimonials} categoryList={category} productList={products} handleCategory={handleCategory} handleProducts={handleProducts} />
               </div>
             </div>
             {data.length === 0 ? (
@@ -169,7 +156,7 @@ const Testimonials = () => {
                 No testimonials are available at this time.
               </p>
             ) : (
-              <div className="w-full h-full gap-5 mx-auto space-y-8 md:w-[70%] xl:w-4/5 columns-1 md:columns-2 xl:columns-3 group">
+              <div ref={cardContainerRef} className="w-full h-full gap-5 mx-auto space-y-8 md:w-[70%] xl:w-4/5 columns-1 md:columns-2 xl:columns-3 group">
                 {data.map((list, idx) => (
                   <div
                     key={idx}
