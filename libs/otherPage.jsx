@@ -604,7 +604,16 @@ export const ourTestimonials = [
         pdf: "",
     },
     {
-        product: "Muffle Furnace and Vacuum Oven",
+        product: "Muffle Furnace",
+        category: "Laboratory Furnace",
+        clientLogo: "https://ik.imagekit.io/webibee/VBCC/Testimonials/Logos/CSIR.jpg?updatedAt=1743142178454",
+        clientVideo: "",
+        aboutClient: `Dr. N. Lakshminarasimhan <br/>Scientist <br/>Functional Materials Division <br/>CSIR - Central Electrochemical Research Institute`,
+        review: "The performance of muffle furnace and vacuum oven manufactured by VBCC Chennai is excellent. I am extremely happy with the after safe service rendered by the manufacturer. They are on time in attending and providing solutions to the problems.",
+        pdf: "/TestimonialsPDF/CSIR-Muffle-Furnace-Vacuum-Oven.pdf",
+    },
+    {
+        product: "Vacuum Oven",
         category: "Laboratory Furnace",
         clientLogo: "https://ik.imagekit.io/webibee/VBCC/Testimonials/Logos/CSIR.jpg?updatedAt=1743142178454",
         clientVideo: "",
@@ -647,6 +656,15 @@ export const ourTestimonials = [
         aboutClient: `D.G. Harris Samuel <br/>Professor <br/>Hindustan University`,
         review: "The performance of the high-temperature box furnace (1600°C) purchased from VB Ceramics Consultants for sintering and testing ceramic materials has been satisfactory, and the after-sales support has been equally good.",
         pdf: "/TestimonialsPDF/Hindustan-University-Box-Furnace.pdf",
+    },
+    {
+        product: "Box Furnace",
+        category: "Laboratory Furnace",
+        clientLogo: "https://ik.imagekit.io/webibee/VBCC/Testimonials/Logos/bits.png?updatedAt=1745214188009",
+        clientVideo: "",
+        aboutClient: `Dhananjay M. Kulkarni <br/>Senior Professor <br/>Dept. of Mechanical Engineering <br/>BITS Pilani K K Birla Goa Campus`,
+        review: "The VBCC Box Furnace (1600°C) has been an invaluable asset to the Mechanical Engineering Department at BITS Pilani. It offers excellent thermal stability, uniform temperature distribution, and precise control, making it ideal for high-temperature processing and sintering applications. Moreover, VBCC’s customer support has been prompt, and we highly recommend the VBCC Box Furnace for advanced material processing in demanding research environments.",
+        pdf: "/TestimonialsPDF/VBCC-BITS.pdf",
     },
     {
         product: "Box Furnace",
