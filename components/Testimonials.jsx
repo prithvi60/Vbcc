@@ -3,11 +3,7 @@ import Image from "next/image";
 import { IoMdClose } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import { ourTestimonials } from "@/libs/otherPage";
-import {
-  FaPlayCircle,
-  FaQuoteLeft,
-  FaQuoteRight,
-} from "react-icons/fa";
+import { FaPlayCircle, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { SpringModal2 } from "./landing page/Modal";
@@ -47,19 +43,18 @@ const Testimonials = () => {
     updateHeight();
 
     // Event listeners
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       checkMobile();
       updateHeight();
     });
 
     return () => {
-      window.removeEventListener('resize', () => {
+      window.removeEventListener("resize", () => {
         checkMobile();
         updateHeight();
       });
     };
   }, [data]);
-
 
   const handleButtonClick = (val) => {
     setIsLoading(true);
@@ -70,7 +65,6 @@ const Testimonials = () => {
     }, 1500);
   };
 
-
   const filteredProducts = ourTestimonials.reduce((acc, testimonial) => {
     if (!acc[testimonial.category]) {
       acc[testimonial.category] = [];
@@ -79,11 +73,12 @@ const Testimonials = () => {
     return acc;
   }, {});
 
-  const filteredTestimonials = Object.entries(filteredProducts).map(([category, products]) => ({
-    category,
-    products: [...new Set(products.map(product => product.product))]
-  }));
-
+  const filteredTestimonials = Object.entries(filteredProducts).map(
+    ([category, products]) => ({
+      category,
+      products: [...new Set(products.map((product) => product.product))],
+    })
+  );
 
   // Filter function
   const filterData = (cat = null, prod = null) => {
@@ -92,14 +87,14 @@ const Testimonials = () => {
     if (cat && prod) {
       // Filter by both category and product
       result = ourTestimonials.filter(
-        item => item.category === cat && item.product === prod
+        (item) => item.category === cat && item.product === prod
       );
     } else if (cat) {
       // Filter by category only
-      result = ourTestimonials.filter(item => item.category === cat);
+      result = ourTestimonials.filter((item) => item.category === cat);
     } else if (prod) {
       // Filter by product only
-      result = ourTestimonials.filter(item => item.product === prod);
+      result = ourTestimonials.filter((item) => item.product === prod);
     }
 
     setData(result);
@@ -141,14 +136,26 @@ const Testimonials = () => {
             </h4>
           </div>
           <div className="!relative flex flex-col w-full h-full gap-8 md:flex-row items-start">
-            <div className={`block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 relative`} style={{
-              height: isMobile && cardContainerHeight ? `${cardContainerHeight}px` : 'auto'
-            }}>
+            <div
+              className={`block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 relative`}
+              style={{
+                height:
+                  isMobile && cardContainerHeight
+                    ? `${cardContainerHeight}px`
+                    : "auto",
+              }}
+            >
               <div className="w-full md:!sticky md:top-16 pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
                 <h4 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
                   categories
                 </h4>
-                <AccordionTestimonial data={filteredTestimonials} categoryList={category} productList={products} handleCategory={handleCategory} handleProducts={handleProducts} />
+                <AccordionTestimonial
+                  data={filteredTestimonials}
+                  categoryList={category}
+                  productList={products}
+                  handleCategory={handleCategory}
+                  handleProducts={handleProducts}
+                />
               </div>
             </div>
             {data.length === 0 ? (
@@ -156,18 +163,17 @@ const Testimonials = () => {
                 No testimonials are available at this time.
               </p>
             ) : (
-              <div ref={cardContainerRef} className="w-full h-full gap-5 mx-auto space-y-8 md:w-[70%] xl:w-4/5 columns-1 md:columns-2 xl:columns-3 group">
+              <div
+                ref={cardContainerRef}
+                className="w-full h-full gap-5 mx-auto space-y-8 md:w-[70%] xl:w-4/5 columns-1 md:columns-2 xl:columns-3 group"
+              >
                 {data.map((list, idx) => (
                   <div
                     key={idx}
                     className="flex flex-col w-full h-full overflow-hidden transition-all duration-500 ease-in-out transform shadow-xl select-none rounded-[3rem] shadow-black/50 [&:nth-child(3n+3)]:flex-col-reverse   xl:[&:nth-child(2n+3)]:flex-col-reverse  break-inside-avoid bg-primary"
                   >
-                    <div className="relative w-full h-48">
-                      {list.clientVideo === "" ? (
-                        <div className="relative w-full h-full bg-white rounded-[2rem]">
-                          <FaPlayCircle className="absolute text-3xl text-gray-300 cursor-pointer bottom-5 right-5" />
-                        </div>
-                      ) : (
+                    {list.clientVideo !== "" && (
+                      <div className="relative w-full h-48">
                         <div className="relative w-full h-full bg-white rounded-[2rem]">
                           <button type="submit">
                             <FaPlayCircle
@@ -182,8 +188,8 @@ const Testimonials = () => {
                             />
                           </button>
                         </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
                     <div className="p-6 space-y-5 md:px-10 md:py-6 bg-primary">
                       <div className="relative mx-auto overflow-hidden border-4 rounded-full size-32 border-info">
                         <Image

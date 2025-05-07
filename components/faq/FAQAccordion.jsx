@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import othersData from "@/libs/others.json";
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
+import { Accordion, AccordionItem } from "@heroui/accordion";
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 

@@ -1,5 +1,5 @@
 "use client";
-import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/breadcrumbs";
+import { BreadcrumbItem, Breadcrumbs } from "@heroui/breadcrumbs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -20,7 +20,7 @@ const BreadCrumb = () => {
     let BCPath = "";
 
     return (
-        <Breadcrumbs
+        (<Breadcrumbs
             className="absolute left-5 top-5 md:top-10 md:left-10 !backdrop-blur-md px-2.5 py-1 rounded-md"
             itemClasses={{
                 item: [
@@ -37,14 +37,14 @@ const BreadCrumb = () => {
             {pathNames.map((list, idx) => {
                 BCPath += `/${list}`;
                 return (
-                    <BreadcrumbItem key={`${idx}-${list}`}>
+                    (<BreadcrumbItem key={`${idx}-${list}`}>
                         <Link title="back link" href={BCPath}>
                             <h5>{list.replace(/_/g, " ")}</h5>
                         </Link>
-                    </BreadcrumbItem>
+                    </BreadcrumbItem>)
                 );
             })}
-        </Breadcrumbs>
+        </Breadcrumbs>)
     );
 };
 

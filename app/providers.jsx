@@ -2,12 +2,12 @@
 'use client'
 import * as React from "react";
 
-import {NextUIProvider} from "@nextui-org/system";
+import {HeroUIProvider} from "@heroui/system";
 
 export function Providers({children}) {
   return (
-    <NextUIProvider>
+    <HeroUIProvider>
       {children}
-    </NextUIProvider>
+    </HeroUIProvider>
   );
 }
