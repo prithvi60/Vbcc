@@ -18,8 +18,6 @@ const ImgSlider = [
   { img: "https://ik.imagekit.io/webibee/VBCC/HWD3.png", title: "Engineering" },
 ];
 
-const loadFeatures = () =>
-  import("@/libs/framer_feature").then((res) => res.default);
 
 const HowWeDo = () => {
   const [slide, setSlide] = useState(0);

@@ -39,7 +39,7 @@ const ProductDetails = ({ keys, specs, headers, page, headers2, specs2, path }) 
       )}
       {activeTab === "Specifications" && (
         <>
-          {page === "lab" || path === "Vacuum_Hot_Press" ? (
+          {(page === "lab" || path === "Vacuum_Hot_Press" || path === "Dilatometer" || path === "Reverse_Thermal_Expansion_System") ? (
             <>
               <Tablet headers={headers} data={specs} />
               {headers2 && specs2 && (

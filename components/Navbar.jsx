@@ -93,8 +93,8 @@ const NavBar = () => {
                       >
                         <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-20"></div>
                         <ul
-                          className={`absolute flex items-center gap-10 xl:gap-5 top-20 xl:top-20 ${path.startsWith("/categories/") || path === "/"
-                            ? "left-32 xl:left-20"
+                          className={`absolute flex items-center gap-3.5 xl:gap-5 top-16 xl:top-20 ${path.startsWith("/categories/") || path === "/"
+                            ? "left-20 xl:left-20"
                             : "lg:left-20 xl:left-80 2xl:left-[380px]"
                             }`}
                         >
@@ -102,10 +102,10 @@ const NavBar = () => {
                             <li className="relative" key={idx}>
                               <Link title="menu"
                                 href={item.ref}
-                                className="flex flex-row h-full gap-4 xl:flex-col"
+                                className="flex flex-row h-full gap-2 xl:gap-4 lg:flex-col group"
                                 onClick={() => setIsHover(false)}
                               >
-                                <div className="relative overflow-hidden size-12 xl:size-20 !z-[1000] rounded-md">
+                                <div className="relative overflow-hidden size-10 xl:size-20 !z-[1000] rounded-md group-hover:scale-105 transition-all duration-300">
                                   <Image
                                     alt={item.menu}
                                     title={item.menu}
@@ -115,13 +115,13 @@ const NavBar = () => {
                                   />
                                 </div>
                                 <div
-                                  className={`text-base font-medium tracking-wide decoration-info capitalize relative !z-[1000] text-white`}
+                                  className={`text-sm xl:text-base font-medium tracking-wide decoration-info capitalize relative !z-[1000] text-white`}
                                 >
                                   {item.menu}
                                   <p className="flex items-center gap-2">
                                     {item.menu2}
                                     <span>
-                                      <MdDoubleArrow className="text-2xl text-info" />
+                                      <MdDoubleArrow className="text-lg xl:text-2xl text-info" />
                                     </span>
                                   </p>
                                 </div>

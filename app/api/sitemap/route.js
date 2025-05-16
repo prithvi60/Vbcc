@@ -1,4 +1,5 @@
 import {
+  AnalyticalInstrumentsList,
   DentalProductsList,
   FunsaiProductsList,
   LabEquiptProductsList,
@@ -48,6 +49,11 @@ export async function GET() {
     },
     {
       url: "/categories/lab_equipment",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/categories/analytical_instruments",
       changefreq: "weekly",
       priority: 0.9,
     },
@@ -101,7 +107,11 @@ export async function GET() {
       OshidashiProductsList,
       "/categories/material_processing_equipment/Extruders"
     );
-
+    addProductLinks(
+      AnalyticalInstrumentsList,
+      "/categories/analytical_instruments"
+    );
+    
     const hostname = "https://vbccinstruments.com";
     if (!hostname) {
       throw new Error("Hostname is required");

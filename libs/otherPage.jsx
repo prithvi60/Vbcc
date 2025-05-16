@@ -169,6 +169,35 @@ export const heroSlider = [
 
         ],
     },
+    {
+        bgImg:
+            "https://ik.imagekit.io/webibee/VBCC/AI-hero.jpg?updatedAt=1747369970406",
+        categories: "Analytical Instruments",
+        type: "analytical_instruments",
+        products: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/front.png?updatedAt=1747312480958",
+                productName: "Dilatometer",
+                type: "AI PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/front.png?updatedAt=1747312470141",
+                productName: "Reverse Thermal Expansion System",
+                type: "AI PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/front.png?updatedAt=1747312467652",
+                productName: "Four-Probe Gas Sensor Testing Unit",
+                type: "AI PRODUCTS",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/front.png?updatedAt=1747312460313",
+                productName: "Thermal Conductivity Apparatus",
+                type: "AI PRODUCTS",
+            },
+
+        ],
+    },
 ];
 
 export const navLinks = [
@@ -200,6 +229,12 @@ export const navLinks = [
                 menu: "lab",
                 menu2: "equipment",
                 ref: "/categories/lab_equipment",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/AE%20nav.jpg?updatedAt=1747369876397",
+                menu: "analytical",
+                menu2: "instruments",
+                ref: "/categories/analytical_instruments",
             },
         ],
     },
@@ -249,6 +284,13 @@ export const exploreList = [
         title: "Lab Equipment",
         desc: "Over 20+ products for Material Processing Equipment",
         ref: "/categories/lab_equipment",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/AE%20nav.jpg?updatedAt=1747369876397",
+        icon: "https://ik.imagekit.io/webibee/VBCC/homepage/analytical.svg?updatedAt=1747393655663",
+        title: "Analytical Instruments",
+        desc: "Over 20+ products for Analytical Instruments",
+        ref: "/categories/analytical_instruments",
     },
 ];
 
@@ -308,6 +350,11 @@ export const data = [
         img: "https://ik.imagekit.io/webibee/VBCC/homepage/Lab%20Equipment%20Category%20Image.jpg?updatedAt=1737615854520",
         menu: "lab equipment",
         ref: "/categories/lab_equipment",
+    },
+    {
+        img: "https://ik.imagekit.io/webibee/VBCC/AE%20nav.jpg?updatedAt=1747369876397",
+        menu: "analytical instruments",
+        ref: "/categories/analytical_instruments",
     },
 ];
 

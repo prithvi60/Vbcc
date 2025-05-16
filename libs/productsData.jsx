@@ -4229,7 +4229,7 @@ export const LabEquiptProductsList = [
                     "Includes a laptop and software for enhanced functionality.",
             },
         ],
-        specs: [
+        spec: [
             { label: "Shell Size", value: "700 x 700 x 900 mm" },
             { label: "Shell Construction", value: "M.S. Body & Angle structure, powder coated" },
             { label: "Door Construction", value: "Acrylic door (top), Metal door with glass (bottom)" },
@@ -6334,6 +6334,524 @@ export const OshidashiProductsList = [
         slug: "Extruders",
     },
 ];
+
+export const AnalyticalInstrumentsList = [
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/isometric.png?updatedAt=1747312486332",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/front.png?updatedAt=1747312480958",
+                alt: "High-precision dilatometer for measuring dimensional changes in materials during thermal cycles for quality assurance.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/left.png?updatedAt=1747312487482",
+                alt: "A specialized dilatometer that quantify thermal expansion in various materials, aiding in quality assurance and material characterization.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/right.png?updatedAt=1747312488139",
+                alt: "VBCC's dilatometer designed for high-temperature measurements up to 1600°C, showcasing advanced thermal analysis technology.",
+            },
+        ],
+        productName: "Dilatometer",
+        metaTitle: "Dilatometer up to 1600°C",
+        metaDesc:
+            "Explore our high-precision dilatometers for measuring dimensional changes in materials during thermal cycles—essential for material characterization and quality assurance.",
+        desc: "We specialize in the development of high-precision dilatometers designed to quantify dimensional variations in materials in response to thermal cycles, capable of measuring changes at temperatures up to 1600°C. These instruments provide essential data for analysing thermal expansion coefficients, making them indispensable for material characterization and quality assurance. Our dilatometers are ideal for evaluating a wide range of materials, including advanced and traditional ceramics, metallic alloys, vitreous materials, and polymers.",
+        keys: [
+            {
+                label: "High Temperature Range",
+                value:
+                    "up to 1600°C",
+            },
+            {
+                label: "Precision Measurement",
+                value:
+                    "1 micron accuracy (German LVDT - Massetron",
+            },
+            {
+                label: "Robust Construction",
+                value:
+                    "Double-walled MS body with powder coat finish",
+            },
+            {
+                label: "Smooth Furnace Movement",
+                value:
+                    "Linear bearings & stainless steel rail",
+            },
+            {
+                label: "Superior Insulation",
+                value:
+                    "Low thermal mass zirconia fibre board",
+            },
+            {
+                label: "Advanced Control",
+                value:
+                    "TAIE PID controller + B-Type thermocouple",
+            },
+            {
+                label: "Smart Interface",
+                value:
+                    "LabVIEW-based software, PC & inkjet printer included",
+            },
+            {
+                label: "Safety Assured",
+                value:
+                    "Phase angle thyristor control with input/output fuses",
+            },
+        ],
+        headers: [
+            "Parameter",
+            "Dilatometer 1200",
+            "Dilatometer 1400",
+            "Dilatometer 1600"
+        ],
+        spec: [
+            {
+                "Parameter": "Max Temperature",
+                "Dilatometer 1200": "1200°C",
+                "Dilatometer 1400": "1400°C",
+                "Dilatometer 1600": "1600°C"
+            },
+            {
+                "Parameter": "Tube Material",
+                "Dilatometer 1200": "Quartz",
+                "Dilatometer 1400": "Recrystallized Alumina",
+                "Dilatometer 1600": "Recrystallized Alumina"
+            },
+            {
+                "Parameter": "Heating Element",
+                "Dilatometer 1200": "MOSi₂",
+                "Dilatometer 1400": "MOSi₂",
+                "Dilatometer 1600": "MOSi₂"
+            },
+            {
+                "Parameter": "Temp Control",
+                "Dilatometer 1200": "TAIE PID Controller",
+                "Dilatometer 1400": "TAIE PID Controller",
+                "Dilatometer 1600": "TAIE PID Controller"
+            },
+            {
+                "Parameter": "Expansion Measurement",
+                "Dilatometer 1200": "LVDT, 1 Micron Accuracy",
+                "Dilatometer 1400": "LVDT, 1 Micron Accuracy",
+                "Dilatometer 1600": "LVDT, 1 Micron Accuracy"
+            },
+            {
+                "Parameter": "Measuring Range",
+                "Dilatometer 1200": "0–2000 Microns",
+                "Dilatometer 1400": "0–2000 Microns",
+                "Dilatometer 1600": "0–2000 Microns"
+            },
+            {
+                "Parameter": "Sample Size",
+                "Dilatometer 1200": "10 × 10 × 40 mm ±2 mm",
+                "Dilatometer 1400": "10 × 10 × 40 mm ±2 mm",
+                "Dilatometer 1600": "10 × 10 × 40 mm ±2 mm"
+            },
+            {
+                "Parameter": "Software",
+                "Dilatometer 1200": "LabVIEW Interface",
+                "Dilatometer 1400": "LabVIEW Interface",
+                "Dilatometer 1600": "LabVIEW Interface"
+            }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/Dialometer.pdf?updatedAt=1747312476224",
+        slug: "analytical",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/isometric.png?updatedAt=1747312470200",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/front.png?updatedAt=1747312470141",
+                alt: "A reliable reverse thermal expansion system for the precise measurement of dimensional changes in metals, ceramics, and construction materials with exceptional accuracy.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png?updatedAt=1747312470009",
+                alt: "VBCC's Reverse thermal expansion features 1-micron precision, a vertical furnace, and operates safely at temperatures up to 1600°C",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/right.png?updatedAt=1747312468209",
+                alt: "Image of a reverse thermal expansion system that allows upright sample positioning, enhancing the efficient measurement of thermal changes in various materials.",
+            },
+        ],
+        productName: "Reverse Thermal Expansion System",
+        metaTitle: "Reverse Thermal Expansion System - VBCC",
+        metaDesc:
+            "Our Reverse Thermal Expansion Systems are meticulously designed to analyse shrinkage behaviour during controlled cooling, and phase transitions for advanced material design and thermal shock studies.",
+        desc: "Our Reverse Thermal Expansion System is engineered for easy upright placement of samples on the bottom plate, eliminating the need for additional support. This setup is particularly well-suited for analysing shrinkage behaviour during controlled cooling across various forms of matter, including solids, liquids, powders, and pastes. It is ideal for conducting thermal shock studies, assessing the strength and durability of metals, evaluating the thermal expansion and contraction of construction materials, and determining the characteristic temperatures of ceramic materials.",
+        keys: [
+            {
+                label: "High Temperature Range",
+                value:
+                    "up to 1600°C",
+            },
+            {
+                label: "TAIE PID Control",
+                value:
+                    "accuracy with B-Type thermocouple",
+            },
+            {
+                label: "Ultra-Precision",
+                value:
+                    "1 micron resolution with German LVDT (Massetron",
+            },
+            {
+                label: "Smooth Furnace Movement",
+                value:
+                    "Linear bearings & stainless steel rail",
+            },
+            {
+                label: "Smart Movement Design",
+                value:
+                    "Linear-guided vertical furnace lifting system",
+            },
+            {
+                label: "Robust & Compact",
+                value:
+                    "Powder-coated MS body with double-wall insulation",
+            },
+            {
+                label: "LabVIEW Interface",
+                value:
+                    "Seamless data acquisition and analysis",
+            },
+            {
+                label: "Vertical Measurement System",
+                value:
+                    "Ideal for gravity-assisted expansion detection",
+            },
+            {
+                label: "Safe Operation",
+                value:
+                    "Thyristor-based control with full fuse protection",
+            },
+            {
+                label: "PC & Printer Included",
+                value:
+                    "Fully digital output system for reports",
+            },
+        ],
+        headers: [
+            "Parameter",
+            "RTE 1200",
+            "RTE 1400",
+            "RTE 1600"
+        ],
+        spec: [
+            {
+                "Parameter": "Max Temperature",
+                "RTE 1200": "1200°C",
+                "RTE 1400": "1400°C",
+                "RTE 1600": "1600°C"
+            },
+            {
+                "Parameter": "Tube Material",
+                "RTE 1200": "Quartz",
+                "RTE 1400": "Recrystallized Alumina",
+                "RTE 1600": "Recrystallized Alumina"
+            },
+            {
+                "Parameter": "Heating Element",
+                "RTE 1200": "MOSi₂",
+                "RTE 1400": "MOSi₂",
+                "RTE 1600": "MOSi₂"
+            },
+            {
+                "Parameter": "Temp Control system",
+                "RTE 1200": "TAIE PID + B-type TC",
+                "RTE 1400": "TAIE PID + B-type TC",
+                "RTE 1600": "TAIE PID + B-type TC"
+            },
+            {
+                "Parameter": "Expansion Measurement",
+                "RTE 1200": "LVDT (1 Micron Accuracy)",
+                "RTE 1400": "LVDT (1 Micron Accuracy)",
+                "RTE 1600": "LVDT (1 Micron Accuracy)"
+            },
+            {
+                "Parameter": "Measuring Range",
+                "RTE 1200": "0–2000 Microns",
+                "RTE 1400": "0–2000 Microns",
+                "RTE 1600": "0–2000 Microns"
+            },
+            {
+                "Parameter": "Sample Size",
+                "RTE 1200": "10 × 10 × 40 mm ±2 mm",
+                "RTE 1400": "10 × 10 × 40 mm ±2 mm",
+                "RTE 1600": "10 × 10 × 40 mm ±2 mm"
+            },
+            {
+                "Parameter": "Interface software",
+                "RTE 1200": "LabVIEW Interface",
+                "RTE 1400": "LabVIEW Interface",
+                "RTE 1600": "LabVIEW Interface"
+            },
+            {
+                "Parameter": "Furnace Movement",
+                "RTE 1200": "Vertical Linear Guide",
+                "RTE 1400": "Vertical Linear Guide",
+                "RTE 1600": "Vertical Linear Guide"
+            }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/Reverse-Thermal-Expansion-System.pdf?updatedAt=1747312422622",
+        slug: "analytical",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/isometric.png?updatedAt=1747312470981",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/front.png?updatedAt=1747312467652",
+                alt: "High-accuracy VBCC Gas Sensor Testing Unit in stainless steel, designed for gas analysis with precise heating and vacuum control.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/left.png?updatedAt=1747312476151",
+                alt: "VBCC's Gas Sensor Unit is on display, showcasing its high-accuracy vacuum chamber and stainless-steel body for efficient functionality.",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/right.png?updatedAt=1747312480293",
+                alt: "Our Gas Sensor Testing Unit features a corrosion-resistant stainless-steel body, a vacuum chamber rated to 1 mbar, a 600°C heating platform, and a precision gas flow control system.",
+            },
+        ],
+        productName: "Four-Probe Gas Sensor Testing Unit",
+        metaTitle: "Gas Sensor - VBCC",
+        metaDesc:
+            "VBCC’s Gas Sensor Testing Unit offers precise thermal control and reliable vacuum performance for material research, semiconductor processing, and gas sensor analysis.",
+        desc: "VBCC’s Gas Sensor Testing Unit is a high-precision vacuum chamber designed for material research, semiconductor fabrication, and gas sensor analysis. Made from corrosion-resistant stainless steel, it operates reliably down to 1 mbar and features a heating platform up to 600°C with PID-controlled accuracy. Silver sample holders ensure uniform heat distribution, while integrated mass flow controllers enable precise gas environment control. Supporting four-probe resistivity measurements and gas sensitivity analysis, it is ideal for semiconductor research, thin-film evaluation, and advanced sensor development.",
+        keys: [
+            {
+                label: "Stainless Stell Vacuum Chamber",
+                value:
+                    "Designed for uo to 1mbar pressure",
+            },
+            {
+                label: "Four-Probe Clamping",
+                value:
+                    "Simplified electrical and mechanical contact",
+            },
+            {
+                label: "Hotplate-based Heating",
+                value:
+                    "Up to 600°C for sensor activation",
+            },
+            {
+                label: "Mass Flow Controllers",
+                value:
+                    "Integrated Mass Flow Controllers,Vacuum Pump & Gas Mixing System",
+            },
+            {
+                label: "Keithley 7510",
+                value:
+                    "Soruce Measure Unit for precise resistance tracking",
+            },
+        ],
+        spec: [
+            {
+                label: " Chamber Size",
+                value:
+                    "200 × 200 × 250 mm",
+            },
+            {
+                label: "Hot Zone Diamete",
+                value:
+                    "50 mm",
+            },
+            {
+                label: "Shell",
+                value:
+                    "SS 316 body with reinforced structur",
+            },
+            {
+                label: "Max Pressure",
+                value:
+                    "Vacuum up to 1 mbar",
+            },
+            {
+                label: "Heating System",
+                value:
+                    "Strip Heater, 0.25 kW, up to 600°C (working: 500°C",
+            },
+            {
+                label: "Temperature Control",
+                value:
+                    "TAIE PID Controller (144 segment), K-type Thermocouple, ±1°C accuracy",
+            },
+            {
+                label: "Clamping System",
+                value:
+                    "Four-point silver (Ag) probes with adjustable holder",
+            },
+            {
+                label: "Vacuum Pump",
+                value:
+                    "Rotary pump, 760 mmHg, analogue gauge",
+            },
+            {
+                label: "Mass Flow Controllers",
+                value:
+                    "2 x AALBORG USA MFCs, SS body, ±0.8% accuracy, 0-100% FS, 0-5 V analog/digital I/O",
+            },
+            {
+                label: "Gas Mixing Chamber",
+                value:
+                    "SS with mixing valves + software control",
+            },
+            {
+                label: "Bubble",
+                value:
+                    "Included for safe exhaust release",
+            },
+            {
+                label: "Pipeline & Valve",
+                value:
+                    "1/4” SS piping with automated needle valves, ferule fittings",
+            },
+            {
+                label: "Source Measure Unit",
+                value:
+                    " Keithley 7510, 7.5-digit multimeter,dual measurements, 50k rdgs/s, RS23",
+            },
+            {
+                label: "Data Acquisition",
+                value:
+                    "LabVIEW-based interface with full graphing and export options",
+            },
+            {
+                label: "Computer",
+                value:
+                    " Intel Core i5, 4 GB RAM, 1 TB HDD, 18.5” LED, software pre-installed",
+            }
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/Four-Probe-Gas-Sensor-Testing-Unit.pdf?updatedAt=1747312451112",
+        slug: "analytical",
+    },
+    {
+        mainImg:
+            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/isometric.png?updatedAt=1747312458622",
+        Images: [
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/front.png?updatedAt=1747312460313",
+                alt: "Advanced Thermal Conductivity Measurement System by VBCC offers accurate measurements for various materials, enhancing research efficiency",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/left.png?updatedAt=1747312463735",
+                alt: "Visual representation of thermal conductivity instruments designed for precise heat transfer evaluation in various industries, enhancing material performance",
+            },
+            {
+                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/right.png?updatedAt=1747312459093",
+                alt: "Product image of a thermal conductivity measurement system, showcasing its components and design for precise thermal analysis",
+            },
+        ],
+        productName: "Thermal Conductivity Apparatus",
+        metaTitle: "Thermal Conductivity Measurement System",
+        metaDesc:
+            "VBCC's advanced Thermal Conductivity Measurement System is designed for precise and versatile thermal conductivity measurements across various materials, enhancing research efficiency",
+        desc: "Our thermal conductivity measurement instruments are expertly designed to evaluate the heat transfer properties of materials, supporting applications such as material characterization, product development, quality control, energy efficiency, and research. Trusted across industries like electronics, automotive, and construction, our instruments deliver precise data to optimize material performance and enhance thermal management solutions. ",
+        keys: [
+            {
+                label: "Carbide Heating",
+                value:
+                    "High-temp Silicon Carbide Heating Furnace (1400°C Continuous)",
+            },
+            {
+                label: "Platinum Wire",
+                value:
+                    "Platinum Wire Hot Cross Assembly for precision measurement",
+            },
+            {
+                label: "PID Controlle",
+                value:
+                    "Integrated EUROTHERM PID Controller with safety cutoff",
+            },
+            {
+                label: "Test chamber",
+                value:
+                    " Fully insulated test chamber (brick cavity: 230 × 115 × 150 mm)",
+            },
+            {
+                label: "Supply",
+                value:
+                    "Supplied with PC, Software, and Print Outputs",
+            },
+        ],
+        spec: [
+            {
+                label: "Max Temperature",
+                value:
+                    "1400°C (Continuous Operation",
+            },
+            {
+                label: "Chamber Size",
+                value:
+                    "200 × 200 × 250 mm",
+            },
+            {
+                label: "Heating Elements",
+                value:
+                    "6 × SiC Rods",
+            },
+            {
+                label: "Sample Volume",
+                value:
+                    "230 × 115 × 150 mm (fits 2 bricks)",
+            },
+            {
+                label: "Outer Dimensions",
+                value:
+                    "750 × 750 × 750 mm",
+            },
+            {
+                label: "Insulation",
+                value:
+                    "Alumina bricks + zirconia-blend fiber",
+            },
+            {
+                label: "Shell Material",
+                value:
+                    "Powder-coated MS, air-cooled",
+            },
+            {
+                label: "Temperature Sensor",
+                value:
+                    "Type R Thermocouple (Pt+Rh13%/Pt)",
+            },
+            {
+                label: "Controller",
+                value:
+                    "Eurotherm 2416 (PID, 16-Segment Programmable",
+            },
+            {
+                label: "Hot Wire",
+                value:
+                    "1.0 mm Platinum",
+            },
+            {
+                label: "Power Input",
+                value:
+                    "4 kW, 1-Phase AC, 32A MCB (customer-supplied)",
+            },
+            {
+                label: "Safety Features",
+                value:
+                    "Backup controller, magnetic contactor, fuse",
+            },
+            {
+                label: "Instrumentation",
+                value:
+                    "PC Interface with custom software & inkjet printe",
+            },
+            {
+                label: "Data Outputs",
+                value:
+                    "Temperature profiles, thermal conductivity curve",
+            },
+        ],
+        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/Thermal-Conductivity-Apparatus.pdf?updatedAt=1747312419998",
+        slug: "analytical",
+    },
+]
 
 export const productLists = [
     {

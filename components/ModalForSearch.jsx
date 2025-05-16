@@ -6,8 +6,10 @@ import Fuse from "fuse.js";
 import { POSTS_QUERY } from "@/sanity/Queries";
 import { client } from "@/sanity/lib/client";
 import {
+    AnalyticalInstrumentsList,
     DentalProductsList,
     FunsaiProductsList,
+    LabEquiptProductsList,
     LabProductsList,
     OshidashiProductsList,
     SeikiProductsList,
@@ -46,7 +48,7 @@ const ModalForSearch = () => {
 
         const labFuse = new Fuse(LabProductsList, {
             keys: ["productName", "desc"],
-            threshold: 0.2, // Adjust for sensitivity
+            threshold: 0.2,
             includeScore: true,
             useExtendedSearch: true,
             findAllMatches: true,
@@ -54,21 +56,35 @@ const ModalForSearch = () => {
 
         const funsaiFuse = new Fuse(FunsaiProductsList, {
             keys: ["productName", "desc"],
-            threshold: 0.2, // Adjust for sensitivity
+            threshold: 0.2,
             includeScore: true,
             useExtendedSearch: true,
             findAllMatches: true,
         });
         const seikeiFuse = new Fuse(SeikiProductsList, {
             keys: ["productName", "desc"],
-            threshold: 0.2, // Adjust for sensitivity
+            threshold: 0.2,
             includeScore: true,
             useExtendedSearch: true,
             findAllMatches: true,
         });
         const oshidashiFuse = new Fuse(OshidashiProductsList, {
             keys: ["productName", "desc"],
-            threshold: 0.2, // Adjust for sensitivity
+            threshold: 0.2,
+            includeScore: true,
+            useExtendedSearch: true,
+            findAllMatches: true,
+        });
+        const labEqipFuse = new Fuse(LabEquiptProductsList, {
+            keys: ["productName", "desc"],
+            threshold: 0.2,
+            includeScore: true,
+            useExtendedSearch: true,
+            findAllMatches: true,
+        });
+        const analyticsFuse = new Fuse(AnalyticalInstrumentsList, {
+            keys: ["productName", "desc"],
+            threshold: 0.2,
             includeScore: true,
             useExtendedSearch: true,
             findAllMatches: true,
@@ -98,6 +114,12 @@ const ModalForSearch = () => {
         const oshidashiProductResults = term
             ? oshidashiFuse.search(term).map((result) => result.item)
             : [];
+        const labEuipResults = term
+            ? labEqipFuse.search(term).map((result) => result.item)
+            : [];
+        const analyticsResults = term
+            ? analyticsFuse.search(term).map((result) => result.item)
+            : [];
         const blogResults = term
             ? blogFuse.search(term).map((result) => result.item)
             : [];
@@ -108,12 +130,13 @@ const ModalForSearch = () => {
             ...funsaiProductResults,
             ...seikeiProductResults,
             ...oshidashiProductResults,
+            ...labEuipResults,
+            ...analyticsResults,
             ...blogResults,
         ];
         setResults(allResults);
         setIsVisible(!!allResults.length);
     };
-    // console.log(results);
 
     return (
         <div className="grid md:-mt-2">

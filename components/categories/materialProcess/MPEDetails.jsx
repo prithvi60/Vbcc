@@ -23,7 +23,7 @@ const MPEDetails = ({ data, type, query }) => {
         .split("/")
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
-    // console.log(filteredURI);
+    console.log(filteredURI);
 
     const [{ Images, productName, desc, keys, headers, spec, pdf }] =
         data.filter(
@@ -33,7 +33,7 @@ const MPEDetails = ({ data, type, query }) => {
     const moreProducts = data.filter(
         (val) => val.productName !== filteredURI.replace(/_/g, " ")
     );
-    // console.log(moreProducts.slice(0, 2));
+    // console.log(spec);
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);

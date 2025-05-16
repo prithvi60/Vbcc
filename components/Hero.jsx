@@ -41,8 +41,8 @@ const Hero = () => {
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow loading={loading} />,
-    prevArrow: <SamplePrevArrow loading={loading} />,
+    nextArrow: <SamplePrevArrow loading={loading} />,
+    prevArrow: <SampleNextArrow loading={loading} />,
   };
 
   const handleImageLoad = () => {
@@ -195,15 +195,16 @@ const Hero = () => {
                           href={
                             item.type === "Dental PRODUCTS"
                               ? `/categories/dental/${item.productName.replace(/\s/g, "_")}`
-                              : item.type === "LAB PRODUCTS"
-                                ? `/categories/lab_equipment/${item.productName.replace(/\s/g, "_")}`
-                                : item.type === "BALL MILLS PRODUCTS"
-                                  ? `/categories/material_processing_equipment/Ball_Mills/${item.productName.replace(/\s/g, "_")}`
-                                  : item.type === "PRESSES PRODUCTS"
-                                    ? `/categories/material_processing_equipment/Presses/${item.productName.replace(/\s/g, "_")}`
-                                    : item.type === "EXTRUDERS PRODUCTS"
-                                      ? `/categories/material_processing_equipment/Extruders/${item.productName.replace(/\s/g, "_")}`
-                                      : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
+                              : item.type === "AI PRODUCTS"
+                                ? `/categories/analytical_instruments/${item.productName.replace(/\s/g, "_")}`
+                                : item.type === "LAB PRODUCTS"
+                                  ? `/categories/lab_equipment/${item.productName.replace(/\s/g, "_")}` : item.type === "BALL MILLS PRODUCTS"
+                                    ? `/categories/material_processing_equipment/Ball_Mills/${item.productName.replace(/\s/g, "_")}`
+                                    : item.type === "PRESSES PRODUCTS"
+                                      ? `/categories/material_processing_equipment/Presses/${item.productName.replace(/\s/g, "_")}`
+                                      : item.type === "EXTRUDERS PRODUCTS"
+                                        ? `/categories/material_processing_equipment/Extruders/${item.productName.replace(/\s/g, "_")}`
+                                        : `/categories/laboratory/${item.productName.replace(/\s/g, "_")}`
                           }
                           className="flex items-center gap-5 transition-all ease-linear duration-400 group"
                           key={id}
@@ -260,7 +261,7 @@ function SampleNextArrow(props) {
   const { onClick, loading } = props;
   return (
     <div
-      className={`${loading && "hidden"} size-6 absolute top-7 lg:top-10 right-20 xl:right-24 px-5 py-3 border-l rounded-l-xl border-y cursor-pointer hover:bg-info backdrop-blur-xl`}
+      className={`${loading && "hidden"} size-6 absolute top-7 lg:top-10 right-20 xl:right-24 px-5 py-3 z-30 border-l rounded-l-xl border-y cursor-pointer hover:bg-info backdrop-blur-xl`}
       onClick={onClick}
     >
       <Image

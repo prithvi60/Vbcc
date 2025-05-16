@@ -1,6 +1,8 @@
 import React from "react";
 
 const Tablet = ({ headers, data }) => {
+    // console.log("data", data);
+
     // Render the headers dynamically
     const renderHeaders = () => {
         return headers.map((header, index) => (

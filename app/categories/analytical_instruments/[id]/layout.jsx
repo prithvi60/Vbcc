@@ -1,12 +1,12 @@
-import { DentalProductsList } from "@/libs/productsData";
+import { AnalyticalInstrumentsList } from "@/libs/productsData";
 import { decode } from "html-entities";
 
 export async function generateMetadata({ params }) {
   const { id } = params;
-  const decodedId = id.replace(/_/g, " ")
+  const decodedId = id.replace(/-/g, " ")
 
   // Fetch the product based on the slug
-  const product = DentalProductsList.find((item) => item.productName === decodedId);
+  const product = AnalyticalInstrumentsList.find((item) => item.productName === decodedId);
 
 
   if (product) {
@@ -30,11 +30,11 @@ export async function generateMetadata({ params }) {
 
   // Default metadata if product not found
   return {
-    title: decode("VBCC's India-first high-end dental furnace for restorative treatments"),
-    description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
+    title: decode("Laboratory Analytical Instruments"),
+    description: "VBCC offers precision instruments for thermal expansion, conductivity, and resistivity studies. Ideal for advanced research, our tools guarantee accuracy and ease of use.",
     openGraph: {
-      title: decode("VBCC's India-first high-end dental furnace for restorative treatments"),
-      description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
+      title: decode("Laboratory Analytical Instruments"),
+      description: "VBCC offers precision instruments for thermal expansion, conductivity, and resistivity studies. Ideal for advanced research, our tools guarantee accuracy and ease of use.",
     },
   };
 }
