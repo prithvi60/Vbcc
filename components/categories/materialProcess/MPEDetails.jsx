@@ -14,7 +14,7 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import ProductDetails from "../ProductDetails";
 import MoreProducts from "../MoreProducts";
 
-const MPEDetails = ({ data, type, query }) => {
+const MPEDetails = ({ data, type, query, name }) => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -23,7 +23,7 @@ const MPEDetails = ({ data, type, query }) => {
         .split("/")
         .filter((x) => x);
     const filteredURI = path[path.length - 1];
-    console.log(filteredURI);
+    // console.log(filteredURI);
 
     const [{ Images, productName, desc, keys, headers, spec, pdf }] =
         data.filter(
@@ -54,6 +54,7 @@ const MPEDetails = ({ data, type, query }) => {
         slidesToScroll: 1,
         beforeChange: (current, next) => setActiveIndex(next),
     };
+
     return (
         <>
             <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
@@ -74,7 +75,7 @@ const MPEDetails = ({ data, type, query }) => {
                             >
                                 <a
                                     href={pdf}
-                                    download={`Material Processing-Brochure-${productName}`}
+                                    download={`${name}-${productName}`}
                                     target="_blank"
                                 >
                                     <div className={`h-6 w-full overflow-hidden`}>

@@ -52,7 +52,13 @@ export const ThankYouComponent = () => {
         file: "/files/Material-Processing-Brochure.pdf",
         fileName: "Material-Processing-Brochure.pdf",
       });
-    } else {
+    } else if (category === "analyticalInstruments") {
+      setPdf({
+        file: "/files/Analytical-Instruments.pdf",
+        fileName: "Analytical-Instruments-Brochure.pdf",
+      });
+    }
+    else {
       setPdf({
         file: "/files/Denkiro-Brochure-Digital.pdf",
         fileName: "Denkiro-Brochure-Digital.pdf",

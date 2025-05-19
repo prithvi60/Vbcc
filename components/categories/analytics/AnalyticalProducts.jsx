@@ -16,8 +16,8 @@ const AnalyticalProducts = () => {
                 desc2={
                     "Built with the same innovation and quality as our Denkiro furnaces, these instruments combine accuracy, ease of use, and long-term reliability. Ideal for advanced materials research, quality control, and product development"
                 }
-                pdfFile={"/files/analytical-instruments.pdf"}
-                pdfName={"analytical-instruments.pdf"}
+                pdfFile={"/files/Analytical-Instruments.pdf"}
+                pdfName={"Analytical-Instruments.pdf"}
                 query="analytical"
             />
             <CategoryProducts categoryName={"analytical_instruments"} data={AnalyticalInstrumentsList} />
