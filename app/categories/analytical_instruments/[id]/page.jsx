@@ -1,6 +1,6 @@
 import MPEDetails from '@/components/categories/materialProcess/MPEDetails'
 import DefaultLayout from '@/components/DefaultLayout'
-import { AnalyticalInstrumentsList, FunsaiProductsList } from '@/libs/productsData'
+import { AnalyticalInstrumentsList } from '@/libs/productsData'
 import React from 'react'
 
 const Page = () => {

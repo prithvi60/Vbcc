@@ -8,6 +8,12 @@ export const metadata = {
       decode("VBCC's Material Extrusion Solutions"),
     description:
       decode("Discover Oshidashi, VBCC's sub-brand specializing in advanced extrusion technology. Explore our range of manual, automatic, and vacuum extruders for precise material processing."),
+    images: [{
+      url: 'https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/isometric.png?updatedAt=1736156939203',
+      width: 800,
+      height: 600,
+      alt: 'Material Processing Equipment Categories Extruder',
+    }],
   },
 };
 
