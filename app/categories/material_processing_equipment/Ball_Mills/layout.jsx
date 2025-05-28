@@ -7,7 +7,7 @@ export const metadata = {
     description:
       "We specialise in high-quality material processing equipment. Our product range includes roller jar mills and planetary ball mills, designed to ensure precise grinding for a variety of industries. ",
     images: [{
-      url: 'https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576',
+      url: 'https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png',
       width: 800,
       height: 600,
       alt: 'Material Processing Equipment Categories Ball Mills',

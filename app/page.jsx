@@ -12,7 +12,7 @@ export default function Home() {
     "@type": "Organization",
     name: "VBCC High Temperature Instruments",
     image:
-      "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628",
+      "https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg",
     description:
       "VBCC High Temperature Instruments is the leading manufacturer of top-tier furnaces, kilns, analytical instruments, and material processing equipment for precise heating and drying in laboratory and industrial settings.",
     email: "info@vbccinstruments.com",
@@ -23,7 +23,7 @@ export default function Home() {
     "@type": "LocalBusiness",
     name: "VBCC HTI",
     image:
-      "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628",
+      "https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg",
     url: "https://vbccinstruments.com/categories",
     telephone: "+91 9600478315",
     address: {

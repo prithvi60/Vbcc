@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       title: decode("VBCC's India-first high-end dental furnace for restorative treatments"),
       description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
       images: [{
-        url: 'https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576',
+        url: 'https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png',
         width: 800,
         height: 600,
         alt: 'Material Processing Equipment Categories Ball Mills',

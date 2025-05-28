@@ -1,18 +1,18 @@
 export const DentalProductsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
+            "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Sintering.png?updatedAt=1732078648278",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Front%20-%20Sintering%20(1).png",
                 alt: "Innovative vacuum sintering furnace for heat-based material compacting, perfect for efficient dental restoration processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Sintering.png?updatedAt=1732078649015",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Left%20-%20Sintering.png",
                 alt: "VBCC Vacuum Sintering Furnace displayed, highlighting its innovative features for efficient dental material processing",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Sintering.png?updatedAt=1732078652287",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Right%20-%20Sintering.png",
                 alt: "Close-up view of VBCC's Dental Vacuum Sintering Furnace, showcasing its advanced design and functionality in dental applications",
             },
         ],
@@ -86,23 +86,23 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "1.5 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS%26VP.pdf",
         slug: "dental",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
+            "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Pressing.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Pressing.png?updatedAt=1732078648555",
-                alt: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Pressing.png?updatedAt=1732078652121",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Front%20-%20Pressing.png",
+                alt: "Vacuum press furnace for dental labs, ensuring uniform heating, reduced contamination, and enhanced metallurgical properties",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Pressing.png?updatedAt=1732078649273",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Left%20-%20Pressing.png",
                 alt: "Image of a vacuum press furnace showcasing its sleek modern features and advanced technology for high-temperature processing",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Pressing.png?updatedAt=1732078652121",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Right%20-%20Pressing.png",
                 alt: "An image of a vacuum pressing furnace, an integral part of dental restoration treatments, where ceramic materials are processed.",
             },
         ],
@@ -176,23 +176,23 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "1.5 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS&VP.pdf?updatedAt=1732785766685",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-VS%26VP.pdf",
         slug: "dental",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341",
+            "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Zirconia.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Zirconia.png?updatedAt=1732078649081",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Front%20-%20Zirconia.png",
                 alt: "The VBCC Zirconia Sintering Furnace efficiently sinters zirconia, improving strength for dental applications like crowns and bridges.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Zirconia.png?updatedAt=1732078650656",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Left%20-%20Zirconia.png",
                 alt: "An image of a Zirconia Sintering Furnace, which sinters zirconia—a highly durable material used for crowns, bridges, and implant abutments",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Zirconia.png?updatedAt=1732078652570",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Right%20-%20Zirconia.png",
                 alt: "Visual representation of a dental zirconia sintering furnace, showcasing its advanced design and functionality for high-temperature applications.",
             },
         ],
@@ -261,23 +261,23 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "2 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-ZS.pdf?updatedAt=1732785767582",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-ZS.pdf",
         slug: "dental",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
+            "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Burnout.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Front%20-%20Burnout.png?updatedAt=1732078647305",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Front%20-%20Burnout.png",
                 alt: "State-of-the-art burnout furnace for dental labs, utilizing double-walled stainless steel and high-quality insulation for optimal performance",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Left%20-%20Burnout.png?updatedAt=1732078649652",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Left%20-%20Burnout.png",
                 alt: "A burnout furnace designed for dental restoration, featuring double-walled stainless steel and advanced insulation for efficient muffle burnout",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Right%20-%20Burnout.png?updatedAt=1732078651660",
+                img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Right%20-%20Burnout.png",
                 alt: "VBCC's innovative dental burnout furnace, engineered for reliable and effective burnout in dental procedures",
             },
         ],
@@ -347,7 +347,7 @@ export const DentalProductsList = [
             { label: "Power Consumption", value: "2 KW" },
             { label: "Display", value: "7 Inch" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-BURNOUT.pdf?updatedAt=1732785767964",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Dental/Denkiro%20-%20Dental%20-%20Brochure%20-%20Digital-BURNOUT.pdf",
         slug: "dental",
     },
 ];
@@ -355,18 +355,18 @@ export const DentalProductsList = [
 export const LabProductsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/front.png?updatedAt=1732097861553",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/front.png",
                 alt: "The VBCC muffle furnace offers a space-saving design with precise temperature control and quick heating for laboratory use",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/left.png?updatedAt=1732097862821",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/left.png",
                 alt: "VBCC's box furnace is a compact solution for labs, ensuring stable temperatures and efficient heating with low energy use",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/right.png?updatedAt=1732097864352",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/right.png",
                 alt: "A high-performance laboratory box furnace, featuring a sturdy exterior and precise temperature controls.",
             },
         ],
@@ -659,23 +659,23 @@ export const LabProductsList = [
             "Phase",
             "Weight",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-BoxFurnace.pdf?updatedAt=1732786729732",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-BoxFurnace.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/isometric.png?updatedAt=1732097644736",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20Type%20Vacuum%20furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/front.png?updatedAt=1732097663951",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20Type%20Vacuum%20furnace/front.png",
                 alt: ": High-temperature box-type vacuum furnace, essential for brazing and sintering, providing a controlled and pure thermal processing environment",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/left.png?updatedAt=1732097666796",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20Type%20Vacuum%20furnace/left.png",
                 alt: "Box type vacuum furnace with double-wall MS body, customizable dimensions, designed for efficient thermal processing tasks",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20Type%20Vacuum%20furnace/right.png?updatedAt=1732097661427",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20Type%20Vacuum%20furnace/right.png",
                 alt: "Stainless steel door box vacuum furnace with insulation and chain mechanism, designed for efficient thermal processing and reduced heat loss",
             },
         ],
@@ -883,23 +883,23 @@ export const LabProductsList = [
             "Phase",
             "Weight",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-box-type.pdf?updatedAt=1732786831810",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-box-type.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/isometric.png?updatedAt=1732097835580",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Raising%20Hearth%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/front.png?updatedAt=1732097836874",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Raising%20Hearth%20Furnace/front.png",
                 alt: "VBCC’s Raising Hearth Furnace is designed for efficient sample handling in sintering, annealing, and high-temperature material processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/left.png?updatedAt=1732097836954",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Raising%20Hearth%20Furnace/left.png",
                 alt: "A user-friendly raising hearth furnace with a bottom-loading design, optimizing the efficiency of sample loading and unloading",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Raising%20Hearth%20Furnace/right.png?updatedAt=1732097836883",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Raising%20Hearth%20Furnace/right.png",
                 alt: "An image of a Raising Hearth furnace made of high-quality mild steel, designed for durability and longevity in high-temperature operations",
             },
         ],
@@ -1192,23 +1192,23 @@ export const LabProductsList = [
             "Phase",
             "Weight",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-raising.pdf?updatedAt=1732785792674",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-raising.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/isometric.png?updatedAt=1732097814826",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Thermal%20Cycling%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/front.png?updatedAt=1732097812934",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Thermal%20Cycling%20Furnace/front.png",
                 alt: "High-quality thermal cycling furnace designed for reliable testing of thermal barriers and coatings through extreme temperature cycles",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/left.png?updatedAt=1732097816142",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Thermal%20Cycling%20Furnace/left.png",
                 alt: "Visual of a thermal cycle furnace capable of reaching 1600°C, ideal for precise thermal cycling and advanced material processing",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Thermal%20Cycling%20Furnace/right.png?updatedAt=1732097815806",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Thermal%20Cycling%20Furnace/right.png",
                 alt: "Image of a thermal cycling furnace with alumina bricks and fiber insulation, ensuring uniform temperatures and minimal heat loss",
             },
         ],
@@ -1316,23 +1316,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-thermal-cycling.pdf?updatedAt=1732785797395",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-thermal-cycling.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/isometric.png?updatedAt=1732097797151",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tubular%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/front.png?updatedAt=1732097794281",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tubular%20Furnace/front.png",
                 alt: "Expertly engineered tubular furnace with a cylindrical chamber and central heating element for precise material testing",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/left.png?updatedAt=1732097796040",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tubular%20Furnace/left.png",
                 alt: "A specialized tubular furnace designed for durability, capable of withstanding temperatures up to 1800°C for a variety of high-temperature processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tubular%20Furnace/right.png?updatedAt=1732097773615",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tubular%20Furnace/right.png",
                 alt: "A VBCC laboratory tubular furnace, essential for conducting high-temperature experiments and material analysis in research setting",
             },
         ],
@@ -1614,23 +1614,23 @@ export const LabProductsList = [
             "Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tubular.pdf?updatedAt=1732785797417",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tubular.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png?updatedAt=1732097766948",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tiltable%20Tubular%20Furnace/left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/front.png?updatedAt=1732097765691",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tiltable%20Tubular%20Furnace/front.png",
                 alt: "An innovative tiltable tubular furnace designed for optimal heat distribution of granules, powders, and particulate materials in laboratories",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/left.png?updatedAt=1732097766113",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png",
                 alt: "A tiltable tubular furnace featuring a mechanism for precise control of the chamber's inclination angle for flexible sample processing",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Tiltable%20Tubular%20Furnace/right.png?updatedAt=1732097766948",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Tiltable%20Tubular%20Furnace/left.png",
                 alt: "Tiltable tubular furnace designed for efficient space utilization in laboratory and industrial environments",
             },
         ],
@@ -1912,23 +1912,23 @@ export const LabProductsList = [
             "Phase",
             "Weight",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tiltable.pdf?updatedAt=1732785797090",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-tiltable.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/isometric.png?updatedAt=1732097674080",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Rotary%20Tubular%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/front.png?updatedAt=1732097673107",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Rotary%20Tubular%20Furnace/front.png",
                 alt: "VBCC's rotary tubular furnace facilitates continuous material movement, enhancing thermal transfer and ensuring uniform heating efficiency",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/left.png?updatedAt=1732097674389",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Rotary%20Tubular%20Furnace/left.png",
                 alt: "Rotary tubular furnace designed for temperatures from 1200°C to 1800°C, ensuring flexibility and reliability in industrial use.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Rotary%20Tubular%20Furnace/right.png?updatedAt=1732097657174",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Rotary%20Tubular%20Furnace/right.png",
                 alt: "A rotary tubular furnace featuring strategically positioned heating elements for optimal temperature uniformity and consistent outcomes",
             },
         ],
@@ -2051,23 +2051,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-rotary.pdf?updatedAt=1732785796005",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-rotary.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/isometric.png?updatedAt=1732097756187",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/front.png?updatedAt=1732097753625",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/front.png",
                 alt: "Two- and three-zone tubular furnaces designed for temperature gradients, used in material synthesis and heat treatment processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/left.png?updatedAt=1732097757479",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/left.png",
                 alt: "Two- and three-zone tubular furnaces with 99.9% alumina tubes, enduring temperatures up to 1800°C for exceptional durability",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/right.png?updatedAt=1732097756383",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Two%20or%20Three%20Zone%20Furnace/right.png",
                 alt: "Compact two- and three-zone tubular furnaces designed for efficient lab space use while allowing for substantial sample volume",
             },
         ],
@@ -2531,23 +2531,23 @@ export const LabProductsList = [
             "Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-2-3-zone.pdf?updatedAt=1732785790633",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-2-3-zone.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png?updatedAt=1732097139674",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/front.png?updatedAt=1732097137357",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Chemical%20Vapour%20Deposition/front.png",
                 alt: "VBCC's chemical vapour deposition furnace enables precise thin layer deposition, protecting mechanical parts from corrosion and oxidation",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/left.png?updatedAt=1732097140082",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Chemical%20Vapour%20Deposition/left.png",
                 alt: "VBCC's chemical vapor deposition furnace operates at temperatures of up to 1700°C, making it ideal for high-temperature applications requiring precision",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Chemical%20Vapour%20Deposition/right.png?updatedAt=1732097139678",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Chemical%20Vapour%20Deposition/right.png",
                 alt: "Chemical vapor deposition furnace designed with durable materials to endure thermal stresses in extreme operating conditions",
             },
         ],
@@ -2658,23 +2658,23 @@ export const LabProductsList = [
             "Economy Configuration",
             "Premium Configuration",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-chemical.pdf?updatedAt=1732785789403",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-chemical.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/isometric.png?updatedAt=1732097125293",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/front.png?updatedAt=1732097126146",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/front.png",
                 alt: "VBCC's versatile furnace operates in horizontal and vertical positions, ideal for high-temperature lab applications with a compact design",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/left.png?updatedAt=1732097125477",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/left.png",
                 alt: "Versatile furnace with horizontal and vertical configurations, reaching temperatures of 1800°C, suitable for high-heat processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/right.png?updatedAt=1732097127627",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Horizontal%20cum%20Vertical%20Furnace/right.png",
                 alt: "Horizontal Cum vertical furnace, featuring a shell size adjustable to meet customer needs",
             },
         ],
@@ -2839,23 +2839,23 @@ export const LabProductsList = [
             "Phase",
             "Weight",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-horizontal.pdf?updatedAt=1732785790101",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-horizontal.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/isometric.png?updatedAt=1732097720641",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Roller%20Hearth%20Furnace/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/front.png?updatedAt=1732097717795",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Roller%20Hearth%20Furnace/front.png",
                 alt: "Roller hearth furnace by VBCC, designed for precision and international standards, ideal for high-quality research and development",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/left.png?updatedAt=1732097721840",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Roller%20Hearth%20Furnace/left.png",
                 alt: "Roller hearth furnace with a maximum temperature of 1200°C, suitable for a range of high-temperature testing needs ",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Roller%20Hearth%20Furnace/right.png?updatedAt=1732097721655",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Roller%20Hearth%20Furnace/right.png",
                 alt: "Specialized roller hearth furnace engineered for testing body, glaze, stains, and frits, suitable for tile manufacturing industries",
             },
         ],
@@ -2983,23 +2983,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-roller.pdf?updatedAt=1732785796156",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-roller.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097362092",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/front.png?updatedAt=1732097362174",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/front.png",
                 alt: "Robust aluminium stir casting furnace featuring advanced technology for producing aluminium metal matrix composites and alloys",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097362092",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/left.png",
                 alt: "Aluminium stir casting furnace with ceramic fibre insulation and Kanthal heating elements, reaching 1100°C and maintaining a working temperature of 800°C",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097362323",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Aluminium%20-%20Stir%20-%20Casting/right.png",
                 alt: "Aluminium stir casting furnace, equipped with high-alumina rollers, offering high durability and resistance to high temperatures",
             },
         ],
@@ -3107,23 +3107,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-aluminium.pdf?updatedAt=1732785788858",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-aluminium.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097228059",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/front.png?updatedAt=1732097227732",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/front.png",
                 alt: "State-of-the-art magnesium stir casting furnace for high-quality alloy production, enhancing homogeneity in finished castings",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png?updatedAt=1732097228059",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/left.png",
                 alt: "Advanced magnesium stir casting furnace featuring Kanthal heating elements, delivering consistent heating up to 1100°C for metallurgical use",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/right.png?updatedAt=1732097227970",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Magnesium%20-%20Stir%20-%20Casting/right.png",
                 alt: "Magnesium stir casting furnace with crucible and automatic melt flushing system for efficient melt discharge via pneumatic mechanism",
             },
         ],
@@ -3216,23 +3216,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-magnesium.pdf?updatedAt=1732785789185",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-magnesium.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png?updatedAt=1732096897336",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/front.png?updatedAt=1732096911582",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Bio%20Mass%20Pyrolysis/front.png",
                 alt: "VBCC's biomass pyrolysis unit converts biomass into bio-oil, biochar, and syngas through controlled high-temperature pyrolysis",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png?updatedAt=1732096897336",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Bio%20Mass%20Pyrolysis/left.png",
                 alt: "A biomass pyrolysis unit utilizes APM Kanthal heating elements, achieving uniform heating up to 1200°C for reliable operation",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Bio%20Mass%20Pyrolysis/right.png?updatedAt=1732096912882",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Bio%20Mass%20Pyrolysis/right.png",
                 alt: "A biomass pyrolysis unit facilitating the conversion of organic waste into biochar and bio-oil via high-temperature thermal processes",
             },
         ],
@@ -3360,23 +3360,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-bio-mass.pdf?updatedAt=1732785789229",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-bio-mass.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/isometric.png?updatedAt=1732095997475",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Essential/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/front.png?updatedAt=1732095997411",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Essential/front.png",
                 alt: "Microwave Furnace (Essential) utilizes electromagnetic radiation for efficient heating in laboratory and production applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/left.png?updatedAt=1732095996329",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Essential/left.png",
                 alt: "Microwave Furnace (Essential) reaches 1600°C, suitable for advanced material research applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Essential/right.png?updatedAt=1732095996566",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Essential/right.png",
                 alt: "VBCC's Microwave Furnace (Essential) utilizes advanced microwave technology for efficient heating and processing applications",
             },
         ],
@@ -3479,23 +3479,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-essential.pdf?updatedAt=1732785790605",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-essential.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/isometric.png?updatedAt=1732095844311",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/front.png?updatedAt=1732095844862",
-                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/right.png?updatedAt=1732095844646",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/front.png",
+                alt: "A Microwave Furnace (Deluxe) offers extreme temperature capabilities and built-in insulation for efficient thermal research",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/left.png?updatedAt=1732095845273",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/left.png",
                 alt: "Microwave Furnaces (Deluxe) designed for high-temperature applications, with built-in insulation and capable of reaching 1600°C",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/right.png?updatedAt=1732095844646",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Deluxe/right.png",
                 alt: "Advanced microwave furnace (Deluxe), employing electromagnetic waves for optimal heat treatment",
             },
         ],
@@ -3613,23 +3613,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-delux.pdf?updatedAt=1732785790673",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-delux.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png?updatedAt=1732096257316",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/front.png?updatedAt=1732096249053",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/front.png",
                 alt: "A Microwave Furnace (Hybrid) combining resistance and microwave heating for versatile thermal processing in research and development",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png?updatedAt=1732096257316",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/left.png",
                 alt: "VBCC's Microwave Furnace (Hybrid) achieves 1700°C, integrating microwave technology with free-radiating elements for rapid heating ",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/right.png?updatedAt=1732096247856",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Microwave%20Furnace%20-%20Hybrid/right.png",
                 alt: "VBCC's Microwave Furnace (Hybrid) combines the power of microwave and resistive heating, providing precise and uniform temperature control for your applications",
             },
         ],
@@ -3762,23 +3762,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-hybrid.pdf?updatedAt=1732785797711",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-microwave-hybrid.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/isometric.png?updatedAt=1732095827733",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Hot%20Air%20Oven/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/front.png?updatedAt=1732095814878",
-                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/right.png?updatedAt=1732095825024",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Hot%20Air%20Oven/front.png",
+                alt: "Hot air oven designed for uniform heating, sterilization, and drying under controlled conditions of temperature and humidity",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/left.png?updatedAt=1732095827919",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Hot%20Air%20Oven/left.png",
                 alt: "Image of a hot air oven, designed to reach 250°C, with an operational range from room temperature to 200°C",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Hot%20Air%20Oven/right.png?updatedAt=1732095825024",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Hot%20Air%20Oven/right.png",
                 alt: "Hot air oven featuring an in-house thyristor for superior power control and efficient heating performance",
             },
         ],
@@ -3886,23 +3886,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-hot-air.pdf?updatedAt=1732785789627",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-hot-air.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/isometric.png?updatedAt=1732095797441",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Vacuum%20Oven/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/front.png?updatedAt=1732095794127",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Vacuum%20Oven/front.png",
                 alt: "VBCC vacuum ovens are engineered to dry heat-sensitive, hygroscopic materials quickly by reducing pressure and lowering solvent boiling points",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/left.png?updatedAt=1732095797625",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Vacuum%20Oven/left.png",
                 alt: "High-quality stainless-steel vacuum ovens with double-wall structure and powder-coated MS panel for durability and aesthetics",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Vacuum%20Oven/right.png?updatedAt=1732095797150",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Vacuum%20Oven/right.png",
                 alt: "Vacuum ovens with a user-friendly design, ideal for all drying and curing applications",
             },
         ],
@@ -4005,23 +4005,23 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-vaccum.pdf?updatedAt=1732785797589",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-vaccum.pdf",
         slug: "lab",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/isometric.png?updatedAt=1732095746004",
+            "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Humidity%20Oven/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/front.png?updatedAt=1732095743764",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Humidity%20Oven/front.png",
                 alt: "A specialized humidity oven that integrates a laboratory oven with a humidity system, ideal for high-humidity research applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/left.png?updatedAt=1732095744512",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Humidity%20Oven/left.png",
                 alt: "Humidity oven designed for precision testing in materials science, combining robust construction with user-friendly features",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Humidity%20Oven/right.png?updatedAt=1732095747149",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Humidity%20Oven/right.png",
                 alt: "Humidity oven with an over-temperature controller to ensure safety and prevent overheating during operation",
             },
         ],
@@ -4149,7 +4149,7 @@ export const LabProductsList = [
             "Electrical Phase",
             "Weight (in kilos)",
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-humidity.pdf?updatedAt=1732785790412",
+        pdf: "https://cdn.webibee.com/vbcc/Product_pdf_files/Lab/Denkiro%20-%20Brochure%20-%20Digital-humidity.pdf",
         slug: "lab",
     },
 ];
@@ -4157,18 +4157,18 @@ export const LabProductsList = [
 export const LabEquiptProductsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Isometric.png?updatedAt=1737378240755",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spray%20-%20Pyrolysis/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Front.png?updatedAt=1737378240759",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spray%20-%20Pyrolysis/Front.png",
                 alt: "Our Spray Pyrolysis equipment offers precise control for thin film and nanoparticle production, ideal for optoelectronics and energy storage, with a space-saving design",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Left.png?updatedAt=1737378239771",
-                alt: "Spray Pyrolysis Equipment – featuring a compact design and efficient heating, ideal for creating high-quality thin films and coatings in materials science",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spray%20-%20Pyrolysis/Left.png",
+                alt: "Spray Pyrolysis Equipment - featuring a compact design and efficient heating, ideal for creating high-quality thin films and coatings in materials science",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Right.png?updatedAt=1737378239581",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spray%20-%20Pyrolysis/Right.png",
                 alt: "Advanced Spray Pyrolysis system for thin films and nanoparticles, featuring efficient heating and precise material control",
             },
         ],
@@ -4249,23 +4249,23 @@ export const LabEquiptProductsList = [
             { label: "Air Delivery", value: "25 CFM" },
             { label: "Accessories", value: "Laptop and Software included" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spray%20-%20Pyrolysis/Lab%20Equipments-Brochure-Digital-1.pdf?updatedAt=1737378242377",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spray%20-%20Pyrolysis/Lab%20Equipments-Brochure-Digital-1.pdf",
         slug: "labEquip",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Isometric.png?updatedAt=1737378263643",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Basic/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Front.png?updatedAt=1737378262548",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Basic/Front.png",
                 alt: "VBCC's Spin Coater offers meticulous thin-film application with adjustable speeds up to 6,000 RPM, perfect for photolithography, solar cells, and advanced material science",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Left.png?updatedAt=1737378262801",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Basic/Left.png",
                 alt: "An image of VBCC's Spin Coater, which uses centrifugal force to evenly coat surfaces with liquid materials and offers adjustable speeds for precise application",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Right.png?updatedAt=1737378263140",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Basic/Right.png",
                 alt: "Visual representation of a Spin Coating System, designed for applying thin, uniform films on flat surfaces in research applications",
             },
         ],
@@ -4333,23 +4333,23 @@ export const LabEquiptProductsList = [
             { label: "Vacuum Level", value: "760 mm mercury" },
             { label: "Vacuum Pump", value: "Rotary vacuum pump" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Basic/Lab%20Equipments-Brochure-Digital-2.pdf?updatedAt=1737378265901",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Basic/Lab%20Equipments-Brochure-Digital-2.pdf",
         slug: "labEquip",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Isometric.png?updatedAt=1737378286610",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Xtreme/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Front.png?updatedAt=1737378287439",
-                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Right.png?updatedAt=1737378287172",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Xtreme/Front.png",
+                alt: "Premium spin coating system with adjustable speeds from 100 to 10,000 RPM for uniform thin films on glass and single-crystal substrates",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Left.png?updatedAt=1737378286418",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Xtreme/Left.png",
                 alt: "High-quality spin coating system for creating thin, uniform films on planar substrates in advanced fabrication processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Right.png?updatedAt=1737378287172",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Xtreme/Right.png",
                 alt: "VBCC's spin coater displayed, highlighting its innovative features and modern design for efficient coating processes",
             },
         ],
@@ -4417,23 +4417,23 @@ export const LabEquiptProductsList = [
             { label: "Vacuum Level", value: "760 mm mercury" },
             { label: "Vacuum Pump", value: "Rotary vacuum pump" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Spin%20Xtreme/Lab%20Equipments-Brochure-Digital-3.pdf?updatedAt=1737378292633",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Spin%20Xtreme/Lab%20Equipments-Brochure-Digital-3.pdf",
         slug: "labEquip",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Isometric.png?updatedAt=1737378314151",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Dip%20Coating/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Front.png?updatedAt=1737378314626",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Dip%20Coating/Front.png",
                 alt: "Precision-engineered dip coating units by VBCC ensure smooth, even coatings for the electronics, automotive, and optics industries, effectively enhancing surface properties",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Left.png?updatedAt=1737378314660",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Dip%20Coating/Left.png",
                 alt: "A dip coating unit designed to apply protective coatings by immersing substrates in a tank, providing corrosion resistance and insulation",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Right.png?updatedAt=1737378314888",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Dip%20Coating/Right.png",
                 alt: "A detailed view of VBCC's dip coating unit, showcasing advanced technology for efficient and precise coating applications",
             },
         ],
@@ -4501,23 +4501,23 @@ export const LabEquiptProductsList = [
             { label: "Drawing Speed Max", value: "60 mm/sec" },
             { label: "Supply Voltage", value: "230V AC" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Dip%20Coating/Lab%20Equipments-Brochure-Digital-4.pdf?updatedAt=1737378317745",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Dip%20Coating/Lab%20Equipments-Brochure-Digital-4.pdf",
         slug: "labEquip",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Isometric.png?updatedAt=1737378337947",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Basic/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Front.png?updatedAt=1737378337864",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Basic/Front.png",
                 alt: "Specialized glove boxes ensure user safety and contamination protection while handling sensitive materials in controlled environments",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Left.png?updatedAt=1737378337953",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Basic/Left.png",
                 alt: "High-performance glove boxes for safe handling of hazardous materials, featuring integrated gloves and inert gas environments",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Right.png?updatedAt=1737378338130",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Basic/Right.png",
                 alt: "VBCC's glove box, featuring sealed compartments for secure manipulation of hazardous or delicate substances",
             },
         ],
@@ -4609,23 +4609,23 @@ export const LabEquiptProductsList = [
             { label: "Vacuum Level", value: "Rough vacuum 760 Hg" },
             { label: "PLC", value: "PLC controlled operating system" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Basic/Lab%20Equipments-Brochure-Digital-5.pdf?updatedAt=1737378342839",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Basic/Lab%20Equipments-Brochure-Digital-5.pdf",
         slug: "labEquip",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Isometric.png?updatedAt=1737378364111",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Premium/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Front.png?updatedAt=1737378363709",
-                alt: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Right.png?updatedAt=1737378363133",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Premium/Front.png",
+                alt: "Spacious glove box (1200 x 900 x 800 mm) for air-sensitive samples, featuring polycarbonate glass and a cylindrical antechamber",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Left.png?updatedAt=1737378363509",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Premium/Left.png",
                 alt: "Engineered glove box (1200 x 900 x 800 mm) for optimal workspace, ideal for processing air-sensitive materials with enhanced visibility",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Right.png?updatedAt=1737378363133",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Premium/Right.png",
                 alt: "VBCC's premium glove box, engineered for superior protection and efficiency in handling sensitive materials",
             },
         ],
@@ -4751,23 +4751,23 @@ export const LabEquiptProductsList = [
             { label: "PLC", value: "PLC controlled operating system" },
             { label: "Humidity Sensor", value: "Imported humidity sensor" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Glove%20Premium/Lab%20Equipments-Brochure-Digital-6.pdf?updatedAt=1737378367333",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Glove%20Premium/Lab%20Equipments-Brochure-Digital-6.pdf",
         slug: "labEquip",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Isometric.png?updatedAt=1737378388602",
+            "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Electro%20Spinner/Isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Front.png?updatedAt=1737378388643",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Electro%20Spinner/Front.png",
                 alt: "The Electro spinner operates at 300°C, producing consistent ultra-fine fibres for diverse applications like tissue engineering and filtration.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Left.png?updatedAt=1737378388597",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Electro%20Spinner/Left.png",
                 alt: "VBCC's Electro spinner unit, a cutting-edge device for electrospinning, emphasizing its role in modern material fabrication",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Right.png?updatedAt=1737378388115",
+                img: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Electro%20Spinner/Right.png",
                 alt: "Electro spinner unit featuring innovative technology for effective material spinning in industrial settings",
             },
         ],
@@ -4845,7 +4845,7 @@ export const LabEquiptProductsList = [
             { label: "Air Blower", value: "Integrated heater and air blower" },
             { label: "View Port", value: "Top-side accessible" }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Lab_Equipments/Electro%20Spinner/Lab%20Equipments%20-%20Brochure%20-%20Digital-7.pdf?updatedAt=1737378396341",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Lab_Equipments/Electro%20Spinner/Lab%20Equipments%20-%20Brochure%20-%20Digital-7.pdf",
         slug: "labEquip",
     },
 ];
@@ -4853,50 +4853,50 @@ export const LabEquiptProductsList = [
 export const FunsaiProductsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576",
+            "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/front.png?updatedAt=1736156980114",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/front.png",
                 alt: "The Multi-Deck Roller Jar Mill by VBCC offers advanced mixing and grinding of solid fillers for consistent ceramic slurries",
                 title: "Multi Deck Roller Jar Mill (polyuruthene)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png?updatedAt=1736156981576",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/isometric-left.png",
                 alt: "Image of VBCC's Multi-Deck Two-Tier Jar Mill featuring durable polyurethane rollers for efficient material processing",
                 title: "Multi Deck Roller Jar Mill (polyuruthene)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/right.png?updatedAt=1736156982433",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20two%20tier%20(polyuruthene)/right.png",
                 alt: "Multi-deck jar mill with polyurethane rollers, ideal for the effective mixing and grinding of solid powders",
                 title: "Multi Deck Roller Jar Mill (polyuruthene)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/front.png?updatedAt=1737349780274",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/front.png",
                 alt: "Close-up of VBCC's Multideck Three Tier Jar Mill, highlighting the Neoprene roller used for optimal performance",
                 title: "Multi Deck Jar Mill Three Tier (Neoprene)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/isometric%20or%20left.png?updatedAt=1737349781161",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/isometric%20or%20left.png",
                 alt: "Multi-deck three-tier jar mill designed for effective grinding and mixing of materials in laboratory and industrial use",
                 title: "Multi Deck Jar Mill Three Tier (Neoprene)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/right.png?updatedAt=1737349781984",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20jar%20mill%20three%20tier%20(%20neoprene)/right.png",
                 alt: "Multi-Deck Jar Mill with neoprene rollers, designed for durability and to minimize contamination, ensuring reliable performance in both research and production processes",
                 title: "Multi Deck Jar Mill Three Tier (Neoprene)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/front.png?updatedAt=1737349829564",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/front.png",
                 alt: "Visual of VBCC's soundproof Multideck Two Tier Jar Mill, engineered to lower noise levels for a quieter operational space",
                 title: "Multi Deck Jar Mill Two Tier (Sound Proof)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/isometric%20or%20left.png?updatedAt=1737349829762",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/isometric%20or%20left.png",
                 alt: "Product image of a soundproof Multi-Deck Two-Tier Jar Mill, showcasing its sleek design and efficient milling capabilities",
                 title: "Multi Deck Jar Mill Two Tier (Sound Proof)",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/right.png?updatedAt=1737349831173",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/multideck%20jar%20mill%20two%20tier%20(sound%20proof)/right.png",
                 alt: "Soundproof Multi-Deck Two-Tier Jar Mill designed for effective grinding and blending of materials while reducing noise levels",
                 title: "Multi Deck Jar Mill Two Tier (Sound Proof)",
             },
@@ -5009,23 +5009,23 @@ export const FunsaiProductsList = [
                 value: "PLC, HMI, VFD for precise control over operation parameters",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-1.pdf?updatedAt=1736232655735",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-1.pdf",
         slug: "Ball_Mills",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
+            "https://cdn.webibee.com/vbcc/Products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/front.png?updatedAt=1736156976661",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/planetary%20ball%20mill%20(monomill)/front.png",
                 alt: "Planetary ball mill designed for efficient grinding and mixing, utilizing synchronized motion for precise material homogenization",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png?updatedAt=1736156978267",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png",
                 alt: "VBCC's Planetary Ball Mill (Mono Mill) delivers high-performance milling for efficient sample preparation in research applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/planetary%20ball%20mill%20(monomill)/right.png?updatedAt=1736156979483",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/planetary%20ball%20mill%20(monomill)/right.png",
                 alt: "Planetary Ball Mill (Mono Mill) displayed, highlighting its innovative features for optimal grinding performance",
             },
         ],
@@ -5091,23 +5091,23 @@ export const FunsaiProductsList = [
                 value: "Planetary rotation for uniform grinding",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-2.pdf?updatedAt=1736232655680",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-2.pdf",
         slug: "Ball_Mills",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/isometric-left.png?updatedAt=1736156950863",
+            "https://cdn.webibee.com/vbcc/Products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/front.png?updatedAt=1736156946062",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/table%20top%20planetary%20ball%20mill/front.png",
                 alt: "A Planetary Ball Mill with four grinding jars on a rotating turntable, designed for efficient dry and wet material grinding",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/isometric-left.png?updatedAt=1736156950863",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/planetary%20ball%20mill%20(monomill)/isomteric-left.png",
                 alt: "Image of VBCC's Table Top Planetary Ball Mill, showcasing its compact design and advanced milling technology",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20planetary%20ball%20mill/right.png?updatedAt=1736156950409",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/table%20top%20planetary%20ball%20mill/right.png",
                 alt: "High-energy table top Planetary Ball Mill with four jars, perfect for particle size reduction and material synthesis in labs.",
             },
         ],
@@ -5174,23 +5174,23 @@ export const FunsaiProductsList = [
             },
             { label: "Continuous Operation", value: "Up to 72 hours" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-3.pdf?updatedAt=1736232655683",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-3.pdf",
         slug: "Ball_Mills",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png?updatedAt=1736156973933",
+            "https://cdn.webibee.com/vbcc/Products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/front.png?updatedAt=1736156968888",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/single%20roller%20Jar%20mill/front.png",
                 alt: "VBCC's Single Roller Jar Mill features a rotating roller that mixes and homogenizes materials efficiently in a jar",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png?updatedAt=1736156973933",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/single%20roller%20Jar%20mill/isometric-left.png",
                 alt: "Image of the Single Roller Jar Mill, highlighting the rotating roller that generates friction for effective material grinding",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/single%20roller%20Jar%20mill/right.png?updatedAt=1736156976793",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/single%20roller%20Jar%20mill/right.png",
                 alt: "Laboratory and industrial Single Roller Jar Mill used for reducing particle size and achieving consistent material blends",
             },
         ],
@@ -5245,23 +5245,23 @@ export const FunsaiProductsList = [
             { label: "Indicators", value: "On/off switch, emergency button" },
             { label: "Speed Control", value: "Via VFD" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-4.pdf?updatedAt=1736232655686",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-4.pdf",
         slug: "Ball_Mills",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png?updatedAt=1736156957914",
+            "https://cdn.webibee.com/vbcc/Products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/front.png?updatedAt=1736156956491",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/table%20top%20jar%20mill/front.png",
                 alt: "Table Top Jar Mill, a compact tool for milling and homogenizing materials in labs, featuring multiple jars on a horizontal platform",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png?updatedAt=1736156957914",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/table%20top%20jar%20mill/isomter-c-left.png",
                 alt: "Image of VBCC's Table Top Jar Mill with multiple jars on a horizontal platform, rotating to grind materials effectively",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/table%20top%20jar%20mill/right.png?updatedAt=1736156964706",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/table%20top%20jar%20mill/right.png",
                 alt: "Compact Table Top Jar Mill designed for efficient grinding and mixing in laboratories, suitable for various material applications",
             },
         ],
@@ -5320,7 +5320,7 @@ export const FunsaiProductsList = [
             { label: "Indicators", value: "On/off switch, emergency button" },
             { label: "Speed Control", value: "Via VFD" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-5.pdf?updatedAt=1736232655627",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/funsai/funsaiFiles/Material%20Processing-Brochure-funsai-5.pdf",
         slug: "Ball_Mills",
     },
 ];
@@ -5328,18 +5328,18 @@ export const FunsaiProductsList = [
 export const SeikiProductsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/isometric.png?updatedAt=1736156885023",
+            "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Compression%20Moulding%20Press/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/front.png?updatedAt=1736156865702",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Compression%20Moulding%20Press/front.png",
                 alt: "An advanced Hydraulic Compression Moulding Press by VBCC, known for durability, precision, and tailored engineering solutions",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/left.png?updatedAt=1736156894664",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Compression%20Moulding%20Press/left.png",
                 alt: "Image depicting state-of-the-art hydraulic compression moulding press designed for high-performance manufacturing applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Compression%20Moulding%20Press/right.png?updatedAt=1736156894897",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Compression%20Moulding%20Press/right.png",
                 alt: "Image of a Hydraulic Compression Moulding Press that shapes materials under high pressure and heat to produce precision components for various industries",
             },
         ],
@@ -5392,23 +5392,23 @@ export const SeikiProductsList = [
             { label: "Oil Tank Capacity", value: "325 liters" },
             { label: "Control System", value: "PLC with touch-screen HMI" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-1.pdf?updatedAt=1736232679563",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-1.pdf",
         slug: "Presses",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png?updatedAt=1736156797548",
+            "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/front.png?updatedAt=1736156790736",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Hot%20Press/front.png",
                 alt: "VBCC manufactures vacuum hot presses for controlled hot pressing, ideal for achieving high density in various material shapes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/left.png?updatedAt=1736156803311",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Hot%20Press/left.png",
                 alt: "Vacuum hot press product showcased, highlighting its advanced technology and sleek design",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Hot%20Press/right.png?updatedAt=1736156798672",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Hot%20Press/right.png",
                 alt: "Its Vacuum Hot Presses are designed to bond materials under high pressure and heat in a vacuum, producing high-quality components for various industries",
             },
         ],
@@ -5573,23 +5573,23 @@ export const SeikiProductsList = [
                 "Press Capacity": "10, 20, 50, 100 & 200 Ton",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-2.pdf?updatedAt=1736232679466",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-2.pdf",
         slug: "Presses",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/isometric.png?updatedAt=1736156803226",
+            "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Press/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/front.png?updatedAt=1736156797715",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Press/front.png",
                 alt: "Designed for precision, our Vacuum Press forms an air-tight seal, preventing voids for durable bonding in critical applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/left.png?updatedAt=1736156730822",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Press/left.png",
                 alt: "VBCC's Vacuum Press: An advanced device for effective vacuum sealing, enhancing productivity in manufacturing processes",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Vacuum%20Press/right.png?updatedAt=1736156799700",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Vacuum%20Press/right.png",
                 alt: "Visual of a vacuum press used for bonding and laminating materials under vacuum, ensuring high-quality, defect-free results",
             },
         ],
@@ -5649,55 +5649,55 @@ export const SeikiProductsList = [
                     " 30, 50, and 200-ton capacity presses are also available, designed to meet your specific moulding requirements.",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-3.pdf?updatedAt=1736232680093",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-3.pdf",
         slug: "Presses",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png?updatedAt=1736226196043",
+            "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/front.png?updatedAt=1736226194742",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/front.png",
                 alt: "VBCC's Automatic Hydraulic Press features an electric motor and hydraulic pump for precise control and high efficiency in manufacturing",
                 title: "20 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/left.png?updatedAt=1736226194774",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/left.png",
                 alt: "Image of VBCC's 20 Ton Automatic Hydraulic Press showcasing its robust design and advanced hydraulic technology",
                 title: "20 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/right.png?updatedAt=1736226196704",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/Automatic%2020%20Ton/right.png",
                 alt: "A 20 Ton Automatic Hydraulic Press designed for stamping, moulding, and compacting materials in various industrial applications",
                 title: "20 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/front.png?updatedAt=1736226197267",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/front.png",
                 alt: "VBCC's Automatic Hydraulic Press employs an electric motor and hydraulic system for reliable, precise manufacturing in various industries",
                 title: "50 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/left.png?updatedAt=1736226199834",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/left.png",
                 alt: "VBCC's 50 Ton Automatic Hydraulic Press displayed, highlighting its powerful capabilities and industrial-grade construction",
                 title: "50 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/right.png?updatedAt=1736226199431",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/50%20Ton%20Press%20Automatic/right.png",
                 alt: "A 50 Ton Automatic Hydraulic Press ideal for moulding, compacting, and forming materials with high precision and automation",
                 title: "50 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/front.png?updatedAt=1736226198996",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/isometric.png",
                 alt: "A 100 Ton Automatic Hydraulic Press designed for high-pressure applications in automotive, aerospace, and manufacturing industries",
                 title: "100 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/left.png?updatedAt=1736226218501",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/left.png",
                 alt: "A 100-ton automatic hydraulic press, featuring a sturdy build and automated controls for enhanced productivity in manufacturing",
                 title: "100 Ton Automatic Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/right.png?updatedAt=1736226220274",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Automatic%20Hydraulic%20Press/100%20Ton%20Hydraulic%20Press/right.png",
                 alt: "Visual representation of VBCC's 100 Ton Automatic Hydraulic Press, emphasizing its efficiency and heavy-duty performance",
                 title: "100 Ton Automatic Hydraulic Press",
             },
@@ -5757,40 +5757,40 @@ export const SeikiProductsList = [
             { label: "Safety", value: "Emergency switch, limit switches" },
             { label: "Power Supply", value: "3 Phase, 50Hz, AC, 230V" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-4.pdf?updatedAt=1736232679822",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-4.pdf",
         slug: "Presses",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/isometric.png?updatedAt=1736226036048",
+            "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/front.png?updatedAt=1736226037186",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/front.png",
                 alt: "Manual hydraulic press with hand lever for pressure generation, featuring a valve for material unloading and versatile applications",
                 title: "10 - Ton Manual Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/left.png?updatedAt=1736226036511",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/left.png",
                 alt: "VBCC's manual hydraulic press, featuring a sturdy frame and user-friendly controls for effective hydraulic operations",
                 title: "10 - Ton Manual Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/right.png?updatedAt=1736226036607",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/10%20Ton%20Manual%20Press/right.png",
                 alt: "A sturdy 10-ton manual hydraulic press, featuring a compact design suitable for various industrial pressing tasks",
                 title: "10 - Ton Manual Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/front.png?updatedAt=1736226032804",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/front.png",
                 alt: "Product image of a 20 Ton Manual Hydraulic Press, highlighting its sturdy construction and hydraulic mechanism",
                 title: "20 - Ton Manual Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/left.png?updatedAt=1736226035060",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/left.png",
                 alt: "Manual hydraulic press with 20-ton capacity, ideal for shaping, pressing, and forming materials in various industrial applications",
                 title: "20 - Ton Manual Hydraulic Press",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/right.png?updatedAt=1736226036038",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Manual%20Hydraulic%20Press/Manual%2050%20Ton/right.png",
                 alt: "A 20-ton manual hydraulic press, highlighting its powerful hydraulic system and user-friendly manual operation for efficient pressing",
                 title: "20 - Ton Manual Hydraulic Press",
             },
@@ -5847,23 +5847,23 @@ export const SeikiProductsList = [
             { label: "Model", value: "Table-top" },
             { label: "Pellet Die", value: "Optional (available at extra cost)" },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-5.pdf?updatedAt=1736232679886",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-5.pdf",
         slug: "Presses",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/isometric.png?updatedAt=1736156795380",
+            "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Mini%20Hot%20Press/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/front.png?updatedAt=1736156797989",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Mini%20Hot%20Press/front.png",
                 alt: "Mini Hot Press designed for small-scale production, applying controlled heat and pressure to shape and bond materials efficiently",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/left.png?updatedAt=1736156810163",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Mini%20Hot%20Press/left.png",
                 alt: "Image of VBCC's Mini Hot Press, emphasizing its innovative design and functionality for various pressing applications",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/Mini%20Hot%20Press/right.png?updatedAt=1736156860886",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/Mini%20Hot%20Press/right.png",
                 alt: "Mini Hot Press image, showcasing a versatile tool for heat and pressure applications in small-scale manufacturing and research",
             },
         ],
@@ -5917,7 +5917,7 @@ export const SeikiProductsList = [
                 value: "Input/output fuses, MCB protection",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-6.pdf?updatedAt=1736232679691",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/seiki/seikeiFiles/Material%20Processing-Brochure-seikei-6.pdf",
         slug: "Presses",
     },
 ];
@@ -5925,18 +5925,18 @@ export const SeikiProductsList = [
 export const OshidashiProductsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/isometric.png?updatedAt=1736156918682",
+            "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/manual%20extruder/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/front.png?updatedAt=1736156877588",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/manual%20extruder/front.png",
                 alt: "Specialized manual extruder designed for plastic processing, perfect for small businesses, ensuring quality welds in confined areas",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/left.png?updatedAt=1736156919959",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/manual%20extruder/left.png",
                 alt: "VBCC's manual extruder displayed, showcasing its design and features for efficient material processing",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/manual%20extruder/right.png?updatedAt=1736156928330",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/manual%20extruder/right.png",
                 alt: "Image of a manual extruder for processing plastics, ceramics, and food by forcing materials through a mould, ensuring precise control",
             },
         ],
@@ -6004,23 +6004,23 @@ export const OshidashiProductsList = [
                 value: "Ergonomic design with overload protection",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-1.pdf?updatedAt=1736232701942",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-1.pdf",
         slug: "Extruders",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/isometric.png?updatedAt=1736156939203",
+            "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/automatic%20extruder/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/front.png?updatedAt=1736156945414",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/automatic%20extruder/front.png",
                 alt: "An Automatic extruder feature a motorized screw in a heated barrel, ensuring efficient plastic shaping with precise processing control",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/left.png?updatedAt=1736156944793",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/automatic%20extruder/left.png",
                 alt: "Visual representation of VBCC's automatic extruder, emphasizing its innovative design and functionality in material extrusion",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/automatic%20extruder/right.png?updatedAt=1736156948410",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/automatic%20extruder/right.png",
                 alt: "High-efficiency automatic extruders are used for shaping materials in various industries, enabling precise control and high-volume production",
             },
         ],
@@ -6144,23 +6144,23 @@ export const OshidashiProductsList = [
                     "Die sizes and extrusion parameters customizable based on customer needs",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-2.pdf?updatedAt=1736232701835",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-2.pdf",
         slug: "Extruders",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/isometric.png?updatedAt=1736156890586",
+            "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/vacuum%20extruder/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/front.png?updatedAt=1736156879130",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/vacuum%20extruder/front.png",
                 alt: "Image of VBCC's vacuum extruder, enhancing material quality by eliminating moisture and VOCs during extrusion to ensure consistent, high-quality results",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/left.png?updatedAt=1736156894903",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/vacuum%20extruder/left.png",
                 alt: "A vacuum extruder displayed, emphasizing its role in shaping materials through extrusion technology",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/vacuum%20extruder/right.png?updatedAt=1736156893522",
+                img: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/vacuum%20extruder/right.png",
                 alt: "A vacuum extruder enhancing material quality by eliminating moisture and VOCs, utilized in ceramics, food, and plastics sectors.",
             },
         ],
@@ -6330,7 +6330,7 @@ export const OshidashiProductsList = [
                     "Die sizes and extrusion parameters customizable based on customer needs",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-3.pdf?updatedAt=1736232702257",
+        pdf: "https://cdn.webibee.com/vbcc/Products/MPE/oshidashi/oshidashiFiles/Material%20Processing-Brochure-oshidashi-3.pdf",
         slug: "Extruders",
     },
 ];
@@ -6338,18 +6338,18 @@ export const OshidashiProductsList = [
 export const AnalyticalInstrumentsList = [
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/isometric.png?updatedAt=1747312486332",
+            "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Dialometer/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/front.png?updatedAt=1747312480958",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Dialometer/front.png",
                 alt: "High-precision dilatometer for measuring dimensional changes in materials during thermal cycles for quality assurance.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/left.png?updatedAt=1747312487482",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Dialometer/left.png",
                 alt: "A specialized dilatometer that quantify thermal expansion in various materials, aiding in quality assurance and material characterization.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/right.png?updatedAt=1747312488139",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Dialometer/right.png",
                 alt: "VBCC's dilatometer designed for high-temperature measurements up to 1600°C, showcasing advanced thermal analysis technology.",
             },
         ],
@@ -6456,23 +6456,23 @@ export const AnalyticalInstrumentsList = [
                 "Dilatometer 1600": "LabVIEW Interface"
             }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Dialometer/Dialometer.pdf?updatedAt=1747312476224",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Dialometer/Dialometer.pdf",
         slug: "analytical",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/isometric.png?updatedAt=1747312470200",
+            "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/front.png?updatedAt=1747312470141",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/front.png",
                 alt: "A reliable reverse thermal expansion system for the precise measurement of dimensional changes in metals, ceramics, and construction materials with exceptional accuracy.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png?updatedAt=1747312470009",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png",
                 alt: "VBCC's Reverse thermal expansion features 1-micron precision, a vertical furnace, and operates safely at temperatures up to 1600°C",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/right.png?updatedAt=1747312468209",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/right.png",
                 alt: "Image of a reverse thermal expansion system that allows upright sample positioning, enhancing the efficient measurement of thermal changes in various materials.",
             },
         ],
@@ -6595,23 +6595,23 @@ export const AnalyticalInstrumentsList = [
                 "RTE 1600": "Vertical Linear Guide"
             }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/Reverse-Thermal-Expansion-System.pdf?updatedAt=1747312422622",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/Reverse-Thermal-Expansion-System.pdf",
         slug: "analytical",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/isometric.png?updatedAt=1747312470981",
+            "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Gas%20Sensor%20Unit/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/front.png?updatedAt=1747312467652",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Gas%20Sensor%20Unit/front.png",
                 alt: "High-accuracy VBCC Gas Sensor Testing Unit in stainless steel, designed for gas analysis with precise heating and vacuum control.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/left.png?updatedAt=1747312476151",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Gas%20Sensor%20Unit/left.png",
                 alt: "VBCC's Gas Sensor Unit is on display, showcasing its high-accuracy vacuum chamber and stainless-steel body for efficient functionality.",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/right.png?updatedAt=1747312480293",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Gas%20Sensor%20Unit/right.png",
                 alt: "Our Gas Sensor Testing Unit features a corrosion-resistant stainless-steel body, a vacuum chamber rated to 1 mbar, a 600°C heating platform, and a precision gas flow control system.",
             },
         ],
@@ -6724,23 +6724,23 @@ export const AnalyticalInstrumentsList = [
                     " Intel Core i5, 4 GB RAM, 1 TB HDD, 18.5” LED, software pre-installed",
             }
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Gas%20Sensor%20Unit/Four-Probe-Gas-Sensor-Testing-Unit.pdf?updatedAt=1747312451112",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Gas%20Sensor%20Unit/Four-Probe-Gas-Sensor-Testing-Unit.pdf",
         slug: "analytical",
     },
     {
         mainImg:
-            "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/isometric.png?updatedAt=1747312458622",
+            "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Thermal%20Conductive/isometric.png",
         Images: [
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/front.png?updatedAt=1747312460313",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Thermal%20Conductive/front.png",
                 alt: "Advanced Thermal Conductivity Measurement System by VBCC offers accurate measurements for various materials, enhancing research efficiency",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/left.png?updatedAt=1747312463735",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Thermal%20Conductive/left.png",
                 alt: "Visual representation of thermal conductivity instruments designed for precise heat transfer evaluation in various industries, enhancing material performance",
             },
             {
-                img: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/right.png?updatedAt=1747312459093",
+                img: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Thermal%20Conductive/right.png",
                 alt: "Product image of a thermal conductivity measurement system, showcasing its components and design for precise thermal analysis",
             },
         ],
@@ -6848,32 +6848,32 @@ export const AnalyticalInstrumentsList = [
                     "Temperature profiles, thermal conductivity curve",
             },
         ],
-        pdf: "https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Thermal%20Conductive/Thermal-Conductivity-Apparatus.pdf?updatedAt=1747312419998",
+        pdf: "https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Thermal%20Conductive/Thermal-Conductivity-Apparatus.pdf",
         slug: "analytical",
     },
 ]
 
 export const productLists = [
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034",
+        img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
         title: "Vacuum Sintering Furnace",
         temp: "1200 C",
         energy: "1.5 KW",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Burnout.png?updatedAt=1732082695194",
+        img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Burnout.png",
         title: "Burnout Furnace",
         temp: "1200 C",
         energy: "1.5 KW",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Zirconia.png?updatedAt=1732082774341",
+        img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Zirconia.png",
         title: "Zirconia Sintering Furnace",
         temp: "1600 C",
         energy: "2 KW",
     },
     {
-        img: "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Pressing.png?updatedAt=1732082803804",
+        img: "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Pressing.png",
         title: "Vacuum Pressing Furnace",
         temp: "1200 C",
         energy: "2 KW",

@@ -198,6 +198,8 @@ const Testimonials = () => {
                           alt="image"
                           title="image"
                           className="object-contain object-center"
+                          sizes="120px"
+                          loading="lazy"
                         />
                       </div>
                       {list.pdf !== "" && (

@@ -1,6 +1,6 @@
-import othersData from "@/libs/others.json";
+
 import Image from "next/image";
-import { BiSolidQuoteLeft, BiSolidQuoteRight } from "react-icons/bi";
+
 
 export const Vison = () => {
   return (
@@ -23,7 +23,7 @@ export const Vison = () => {
             <div className="flex items-center justify-center md:w-2/5">
               <div className="relative size-32 md:size-60">
                 <Image
-                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/mission.png?updatedAt=1733319577832"}
+                  src={"https://cdn.webibee.com/vbcc/homepage/mission.png"}
                   fill
                   alt="mission"
                   title="mission"
@@ -50,7 +50,7 @@ export const Vison = () => {
             <div className="flex items-center justify-center md:w-2/5">
               <div className="relative size-32 md:size-60">
                 <Image
-                  src={"https://ik.imagekit.io/webibee/VBCC/homepage/vision.png?updatedAt=1733319577960"}
+                  src={"https://cdn.webibee.com/vbcc/homepage/vision.png"}
                   fill
                   alt="vision"
                   title="vision"

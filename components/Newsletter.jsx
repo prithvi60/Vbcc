@@ -72,7 +72,7 @@ const Newsletter = () => {
           <Image
             alt="background image"
             title="background image"
-            src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-bg.png?updatedAt=1733226035657"
+            src="https://cdn.webibee.com/vbcc/homepage/newsletter-bg.png"
             fill
             className="z-0 object-cover object-center"
           />
@@ -145,7 +145,7 @@ const Newsletter = () => {
           <Image
             alt="background image"
             title="background image"
-            src="https://ik.imagekit.io/webibee/VBCC/homepage/newsletter-1.png?updatedAt=1733226033627"
+            src="https://cdn.webibee.com/vbcc/homepage/newsletter-1.png"
             fill
             className="z-0 object-cover object-center"
           />

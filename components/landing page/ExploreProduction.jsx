@@ -52,7 +52,7 @@ const ExploreProduction = () => {
                 </div>
                 <div className="relative w-full h-[380px] md:w-[280px] md:h-[420px] before:absolute before:border-2 before:border-info before:top-3 before:-left-3 before:md:h-[420px] before:w-full before:z-10 before:h-[380px]">
                     <Image
-                        src={"https://ik.imagekit.io/webibee/VBCC/homepage/explore%201.jpg?updatedAt=1733225201844"}
+                        src={"https://cdn.webibee.com/vbcc/homepage/explore%201.jpg"}
                         fill
                         alt="image"
                         title="image"

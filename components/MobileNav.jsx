@@ -19,7 +19,7 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
           <Image
             fill
             src={
-              "https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
+              "https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg"
             }
             alt="Logo"
             title="logo"

@@ -6,7 +6,7 @@ import React from 'react'
 const Page = () => {
     return (
         <DefaultLayout>
-            <MPEDetails data={AnalyticalInstrumentsList} type={"analytical"} query={"analyticalInstruments"} name={"Analytical-Instruments-Brochure"} />
+            <MPEDetails data={AnalyticalInstrumentsList} type={"analytical_instruments"} query={"analyticalInstruments"} name={"Analytical-Instruments-Brochure"} />
         </DefaultLayout>
     )
 }

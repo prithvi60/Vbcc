@@ -46,7 +46,7 @@ export default function AccordionTestimonial({
               <div>
                 {hasSubMenu ? (
                   <div
-                    className={`px-3 text-sm md:px-6 py-4 group duration-700 md:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 shadow-md capitalize w-full rounded-full cursor-pointer flex justify-between items-center ${categoryList === item.category ? "bg-info" : "bg-primary hover:bg-info text-white"}`}
+                    className={`px-3 text-sm md:px-6 py-4 group duration-700 md:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 shadow-md capitalize w-full !leading-5 rounded-full cursor-pointer flex justify-between items-center ${categoryList === item.category ? "bg-info" : "bg-primary hover:bg-info text-white"}`}
                     onClick={() => {
                       handleCategory(item.category);
                       setOpenMenuIndex(isMenuOpen ? null : i);
@@ -90,8 +90,8 @@ export default function AccordionTestimonial({
                               );
                             }}
                             className={`block p-2 text-center duration-700 text-xs md:text-base font-urbanist font-semibold delay-75 mx-auto md:mx-0 capitalize w-full ${productList === product
-                                ? "bg-secondary text-black shadow-lg"
-                                : "bg-primary text-white"
+                              ? "bg-secondary text-black shadow-lg"
+                              : "bg-primary text-white"
                               }`}
                           >
                             {product}
