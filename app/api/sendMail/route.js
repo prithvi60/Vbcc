@@ -17,8 +17,6 @@ export async function POST(req) {
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
 
-  // console.log(capitalized);
-
   // !clientEmail
   if (!userEmail && !process.env.EMAIL_ID) {
     return NextResponse.json(
@@ -31,7 +29,6 @@ export async function POST(req) {
   const clientMailOptions = {
     from: `"${userEmail}" <${"support@webibee.com"}>`,
     to: "sales@vbccinstruments.com",
-    // to: `${process.env.EMAIL_ID}`,
     subject: `New Customer Form Submitted - ${capitalized} Page`,
     html: `
             <div className="block space-y-10 font-merriWeather">
@@ -61,11 +58,10 @@ export async function POST(req) {
            </div>
             </div> 
             `,
-    // bcc: [process.env.EMAIL_ID],
   };
 
   const userMailOptions = {
-    from: `VBCC "${process.env.EMAIL_ID}" <${"support@webibee.com"}>`,
+    from: `VBCC <${"support@webibee.com"}>`,
     to: userEmail,
     subject: "Acknowledgment: We received your Submission",
     html: `<p>Dear ${firstName} ${lastName},</p>
@@ -82,15 +78,6 @@ export async function POST(req) {
            +91- 9600478315<br>
            </p>
            </div>`,
-    // attachments: [
-    //   // Default PDF attachment
-    //   {
-    //     filename: "Denkiro_Dental_Brochure_Digital.pdf",
-    //     content: defaultPdfContent,
-    //     contentType: "application/pdf",
-    //   },
-    // ],
-    // bcc: ["sales@vbccinstruments.com"],
   };
 
   try {
