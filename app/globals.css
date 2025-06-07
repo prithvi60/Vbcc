@@ -276,3 +276,7 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #f5f5f5;
   border-radius: 5px;
 }
+.inner-image-zoom__zoom-img {
+  transform-origin: center center !important;
+  object-fit: contain !important;
+}
