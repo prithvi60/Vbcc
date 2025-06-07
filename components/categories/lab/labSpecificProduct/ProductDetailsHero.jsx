@@ -1,36 +1,29 @@
 "use client";
 import BreadCrumb from "@/components/categories/BreadCrumb";
-import { Modal, Modal1 } from "@/components/landing page/Modal";
+import { Modal1 } from "@/components/landing page/Modal";
 import { LabProductsList } from "@/libs/productsData";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
 import Slider from "react-slick";
 import ProductDetails from "../../ProductDetails";
 import MoreProducts from "../../MoreProducts";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import InnerImageZoom from "react-inner-image-zoom";
-import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
-
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 const LabProductDetailsHero = () => {
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
-    const path = usePathname()
-        .split("/")
-        .filter((x) => x);
+    const path = usePathname().split("/").filter((x) => x);
     const filteredURI = path[path.length - 1];
 
     const [{ Images, productName, desc, keys, spec, headers, headers2, spec2, pdf }] = LabProductsList.filter(
         (val) => val.productName === filteredURI.replace(/_/g, " ")
     );
 
-    const moreProducts = LabProductsList.filter((val) => val.productName !== filteredURI.replace(/_/g, " "))
-
+    const moreProducts = LabProductsList.filter((val) => val.productName !== filteredURI.replace(/_/g, " "));
 
     let sliderRef1 = useRef(null);
     let sliderRef2 = useRef(null);
@@ -109,24 +102,12 @@ const LabProductDetailsHero = () => {
                                 waitForAnimate={false}
                                 fade={true}
                             >
-                                {Images.map((list, idx) => (
+                                {Images.map((item, idx) => (
                                     <div
-                                        className="relative w-full mx-auto h-52 md:h-60 xl:h-80 group"
                                         key={idx}
+                                        className="relative w-full mx-auto h-52 md:h-60 xl:h-80 group"
                                     >
-                                        <InnerImageZoom
-                                            fadeDuration={300}
-                                            mobileBreakpoint={640}
-                                            hideHint
-                                            src={list.img}
-                                            alt={list.alt}
-                                            title={list.alt}
-                                            zoomType="hover"
-                                            zoomScale={1}
-                                            width={320}
-                                            height={450}
-                                            className="z-20 !flex !items-center !justify-center object-contain object-center !w-full"
-                                        />
+                                        <ZoomSlide item={item} idx={idx} shouldRender={true} />
                                     </div>
                                 ))}
                             </Slider>
@@ -141,8 +122,7 @@ const LabProductDetailsHero = () => {
                             >
                                 {Images.map((list, idx) => (
                                     <div
-                                        className={`relative !w-full lg:!w-36 h-16 md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""
-                                            }`}
+                                        className={`relative !w-full lg:!w-36 h-16 md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""}`}
                                         key={idx}
                                     >
                                         <Image
@@ -171,9 +151,7 @@ function NextArrow(props) {
     const { onClick } = props;
     return (
         <div
-            className={
-                "p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer right-0 group"
-            }
+            className={"p-1.5 md:p-2 xl:p-3 rounded-full bg-primary absolute top-1/2 cursor-pointer right-0 group"}
             onClick={onClick}
         >
             <FaArrowRight className="text-sm text-white md:text-lg xl:text-xl group-hover:text-info" />
@@ -185,12 +163,53 @@ function PrevArrow(props) {
     const { onClick } = props;
     return (
         <div
-            className={
-                "p-1.5 md:p-2 xl:p-3 z-10 rounded-full bg-primary absolute top-1/2 cursor-pointer left-0 group"
-            }
+            className={"p-1.5 md:p-2 xl:p-3 z-10 rounded-full bg-primary absolute top-1/2 cursor-pointer left-0 group"}
             onClick={onClick}
         >
             <FaArrowLeft className="text-sm text-white md:text-lg xl:text-xl group-hover:text-info" />
         </div>
     );
 }
+
+const ZoomSlide = ({ item, idx, shouldRender }) => {
+    const [isZoomed, setIsZoomed] = useState(false);
+    const wrapperRef = useRef(null);
+
+    useEffect(() => {
+        console.log(`ZoomSlide mounted for index ${idx}`, item.img);
+    }, []);
+
+    if (!shouldRender) return null;
+
+    return (
+        <TransformWrapper
+            ref={wrapperRef}
+            defaultScale={1}
+            wheel={{ disabled: true }}
+            pinch={{ disabled: true }}
+            doubleClick={{ disabled: true }}
+        >
+            {({ zoomIn, resetTransform }) => (
+                <TransformComponent
+                    wrapperClass="w-full h-full"
+                    contentClass={`w-full h-full object-contain ${isZoomed ? "cursor-grab" : "cursor-default"}`}
+                >
+                    <img
+                        src={item.img}
+                        alt={item.alt}
+                        style={{ pointerEvents: "auto" }}
+                        className="w-full h-full object-contain transition-all duration-300"
+                        onMouseEnter={() => {
+                            zoomIn(1.2);
+                            setIsZoomed(true);
+                        }}
+                        onMouseLeave={() => {
+                            resetTransform();
+                            setIsZoomed(false);
+                        }}
+                    />
+                </TransformComponent>
+            )}
+        </TransformWrapper>
+    );
+};
