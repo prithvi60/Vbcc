@@ -21,7 +21,7 @@ const LandingHero = () => {
           <Image
             alt="VBCC Logo"
             title="VBCC Logo"
-            src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
+            src="https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg"
             fill
             className="z-0 object-cover object-center"
           />
@@ -30,7 +30,7 @@ const LandingHero = () => {
           <Image
             alt="background image"
             title="background image"
-            src="https://ik.imagekit.io/webibee/VBCC/homepage/herobg.jpg?updatedAt=1733226899567"
+            src="https://cdn.webibee.com/vbcc/homepage/herobg.jpg"
             fill
             className="z-0 object-cover object-center"
           />
@@ -118,7 +118,7 @@ const LandingHero = () => {
                   title="image"
                   fill
                   src={
-                    "https://ik.imagekit.io/webibee/VBCC/products/dental%20furnaces/Isometric%20-%20Sintering.png?updatedAt=1732082580034"
+                    "https://cdn.webibee.com/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png"
                   }
                   className="z-20 object-contain object-center transition-all duration-500 ease-linear group-hover:scale-125"
                 />

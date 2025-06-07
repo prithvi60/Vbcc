@@ -35,7 +35,7 @@ const OurTeam = () => {
                                     title="image"
                                     fill
                                     src={
-                                        "https://ik.imagekit.io/webibee/VBCC/homepage/CEO%20-%20Ellipse.png?updatedAt=1734095330733"
+                                        "https://cdn.webibee.com/vbcc/homepage/CEO%20-%20Ellipse.png"
                                     }
                                     className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
@@ -80,7 +80,7 @@ const OurTeam = () => {
                                         title="image"
                                         fill
                                         src={
-                                            "https://ik.imagekit.io/webibee/VBCC/homepage/CTO%20-%20Ellipse.png?updatedAt=1734095330811"
+                                            "https://cdn.webibee.com/vbcc/homepage/CTO%20-%20Ellipse.png"
                                         }
                                         className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                     />

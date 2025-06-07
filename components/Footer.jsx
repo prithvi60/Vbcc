@@ -1,10 +1,9 @@
 "use client";
-import othersData from "@/libs/others.json";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { useState } from "react";
-import { FaInstagram, FaPhone, FaRegEnvelope } from "react-icons/fa";
+import { FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import {
   FaLinkedin,
   FaLocationDot,
@@ -12,10 +11,8 @@ import {
 } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Loader from "./Loader";
-import { FooterBox, FooterBoxModal } from "@/svg_components/LandingHeroBox";
-import { MdOutlineBusinessCenter } from "react-icons/md";
+import { FooterBoxModal } from "@/svg_components/LandingHeroBox";
 import { BiPhoneCall } from "react-icons/bi";
-import { getAccessToken } from "@/libs/Functions";
 import { footerLinks1, footerLinks2 } from "@/libs/otherPage";
 
 const initialFormData = {
@@ -125,7 +122,7 @@ const Footer = () => {
             <Image
               alt="VBCC Logo"
               title="VBCC Logo"
-              src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
+              src="https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg"
               fill
               className="object-cover object-center"
             />
@@ -232,23 +229,6 @@ const Footer = () => {
         </div>
         <div className="relative block after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden w-full space-y-3 md:space-y-5 xl:w-max">
           <h4 className="w-full font-medium tracking-wider text-center md:text-xl lg:text-center xl:w-max">CONTACT INFO</h4>
-          {/* <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
-            <BiPhoneCall className="text-lg text-white md:text-3xl" />
-            <div className="hidden md:block">
-              <ConnectComponent
-                text={"+91 73388 94199"}
-                copied={Copied2}
-                handleClick={handleinquire}
-              />
-            </div>
-            <a href="tel:+917338894199" className="flex items-center md:hidden">
-              <ConnectComponent
-                text={"+91 73388 94199"}
-                copied={Copied2}
-                handleClick={handleinquire}
-              />
-            </a>
-          </div> */}
           <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
             <BiPhoneCall className="text-lg text-white md:text-3xl" />
             <div className="hidden md:block">
@@ -268,11 +248,6 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
             <FaRegEnvelope className="text-lg text-white md:text-2xl" />
-            {/* <ConnectComponent
-              text={"sales@vbccinstruments.com"}
-              copied={Copied}
-              handleClick={handlequote}
-            /> */}
             <a href="mailto:sales@vbccinstruments.com" className="flex items-center">
               <ConnectComponent
                 text={"sales@vbccinstruments.com"}

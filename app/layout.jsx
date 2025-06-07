@@ -45,7 +45,7 @@ export const metadata = {
     url: "https://vbccinstruments.com",
     images: [
       {
-        url: "https://ik.imagekit.io/webibee/VBCC/products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png?updatedAt=1732097862921",
+        url: "https://cdn.webibee.com/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png",
         width: 1200,
         height: 630,
         alt: "VBCC High Temperature Instruments",

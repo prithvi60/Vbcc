@@ -5,7 +5,6 @@ const ProductLayout = () => {
   const sortedBy = categoriesProducts.filter(
     (val) => val.category === "Best Selling"
   );
-  // console.log(sortedBy[0].lists);
 
   return (
     <Products sortProduct={sortProducts} productsData={categoriesProducts} featureProducts={sortedBy[0].lists} />

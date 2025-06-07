@@ -28,9 +28,6 @@ module.exports = {
       backdropColor: {
         "custom-blue": "#293271",
       },
-      backgroundImage: {
-        statistics: "url('https://ik.imagekit.io/webibee/VBCC/Statistics.png')",
-      },
       keyframes: {
         marquee_h: {
           from: { transform: "translateX(0%)" },

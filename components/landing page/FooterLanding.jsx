@@ -46,7 +46,7 @@ const FooterLanding = () => {
           <Image
             alt="VBCC Logo"
             title="VBCC Logo"
-            src="https://ik.imagekit.io/webibee/VBCC/homepage/VBCC%20logo.svg?updatedAt=1733742968628"
+            src="https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg"
             fill
             className="object-cover object-center"
           />
@@ -92,7 +92,7 @@ const FooterLanding = () => {
                 <FaFacebookF className="text-lg text-white md:text-2xl" />
               </Link>
             </li>
-            <li> 
+            <li>
               <Link title="instagram link"
                 aria-label="Instagram profile"
                 href={"https://www.instagram.com/vbcc_hti/"}

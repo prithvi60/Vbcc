@@ -26,8 +26,9 @@ const MoreProducts = ({ data, type }) => {
                                 {list.productName}
                             </h4>
                             <button>
-                                <Link title="products link"
-                                    href={`${type === "lab_equipment" ? `/categories/${type}/${list.productName.replace(/\s/g, "_")}` : `/categories/material_processing_equipment/${type}/${list.productName.replace(/\s/g, "_")}`} `}
+                                <Link
+                                    title="products link"
+                                    href={`${type === "lab_equipment" || type === "dental" || type === "laboratory" || type === "analytical_instruments" ? `/categories/${type}/${list.productName.replace(/\s/g, "_")}` : `/categories/material_processing_equipment/${type}/${list.productName.replace(/\s/g, "_")}`} `}
                                     className="w-full px-4 py-3 text-sm capitalize md:px-8 md:text-base md:w-max bg-info"
                                 >
                                     See Product

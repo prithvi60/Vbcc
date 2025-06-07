@@ -14,7 +14,7 @@ const TechnicalSupport = () => {
             <div className="w-full my-10 md:my-0">
                 <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
                     <Image
-                        src={"https://ik.imagekit.io/webibee/VBCC/homepage/card%201.png?updatedAt=1733225337760"}
+                        src={"https://cdn.webibee.com/vbcc/homepage/card%201.png"}
                         fill
                         alt="image"
                         title="image"

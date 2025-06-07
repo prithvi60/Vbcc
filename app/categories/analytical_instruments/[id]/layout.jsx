@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       title: decode("Laboratory Analytical Instruments"),
       description: "VBCC offers precision instruments for thermal expansion, conductivity, and resistivity studies. Ideal for advanced research, our tools guarantee accuracy and ease of use.",
       images: [{
-        url: 'https://ik.imagekit.io/webibee/VBCC/products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png?updatedAt=1747312470009',
+        url: 'https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png',
         width: 800,
         height: 600,
         alt: 'Laboratory Analytical Instruments',

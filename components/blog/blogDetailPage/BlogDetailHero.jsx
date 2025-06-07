@@ -69,24 +69,6 @@ const BlogDetailHero = ({ data, postName }) => {
                                     <h2 className="text-[24px] font-bold tracking-wider md:text-[40px] xl:text-[64px] md:leading-tight xl:leading-[4rem]">
                                         {postName}
                                     </h2>
-                                    {/* <div className="flex items-center gap-5">
-                                        <button
-                                            className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 capitalize duration-400 ease-linear hover:bg-primary bg-info text-white rounded-full cursor-pointer px-6 py-2`}
-                                        >
-                                            <h4>{"ENQUIRE NOW"}</h4>
-                                            <span>
-                                                <MdKeyboardDoubleArrowRight className="text-xl" />
-                                            </span>
-                                        </button>
-                                        <button
-                                            className={`font-semibold w-fit transition-all flex items-center text-xs xl:text-base gap-3 duration-400 ease-linear capitalize bg-gradient-to-bl from-[#6b778cf8] to-[#ffffff3f] hover:bg-gradient-to-t hover:from-info hover:to-info text-white rounded-full cursor-pointer px-6 py-2`}
-                                        >
-                                            <h4>{"GO TO CATEGORY"}</h4>
-                                            <span>
-                                                <MdKeyboardDoubleArrowRight className="text-xl" />
-                                            </span>
-                                        </button>
-                                    </div> */}
                                 </div>
                             </div>
                             <div className="absolute z-10 hidden w-full md:block left-2 -bottom-14 md:-bottom-40">
