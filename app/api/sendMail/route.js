@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 export async function POST(req) {
   const { firstName, lastName, userEmail, jobTitle, phone, message, page } =
     await req.json();
-  const imageUrl = "https://cdn.webibee.com/vbcc/homepage/VBCC_email_logo.png";
+  const imageUrl = "https://ik.imagekit.io/webibee/VBCC_email_logo.png?updatedAt=1751531750900";
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
 
