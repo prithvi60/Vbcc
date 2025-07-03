@@ -93,7 +93,7 @@ const LabProductDetailsHero = () => {
                         </div>
                     </div>
                     <div className="z-auto w-full h-full mx-auto space-y-10 max-w-96 md:max-w-md xl:max-w-2xl">
-                        <div className="relative z-0 slider-container">
+                        <div className="relative z-0 slider-container h-full">
                             <Slider
                                 asNavFor={nav2}
                                 ref={(slider) => (sliderRef1 = slider)}
@@ -105,7 +105,7 @@ const LabProductDetailsHero = () => {
                                 {Images.map((item, idx) => (
                                     <div
                                         key={idx}
-                                        className="relative w-full mx-auto h-52 md:h-60 xl:h-80 group"
+                                        className="relative w-full mx-auto h-64 sm:h-72 md:h-60 xl:h-80 group overflow-hidden"
                                     >
                                         <ZoomSlide item={item} idx={idx} shouldRender={true} />
                                     </div>
@@ -121,18 +121,18 @@ const LabProductDetailsHero = () => {
                                 {...settings}
                             >
                                 {Images.map((list, idx) => (
-                                    <div
-                                        className={`relative !w-full lg:!w-36 h-16 md:h-24 ${activeIndex === idx ? "border-2 border-info" : ""}`}
+                                    <Image
                                         key={idx}
-                                    >
-                                        <Image
-                                            alt={list.alt}
-                                            title={list.alt}
-                                            fill
-                                            src={list.img}
-                                            className="z-20 object-cover object-center"
-                                        />
-                                    </div>
+                                        priority={false}
+                                        loading="lazy"
+                                        quality={100}
+                                        width={80}
+                                        height={80}
+                                        alt={list.alt}
+                                        title={list.alt}
+                                        src={list.img}
+                                        className={`object-contain object-center shrink-0 size-12 sm:size-28 xl:w-36 xl:h-40 ${activeIndex === idx ? "border-4 rounded-lg border-info" : ""}`}
+                                    />
                                 ))}
                             </Slider>
                         </div>
@@ -175,41 +175,46 @@ const ZoomSlide = ({ item, idx, shouldRender }) => {
     const [isZoomed, setIsZoomed] = useState(false);
     const wrapperRef = useRef(null);
 
-    useEffect(() => {
-        console.log(`ZoomSlide mounted for index ${idx}`, item.img);
-    }, []);
-
     if (!shouldRender) return null;
 
     return (
-        <TransformWrapper
-            ref={wrapperRef}
-            defaultScale={1}
-            wheel={{ disabled: true }}
-            pinch={{ disabled: true }}
-            doubleClick={{ disabled: true }}
-        >
-            {({ zoomIn, resetTransform }) => (
-                <TransformComponent
-                    wrapperClass="w-full h-full"
-                    contentClass={`w-full h-full object-contain ${isZoomed ? "cursor-grab" : "cursor-default"}`}
-                >
-                    <img
-                        src={item.img}
-                        alt={item.alt}
-                        style={{ pointerEvents: "auto" }}
-                        className="w-full h-full object-contain transition-all duration-300"
-                        onMouseEnter={() => {
-                            zoomIn(1.2);
-                            setIsZoomed(true);
-                        }}
-                        onMouseLeave={() => {
-                            resetTransform();
-                            setIsZoomed(false);
-                        }}
-                    />
-                </TransformComponent>
-            )}
-        </TransformWrapper>
+        <div className="w-full h-full">
+            <TransformWrapper
+                ref={wrapperRef}
+                defaultScale={1}
+                wheel={{ disabled: true }}
+                pinch={{ disabled: true }}
+                doubleClick={{ disabled: true }}
+            >
+                {({ zoomIn, resetTransform }) => (
+                    <TransformComponent
+                        wrapperStyle={{ height: '100%', width: '100%' }}
+                        contentStyle={{ height: '100%', width: '100%' }}
+                        wrapperClass="w-full h-full"
+                        contentClass={`w-full h-full ${isZoomed ? "cursor-grab" : "cursor-default"}`}
+                    >
+                        <img
+                            src={item.img}
+                            alt={item.alt}
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'contain',
+                                pointerEvents: 'auto'
+                            }}
+                            className="transition-all duration-300"
+                            onMouseEnter={() => {
+                                zoomIn(1.2);
+                                setIsZoomed(true);
+                            }}
+                            onMouseLeave={() => {
+                                resetTransform();
+                                setIsZoomed(false);
+                            }}
+                        />
+                    </TransformComponent>
+                )}
+            </TransformWrapper>
+        </div>
     );
 };

@@ -6,7 +6,7 @@ import Tablet from "../Tablet";
 const ProductDetails = ({ keys, specs, headers, page, headers2, specs2, path }) => {
   const [activeTab, setActiveTab] = useState("Key Functions");
   return (
-    <section className="w-full h-full space-y-20 padding font-Montserrat bg-primary">
+    <section className="w-full h-full space-y-20 padding font-Montserrat bg-primary -mt-10 md:mt-0">
       <div className="flex flex-col items-center gap-6 sm:gap-8 sm:flex-row">
         <button
           onClick={() => setActiveTab("Key Functions")}
