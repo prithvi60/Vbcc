@@ -101,6 +101,7 @@ const LabProductDetailsHero = () => {
                                 prevArrow={<PrevArrow />}
                                 waitForAnimate={false}
                                 fade={true}
+                                swipe={false}
                             >
                                 {Images.map((item, idx) => (
                                     <div
