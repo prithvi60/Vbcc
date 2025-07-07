@@ -48,7 +48,7 @@ const MPEDetails = ({ data, type, query, name }) => {
     return (
         <>
             <section className="relative z-auto w-full h-full overflow-hidden font-Montserrat">
-                <div className="relative w-full h-[1400px] md:h-[1200px] lg:h-[850px] bg-primary z-auto"></div>
+                <div className="relative w-full h-[1450px] md:h-[1000px] lg:h-[850px] xl:h-[800px] bg-primary z-auto"></div>
                 <div className="absolute left-0 flex flex-col items-center w-full h-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                     <BreadCrumb />
                     <div className="block w-full pt-32 pb-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
@@ -99,9 +99,9 @@ const MPEDetails = ({ data, type, query, name }) => {
                         </div>
                     </div>
                     <div className="z-auto w-full h-full mx-auto space-y-6 max-w-96 md:max-w-md">
-                        <div className="relative z-0 slider-container h-full">
+                        <div className="relative z-0 slider-container h-auto">
                             {title && (
-                                <h5 className="absolute z-20 w-full p-1 text-sm font-medium tracking-wider left-5 backdrop-blur-lg sm:left-10 lg:left-20 -bottom-48 lg:-bottom-48 text-primary">{title}</h5>
+                                <h5 className="absolute z-20 w-full p-1 text-sm font-medium tracking-wider left-5 backdrop-blur-lg sm:left-10 lg:left-20 -bottom-52 lg:-bottom-60 text-primary">{title}</h5>
                             )}
                             <Slider
                                 asNavFor={nav2}
@@ -140,7 +140,8 @@ const MPEDetails = ({ data, type, query, name }) => {
                                         alt={list.alt}
                                         title={list.alt}
                                         src={list.img}
-                                        className={`object-contain object-center shrink-0 size-12 sm:size-28 xl:w-36 xl:h-40 ${activeIndex === idx ? "border-4 rounded-lg border-info" : ""}`}
+                                        className={`object-contain object-center shrink-0 size-24 sm:size-28 xl:w-36 xl:h-40 ${activeIndex === idx ? "border-4 rounded-lg border-info" : ""}`}
+                                    // className={`object-contain object-center shrink-0 size-12 sm:size-28 xl:w-36 xl:h-40 ${activeIndex === idx ? "border-4 rounded-lg border-info" : ""}`}
                                     />
                                 ))}
                             </Slider>
@@ -148,7 +149,7 @@ const MPEDetails = ({ data, type, query, name }) => {
                     </div>
                 </div>
             </section>
-            <ProductDetails keys={keys} specs={spec} headers={headers} path={filteredURI} />
+            <ProductDetails keys={keys} specs={spec} headers={headers} path={path[1]} />
             <MoreProducts data={moreProducts.slice(0, 2)} type={type} />
         </>
     );

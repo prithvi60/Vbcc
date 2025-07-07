@@ -131,7 +131,7 @@ const LabProductDetailsHero = () => {
                                         alt={list.alt}
                                         title={list.alt}
                                         src={list.img}
-                                        className={`object-contain object-center shrink-0 size-12 sm:size-28 xl:w-36 xl:h-40 ${activeIndex === idx ? "border-4 rounded-lg border-info" : ""}`}
+                                        className={`object-contain object-center shrink-0 size-24 sm:size-28 xl:w-36 xl:h-40 ${activeIndex === idx ? "border-4 rounded-lg border-info" : ""}`}
                                     />
                                 ))}
                             </Slider>
@@ -139,7 +139,7 @@ const LabProductDetailsHero = () => {
                     </div>
                 </div>
             </section>
-            <ProductDetails keys={keys} specs={spec} headers={headers} page={"lab"} headers2={headers2} specs2={spec2} />
+            <ProductDetails keys={keys} specs={spec} headers={headers} page={"lab"} headers2={headers2} specs2={spec2} path={path[1]} />
             <MoreProducts data={moreProducts.slice(0, 2)} type={"laboratory"} />
         </>
     );

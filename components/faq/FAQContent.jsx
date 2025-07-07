@@ -3,6 +3,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const ImgSrc = "https://cdn.webibee.com/vbcc/faq.png";
+
 const FAQAccordionComponent = dynamic(() => import("./FAQAccordion"));
 
 const FAQContent = () => {

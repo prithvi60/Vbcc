@@ -3,10 +3,21 @@ import React from "react";
 import { useState } from "react";
 import Tablet from "../Tablet";
 
-const ProductDetails = ({ keys, specs, headers, page, headers2, specs2, path }) => {
+const ProductDetails = ({
+  keys,
+  specs,
+  headers,
+  page,
+  headers2,
+  specs2,
+  pathName,
+  path,
+}) => {
   const [activeTab, setActiveTab] = useState("Key Functions");
   return (
-    <section className="w-full h-full space-y-20 padding font-Montserrat bg-primary -mt-10 md:mt-0">
+    <section
+      className={`w-full h-full space-y-20 padding font-Montserrat bg-primary ${path === "material_processing_equipment" || path === "lab_equipment" || path === "analytical_instruments" ? "mt-0" : "-mt-14 md:mt-0"}`}
+    >
       <div className="flex flex-col items-center gap-6 sm:gap-8 sm:flex-row">
         <button
           onClick={() => setActiveTab("Key Functions")}
@@ -39,7 +50,10 @@ const ProductDetails = ({ keys, specs, headers, page, headers2, specs2, path }) 
       )}
       {activeTab === "Specifications" && (
         <>
-          {(page === "lab" || path === "Vacuum_Hot_Press" || path === "Dilatometer" || path === "Reverse_Thermal_Expansion_System") ? (
+          {page === "lab" ||
+            pathName === "Vacuum_Hot_Press" ||
+            pathName === "Dilatometer" ||
+            pathName === "Reverse_Thermal_Expansion_System" ? (
             <>
               <Tablet headers={headers} data={specs} />
               {headers2 && specs2 && (
