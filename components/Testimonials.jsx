@@ -138,14 +138,14 @@ const Testimonials = () => {
           <div className="!relative flex flex-col w-full h-full gap-8 md:flex-row items-start">
             <div
               className={`block w-full mx-auto space-y-6 md:w-[30%] xl:w-1/5 relative`}
-              style={{
-                height:
-                  isMobile && cardContainerHeight
-                    ? `${cardContainerHeight}px`
-                    : "auto",
-              }}
+            // style={{
+            //   height:
+            //     isMobile && cardContainerHeight
+            //       ? `${cardContainerHeight}px`
+            //       : "auto",
+            // }}
             >
-              <div className="w-full md:!sticky md:top-16 pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
+              <div className="w-full md:!sticky md:top-8 pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
                 <h4 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
                   categories
                 </h4>

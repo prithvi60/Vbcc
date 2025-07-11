@@ -880,4 +880,13 @@ export const ourTestimonials = [
         review: "I would like to extend our sincere appreciation for the 10 Ton Motorized Hydraulic Press provided by VBCC High Temperature Instruments Pvt Ltd. Its robust design and smooth operation have greatly facilitated our work, benefiting several scholars in their studies and experiments. We deeply appreciate the effort and expertise your team has put into designing and delivering such high-quality equipment.",
         pdf: "/TestimonialsPDF/IIT-Madras-Hydraulic-Press.pdf",
     },
+    {
+        product: "HMOR Furnace",
+        category: "Others",
+        clientLogo: "https://cdn.webibee.com/vbcc/Testimonials/Logos/APPL_Logo.jpg",
+        clientVideo: "",
+        aboutClient: `Adithya Power Refractories and Insulation Pvt Ltd`,
+        review: "We are extremely satisfied with the HMOR Furnace supplied by VBCC for high-temperature testing of refractory materials. The equipment has proven to be highly reliable, delivering precise and consistent results in our Modulus of Rupture (MOR) testing applications. VBCC’s furnace design reflects their deep understanding of refractory testing requirements. What truly sets VBCC apart is their technical support and after-sales service. We look forward to continuing our association with VBCC and highly recommend their products.",
+        pdf: "/TestimonialsPDF/HMOR.pdf",
+    },
 ]

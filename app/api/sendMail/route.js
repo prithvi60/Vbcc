@@ -13,7 +13,8 @@ const transporter = nodemailer.createTransport({
 export async function POST(req) {
   const { firstName, lastName, userEmail, jobTitle, phone, message, page } =
     await req.json();
-  const imageUrl = "https://ik.imagekit.io/webibee/VBCC_email_logo.png?updatedAt=1751531750900";
+  const imageUrl =
+    "https://ik.imagekit.io/webibee/VBCC_email_logo.png?updatedAt=1751531750900";
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
 
@@ -33,8 +34,8 @@ export async function POST(req) {
     html: `
             <div className="block space-y-10 font-merriWeather">
             <h4 className="!text-lg !capitalize">Hi,</h4>
-            <p>You have a new Message from VBCC Dental</p>
-            <p>Choose VBCC for Your Dental Furnace Needs</p>
+            <p>You have a new Message from VBCC</p>
+            <p>Choose VBCC for your furnace needs</p>
             <p className="!flex !items-center !justify-center !gap-3">
             <span className="!capitalize !font-bold">Name:</span> 
             ${firstName} ${lastName}
@@ -66,7 +67,7 @@ export async function POST(req) {
     subject: "Acknowledgment: We received your Submission",
     html: `<p>Dear ${firstName} ${lastName},</p>
              <p>Greetings from VBCC High Temperature Instruments!</p>
-             <p>We appreciate your interest in our products and acknowledge the receipt of your submission.</p>
+             <p>We appreciate your interest in our products and acknowledge the receipt of your submission.Our team will get in touch with you shortly.</p>
               <div>Thanks & Regards,<br>
                     <br>
               <div style="margin-bottom: 10px;">
