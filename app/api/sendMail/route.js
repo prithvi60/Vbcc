@@ -14,7 +14,7 @@ export async function POST(req) {
   const { firstName, lastName, userEmail, jobTitle, phone, message, page } =
     await req.json();
   const imageUrl =
-    "https://ik.imagekit.io/webibee/VBCC_email_logo.png?updatedAt=1751531750900";
+    "https://ik.imagekit.io/a7ag28udt/VBCC-Logo.svg?updatedAt=1756711973062";
 
   const capitalized = page.charAt(0).toUpperCase() + page.slice(1);
 
