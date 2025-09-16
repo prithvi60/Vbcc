@@ -8,7 +8,6 @@ export async function generateMetadata({ params }) {
   // Fetch the product based on the slug
   const product = DentalProductsList.find((item) => item.productName === decodedId);
 
-
   if (product) {
     return {
       title: decode(product.metaTitle),

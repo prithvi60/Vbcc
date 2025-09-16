@@ -3,11 +3,10 @@ import { decode } from "html-entities";
 
 export async function generateMetadata({ params }) {
   const { id } = params;
-  const decodedId = id.replace(/-/g, " ")
+  const decodedId = id.replace(/_/g, " ")
 
   // Fetch the product based on the slug
   const product = AnalyticalInstrumentsList.find((item) => item.productName === decodedId);
-
 
   if (product) {
     return {
