@@ -44,7 +44,7 @@ const Timeline = () => {
     return (
         <section className='relative w-full overflow-hidden bg-primary text-primary font-Montserrat padding'>
             <div className='block w-full mt-20 space-y-4 md:space-y-6'>
-                <h4 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info mb-6 md:mb-0">Our Timeline</h4>
+                <h2 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info mb-6 md:mb-0">Our Timeline</h2>
                 <div className="overflow-x-scroll shadow-xl lg:overflow-x-scroll rounded-tl-xl thumbnail" ref={scrollContainerRef}>
                     <div ref={targetRef} className="w-full h-[330px] md:h-[690px] p-3">
                         <img src={"https://cdn.webibee.com/vbcc/homepage/timeline.svg"} alt="legacy-image" title="legacy-image" loading="lazy" className=" h-[280px] md:h-[650px] max-w-[520%] object-cover md:object-contain md:max-w-[450%]" />

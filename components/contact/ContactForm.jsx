@@ -107,7 +107,7 @@ export const ContactForm = () => {
   return (
     <section className="mt-20 space-y-10 text-warning font-Montserrat ">
       <div className="w-full h-full space-y-6 px-5 md:px-10 pt-10 md:pt-[60px] lg:px-[60px] lg:pt-20">
-        <h2 className="text-5xl font-bold text-info tracking-wider md:text-[64px] xl:text-[80px] w-max">Contact Us</h2>
+        <h1 className="text-5xl font-bold text-info tracking-wider md:text-[64px] xl:text-[80px] w-max">Contact Us</h1>
       </div>
       <div
         className="relative w-full flex flex-col pb-10 md:pb-[60px] lg:pb-20 lg:flex-row justify-between text-white rounded-lg h-full lg:h-[85vh]"
@@ -116,15 +116,15 @@ export const ContactForm = () => {
           <div className="w-3/5 md:w-3/5 h-60 md:h-96 lg:w-full lg:h-[85vh] relative">
             <Image fill alt="banner image" src={"/Banner.jpg"} className="object-cover object-center" />
           </div>
-          <h3 className="absolute block mb-2 text-xl font-extrabold -translate-y-1/2 right-5 md:right-32 top-1/2 lg:hidden w-max text-primary md:text-3xl">
+          <h2 className="absolute block mb-2 text-xl font-extrabold -translate-y-1/2 right-5 md:right-32 top-1/2 lg:hidden w-max text-primary md:text-3xl">
             Let us get back to you
-          </h3>
+          </h2>
         </div>
         <div className="z-0 flex flex-col items-center justify-center w-full gap-5 lg:gap-10 lg:justify-end lg:w-4/5 lg:-translate-y-1/2 lg:absolute lg:right-5 lg:flex-row lg:top-1/2">
           <div className="w-full p-2 mt-5 space-y-5 lg:w-2/5 backdrop-blur-sm">
-            <h3 className="hidden mb-2 text-2xl font-extrabold lg:block w-max text-info md:text-3xl">
+            <h2 className="hidden mb-2 text-2xl font-extrabold lg:block w-max text-info md:text-3xl">
               Let us get back to you
-            </h3>
+            </h2>
             <ul className="block mx-auto space-y-3 text-sm font-bold text-center lg:text-start md:text-base text-primary">
               <li>
                 Our dedicated sales team will get in touch with you to

@@ -52,7 +52,7 @@ export default function AccordionTestimonial({
                       setOpenMenuIndex(isMenuOpen ? null : i);
                     }}
                   >
-                    <h4>{item.category}</h4>
+                    <h3>{item.category}</h3>
                     <IoIosArrowDown
                       className={`ml-auto ${isMenuOpen && "rotate-180"} `}
                     />

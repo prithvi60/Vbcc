@@ -9,9 +9,9 @@ const OurTeam = () => {
             <div className="block w-full h-full space-y-6 padding">
                 <div className="block py-10 space-y-6 md:space-y-20 md:py-20">
                     <div className="block w-full space-y-4 md:space-y-6">
-                        <h4 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info">
+                        <h2 className="relative text-2xl font-bold tracking-wide after:absolute after:h-0.5 w-max after:w-3/4 after:-bottom-4 after:left-0 after:bg-white md:text-4xl xl:text-5xl text-info">
                             Our Team
-                        </h4>
+                        </h2>
                         <p className="pt-5 text-base font-bold md:text-lg text-secondary">
                             Welcome to VBCC High Temperature Instruments!
                         </p>
@@ -48,9 +48,9 @@ const OurTeam = () => {
                                     </p>
                                     <BiSolidQuoteRight className="absolute right-0 text-base -bottom-4 md:bottom-0 md:right-4 md:text-lg text-info" />
                                 </div>
-                                <h4 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
+                                <h3 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
                                     NAVEEN VISWABASKARAN
-                                </h4>
+                                </h3>
                                 <p className="text-base font-medium capitalize md:text-lg xl:text-xl">
                                     CEO & Managing Director
                                 </p>
@@ -67,9 +67,9 @@ const OurTeam = () => {
                                         </p>
                                         <BiSolidQuoteRight className="absolute right-0 4ext-base -bottom-0 md:right-4 md:text-lg text-info" />
                                     </div>
-                                    <h4 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
+                                    <h3 className="text-base font-semibold tracking-wide uppercase text-info md:text-lg xl:text-3xl">
                                         DR.V.VISWABASKARAN
-                                    </h4>
+                                    </h3>
                                     <p className="text-base font-medium capitalize md:text-lg xl:text-xl">
                                         CTO & Director
                                     </p>

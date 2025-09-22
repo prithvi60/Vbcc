@@ -38,6 +38,12 @@ export const metadata = {
   verification: {
     google: "G-7T9F0FKPQM",
   },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/",
+    },
+  },
   metadataBase: new URL("https://vbccinstruments.com"),
   openGraph: {
     title: "VBCC High Temperature Instruments",
@@ -51,6 +57,7 @@ export const metadata = {
         alt: "VBCC High Temperature Instruments",
       },
     ],
+    type: "website"
   },
   robots: {
     index: true,

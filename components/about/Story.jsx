@@ -18,9 +18,9 @@ export const Story = () => {
       <section>
         <div className="relative flex flex-col-reverse items-start gap-5 md:flex-row mb-28 padding">
           <div className="block w-full space-y-4 md:w-4/5">
-            <h4 className="text-2xl font-semibold text-primary tracking-wider md:text-[32px] xl:text-[44px] w-max font-Montserrat">
+            <h1 className="text-2xl font-semibold text-primary tracking-wider md:text-[32px] xl:text-[44px] w-max font-Montserrat">
               Innovation
-            </h4>
+            </h1>
             <h2 className="text-5xl font-bold text-info tracking-wider md:text-[64px] xl:text-[80px] w-max font-Montserrat">
               Excellence
             </h2>

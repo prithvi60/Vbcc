@@ -145,7 +145,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="block w-full space-y-4 md:w-auto lg:space-y-7 xl:space-y-3 text-primary">
-          <h4 className="text-xl font-medium tracking-wider text-center">FOLLOW US</h4>
+          <h2 className="text-xl font-medium tracking-wider text-center">FOLLOW US</h2>
           <ul className="flex items-center justify-center gap-3 ">
             <li>
               <Link title="linkedIn" href={"https://www.linkedin.com/company/vbcc-hti/"} className="hover:animate-pulse " target="_blank">
@@ -175,12 +175,12 @@ const Footer = () => {
           </ul>
         </div>
         <div className="block w-full space-y-3 text-center text-primary md:space-y-5">
-          <h4 className="flex items-center justify-center gap-3 text-base font-medium tracking-wider uppercase md:text-xl">
+          <h2 className="flex items-center justify-center gap-3 text-base font-medium tracking-wider uppercase md:text-xl">
             <span className="">
               <FaLocationDot className="text-lg" />
             </span>
             Our Location
-          </h4>
+          </h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248852.35523221854!2d80.20816985922144!3d12.951488698204182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de4f794ee29%3A0x8fd9b1da364d7215!2sVBCC%20High%20Temperature%20Instruments%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1730722548513!5m2!1sen!2sin"
             title="our office location"
@@ -195,9 +195,9 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center justify-center w-full grid-cols-1 px-5 pt-10 pb-5 md:justify-start md:items-start lg:grid md:pb-3 bg-primary md:px-10 lg:w-3/5 xl:w-4/5 xl:px-16 lg:grid-cols-2 xl:grid-cols-3 gap-7 xl:gap-4">
         <div className="relative flex flex-col h-auto items-center w-full space-y-5 after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden md:justify-between md:flex-row md:w-max md:block lg:space-y-7">
-          <h4 className="text-xl font-medium tracking-wider text-center lg:text-left">
+          <h2 className="text-xl font-medium tracking-wider text-center lg:text-left">
             QUICK LINKS
-          </h4>
+          </h2>
           <div className="flex items-start text-sm gap-7 xl:gap-16 ">
             <div className="flex flex-col items-start gap-3">
               {footerLinks1.map((list, id) => (
@@ -228,7 +228,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="relative block after:w-56 after:h-0.5 after:bg-white after:-bottom-3.5 after:left-1/2 after:absolute after:-translate-x-1/2 md:after:hidden w-full space-y-3 md:space-y-5 xl:w-max">
-          <h4 className="w-full font-medium tracking-wider text-center md:text-xl lg:text-center xl:w-max">CONTACT INFO</h4>
+          <h2 className="w-full font-medium tracking-wider text-center md:text-xl lg:text-center xl:w-max">CONTACT INFO</h2>
           <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2.5 lg:gap-5 w-full xl:w-max">
             <BiPhoneCall className="text-lg text-white md:text-3xl" />
             <div className="hidden md:block">
@@ -269,9 +269,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="relative z-0 block w-full space-y-3 lg:col-span-2 md:space-y-5 xl:space-y-8 xl:col-auto md:w-[320px]">
-          <h4 className="text-xl font-medium tracking-wider text-center uppercase lg:text-start">
+          <h2 className="text-xl font-medium tracking-wider text-center uppercase lg:text-start">
             LET’S WORK TOGETHER
-          </h4>
+          </h2>
           <form
             className="relative z-10 block pt-5 space-y-4"
             onSubmit={handleSubmit}
@@ -344,16 +344,16 @@ const Footer = () => {
               className={`block rounded-full px-4 py-2 border border-warning bg-white hover:bg-info text-center text-base duration-700 delay-75 font-Montserrat capitalize w-full xl:w-[350px] group`}
             >
               <div className={`h-6 w-full overflow-hidden font-semibold`}>
-                <h4
+                <h2
                   className={`transition translate-y-0 group-hover:-translate-y-20 duration-700 text-primary`}
                 >
                   {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Request for Quote"}
-                </h4>
-                <h4
+                </h2>
+                <h2
                   className={`translate-y-20 transition group-hover:-translate-y-[25px] duration-700 text-white`}
                 >
                   {status ? (<Loader styles={"bg-primary"} type={"main"} />) : "Request for Quote"}
-                </h4>
+                </h2>
               </div>
             </button>
           </form>

@@ -94,9 +94,9 @@ const Newsletter = () => {
             onSubmit={handleSubmit}
             className="w-full mt-6 sm:text-center lg:text-left"
           >
-            <h5 className="mb-3 text-sm font-semibold md:text-base xl:text-lg 2xl:text-xl">
+            <h3 className="mb-3 text-sm font-semibold md:text-base xl:text-lg 2xl:text-xl">
               Subscribe to our <span className="text-info">Newsletter!</span>
-            </h5>
+            </h3>
             <div className="relative flex flex-col justify-center py-2 mb-4 space-y-4 lg:justify-start">
               <div>
                 <input

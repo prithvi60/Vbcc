@@ -146,9 +146,9 @@ const Testimonials = () => {
             // }}
             >
               <div className="w-full md:!sticky md:top-8 pb-12 space-y-3 text-center md:space-y-8 md:pb-0">
-                <h4 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
+                <h2 className="text-lg font-bold tracking-wide capitalize md:text-3xl text-info font-Montserrat">
                   categories
-                </h4>
+                </h2>
                 <AccordionTestimonial
                   data={filteredTestimonials}
                   categoryList={category}
@@ -218,7 +218,7 @@ const Testimonials = () => {
                         {list.review}
                         <FaQuoteRight className="absolute -bottom-4 md:-bottom-2 -right-3 md:-right-4" />
                       </p>
-                      <h4
+                      <h3
                         className="font-bold capitalize text-secondary text-[13px] md:text-[15px]"
                         dangerouslySetInnerHTML={{
                           __html: list.aboutClient,

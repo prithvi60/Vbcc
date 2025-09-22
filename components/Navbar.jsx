@@ -60,11 +60,11 @@ const NavBar = () => {
                 >
                   {list.menu === "CATEGORIES" ? (
                     <Link title="menu" href={list.ref} onMouseEnter={() => setIsHover(true)}>
-                      <h4>{list.menu}</h4>
+                      <span>{list.menu}</span>
                     </Link>
                   ) : (
                     <Link title="menu" href={list.ref}>
-                      <h4>{list.menu}</h4>
+                      <span>{list.menu}</span>
                     </Link>
                   )}
 
