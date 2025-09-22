@@ -111,7 +111,7 @@ export async function GET() {
       AnalyticalInstrumentsList,
       "/categories/analytical_instruments"
     );
-    
+
     const hostname = "https://vbccinstruments.com";
     if (!hostname) {
       throw new Error("Hostname is required");

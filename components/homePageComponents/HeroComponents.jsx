@@ -21,7 +21,7 @@ export const HeroComponent = () => {
       </li>
       <li>
         <Link title="facebook link"
-          href={"https://www.facebook.com/vbcc.hti/"}
+          href={"https://www.facebook.com/vbcchti/"}
           target="_blank"
           aria-label="Facebook profile"
         >

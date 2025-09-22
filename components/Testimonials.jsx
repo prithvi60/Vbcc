@@ -131,9 +131,9 @@ const Testimonials = () => {
           className={`block space-y-12 md:space-y-16 ${path === "/testimonials" ? "pb-10 md:pb-20" : "py-10 md:py-20"}`}
         >
           <div className="block w-full space-y-4 md:space-y-6">
-            <h4 className="text-2xl font-semibold tracking-wide md:text-4xl xl:text-5xl text-info">
+            <h1 className="text-2xl font-semibold tracking-wide md:text-4xl xl:text-5xl text-info">
               Our Testimonials
-            </h4>
+            </h1>
           </div>
           <div className="!relative flex flex-col w-full h-full gap-8 md:flex-row items-start">
             <div

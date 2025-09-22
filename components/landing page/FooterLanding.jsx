@@ -86,7 +86,7 @@ const FooterLanding = () => {
             <li>
               <Link title="facebook link"
                 aria-label="Facebook profile"
-                href={"https://www.facebook.com/vbcc.hti/"}
+                href={"https://www.facebook.com/vbcchti/"}
                 target="blank"
               >
                 <FaFacebookF className="text-lg text-white md:text-2xl" />

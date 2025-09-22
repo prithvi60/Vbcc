@@ -153,7 +153,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link title="facebook" href={"https://www.facebook.com/vbcc.hti/"} className="hover:animate-pulse " target="_blank">
+              <Link title="facebook" href={"https://www.facebook.com/vbcchti/"} className="hover:animate-pulse " target="_blank">
                 <FaFacebookF className="text-lg md:text-2xl" />
               </Link>
             </li>

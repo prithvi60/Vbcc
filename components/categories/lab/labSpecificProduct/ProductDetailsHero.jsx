@@ -50,9 +50,9 @@ const LabProductDetailsHero = () => {
                 <div className="absolute left-0 flex flex-col items-center w-full top-32 bg-white/70 lg:flex-row padding md:items-start">
                     <BreadCrumb />
                     <div className="block w-full py-10 space-y-4 md:py-12 lg:space-y-6 lg:w-3/5">
-                        <h4 className="text-xl md:text-3xl xl:text-4xl font-bold tracking-wide !leading-[32px] text-primary">
+                        <h1 className="text-xl md:text-3xl xl:text-4xl font-bold tracking-wide !leading-[32px] text-primary">
                             {productName}
-                        </h4>
+                        </h1>
                         <p className="text-base md:text-lg font-medium !leading-[32px] text-primary">
                             {desc}
                         </p>

@@ -17,7 +17,7 @@ export default function Home() {
     alternateName: "VBCC High Temperature Instruments",
     sameAs: [
       "https://www.linkedin.com/company/vbcc-hti/",
-      "https://www.facebook.com/vbcc.hti/",
+      "https://www.facebook.com/vbcchti/",
       "https://www.instagram.com/vbcc_hti/",
       "https://www.youtube.com/@vbcc_hti",
     ],

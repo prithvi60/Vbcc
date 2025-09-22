@@ -5,9 +5,9 @@ export const PrivacyPolicy = () => {
   return (
     <section className="mt-20 space-y-3 padding text-primary font-Montserrat md:mt-28 xl:mt-32 md:space-y-4">
       <div className="space-y-3">
-        <h3 className="block text-[40px] font-bold tracking-wider w-full">
+        <h1 className="block text-[40px] font-bold tracking-wider w-full">
           Privacy Policy
-        </h3>
+        </h1>
         <p className="text-base font-normal lg:text-lg">
           Last updated: November 22, 2024
         </p>

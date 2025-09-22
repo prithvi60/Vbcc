@@ -11,9 +11,9 @@ const FAQContent = () => {
     <section className="h-full w-full px-5 py-[60px] md:px-10 lg:px-[60px] bg-primary mt-24">
       <div className="w-full h-auto mx-auto space-y-8 lg:w-3/5">
         <div className="w-full h-full space-y-6">
-          <h2 className="w-full text-2xl font-bold font-Montserrat md:text-4xl xl:text-6xl text-info">
+          <h1 className="w-full text-2xl font-bold font-Montserrat md:text-4xl xl:text-6xl text-info">
             FAQs
-          </h2>
+          </h1>
           <p className="text-sm font-Montserrat lg:text-base">
             If you cannot find what you’re looking for, feel free to{" "}
             <span className="underline underline-offset-1">

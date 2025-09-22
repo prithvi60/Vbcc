@@ -34,9 +34,9 @@ const CategoryHero = ({
                         <div className="absolute top-0 left-0 z-0 w-full h-[90vh] bg-gradient-to-b from-[#00000033] via-[#F06F3845] to-[#00000033]"></div>
                         <BreadCrumb />
                     </div>
-                    <h4 className="absolute z-40 px-4 py-3 text-xl font-semibold rounded-sm left-5 md:left-14 bottom-7 lg:text-2xl xl:text-3xl 2xl:text-4xl bg-info ">
+                    <h1 className="absolute z-40 px-4 py-3 text-xl font-semibold rounded-sm left-5 md:left-14 bottom-7 lg:text-2xl xl:text-3xl 2xl:text-4xl bg-info ">
                         {title}
-                    </h4>
+                    </h1>
                 </div>
             </div>
             <div className="flex flex-col items-center w-full h-full padding bg-primary md:flex-row md:items-start">
