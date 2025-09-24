@@ -16,6 +16,7 @@ export const ContactForm = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState(false);
 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -23,11 +24,6 @@ export const ContactForm = () => {
       [name]: value,
     }));
   };
-
-  useEffect(() => {
-    const downloadKey = "pdfDownloaded";
-    localStorage.removeItem(downloadKey);
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -60,7 +56,7 @@ export const ContactForm = () => {
     };
 
     try {
-      const zohoResponse = await fetch("/api/zoho/leads", {
+      const zohoResponse = await fetch("/api/zoho/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(zohoData),
@@ -104,6 +100,7 @@ export const ContactForm = () => {
       setStatus(false);
     }
   };
+
   return (
     <section className="mt-20 space-y-10 text-warning font-Montserrat ">
       <div className="w-full h-full space-y-6 px-5 md:px-10 pt-10 md:pt-[60px] lg:px-[60px] lg:pt-20">
