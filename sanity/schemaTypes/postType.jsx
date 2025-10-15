@@ -38,8 +38,6 @@ export const postType = defineType({
             name: "image",
             type: "image",
             title: "Blog Post Image",
-            validation: (Rule) =>
-                Rule.required().max(5242880).error("Image size must be 5MB or less"),
             fields: [
                 {
                     type: "text",
@@ -74,8 +72,6 @@ export const postType = defineType({
                 { type: "block" },
                 {
                     type: "image",
-                    validation: (Rule) =>
-                        Rule.max(5242880).error("Image size must be 5MB or less"),
                     fields: [
                         { type: "text", name: "alt", title: "ALT" },
                         {
