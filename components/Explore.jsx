@@ -46,7 +46,7 @@ const Explore = () => {
         <div
           className="relative w-full h-full px-6 py-8 bg-bottom bg-no-repeat bg-cover card-mask_2"
           style={{
-            backgroundImage: "url('https://cdn.webibee.com/vbcc/homepage/lab-herobg.png')",
+            backgroundImage: "url('http://cdn.shopifyapp.shop/vbcc/homepage/lab-herobg.png')",
           }}
         >
           <div className="absolute w-full h-full bg-[#293271] bg-opacity-80  top-0 left-0 z-10"></div>
@@ -112,7 +112,7 @@ const Explore = () => {
             <div
               className="relative w-full h-full px-6 py-8 bg-right-bottom bg-no-repeat bg-cover explore_card-mask border-3 border-secondary"
               style={{
-                backgroundImage: "url('https://cdn.webibee.com/vbcc/homepage/explore.png')",
+                backgroundImage: "url('http://cdn.shopifyapp.shop/vbcc/homepage/explore.png')",
               }}
             >
               <div className="absolute w-full h-full bg-[#293271] bg-opacity-60 top-0 left-0 z-10"></div>
@@ -166,7 +166,7 @@ const Explore = () => {
           <div className="absolute -bottom-48 lg:-bottom-44 xl:-bottom-44 left-24 md:left-32 lg:left-20 xl:left-32">
             <div className="relative w-20 overflow-hidden h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
-                src={"https://cdn.webibee.com/vbcc/homepage/card%201.png"}
+                src={"http://cdn.shopifyapp.shop/vbcc/homepage/card%201.png"}
                 fill
                 alt="product image"
                 title="product image"
@@ -176,7 +176,7 @@ const Explore = () => {
               <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-6 size-14 xl:size-20">
                 <Image
                   src={
-                    "https://cdn.webibee.com/vbcc/homepage/iso.svg"
+                    "http://cdn.shopifyapp.shop/vbcc/homepage/iso.svg"
                   }
                   fill
                   alt="product image"
@@ -187,7 +187,7 @@ const Explore = () => {
               <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-6 size-14 xl:size-20">
                 <Image
                   src={
-                    "https://cdn.webibee.com/vbcc/homepage/ce-logo.svg"
+                    "http://cdn.shopifyapp.shop/vbcc/homepage/ce-logo.svg"
                   }
                   fill
                   alt="product image"
@@ -201,7 +201,7 @@ const Explore = () => {
             <div className="relative w-20 h-44 md:w-24 md:h-52 xl:w-32 xl:h-64">
               <Image
                 src={
-                  "https://cdn.webibee.com/vbcc/homepage/card%201.png"
+                  "http://cdn.shopifyapp.shop/vbcc/homepage/card%201.png"
                 }
                 fill
                 alt="product image"
@@ -212,7 +212,7 @@ const Explore = () => {
               <div className="absolute overflow-hidden top-4 left-3 md:top-10 md:left-4 xl:left-4 size-16 xl:size-24">
                 <Image
                   src={
-                    "https://cdn.webibee.com/vbcc/msme-logo.png"
+                    "http://cdn.shopifyapp.shop/vbcc/msme-logo.png"
                   }
                   fill
                   alt="product image"
@@ -223,7 +223,7 @@ const Explore = () => {
               <div className="absolute overflow-hidden bottom-4 left-3 md:bottom-10 md:left-4 xl:left-4 size-16 xl:size-24">
                 <Image
                   src={
-                    "https://cdn.webibee.com/vbcc/homepage/MIN-Logo.png"
+                    "http://cdn.shopifyapp.shop/vbcc/homepage/MIN-Logo.png"
                   }
                   fill
                   alt="product image"

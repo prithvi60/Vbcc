@@ -46,7 +46,7 @@ const FooterLanding = () => {
           <Image
             alt="VBCC Logo"
             title="VBCC Logo"
-            src="https://cdn.webibee.com/vbcc/homepage/VBCC%20logo.svg"
+            src="http://cdn.shopifyapp.shop/vbcc/homepage/VBCC%20logo.svg"
             fill
             className="object-cover object-center"
           />

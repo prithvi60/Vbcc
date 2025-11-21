@@ -44,7 +44,7 @@ const Clients = () => {
       <div className='flex flex-col items-center gap-28 lg:gap-0 justify-center lg:justify-around xl:justify-between w-full h-full mx-auto max-w-[1530px] lg:flex-row padding'>
         <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-auto">
           <Image
-            src={"https://cdn.webibee.com/vbcc/homepage/client-bg.png"}
+            src={"http://cdn.shopifyapp.shop/vbcc/homepage/client-bg.png"}
             fill
             alt="client image"
             title="client image"

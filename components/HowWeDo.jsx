@@ -25,7 +25,7 @@ const HowWeDo = () => {
               alt="product image"
               title="product image"
               fill
-              src={"https://cdn.webibee.com/vbcc/homepage/tailor-1.png"}
+              src={"http://cdn.shopifyapp.shop/vbcc/homepage/tailor-1.png"}
               className="z-10 object-contain object-center transition ease-linear transform group-hover:scale-125 duration-400"
             />
             <div className="absolute top-2 md:top-8 group-hover:scale-80 transition-colors duration-400 ease-in-out z-0 left-6 flex justify-between items-center rounded-full bg-gradient-to-b from-[#13294F56] to-[#6B778C56] shadow-lg blur-sm size-44 md:size-56 xl:size-72 group-hover:bg-gradient-to-b group-hover:from-info group-hover:to-info"></div>
@@ -42,7 +42,7 @@ const HowWeDo = () => {
         <div className="relative w-full lg:w-1/4">
           <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
             <Image
-              src={"https://cdn.webibee.com/vbcc/homepage/card%201.png"}
+              src={"http://cdn.shopifyapp.shop/vbcc/homepage/card%201.png"}
               fill
               alt="image"
               title="image"

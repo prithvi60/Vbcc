@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const ImgSrc = "https://cdn.webibee.com/vbcc/faq.png";
+const ImgSrc = "http://cdn.shopifyapp.shop/vbcc/faq.png";
 
 const FAQAccordionComponent = dynamic(() => import("./FAQAccordion"));
 

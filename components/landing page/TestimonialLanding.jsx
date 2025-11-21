@@ -97,37 +97,37 @@ export default TestimonialLanding;
 
 // const TestimonialList = [
 //     {
-//         icon: "https://cdn.webibee.com/vbcc/client-logo/AU.svg",
+//         icon: "http://cdn.shopifyapp.shop/vbcc/client-logo/AU.svg",
 //         para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
 //         title: "Anna University",
 //         subtle: "Department of Ceramic technology",
 //     },
 //     {
-//         icon: "https://cdn.webibee.com/vbcc/client-logo/vit.svg",
+//         icon: "http://cdn.shopifyapp.shop/vbcc/client-logo/vit.svg",
 //         para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
 //         title: "VIT University",
 //         subtle: "Centre of Nano technology research",
 //     },
 //     {
-//         icon: "https://cdn.webibee.com/vbcc/client-logo/ISRO.svg",
+//         icon: "http://cdn.shopifyapp.shop/vbcc/client-logo/ISRO.svg",
 //         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
 //         title: "ISRO",
 //         subtle: "Department of Space",
 //     },
 //     {
-//         icon: "https://cdn.webibee.com/vbcc/client-logo/AU.svg",
+//         icon: "http://cdn.shopifyapp.shop/vbcc/client-logo/AU.svg",
 //         para: "Units operate satisfactorily, VBCC High Temperature Instrument service enabled our research project's success.",
 //         title: "Anna University",
 //         subtle: "Department of Ceramic technology",
 //     },
 //     {
-//         icon: "https://cdn.webibee.com/vbcc/client-logo/vit.svg",
+//         icon: "http://cdn.shopifyapp.shop/vbcc/client-logo/vit.svg",
 //         para: "The Custom Hot Press met our needs, stayed efficient throughout and we're very delighted with it",
 //         title: "VIT University",
 //         subtle: "Centre of Nano technology research",
 //     },
 //     {
-//         icon: "https://cdn.webibee.com/vbcc/client-logo/ISRO.svg",
+//         icon: "http://cdn.shopifyapp.shop/vbcc/client-logo/ISRO.svg",
 //         para: "No Company in India, except VBCC High Temperature took this challenging task to succession.",
 //         title: "ISRO",
 //         subtle: "Department of Space",

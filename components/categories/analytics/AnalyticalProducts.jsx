@@ -7,8 +7,8 @@ const AnalyticalProducts = () => {
     return (
         <>
             <CategoryHero
-                categoryImg={"https://cdn.webibee.com/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png"}
-                heroBg={"https://cdn.webibee.com/vbcc/AI-hero.jpg"}
+                categoryImg={"http://cdn.shopifyapp.shop/vbcc/Products/Analytical%20Instruments/Reverse%20Thermal%20Expansion%20System/left.png"}
+                heroBg={"http://cdn.shopifyapp.shop/vbcc/AI-hero.jpg"}
                 title={"Analytical Instruments"}
                 desc1={
                     "At VBCC, we offer high-precision instruments for thermal and electrical material analysis, trusted by research labs and industries alike."

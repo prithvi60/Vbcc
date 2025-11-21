@@ -9,7 +9,7 @@ export const Story = () => {
           <Image
             alt="background image"
             title="background image"
-            src={"https://cdn.webibee.com/vbcc/About%20Us%20-%20Hero%20Image.jpg"}
+            src={"http://cdn.shopifyapp.shop/vbcc/About%20Us%20-%20Hero%20Image.jpg"}
             fill
             className="z-0 object-cover object-top brightness-[0.50]"
           />
@@ -43,7 +43,7 @@ export const Story = () => {
             <Image
               fill
               src={
-                "https://cdn.webibee.com/vbcc/homepage/About%20Us%20-%20Innovation%20Excellence.png"
+                "http://cdn.shopifyapp.shop/vbcc/homepage/About%20Us%20-%20Innovation%20Excellence.png"
               }
               alt="bg image"
               title="bg image"

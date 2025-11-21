@@ -23,7 +23,7 @@ export const Vison = () => {
             <div className="flex items-center justify-center md:w-2/5">
               <div className="relative size-32 md:size-60">
                 <Image
-                  src={"https://cdn.webibee.com/vbcc/homepage/mission.png"}
+                  src={"http://cdn.shopifyapp.shop/vbcc/homepage/mission.png"}
                   fill
                   alt="mission"
                   title="mission"
@@ -50,7 +50,7 @@ export const Vison = () => {
             <div className="flex items-center justify-center md:w-2/5">
               <div className="relative size-32 md:size-60">
                 <Image
-                  src={"https://cdn.webibee.com/vbcc/homepage/vision.png"}
+                  src={"http://cdn.shopifyapp.shop/vbcc/homepage/vision.png"}
                   fill
                   alt="vision"
                   title="vision"
