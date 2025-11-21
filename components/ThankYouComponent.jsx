@@ -100,7 +100,7 @@ export const ThankYouComponent = () => {
       <div className="relative w-20 h-20 mx-auto md:h-44 md:w-56 text-warning">
         <Image
           src={
-            "http://cdn.shopifyapp.shop/vbcc/homepage/VBCC%20logo.svg"
+            "https://cdn.shopifyapp.shop/vbcc/homepage/VBCC%20logo.svg"
           }
           fill
           alt="thumbs up"

@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="absolute w-full h-[1150px] md:h-[85vw] lg:h-[1000px] xl:h-[1200px] overflow-hidden">
               <Image
                 fill
-                src="http://cdn.shopifyapp.shop/vbcc/homepage/dental%20-hero.png"
+                src="https://cdn.shopifyapp.shop/vbcc/homepage/dental%20-hero.png"
                 alt="Loading..."
                 title="loading"
                 className="object-contain object-center blur-lg brightness-[0.15]"

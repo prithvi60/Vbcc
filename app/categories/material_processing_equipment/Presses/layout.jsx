@@ -9,7 +9,7 @@ export const metadata = {
     description:
       decode("VBCC's advanced pressing technologies are meticulously engineered for material processing, delivering consistent results while enhancing performance and reliability across diverse industries."),
     images: [{
-      url: 'http://cdn.shopifyapp.shop/vbcc/Products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png',
+      url: 'https://cdn.shopifyapp.shop/vbcc/Products/MPE/seiki/Vacuum%20Hot%20Press/isometric.png',
       width: 800,
       height: 600,
       alt: 'Material Processing Equipment Categories Presses',

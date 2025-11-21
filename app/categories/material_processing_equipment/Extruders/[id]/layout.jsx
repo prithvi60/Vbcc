@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       title: decode("VBCC's India-first high-end dental furnace for restorative treatments"),
       description: "Elevate your restorative and prosthetic treatments with our state-of-the-art dental furnaces focused on providing high-precision dental crowns, bridges, inlays, and onlays.",
       images: [{
-        url: 'http://cdn.shopifyapp.shop/vbcc/Products/MPE/oshidashi/automatic%20extruder/isometric.png',
+        url: 'https://cdn.shopifyapp.shop/vbcc/Products/MPE/oshidashi/automatic%20extruder/isometric.png',
         width: 800,
         height: 600,
         alt: 'Material Processing Equipment Categories Extruder',

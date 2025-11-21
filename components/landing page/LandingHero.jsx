@@ -21,7 +21,7 @@ const LandingHero = () => {
           <Image
             alt="VBCC Logo"
             title="VBCC Logo"
-            src="http://cdn.shopifyapp.shop/vbcc/homepage/VBCC%20logo.svg"
+            src="https://cdn.shopifyapp.shop/vbcc/homepage/VBCC%20logo.svg"
             fill
             className="z-0 object-cover object-center"
           />
@@ -30,7 +30,7 @@ const LandingHero = () => {
           <Image
             alt="background image"
             title="background image"
-            src="http://cdn.shopifyapp.shop/vbcc/homepage/herobg.jpg"
+            src="https://cdn.shopifyapp.shop/vbcc/homepage/herobg.jpg"
             fill
             className="z-0 object-cover object-center"
           />
@@ -118,7 +118,7 @@ const LandingHero = () => {
                   title="image"
                   fill
                   src={
-                    "http://cdn.shopifyapp.shop/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png"
+                    "https://cdn.shopifyapp.shop/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png"
                   }
                   className="z-20 object-contain object-center transition-all duration-500 ease-linear group-hover:scale-125"
                 />

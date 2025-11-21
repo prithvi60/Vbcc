@@ -51,7 +51,7 @@ export const metadata = {
     url: "https://vbccinstruments.com",
     images: [
       {
-        url: "http://cdn.shopifyapp.shop/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png",
+        url: "https://cdn.shopifyapp.shop/vbcc/Products/Lab%20Products/Box%20or%20Muffle%20Furnace/isometric.png",
         width: 1200,
         height: 630,
         alt: "VBCC High Temperature Instruments",

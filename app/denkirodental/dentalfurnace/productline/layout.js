@@ -18,7 +18,7 @@ export const metadata = {
     url: "https://vbccinstruments.com/denkirodental/dentalfurnace/productline",
     images: [
       {
-        url: "http://cdn.shopifyapp.shop/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
+        url: "https://cdn.shopifyapp.shop/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
         width: 630,
         height: 630,
         alt: "VBCC High Temperature Instruments",

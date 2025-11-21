@@ -7,8 +7,8 @@ const LabProducts = () => {
     return (
         <>
             <CategoryHero
-                categoryImg={"http://cdn.shopifyapp.shop/vbcc/homepage/category-2.png"}
-                heroBg={"http://cdn.shopifyapp.shop/vbcc/homepage/lab-herobg.png"}
+                categoryImg={"https://cdn.shopifyapp.shop/vbcc/homepage/category-2.png"}
+                heroBg={"https://cdn.shopifyapp.shop/vbcc/homepage/lab-herobg.png"}
                 title={"Laboratory Furnaces"}
                 desc1={
                     "Denkiro is the dedicated sub-brand for electric furnaces under VBCC, embodying precision, efficiency, and innovation in thermal processing. Denkiro electric furnaces are designed to meet the high demands of various industries, offering reliable performance and cutting-edge technology. "

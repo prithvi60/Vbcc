@@ -14,7 +14,7 @@ const TechnicalSupport = () => {
             <div className="w-full my-10 md:my-0">
                 <div className="relative w-[250px] h-[380px] md:w-[280px] lg:w-[340px] md:h-[380px] lg:h-[480px] z-10 mx-auto">
                     <Image
-                        src={"http://cdn.shopifyapp.shop/vbcc/homepage/card%201.png"}
+                        src={"https://cdn.shopifyapp.shop/vbcc/homepage/card%201.png"}
                         fill
                         alt="image"
                         title="image"
