@@ -19,7 +19,7 @@ const MobileNav = ({ isOpen, setIsOpen, navLinks }) => {
           <Image
             fill
             src={
-              "https://cdn.shopifyapp.shop/vbcc/homepage/VBCC%20logo.svg"
+              "https://cdn.webibeeinfra.in/vbcc/homepage/VBCC%20logo.svg"
             }
             alt="Logo"
             title="logo"

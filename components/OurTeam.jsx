@@ -35,7 +35,7 @@ const OurTeam = () => {
                                     title="image"
                                     fill
                                     src={
-                                        "https://cdn.shopifyapp.shop/vbcc/homepage/CEO%20-%20Ellipse.png"
+                                        "https://cdn.webibeeinfra.in/vbcc/homepage/CEO%20-%20Ellipse.png"
                                     }
                                     className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                 />
@@ -80,7 +80,7 @@ const OurTeam = () => {
                                         title="image"
                                         fill
                                         src={
-                                            "https://cdn.shopifyapp.shop/vbcc/homepage/CTO%20-%20Ellipse.png"
+                                            "https://cdn.webibeeinfra.in/vbcc/homepage/CTO%20-%20Ellipse.png"
                                         }
                                         className="z-0 object-contain transition ease-linear transform group-hover:scale-125 duration-400"
                                     />
