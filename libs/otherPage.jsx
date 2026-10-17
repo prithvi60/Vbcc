@@ -1,34 +1,6 @@
 export const heroSlider = [
     {
         bgImg:
-            "https://cdn.webibeeinfra.in/vbcc/homepage/dental%20-hero.png",
-        categories: "Dental Furnaces",
-        type: "Dental",
-        products: [
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
-                productName: "Vacuum Sintering Furnace",
-                type: "Dental PRODUCTS",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Pressing.png",
-                productName: "Vacuum Pressing Furnace",
-                type: "Dental PRODUCTS",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Zirconia.png",
-                productName: "Zirconia Sintering Furnace",
-                type: "Dental PRODUCTS",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Burnout.png",
-                productName: "Burnout Furnace",
-                type: "Dental PRODUCTS",
-            },
-        ],
-    },
-    {
-        bgImg:
             "https://cdn.webibeeinfra.in/vbcc/homepage/lab%20-hero.png",
         categories: "Laboratory Furnaces",
         type: "Laboratory",
@@ -208,12 +180,6 @@ export const navLinks = [
                 ref: "/categories/laboratory",
             },
             {
-                img: "https://cdn.webibeeinfra.in/vbcc/homepage/Dental%20Category.jpg",
-                menu: "dental",
-                menu2: "Furnaces",
-                ref: "/categories/dental",
-            },
-            {
                 img: "https://cdn.webibeeinfra.in/vbcc/Products/MPE/MPR%20Bg%20Image_jpg.png",
                 menu: "material processing",
                 menu2: "equipment",
@@ -238,13 +204,6 @@ export const navLinks = [
 ];
 
 export const exploreList = [
-    {
-        img: "https://cdn.webibeeinfra.in/vbcc/homepage/Explore%20Prodcut%20Sec%20-%20Dental%20Furnace.jpg",
-        icon: "https://cdn.webibeeinfra.in/vbcc/homepage/explore-icon-2.png",
-        title: "Dental Furnaces",
-        desc: "Over 2+ products for Dental Furnace.",
-        ref: "/categories/dental",
-    },
     {
         img: "https://cdn.webibeeinfra.in/vbcc/homepage/Explore%20Products%20-%20Laboratory%20Furnaces.jpg",
         icon: "https://cdn.webibeeinfra.in/vbcc/homepage/explore-icon-3.png",
@@ -321,16 +280,10 @@ export const items = [
 
 export const sortProducts = [
     { value: "Best Selling" },
-    { value: "Dental Furnaces" },
     { value: "Laboratory Furnaces" },
 ];
 
 export const data = [
-    {
-        img: "https://cdn.webibeeinfra.in/vbcc/homepage/Dental%20Category.jpg",
-        menu: "dental Furnaces",
-        ref: "/categories/dental",
-    },
     {
         img: "https://cdn.webibeeinfra.in/vbcc/homepage/lab-herobg.png",
         menu: "laboratory Furnaces",
@@ -384,41 +337,6 @@ export const categoriesProducts = [
                 img: "https://cdn.webibeeinfra.in/vbcc/Products/Lab%20Products/Chemical%20Vapour%20Deposition/isometric.png",
                 href: "/categories/laboratory/",
                 productName: "Chemical Vapour Deposition",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
-                productName: "Vacuum Sintering Furnace",
-                href: "/categories/dental/",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Pressing.png",
-                productName: "Vacuum Pressing Furnace",
-                href: "/categories/dental/",
-            },
-        ],
-    },
-    {
-        category: "Dental Furnaces",
-        lists: [
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Sintering.png",
-                productName: "Vacuum Sintering Furnace",
-                href: "/categories/dental/",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Pressing.png",
-                productName: "Vacuum Pressing Furnace",
-                href: "/categories/dental/",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Zirconia.png",
-                productName: "Zirconia Sintering Furnace",
-                href: "/categories/dental/",
-            },
-            {
-                img: "https://cdn.webibeeinfra.in/vbcc/Products/dental%20furnaces/Isometric%20-%20Burnout.png",
-                productName: "Burnout Furnace",
-                href: "/categories/dental/",
             },
         ],
     },
@@ -476,10 +394,6 @@ export const footerLinks2 = [
     {
         href: "/categories",
         title: "Categories",
-    },
-    {
-        href: "/categories/dental",
-        title: "Dental",
     },
     {
         href: "/categories/laboratory",

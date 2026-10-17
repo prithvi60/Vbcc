@@ -1,13 +1,5 @@
-import ProductDetailsHero from '@/components/categories/dental/dentalSpecificProduct/ProductDetailsHero'
-import DefaultLayout from '@/components/DefaultLayout'
-import React from 'react'
+import { redirect } from "next/navigation";
 
-const Page = () => {
-    return (
-        <DefaultLayout>
-            <ProductDetailsHero />
-        </DefaultLayout>
-    )
+export default function Page() {
+  redirect("/categories");
 }
-
-export default Page

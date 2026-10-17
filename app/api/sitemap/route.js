@@ -1,6 +1,5 @@
 import {
   AnalyticalInstrumentsList,
-  DentalProductsList,
   FunsaiProductsList,
   LabEquiptProductsList,
   LabProductsList,
@@ -15,17 +14,11 @@ export async function GET() {
   // Static routes
   const links = [
     { url: "/", changefreq: "daily", priority: 1.0 },
-    {
-      url: "/denkirodental/dentalfurnace/productline",
-      changefreq: "weekly",
-      priority: 0.9,
-    },
     { url: "/about", changefreq: "monthly", priority: 0.8 },
     { url: "/testimonials", changefreq: "monthly", priority: 0.8 },
     { url: "/contact", changefreq: "monthly", priority: 0.8 },
     { url: "/blog", changefreq: "weekly", priority: 0.9 },
     { url: "/categories", changefreq: "weekly", priority: 0.9 },
-    { url: "/categories/dental", changefreq: "weekly", priority: 0.9 },
     { url: "/categories/laboratory", changefreq: "weekly", priority: 0.9 },
     {
       url: "/categories/material_processing_equipment",
@@ -92,7 +85,6 @@ export async function GET() {
     };
 
     // Add product links with proper base paths
-    addProductLinks(DentalProductsList, "/categories/dental");
     addProductLinks(LabProductsList, "/categories/laboratory");
     addProductLinks(LabEquiptProductsList, "/categories/lab_equipment");
     addProductLinks(

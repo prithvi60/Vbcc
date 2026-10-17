@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="absolute w-full h-[1150px] md:h-[85vw] lg:h-[1000px] xl:h-[1200px] overflow-hidden">
               <Image
                 fill
-                src="https://cdn.webibeeinfra.in/vbcc/homepage/dental%20-hero.png"
+                src={heroSlider[0].bgImg}
                 alt="Loading..."
                 title="loading"
                 className="object-contain object-center blur-lg brightness-[0.15]"
@@ -193,9 +193,7 @@ const Hero = () => {
                           title="categories"
                           aria-label="category products"
                           href={
-                            item.type === "Dental PRODUCTS"
-                              ? `/categories/dental/${item.productName.replace(/\s/g, "_")}`
-                              : item.type === "AI PRODUCTS"
+                            item.type === "AI PRODUCTS"
                                 ? `/categories/analytical_instruments/${item.productName.replace(/\s/g, "_")}`
                                 : item.type === "LAB PRODUCTS"
                                   ? `/categories/lab_equipment/${item.productName.replace(/\s/g, "_")}` : item.type === "BALL MILLS PRODUCTS"

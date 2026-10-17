@@ -1,11 +1,5 @@
-import DentalProducts from "@/components/categories/dental/DentalProducts";
-import DefaultLayout from "@/components/DefaultLayout";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-
-  return (
-    <DefaultLayout>
-      <DentalProducts />
-    </DefaultLayout>
-  );
+  redirect("/categories");
 }
